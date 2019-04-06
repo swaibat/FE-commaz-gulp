@@ -1,0 +1,72 @@
+// Global component styles
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+.sidenav{
+  width: 11rem !important;
+  height: 95vh;
+  top:3.6rem !important;
+
+}
+.chat{
+  .badge{
+    border:solid 3px aliceblue;
+  }
+}
+// Main page wrapper
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    background-color: $gray-100;
+    width: 100%;
+    overflow-x: hidden;
+    #content {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+// Set container padding to match gutter width instead of default 15px
+.container,
+.container-fluid {
+  padding-left: 12rem;
+  max-width: 90rem;
+  padding-right: $spacer;
+}
+
+// Scroll to top button
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  text-align: center;
+  color: $white;
+  background: fade-out($gray-800, .5);
+  line-height: 46px;
+  &:focus,
+  &:hover {
+    color: white;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
+}

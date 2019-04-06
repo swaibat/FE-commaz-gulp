@@ -1,0 +1,13 @@
+// Import Variables (Overrides Default Bootstrap Variables)
+@import "variables";
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Import Bootstrap
+@import "global";
+// // Import fontawesome
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+

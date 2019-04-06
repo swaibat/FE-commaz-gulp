@@ -1,0 +1,120 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card my-3 bg-white">
+        <div class="card-header shadow-sm  bg-white b-0">
+                Radar
+                <div class="btn-group float-right bg-primary px-2 text-white">
+                     <button type="button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#desc1" aria-expanded="true" aria-controls="desc1"><i class="icon-info"></i></button>
+				    <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><i class="zmdi zmdi-minus"></i></button>
+				    <button type="button" class="btn btn-sm btn-primary"><i class="zmdi zmdi-close"></i></button>
+                </div>
+            </div>
+            <!--c-head-->
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Date input</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-calendar"></i>
+						</span>
+                        </span>
+                        <input type="text" class="form-control" id="date-input">
+                    </div>
+                    <small class="text-muted">ex. 99/99/9999</small>
+                </div>
+                <div class="form-group">
+                    <label>Phone input</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+						<span class="input-group-text">
+							<i class="fa fa-phone"></i>
+						</span>
+                        </span>
+                        <input type="text" class="form-control" id="phone-input">
+                    </div>
+                    <small class="text-muted">ex. (999) 999-9999</small>
+                </div>
+                <div class="form-group">
+                    <label>Taxpayer Identification Numbers</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+						  <span class="input-group-text">
+							<i class="fas fa-dollar-sign"></i>
+						  </span>
+                        </span>
+                        <input type="text" class="form-control" id="tin-input">
+                    </div>
+                    <small class="text-muted">ex. 99-9999999</small>
+                </div>
+                <div class="form-group">
+                    <label>Social Security Number</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+						  <span class="input-group-text">
+							<i class="fa fa-male"></i>
+						  </span>
+                        </span>
+                        <input type="text" class="form-control" id="ssn-input">
+                    </div>
+                    <small class="text-muted">ex. 999-99-9999</small>
+                </div>
+                <div class="form-group">
+                    <label>Eye Script</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+							<span class="input-group-text">
+								<i class="fa fa-asterisk"></i>
+							</span>
+                        </span>
+                        <input type="text" class="form-control" id="eyescript-input">
+                    </div>
+                    <small class="text-muted">ex. ~9.99 ~9.99 999</small>
+                </div>
+                <div class="form-group">
+                    <label>Credit Card Number</label>
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+						  <span class="input-group-text">
+							<i class="fa fa-credit-card"></i>
+						  </span>
+                        </span>
+                        <input type="text" class="form-control" id="ccn" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <small class="text-muted">ex. 9999 9999 9999 9999</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card my-3 bg-white">
+        <div class="card-header shadow-sm  bg-white b-0">
+                Radar
+                <div class="btn-group float-right bg-primary px-2 text-white">
+                     <button type="button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#desc1" aria-expanded="true" aria-controls="desc1"><i class="icon-info"></i></button>
+				    <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><i class="zmdi zmdi-minus"></i></button>
+				    <button type="button" class="btn btn-sm btn-primary"><i class="zmdi zmdi-close"></i></button>
+                </div>
+            </div>
+            <!--c-head-->
+            <div class="card-body">
+                <p class="card-text mb-1">Select with Search Term</p>
+                <select class="select-1 w-100 p-2" name="state">
+                    <option value="AL">Alabama</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+                <div class="mt-3">
+                    <p class="card-text mb-1">Select2 Tag-input</p>
+                    <select class="select-2 w-100" name="states[]" multiple="multiple">
+                        <option class="select2-selection__choice" value="AL">Alabama</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#date').mask('99/99/9999');
+</script>
