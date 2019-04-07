@@ -7,5 +7,5 @@ Project build with bootstrap 4.3.1 framework ,Gulp V 4.0.0 workflow and SASS
 [![npm version](https://img.shields.io/static/v1.svg?label=Gulp&message=V%204.0.0%20&color=orange)](https://www.npmjs.com/package/startbootstrap-sb-admin-2)
 [![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-sb-admin-2.svg?branch=master)](https://travis-ci.com/swaibat/sassadminlite.svg?branch=master)
 [![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-sb-admin-2)
-[![code Status](https://img.shields.io/static/v1.svg?label=Codebeat&message=3.94/5&color=orange)](https://codebeat.co/projects/github-com-swaibat-sassadminlite-master/ratings)
+[![code Status](https://img.shields.io/static/v1.svg?label=Codebeat&message=3.94/5&color=blue)](https://codebeat.co/projects/github-com-swaibat-sassadminlite-master/ratings)
 
