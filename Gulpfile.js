@@ -1,17 +1,19 @@
 /*
-*Author: Rumbiiha Swaibu
-*website: Sassybootstrap.com
-*email :admin@bootstrap.com or rumbiihas@gmail.com
-*repository:
-*Lincence:
+Author: Rumbiiha Swaibu
+Website: Sassybootstrap.com
+Email :admin@bootstrap.com or rumbiihas@gmail.com
+Repository:https://github.com/swaibat/sassadminlite
+License:https://github.com/swaibat/sassadminlite/blob/master/LICENSE
 */
 
 "use strict";
 // Load plugins
 const autoprefixer = require("gulp-autoprefixer"),
       browsersync = require("browser-sync").create(),
+      cache = require('gulp-cache'),
       cleanCSS = require("gulp-clean-css"),
       del = require("del"),
+      imagemin = require('gulp-imagemin'),
       gulp = require("gulp"),
       panini = require("panini"),
       merge = require("merge-stream"),
@@ -128,12 +130,25 @@ function scripts() {
     .pipe(browsersync.stream());
 }
 
+// media tasks
+function images () {
+  return gulp
+    .src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
+    .pipe(cache(imagemin ([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5})
+    ]))) 
+    .pipe(gulp.dest('dist/assets/img/'));
+};
+
 // watch tasks
 function watchfiles() {
   gulp.watch("./src/assets/scss/**/*",gulp.series(htmlReset,styles,browserSyncReload));
   gulp.watch("./src/assets/js/**/*", scripts);
   gulp.watch('src/pages/**/*', html);
+  gulp.watch('src/assets/img/**/*', images);
   gulp.watch('src/{layouts,includes,helpers,partials}/**/*', gulp.series(htmlReset,html,browserSyncReload));
 }
-const build = gulp.series(clean, gulp.parallel(html,styles,scripts,modules));
+const build = gulp.series(clean, gulp.parallel(html,styles,scripts,modules,images));
 exports.default = gulp.series(build, gulp.parallel(browserSync,watchfiles));
