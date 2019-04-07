@@ -1,0 +1,32 @@
+.navbar{
+    height: 3.5rem;
+    // .nav-brand{
+
+    // }
+    // button{
+
+    // }
+    
+    .navbar-nav{
+        .dropdown{
+            .btn{
+                width: 2.5rem;
+                height:2.5rem;
+                .badge{
+                    top: .41rem;
+                    margin-left: .8rem;
+                    padding: 0.25em 0.25em;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+    #navbarCollapse{
+        .sidenav{
+            
+            height: 95vh;
+            top:3.7rem !important;
+            @include media-breakpoint-up(lg) {width: 11rem !important;}
+        }
+    }
+}

@@ -1,63 +1,252 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
-   <a class="navbar-brand" href="#">Sidebar Na</a>
-   <button
-     class="navbar-toggler"
-     type="button"
-     data-toggle="collapse"
-     data-target="#navbarCollapse"
-     aria-controls="navbarCollapse"
-     aria-expanded="false"
-     aria-label="Toggle navigation"
-   >
+   <a class="navbar-brand" href="#">
+      <img src="{{root}}assets/img/logo.svg" class="d-inline-block align-top" height="45" alt="logo">
+      <span><b>sassy</b></span>
+     </a>
+
+   <!-- start-nav right -->
+   <ul class="navbar-nav ml-auto flex-row order-1">
+    <li class="nav-item dropdown navbar-right px-3">
+       <a class="btn rounded-circle bg-light mt-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <span class="badge badge-primary badge-pill mt-1"><i class="fas fa-comment"></i></span>
+       </a>
+       <div class="dropdown-menu shadow-lg animated slideInRight mr-2 position-absolute" aria-labelledby="navbarDropdown">
+         <form class="pb-3" action="POST">
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="search user">
+              <span class="input-group-prepend">
+              <span class="input-group-text">
+              <i class="icon-magnifier"></i>
+              </span>
+              </span>
+           </div>
+        </form>
+         <div class="chat px-2 mr-4 ml-2">
+             <div class="scrollable b-0">
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1"><b>John Doe</b>
+                      <small class="d-block mt-1">Typing . .</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1"><b>Andy brad</b>
+                      <small class="d-block mt-1">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>madison</b>
+                      <small class="d-block text-secondary mt-2">5 minutes ago</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar rounded-circle bg-primary" src="./assets/img/avatar2.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>johnah</b>
+                      <small class="d-block mt-1">online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Alice</b>
+                      <small class="d-block mt-2">Typing . .</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Manisur</b>
+                      <small class="d-block text-secondary mt-1">15 minutes ago</small>
+                   </h6>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Swaibu</b>
+                      <small class="d-block mt-2">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">2</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Keila</b>
+                      <small class="d-block mt-1">Online </small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">5</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Bobley</b>
+                      <small class="d-block mt-2">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">2</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Dan</b>
+                      <small class="d-block mt-1">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">7</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>David</b>
+                      <small class="d-block mt-2">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">2</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Tomson</b>
+                      <small class="d-block mt-1">Online</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">4</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Halimah</b>
+                      <small class="d-block text-secondary mt-2">2 days ago</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">2</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+                <div class="d-flex py-3">
+                   <div class="mr-3"><img class="avatar" src="./assets/img/avatar1.svg"></div>
+                   <h6 class="flex-grow-1">
+                      <b>Dana</b>
+                      <small class="d-block text-secondary mt-2">3 days ago</small>
+                   </h6>
+                   <span class="ml-2">
+                      <p class="badge badge-primary badge-pill text-white float-left mr-2">1</p>
+                   </span>
+                </div>
+                <!-- end of user-box -->
+             </div>
+          </div>
+       </div>
+    </li>
+    <!--[ End Chat ]-->
+    <li class="nav-item dropdown px-3 mt-3 ">
+       <a class="nav-link d-flex" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <h6 class="mt-1 ml-2">Rumbiiha</h6>
+        <i class="fas fa-user-circle fa-2x px-2"></i>
+       </a>
+       <div class="account dropdown-menu  shadow-sm position-absolute" aria-labelledby="navbarDropdown">
+          <div class="d-flex text-white bg-primary ">
+             <div class="p-1 m-2"><img class="avatar rounded-circle bg-white" src="./assets/img/avatar3.svg"></div>
+             <div class="flex-grow-1">
+                <h5>Admin</h5>
+             </div>
+             <div class="mr-3 mt-2 log"><i class="icon-power"></i></div>
+          </div>
+          <a class="dropdown-item my-2" href="#"><i class="icon-user mx-2"></i>Profile</a>
+          <a class="dropdown-item my-2" href="#"><i class="icon-bubbles mx-2"></i>Messages</a>
+          <a class="dropdown-item my-2" href="#"><i class="icon-lock-open mx-2"></i>Lock screen</a>
+       </div>
+    </li>
+ </ul>
+ <!--[ End of sideber-left ]-->
+   <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
- 
    <div class="collapse navbar-collapse " id="navbarCollapse">
      <ul class=" navbar-nav mr-auto sidenav bg-white shadow-sm pl-2 flex-column position-absolute fixed-top w-auto" id="navAccordion">
       <li class="nav-item active">
-         <a class="nav-link" href="{{root}}/dashboard" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
+         <a class="nav-link" href="{{root}}/dashboard.html" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
          </li>
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem1" aria-controls="SubItem1" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Components"><i class="fas fa-layer-group"></i><span class="pl-3 title">Components</span></a>
          <ul class="nav-second-level collapse " id="SubItem1" data-parent="#navAccordion">
-     <li><a class="nav-link" href="{{root}}/alerts"><span class="nav-link-text "><span class="dot-icon px-1"></span>Alerts</span></a></li>
-     <li><a class="nav-link" href="{{root}}/buttons"><span class="nav-link-text "><span class="dot-icon px-1"></span>Buttons</span></a></li>
+     <li><a class="nav-link" href="{{root}}/alerts.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Alerts</span></a></li>
+     <li><a class="nav-link" href="{{root}}/buttons.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Buttons</span></a></li>
          
-             <li><a class="nav-link" href="{{root}}/badges"><span class="nav-link-text "><span class="dot-icon px-1"></span>badges</span></a></li>
-         <li><a class="nav-link" href="{{root}}/cards"><span class="nav-link-text "><span class="dot-icon px-1"></span>Cards</span></a></li>
-         <li><a class="nav-link" href="{{root}}/carousel"><span class="nav-link-text "><span class="dot-icon px-1"></span>carousel</span></a></li>
-             <li><a class="nav-link" href="{{root}}/collapse"><span class="nav-link-text "><span class="dot-icon px-1"></span>collapse</span></a></li>
-             <li><a class="nav-link" href="{{root}}/dialog"><span class="nav-link-text "><span class="dot-icon px-1"></span>dialog</span></a></li>
-         <li><a class="nav-link" href="{{root}}/groups"><span class="nav-link-text "><span class="dot-icon px-1"></span>groups</span></a></li>
-         <li><a class="nav-link" href="{{root}}/navs"><span class="nav-link-text "><span class="dot-icon px-1"></span>Navs</span></a></li>
-         <li><a class="nav-link" href="{{root}}/pagination"><span class="nav-link-text "><span class="dot-icon px-1"></span>pagination</span></a></li>
-         <li><a class="nav-link" href="{{root}}/progress"><span class="nav-link-text "><span class="dot-icon px-1"></span>Progress bars</span></a></li>
-         <li><a class="nav-link" href="{{root}}/scrollspy"><span class="nav-link-text "><span class="dot-icon px-1"></span>scrollspy</span></a></li>
-             <li><a class="nav-link" href="{{root}}/spinners"><span class="nav-link-text "><span class="dot-icon px-1"></span>Spinners</span></a></li>
-             <li><a class="nav-link" href="{{root}}/typography"><span class="nav-link-text "><span class="dot-icon px-1"></span>typography</span></a></li>
+             <li><a class="nav-link" href="{{root}}/badges.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>badges</span></a></li>
+         <li><a class="nav-link" href="{{root}}/cards.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Cards</span></a></li>
+         <li><a class="nav-link" href="{{root}}/carousel.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>carousel</span></a></li>
+             <li><a class="nav-link" href="{{root}}/collapse.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>collapse</span></a></li>
+             <li><a class="nav-link" href="{{root}}/dialog.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>dialog</span></a></li>
+         <li><a class="nav-link" href="{{root}}/groups.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>groups</span></a></li>
+         <li><a class="nav-link" href="{{root}}/navs.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Navs</span></a></li>
+         <li><a class="nav-link" href="{{root}}/pagination.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>pagination</span></a></li>
+         <li><a class="nav-link" href="{{root}}/progress.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Progress bars</span></a></li>
+         <li><a class="nav-link" href="{{root}}/scrollspy.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>scrollspy</span></a></li>
+             <li><a class="nav-link" href="{{root}}/spinners.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Spinners</span></a></li>
+             <li><a class="nav-link" href="{{root}}/typography.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>typography</span></a></li>
          </ul>
      </li>
  <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem30" aria-controls="SubItem30" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Charts"><i class="fas fa-wrench"></i><span class="pl-3 title">Utilities</span></a>
          <ul class="nav-second-level collapse " id="SubItem30" data-parent="#navAccordion">
-         <li><a class="nav-link" href="{{root}}/grid"><span class="nav-link-text "><span class="dot-icon px-1"></span>Grid</span></a></li>
-         <li><a class="nav-link" href="{{root}}/flexbox"><span class="nav-link-text "><span class="dot-icon px-1"></span>B4 flex</span></a></li>
+         <li><a class="nav-link" href="{{root}}/grid.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Grid</span></a></li>
+         <li><a class="nav-link" href="{{root}}/flexbox.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>B4 flex</span></a></li>
  </ul>
  </li>
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem2" aria-controls="SubItem2" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Forms"><i class="fas fa-file-alt"></i><span class="pl-3 title">Forms</span></a>
          <ul class="nav-second-level collapse " id="SubItem2" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}/basic_forms"><span class="nav-link-text "><span class="dot-icon px-1"></span>Basic forms</span></a></li>
-             <li><a class="nav-link" href="{{root}}/iconic_form"><span class="nav-link-text "><span class="dot-icon px-1"></span>iconic forms</span></a></li>
-             <li><a class="nav-link" href="{{root}}/masked_input"><span class="nav-link-text "><span class="dot-icon px-1"></span>Masked input</span></a></li>
-             <li><a class="nav-link" href="{{root}}/text_editors"><span class="nav-link-text "><span class="dot-icon px-1"></span>Text Editors</span></a></li>
+             <li><a class="nav-link" href="{{root}}/basic_forms.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Basic forms</span></a></li>
+             <li><a class="nav-link" href="{{root}}/iconic_form.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>iconic forms</span></a></li>
+             <li><a class="nav-link" href="{{root}}/masked_input.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Masked input</span></a></li>
+             <li><a class="nav-link" href="{{root}}/text_editors.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Text Editors</span></a></li>
          </ul>
      </li>
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem3" aria-controls="SubItem3" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Charts"><i class="fas fa-chart-pie"></i><span class="pl-3 title">Charts</span></a>
          <ul class="nav-second-level collapse " id="SubItem3" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}/chartjs"><span class="nav-link-text "><span class="dot-icon px-1"></span>chartjs</span></a></li>
-             <li><a class="nav-link" href="{{root}}/sparkline"><span class="nav-link-text "><span class="dot-icon px-1"></span>sparkline</span></a></li>
+             <li><a class="nav-link" href="{{root}}/chartjs.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>chartjs</span></a></li>
+             <li><a class="nav-link" href="{{root}}/sparkline.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>sparkline</span></a></li>
          </ul>
      </li>
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem4" aria-controls="SubItem4" aria-expanded="false">
@@ -70,34 +259,24 @@
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem5" aria-controls="SubItem5" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Alerts plugins"><i class="far fa-comment-alt"></i><span class="pl-3 title">Notifications</span></a>
          <ul class="nav-second-level collapse " id="SubItem5" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}/sweet_alert"><span class="nav-link-text "><span class="dot-icon px-1"></span>Sweet alert</span></a></li>
-             <li><a class="nav-link" href="{{root}}/toastr"><span class="nav-link-text "><span class="dot-icon px-1"></span>Toastr</span></a></li>
+             <li><a class="nav-link" href="{{root}}/sweet_alert.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Sweet alert</span></a></li>
+             <li><a class="nav-link" href="{{root}}/toastr.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Toastr</span></a></li>
          </ul>
      </li>
  <li class="nav-item ">
-         <a class="nav-link" href="{{root}}/chat" data-toggle="tooltip" title="chat"><i class="fas fa-comment-dots"></i><span class="pl-3 title">Chat app</span></a>
+         <a class="nav-link" href="{{root}}/chat.html" data-toggle="tooltip" title="chat"><i class="fas fa-comment-dots"></i><span class="pl-3 title">Chat app</span></a>
      </li>
      <li class="nav-item" id="hasSubItems" data-toggle="collapse" data-target="#SubItem7" aria-controls="SubItem7" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Pages"><i class="far fa-file"></i><span class="pl-3 title">Pages</span></a>
          <ul class="nav-second-level collapse " id="SubItem7" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}/login"><span class="nav-link-text "><span class="dot-icon px-1"></span>Login page</span></a></li>
-             <li><a class="nav-link" href="{{root}}/contact"><span class="nav-link-text "><span class="dot-icon px-1"></span>profile Page</span></a></li>
-             <li><a class="nav-link" href="{{root}}/pricing"><span class="nav-link-text "><span class="dot-icon px-1"></span>Pricing Tables</span></a></li>
-             <li><a class="nav-link" href="http://localhost/solar/index.php?login"><span class="nav-link-text "><span class="dot-icon px-1"></span>Contact us</span></a></li>
-             <li><a class="nav-link" href="{{root}}/contact"><span class="nav-link-text "><span class="dot-icon px-1"></span>404 page</span></a></li>
-             <li><a class="nav-link" href="{{root}}/contact"><span class="nav-link-text "><span class="dot-icon px-1"></span>Reciept</span></a></li>
+             <li><a class="nav-link" href="{{root}}/login.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Login page</span></a></li>
+             <li><a class="nav-link" href="{{root}}/contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>profile Page</span></a></li>
+             <li><a class="nav-link" href="{{root}}/pricing.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Pricing Tables</span></a></li>
+             <li><a class="nav-link" href="http://localhost/solar/index.php?login.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Contact us</span></a></li>
+             <li><a class="nav-link" href="{{root}}/contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>404 page</span></a></li>
+             <li><a class="nav-link" href="{{root}}/contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Reciept</span></a></li>
          </ul>
      </li>
      </ul>
-     <div class="d-flex ml-auto">
-        <div class="chat pr-4">
-            <i class="fas fa-comment fa-2x"></i>
-            <span class="badge badge-primary badge-pill ml-n3">5</span>
-        </div>
-        <div class="profile d-flex">
-            <h6 class="mt-1 ml-2">Rumbiiha</h6>
-            <i class="fas fa-user-circle fa-2x px-2"></i>
-        </div>
-    </div>
    </div>
  </nav>
