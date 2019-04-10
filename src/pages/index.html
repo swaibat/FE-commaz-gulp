@@ -2,61 +2,247 @@
     <!--[Start of  chartjs]-->
     <div class="col-lg-8">
             <div class="card my-3 mt-3">
-                <div class="card-header  bg-white b-0">
-                    Radar
-                    <div class="btn-group float-right text-white">      
-                        <button type="button" class="btn btn-sm btn-primary " data-target="#user-table" aria-expanded="true" aria-controls="user-table"><span>&#8213;</span></button>
-                        <button type="button" class="btn btn-sm btn-primary"><span>&#10006;</span> </button>
-                    </div>
-                </div>
-                <!--c-head-->
-                <div id="l-chart" class="card-body">
-                    <div class="wrapper">
-                        <canvas id="lineChartExample"></canvas>
-                    </div>
-                </div>
+                    <canvas id="myChart" class="w-100"  height="200"></canvas>
             </div>
             <div class="row">
             <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card stat-card">
-                        <div class="d-flex p-0">
-                            <div class="counter-stat"><i class="text-primary icon-people icons"></i></div>
-                            <div class="p-1 flex-fill">
-                                <div class="data-info">
-                                    <h6 class="mb-3 ">All-User</h6>
-                                    <div class="counter-value ml-3 text-primary">300</div>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane show active" id="primary" role="tabpanel" aria-labelledby="primary-tab">
+                                    <div class="card card1 shadow-sm">
+                                        <div class="card-header bg-primary pt-1 pb-1">
+                                            <p class="text-white">ALL USERS <small class="float-right">Daily stats</small></p>
+                                        </div>
+                    
+                                        <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                            <div class="mt-1 ml-2 rounded-circle alert-primary text-primary "><i class="far fa-image "></i></div>
+                                            <div class="pb-4 px-3">
+                                                <b class="d-block mb-n2 counter-value">$200</b>
+                                                <small class="text-success ">+54.34%</small>
+                                            </div>
+                                            <div class="chart py-2  flex-fill">
+                                                <div class="pl-1">
+                                                    <canvas id="myChartB" class="w-100" height="50"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="warning" role="tabpanel" aria-labelledby="warning-tab">
+                                    <div class="card card1 shadow-sm">
+                                        <div class="card-header bg-warning pt-1 pb-1">
+                                            <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                        </div>
+                    
+                                        <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                            <div class="icon3 mt-1  ml-2 rounded-circle alert-warning text-warning "><i class="far fa-image rounded-circle"></i></div>
+                                            <div class="pb-4 px-3">
+                                                <b class="d-block mb-n2 counter-value">$120</b>
+                                                <small class="text-warning ">+48.34%</small>
+                                            </div>
+                                            <div class="chart py-2  flex-fill">
+                                                <div class="pl-1">
+                                                    <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="danger" role="tabpanel" aria-labelledby="danger-tab">
+                                    <div class="card card1 shadow-sm">
+                                        <div class="card-header bg-danger pt-1 pb-1">
+                                            <p class="text-white">ALL USERS <small class="float-right">Monthly stats</small></p>
+                                        </div>
+                    
+                                        <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                            <div class="icon3 mt-1  ml-2 rounded-circle alert-danger text-danger "><i class="far fa-image rounded-circle alert-danger"></i></div>
+                                            <div class="pb-4 px-3">
+                                                <b class="d-block counter-value">$20</b>
+                                                <small class="text-danger ">+24.34%</small>
+                                            </div>
+                                            <div class="chart py-2  flex-fill">
+                                                <div class="pl-1">
+                                                    <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="footer-navs float-right">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="primary-tab" data-toggle="pill" href="#primary" role="tab" aria-controls="primary" aria-selected="true">D<span>aily</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="warning-tab" data-toggle="pill" href="#warning" role="tab" aria-controls="warning" aria-selected="false">W<span>eekly</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="danger-tab" data-toggle="pill" href="#danger" role="tab" aria-controls="danger" aria-selected="false">M<span>onthly</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                <!-- end of card -->
                 <div class="col-md-6 col-lg-4 mb-3">
-                    <div class="card stat-card">
-                        <div class="d-flex p-0">
-                            <div class="counter-stat"><i class="text-danger icons icon-basket-loaded"></i></div>
-                            <div class="p-1 flex-fill">
-                                <div class="data-info">
-                                    <h6 class="mb-3 ">Sales</h6>
-                                    <div class="counter-value ml-3 text-danger">300</div>
+                
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane" id="primary1" role="tabpanel" aria-labelledby="primary1-tab">
+                                <div class="card card1 shadow-sm">
+                                    <div class="card-header bg-primary pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Daily stats</small></p>
+                                    </div>
+                
+                                    <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                        <div class="mt-1 ml-2 rounded-circle alert-primary text-primary "><i class="far fa-image "></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block mb-n2 counter-value">$200</b>
+                                            <small class="text-success ">+54.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartB" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" id="warning1" role="tabpanel" aria-labelledby="warning1-tab">
+                                <div class="card card1 shadow-sm">
+                                    <div class="card-header bg-warning pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                    </div>
+                
+                                    <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                        <div class="icon3 mt-1  ml-2 rounded-circle alert-warning text-warning "><i class="far fa-image rounded-circle"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block mb-n2 counter-value">$120</b>
+                                            <small class="text-warning ">+48.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="danger1" role="tabpanel" aria-labelledby="danger1-tab">
+                                <div class="card card1 shadow-sm">
+                                    <div class="card-header bg-danger pt-1 pb-1">
+                                        <p class="text-white">ALL USERS <small class="float-right">Monthly stats</small></p>
+                                    </div>
+                
+                                    <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                        <div class="icon3 mt-1  ml-2 rounded-circle alert-danger text-danger "><i class="far fa-image rounded-circle alert-danger"></i></div>
+                                        <div class="pb-4 px-3">
+                                            <b class="d-block counter-value">$20</b>
+                                            <small class="text-danger ">+24.34%</small>
+                                        </div>
+                                        <div class="chart py-2  flex-fill">
+                                            <div class="pl-1">
+                                                <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-navs float-right">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link " id="primary1-tab" data-toggle="pill" href="#primary1" role="tab" aria-controls="primary1" aria-selected="true">D<span>aily</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="warning1-tab" data-toggle="pill" href="#warning1" role="tab" aria-controls="warning1" aria-selected="false">W<span>eekly</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="danger1-tab" data-toggle="pill" href="#danger1" role="tab" aria-controls="danger1" aria-selected="false">M<span>onthly</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            <!-- end of card -->
+            <div class="col-md-6 col-lg-4 mb-3">
+                
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane show " id="primary2" role="tabpanel" aria-labelledby="primary2-tab">
+                            <div class="card card1 shadow-sm">
+                                <div class="card-header bg-primary pt-1 pb-1">
+                                    <p class="text-white">ALL USERS <small class="float-right">Daily stats</small></p>
+                                </div>
+            
+                                <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                    <div class="mt-1 ml-2 rounded-circle alert-primary text-primary "><i class="far fa-image "></i></div>
+                                    <div class="pb-4 px-3">
+                                        <b class="d-block mb-n2 counter-value">$200</b>
+                                        <small class="text-success ">+54.34%</small>
+                                    </div>
+                                    <div class="chart py-2  flex-fill">
+                                        <div class="pl-1">
+                                            <canvas id="myChartB" class="w-100" height="50"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="warning2" role="tabpanel" aria-labelledby="warning2-tab">
+                            <div class="card card1 shadow-sm">
+                                <div class="card-header bg-warning pt-1 pb-1">
+                                    <p class="text-white">ALL USERS <small class="float-right">Weekly stats</small></p>
+                                </div>
+            
+                                <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                    <div class="icon3 mt-1  ml-2 rounded-circle alert-warning text-warning "><i class="far fa-image rounded-circle"></i></div>
+                                    <div class="pb-4 px-3">
+                                        <b class="d-block mb-n2 counter-value">$120</b>
+                                        <small class="text-warning ">+48.34%</small>
+                                    </div>
+                                    <div class="chart py-2  flex-fill">
+                                        <div class="pl-1">
+                                            <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane active" id="danger2" role="tabpanel" aria-labelledby="danger2-tab">
+                            <div class="card card1 shadow-sm">
+                                <div class="card-header bg-danger pt-1 pb-1">
+                                    <p class="text-white">ALL USERS <small class="float-right">Monthly stats</small></p>
+                                </div>
+            
+                                <div class="card-body p-1 bg-white mt-n3 mx-n1 shadow-sm d-flex flex-row">
+                                    <div class="icon3 mt-1  ml-2 rounded-circle alert-danger text-danger "><i class="far fa-image rounded-circle alert-danger"></i></div>
+                                    <div class="pb-4 px-3">
+                                        <b class="d-block counter-value">$20</b>
+                                        <small class="text-danger ">+24.34%</small>
+                                    </div>
+                                    <div class="chart py-2  flex-fill">
+                                        <div class="pl-1">
+                                            <canvas id="myChartC" class="w-100" height="50"></canvas>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4  mb-3">
-                    <div class="card stat-card">
-                        <div class="d-flex p-0">
-                            <div class="counter-stat"><i class="text-info icon-wallet icons "></i></div>
-                            <div class="p-1 flex-fill">
-                                <div class="data-info">
-                                    <h6 class="mb-3 ">Earnings</h6>
-                                    <div class="counter-value ml-3 text-info">300</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="footer-navs float-right">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link " id="primary2-tab" data-toggle="pill" href="#primary2" role="tab" aria-controls="primary2" aria-selected="true">D<span>aily</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="warning2-tab" data-toggle="pill" href="#warning2" role="tab" aria-controls="warning2" aria-selected="false">W<span>eekly</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" id="danger2-tab" data-toggle="pill" href="#danger2" role="tab" aria-controls="danger2" aria-selected="false">M<span>onthly</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        <!-- end of card -->
 
                 <!--[Start of recent users table ]-->
                     <div class="card my-3 ">

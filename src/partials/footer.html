@@ -1,0 +1,128 @@
+
+<footer class="footer bg-white position-absolute  w-100">
+        <div class="container">
+            <div class="text-center">
+                <span>Coded by <a href="https://bayla.org">Sassybootstrap</a>, 2019</span>
+            </div>
+        </div>
+    </footer> 
+    <a class="btn  btn-primary float-right position-fixed" data-toggle="collapse" href="#customizer" role="button" aria-expanded="false" aria-controls="customizer">
+        <i class="fas fa-cog fa-spin"></i>
+    </a>
+    <div class="collapse slide-left" id="customizer">
+        <div class="card card-body">
+            <ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Layout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Colors</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <!-- tab start -->
+                        <form class="mx-2 mt-4">
+                            <div class="form-group">
+                                <label for="sidebar-position">Sidebar postion</label>
+                                <select id="sidebar-position" name="sidebar-position" class="form-control form-control-sm">
+                                    <option value="">Default</option>
+                                    <option value="rtl">Rtl layout</option>
+                                    <option value="mini">mini Layout</option>
+                                    <option value="top-nav">top layout</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sidebar-theme">Sidebar theme</label>
+                                <select id="sidebar-theme" name="sidebar-theme" class="form-control form-control-sm">
+                                    <option value="sidebar-default">Default</option>
+                                    <option value="sidebar-inverse">Inverse</option>
+                                    <option value="sidebar-colored">Colored</option>
+                                    <option value="sidebar-colored-inverse">Colored-Inverse</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sidebar-header">Sidebar header cover</label>
+                                <select id="sidebar-header" name="sidebar-header" class="form-control form-control-sm">
+                                    <option value="header-cover">Image cover</option>
+                                    <option value="">Color cover</option>
+                                </select>
+                            </div>
+                        </form>
+            
+                    </div>
+                    <!-- end of tab -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <form>
+                            <div class="pt-3 ">
+                                <div class="form-group">
+                                    <label>Theme color</label>
+                                    <input type='text' class="form-control" value="#000" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end of tab -->
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <form>
+                            <div class="pt-3 ">
+                                    <!-- <div class="form-group d-flex">
+                                        <label>Theme-color</label>
+                                        <input type='color' class="form-control form-control-sm float-right" value="#000" />
+                                    </div> -->
+                                    <div class="form-group d-flex">
+                                        <label>Background-color</label>
+                                        <input id="localData" type='color' class="form-control form-control-sm float-right" value="#d3e9eb" />
+                                    </div>
+                                    <hr>
+                                <div class="form-group d-flex">
+                                    <label>Primary-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#007bff" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Secondary-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#6c757d" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Success-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#28a745" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Info-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#17a2b8" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>warning-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#ffc107" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Danger-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#dc3545" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Light-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#f8f9fa" />
+                                </div>
+                                <div class="form-group d-flex">
+                                    <label>Dark-color</label>
+                                    <input type='color' class="form-control form-control-sm float-right" value="#000" />
+                                </div>
+                                <button id="saveData" type="button" class="btn btn-primary btn-sm"> save </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end of tab -->
+                </div>
+         </div>
+    </div>
+        
+        <script src="{{root}}assets/vendors/jquery/jquery.min.js"></script>
+        <script src="{{root}}assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="{{root}}/plugins/color-picker/jquery-asColor.js"></script>
+        <script src="{{root}}assets/plugins/color-picker/jquery-asGradient.js"></script>
+        <script src="{{root}}assets/plugins/color-picker/jquery-asColorPicker.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+        <script src="{{root}}assets/js/sassyadmin.min.js"></script>

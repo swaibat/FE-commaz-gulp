@@ -10,10 +10,11 @@
     .navbar-nav{
         .dropdown{
             .carousel-fade {
-                width: 3rem;
+                width: 3.5rem;
                 .btn{
                     width: 2.5rem;
                     height:2.5rem;
+                    margin-left:$spacer/2;
                     .badge{
                         top: .41rem;
                         margin-left: .8rem;
@@ -29,7 +30,7 @@
             
             height: 95vh;
             top:3.7rem !important;
-            @include media-breakpoint-up(lg) {width: 11rem !important;}
+            @include media-breakpoint-up(lg) {width: $spacer * 11 !important; background: var(--blue)}
         }
     }
 }
