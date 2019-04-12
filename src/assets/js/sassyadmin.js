@@ -1,18 +1,18 @@
+//Avatar Letter script
 (function(w, d){
 
 
-  function LetterAvatar (name, size, colourIndex) {
+  function LetterAvatar (name, size) {
 
       name  = name || '';
       size  = size || 60;
 
       var colours = [
-              "#1abc9c", "#2ecc71", "#3498db", "#9b59b6", "#34495e", "#16a085", "#27ae60", "#2980b9", "#8e44ad", "#2c3e50", 
-              "#f1c40f", "#e67e22", "#e74c3c", "#ecf0f1", "#95a5a6", "#f39c12", "#d35400", "#c0392b", "#bdc3c7", "#7f8c8d"
-          ],
-
+        "orange", "blue", "teal", "green", "teal", "red", "purple", "black", "violet", "#2c3e50", 
+        "#f1c40f", "#e67e22", "#e74c3c", "#ecf0f1", "#95a5a6", "#f39c12", "#d35400", "#c0392b", "#bdc3c7", "#7f8c8d"
+    ],
           nameSplit = String(name).toUpperCase().split(' '),
-          initials, colourIndex, canvas, context, dataURI;
+          initials, charIndex, colourIndex, canvas, context, dataURI;
 
 
       if (nameSplit.length == 1) {
@@ -25,7 +25,8 @@
           size = (size * w.devicePixelRatio);
       }
           
-      //colourIndex   = charIndex % 20;
+      charIndex     = (initials == '?' ? 72 : initials.charCodeAt(0)) - 64;
+      colourIndex   = charIndex % 20;
       canvas        = d.createElement('canvas');
       canvas.width  = size;
       canvas.height = size;
@@ -48,7 +49,7 @@
 
       Array.prototype.forEach.call(d.querySelectorAll('img[avatar]'), function(img, name) {
           name = img.getAttribute('avatar');
-          img.src = LetterAvatar(name, img.getAttribute('width'), img.getAttribute('tag'));
+          img.src = LetterAvatar(name, img.getAttribute('width'));
           img.removeAttribute('avatar');
           img.setAttribute('alt', name);
       });
@@ -80,8 +81,7 @@
       });
   }
 
-})(window, document); 
-
+})(window, document);
 
 
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -125,4 +125,104 @@ var chart = new Chart(ctx, {
       ]
     }
   }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+	
+  var preloadbg = document.createElement("img");
+  preloadbg.src = "";
+  
+	$("#searchfield").focus(function(){
+		if($(this).val() == "Search contacts..."){
+			$(this).val("");
+		}
+	});
+	$("#searchfield").focusout(function(){
+		if($(this).val() == ""){
+			$(this).val("Search contacts...");
+			
+		}
+	});
+	
+	$("#sendmessage input").focus(function(){
+		if($(this).val() == "Send message..."){
+			$(this).val("");
+		}
+	});
+	$("#sendmessage input").focusout(function(){
+		if($(this).val() == ""){
+			$(this).val("Send message...");
+			
+		}
+	});
+		
+	
+	$(".friend").each(function(){		
+		$(this).click(function(){
+			var childOffset = $(this).offset();
+			var parentOffset = $(this).parent().parent().offset();
+			var childTop = childOffset.top - parentOffset.top;
+			var clone = $(this).find('img').eq(0).clone();
+			var top = childTop+12+"px";
+			
+			$(clone).css({'top': top}).addClass("floatingImg").appendTo("#chatbox");									
+			
+			setTimeout(function(){$("#profile p").addClass("animate");$("#profile").addClass("animate");}, 100);
+			setTimeout(function(){
+				$("#chat-messages").addClass("animate");
+				$('.cx, .cy').addClass('s1');
+				setTimeout(function(){$('.cx, .cy').addClass('s2');}, 100);
+				setTimeout(function(){$('.cx, .cy').addClass('s3');}, 200);			
+			}, 150);														
+			
+			$('.floatingImg').animate({
+				'width': "68px",
+				'left':'108px',
+				'top':'20px'
+			}, 200);
+			
+			var name = $(this).find("p strong").html();
+			var email = $(this).find("p span").html();														
+			$("#profile p").html(name);
+			$("#profile span").html(email);			
+			
+			$(".message").not(".right").find("img").attr("src", $(clone).attr("src"));									
+			$('#friendslist').fadeOut();
+			$('#chatview').fadeIn();
+		
+			
+			$('#close').unbind("click").click(function(){				
+				$("#chat-messages, #profile, #profile p").removeClass("animate");
+				$('.cx, .cy').removeClass("s1 s2 s3");
+				$('.floatingImg').animate({
+					'width': "40px",
+					'top':top,
+					'left': '12px'
+				}, 200, function(){$('.floatingImg').remove()});				
+				
+				setTimeout(function(){
+					$('#chatview').fadeOut();
+					$('#friendslist').fadeIn();				
+				}, 50);
+			});
+			
+		});
+	});			
 });

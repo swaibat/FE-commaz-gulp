@@ -5,29 +5,27 @@
      </a>
 
    <!-- start-nav right -->
-   <ul class="navbar-nav ml-auto flex-row order-1">
+   <ul class="navbar-nav ml-auto flex-row order-sm-0 order-lg-1 mt-3">
     <li class="nav-item dropdown navbar-right px-3">
        <div id="carouselExampleSlidesOnly" class="carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <a class="btn rounded-circle bg-light mt-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="carousel-item active" href="./group.html">
+                  <a class="btn rounded-circle bg-light " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="badge  badge-primary badge-pill mt-1"><i class="fas fa-comment"></i></span>
+                  </a>
+               </a>
+                  <a class="btn carousel-item rounded-circle bg-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      <span class="badge badge-primary badge-pill mt-1"><i class="fas fa-comment"></i></span>
                   </a>
-              </div>
-              <div class="carousel-item">
-                  <a class="btn rounded-circle bg-info mt-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <span class="badge badge-primary badge-pill mt-1"><i class="fas fa-comment"></i></span>
-                  </a>
-              </div>
-              <div class="carousel-item">
-                  <a class="btn rounded-circle bg-primary mt-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="carousel-item" href="./">
+                  <a class="btn rounded-circle bg-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      <span class="badge badge-danger text-white badge-pill mt-1"><i class="fas fa-envelope"></i></span>
                   </a>
               </div>
             </div>
           </div>
 
-       <div class="dropdown-menu shadow-lg animated slideInRight mr-2 position-absolute" aria-labelledby="navbarDropdown">
+       <div class="dropdown-menu shadow-lg slideInRight mr-2 position-absolute" aria-labelledby="navbarDropdown">
          <form class="pb-3" action="POST">
            <div class="input-group">
               <input type="text" class="form-control" placeholder="search user">
@@ -207,10 +205,9 @@
        </div>
     </li>
     <!--[ End Chat ]-->
-    <li class="nav-item dropdown px-3 mt-3 ">
-       <a class="nav-link d-flex" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <h6 class="mt-1 ml-2">Rumbiiha</h6>
-        <i class="fas fa-user-circle fa-2x px-2"></i>
+    <li class="nav-item dropdown px-3 mt-n2">
+       <a class="nav-link"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fas fa-user-circle px-2"></i>
        </a>
        <div class="account dropdown-menu  shadow-sm position-absolute" aria-labelledby="navbarDropdown">
           <div class="d-flex text-white bg-primary ">
@@ -233,79 +230,77 @@
    <div class="collapse navbar-collapse " id="navbarCollapse">
      <ul class=" navbar-nav mr-auto sidenav bg-white shadow-sm pl-2 flex-column position-absolute fixed-top w-auto" id="navAccordion">
       <li class="nav-item pt-2 active">
-         <a class="nav-link" href="{{root}}dashboard.html" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
+         <a class="nav-link" href="{{root}}" data-toggle="tooltip" title="dashboard"><i class="fas fa-house-damage"></i><span class="pl-3 title">dashboard</span></a>
          </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem1" aria-controls="SubItem1" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Components"><i class="fas fa-layer-group"></i><span class="pl-3 title">Components</span></a>
          <ul class="nav-second-level collapse " id="SubItem1" data-parent="#navAccordion">
-     <li><a class="nav-link" href="{{root}}alerts.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Alerts</span></a></li>
-     <li><a class="nav-link" href="{{root}}buttons.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Buttons</span></a></li>
-         
-             <li><a class="nav-link" href="{{root}}badges.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>badges</span></a></li>
-         <li><a class="nav-link" href="{{root}}cards.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Cards</span></a></li>
-         <li><a class="nav-link" href="{{root}}carousel.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>carousel</span></a></li>
-             <li><a class="nav-link" href="{{root}}collapse.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>collapse</span></a></li>
-             <li><a class="nav-link" href="{{root}}dialog.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>dialog</span></a></li>
-         <li><a class="nav-link" href="{{root}}groups.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>groups</span></a></li>
-         <li><a class="nav-link" href="{{root}}navs.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Navs</span></a></li>
-         <li><a class="nav-link" href="{{root}}pagination.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>pagination</span></a></li>
-         <li><a class="nav-link" href="{{root}}progress.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Progress bars</span></a></li>
-         <li><a class="nav-link" href="{{root}}scrollspy.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>scrollspy</span></a></li>
-             <li><a class="nav-link" href="{{root}}spinners.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Spinners</span></a></li>
-             <li><a class="nav-link" href="{{root}}typography.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>typography</span></a></li>
+     <li><a class="nav-link" href="{{root}}alerts.html"><span class="nav-link-text "><span class="pr-2"></span>Alerts</span></a></li>
+     <li><a class="nav-link" href="{{root}}buttons.html"><span class="nav-link-text "><span class="pr-2"></span>Buttons</span></a></li>
+          <li><a class="nav-link" href="{{root}}badges.html"><span class="nav-link-text "><span class="pr-2"></span>badges</span></a></li>
+         <li><a class="nav-link" href="{{root}}cards.html"><span class="nav-link-text "><span class="pr-2"></span>Cards</span></a></li>
+         <li><a class="nav-link" href="{{root}}carousel.html"><span class="nav-link-text "><span class="pr-2"></span>carousel</span></a></li>
+             <li><a class="nav-link" href="{{root}}collapse.html"><span class="nav-link-text "><span class="pr-2"></span>collapse</span></a></li>
+             <li><a class="nav-link" href="{{root}}dialog.html"><span class="nav-link-text "><span class="pr-2"></span>dialog</span></a></li>
+         <li><a class="nav-link" href="{{root}}navs.html"><span class="nav-link-text "><span class="pr-2"></span>Navs</span></a></li>
+         <li><a class="nav-link" href="{{root}}pagination.html"><span class="nav-link-text "><span class="pr-2"></span>pagination</span></a></li>
+         <li><a class="nav-link" href="{{root}}progress.html"><span class="nav-link-text "><span class="pr-2"></span>Progress bars</span></a></li>
+         <li><a class="nav-link" href="{{root}}scrollspy.html"><span class="nav-link-text "><span class="pr-2"></span>scrollspy</span></a></li>
+             <li><a class="nav-link" href="{{root}}spinners.html"><span class="nav-link-text "><span class="pr-2"></span>Spinners</span></a></li>
+             <li><a class="nav-link" href="{{root}}typography.html"><span class="nav-link-text "><span class="pr-2"></span>typography</span></a></li>
          </ul>
      </li>
  <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem30" aria-controls="SubItem30" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Charts"><i class="fas fa-wrench"></i><span class="pl-3 title">Utilities</span></a>
          <ul class="nav-second-level collapse " id="SubItem30" data-parent="#navAccordion">
-         <li><a class="nav-link" href="{{root}}grid.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Grid</span></a></li>
-         <li><a class="nav-link" href="{{root}}flexbox.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>B4 flex</span></a></li>
+         <li><a class="nav-link" href="{{root}}grid.html"><span class="nav-link-text "><span class="pr-2"></span>Grid</span></a></li>
+         <li><a class="nav-link" href="{{root}}flexbox.html"><span class="nav-link-text "><span class="pr-2"></span>B4 flex</span></a></li>
  </ul>
  </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem2" aria-controls="SubItem2" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Forms"><i class="fas fa-file-alt"></i><span class="pl-3 title">Forms</span></a>
          <ul class="nav-second-level collapse " id="SubItem2" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}basic_forms.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Basic forms</span></a></li>
-             <li><a class="nav-link" href="{{root}}iconic_form.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>iconic forms</span></a></li>
-             <li><a class="nav-link" href="{{root}}masked_input.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Masked input</span></a></li>
-             <li><a class="nav-link" href="{{root}}text_editors.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Text Editors</span></a></li>
+             <li><a class="nav-link" href="{{root}}basic_forms.html"><span class="nav-link-text "><span class="pr-2"></span>Basic forms</span></a></li>
+             <li><a class="nav-link" href="{{root}}iconic_form.html"><span class="nav-link-text "><span class="pr-2"></span>iconic forms</span></a></li>
+             <li><a class="nav-link" href="{{root}}masked_input.html"><span class="nav-link-text "><span class="pr-2"></span>Masked input</span></a></li>
+             <li><a class="nav-link" href="{{root}}text_editors.html"><span class="nav-link-text "><span class="pr-2"></span>Text Editors</span></a></li>
          </ul>
      </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem3" aria-controls="SubItem3" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Charts"><i class="fas fa-chart-pie"></i><span class="pl-3 title">Charts</span></a>
          <ul class="nav-second-level collapse " id="SubItem3" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}chartjs.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>chartjs</span></a></li>
-             <li><a class="nav-link" href="{{root}}sparkline.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>sparkline</span></a></li>
+             <li><a class="nav-link" href="{{root}}chartjs.html"><span class="nav-link-text "><span class="pr-2"></span>chartjs</span></a></li>
+             <li><a class="nav-link" href="{{root}}sparkline.html"><span class="nav-link-text "><span class="pr-2"></span>sparkline</span></a></li>
          </ul>
      </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem4" aria-controls="SubItem4" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Tables"><i class="fas fa-table"></i><span class="pl-3 title">Tables</span></a>
          <ul class="nav-second-level collapse " id="SubItem4" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}bootstrap_tables.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Basic Tables</span></a></li>
-             <li><a class="nav-link" href="{{root}}data_tables.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Data Tables</span></a></li>
+             <li><a class="nav-link" href="{{root}}bootstrap_tables.html"><span class="nav-link-text "><span class="pr-2"></span>Basic Tables</span></a></li>
+             <li><a class="nav-link" href="{{root}}data_tables.html"><span class="nav-link-text "><span class="pr-2"></span>Data Tables</span></a></li>
          </ul>
  </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem5" aria-controls="SubItem5" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Alerts plugins"><i class="far fa-comment-alt"></i><span class="pl-3 title">Notifications</span></a>
          <ul class="nav-second-level collapse " id="SubItem5" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}sweet_alert.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Sweet alert</span></a></li>
-             <li><a class="nav-link" href="{{root}}toastr.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Toastr</span></a></li>
+             <li><a class="nav-link" href="{{root}}sweet_alert.html"><span class="nav-link-text "><span class="pr-2"></span>Sweet alert</span></a></li>
+             <li><a class="nav-link" href="{{root}}toastr.html"><span class="nav-link-text "><span class="pr-2"></span>Toastr</span></a></li>
          </ul>
-     </li>
- <li class="nav-item ">
-         <a class="nav-link" href="{{root}}chat.html" data-toggle="tooltip" title="chat"><i class="fas fa-comment-dots"></i><span class="pl-3 title">Chat app</span></a>
      </li>
      <li class="nav-item py-1" id="hasSubItems" data-toggle="collapse" data-target="#SubItem7" aria-controls="SubItem7" aria-expanded="false">
          <a class="nav-link nav-link-collapse " href="#" data-toggle="tooltip" title="Pages"><i class="far fa-file"></i><span class="pl-3 title">Pages</span></a>
          <ul class="nav-second-level collapse " id="SubItem7" data-parent="#navAccordion">
-             <li><a class="nav-link" href="{{root}}login.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Login page</span></a></li>
-             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>profile Page</span></a></li>
-             <li><a class="nav-link" href="{{root}}pricing.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Pricing Tables</span></a></li>
-             <li><a class="nav-link" href="{{root}}login.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Contact us</span></a></li>
-             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>404 page</span></a></li>
-             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="dot-icon px-1"></span>Reciept</span></a></li>
+             <li><a class="nav-link" href="{{root}}login.html"><span class="nav-link-text "><span class="pr-2"></span>Login page</span></a></li>
+             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="pr-2"></span>profile Page</span></a></li>
+             <li><a class="nav-link" href="{{root}}pricing.html"><span class="nav-link-text "><span class="pr-2"></span>Pricing Tables</span></a></li>
+             <li><a class="nav-link" href="{{root}}login.html"><span class="nav-link-text "><span class="pr-2"></span>Contact us</span></a></li>
+             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="pr-2"></span>404 page</span></a></li>
+             <li><a class="nav-link" href="{{root}}contact.html"><span class="nav-link-text "><span class="pr-2"></span>Reciept</span></a></li>
          </ul>
      </li>
+      <li class="nav-item pt-2 ">
+         <a class="nav-link" href="{{root}}docs.html" data-toggle="tooltip" title="documentation"><i class="fas fa-house-damage"></i><span class="pl-3 title">Docs</span></a>
+      </li>
      </ul>
    </div>
  </nav>

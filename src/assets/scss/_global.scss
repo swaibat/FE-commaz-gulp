@@ -38,12 +38,15 @@ a {
   }
 }
 
+
 // Set container padding to match gutter width instead of default 15px
 .container,
 .container-fluid {
-  padding-left: 12rem;
+  padding-left:$spacer;
   max-width: 90rem;
-  padding-right: $spacer;
+  padding-right: ($spacer/2)*3;
+  @include media-breakpoint-up(lg) {padding-left: $spacer*13 !important;}
+  
 }
 
 .footer {
@@ -52,7 +55,13 @@ a {
   line-height: 3.5rem;
   background-color: #ccc;
   box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  &::before{
+    -webkit-clip-path: polygon(100% 67%, 85% 100%, 100% 100%);
+clip-path: polygon(100% 67%, 85% 100%, 100% 100%);
+background: #007bff;
+  }
 }
+
 .btn.btn-primary.float-right.position-fixed {
   top: 15rem;
   right: -1.5rem;
@@ -94,40 +103,18 @@ a {
   }
   
 }
-.collapse.show{
-  right: -7rem !important;
-}
-.collapsing {
-  transition: none !important;
-}
+// .collapse.show{
+//   right: -7rem !important;
+// }
+// .collapsing {
+//   transition: none !important;
+// }
 
 
 
 
-.slide-left {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
- @-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-}
+
+
 .card::before{
   background: #1C6EA4;
   -webkit-clip-path: polygon(43% 0, 52% 28%, 100% 26%, 100% 79%, 93% 100%, 0 100%, 0 0);
@@ -177,3 +164,15 @@ right: 1rem;
     }
   }
 }
+
+
+// animations
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-left {
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
