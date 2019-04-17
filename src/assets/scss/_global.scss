@@ -164,7 +164,27 @@ right: 1rem;
     }
   }
 }
-
+ .chat{
+   height: 38.5rem;
+   small{
+    font-size: 10px;
+    white-space: nowrap;
+    }
+    .justify-content-start{
+      .alert{
+        background: linear-gradient(120deg, #00D2FF, #007bff)
+      }
+    }
+    .justify-content-end{
+      .alert{
+        background:gainsboro
+      }
+    }
+  }
+  .p-2.rounded-circle.mx-2{
+    width: 15px;
+    height:15px;
+  }
 
 // animations
 .slide-fwd-center {
