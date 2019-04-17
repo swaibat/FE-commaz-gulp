@@ -12,5 +12,7 @@
 @import "node_modules/@fortawesome/fontawesome-free/scss/regular";
 
 // Import 
+@import "layouts/mini";
 @import "components";
 @import "navigation";
+@import "utilities/@keyframes";

@@ -68,11 +68,12 @@ function modules() {
   var bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
     .pipe(gulp.dest('./dist/assets/bootstrap/js'));
   // ChartJS
-  var chartJS = gulp.src('./node_modules/chart.js/dist/*.js')
-    .pipe(gulp.dest('./dist/assets/vendors/chart.js'));
+  var chartJS = gulp.src('./node_modules/chart.js/dist/*.min.js')
+    .pipe(gulp.dest('./dist/assets/vendors/chartjs/'));
   // fontawesome 
   var webfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
     .pipe(gulp.dest('./dist/assets/webfonts/'));
+
   // dataTables
   var dataTables = gulp.src([
       './node_modules/datatables.net/js/*.min.js',

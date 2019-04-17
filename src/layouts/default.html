@@ -10,20 +10,11 @@
     <link rel="stylesheet" href="{{root}}assets/css/sassyadmin.css">
 </head>
 
-<body>
-    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-
+<body class="mini">
     {{>navigation}}
     <main role="main" class="container">
         {{> body}}
     </main>
-
-    <script src="{{root}}assets/vendors/jquery/jquery.min.js"></script>
-    <script src="{{root}}assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="{{root}}assets/js/sassyadmin.min.js"></script>
-    <script id="__bs_script__">//<![CDATA[
-        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
-    //]]></script>
-</body>
+    {{> footer}}
+    </body>
 </html>

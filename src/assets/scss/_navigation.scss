@@ -1,19 +1,14 @@
-.navbar{
+nav{
     height: 3.5rem;
-    // .nav-brand{
-
-    // }
-    // button{
-
-    // }
-    
+    flex-wrap: nowrap !important;
     .navbar-nav{
         .dropdown{
             .carousel-fade {
-                width: 3rem;
+                width: 3.5rem;
                 .btn{
                     width: 2.5rem;
                     height:2.5rem;
+                    margin-left:$spacer/2;
                     .badge{
                         top: .41rem;
                         margin-left: .8rem;
@@ -22,14 +17,49 @@
                     }
                 }
             }
+            a{
+                .fa-user-circle {
+                    font-size: ($spacer/2)*5;
+                    color:gainsboro;
+                }
+            }
         }
     }
     #navbarCollapse{
         .sidenav{
-            
-            height: 95vh;
-            top:3.7rem !important;
-            @include media-breakpoint-up(lg) {width: 11rem !important;}
+            height: 82vh;
+            top:3.6rem !important;
+            @include media-breakpoint-up(lg) {width: $spacer * 11 !important;height: 95vh;}
+            #hasSubItems{
+                .nav-second-level{
+                    li{
+                        list-style: none;
+                        .nav-link{
+                            padding:.25rem;
+                            font-size: 13px;
+                            .nav-link-text{
+                                span{
+                                    &::before{
+                                        font-family: 'Font Awesome 5 Free';
+                                        content: "\f111";
+                                    }
+                                }
+                            }
+                        }
+                        .nav-link.active{
+                            .nav-link-text{
+                                span{
+                                    &::before{
+                                        font-family: 'Font Awesome 5 Free';
+                                        content: "\f058";
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
