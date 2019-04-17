@@ -4,6 +4,7 @@ git:
 node_js:
   - "node"
 install:       npm install
+before_install: cd dist
 script:
   - npm test
   - gulp
