@@ -26,7 +26,7 @@ const autoprefixer = require("gulp-autoprefixer"),
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: "./"
     },
     port: 3000
   });
