@@ -49,7 +49,7 @@ function html() {
         helpers: 'src/helpers/',
         data: 'src/data/'
     }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('./'))
 }
 // reset page 
 function htmlReset(done) {
