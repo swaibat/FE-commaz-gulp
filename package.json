@@ -2,7 +2,6 @@
   "name": "sassyadmin",
   "version": "1.0.0",
   "description": "",
-  "main": "Gulpfile.js",
   "scripts": {
     "start": "gulp"
   },
