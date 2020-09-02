@@ -1,10 +1,10 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "fe-comaz-gulp",
   "version": "1.0.0",
   "description": "A simple boilerplate for front-end web development - built with Gulp v4",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp watch",
+    "start": "node -r esm gulp",
     "build": "gulp",
     "clean": "gulp clean"
   },
@@ -37,7 +37,8 @@
     "eslint": "^7.8.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "gulp": "4.0.0",
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "6.0.0",
     "gulp-cache": "1.1.1",
     "gulp-clean-css": "^4.0.0",
