@@ -1,20 +1,8 @@
-.card{
-    .card-header{
-      max-height: 3rem;
-      .btn-group{
-        .btn-sm{
-          padding:0px 10px;
-          &:first-child {
-  
-          }
-        }
-      }
-    }
-  }
-
-// buttons styles
-.btn{
-    @include media-breakpoint-up(xs) { margin-bottom:$spacer;}
-}
-
-// buttons styles
+@import "./components/buttons";
+@import "./components/cards-item";
+@import "./components/elements";
+@import "./components/forms";
+@import "./components/items";
+@import "./components/lists";
+@import "./components/menu";
+@import "./components/plugin-styles";

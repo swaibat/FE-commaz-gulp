@@ -1,10 +1,72 @@
-# sassadminlite
-Project build with bootstrap 4.3.1 framework ,Gulp V 4.0.0 workflow and SASS
-## Code Status
-[![CodeFactor](https://www.codefactor.io/repository/github/swaibat/sassadminlite/badge)](https://www.codefactor.io/repository/github/swaibat/sassadminlite)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b3a71da90ef44a6c9d9c0f63ffc5ee63)](https://app.codacy.com/app/swaibat/sassadminlite?utm_source=github.com&utm_medium=referral&utm_content=swaibat/sassadminlite&utm_campaign=Badge_Grade_Dashboard)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/swaibat/sassadminlite/blob/master/LICENSE)
-[![npm version](https://img.shields.io/static/v1.svg?label=Gulp&message=V%204.0.0%20&color=orange)]()
-[![Build Status](https://img.shields.io/static/v1.svg?label=build&message=Passing&color=green)](https://travis-ci.com/swaibat/sassadminlite.svg?branch=master)
-[![code Status](https://img.shields.io/static/v1.svg?label=GPA&message=3.94/5&color=blue)](https://codebeat.co/projects/github-com-swaibat-sassadminlite-master/ratings)
+# Gulp Boilerplate [![Build Status](https://travis-ci.com/LucasWinkler/gulp-boilerplate.svg?token=6xPTYyj9yJazuMpzepqi&branch=master)](https://travis-ci.com/LucasWinkler/gulp-boilerplate)
 
+A simple boilerplate for front-end web development which uses [Gulp](https://gulpjs.com/) v4.
+
+This is my first time trying gulp so it won't be perfect. I just wanted to create a basic template to work off of with a file structure I liked.
+
+## Features
+
+- Live reloading
+- Cache busting
+- SCSS converted to css, auto prefixed and minified with sourcemaps)
+- Javascript concatenated into a single file, minified with sourcemaps and supports ES6)
+- Image minifying
+
+## Getting Started
+
+Follow these steps in order to get the website up and running locally on your machine.
+
+### Installation
+
+- `npm install` to install any dependencies
+- `npm start` or `gulp watch` to start a live reload session
+
+### Building
+
+- `npm run build` or `gulp` to build the application
+
+### Extras
+
+- `gulp` or `gulp build` to build the application
+- `gulp watch` to enable live reload
+- `gulp clean` to delete the build folder
+- `gulp styles` to run the style tasks
+- `gulp scripts` to run the script tasks
+- `gulp images` to run the image tasks
+- `gulp favicon` to run the favicon tasks
+
+## File Structure
+
+```bash
+├── app
+│   ├── images
+│   │
+│   ├── js
+│   │   ├── main.js
+│   │   │
+│   │   └── vendors
+│   │
+│   └── scss
+│       ├── abstracts
+│       │
+│       ├── base
+│       │
+│       ├── pages
+│       │
+│       └── main.scss
+│
+└── build
+    ├── images
+    │
+    ├── js
+    │   ├── app.min.js
+    │   │
+    │   └── vendors.min.js
+    │
+    └── css
+        └── styles.min.css
+```
+
+## Tips
+
+- You can use any file structure for your javascript and scss files. The one provided is an example.

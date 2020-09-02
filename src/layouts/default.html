@@ -1,20 +1,19 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    {{!— Required meta tags --}}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="{{root}}assets/css/sassyadmin.css">
-</head>
+	<head>
+		{{!— Required meta tags --}}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="{{root}}assets/css/sassyadmin.css" />
+	</head>
 
-<body class="mini">
-    {{>navigation}}
-    <main role="main" class="container">
-        {{> body}}
-    </main>
-    {{> footer}}
-    </body>
+	<body>
+		<b class="screen-overlay"></b>
+		{{>navigation}}
+		<div class="container">{{> body}}</div>
+		{{> footer}}
+	</body>
 </html>
