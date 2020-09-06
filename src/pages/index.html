@@ -1,42 +1,313 @@
 <section class="section-main padding-y">
+
     <main class="card">
         <div class="card-body">
             <div class="row">
-                <aside class="col-lg col-md-3 flex-lg-grow-0">
-                    <nav class="nav-home-aside">
-                        <h6 class="title-category">MY MARKETS <i class="d-md-none icon fa fa-chevron-down"></i></h6>
-                        <ul class="menu-category">
-                            <li><a href="#"><span class="lnr lnr-shirt"></span> Fashion and clothes</a></li>
-                            <li>
-                                <a href="#">
-                                    <ion-icon name="car-sport-outline"></ion-icon> Automobile and motors</a>
-                            </li>
-                            <li><a href="#">Gardening and agriculture</a></li>
-                            <li>
-                                <a href="#">
-                                    <ion-icon name="tv-outline"></ion-icon>Electronics and tech</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <ion-icon name="game-controller-outline"></ion-icon>
-                                    Gaming and consoles</a>
-                            </li>
-                            <li><a href="#"><span class="lnr lnr-home"></span>Home and kitchen</a></li>
-                            <li><a href="#">Digital goods</a></li>
-                            <li class="has-submenu"><a href="#">More items</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Submenu name</a></li>
-                                    <li><a href="#">Great submenu</a></li>
-                                    <li><a href="#">Another menu</a></li>
-                                    <li><a href="#">Some others</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                <aside id="category-nav" class="col-md-2">
+                    <ul class="nav flex-column" id="accordion">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex active" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <ion-icon class="mr-2" name="phone-portrait-outline"></ion-icon> Phones & Tablets
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <ul id="collapseOne" class="collapse drop-list offset-md-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex active" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <ion-icon class="mr-2 mb-n1" src="{{root}}assets/icons/svg/screen.svg"></ion-icon>
+                                Electronics
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <ul id="collapseTwo" class="collapse drop-list offset-md-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <ion-icon class="mr-2" src="{{root}}assets/icons/svg/workspace.svg"></ion-icon> Home & Office
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <ul id="collapseThree" class="collapse drop-list offset-md-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                <ion-icon class="mr-2" name="shirt-outline"></ion-icon> Fashion
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <ul id="collapseFour" class="collapse drop-list offset-md-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                <ion-icon class="mr-2" name="laptop-outline"></ion-icon>Computing
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <ul id="collapseFive" class="collapse drop-list offset-md-3" aria-labelledby="headingOne" data-parent="#accordion">
+                                <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                <ion-icon class="mr-2" name="game-controller-outline"></ion-icon>Toys & Games
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <div class="collapse drop-list" id="collapseSix" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                <ion-icon class="mr-2" name="paw-outline"></ion-icon>
+                                Pets
+                                <ion-icon class="ml-auto" name="chevron-forward-outline"></ion-icon>
+                            </a>
+                            <div class="collapse drop-list" id="collapseSeven" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                <ion-icon class="mr-2" name="home-outline"></ion-icon> Poperty</a>
+                            <div class="collapse drop-list" id="collapseSeven" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                <ion-icon class="mr-2" src="{{root}}assets/icons/svg/winch.svg"></ion-icon> Machinery</a>
+                            <div class="collapse drop-list" id="collapseSeven" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                <ion-icon class="mr-2" src="{{root}}assets/icons/svg/agriculture.svg"></ion-icon> Agriculture & Foods</a>
+                            <div class="collapse drop-list" id="collapseEight" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex" href="#" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                <ion-icon class="mr-2" name="ellipsis-horizontal-outline"></ion-icon>Others</a>
+                            <div class="collapse drop-list" id="collapseNine" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="row col-md-10">
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>Sub category 1</h6>
+                                        <ul>
+                                            <li class="list-group-item py-2 border-0">Cras justo odio</li>
+                                            <li class="list-group-item py-2 border-0">Dapibus ac facilisis in</li>
+                                            <li class="list-group-item py-2 border-0">Morbi leo risus</li>
+                                            <li class="list-group-item py-2 border-0">Porta ac consectetur ac</li>
+                                            <li class="list-group-item py-2 border-0">Vestibulum at eros</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </aside>
                 <!-- col.// -->
-                <div class="col-md-9 col-xl-7 col-lg-7">
-
+                <div id="slider" class="col-md-8">
                     <!-- ================== COMPONENT SLIDER  BOOTSTRAP  ==================  -->
                     <div id="carousel1_indicator" class="slider-home-banner carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -65,10 +336,9 @@
                         </a>
                     </div>
                     <!-- ==================  COMPONENT SLIDER BOOTSTRAP end.// ==================  .// -->
-
                 </div>
                 <!-- col.// -->
-                <div class="col-md d-none d-lg-block flex-grow-1">
+                <div class="col-md-2 d-none d-lg-block flex-grow-1">
                     <aside class="special-home-right">
                         <h6 class="bg-blue text-center text-white mb-0 p-2">Popular category</h6>
 
@@ -711,6 +981,41 @@
             <a href="#" class="icontext"> <i class="mr-3 fa fa-ellipsis-h"></i> <span>More regions</span> </a>
         </li>
     </ul>
+</section>
+<!-- =============== SECTION REGION .//END =============== -->
+
+<article class="my-4">
+    <img src="{{root}}images/banners/ad-sm.png" class="w-100">
+</article>
+<ul class="row mt-4">
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/CN.png"> <span>China</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/DE.png"> <span>Germany</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/AU.png"> <span>Australia</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/RU.png"> <span>Russia</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/IN.png"> <span>India</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/GB.png"> <span>England</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/TR.png"> <span>Turkey</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/UZ.png"> <span>Uzbekistan</span> </a>
+    </li>
+    <li class="col-md col-6">
+        <a href="#" class="icontext"> <i class="mr-3 fa fa-ellipsis-h"></i> <span>More regions</span> </a>
+    </li>
+</ul>
 </section>
 <!-- =============== SECTION REGION .//END =============== -->
 

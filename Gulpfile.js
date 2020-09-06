@@ -20,6 +20,7 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
 
 // BrowserSync
 function browserSync(done) {
@@ -63,32 +64,22 @@ function clean() {
 
 function modules() {
     // Bootstrap JS
-    const bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-        .pipe(gulp.dest('./dist/assets/bootstrap/js'));
-    // ChartJS
-    const chartJS = gulp.src('./node_modules/chart.js/dist/*.min.js')
-        .pipe(gulp.dest('./dist/assets/vendors/chartjs/'));
-    // fontawesome
+
     const webfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*')
         .pipe(gulp.dest('./dist/assets/webfonts/'));
 
-    // dataTables
-    const dataTables = gulp.src([
-            './node_modules/datatables.net/js/*.min.js',
-            './node_modules/datatables.net-bs4/js/*.min.js',
-            './node_modules/datatables.net-bs4/css/*.min.css',
-        ])
-        .pipe(gulp.dest('./dist/assets/vendor/datatables'));
-    // jQuery Easing
-    const jqueryEasing = gulp.src('./node_modules/jquery.easing/*.js')
-        .pipe(gulp.dest('./dist/assets/vendors/jquery-easing'));
-    // jQuery
     const jquery = gulp.src([
-            './node_modules/jquery/dist/*',
-            '!./node_modules/jquery/dist/core.js',
+            './node_modules/jquery/dist/jquery.slim.min.js',
+            './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+            './src/assets/js/*.js',
         ])
-        .pipe(gulp.dest('./dist/assets/vendors/jquery'));
-    return merge(bootstrapJS, chartJS, dataTables, webfonts, jquery, jqueryEasing);
+        .pipe(concat('bundle.js'))
+        .pipe(gulp.dest('./dist/assets/js'));
+
+    const bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+        .pipe(gulp.dest('./dist/assets/bootstrap/js'));
+
+    return merge(bootstrapJS, webfonts, jquery);
 }
 
 // CSS task
@@ -111,21 +102,6 @@ function styles() {
         }))
         .pipe(cleanCSS())
         .pipe(gulp.dest('./dist/assets/css'))
-        .pipe(browsersync.stream());
-}
-
-// JS task
-function scripts() {
-    return gulp
-        .src([
-            './src/assets/js/*.js',
-            '!./src/assets/js/*.min.js',
-        ])
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min',
-        }))
-        .pipe(gulp.dest('./dist/assets/js'))
         .pipe(browsersync.stream());
 }
 
@@ -157,10 +133,9 @@ function icons() {
 // watch tasks
 function watchfiles() {
     gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, browserSyncReload));
-    gulp.watch('./src/assets/js/**/*', scripts);
     gulp.watch('src/pages/**/*', html);
     gulp.watch('src/assets/images/**/*', images);
     gulp.watch('src/{layouts,includes,helpers,partials}/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
-const build = gulp.series(clean, gulp.parallel(html, styles, scripts, modules, images, icons));
+const build = gulp.series(clean, gulp.parallel(html, styles, modules, images, icons));
 exports.default = gulp.series(build, gulp.parallel(browserSync, watchfiles));
