@@ -1,20 +1,48 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {{!— Required meta tags --}}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="{{root}}assets/css/sassyadmin.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ title }}</title>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
+    <link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
+    <link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
+    <script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="mini">
-    {{>navigation}}
-    <main role="main" class="container">
-        {{> body}}
-    </main>
+<body>
+    <b class="screen-overlay"></b> {{>navigation}}
+    <div class="container">{{> body}}</div>
     {{> footer}}
-    </body>
+</body>
+<script src="{{root}}assets/js/bundle.js"></script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script>
+    $(document).ready(function() {
+        $('.drop-list')
+            .css('width', $('#slider').width())
+            .css('margin-left', $('#category-nav').width() + 20);
+        $('.btn-link').mouseover((e) => {
+            console.log(e.target);
+            $('.drop-list').addClass('show');
+        });
+        $('.btn-link').mouseover(() => {
+            $('.drop-list').addClass('show');
+        });
+    });
+    $(window).resize(function() {
+        $('.drop-list')
+            .css('width', $('#slider').width())
+            .css('height', $('#slider').height())
+            .css('margin-left', $('#category-nav').width());
+    });
+    // console.log($('#slider').height())
+</script>
+
 </html>

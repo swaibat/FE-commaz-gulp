@@ -1,0 +1,28 @@
+/* ========================
+Bootstrap with custom variables
+=================== */
+
+// We'll include bootstrap variables to override bootstrap variables,
+@import "variables-custom";
+@import "bootstrap-assets/bootstrap";
+.drop-list {
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+    background: #e8e8e8f5;
+    width: 30rem;
+    height: 375px;
+    padding: 1rem;
+    .list-group-item {
+        background-color: transparent;
+    }
+}
+
+.nav-bg {
+    position: fixed;
+    left: 0rem;
+    height: 6.5rem;
+    width: 100%;
+    background-color: #9c0102;
+    z-index: -1;
+}
