@@ -23,7 +23,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="widgets-wrap float-md-right">
                         <div class="widget-header mr-3">
-                            <a href="#" class="widget-view">
+                            <a href="/page-profile-main.html" class="widget-view">
                                 <div class="icon-area">
                                     <ion-icon src="{{root}}assets/icons/svg/user.svg"></ion-icon>
                                     <span class="notify">3</span>
@@ -32,16 +32,7 @@
                             </a>
                         </div>
                         <div class="widget-header mr-3">
-                            <a href="#" class="widget-view">
-                                <div class="icon-area">
-                                    <ion-icon src="{{root}}assets/icons/svg/comment-alt.svg"></ion-icon>
-                                    <span class="notify">1</span>
-                                </div>
-                                <small class="text"> Message </small>
-                            </a>
-                        </div>
-                        <div class="widget-header mr-3">
-                            <a href="#" class="widget-view">
+                            <a href="/page-profile-orders.html" class="widget-view">
                                 <div class="icon-area">
                                     <ion-icon src="{{root}}assets/icons/svg/store.svg"></ion-icon>
                                 </div>
@@ -49,7 +40,7 @@
                             </a>
                         </div>
                         <div class="widget-header">
-                            <a href="#" class="widget-view">
+                            <a href="/page-shopping-cart.html" class="widget-view">
                                 <div class="icon-area">
                                     <ion-icon src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
                                 </div>
@@ -84,14 +75,12 @@
                         <div class="dropdown-menu dropdown-large ">
                             <nav class="row ">
                                 <div class="col-6 ">
-                                    <a href="{{ root }}page-index-1.html ">Home page 1</a>
-                                    <a href="{{ root }}page-index-2.html ">Home page 2</a>
+                                    <a href="/">Home page 1</a>
                                     <a href="{{ root }}page-category.html ">All category</a>
                                     <a href="{{ root }}page-listing-large.html ">Listing list</a>
                                     <a href="{{ root }}page-listing-grid.html ">Listing grid</a>
                                     <a href="{{ root }}page-shopping-cart.html ">Shopping cart</a>
                                     <a href="{{ root }}page-detail-product.html ">Product detail</a>
-                                    <a href="{{ root }}page-content.html ">Page content</a>
                                     <a href="{{ root }}page-offers.html ">Page Offers</a>
                                     <a href="{{ root }}page-payment.html ">Page Payments</a>
                                     <a href="{{ root }}page-user-login.html ">Page login</a>
@@ -146,6 +135,16 @@
     </nav>
 
 </header>
+<div class="d-flex mt-3 container">
+    <h3 class="mr-3">{{title}} |</h3>
+    <nav class="d-flex align-items-center mt-n2" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="title">{{title}}</li>
+        </ol>
+      </nav>
+</div>
+
 {{/unlesspage}}
 
 <!-- container .// -->

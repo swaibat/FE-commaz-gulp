@@ -48,13 +48,9 @@ a{
     transform: scaleX(1);
 }
 
-.bordered-cols{
-     // border-bottom: 1px solid $border-color;
-     // overflow: hidden;
-}
 .bordered-cols > [class*="col-"] {
     overflow: hidden;
-    border-color: $border-color;
+    border-color: $white;
     border-width: 1px 0 0 1px;
     border-style: solid;
     // outline: 1px solid $border-color;

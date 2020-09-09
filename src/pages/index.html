@@ -1,6 +1,6 @@
 <section class="section-main padding-y">
 
-    <main class="card">
+    <main class="card rounded border-0 shadow-sm">
         <div class="card-body">
             <div class="row">
                 <aside id="category-nav" class="col-md-2">
@@ -316,14 +316,14 @@
                             <li data-target="#carousel1_indicator" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{root}}assets/images/banners/slide1.jpg" alt="First slide">
+                            <div class="carousel-item rounded active">
+                                <img class="rounded" src="{{root}}assets/images/banners/slide1.jpg" alt="First slide">
                             </div>
-                            <div class="carousel-item">
-                                <img src="{{ root }}assets/images/banners/slide2.jpg" alt="Second slide">
+                            <div class="carousel-item rounded ">
+                                <img class="rounded" src="{{ root }}assets/images/banners/slide2.jpg" alt="Second slide">
                             </div>
-                            <div class="carousel-item">
-                                <img src="{{ root }}assets/images/banners/slide3.jpg" alt="Third slide">
+                            <div class="carousel-item rounded">
+                                <img class="rounded" src="{{ root }}assets/images/banners/slide3.jpg" alt="Third slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
@@ -380,11 +380,47 @@
 </section>
 <!-- ========================= SECTION MAIN END// ========================= -->
 
+<div class="row mb-4">
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:75%">
+		    <h5 class="card-title">iPad Pro</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk .</p>
+		  </div> 
+		  <img src="{{root}}assets/images/banners/banner-item1.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:70%">
+		    <h5 class="card-title">Smart Watch</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk.</p>
+		  </div>
+		  <img src="{{root}}assets/images/banners/banner-item2.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:75%">
+		    <h5 class="card-title">Great drones</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk.</p>
+
+		  </div>
+		  <img src="{{root}}assets/images/banners/banner-item3.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+</div>
 
 
 <!-- =============== SECTION DEAL =============== -->
 <section class="padding-bottom">
-    <div class="card card-deal">
+    <div class="card card-deal rounded border-0 shadow-sm">
         <div class="col-heading content-body">
             <header class="section-heading">
                 <h3 class="section-title">Deals and offers</h3>
@@ -399,10 +435,10 @@
             </div>
         </div>
         <!-- col.// -->
-        <div class="row no-gutters items-wrap">
+        <div class="row no-gutters">
             <div class="col-md col-6">
                 <figure class="card-product-grid card-sm">
-                    <a href="#" class="img-wrap">
+                    <a href="/page-offers.html" class="img-wrap">
                         <img src="{{ root }}assets/images/items/3.jpg">
                     </a>
                     <div class="text-wrap p-3">
@@ -414,7 +450,7 @@
             <!-- col.// -->
             <div class="col-md col-6">
                 <figure class="card-product-grid card-sm">
-                    <a href="#" class="img-wrap">
+                    <a href="/page-offers.html" class="img-wrap">
                         <img src="{{ root }}assets/images/items/4.jpg">
                     </a>
                     <div class="text-wrap p-3">
@@ -426,7 +462,7 @@
             <!-- col.// -->
             <div class="col-md col-6">
                 <figure class="card-product-grid card-sm">
-                    <a href="#" class="img-wrap">
+                    <a href="/page-offers.html" class="img-wrap">
                         <img src="{{ root }}assets/images/items/5.jpg">
                     </a>
                     <div class="text-wrap p-3">
@@ -438,7 +474,7 @@
             <!-- col.// -->
             <div class="col-md col-6">
                 <figure class="card-product-grid card-sm">
-                    <a href="#" class="img-wrap">
+                    <a href="/page-offers.html" class="img-wrap">
                         <img src="{{ root }}assets/images/items/6.jpg">
                     </a>
                     <div class="text-wrap p-3">
@@ -450,7 +486,7 @@
             <!-- col.// -->
             <div class="col-md col-6">
                 <figure class="card-product-grid card-sm">
-                    <a href="#" class="img-wrap">
+                    <a href="/page-offers.html" class="img-wrap">
                         <img src="{{ root }}assets/images/items/7.jpg">
                     </a>
                     <div class="text-wrap p-3">
@@ -467,16 +503,12 @@
 <!-- =============== SECTION DEAL // END =============== -->
 
 <!-- =============== SECTION 1 =============== -->
-<section class="padding-bottom">
-    <header class="section-heading heading-line">
-        <h4 class="title-section text-uppercase">Apparel</h4>
-    </header>
-
-    <div class="card card-home-category">
+<section class="padding-bottom bg-white rounded p-3 mb-4 shadow-sm">
+    <h6 class="title-section text-uppercase">Apparel</h6>
+    <div class="card border-0 card-home-category">
         <div class="row no-gutters">
             <div class="col-md-3">
-
-                <div class="home-category-banner bg-light-orange">
+                <div class="home-category-banner rounded bg-light-gray">
                     <h5 class="title">Best trending clothes only for summer</h5>
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
@@ -488,7 +520,7 @@
             <div class="col-md-9">
                 <ul class="row no-gutters bordered-cols">
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Well made women clothes with trending collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/1.jpg">
@@ -497,7 +529,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Great clothes with trending collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/2.jpg">
@@ -506,7 +538,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Demo clothes with sample collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/3.jpg">
@@ -515,7 +547,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/4.jpg">
@@ -524,7 +556,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/5.jpg">
@@ -533,7 +565,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/6.jpg">
@@ -542,7 +574,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Well made clothes with trending collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/7.jpg">
@@ -552,7 +584,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen interior stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/6.jpg">
@@ -571,17 +603,13 @@
 <!-- =============== SECTION 1 END =============== -->
 
 <!-- =============== SECTION 2 =============== -->
-<section class="padding-bottom">
-    <header class="section-heading heading-line">
-        <h4 class="title-section text-uppercase">Electronics</h4>
-    </header>
-
-    <div class="card card-home-category">
+<section class="padding-bottom bg-white rounded p-3 mt-3 mb-4 shadow-sm">
+    <h6 class="title-section text-uppercase ">Electronics</h6>
+    <div class="card border-0 card-home-category">
         <div class="row no-gutters">
             <div class="col-md-3">
-
-                <div class="home-category-banner bg-light-orange">
-                    <h5 class="title">Machinery items for manufacturers</h5>
+                <div class="home-category-banner rounded bg-light-gray">
+                    <h5 class="title">Best trending clothes only for summer</h5>
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
                     <img src="{{ root }}assets/images/items/14.jpg" class="img-bg">
@@ -592,7 +620,7 @@
             <div class="col-md-9">
                 <ul class="row no-gutters bordered-cols">
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Well made electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/7.jpg">
@@ -601,7 +629,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Another demo text for item stuff goes here </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/8.jpg">
@@ -610,7 +638,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/9.jpg">
@@ -619,7 +647,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Group of electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/10.jpg">
@@ -628,7 +656,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/11.jpg">
@@ -637,7 +665,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/12.jpg">
@@ -646,7 +674,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/1.jpg">
@@ -656,7 +684,7 @@
                         </a>
                     </li>
                     <li class="col-6 col-lg-3 col-md-4">
-                        <a href="#" class="item">
+                        <a href="/page-detail-product.html" class="item">
                             <div class="card-body">
                                 <h6 class="title">Home and kitchen electronic stuff collection </h6>
                                 <img class="img-sm float-right" src="{{ root }}assets/images/items/2.jpg">
@@ -678,12 +706,8 @@
 
 <!-- =============== SECTION REQUEST =============== -->
 
-<section class="padding-bottom">
-
-    <header class="section-heading heading-line">
-        <h4 class="title-section text-uppercase">Request for Quotation</h4>
-    </header>
-
+<section class="padding-bottom bg-white rounded p-3 mt-3 mb-4 shadow-sm">
+    <h4 class="title-section text-uppercase">Request for Quotation</h4>
     <div class="row">
         <div class="col-md-8">
             <div class="card-banner banner-quote overlay-gradient" style="background-image: url('images/banners/banner9.jpg');">
@@ -751,7 +775,7 @@
     <div class="row row-sm">
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/1.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/1.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -762,7 +786,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/2.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/2.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Some item name here</a>
                     <div class="price mt-1">$280.00</div>
@@ -773,7 +797,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/3.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/3.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Great product name here</a>
                     <div class="price mt-1">$56.00</div>
@@ -784,7 +808,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -795,7 +819,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -806,7 +830,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Some item name here</a>
                     <div class="price mt-1">$280.00</div>
@@ -817,7 +841,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Great product name here</a>
                     <div class="price mt-1">$56.00</div>
@@ -828,7 +852,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/9.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/9.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -839,7 +863,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -850,7 +874,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Just another product name</a>
                     <div class="price mt-1">$179.00</div>
@@ -861,7 +885,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Some item name here</a>
                     <div class="price mt-1">$280.00</div>
@@ -872,7 +896,7 @@
         <!-- col.// -->
         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
             <div class="card card-sm card-product-grid">
-                <a href="#" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
+                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
                 <figcaption class="info-wrap">
                     <a href="#" class="title">Great product name here</a>
                     <div class="price mt-1">$56.00</div>
@@ -982,43 +1006,7 @@
         </li>
     </ul>
 </section>
-<!-- =============== SECTION REGION .//END =============== -->
 
 <article class="my-4">
-    <img src="{{root}}images/banners/ad-sm.png" class="w-100">
-</article>
-<ul class="row mt-4">
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/CN.png"> <span>China</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/DE.png"> <span>Germany</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/AU.png"> <span>Australia</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/RU.png"> <span>Russia</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/IN.png"> <span>India</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/GB.png"> <span>England</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/TR.png"> <span>Turkey</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <img class="icon-flag-sm" src="{{ root }}assets/images/icons/flags/UZ.png"> <span>Uzbekistan</span> </a>
-    </li>
-    <li class="col-md col-6">
-        <a href="#" class="icontext"> <i class="mr-3 fa fa-ellipsis-h"></i> <span>More regions</span> </a>
-    </li>
-</ul>
-</section>
-<!-- =============== SECTION REGION .//END =============== -->
-
-<article class="my-4">
-    <img src="{{root}}images/banners/ad-sm.png" class="w-100">
+    <img src="{{root}}assets/images/banners/ad-sm.png" class="w-100">
 </article>

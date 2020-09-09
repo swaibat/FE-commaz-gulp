@@ -22,12 +22,6 @@
 	flex-direction: row;
 	.col-heading{ min-width:300px; flex-basis: 350px; flex-shrink:0; }
 	.row{ width:100%; }
-	.items-wrap{
-		> [class*=col]{
-			border-left:1px solid $border-color;
-		}
-	}
-
 	.card-product-grid{ margin-bottom:0; text-align: center }
 }
 

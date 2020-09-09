@@ -37,7 +37,7 @@
         "eslint-plugin-import": "^2.22.0",
         "esm": "^3.2.25",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "6.0.0",
+        "gulp-autoprefixer": "^6.0.0",
         "gulp-cache": "1.1.1",
         "gulp-clean-css": "^4.0.0",
         "gulp-concat": "^2.6.1",
