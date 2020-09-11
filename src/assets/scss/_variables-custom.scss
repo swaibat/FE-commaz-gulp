@@ -35,7 +35,7 @@ $cyan: #17a2b8 !default;
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge( ( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-200), $colors);
-$primary: $orange;
+$primary: $gray-900;
 $primary-light: lighten( $primary, 10%); // new added
 $secondary: $blue !default;
 $success: $green !default;
