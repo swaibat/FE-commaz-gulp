@@ -2,11 +2,9 @@
 	margin-bottom: 0.75rem;
 }
 .card {
-  // box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
-  margin-bottom: $spacer * 2.2;
   border: none;
   border-radius: $border-radius;
-  box-shadow: 0px 4px 25px 0px rgba(0,0,0,.1);
+  // box-shadow: $box-shadow-sm;
 	transition: all .3s ease-in-out;
   .card {
   	box-shadow: none !important;

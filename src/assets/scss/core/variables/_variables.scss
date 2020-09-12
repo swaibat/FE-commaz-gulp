@@ -42,17 +42,6 @@ $warning: $orange;
 $spacer: 1rem;
 $spacers: ();
 // stylelint-disable-next-line scss/dollar-variable-default
-$spacers: map-merge((0: 0,
-    25: ($spacer * 0.25),
-    50: ($spacer * 0.5),
-    75: ($spacer * 0.75),
-    1: ($spacer),
-    2: ($spacer * 1.5),
-    3: ($spacer * 3),
-    4: ($spacer * 3.5),
-    5: ($spacer * 4)),
-  $spacers);
-
 // Body
 //
 // Settings for the `<body>` element.
@@ -254,3 +243,16 @@ $kbd-bg: #eee;
 $custom-switch-width: 3rem;
 $custom-switch-indicator-border-radius: 0.857rem;
 $custom-switch-indicator-size: 1.286rem;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1400px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
