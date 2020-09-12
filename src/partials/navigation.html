@@ -1,33 +1,42 @@
 {{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details'
 '_product-cards' '_features' '_filter' 'air' }}
 <header class="py-3 bg-white shadow-sm border-bottom mb-5">
-	<div class="container py-3">
+	<div class="container py-1">
 		<div class="row flex-nowrap justify-content-between align-items-center">
 			<div class="col-4 pt-1">
-				<a class="text-muted" href="#">Subscribe</a>
+				<a class="text-muted" href="/">Home</a>
 			</div>
 			<div class="col-4 text-center">
 				<a class="blog-header-logo text-dark" href="#">Large</a>
 			</div>
 			<div class="col-4 d-flex justify-content-end align-items-center">
-				<a class="text-muted" href="#">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="mx-3"
-					>
-						<circle cx="10.5" cy="10.5" r="7.5"></circle>
-						<line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-					</svg>
-				</a>
-				<a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                    <div class="d-flex float-md-right">
+                        <div class="widget-header mr-3">
+                            <a href="/page-profile-main.html" class="widget-view">
+                                <div class="text-center">
+                                    <ion-icon class="header-icons" src="{{root}}assets/icons/svg/user.svg"></ion-icon>
+                                    <span class="notify">3</span>
+                                </div>
+                                <small class="text"> My profile </small>
+                            </a>
+                        </div>
+                        <div class="widget-header mx-3">
+                            <a href="/page-profile-orders.html" class="widget-view">
+                                <div class="text-center">
+                                    <ion-icon class="header-icons" src="{{root}}assets/icons/svg/store.svg"></ion-icon>
+                                </div>
+                                <small class="text"> Orders </small>
+                            </a>
+                        </div>
+                        <div class="widget-header ml-3">
+                            <a href="/page-shopping-cart.html" class="widget-view">
+                                <div class="text-center">
+                                    <ion-icon class="header-icons" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+                                </div>
+                                <small class="text "> Cart </small>
+                            </a>
+                        </div>
+                    </div>
 			</div>
 		</div>
 	</div>
@@ -35,7 +44,7 @@
 <div class="nav-scroller py-1 mb-3">
 	<div class="container bg-white px-4 py-3 rounded shadow-sm mt-n5">
 		<nav class="nav d-flex justify-content-between">
-			<li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="index.html" data-toggle="dropdown"><i class="feather icon-home"></i><span data-i18n="Dashboard">Dashboard</span></a>
+			<li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="index.html" data-toggle="dropdown"><i class="feather icon-home"></i><span data-i18n="Dashboard">Categories</span></a>
                 <ul class="dropdown-menu">
                     <li data-menu=""><a class="dropdown-item" href="dashboard-analytics.html" data-toggle="dropdown" data-i18n="Analytics"><i class="feather icon-activity"></i>Analytics</a>
                     </li>
@@ -43,7 +52,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="feather icon-package"></i><span data-i18n="Apps">Apps</span></a>
+            <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="feather icon-package"></i><span data-i18n="Apps">Shop</span></a>
                 <ul class="dropdown-menu">
                     <li data-menu=""><a class="dropdown-item" href="app-email.html" data-toggle="dropdown" data-i18n="Email"><i class="feather icon-mail"></i>Email</a>
                     </li>

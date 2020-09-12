@@ -41,11 +41,6 @@
 	}
 
 	&.navbar-floating {
-		&:not(.blank-page) {
-			.app-content {
-				padding-top: 9.75rem;
-			}
-		}
 		.horizontal-menu-wrapper {
 			background: linear-gradient(
 				to bottom,

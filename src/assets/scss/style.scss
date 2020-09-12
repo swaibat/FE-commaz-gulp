@@ -173,7 +173,7 @@ ul.row-sm {
 }
 
 .section-footer {
-  background: darken($color: $primary, $amount: 40);
+	background: darken($color: $primary, $amount: 40);
 	ul {
 		li {
 			margin-bottom: 5px;
@@ -214,4 +214,55 @@ ul.row-sm {
 
 .nav-icon-md {
 	font-size: 3.5rem;
+}
+
+.header-icons {
+	font-size: 1.8rem;
+}
+.right-0{
+	right: 0;
+}
+.card-icon{
+	font-size: 1.5rem;
+	color: $gray-700;
+	
+}
+
+@media (min-width: 768px) {
+	.item-card-md {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+.item-img {
+    padding-top: 0.5rem;
+    min-height: 15.85rem;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.overlay-gradient:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .6;
+    -webkit-transition: .5s;
+    transition: .5s;
+    background: #12225b;
+    background: -webkit-gradient(linear, left top, right bottom, from(#212529), to(#12225b));
+    background: linear-gradient(to bottom right, #212529, #12225b);
 }

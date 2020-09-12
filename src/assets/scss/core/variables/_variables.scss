@@ -11,16 +11,16 @@
 
 $white: #fff;
 $body-bg: #f8f8f8;
-$gray-100: #babfc7; // $gray-lightest
-$gray-200: #ededed; // $gray-lighter
-$gray-300: #dae1e7; // $gray-light
-$gray-400: #636363;
-$gray-500: #adb5bd;
-$gray-600: #b8c2cc; // $gray
-$gray-700: #4e5154;
-$gray-800: #1e1e1e; // $gray-dark
-$gray-900: #2a2e30;
-$black: #22292f;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
 $blue: #00cfe8; //$info
 $red: #ea5455; //$danger
@@ -53,8 +53,8 @@ $body-color: #626262;
 //
 // Style anchor elements.
 
-$link-color: $primary;
-$link-hover-color: darken($link-color, 5%);
+$link-color: $gray-600;
+$link-hover-color: darken($primary, 20%);
 $link-hover-decoration: none;
 
 // Grid columns
