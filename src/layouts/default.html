@@ -9,15 +9,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
     <!-- Google Font -->
+    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
+    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/extensions/swiper.min.css">
     <link rel="stylesheet" href="{{root}}assets/css/style.css" />
     <link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
     <link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
     <script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
 </head>
 
-<body>
-    <b class="screen-overlay"></b> {{>navigation}}
-    <div class="container">{{> body}}</div>
+<body class="horizontal-layout horizontal-menu 2-columns ecommerce-application navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+    <b class="screen-overlay"></b> 
+    {{>navigation}}
+    <div class="container px-0">
+        {{> body}}
+    </div>
     {{> footer}}
 </body>
 <script src="{{root}}assets/js/bundle.js"></script>
@@ -44,5 +53,24 @@
     });
     // console.log($('#slider').height())
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<!-- BEGIN: Vendor JS-->
+<script src="{{root}}assets/vendors/js/vendors.min.js"></script>
+<!-- BEGIN Vendor JS-->
 
+<!-- BEGIN: Page Vendor JS-->
+<script src="{{root}}assets/vendors/js/ui/jquery.sticky.js"></script>
+<script src="{{root}}assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+<script src="{{root}}assets/vendors/js/extensions/swiper.min.js"></script>
+<!-- END: Page Vendor JS-->
+
+<!-- BEGIN: Theme JS-->
+<script src="{{root}}assets/js/core/app-menu.js"></script>
+<script src="{{root}}assets/js/core/app.js"></script>
+<script src="{{root}}assets/js/scripts/components.js"></script>
+<!-- END: Theme JS-->
+
+<!-- BEGIN: Page JS-->
+<script src="{{root}}assets/js/scripts/pages/app-ecommerce-details.js"></script>
+<script src="{{root}}assets/js/scripts/forms/number-input.js"></script>
 </html>

@@ -1,6 +1,9 @@
-<section class="section-main padding-y">
 
+<<<<<<< HEAD
     <main class="card rounded border-0 shadow-sm">
+=======
+    <main class="card shadow-sm mb-4">
+>>>>>>> add eslint ignore
         <div class="card-body">
             <div class="row">
                 <aside id="category-nav" class="col-md-2">
@@ -317,14 +320,29 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item rounded active">
-                                <img class="rounded" src="{{root}}assets/images/banners/slide1.jpg" alt="First slide">
+                                <div class="rounded p-5 mt-5" style="z-index: 1;position: absolute;">
+                                    <h2 class="title">Comsumer Electronics</h2>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                    <a href="#" class="btn btn-outline-primary rounded-pill">Explore Category</a>
+                                </div>
+                                <img class="rounded" src="{{root}}assets/images/banners/slide-1.svg" alt="First slide">
                             </div>
-                            <div class="carousel-item rounded ">
-                                <img class="rounded" src="{{ root }}assets/images/banners/slide2.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item rounded">
-                                <img class="rounded" src="{{ root }}assets/images/banners/slide3.jpg" alt="Third slide">
-                            </div>
+                            <!-- <div class="carousel-item rounded ">
+                                <div class="rounded p-5 mt-5" style="z-index: 1;position: absolute;">
+                                    <h2 class="title">Comsumer Electronics</h2>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                    <a href="#" class="btn btn-outline-primary rounded-pill">Explore Category</a>
+                                </div>
+                                <img class="rounded" src="{{ root }}assets/images/banners/slide-2.svg" alt="Second slide">
+                            </div> -->
+                            <!-- <div class="carousel-item rounded">
+                                <div class="rounded p-5 mt-5" style="z-index: 1;position: absolute;">
+                                    <h2 class="title">Comsumer Electronics</h2>
+                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                    <a href="#" class="btn btn-outline-primary rounded-pill">Explore Category</a>
+                                </div>
+                                <img class="rounded" src="{{ root }}assets/images/banners/slide-3.svg" alt="Third slide">
+                            </div> -->
                         </div>
                         <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
                             <span class="lnr lnr-chevron-left"></span>
@@ -340,32 +358,25 @@
                 <!-- col.// -->
                 <div class="col-md-2 d-none d-lg-block flex-grow-1">
                     <aside class="special-home-right">
-                        <h6 class="bg-blue text-center text-white mb-0 p-2">Popular category</h6>
-
-                        <div class="card-banner border-bottom">
-                            <div class="py-3" style="width:80%">
-                                <h6 class="card-title">Men clothing</h6>
-                                <a href="#" class="btn btn-secondary btn-sm"> Source now </a>
+                        <div class="card-banner d-flex flex-column border-bottom">
+                            <ion-icon class="mx-auto nav-icon-md my-2" src="{{root}}assets/icons/svg/color-shop-outline.svg"></ion-icon>
+                            <h6 class="text-center">start Selling with us</h6>
+                            <div class="d-flex justify-content-around mb-2">
+                                <a href="#" class="btn btn-light btn-sm"> sign in</a>
+                                <a href="#" class="btn btn-primary btn-sm"> Sign up </a>
                             </div>
-                            <img src="{{ root }}assets/images/items/1.jpg" height="80" class="img-bg">
+                        </div>
+                        <div class="card-banner border-bottom flex-column border-bottom">
+                            <ion-icon class="mx-auto nav-icon-md my-2" src="{{root}}assets/icons/svg/color-support.svg"></ion-icon>
+                            <h6 class="text-center">24/7 live support through live chat </h6>
+                            <a href="#" class="btn btn-primary btn-sm"> Start Chat Now</a>
                         </div>
 
-                        <div class="card-banner border-bottom">
-                            <div class="py-3" style="width:80%">
-                                <h6 class="card-title">Winter clothing </h6>
-                                <a href="#" class="btn btn-secondary btn-sm"> Source now </a>
-                            </div>
-                            <img src="{{ root }}assets/images/items/2.jpg" height="80" class="img-bg">
+                        <div class="card-banner border-bottom flex-column border-bottom">
+                            <ion-icon class="mx-auto nav-icon-md my-2" src="{{root}}assets/icons/svg/color-sale-outline.svg"></ion-icon>
+                            <h6 class="text-center">Unlimited Discounts pn most of our products</h6>
+                            <a href="#" class="btn btn-primary btn-sm"> Shop Now</a>
                         </div>
-
-                        <div class="card-banner border-bottom">
-                            <div class="py-3" style="width:80%">
-                                <h6 class="card-title">Home inventory</h6>
-                                <a href="#" class="btn btn-secondary btn-sm"> Source now </a>
-                            </div>
-                            <img src="{{ root }}assets/images/items/6.jpg" height="80" class="img-bg">
-                        </div>
-
                     </aside>
                 </div>
                 <!-- col.// -->
@@ -376,8 +387,6 @@
         <!-- card-body.// -->
     </main>
     <!-- card.// -->
-
-</section>
 <!-- ========================= SECTION MAIN END// ========================= -->
 
 <div class="row mb-4">
@@ -418,291 +427,308 @@
 </div>
 
 
-<!-- =============== SECTION DEAL =============== -->
-<section class="padding-bottom">
-    <div class="card card-deal rounded border-0 shadow-sm">
-        <div class="col-heading content-body">
-            <header class="section-heading">
-                <h3 class="section-title">Deals and offers</h3>
-                <p>Hygiene equipments</p>
-            </header>
-            <!-- sect-heading -->
-            <div class="timer">
-                <div> <span class="num">04</span> <small>Days</small></div>
-                <div> <span class="num">12</span> <small>Hours</small></div>
-                <div> <span class="num">58</span> <small>Min</small></div>
-                <div> <span class="num">02</span> <small>Sec</small></div>
-            </div>
-        </div>
-        <!-- col.// -->
-        <div class="row no-gutters">
-            <div class="col-md col-6">
-                <figure class="card-product-grid card-sm">
-                    <a href="/page-offers.html" class="img-wrap">
-                        <img src="{{ root }}assets/images/items/3.jpg">
-                    </a>
-                    <div class="text-wrap p-3">
-                        <a href="#" class="title">Summer clothes</a>
-                        <span class="badge badge-danger"> -20% </span>
-                    </div>
-                </figure>
-            </div>
-            <!-- col.// -->
-            <div class="col-md col-6">
-                <figure class="card-product-grid card-sm">
-                    <a href="/page-offers.html" class="img-wrap">
-                        <img src="{{ root }}assets/images/items/4.jpg">
-                    </a>
-                    <div class="text-wrap p-3">
-                        <a href="#" class="title">Some category</a>
-                        <span class="badge badge-danger"> -5% </span>
-                    </div>
-                </figure>
-            </div>
-            <!-- col.// -->
-            <div class="col-md col-6">
-                <figure class="card-product-grid card-sm">
-                    <a href="/page-offers.html" class="img-wrap">
-                        <img src="{{ root }}assets/images/items/5.jpg">
-                    </a>
-                    <div class="text-wrap p-3">
-                        <a href="#" class="title">Another category</a>
-                        <span class="badge badge-danger"> -20% </span>
-                    </div>
-                </figure>
-            </div>
-            <!-- col.// -->
-            <div class="col-md col-6">
-                <figure class="card-product-grid card-sm">
-                    <a href="/page-offers.html" class="img-wrap">
-                        <img src="{{ root }}assets/images/items/6.jpg">
-                    </a>
-                    <div class="text-wrap p-3">
-                        <a href="#" class="title">Home apparel</a>
-                        <span class="badge badge-danger"> -15% </span>
-                    </div>
-                </figure>
-            </div>
-            <!-- col.// -->
-            <div class="col-md col-6">
-                <figure class="card-product-grid card-sm">
-                    <a href="/page-offers.html" class="img-wrap">
-                        <img src="{{ root }}assets/images/items/7.jpg">
-                    </a>
-                    <div class="text-wrap p-3">
-                        <a href="#" class="title text-truncate">Smart watches</a>
-                        <span class="badge badge-danger"> -10% </span>
-                    </div>
-                </figure>
-            </div>
-            <!-- col.// -->
-        </div>
-    </div>
 
+<div class="row mb-4">
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:75%">
+		    <h5 class="mb-1">iPad Pro</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk .</p>
+		  </div> 
+		  <img src="{{root}}assets/images/banners/banner-item1.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:70%">
+		    <h5 class="mb-1">Smart Watch</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk.</p>
+		  </div>
+		  <img src="{{root}}assets/images/banners/banner-item2.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+	<div class="col-md-4">
+		<!-- ============================ COMPONENT ITEM BG ================================= -->
+		<div class="shadow-sm card-banner rounded">
+		  <div class="p-4" style="width:75%">
+		    <h5 class="mb-1">Great drones</h5>
+		    <p>Some quick example text to build on the card title and make up the bulk.</p>
+
+		  </div>
+		  <img src="{{root}}assets/images/banners/banner-item3.jpg" height="150" class="img-bg">
+		</div>
+		<!-- ============================ COMPONENT ITEM BG  END .// =========================== -->
+	</div> <!-- col.// -->
+</div>
+
+
+
+
+
+
+
+<!-- =============== SECTION DEAL =============== -->
+<section class="card mb-4 shadow-sm ">
+    <div class="card-body">
+        <h4>Popular Products</h4>
+        <div class="swiper-responsive-breakpoints swiper-container px-4 py-2 swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(-1304px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide rounded swiper-shadow" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Bowers Wilkins - CM10 S2 Triple 6-1/2" 3-Way Floorstanding Speaker (Each) - Gloss Black
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Bowers &amp; Wilkins</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-2 py-75">
+                        <img src="{{root}}assets/images/elements/apple-watch.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$19.98</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded swiper-shadow" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Alienware - 17.3" Laptop - Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1070 - 1TB Hard Drive +
+                            128GB Solid State Drive - Silver
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Alienware</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-2 py-75">
+                        <img src="{{root}}assets/images/elements/beats-headphones.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$35.98</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded swiper-shadow" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Canon - EOS 5D Mark IV DSLR Camera with 24-70mm f/4L IS USM Lens
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Canon</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-3 py-50">
+                        <img src="{{root}}assets/images/elements/macbook-pro.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$49.98</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded swiper-shadow swiper-slide-prev" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Apple - 27" iMac with Retina 5K display - Intel Core i7 - 32GB Memory - 2TB Fusion Drive - Silver
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Apple</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-2 py-75">
+                        <img src="{{root}}assets/images/elements/homepod.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$29.98</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded swiper-shadow swiper-slide-active" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Bowers Wilkins - CM10 S2 Triple 6-1/2" 3-Way Floorstanding Speaker (Each) - Gloss Black
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Bowers &amp; Wilkins</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-2 py-75">
+                        <img src="{{root}}assets/images/elements/magic-mouse.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$99.98</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rounded swiper-shadow swiper-slide-next" style="width: 271px; margin-right: 55px;">
+                    <div class="item-heading">
+                        <p class="text-truncate mb-0">
+                            Garmin - fenix 3 Sapphire GPS Watch - Silver
+                        </p>
+                        <p>
+                            <small>by</small>
+                            <small>Garmin</small>
+                        </p>
+                    </div>
+                    <div class="img-container w-50 mx-auto my-2 py-75">
+                        <img src="{{root}}assets/images/elements/iphone-x.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="item-meta">
+                        <div class="product-rating">
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-warning"></i>
+                            <i class="feather icon-star text-secondary"></i>
+                        </div>
+                        <p class="text-primary mb-0">$59.98</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-disabled" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true"></div>
+            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </div>
 </section>
 <!-- =============== SECTION DEAL // END =============== -->
 
-<!-- =============== SECTION 1 =============== -->
-<section class="padding-bottom bg-white rounded p-3 mb-4 shadow-sm">
-    <h6 class="title-section text-uppercase">Apparel</h6>
-    <div class="card border-0 card-home-category">
-        <div class="row no-gutters">
-            <div class="col-md-3">
-                <div class="home-category-banner rounded bg-light-gray">
-                    <h5 class="title">Best trending clothes only for summer</h5>
-                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
-                    <img src="{{ root }}assets/images/items/2.jpg" class="img-bg">
-                </div>
-
-            </div>
-            <!-- col.// -->
-            <div class="col-md-9">
-                <ul class="row no-gutters bordered-cols">
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Well made women clothes with trending collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/1.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Great clothes with trending collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/2.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Beijing, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Demo clothes with sample collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/3.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tokyo, Japan</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/4.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tashkent, Uzb</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/5.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> London, Britain</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/6.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Well made clothes with trending collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/7.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Hong Kong, China</p>
-
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen interior stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/6.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- col.// -->
+<section class="rounded bg-white p-3 shadow-sm mb-4">
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">Apparel</h4>
+    </header>
+    
+    <div class="card card-home-category">
+    <div class="row no-gutters">
+        <div class="col-md-3">
+        
+        <div class="home-category-banner bg-light-orange">
+            <h5 class="title">Best trending clothes only for summer</h5>
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
+            <img src="{{root}}assets/images/items/2.jpg" class="img-bg">
         </div>
-        <!-- row.// -->
-    </div>
-    <!-- card.// -->
-</section>
-<!-- =============== SECTION 1 END =============== -->
-
-<!-- =============== SECTION 2 =============== -->
-<section class="padding-bottom bg-white rounded p-3 mt-3 mb-4 shadow-sm">
-    <h6 class="title-section text-uppercase ">Electronics</h6>
-    <div class="card border-0 card-home-category">
-        <div class="row no-gutters">
-            <div class="col-md-3">
-                <div class="home-category-banner rounded bg-light-gray">
-                    <h5 class="title">Best trending clothes only for summer</h5>
-                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
-                    <img src="{{ root }}assets/images/items/14.jpg" class="img-bg">
-                </div>
-
-            </div>
-            <!-- col.// -->
-            <div class="col-md-9">
-                <ul class="row no-gutters bordered-cols">
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Well made electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/7.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tokyo, Japan</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Another demo text for item stuff goes here </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/8.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Hong Kong, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/9.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tashkent, Uzb</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Group of electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/10.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/11.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/12.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/1.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-
-                            </div>
-                        </a>
-                    </li>
-                    <li class="col-6 col-lg-3 col-md-4">
-                        <a href="/page-detail-product.html" class="item">
-                            <div class="card-body">
-                                <h6 class="title">Home and kitchen electronic stuff collection </h6>
-                                <img class="img-sm float-right" src="{{ root }}assets/images/items/2.jpg">
-                                <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- col.// -->
+    
+        </div> <!-- col.// -->
+        <div class="col-md-9">
+    <ul class="row no-gutters bordered-cols">
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Well made women clothes with trending collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/1.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
         </div>
-        <!-- row.// -->
-    </div>
-    <!-- card.// -->
-</section>
-<!-- =============== SECTION 2 END =============== -->
-
-
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Great clothes with trending collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/2.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Beijing, China</p>
+        </div>
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Demo clothes with sample collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/3.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tokyo, Japan</p>
+        </div>
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Home and kitchen electronic  stuff collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/4.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Tashkent, Uzb</p>
+        </div>
+    </a>	
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Home and kitchen electronic  stuff collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/5.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> London, Britain</p>
+        </div>
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Home and kitchen electronic  stuff collection  </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/6.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
+        </div>
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Well made clothes with trending collection </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/7.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Hong Kong, China</p>
+    
+        </div>
+    </a>
+        </li>
+        <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body p-4">
+            <h6 class="title">Home and kitchen interior  stuff collection   </h6>
+            <img class="img-sm float-right" src="{{root}}assets/images/items/6.jpg"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i> Guanjou, China</p>
+        </div>
+    </a>
+        </li>
+    </ul>
+        </div> <!-- col.// -->
+    </div> <!-- row.// -->
+    </div> <!-- card.// -->
+    </section>
 
 <!-- =============== SECTION REQUEST =============== -->
 
@@ -710,7 +736,7 @@
     <h4 class="title-section text-uppercase">Request for Quotation</h4>
     <div class="row">
         <div class="col-md-8">
-            <div class="card-banner banner-quote overlay-gradient" style="background-image: url('images/banners/banner9.jpg');">
+            <div class="card-banner banner-quote overlay-gradient" style="background-image: url('{{root}}assets/images/banners/banner9.jpg');">
                 <div class="card-img-overlay white">
                     <h3 class="card-title">An easy way to send request to suppliers</h3>
                     <p class="card-text" style="max-width: 400px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
@@ -766,214 +792,534 @@
 
 
 <!-- =============== SECTION ITEMS =============== -->
-<section class="padding-bottom-sm">
+<section class="mb-3">
 
     <header class="section-heading heading-line">
         <h4 class="title-section text-uppercase">Recommended items</h4>
     </header>
 
-    <div class="row row-sm">
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/1.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+    <div class="row row-sm"></div>
+        <section id="ecommerce-products" class="grid-view">
+            <div class="card ecommerce-card ">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/1.png" alt="img-placeholder"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="item-price">
+                                    $39.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+                            <p class="item-company">By <span class="company-name">Google</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you
+                                deliver hands-free commands when you want to watch television or engage with other applications. With a
+                                quad-core processor, 1GB internal memory and 8GB of storage, this portable Amazon Fire TV stick works fast
+                                for buffer-free streaming.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $39.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o"></i> <span>Wishlist</span>
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/2.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Some item name here</a>
-                    <div class="price mt-1">$280.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/2.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="item-price">
+                                    $35.00
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">Google - Chromecast - Black</a>
+                            <p class="item-company">By <span class="company-name">Amazon</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI
+                                interface and your home Wi-Fi network to get started. You can stream your favorite apps from your compatible
+                                phone, tablet or laptop, plus use your phone as a remote to search, play and pause content.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $35.00
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/3.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Great product name here</a>
-                    <div class="price mt-1">$56.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html"><img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/3.png" alt="img-placeholder"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item-cost">
+                                    <h6 class="item-price">
+                                        $499.99
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+                            <p class="item-company">By <span class="company-name">Dell</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an
+                                Intel Core i5-5200U processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple
+                                applications without lag. The 1TB hard drive in this Dell Inspiron laptop lets you store multiple music,
+                                video and document files.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $499.99
+                                </h6>
+                                <p class="shipping">
+                                    <i class="feather icon-shopping-cart"></i> Free Shipping
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/4.png" alt="img-placeholder"></a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $49.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">Amazon - Echo Dot</a>
+                            <p class="item-company">By <span class="company-name">Amazon</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Echo Dot is the latest addition to Amazon's voice-controlled devices.
+                                Deliver your favorite playlist anywhere in your home with the Amazon Echo Dot voice-controlled device.
+                                Control most electric devices through voice activation, or schedule a ride with Uber and order a pizza. The
+                                Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone
+                                or tablet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $49.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/5.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $999.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">
+                                Apple - MacBook Air® (Latest Model) - 13.3" Display - Silver
+                            </a>
+                            <p class="item-company">By <span class="company-name">Apple</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                MacBook Air is a thin, lightweight laptop from Apple.
+                                MacBook Air features up to 8GB of memory, a fifth-generation Intel Core processor, Thunderbolt 2, great
+                                built-in apps, and all-day battery life.1 Its thin, light, and durable enough to take everywhere you go-and
+                                powerful enough to do everything once you get there, better.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $999.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Some item name here</a>
-                    <div class="price mt-1">$280.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/6.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $429.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">
+                                Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black
+                            </a>
+                            <p class="item-company">By <span class="company-name">Sharp</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Only at Best Buy Sharp LC-50LB481U LED Roku TV: Get a TV that enjoys full Internet connectivity with this
+                                Sharp 49.5-inch smart TV. Full HD resolutions give you plenty of detail whether you're streaming content
+                                from the Internet using the integrated Roku player or watching via cable.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $429.99
+                                </h6>
+                                <p class="shipping">
+                                    <i class="feather icon-shopping-cart"></i> Free Shipping
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Great product name here</a>
-                    <div class="price mt-1">$56.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/7.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $129
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">
+                                Google - Google Home - White/Slate fabric
+                            </a>
+                            <p class="item-company">By <span class="company-name">Google</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Simplify your everyday life with the Google Home, a voice-activated speaker powered by the Google Assistant.
+                                Use voice commands to enjoy music, get answers from Google and manage everyday tasks. Google Home is
+                                compatible with Android and iOS operating systems, and can control compatible smart devices such as
+                                Chromecast or Nest.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $129
+                                </h6>
+                                <p class="shipping">
+                                    <i class="feather icon-shopping-cart"></i> Free Shipping
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/9.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/10.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $29.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">
+                                Apple - EarPods™ with Remote and Mic - White
+                            </a>
+                            <p class="item-company">By <span class="company-name">Apple</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Apple EarPods are white in-ear headphones included with music players and smartphones designed and marketed
+                                by Apple Inc. They are designed to fit the ear while retaining a new design pushed by Apple alongside the
+                                iPod and iPod Touch products, with which they were sold together.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $29.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/4.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
+            <div class="card ecommerce-card">
+                <div class="card-content">
+                    <div class="item-img text-center">
+                        <a href="app-ecommerce-details.html">
+                            <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $14.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="item-name">
+                            <a href="app-ecommerce-details.html">
+                                Philips - hue A19 Smart LED Light Bulb - White Only
+                            </a>
+                            <p class="item-company">By <span class="company-name">Philips</span></p>
+                        </div>
+                        <div>
+                            <p class="item-description">
+                                Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light
+                                bulb and set timers and alarms using your smartphone or tablet. Plus, LED technology offers lasting
+                                illumination while using minimal energy.Get lighting that's as smart as you are.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-options text-center">
+                        <div class="item-wrapper">
+                            <div class="item-rating">
+                                <div class="badge badge-primary badge-md">
+                                    <span>4</span> <i class="feather icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="item-cost">
+                                <h6 class="item-price">
+                                    $14.99
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="wishlist">
+                            <i class="fa fa-heart-o mr-25"></i> Wishlist
+                        </div>
+                        <div class="cart">
+                            <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/5.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Just another product name</a>
-                    <div class="price mt-1">$179.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
-            </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/6.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Some item name here</a>
-                    <div class="price mt-1">$280.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
-            </div>
-        </div>
-        <!-- col.// -->
-        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-            <div class="card card-sm card-product-grid">
-                <a href="/page-detail-product.html" class="img-wrap"> <img src="{{ root }}assets/images/items/7.jpg"> </a>
-                <figcaption class="info-wrap">
-                    <a href="#" class="title">Great product name here</a>
-                    <div class="price mt-1">$56.00</div>
-                    <!-- price-wrap.// -->
-                </figcaption>
-            </div>
-        </div>
-        <!-- col.// -->
-    </div>
+        </section>
     <!-- row.// -->
 </section>
 <!-- =============== SECTION ITEMS .//END =============== -->
 
 
-<!-- =============== SECTION SERVICES =============== -->
-<section class="padding-bottom">
-
-    <header class="section-heading heading-line">
-        <h4 class="title-section text-uppercase">Trade services</h4>
-    </header>
-
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
-                <img src="{{ root }}assets/images/posts/1.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="title">Trade Assurance</h6>
-                    <p class="small text-uppercase text-muted">Order protection</p>
-                </div>
-            </article>
-            <!-- card.// -->
-        </div>
-        <!-- col.// -->
-        <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
-                <img src="{{ root }}assets/images/posts/2.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="title">Pay anytime</h6>
-                    <p class="small text-uppercase text-muted">Finance solution</p>
-                </div>
-            </article>
-            <!-- card.// -->
-        </div>
-        <!-- col.// -->
-        <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
-                <img src="{{ root }}assets/images/posts/3.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="title">Inspection solution</h6>
-                    <p class="small text-uppercase text-muted">Easy Inspection</p>
-                </div>
-            </article>
-            <!-- card.// -->
-        </div>
-        <!-- col.// -->
-        <div class="col-md-3 col-sm-6">
-            <article class="card card-post">
-                <img src="{{ root }}assets/images/posts/4.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="title">Ocean and Air Shipping</h6>
-                    <p class="small text-uppercase text-muted">Logistic services</p>
-                </div>
-            </article>
-            <!-- card.// -->
-        </div>
-        <!-- col.// -->
-    </div>
-    <!-- row.// -->
-
-</section>
-<!-- =============== SECTION SERVICES .//END =============== -->
-
 <!-- =============== SECTION REGION =============== -->
-<section class="padding-bottom">
+<section class="mt-4 shadow-sm p-3 rounded">
 
     <header class="section-heading heading-line">
-        <h4 class="title-section text-uppercase">Choose region</h4>
+        <h5 class="title-section text-uppercase">Choose region</h45>
     </header>
 
     <ul class="row mt-4">

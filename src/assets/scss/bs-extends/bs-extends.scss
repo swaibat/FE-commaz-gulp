@@ -1,0 +1,56 @@
+// ================================================================================================
+//  File Name: extends.scss
+//  Description: List of modified Bootstrap files. This is an actual copy of bootstrap.scss
+//                excluding files that have not been modified.
+//  ----------------------------------------------------------------------------------------------
+//  Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+//  Author: PIXINVENT
+//  Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// Core variables and mixins
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/mixins";
+@import "mixins";
+
+// Load variable overrides
+@import "./node_modules/bootstrap/scss/variables";
+@import "../core/variables/variables";
+
+// Custom template mixins
+@import "../core/mixins/alert";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+// // Core CSS
+@import "reboot";
+@import "type";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+
+// // Components
+@import "animation";
+@import "dropdown";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "badge";
+@import "nav";
+@import "alert";
+@import "media";
+@import "progress";
+@import "list-group";
+@import "toast";
+@import "collapse";
+@import "pagination";
+
+// // Components w/ JavaScript
+@import "modal";
+@import "popover";
+
+// // Utility classes
+@import "utilities";
