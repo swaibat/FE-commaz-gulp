@@ -8,25 +8,24 @@
 // ================================================================================================
 
 // Core variables and mixins overrides
-@import "../bootstrap/functions";
-@import "../core/variables/variables";
-@import "../bootstrap/variables";
+@import '../bootstrap/functions';
+@import '../core/variables/variables';
+@import '../bootstrap/variables';
 
 // Overrides user variable
-@import "../core/variables/components-variables";
-
+@import '../core/variables/components-variables';
 
 // scss for profile picture upload
-.user-form{
-    .dropzone{
-      min-height: 200px;
-      width: 200px;
-      .dz-message{
-        font-size: 1rem;
-        height: auto;
-        &:before{
-          font-size: 2rem;
-        }
-      }
-    }
+.user-form {
+	.dropzone {
+		min-height: 200px;
+		width: 200px;
+		.dz-message {
+			font-size: 1rem;
+			height: auto;
+			&:before {
+				font-size: 2rem;
+			}
+		}
+	}
 }
