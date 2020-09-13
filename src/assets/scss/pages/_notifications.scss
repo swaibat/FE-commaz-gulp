@@ -466,7 +466,7 @@
 }
 
 // Keyframe animation
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 		top: 100px;

@@ -1,78 +1,117 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		{{!— Required meta tags --}}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>{{ title }}</title>
+		<!-- Google Font -->
+		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/vendors.min.css" />
+		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css" />
+		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/extensions/swiper.min.css" />
+		<link rel="stylesheet" href="{{root}}assets/css/style.css" />
+		<link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
+		<link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
+		<script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+			crossorigin="anonymous"
+		/>
+	</head>
 
-<head>
-    {{!— Required meta tags --}}
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>{{ title }}</title>
-    <!-- Google Font -->
-    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
-    <link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/extensions/swiper.min.css">
-    <link rel="stylesheet" href="{{root}}assets/css/style.css" />
-    <link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
-    <link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
-    <script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
-    />
-</head>
+	<body
+		class="horizontal-layout horizontal-menu 2-columns ecommerce-application navbar-floating footer-static"
+		data-open="hover"
+		data-menu="horizontal-menu"
+		data-col="2-columns"
+	>
+		<b class="screen-overlay"></b>
+		{{>navigation}}
+		<div class="container px-0">{{> body}}</div>
+		{{> footer}}
+	</body>
+	<script src="{{root}}assets/js/bundle.js"></script>
+	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<!-- JS, Popper.js, and jQuery -->
+	<script>
+		$(function () {
+			
+		});
+		$(document).ready(function () {
+            var pic_X = $('.menu').offset().left;
+			var pic_Y = $('.menu').offset().top;
+			var pic_W = $('.menu').width() / 2;
+			var pic_H = $('.menu').height() / 2;
+			var center_X = pic_X + pic_W;
+			var center_Y = pic_Y + pic_H;
+			var movestop = pic_W / 10;
+			$('.menu').mousemove(function (event) {
+				var mouse_X = event.pageX;
+				var mouse_Y = event.pageY;
+				if (mouse_X - center_X <= 0) {
+					moveImg(mouse_X, mouse_Y, 'left');
+				} else {
+					moveImg(mouse_X, mouse_Y);
+				}
+			});
+			function moveImg(m_X, m_Y, dir) {
+				var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
+				if (dir) {
+					$('.menu img').eq(index).show().siblings().hide();
+				} else {
+					$('.menu img')
+						.eq(18 - index)
+						.show()
+						.siblings()
+						.hide();
+				}
+			}
+			$('.drop-list')
+				.css('width', $('#slider').width())
+				.css('margin-left', $('#category-nav').width() + 20);
+			$('.btn-link').mouseover((e) => {
+				console.log(e.target);
+				$('.drop-list').addClass('show');
+			});
+			$('.btn-link').mouseover(() => {
+				$('.drop-list').addClass('show');
+			});
+		});
+		$(window).resize(function () {
+			$('.drop-list').css('width', $('#slider').width()).css('height', $('#slider').height()).css('margin-left', $('#category-nav').width());
+		});
+		// console.log($('#slider').height())
+	</script>
+	<!-- BEGIN: Vendor JS-->
+	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+	<!-- BEGIN Vendor JS-->
 
-<body class="horizontal-layout horizontal-menu 2-columns ecommerce-application navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
-    <b class="screen-overlay"></b> 
-    {{>navigation}}
-    <div class="container px-0">
-        {{> body}}
-    </div>
-    {{> footer}}
-</body>
-<script src="{{root}}assets/js/bundle.js"></script>
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-<!-- JS, Popper.js, and jQuery -->
-<script>
-    $(document).ready(function() {
-        $('.drop-list')
-            .css('width', $('#slider').width())
-            .css('margin-left', $('#category-nav').width() + 20);
-        $('.btn-link').mouseover((e) => {
-            console.log(e.target);
-            $('.drop-list').addClass('show');
-        });
-        $('.btn-link').mouseover(() => {
-            $('.drop-list').addClass('show');
-        });
-    });
-    $(window).resize(function() {
-        $('.drop-list')
-            .css('width', $('#slider').width())
-            .css('height', $('#slider').height())
-            .css('margin-left', $('#category-nav').width());
-    });
-    // console.log($('#slider').height())
-</script>
-<!-- BEGIN: Vendor JS-->
-<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
-<!-- BEGIN Vendor JS-->
+	<!-- BEGIN: Page Vendor JS-->
+	<script src="../../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+	<script src="../../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+	<!-- END: Page Vendor JS-->
 
-<!-- BEGIN: Page Vendor JS-->
-<script src="../../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
-<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-<script src="../../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
-<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-<!-- END: Page Vendor JS-->
+	<!-- BEGIN: Theme JS-->
+	<script src="../../../app-assets/js/core/app-menu.js"></script>
+	<script src="../../../app-assets/js/core/app.js"></script>
+	<script src="../../../app-assets/js/scripts/components.js"></script>
+	<!-- END: Theme JS-->
 
-<!-- BEGIN: Theme JS-->
-<script src="../../../app-assets/js/core/app-menu.js"></script>
-<script src="../../../app-assets/js/core/app.js"></script>
-<script src="../../../app-assets/js/scripts/components.js"></script>
-<!-- END: Theme JS-->
-
-<!-- BEGIN: Page JS-->
-<script src="../../../app-assets/js/scripts/pages/app-user.js"></script>
-<script src="../../../app-assets/js/scripts/navs/navs.js"></script>
-<!-- END: Page JS-->
+	<!-- BEGIN: Page JS-->
+	<script src="../../../app-assets/js/scripts/pages/app-user.js"></script>
+	<script src="../../../app-assets/js/scripts/navs/navs.js"></script>
+	<!-- END: Page JS-->
 </html>
