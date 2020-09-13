@@ -1,22 +1,9 @@
-/*=========================================================================================
-	File Name: horizontal-menu.scss
-	Description: A classic horizontal menu for easy navingation & support all devices.
-	It support light & dark version, filpped layout, right side icons, borders menu for
-	item seperation.
-	----------------------------------------------------------------------------------------
-	Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard TemplateTheme
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
 
 // Core variables and mixins
 @import '../../../bootstrap/functions';
 @import '../../../bootstrap/mixins';
 @import '../../../bs-extends/mixins';
 
-// Core variables and mixins overrides
-@import '../../variables/variables';
-@import '../../../bootstrap/variables';
 
 // Overrides user variable
 @import '../../variables/components-variables';

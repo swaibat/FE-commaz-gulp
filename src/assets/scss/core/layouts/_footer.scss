@@ -1,18 +1,9 @@
-// ================================================================================================
-//     File Name: Footer.scss
-//     Description: *  Main footer styles.
-//     ----------------------------------------------------------------------------------------------
-//     Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
-//     Author: PIXINVENT
-//     Author URL: http://www.themeforest.net/user/pixinvent
-// ================================================================================================
 
 // Stick footer to the bottom of the page
 footer{
 	&.footer {
 		padding: $spacer ($spacer*2.2);
 
-    // a tag margin - PIXINVENT text
     a{
       margin: 0 0.3rem;
     }
