@@ -1,6 +1,7 @@
 /* ==== BASE STYLES ====*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @import './bootstrap/functions';
 @import './core/variables/variables';
 
@@ -25,6 +26,10 @@ PAGES
 @import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
 // themify
+@import './helpers/mixins';
+@import './helpers/bg';
+@import './helpers/helper-classes';
+@import './components/items';
 
 .slider-home-banner {
 	.carousel-item {
@@ -59,7 +64,7 @@ $bg-color: #eef1f6;
 $continer-color: #0a6cf1;
 $continer-padding: 30px 20px 10px 20px;
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	min-height: 100%;
 	background-color: $bg-color;
 	user-select: none;
@@ -265,4 +270,55 @@ ul.row-sm {
     background: #12225b;
     background: -webkit-gradient(linear, left top, right bottom, from(#212529), to(#12225b));
     background: linear-gradient(to bottom right, #212529, #12225b);
+}
+.sidebar {
+    position: relative;
+    width: 100%;
+
+    // For desktop only
+    @include media-breakpoint-up(lg){
+        // display: table-cell;
+        vertical-align: top;
+        // width: $sidebar-width;
+    }
+}
+.sidebar-fixed{
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+}
+
+.sidenav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    display: none;
+}
+
+.drag-target {
+    height: 100%;
+    width: 40px;
+    position: fixed;
+    top: 0;
+    left:-10px;
+    z-index: 1036;
+}
+
+@include media-breakpoint-up(lg){
+    .sidebar-left{
+        float:left;
+    }
+    .sidebar-right{
+        float:right;
+    }
+}
+
+.brand-wrap .logo, .navbar-brand .logo {
+    margin-right: 7px;
+    max-height: 34px;
+    display: inline-block;
 }

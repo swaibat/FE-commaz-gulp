@@ -21,11 +21,6 @@
     } */
     .breadcrumb-item + .breadcrumb-item{
         padding-left: 0;
-        &:before{
-            content: "\e847";
-            font-family: 'feather';
-            color: $body-color;
-        }
     }
     .breadcrumb-item.active{
         color: $body-color;

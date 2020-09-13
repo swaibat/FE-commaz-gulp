@@ -25,10 +25,11 @@ $black:    #000 !default;
 $blue: #00cfe8; //$info
 $red: #ea5455; //$danger
 $orange: #ff9f43; //$warning
+$theme-color: #ff5502;
 $green: #28c76f; //$success
 $cyan: #7367f0; //$primary
 
-$primary: $cyan;
+$primary: #9200a5;
 $info: $blue;
 $warning: $orange;
 
@@ -81,17 +82,18 @@ $border-radius-sm: 0.25rem;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Montserrat",
-Helvetica,
-Arial,
-serif;
-$font-family-monospace: "Montserrat",
-Helvetica,
-Arial,
-serif;
-
+$font-family-sans-serif: 'Poppins',
+sans-serif;
+$font-family-monospace: SFMono-Regular,
+Menlo,
+Monaco,
+Consolas,
+"Liberation Mono",
+"Courier New",
+monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
-$font-size-base: 1rem;
+$font-size-base: .9rem;
 $font-size-sm: ceil($font-size-base * 0.85);
 $font-size-lg: ceil($font-size-base * 1.25);
 

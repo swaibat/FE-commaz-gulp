@@ -44,18 +44,18 @@
                                         16285 results found
                                     </div>
                                 </div>
-                                <div class="view-options">
-                                    <select class="price-options form-control select2-hidden-accessible" id="ecommerce-price-options" data-select2-id="ecommerce-price-options" tabindex="-1" aria-hidden="true">
+                                <div class="view-options d-flex ">
+                                    <select class="price-options form-control mr-3">
                                         <option selected="" data-select2-id="2">Featured</option>
                                         <option value="1">Lowest</option>
                                         <option value="2">Highest</option>
-                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ecommerce-price-options-container"><span class="select2-selection__rendered" id="select2-ecommerce-price-options-container" role="textbox" aria-readonly="true" title="Featured">Featured</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                    <div class="view-btn-option">
+                                    </select>
+                                    <div class="view-btn-option d-flex">
                                         <button class="btn btn-white view-btn grid-view-btn waves-effect waves-light">
-                                            <i class="feather icon-grid"></i>
+                                            <ion-icon name="grid-outline"></ion-icon>
                                         </button>
                                         <button class="btn btn-white list-view-btn view-btn waves-effect waves-light active">
-                                            <i class="feather icon-list"></i>
+                                            <ion-icon name="list-outline"></ion-icon>
                                         </button>
                                     </div>
                                 </div>
@@ -72,30 +72,32 @@
                 <section id="ecommerce-searchbar">
                     <div class="row mt-1">
                         <div class="col-sm-12">
-                            <fieldset class="form-group position-relative">
-                                <input type="text" class="form-control search-product" id="iconLeft5" placeholder="Search here">
-                                <div class="form-control-position">
-                                    <i class="feather icon-search"></i>
+                            <form class="p-2 shadow-sm bg-white rounded my-2" action="#">
+                                <div class="input-group">
+                                    <input class="form-control border-0 mr-2 " type="search" placeholder="Search tools and resources...">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary rounded" type="submit"><i class="ti-search"></i> Search</button>
+                                    </div>
                                 </div>
-                            </fieldset>
+                            </form>
                         </div>
                     </div>
                 </section>
                 <!-- Ecommerce Search Bar Ends -->
 
                 <!-- Ecommerce Products Starts -->
-                <section id="ecommerce-products" class="list-view">
-                    <div class="card ecommerce-card">
+                <section id="ecommerce-products" class="grid-view">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/1.png" alt="img-placeholder"></a>
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/1.png" alt="img-placeholder"></a>
                             </div>
                             <div class="card-body">
                                 <div class="item-wrapper">
                                     <div class="item-rating">
                                         <div class="badge badge-primary badge-md">
-                                            <span>4</span> <i class="feather icon-star"></i>
+                                            <span>4</span> <i class="fas fa-star"></i>
                                         </div>
                                     </div>
                                     <div>
@@ -105,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+                                    <a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
                                     <p class="item-company">By <span class="company-name">Google</span></p>
                                 </div>
                                 <div>
@@ -134,16 +136,16 @@
                                     <i class="fa fa-heart-o"></i> <span>Wishlist</span>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <i class="feather icon-shopping-cart"></i> <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/2.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/2.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -160,7 +162,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">Google - Chromecast - Black</a>
+                                    <a href="product-details.html">Google - Chromecast - Black</a>
                                     <p class="item-company">By <span class="company-name">Amazon</span></p>
                                 </div>
                                 <div>
@@ -185,18 +187,18 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html"><img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/3.png" alt="img-placeholder"></a>
+                                <a href="product-details.html"><img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/3.png" alt="img-placeholder"></a>
                             </div>
                             <div class="card-body">
                                 <div class="item-wrapper">
@@ -214,7 +216,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+                                    <a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
                                     <p class="item-company">By <span class="company-name">Dell</span></p>
                                 </div>
                                 <div>
@@ -243,18 +245,18 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html"> <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/4.png" alt="img-placeholder"></a>
+                                <a href="product-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/4.png" alt="img-placeholder"></a>
                             </div>
                             <div class="card-body">
                                 <div class="item-wrapper">
@@ -270,7 +272,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">Amazon - Echo Dot</a>
+                                    <a href="product-details.html">Amazon - Echo Dot</a>
                                     <p class="item-company">By <span class="company-name">Amazon</span></p>
                                 </div>
                                 <div>
@@ -297,19 +299,19 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/5.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/5.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -326,7 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="product-details.html">
                                         Apple - MacBook Air® (Latest Model) - 13.3" Display - Silver
                                     </a>
                                     <p class="item-company">By <span class="company-name">Apple</span></p>
@@ -354,19 +356,19 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/6.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/6.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -383,7 +385,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="product-details.html">
                                         Sharp - 50" Class (49.5" Diag.) - LED - 1080p - Black
                                     </a>
                                     <p class="item-company">By <span class="company-name">Sharp</span></p>
@@ -413,19 +415,19 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/7.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/7.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -442,7 +444,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="product-details.html">
                                         Google - Google Home - White/Slate fabric
                                     </a>
                                     <p class="item-company">By <span class="company-name">Google</span></p>
@@ -473,19 +475,19 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/10.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/10.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -502,7 +504,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="product-details.html">
                                         Apple - EarPods™ with Remote and Mic - White
                                     </a>
                                     <p class="item-company">By <span class="company-name">Apple</span></p>
@@ -529,19 +531,19 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card ecommerce-card">
+                    <div class="card ecommerce-card shadow-sm mb-4">
                         <div class="card-content">
                             <div class="item-img text-center">
-                                <a href="app-ecommerce-details.html">
-                                    <img class="img-fluid" src="../../../app-assets/images/pages/eCommerce/9.png" alt="img-placeholder">
+                                <a href="product-details.html">
+                                    <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder">
                                 </a>
                             </div>
                             <div class="card-body">
@@ -558,7 +560,7 @@
                                     </div>
                                 </div>
                                 <div class="item-name">
-                                    <a href="app-ecommerce-details.html">
+                                    <a href="product-details.html">
                                         Philips - hue A19 Smart LED Light Bulb - White Only
                                     </a>
                                     <p class="item-company">By <span class="company-name">Philips</span></p>
@@ -585,10 +587,10 @@
                                     </div>
                                 </div>
                                 <div class="wishlist">
-                                    <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                    <ion-icon class="card-icon" name="heart-outline"></ion-icon>
                                 </div>
                                 <div class="cart">
-                                    <i class="feather icon-shopping-cart mr-25"></i> <span class="add-to-cart">Add to cart</span> <a href="app-ecommerce-checkout.html" class="view-in-cart d-none">View In Cart</a>
+                                    <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>  <span class="add-to-cart">Add to cart</span> <a href="product-checkout.html" class="view-in-cart d-none">View In Cart</a>
                                 </div>
 
                             </div>
@@ -642,7 +644,7 @@
                                 </div>
                                 <ul class="list-unstyled price-range" id="price-range">
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="price-range" checked="" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -652,7 +654,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="price-range" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -662,7 +664,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="price-range" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -672,7 +674,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="price-range" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -682,7 +684,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="price-range" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -718,7 +720,7 @@
                                 </div>
                                 <ul class="list-unstyled categories-list">
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false" checked="">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -728,7 +730,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -738,7 +740,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -748,7 +750,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -758,7 +760,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -768,7 +770,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -778,7 +780,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -788,7 +790,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -798,7 +800,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -808,7 +810,7 @@
                                         </span>
                                     </li>
                                     <li>
-                                        <span class="vs-radio-con vs-radio-primary py-25">
+                                        <span class="vs-radio-con vs-radio-primary py-2">
                                             <input type="radio" name="category-filter" value="false">
                                             <span class="vs-radio">
                                                 <span class="vs-radio--border"></span>
@@ -830,7 +832,7 @@
                                 </div>
                                 <div class="brand-list" id="brands">
                                     <ul class="list-unstyled">
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -842,7 +844,7 @@
                                             </span>
                                             <span>746</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -856,7 +858,7 @@
                                             </span>
                                             <span>633</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -870,7 +872,7 @@
                                             </span>
                                             <span>591</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -882,7 +884,7 @@
                                             </span>
                                             <span>530</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -894,7 +896,7 @@
                                             </span>
                                             <span>442</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -906,7 +908,7 @@
                                             </span>
                                             <span>394</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -918,7 +920,7 @@
                                             </span>
                                             <span>350</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -930,7 +932,7 @@
                                             </span>
                                             <span>320</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -942,7 +944,7 @@
                                             </span>
                                             <span>318</span>
                                         </li>
-                                        <li class="d-flex justify-content-between align-items-center py-25">
+                                        <li class="d-flex justify-content-between align-items-center py-2">
                                             <span class="vs-checkbox-con vs-checkbox-primary">
                                                 <input type="checkbox" value="false">
                                                 <span class="vs-checkbox">
@@ -966,44 +968,44 @@
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <ul class="unstyled-list list-inline ratings-list mb-0">
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
                                         <li>&amp; up</li>
                                     </ul>
                                     <div class="stars-received">(160)</div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <ul class="unstyled-list list-inline ratings-list mb-0">
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
                                         <li>&amp; up</li>
                                     </ul>
                                     <div class="stars-received">(176)</div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <ul class="unstyled-list list-inline ratings-list mb-0">
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
                                         <li>&amp; up</li>
                                     </ul>
                                     <div class="stars-received">(291)</div>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <ul class="unstyled-list list-inline ratings-list mb-0 ">
-                                        <li class="ratings-list-item"><i class="feather icon-star text-warning"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
-                                        <li class="ratings-list-item"><i class="feather icon-star text-light"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
+                                        <li class="ratings-list-item"><i class="fas fa-star text-secondary-200"></i></li>
                                         <li>&amp; up</li>
                                     </ul>
                                     <div class="stars-received">(190)</div>
