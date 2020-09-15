@@ -223,6 +223,9 @@ ul.row-sm {
 
 .header-icons {
 	font-size: 1.8rem;
+	.lnr-user {
+		font-size: 1.6rem;
+	}
 }
 .right-0 {
 	right: 0;
@@ -353,6 +356,83 @@ svg {
 	overflow: hidden;
 }
 
-.menu  img:not(:first-child) {
-    display: none;
+.menu img:not(:first-child) {
+	display: none;
+}
+
+.select-payment-btn {
+	&.active {
+		color: #212529;
+		background-color: lighten($color: $primary, $amount: 40);
+		border: solid 1px $primary !important;
+	}
+}
+// shopping cart
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	background: rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+}
+
+.cart-overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	transition: background-color 0.5s;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.cart-item-img {
+	padding-top: 0.5rem;
+	min-height: 9rem;
+	img {
+		height: 8rem;
+	}
+}
+
+.border-primary {
+	border: solid 1px $primary;
+}
+
+.widget-view {
+	cursor: pointer;
+}
+.dropdown-user .dropdown-toggle::after {
+	display: none;
+}
+
+.category-menu {
+	.category-menu-icon {
+		font-size: 2rem;
+	}
+	.dropdown-toggle::after {
+		display: none;
+	}
 }

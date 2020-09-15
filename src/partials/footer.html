@@ -1,88 +1,214 @@
-<!-- container end.// -->
+<!-- <div class="cart-overlay d-none"></div> -->
+<div id="shopping-cart" class="sidenav">
+	<fieldset class="p-3 bg-light h-100" id="steps-uid-0-p-0" role="tabpanel" aria-labelledby="steps-uid-0-h-0" aria-hidden="false">
+		<span class="mx-4">
+			<a id="cart-close" class="closebtn">&times;</a>
+			<h4>Shopping Cart</h4>
+		</span>
+		<section id="place-order" class="list-view product-checkout">
+			<div class="checkout-items col-12 px-0">
+				<div class="card ecommerce-card mb-3 border">
+					<div class="card-content">
+						<div class="cart-item-img text-center">
+							<a href="app-ecommerce-details.html">
+								<img src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="item-name">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="stock-status-in">In Stock</p>
+							</div>
+							<div class="item-quantity mb-2">
+								<p class="quantity-title">Quantity</p>
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="item-options text-center">
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-secondary badge-md"><ion-icon name="close-outline"></ion-icon></div>
+								</div>
+								<div class="item-cost">
+									<h6 class="item-price">$39.99</h6>
+									<p class="shipping"><i class="feather icon-shopping-cart"></i> Free Shipping</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card ecommerce-card mb-3 border">
+					<div class="card-content">
+						<div class="cart-item-img text-center">
+							<a href="app-ecommerce-details.html">
+								<img src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="item-name">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="stock-status-in">In Stock</p>
+							</div>
+							<div class="item-quantity mb-2">
+								<p class="quantity-title">Quantity</p>
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</div>
+						<div class="item-options text-center">
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-secondary badge-md"><ion-icon name="close-outline"></ion-icon></div>
+								</div>
+								<div class="item-cost">
+									<h6 class="item-price">$39.99</h6>
+									<p class="shipping"><i class="feather icon-shopping-cart"></i> Free Shipping</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- shopping summary -->
+		<div class="card">
+			<div class="card-body">
+				<h4>Shopping Summary</h4>
+				<ul class="list-group">
+					<li class="list-group-item border-0  px-0 d-flex justify-content-between">
+						<h5 class="mb-0">sub-total</h5>
+						$489.00
+					</li>
+					<li class="list-group-item border-0  px-0 d-flex justify-content-between">
+						<h5 class="mb-0">Discount</h5>
+						$489.00
+					</li>
+					<li class="list-group-item border-0  px-0 d-flex justify-content-between">
+						<h5 class="mb-0">Shipping & Handling</h5>
+						$489.00
+					</li>
+					<li class="list-group-item border-0  px-0 d-flex justify-content-between">
+						<h5 class="mb-0">Shipping & Handling</h5>
+						$489.00
+					</li>
+					<li class="list-group-item border-0  px-0 d-flex justify-content-between">
+						<h3>Grand Total</h3>
+						<h3>$489.00</h3>
+					</li>
+				</ul>
+			</div>
+			<div class="card-footer d-flex justify-content-between">
+				<button class="btn btn-outline-secondary">return to shopping</button>
+				<a href="/checkout.html" class="btn btn-success btn-lg">Checkout</a>
+			</div>
+		</div>
+	</fieldset>
+</div>
 
 <!-- ========================= SECTION SUBSCRIBE  ========================= -->
 <section class="section-subscribe bg-white">
-    <div class="container">
-    
-    <p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
-    
-    <div class="row justify-content-md-center">
-        <div class="col-lg-5 col-md-6">
-    <form class="form-row">
-            <div class="col-md-8 col-7">
-            <input class="form-control border-0" placeholder="Your Email" type="email">
-            </div> <!-- col.// -->
-            <div class="col-md-4 col-5">
-            <button type="submit" class="btn btn-block btn-warning"> <i class="fa fa-envelope"></i> Subscribe </button>
-            </div> <!-- col.// -->
-    </form>
-    <small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
-        </div> <!-- col-md-6.// -->
-    </div>
-        
-    
-    </div>
-    </section>
-    <!-- ========================= SECTION SUBSCRIBE END// ========================= -->
-    
-    <footer class="section-footer border-top">
-        <div class="container">
-            <section class="footer-top padding-y">
-                <div class="row">
-                    <aside class="col-md-4">
-                        <article class="mr-3">
-                            <img src="{{root}}assets/images/logo.png" class="logo-footer">
-                            <p class="mt-3">Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his friends.</p>
-                            <div>
-                                <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </article>
-                    </aside>
-                    <aside class="col-sm-3 col-md-2">
-                        <h6 class="title">About</h6>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">About us</a></li>
-                            <li> <a href="#">Services</a></li>
-                            <li> <a href="#">Rules and terms</a></li>
-                            <li> <a href="#">Blogs</a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3 col-md-2">
-                        <h6 class="title">Services</h6>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Help center</a></li>
-                            <li> <a href="#">Money refund</a></li>
-                            <li> <a href="#">Terms and Policy</a></li>
-                            <li> <a href="#">Open dispute</a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3  col-md-2">
-                        <h6 class="title">For users</h6>
-                        <ul class="list-unstyled">
-                            <li> <a href="#"> User Login </a></li>
-                            <li> <a href="#"> User register </a></li>
-                            <li> <a href="#"> Account Setting </a></li>
-                            <li> <a href="#"> My Orders </a></li>
-                            <li> <a href="#"> My Wishlist </a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-2  col-md-2">
-                        <h6 class="title">Our app</h6>
-                        <a href="#" class="d-block mb-2"><img src="{{root}}assets/images/misc/appstore.png" height="40"></a>
-                        <a href="#" class="d-block mb-2"><img src="{{root}}assets/images/misc/playmarket.png" height="40"></a>
-                    </aside>
-                </div> <!-- row.// -->
-            </section>	<!-- footer-top.// -->
-    
-            <section class="footer-copyright border-top">
-                    <p class="float-left text-muted"> © 2019 Company  All rights resetved </p>
-                    <p target="_blank" class="float-right text-muted">
-                        <a href="#">Privacy &amp; Cookies</a> &nbsp;   &nbsp; 
-                        <a href="#">Accessibility</a>
-                    </p>
-            </section>
-        </div><!-- //container -->
-    </footer>
+	<div class="container">
+		<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+
+		<div class="row justify-content-md-center">
+			<div class="col-lg-5 col-md-6">
+				<form class="form-row">
+					<div class="col-md-8 col-7">
+						<input class="form-control border-0" placeholder="Your Email" type="email" />
+					</div>
+					<!-- col.// -->
+					<div class="col-md-4 col-5">
+						<button type="submit" class="btn btn-block btn-warning"><i class="fa fa-envelope"></i> Subscribe</button>
+					</div>
+					<!-- col.// -->
+				</form>
+				<small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
+			</div>
+			<!-- col-md-6.// -->
+		</div>
+	</div>
+</section>
+<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+
+<footer class="section-footer border-top">
+	<div class="container">
+		<section class="footer-top padding-y">
+			<div class="row">
+				<aside class="col-md-4">
+					<article class="mr-3">
+						<img src="{{root}}assets/images/logo.png" class="logo-footer" />
+						<p class="mt-3">
+							Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his
+							friends.
+						</p>
+						<div>
+							<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+							<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+							<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+							<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+						</div>
+					</article>
+				</aside>
+				<aside class="col-sm-3 col-md-2">
+					<h6 class="title">About</h6>
+					<ul class="list-unstyled">
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Rules and terms</a></li>
+						<li><a href="#">Blogs</a></li>
+					</ul>
+				</aside>
+				<aside class="col-sm-3 col-md-2">
+					<h6 class="title">Services</h6>
+					<ul class="list-unstyled">
+						<li><a href="#">Help center</a></li>
+						<li><a href="#">Money refund</a></li>
+						<li><a href="#">Terms and Policy</a></li>
+						<li><a href="#">Open dispute</a></li>
+					</ul>
+				</aside>
+				<aside class="col-sm-3 col-md-2">
+					<h6 class="title">For users</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"> User Login </a></li>
+						<li><a href="#"> User register </a></li>
+						<li><a href="#"> Account Setting </a></li>
+						<li><a href="#"> My Orders </a></li>
+						<li><a href="#"> My Wishlist </a></li>
+					</ul>
+				</aside>
+				<aside class="col-sm-2 col-md-2">
+					<h6 class="title">Our app</h6>
+					<a href="#" class="d-block mb-2"><img src="{{root}}assets/images/misc/appstore.png" height="40" /></a>
+					<a href="#" class="d-block mb-2"><img src="{{root}}assets/images/misc/playmarket.png" height="40" /></a>
+				</aside>
+			</div>
+			<!-- row.// -->
+		</section>
+		<!-- footer-top.// -->
+
+		<section class="footer-copyright border-top">
+			<p class="float-left text-muted">© 2019 Company All rights resetved</p>
+			<p target="_blank" class="float-right text-muted">
+				<a href="#">Privacy &amp; Cookies</a> &nbsp; &nbsp;
+				<a href="#">Accessibility</a>
+			</p>
+		</section>
+	</div>
+	<!-- //container -->
+</footer>

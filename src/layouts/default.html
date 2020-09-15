@@ -29,12 +29,7 @@
 		/>
 	</head>
 
-	<body
-		class="horizontal-layout horizontal-menu 2-columns ecommerce-application navbar-floating footer-static"
-		data-open="hover"
-		data-menu="horizontal-menu"
-		data-col="2-columns"
-	>
+	<body class="">
 		<b class="screen-overlay"></b>
 		{{>navigation}}
 		<div class="container px-0">{{> body}}</div>
@@ -44,11 +39,22 @@
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 	<!-- JS, Popper.js, and jQuery -->
 	<script>
-		$(function () {
-			
+		$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+		$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+		$('#cart-btn').click(() => {
+			$('#shopping-cart').css('width', '40%');
+			$('.cart-overlay').toggleClass('d-none');
+		});
+		$('#cart-close').click(() => {
+			$('#shopping-cart').css('width', '0px');
+			$('.cart-overlay').toggleClass('d-none');
+		});
+		$('.cart-overlay').click(() => {
+			$('#shopping-cart').css('width', '0px');
+			$('.cart-overlay').toggleClass('d-none');
 		});
 		$(document).ready(function () {
-            var pic_X = $('.menu').offset().left;
+			var pic_X = $('.menu').offset().left;
 			var pic_Y = $('.menu').offset().top;
 			var pic_W = $('.menu').width() / 2;
 			var pic_H = $('.menu').height() / 2;

@@ -2,211 +2,104 @@ html {
 	font-size: $base-font-size;
 	height: 100%;
 	letter-spacing: 0.01rem;
-	body {
-		height: 100%;
-		background-color: $body-bg;
-		direction: $body-direction;
-		.content {
-			padding: 0;
-			position: relative;
-			transition: 300ms ease all;
-			backface-visibility: hidden;
-			min-height: calc(100% - 4rem);
-			margin-left: $menu-expanded-width;
-			&.app-content {
-				overflow: hidden;
-				&.show-overlay {
-					.content-overlay {
-						z-index: 10;
-						opacity: 1;
-						~ .header-navbar-shadow {
-							background: linear-gradient(180deg, rgba(44, 48, 60, 0.9) 44%, rgba(44, 48, 60, 0.43) 73%, rgba(44, 48, 60, 0));
-						}
-					}
-				}
-				.content-overlay {
-					position: fixed;
-					opacity: 0;
-					width: 100%;
-					height: 100%;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					background-color: rgba($pure-black, 0.5);
-					cursor: pointer;
-					transition: all 0.7s;
-					z-index: -1;
-				}
-				.content-area-wrapper {
-					height: calc(100% - #{$navbar-height});
-					margin: calc(#{$navbar-height} + 2.7rem) #{$content-padding} 0;
-					// padding: calc(#{$content-padding} - 0.4rem) #{$content-padding};
-					display: flex;
-					position: relative;
-					.content-wrapper {
-						margin-top: 0;
-						height: calc(100vh - 13rem);
-						height: calc(var(--vh, 1vh) * 100 - 13rem);
-					}
-				}
-			}
-			.content-wrapper {
-				margin-top: $navbar-height + 1;
-				.content-header-title {
-					font-weight: 500;
-					color: $gray-400;
-					margin-right: $spacer;
-				}
-				.content-header-right {
-					.dropdown-toggle {
-						&::after {
-							display: none;
-						}
-						i {
-							margin-right: 0;
-						}
-					}
-					.btn-icon {
-						padding: 0.8rem;
-						i {
-							font-size: $font-size-base;
-						}
-					}
-				}
-			}
-		}
-		//for navbar hidden
-		&.navbar-hidden {
-			.app-content {
-				.content-wrapper {
-					margin-top: 0;
-				}
-				.content-area-wrapper {
-					padding: 0;
-					margin-top: 2.5rem;
-				}
-			}
-		}
+}
 
-		// for static navbar
-		&.navbar-static {
-			.main-menu {
-				top: 0;
-			}
-			.app-content {
-				.navbar-container {
-					padding-left: 2.2rem;
-					padding-right: 1.2rem;
-				}
-				.content-area-wrapper {
-					margin-top: 1rem;
-				}
-			}
-		}
+body {
+	height: 100%;
+}
 
-		// for sticky navbar
-		&.navbar-sticky {
-			.app-content {
-				.navbar-container {
-					padding-left: 2.2rem;
-					padding-right: 1rem;
-					.search-input {
-						.search-list {
-							&.show {
-								width: 98%;
-								left: 1%;
-							}
-						}
-					}
-				}
-			}
-		}
-
-		// navbar search width for sticky and static navbar
-		&.navbar-static,
-		&.navbar-sticky {
-			.navbar-container {
-				padding-left: 2.2rem;
-				padding-right: 1rem;
-				.search-input {
-					.search-list {
-						&.show {
-							width: 98%;
-							left: 1%;
-						}
-					}
-				}
-			}
-		}
-
-		// Fixed layout
-		&.fixed-footer {
-			.content {
-				&.app-content {
-					margin-bottom: 3rem;
-				}
-			}
-		}
-
-		// paragraph line-height
-		p {
-			line-height: 1.5rem;
-		}
-
-		&.bg-full-screen-image {
-			background: url(../../app-assets/images/pages/vuexy-login-bg.jpg) no-repeat center center;
-			background-size: cover;
-		}
-
-		/*
-      * Blank page
-      */
-
-		&.blank-page {
-			.content {
-				margin-left: 0;
-				// overflow-x hidden, overflow for y in sm screen issue resolved default
-				&.app-content {
-					overflow: overlay;
-					overflow-x: hidden;
-					// remove white space on top by header-navbar-shadow class
-					.header-navbar-shadow {
-						display: none;
-					}
-				}
-			}
-			// blank page content-wrapper
-			.content-wrapper {
-				padding: 0 !important;
-				margin-top: 0;
-				// content to be in center horizontally and vertically
-				.flexbox-container {
-					display: flex;
-					align-items: center;
-					height: 100vh;
-					height: calc(var(--vh, 1vh) * 100);
-					justify-content: center;
-				}
-			}
-		}
-
-		//Remove left margin for 1 column layout
-		&[data-col='1-column'] {
-			.content,
-			.footer {
-				margin-left: 0px !important;
+.content {
+	padding: 0;
+	position: relative;
+	backface-visibility: hidden;
+	min-height: calc(100% - 4rem);
+}
+.app-content {
+	overflow: hidden;
+	&.show-overlay {
+		.content-overlay {
+			z-index: 10;
+			opacity: 1;
+			~ .header-navbar-shadow {
+				background: linear-gradient(180deg, rgba(44, 48, 60, 0.9) 44%, rgba(44, 48, 60, 0.43) 73%, rgba(44, 48, 60, 0));
 			}
 		}
 	}
-	.pace {
-		.pace-progress {
-			background: $primary;
+	.content-overlay {
+		position: fixed;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($pure-black, 0.5);
+		cursor: pointer;
+		transition: all 0.7s;
+		z-index: -1;
+	}
+	.content-area-wrapper {
+		height: calc(100% - #{$navbar-height});
+		margin: calc(#{$navbar-height} + 2.7rem) #{$content-padding} 0;
+		// padding: calc(#{$content-padding} - 0.4rem) #{$content-padding};
+		display: flex;
+		position: relative;
+		.content-wrapper {
+			margin-top: 0;
+			height: calc(100vh - 13rem);
+			height: calc(var(--vh, 1vh) * 100 - 13rem);
 		}
 	}
 }
 
-.app-content.center-layout {
+.content-wrapper {
+	.content-header-title {
+		font-weight: 500;
+		color: $gray-400;
+		margin-right: $spacer;
+	}
+	.content-header-right {
+		.dropdown-toggle {
+			&::after {
+				display: none;
+			}
+			i {
+				margin-right: 0;
+			}
+		}
+		.btn-icon {
+			padding: 0.8rem;
+			i {
+				font-size: $font-size-base;
+			}
+		}
+	}
+}
+
+.fixed-footer {
+	.app-content {
+		margin-bottom: 3rem;
+	}
+}
+
+.bg-full-screen-image {
+	background: url(../../assets/images/pages/vuexy-login-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+[data-col='1-column'] {
+	.content,
+	.footer {
+		margin-left: 0px !important;
+	}
+}
+
+.pace-progress {
+	background: $primary;
+}
+
+.center-layout {
 	overflow: hidden;
 }
 
@@ -265,15 +158,13 @@ html {
 }
 
 @include media-breakpoint-down(xs) {
-	body {
-		&.navbar-static,
-		&.navbar-sticky {
-			.app-content {
-				.header-navbar {
-					.navbar-container {
-						padding-left: 1rem;
-						padding-right: 0.5rem;
-					}
+	.navbar-static,
+	.navbar-sticky {
+		.app-content {
+			.header-navbar {
+				.navbar-container {
+					padding-left: 1rem;
+					padding-right: 0.5rem;
 				}
 			}
 		}

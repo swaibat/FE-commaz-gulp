@@ -76,13 +76,8 @@ $border-radius-sm: 0.25rem;
 // stylelint-disable value-keyword-case
 $font-family-sans-serif: 'Poppins',
 sans-serif;
-$font-family-monospace: SFMono-Regular,
-Menlo,
-Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace !default;
+$font-family-monospace: 'Poppins',
+sans-serif !default;
 $font-family-base: $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 $font-size-base: .9rem;

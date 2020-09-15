@@ -14,19 +14,16 @@
 	background-color: $red;
 }
 
-.bg-light-orange {
+.bg-light-warning {
 	background-color: #ffdcb0;
 }
-.bg-light-gray {
-	background-color: #dee2e6;
-}
-.bg-light-green {
+.bg-light-success {
 	background-color: #abeae8;
 }
 .bg-light-blue {
 	background-color: #9fe0ff;
 }
-.bg-light-red {
+.bg-light-danger {
 	background-color: #fbd5e7;
 }
 
@@ -61,7 +58,7 @@
 .bg-img {
 	overflow: hidden;
 	background-color: #ddd;
-	background-image: linear-gradient(135deg, rgba($primary, 0.8), rgba($secondary, 0.9)), url('../images/banners/bg-cpu.jpg');
+	background-image: linear-gradient(135deg, rgba($primary, 0.8), rgba($secondary, 0.9)), url('../assets/images/banners/bg-cpu.jpg');
 	background-position: 0px 0px, 50% 50%;
 	background-size: auto cover;
 }
