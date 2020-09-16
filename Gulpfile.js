@@ -128,13 +128,13 @@ function icons() {
     .pipe(gulp.dest('./dist/assets/icons'))
     .pipe(browsersync.stream());
 }
-// JS task
-function scripts() {
-  return gulp
-    .src('./src/assets/js/**/*')
-    .pipe(gulp.dest('./dist/assets/js'))
-    .pipe(browsersync.stream());
-}
+// // JS task
+// function scripts() {
+//   return gulp
+//     .src('./src/assets/js/**/*')
+//     .pipe(gulp.dest('./dist/assets/js'))
+//     .pipe(browsersync.stream());
+// }
 // JS task
 function vendors() {
   return gulp
@@ -150,6 +150,6 @@ function watchfiles() {
   gulp.watch('src/{layouts,includes,helpers,partials}/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
 const build = gulp.series(
-  clean, gulp.parallel(html, styles, vendors, modules, scripts, images, icons),
+  clean, gulp.parallel(html, styles, vendors, modules, images, icons),
 );
 exports.default = gulp.series(build, gulp.parallel(browserSync, watchfiles));

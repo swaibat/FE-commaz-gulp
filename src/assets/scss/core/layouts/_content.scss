@@ -6,6 +6,8 @@ html {
 
 body {
 	height: 100%;
+	overflow-x: hidden;
+	padding-top: 2.5rem;
 }
 
 .content {
@@ -56,7 +58,7 @@ body {
 .content-wrapper {
 	.content-header-title {
 		font-weight: 500;
-		color: $gray-400;
+		color: $black;
 		margin-right: $spacer;
 	}
 	.content-header-right {
@@ -125,7 +127,7 @@ body {
 				float: right;
 				margin-left: -$sidebar-width;
 				.content-body {
-					margin-left: calc(#{$sidebar-width} + #{$content-padding});
+					margin-left: $sidebar-width;
 				}
 			}
 			&.content-left {
@@ -151,9 +153,9 @@ body {
 	white-space: nowrap !important;
 }
 
-@include media-breakpoint-down(xs) {
-	html body .content .content-wrapper {
-		padding: calc(#{$content-padding} - 0.4rem) calc(#{$content-padding} - 1rem) 0;
+@include media-breakpoint-down(sm) {
+	 .content-wrapper {
+		padding: 0;
 	}
 }
 

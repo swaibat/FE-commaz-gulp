@@ -36,13 +36,6 @@
     }
   }
 
-  // For Light,dark and secondary outline btns
-  &.btn-outline-secondary,
-  &.btn-outline-dark,
-  &.btn-outline-light {
-    border: 1px solid;
-  }
-
   // Flat Secondary, Light and Dark
   &.btn-flat-secondary {
     &:hover {
@@ -75,16 +68,7 @@
     }
   }
 
-  // to remove extra spacing because of border in btn outline
-  &[class*="btn-outline-"]{
-    padding-top: calc(#{$btn-padding-y} - 1px);
-    padding-bottom: calc(#{$btn-padding-y} - 1px);
-    &.btn-sm{
-      padding-top: calc(0.5rem - 1px);
-      padding-bottom: calc(0.5rem - 1px);
-    }
-  }
-
+ 
   // Relief Buttons Secondary, Light and Dark
   &.btn-relief-secondary {
     background-color: $secondary;
@@ -170,14 +154,6 @@
   }
 }
 
-// For White Btn
-.btn.btn-outline-white,
-.btn-white{
-  &:hover{
-    color: $black !important;
-  }
-
-}
 
 // Added cursor pointer as in latest bootstrap do not have this
 button,

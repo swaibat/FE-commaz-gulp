@@ -158,75 +158,6 @@ $color in $colors {
         }
       }
 
-      // Outline buttons
-      .btn-outline-#{$color_name} {
-        border: 1px solid $color_value;
-        background-color: transparent;
-        color: $color_value;
-
-        &:hover {
-          background-color: rgba($color: $color_value, $alpha: .08);
-          color: $color_value;
-        }
-
-        &:active {
-          color: #fff !important;
-        }
-      }
-
-      // Dropdowns
-
-      .btn-#{$color_name},
-      .btn-outline-#{$color_name},
-      .btn-flat-#{$color-name} {
-        &~.dropdown-menu {
-          .dropdown-item {
-            &.active {
-              background-color: $color_value;
-              color: #fff;
-
-              &:hover {
-                color: #fff;
-              }
-            }
-
-            &:not(.active):not(:active) {
-              &:hover {
-                color: $color_value;
-              }
-            }
-          }
-        }
-      }
-
-      .dropdown,
-      .dropup,
-      .dropright,
-      .dropleft {
-        &.dropdown-icon-wrapper {
-
-          .btn-#{$color_name},
-          .btn-outline-#{$color_name},
-          .btn-flat-#{$color-name} {
-            &~.dropdown-menu {
-              .dropdown-item {
-                &:hover {
-                  i {
-                    color: $color_value;
-                  }
-                }
-
-                &:active {
-                  i {
-                    color: #fff;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
       // Bullet colors for email app
       .bullet {
         &.bullet-#{$color_name} {
@@ -395,15 +326,6 @@ $color in $colors {
         &:active {
           border-color: color-function($color_name, "darken-3") !important;
           background-color: color-function($color_name, "darken-4") !important;
-        }
-      }
-
-      .btn-outline-#{$color_name}.btn-outline-#{$color_type} {
-        border-color: $color_value !important;
-        color: $color_value !important;
-
-        &:hover {
-          background-color: $color_value !important;
         }
       }
 

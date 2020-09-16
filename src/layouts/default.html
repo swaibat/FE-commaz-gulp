@@ -8,25 +8,11 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>{{ title }}</title>
 		<!-- Google Font -->
-		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/vendors.min.css" />
-		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css" />
-		<link rel="stylesheet" type="text/css" href="{{root}}assets/vendors/css/extensions/swiper.min.css" />
 		<link rel="stylesheet" href="{{root}}assets/css/style.css" />
 		<link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
 		<link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
 		<script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-			crossorigin="anonymous"
-		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 	</head>
 
 	<body class="">
@@ -36,21 +22,57 @@
 		{{> footer}}
 	</body>
 	<script src="{{root}}assets/js/bundle.js"></script>
-	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+		jQuery('#carousel').owlCarousel({
+			autoplay: false,
+			lazyLoad: true,
+			loop: true,
+			margin: 20,
+			/*
+  animateOut: 'fadeOut',
+  animateIn: 'fadeIn',
+  */
+			responsiveClass: true,
+			autoHeight: true,
+			autoplayTimeout: 7000,
+			smartSpeed: 800,
+			nav: true,
+			responsive: {
+				0: {
+					items: 1,
+				},
+
+				600: {
+					items: 3,
+				},
+
+				1024: {
+					items: 4,
+				},
+
+				1366: {
+					items: 4,
+				},
+			},
+		});
+	</script>
 	<!-- JS, Popper.js, and jQuery -->
 	<script>
 		$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 		$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 		$('#cart-btn').click(() => {
-			$('#shopping-cart').css('width', '40%');
+			$('#shopping-cart').toggleClass('cart-area');
 			$('.cart-overlay').toggleClass('d-none');
 		});
 		$('#cart-close').click(() => {
-			$('#shopping-cart').css('width', '0px');
+			$('#shopping-cart').toggleClass('cart-area');
 			$('.cart-overlay').toggleClass('d-none');
 		});
 		$('.cart-overlay').click(() => {
-			$('#shopping-cart').css('width', '0px');
+			$('#shopping-cart').toggleClass('cart-area');
 			$('.cart-overlay').toggleClass('d-none');
 		});
 		$(document).ready(function () {
@@ -98,26 +120,4 @@
 		});
 		// console.log($('#slider').height())
 	</script>
-	<!-- BEGIN: Vendor JS-->
-	<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
-	<!-- BEGIN Vendor JS-->
-
-	<!-- BEGIN: Page Vendor JS-->
-	<script src="../../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
-	<script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
-	<script src="../../../app-assets/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
-	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.js"></script>
-	<script src="../../../app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
-	<!-- END: Page Vendor JS-->
-
-	<!-- BEGIN: Theme JS-->
-	<script src="../../../app-assets/js/core/app-menu.js"></script>
-	<script src="../../../app-assets/js/core/app.js"></script>
-	<script src="../../../app-assets/js/scripts/components.js"></script>
-	<!-- END: Theme JS-->
-
-	<!-- BEGIN: Page JS-->
-	<script src="../../../app-assets/js/scripts/pages/app-user.js"></script>
-	<script src="../../../app-assets/js/scripts/navs/navs.js"></script>
-	<!-- END: Page JS-->
 </html>

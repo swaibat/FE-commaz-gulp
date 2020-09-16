@@ -30,6 +30,7 @@ PAGES
 @import './helpers/bg';
 @import './helpers/helper-classes';
 @import './components/items';
+@import './components/table';
 
 .slider-home-banner {
 	.carousel-item {
@@ -223,6 +224,7 @@ ul.row-sm {
 
 .header-icons {
 	font-size: 1.8rem;
+	margin-bottom: -.65rem;
 	.lnr-user {
 		font-size: 1.6rem;
 	}
@@ -297,7 +299,7 @@ ul.row-sm {
 	right: 0;
 	height: 120vh;
 	background-color: rgba(0, 0, 0, 0.5);
-	z-index: 997;
+	z-index: 1050;
 	display: none;
 }
 
@@ -346,6 +348,9 @@ svg {
 	.c {
 		stroke: rgba(0, 0, 0, 0);
 		stroke-miterlimit: 10;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 	}
 }
 
@@ -372,11 +377,11 @@ svg {
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 1050;
 	top: 0;
 	right: 0;
 	overflow-x: hidden;
-	background: rgba(0, 0, 0, 0.4);
+	background: $bg-color;
 	transition: 0.3s;
 }
 
@@ -411,9 +416,9 @@ svg {
 
 .cart-item-img {
 	padding-top: 0.5rem;
-	min-height: 9rem;
+	min-height: 5rem;
 	img {
-		height: 8rem;
+		height: 5rem;
 	}
 }
 
@@ -436,3 +441,75 @@ svg {
 		display: none;
 	}
 }
+
+.lr-only {
+	@include media-breakpoint-down(md) {
+		display: none !important;
+	}
+}
+
+.bread-overlay {
+    height: 14rem;
+    width: 100%;
+    top: 3rem;
+	position: fixed;
+	// background: #ff4b1f;
+	background: $gray-300;
+	left: 0;
+	z-index: -1;
+}
+
+// shopping cart class
+
+.cart-area{
+	width: 350px !important;
+	@include media-breakpoint-down(md) {
+		width: 100% !important;
+	}
+}
+
+/* fix blank or flashing items on carousel */
+/* end fix */
+.owl-nav {
+	button {
+		position: absolute;
+		top: 50%;
+		background-color: #000;
+		color: #fff;
+		margin: 0;
+		transition: all 0.3s ease-in-out;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(255, 255, 255, 0.38) !important;
+		&:focus {
+			outline: none;
+		}
+	}
+	button.owl-prev {
+		left: 0;
+	}
+	button.owl-next {
+		right: 0;
+	}
+}
+.owl-dots {
+	text-align: center;
+	padding-top: 15px;
+	button.owl-dot {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		display: inline-block;
+		background: #ccc;
+		margin: 0 3px;
+		&:focus {
+			outline: none;
+		}
+	}
+	button.owl-dot.active {
+		background-color: #000;
+	}
+}
+
+
