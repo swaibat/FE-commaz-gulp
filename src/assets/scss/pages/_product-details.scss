@@ -28,8 +28,7 @@ $swiper-bg: #f7f7f7;
 }
 
 // centered slides option-1
-.swiper-responsive-breakpoints {
-	&.swiper-container {
+
 		.swiper-slide {
 			text-align: center;
 			font-weight: $headings-font-weight;
@@ -37,8 +36,7 @@ $swiper-bg: #f7f7f7;
 			padding: 1.5rem;
 			cursor: pointer;
 		}
-	}
-}
+
 
 //navigation button custom feather icons
 .swiper-button-prev,

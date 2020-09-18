@@ -38,9 +38,6 @@
     border-radius: $dropdown-border-radius;
     transform: scale(1, 0);
     box-shadow: 0 5px 25px rgba($pure-black, 0.1); // this according to vue version
-    // left: 5px;  // it creates issue in navbar - notification dropdown
-    min-width: 8rem;
-
     &::before {
       content: "";
       position: absolute;

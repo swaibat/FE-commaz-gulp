@@ -1,56 +1,30 @@
-<div class="app-content content">
-    <div class="content-overlay"></div>
-    <div class="header-navbar-shadow"></div>
+<div class="bread-overlay"></div>
+<div class="py-2 d-flex">
+	<span>
+		<h1 class="">Frequently Asked Questions</h1>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb bg-transparent px-0">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page">FAQ</li>
+			</ol>
+		</nav>
+	</span>
+	<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label></div>
+</div>
+<div class="app-content content mb-5">
     <div class="content-wrapper">
-        <div class="content-header row">
-            <div class="content-header-left col-md-9 col-12 mb-2">
-                <div class="row breadcrumbs-top">
-                    <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0">FAQ</h2>
-                        <div class="breadcrumb-wrapper col-12">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                </li>
-                                <li class="breadcrumb-item"><a href="#">Pages</a>
-                                </li>
-                                <li class="breadcrumb-item active">FAQ
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-                <div class="form-group breadcrum-right">
-                    <div class="dropdown">
-                        <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="content-body">
-            <section id="faq-search">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card faq-bg white">
-                            <div class="card-content">
-                                <div class="card-body p-sm-4 p-2">
-                                    <h1 class="white">Have Any Questions?</h1>
-                                    <p class="card-text mb-2">
-                                        Bonbon sesame snaps lemon drops marshmallow ice cream carrot cake croissant wafer.
-                                    </p>
-                                    <form>
-                                        <fieldset class="form-group position-relative has-icon-left mb-0">
-                                            <input type="text" class="form-control form-control-lg" id="searchbar" placeholder="Search">
-                                            <div class="form-control-position">
-                                                <i class="feather icon-search px-1"></i>
-                                            </div>
-                                        </fieldset>
-                                    </form>
+            <section id="ecommerce-searchbar" class="mb-3">
+                <div class="row mt-n1">
+                    <div class="col-sm-12">
+                        <form class="p-2 shadow-sm bg-white rounded my-2" action="#">
+                            <div class="input-group">
+                                <input class="form-control border-0 mr-2 " type="search" placeholder="Search tools and resources...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary rounded" type="submit"><i class="ti-search"></i> Search</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -78,7 +52,7 @@
                                     </div>
                                 </div>
                                 <h4 class="mt-3">Supporters</h4>
-                                <div class="supporter-details mt-2">
+                                <div class="supporter-details mt-2 rounded border p-3">
                                     <div class="supporter-img d-inline-block">
                                         <img class="rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar">
                                     </div>
@@ -87,7 +61,7 @@
                                         <small>Web Developer</small>
                                     </div>
                                 </div>
-                                <div class="supporter-details mt-2">
+                                <div class="supporter-details mt-2 rounded border p-3">
                                     <div class="supporter-img d-inline-block">
                                         <img class="rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar">
                                     </div>
@@ -96,7 +70,7 @@
                                         <small>Web Designer</small>
                                     </div>
                                 </div>
-                                <div class="supporter-details mt-2">
+                                <div class="supporter-details mt-2 rounded border p-3">
                                     <div class="supporter-img d-inline-block">
                                         <img class="rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar">
                                     </div>
@@ -105,7 +79,7 @@
                                         <small>Web Developer</small>
                                     </div>
                                 </div>
-                                <div class="supporter-details mt-2">
+                                <div class="supporter-details mt-2 rounded border p-3">
                                     <div class="supporter-img d-inline-block">
                                         <img class="rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar">
                                     </div>
@@ -114,7 +88,7 @@
                                         <small>Web Developer</small>
                                     </div>
                                 </div>
-                                <div class="supporter-details mt-2">
+                                <div class="supporter-details mt-2 rounded border p-3">
                                     <div class="supporter-img d-inline-block">
                                         <img class="rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar">
                                     </div>
@@ -131,12 +105,12 @@
                             <div class="card-body p-0">
                                 <div class="accordion search-content-info" id="accordionExample" data-toggle-hover="true">
                                     <div class="collapse-margin search-content mt-0">
-                                        <div class="card-header collapsed" id="headingOne" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <div class="card-header" id="headingOne" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             <span class="lead collapse-title">
                                                 What does royalty free mean?
                                             </span>
                                         </div>
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
                                             <div class="card-body">
                                                 Royalty free means you just need to pay for rights to use the item once per end product. You don't need to pay additional or ongoing fees for each person who sees or uses it. Please note that there may be some limits placed on uses under the different license types available on the marketplaces, such as our Photo and Music Licenses.
                                             </div>
