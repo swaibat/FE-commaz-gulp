@@ -1,166 +1,172 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		{{!— Required meta tags --}}
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>{{ title }}</title>
-		<!-- Google Font -->
-		<link rel="stylesheet" href="{{root}}assets/css/style.css" />
-		<link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
-		<link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
-		<script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-	</head>
 
-	<body class="">
-		<b class="screen-overlay"></b>
-		{{>navigation}}
-		<div class="container px-0">{{> body}}</div>
-		{{> footer}}
-	</body>
-	<script src="{{root}}assets/js/bundle.js"></script>
-	<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<script>
-		jQuery('#carousel').owlCarousel({
-			autoplay: false,
-			lazyLoad: true,
-			loop: true,
-			margin: 20,
-			/*
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-  */
-			responsiveClass: true,
-			autoHeight: true,
-			autoplayTimeout: 7000,
-			smartSpeed: 800,
-			nav: true,
-			responsive: {
-				0: {
-					items: 1,
-				},
+<head>
+	{{!— Required meta tags --}}
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>{{ title }}</title>
+	<!-- Google Font -->
+	<link rel="stylesheet" href="{{root}}assets/css/style.css" />
+	<link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
+	<link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
+	<script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
 
-				600: {
-					items: 3,
-				},
-
-				1024: {
-					items: 4,
-				},
-
-				1366: {
-					items: 4,
-				},
+<body class="">
+	<b class="screen-overlay"></b>
+	{{>navigation}}
+	<div class="container px-0">{{> body}}</div>
+	{{> footer}}
+</body>
+<script src="{{root}}assets/js/bundle.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+	jQuery('#carousel').owlCarousel({
+		autoplay: false,
+		lazyLoad: true,
+		loop: true,
+		margin: 20,
+		/*
+animateOut: 'fadeOut',
+animateIn: 'fadeIn',
+*/
+		responsiveClass: true,
+		autoHeight: true,
+		autoplayTimeout: 7000,
+		smartSpeed: 800,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1,
 			},
-		});
-	</script>
-	<!-- JS, Popper.js, and jQuery -->
-	<script>
-		$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
-		$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 
-		$('#cart-btn').click(() => {
-			$('#shopping-cart').toggleClass('cart-area');
-			$('.cart-overlay').toggleClass('d-none');
-		});
-		$('#cart-close').click(() => {
-			$('#shopping-cart').toggleClass('cart-area');
-			$('.cart-overlay').toggleClass('d-none');
-		});
-		$('.cart-overlay').click(() => {
-			$('#shopping-cart').toggleClass('cart-area');
-			$('.cart-overlay').toggleClass('d-none');
-		});
-		$(document).ready(function () {
-			var pic_X = $('.menu').offset().left;
-			var pic_Y = $('.menu').offset().top;
-			var pic_W = $('.menu').width() / 2;
-			var pic_H = $('.menu').height() / 2;
-			var center_X = pic_X + pic_W;
-			var center_Y = pic_Y + pic_H;
-			var movestop = pic_W / 10;
-			$('.menu').mousemove(function (event) {
-				var mouse_X = event.pageX;
-				var mouse_Y = event.pageY;
-				if (mouse_X - center_X <= 0) {
-					moveImg(mouse_X, mouse_Y, 'left');
-				} else {
-					moveImg(mouse_X, mouse_Y);
-				}
-			});
-			function moveImg(m_X, m_Y, dir) {
-				var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
-				if (dir) {
-					$('.menu img').eq(index).show().siblings().hide();
-				} else {
-					$('.menu img')
-						.eq(18 - index)
-						.show()
-						.siblings()
-						.hide();
-				}
-			}
-			$('.drop-list')
-				.css('width', $('#slider').width())
-				.css('margin-left', $('#category-nav').width() + 20);
-			$('.btn-link').mouseover((e) => {
-				console.log(e.target);
-				$('.drop-list').addClass('show');
-			});
-			$('.btn-link').mouseover(() => {
-				$('.drop-list').addClass('show');
-			});
-		});
-		$(window).resize(function () {
-			$('.drop-list').css('width', $('#slider').width()).css('height', $('#slider').height()).css('margin-left', $('#category-nav').width());
-		});
-		// cart buttons
-		// personal details
-		$('#to-shopping').click((e) => {
-			e.preventDefault();
-			$('#shipping').addClass('show');
-			$('[data-target="#personalDetails"]').removeClass('d-none');
-		});
+			600: {
+				items: 3,
+			},
 
-		$('input').keyup(() => {
-			if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
-				$('#to-shopping').removeAttr('disabled');
+			1024: {
+				items: 4,
+			},
+
+			1366: {
+				items: 4,
+			},
+		},
+	});
+</script>
+<!-- JS, Popper.js, and jQuery -->
+<script>
+	$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+	$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+
+	$('#cart-btn').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('#cart-close').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('.cart-overlay').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$(document).ready(function () {
+		var pic_X = $('.menu').offset().left;
+		var pic_Y = $('.menu').offset().top;
+		var pic_W = $('.menu').width() / 2;
+		var pic_H = $('.menu').height() / 2;
+		var center_X = pic_X + pic_W;
+		var center_Y = pic_Y + pic_H;
+		var movestop = pic_W / 10;
+		$('.menu').mousemove(function (event) {
+			var mouse_X = event.pageX;
+			var mouse_Y = event.pageY;
+			if (mouse_X - center_X <= 0) {
+				moveImg(mouse_X, mouse_Y, 'left');
+			} else {
+				moveImg(mouse_X, mouse_Y);
 			}
 		});
-
-		// personal details
-		// $('#to-payments').click((e) => {
-		// 	e.preventDefault();
-		// 	$('#shipping').addClass('show');
-		// 	$('[data-target="#shipping"]').removeClass('d-none')
-		// });
-
-		// $('input').keyup(() => {
-		// 	if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
-		// 		$('#to-shopping').removeAttr('disabled');
-		// 	}
-		// });
-
-		$('input').keyup(() => {
-			console.log('jjdfdfdf')
-			const emptyValue = $('#shipping-form')
-				.serializeArray()
-				.find((e) => e.value == '');
-			if (!emptyValue) {
-				$('#to-payments').removeAttr('disabled');
+		function moveImg(m_X, m_Y, dir) {
+			var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
+			if (dir) {
+				$('.menu img').eq(index).show().siblings().hide();
+			} else {
+				$('.menu img')
+					.eq(18 - index)
+					.show()
+					.siblings()
+					.hide();
 			}
+		}
+		$('.drop-list')
+			.css('width', $('#slider').width())
+			.css('margin-left', $('#category-nav').width() + 20);
+		$('.btn-link').mouseover((e) => {
+			console.log(e.target);
+			$('.drop-list').addClass('show');
 		});
-		$('#to-payments').click((e) => {
-			e.preventDefault();
-			$('#payments').addClass('show');
-			$('[data-target="#shipping"]').removeClass('d-none');
+		$('.btn-link').mouseover(() => {
+			$('.drop-list').addClass('show');
 		});
+	});
+	$(window).resize(function () {
+		$('.drop-list').css('width', $('#slider').width()).css('height', $('#slider').height()).css('margin-left', $('#category-nav').width());
+	});
+	// cart buttons
+	// personal details
+	$('#to-shopping').click((e) => {
+		e.preventDefault();
+		$('#shipping').addClass('show');
+		$('[data-target="#personalDetails"]').removeClass('d-none');
+	});
+
+	$('input').keyup(() => {
+		if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
+			$('#to-shopping').removeAttr('disabled');
+		}
+	});
+
+	// Javascript to enable link to tab
+	$(document).ready(() => {
+		var url = document.location.toString();
+
+		if (url.match('#')) {
+			// $(`#profile`).tab('dispose');
+			$(`#${url.split('#')[1]}`).tab('dispose');
+		}
+
+		// Change hash for page-reload
+		$('.nav-tabs a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	})
+
+
+	$('input').keyup(() => {
+		console.log('jjdfdfdf')
+		const emptyValue = $('#shipping-form')
+			.serializeArray()
+			.find((e) => e.value == '');
+		if (!emptyValue) {
+			$('#to-payments').removeAttr('disabled');
+		}
+	});
+	$('#to-payments').click((e) => {
+		e.preventDefault();
+		$('#payments').addClass('show');
+		$('[data-target="#shipping"]').removeClass('d-none');
+	});
 
 		// console.log($('#slider').height())
-	</script>
+</script>
+
 </html>

@@ -384,7 +384,7 @@ svg {
 	right: 0;
 	overflow-x: hidden;
 	background: $bg-color;
-	transition: 0.3s;
+	// transition: width 0.3s; 
 }
 
 .cart-overlay {
@@ -588,4 +588,10 @@ $width: $height * 2;
 
 .bread-overlay-shop{
 	height: 16.8rem !important;
+}
+.search-bar {
+	.input-group-text,input{
+	background: #f4f7f8;
+	border: none;
+}
 }

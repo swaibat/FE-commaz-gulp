@@ -9,43 +9,29 @@
 			</ol>
 		</nav>
 	</span>
-	<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label></div>
+	<div class="switch ml-auto">
+		<input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label>
+	</div>
 </div>
-<ul class="nav nav-pills mb-3 bg-white p-3 border" id="pills-tab" role="tablist">
+
+<ul class="nav nav-pills mb-3 bg-white p-3 border">
 	<li class="nav-item">
-		<a class="nav-link active" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Profile</a>
+		<a class="nav-link active" href="profile.html">Profile</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" id="wishlist-tab" data-toggle="pill" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="false">Whishlist</a>
+		<a class="nav-link" href="profile-wishlist.html">Whishlist</a>
 	</li>
 	<li class="nav-item">
-		<a class="nav-link" id="orders-tab" data-toggle="pill" href="#orders" role="tab" aria-controls="orders" aria-selected="false">My Orders</a>
+		<a class="nav-link" href="profile-orders.html">My Orders</a>
 	</li>
 	<li class="nav-item">
-		<a
-			class="nav-link"
-			id="shipping-details-tab"
-			data-toggle="pill"
-			href="#shipping-details"
-			role="tab"
-			aria-controls="shipping-details"
-			aria-selected="false"
-			>My Shipping Details</a
-		>
+		<a class="nav-link" href="profile-Addresses.html">My Shipping Details</a>
 	</li>
 	<li class="nav-item">
-		<a
-			class="nav-link"
-			id="viewed-products-tab"
-			data-toggle="pill"
-			href="#viewed-products"
-			role="tab"
-			aria-controls="viewed-products"
-			aria-selected="false"
-			>My Recently viewed products</a
-		>
+		<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
 	</li>
 </ul>
+
 <div class="tab-content" id="pills-tabContent">
 	<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 		<div class="content-body">
@@ -191,295 +177,7 @@
 			</section>
 		</div>
 	</div>
-	<!-- start of wishlist -->
-	<div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
-		<section id="ecommerce-products" class="grid-view">
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/1.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<h6 class="item-price">$39.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-							<p class="item-company">By <span class="company-name">Google</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you deliver hands-free
-								commands when you want to watch television or engage with other applications. With a quad-core processor, 1GB internal memory and 8GB
-								of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/2.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<h6 class="item-price">$35.00</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Google - Chromecast - Black</a>
-							<p class="item-company">By <span class="company-name">Amazon</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI interface and your home
-								Wi-Fi network to get started. You can stream your favorite apps from your compatible phone, tablet or laptop, plus use your phone as a
-								remote to search, play and pause content.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"><img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/3.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<div class="item-cost">
-									<h6 class="item-price">$499.99</h6>
-								</div>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
-							<p class="item-company">By <span class="company-name">Dell</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an Intel Core i5-5200U
-								processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple applications without lag. The 1TB hard drive in
-								this Dell Inspiron laptop lets you store multiple music, video and document files.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/4.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$49.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Amazon - Echo Dot</a>
-							<p class="item-company">By <span class="company-name">Amazon</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Echo Dot is the latest addition to Amazon's voice-controlled devices. Deliver your favorite playlist anywhere in your home with the
-								Amazon Echo Dot voice-controlled device. Control most electric devices through voice activation, or schedule a ride with Uber and
-								order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone or
-								tablet.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/7.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$129</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html"> Google - Google Home - White/Slate fabric </a>
-							<p class="item-company">By <span class="company-name">Google</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Simplify your everyday life with the Google Home, a voice-activated speaker powered by the Google Assistant. Use voice commands to
-								enjoy music, get answers from Google and manage everyday tasks. Google Home is compatible with Android and iOS operating systems, and
-								can control compatible smart devices such as Chromecast or Nest.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/10.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$29.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html"> Apple - EarPods™ with Remote and Mic - White </a>
-							<p class="item-company">By <span class="company-name">Apple</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Apple EarPods are white in-ear headphones included with music players and smartphones designed and marketed by Apple Inc. They are
-								designed to fit the ear while retaining a new design pushed by Apple alongside the iPod and iPod Touch products, with which they were
-								sold together.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0 pr-2 pt-2">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$14.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html"> Philips - hue A19 Smart LED Light Bulb - White Only </a>
-							<p class="item-company">By <span class="company-name">Philips</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light bulb and set timers and
-								alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination while using minimal energy.Get lighting
-								that's as smart as you are.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+
 	<!-- start of orders -->
 	<div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
 		<div class="bg-white p-3 mb-5">
