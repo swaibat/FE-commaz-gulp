@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title></title>
+	<!-- Google Font -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/icons/themify/themify-icons.css" />
+	<link rel="stylesheet" href="assets/icons/linearicons/style.css" />
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body class="">
+	<b class="screen-overlay"></b>
+	
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
+		<div class="container">
+			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="nav-link " href="/">
+					<img src="assets/images/logo.svg" height="35 " />
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="input-group search-bar mx-auto col-md-8">
+					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+					<div class="input-group-append">
+						<!-- <span class="lnr lnr-magnifier"></span> -->
+						<span class="lnr lnr-magnifier input-group-text"></span>
+					</div>
+				</div>
+				<div class="d-flex mt-2 mt-md-0">
+					<div class="dropdown dropdown-user mr-3">
+						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+							<div class="text-center">
+								<ion-icon class="header-icons" src="assets/icons/svg/user.svg"></ion-icon>
+								<span class="notify">3</span>
+							</div>
+							<small class="text lr-only"> My profile </small>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="profile.html">
+								<ion-icon class="mr-1" src="assets/icons/svg/user.svg"></ion-icon> Edit Profile
+							</a><a class="dropdown-item" href="notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/"><i class="feather icon-power"></i> Logout</a>
+						</div>
+					</div>
+					<div class="widget-header mx-3">
+						<a href="/page-profile-orders.html" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-store"></span>
+							</div>
+							<small class="text lr-only"> Orders </small>
+						</a>
+					</div>
+					<div class="widget-header ml-3">
+						<span id="cart-btn" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-cart"></span>
+							</div>
+							<small class="text lr-only"> Cart </small>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container bg-white px-4 py-2 rounded-bottom border mt-r-2 mb-3">
+		<nav class="nav d-flex justify-content-between">
+			<li class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
+					<span class="lnr lnr-list pr-1"></span>Categories</a>
+				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4">
+					<div class="row col-md-10 ">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-header">
+									<h4>Sub category 1</h4>
+								</div>
+								<div class="card-body d-flex flex-column py-0">
+									<a href="/" class="py-2">Cras justo odio</a>
+									<a href="/" class="py-2">Dapibus ac faciasis in</a>
+									<a href="/" class="py-2">Morbi leo risus</a>
+									<a href="/" class="py-2">Porta ac consectetur ac</a>
+									<a href="/" class="py-2">Vestibulum at eros</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row col-md-2"></div>
+				</ul>
+			</li>
+			</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="shop.html">
+					<span class="lnr lnr-store px-1"></span>
+					<span>Shop</span>
+				</a>
+			</li>
+			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+					<span class="lnr lnr-question-circle pr-2"></span><span data-i18n="Apps">Help</span></a>
+				<ul class="dropdown-menu">
+					<li class="">
+						<a class="nav-link" href="/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="/knowledgebase.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>Knowledge base</a>
+					</li>
+				</ul>
+			</li>
+	
+			<!-- <li class="nav-item ml-md-auto lr-only">
+				<a class="dropdown-item bg-primary text-white" href="app-calender.html" data-toggle="dropdown"
+					data-i18n="Calender">Get our App</a>
+			</li> -->
+			<li class="dropdown dropdown-language nav-item">
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+						class="selected-language">English</span></a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag">
+					<a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i>
+						English</a><a class="dropdown-item" href="#" data-language="fr"><i
+							class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
+						data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
+						href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+				</div>
+			</li>
+		</nav>
+	</div>
+	
+	<!-- container .// -->
+		
+	<div class="cart-overlay d-none"></div>
+	<div id="shopping-cart" class="sidenav">
+		<div class="px-3">
+			<span class="mx-4">
+				<a id="cart-close" class="closebtn">&times;</a>
+				<h4>Shopping Cart</h4>
+			</span>
+			<table class="responsive-table table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">Details</th>
+						<th class="text-right" scope="col">Quantity</th>
+						<th class="text-right" scope="col">Price</th>
+					</tr>
+				</thead>
+				<tbody class>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr>
+						<td class="text-left cart-summary" colspan="3">
+							<h4>Shopping summary</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Sub Total :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Discount :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Shipping & Handling :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Tax :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h3 class="mb-0">Grand Total :</h3>
+							<h3 class="ml-auto">$489.00</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary" colspan="3">
+								<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+	<section class="section-subscribe bg-white">
+		<div class="container">
+			<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5 col-md-6">
+					<form class="p-2 shadow-sm bg-light rounded" action="#">
+						<div class="input-group">
+							<input class="form-control border-0 mr-2 bg-light" type="search" placeholder="Search tools and resources...">
+							<div class="input-group-append">
+								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
+							</div>
+						</div>
+					</form>
+					<small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
+				</div>
+				<!-- col-md-6.// -->
+			</div>
+		</div>
+	</section>
+	<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+	
+	<footer class="section-footer border-top ">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md-4">
+						<article class="mr-3">
+							<img src="assets/images/logo-light.svg" class="logo-footer" />
+							<p class="mt-3">
+								Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his
+								friends.
+							</p>
+							<div>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
+								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
+								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
+							</div>
+						</article>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">About</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Rules and terms</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">Services</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">Help center</a></li>
+							<li><a href="#">Money refund</a></li>
+							<li><a href="#">Terms and Policy</a></li>
+							<li><a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">For users</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"> User Login </a></li>
+							<li><a href="#"> User register </a></li>
+							<li><a href="#"> Account Setting </a></li>
+							<li><a href="#"> My Orders </a></li>
+							<li><a href="#"> My Wishlist </a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-2 col-md-2">
+						<h6 class="title">Our app</h6>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/appstore.png" height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/playmarket.png" height="40" /></a>
+					</aside>
+				</div>
+				<!-- row.// -->
+			</section>
+			<!-- footer-top.// -->
+			<section class="footer-copyright border-top d-flex align-items-center justify-content-between">
+				<p class="float-left text-muted mb-0">© 2020 Company All rights reserved</p>
+				<p target="_blank" class="float-right text-muted mb-0">
+					<a href="#">Privacy &amp; Cookies</a> &nbsp; &nbsp;
+					<a href="#">Accessibility</a>
+				</p>
+			</section>
+		</div>
+		<!-- //container -->
+	</footer>
+</body>
+<script src="assets/js/bundle.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+	$('#category-nav .nav-item').mouseover(()=>{
+			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
+			.css('margin-left', $('#category-nav').outerWidth())
+		})
+	$('#carousel').owlCarousel({
+		autoplay: false,
+		lazyLoad: true,
+		loop: true,
+		margin: 20,
+		/*
+animateOut: 'fadeOut',
+animateIn: 'fadeIn',
+*/
+		responsiveClass: true,
+		autoHeight: true,
+		autoplayTimeout: 7000,
+		smartSpeed: 800,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+
+			600: {
+				items: 3,
+			},
+
+			1024: {
+				items: 4,
+			},
+
+			1366: {
+				items: 4,
+			},
+		},
+	});
+</script>
+<!-- JS, Popper.js, and jQuery -->
+<script>
+	$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+	$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+
+	$('#cart-btn').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('#cart-close').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('.cart-overlay').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$(document).ready(function () {
+		var pic_X = $('.menu').offset().left;
+		var pic_Y = $('.menu').offset().top;
+		var pic_W = $('.menu').width() / 2;
+		var pic_H = $('.menu').height() / 2;
+		var center_X = pic_X + pic_W;
+		var center_Y = pic_Y + pic_H;
+		var movestop = pic_W / 10;
+		$('.menu').mousemove(function (event) {
+			var mouse_X = event.pageX;
+			var mouse_Y = event.pageY;
+			if (mouse_X - center_X <= 0) {
+				moveImg(mouse_X, mouse_Y, 'left');
+			} else {
+				moveImg(mouse_X, mouse_Y);
+			}
+		});
+		function moveImg(m_X, m_Y, dir) {
+			var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
+			if (dir) {
+				$('.menu img').eq(index).show().siblings().hide();
+			} else {
+				$('.menu img')
+					.eq(18 - index)
+					.show()
+					.siblings()
+					.hide();
+			}
+		}
+	});
+	$(window).resize(function () {
+		$('.drop-list').css('width', $('#slider').outerWidth()).css('height', $('#slider').outerHeight()).css('margin-left', $('#category-nav').outerWidth);
+	});
+	// cart buttons
+	// personal details
+	$('#to-shopping').click((e) => {
+		e.preventDefault();
+		$('#shipping').addClass('show');
+		$('[data-target="#personalDetails"]').removeClass('d-none');
+	});
+
+	$('input').keyup(() => {
+		if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
+			$('#to-shopping').removeAttr('disabled');
+		}
+	});
+
+	// Javascript to enable link to tab
+	$(document).ready(() => {
+		var url = document.location.toString();
+
+		if (url.match('#')) {
+			// $(`#profile`).tab('dispose');
+			$(`#${url.split('#')[1]}`).tab('dispose');
+		}
+
+		// Change hash for page-reload
+		$('.nav-tabs a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	})
+
+
+	$('input').keyup(() => {
+		console.log('jjdfdfdf')
+		const emptyValue = $('#shipping-form')
+			.serializeArray()
+			.find((e) => e.value == '');
+		if (!emptyValue) {
+			$('#to-payments').removeAttr('disabled');
+		}
+	});
+	$('#to-payments').click((e) => {
+		e.preventDefault();
+		$('#payments').addClass('show');
+		$('[data-target="#shipping"]').removeClass('d-none');
+	});
+
+	(function init() {
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function initializeClock(endtime){
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    document.querySelector(".days > .value").innerText=t.days;
+    document.querySelector(".hours > .value").innerText=t.hours;
+    document.querySelector(".minutes > .value").innerText=t.minutes;
+    document.querySelector(".seconds > .value").innerText=t.seconds;
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  },1000);
+}
+initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+})()
+</script>
+
+</html>

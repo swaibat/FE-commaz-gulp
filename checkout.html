@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title></title>
+	<!-- Google Font -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/icons/themify/themify-icons.css" />
+	<link rel="stylesheet" href="assets/icons/linearicons/style.css" />
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body class="">
+	<b class="screen-overlay"></b>
+	
+	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
+		<div class="container">
+			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="nav-link " href="/">
+					<img src="assets/images/logo.svg" height="35 " />
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="input-group search-bar mx-auto col-md-8">
+					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+					<div class="input-group-append">
+						<!-- <span class="lnr lnr-magnifier"></span> -->
+						<span class="lnr lnr-magnifier input-group-text"></span>
+					</div>
+				</div>
+				<div class="d-flex mt-2 mt-md-0">
+					<div class="dropdown dropdown-user mr-3">
+						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+							<div class="text-center">
+								<ion-icon class="header-icons" src="assets/icons/svg/user.svg"></ion-icon>
+								<span class="notify">3</span>
+							</div>
+							<small class="text lr-only"> My profile </small>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="profile.html">
+								<ion-icon class="mr-1" src="assets/icons/svg/user.svg"></ion-icon> Edit Profile
+							</a><a class="dropdown-item" href="notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/"><i class="feather icon-power"></i> Logout</a>
+						</div>
+					</div>
+					<div class="widget-header mx-3">
+						<a href="/page-profile-orders.html" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-store"></span>
+							</div>
+							<small class="text lr-only"> Orders </small>
+						</a>
+					</div>
+					<div class="widget-header ml-3">
+						<span id="cart-btn" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-cart"></span>
+							</div>
+							<small class="text lr-only"> Cart </small>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container bg-white px-4 py-2 rounded-bottom border mt-r-2 mb-3">
+		<nav class="nav d-flex justify-content-between">
+			<li class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
+					<span class="lnr lnr-list pr-1"></span>Categories</a>
+				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4">
+					<div class="row col-md-10 ">
+						<div class="col-md-3">
+							<div class="card">
+								<div class="card-header">
+									<h4>Sub category 1</h4>
+								</div>
+								<div class="card-body d-flex flex-column py-0">
+									<a href="/" class="py-2">Cras justo odio</a>
+									<a href="/" class="py-2">Dapibus ac faciasis in</a>
+									<a href="/" class="py-2">Morbi leo risus</a>
+									<a href="/" class="py-2">Porta ac consectetur ac</a>
+									<a href="/" class="py-2">Vestibulum at eros</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h4>Sub category 1</h4>
+							<ul class="list-group">
+								<li class="list-group-item py-2 px-0 border-0">Cras justo odio</li>
+								<li class="list-group-item py-2 px-0 border-0">Dapibus ac facilisis in</li>
+								<li class="list-group-item py-2 px-0 border-0">Morbi leo risus</li>
+								<li class="list-group-item py-2 px-0 border-0">Porta ac consectetur ac</li>
+								<li class="list-group-item py-2 px-0 border-0">Vestibulum at eros</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row col-md-2"></div>
+				</ul>
+			</li>
+			</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="shop.html">
+					<span class="lnr lnr-store px-1"></span>
+					<span>Shop</span>
+				</a>
+			</li>
+			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+					<span class="lnr lnr-question-circle pr-2"></span><span data-i18n="Apps">Help</span></a>
+				<ul class="dropdown-menu">
+					<li class="">
+						<a class="nav-link" href="/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="/knowledgebase.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>Knowledge base</a>
+					</li>
+				</ul>
+			</li>
+	
+			<!-- <li class="nav-item ml-md-auto lr-only">
+				<a class="dropdown-item bg-primary text-white" href="app-calender.html" data-toggle="dropdown"
+					data-i18n="Calender">Get our App</a>
+			</li> -->
+			<li class="dropdown dropdown-language nav-item">
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+						class="selected-language">English</span></a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag">
+					<a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i>
+						English</a><a class="dropdown-item" href="#" data-language="fr"><i
+							class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
+						data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
+						href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+				</div>
+			</li>
+		</nav>
+	</div>
+	
+	<!-- container .// -->
+		
+		<div class="bread-overlay"></div>
+		<div class="py-2 d-flex">
+			<span>
+				<h1 class="">Checkout</h1>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb bg-transparent px-0">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">checkout</li>
+					</ol>
+				</nav>
+			</span>
+			<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label></div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="p-5 bg-white mb-5 rounded shadow-sm">
+					<div class="accordion border-left" id="accordionExample">
+						<ul class="list-group">
+							<li class="list-group-item border-0 d-flex align-items-center pb-4">
+								<span class="lnr lnr-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
+								<h1 class="card-title mb-0">Personal Details</h1>
+								<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true" aria-controls="personalDetails">
+									Edit personal details <span class="lnr lnr-pencil mr-2 mb-n2"></span
+								></span>
+							</li>
+							<div id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="p-3 bg-white">
+									<form id="user-details-form">
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="firstname">First Name</label>
+												<input type="text" class="form-control" id="firstname" />
+											</div>
+											<div class="form-group col-md-6">
+												<label for="lastname">Last Name</label>
+												<input type="text" class="form-control" id="lastname" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="email">Email address</label>
+											<input type="text" class="form-control" id="email" aria-describedby="emailHelp" />
+										</div>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+											<label
+												class="form-check-label"
+												for="exampleCheck1"
+												data-toggle="collapse"
+												href="#collapseExample"
+												role="button"
+												aria-expanded="false"
+												aria-controls="collapseExample"
+												>I want to create an Account</label
+											>
+										</div>
+										<div class="collapse" id="collapseExample">
+											<div class="form-group">
+												<label for="password">Password</label>
+												<input type="password" class="form-control" id="exampleInputPassword1" />
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<button
+												type="submit"
+												id="to-shopping"
+												class="btn btn-primary"
+												data-toggle="collapse"
+												data-target="#personalDetails"
+												aria-expanded="true"
+												aria-controls="personalDetails"
+												disabled
+											>
+												Continue to Shipping
+											</button>
+											<span>Or</span>
+											<a href="/login" class="btn btn-primary">Have account Login</a>
+										</div>
+									</form>
+								</div>
+							</div>
+							<li class="list-group-item border-0 d-flex align-items-center py-4">
+								<span class="lnr lnr-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
+								<h1 class="card-title mb-0">Shipping</h1>
+								<span
+									class="ml-auto d-none"
+									id="headingTwo"
+									data-toggle="collapse"
+									data-target="#shipping"
+									aria-expanded="false"
+									aria-controls="shipping"
+									aria-controls="shipping"
+								>
+									Edit Shipping details <span class="lnr lnr-pencil mr-2 mb-n2"></span
+								></span>
+							</li>
+							<div id="shipping" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="p-3 bg-white">
+									<form class="col-md-12" id="shipping-form">
+										<!-- Shipping Information -->
+										<div class="form-group row">
+											<label for="recipient_name" class="col-md-5 mr-0">Recipient Name</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="recipient_name" name="recipient_name" value="Jane Doe" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="line1" class="col-md-5 mr-0">Address Line 1</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="line1" name="line1" value="55 East 52nd Street" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="line2" class="col-md-5 mr-0">Address Line 1</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="line2" name="line2" value="21st Floor" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="city" class="col-md-5 mr-0">City</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="city" name="city" value="New York" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="state" class="col-md-5 mr-0">State</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="state" name="state" value="NY" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="zip" class="col-md-5 mr-0">Postal Code</label>
+											<div class="col-md-7">
+												<input class="form-control" type="text" id="zip" name="zip" value="10022" />
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="countrySelect" class="col-md-5 mr-0">Country</label>
+											<div class="col-md-7">
+												<select class="form-control" name="countrySelect" id="countrySelect">
+													<option value="AF">Afghanistan</option>
+													<option value="AX">Aland Islands</option>
+													<option value="AL">Albania</option>
+													<option value="DZ">Algeria</option>
+													<option value="AS">American Samoa</option>
+													<option value="AD">Andorra</option>
+													<option value="AO">Angola</option>
+													<option value="AI">Anguilla</option>
+													<option value="AQ">Antarctica</option>
+													<option value="AG">Antigua and Barbuda</option>
+													<option value="AR">Argentina</option>
+													<option value="AM">Armenia</option>
+													<option value="AW">Aruba</option>
+													<option value="AU">Australia</option>
+													<option value="AT">Austria</option>
+													<option value="AZ">Azerbaijan</option>
+													<option value="BS">Bahamas</option>
+													<option value="BH">Bahrain</option>
+													<option value="BD">Bangladesh</option>
+													<option value="BB">Barbados</option>
+													<option value="BY">Belarus</option>
+													<option value="BE">Belgium</option>
+													<option value="BZ">Belize</option>
+													<option value="BJ">Benin</option>
+													<option value="BM">Bermuda</option>
+													<option value="BT">Bhutan</option>
+													<option value="BO">Bolivia</option>
+													<option value="BA">Bosnia and Herzegovina</option>
+													<option value="BW">Botswana</option>
+													<option value="BV">Bouvet Island</option>
+													<option value="BR">Brazil</option>
+													<option value="IO">British Indian Ocean Territory</option>
+													<option value="BN">Brunei Darussalam</option>
+													<option value="BG">Bulgaria</option>
+													<option value="BF">Burkina Faso</option>
+													<option value="BI">Burundi</option>
+													<option value="KH">Cambodia</option>
+													<option value="CM">Cameroon</option>
+													<option value="CA">Canada</option>
+													<option value="CV">Cape Verde</option>
+													<option value="KY">Cayman Islands</option>
+													<option value="CF">Central African Republic</option>
+													<option value="TD">Chad</option>
+													<option value="CL">Chile</option>
+													<option value="CN">China</option>
+													<option value="CX">Christmas Island</option>
+													<option value="CC">Cocos (Keeling) Islands</option>
+													<option value="CO">Colombia</option>
+													<option value="KM">Comoros</option>
+													<option value="CG">Congo</option>
+													<option value="CD">Congo, The Democratic Republic of The</option>
+													<option value="CK">Cook Islands</option>
+													<option value="CR">Costa Rica</option>
+													<option value="CI">Cote D'ivoire</option>
+													<option value="HR">Croatia</option>
+													<option value="CU">Cuba</option>
+													<option value="CY">Cyprus</option>
+													<option value="CZ">Czech Republic</option>
+													<option value="DK">Denmark</option>
+													<option value="DJ">Djibouti</option>
+													<option value="DM">Dominica</option>
+													<option value="DO">Dominican Republic</option>
+													<option value="EC">Ecuador</option>
+													<option value="EG">Egypt</option>
+													<option value="SV">El Salvador</option>
+													<option value="GQ">Equatorial Guinea</option>
+													<option value="ER">Eritrea</option>
+													<option value="EE">Estonia</option>
+													<option value="ET">Ethiopia</option>
+													<option value="FK">Falkland Islands (Malvinas)</option>
+													<option value="FO">Faroe Islands</option>
+													<option value="FJ">Fiji</option>
+													<option value="FI">Finland</option>
+													<option value="FR">France</option>
+													<option value="GF">French Guiana</option>
+													<option value="PF">French Polynesia</option>
+													<option value="TF">French Southern Territories</option>
+													<option value="GA">Gabon</option>
+													<option value="GM">Gambia</option>
+													<option value="GE">Georgia</option>
+													<option value="DE">Germany</option>
+													<option value="GH">Ghana</option>
+													<option value="GI">Gibraltar</option>
+													<option value="GR">Greece</option>
+													<option value="GL">Greenland</option>
+													<option value="GD">Grenada</option>
+													<option value="GP">Guadeloupe</option>
+													<option value="GU">Guam</option>
+													<option value="GT">Guatemala</option>
+													<option value="GG">Guernsey</option>
+													<option value="GN">Guinea</option>
+													<option value="GW">Guinea-bissau</option>
+													<option value="GY">Guyana</option>
+													<option value="HT">Haiti</option>
+													<option value="HM">Heard Island and Mcdonald Islands</option>
+													<option value="VA">Holy See (Vatican City State)</option>
+													<option value="HN">Honduras</option>
+													<option value="HK">Hong Kong</option>
+													<option value="HU">Hungary</option>
+													<option value="IS">Iceland</option>
+													<option value="IN">India</option>
+													<option value="ID">Indonesia</option>
+													<option value="IR">Iran, Islamic Republic of</option>
+													<option value="IQ">Iraq</option>
+													<option value="IE">Ireland</option>
+													<option value="IM">Isle of Man</option>
+													<option value="IL">Israel</option>
+													<option value="IT">Italy</option>
+													<option value="JM">Jamaica</option>
+													<option value="JP">Japan</option>
+													<option value="JE">Jersey</option>
+													<option value="JO">Jordan</option>
+													<option value="KZ">Kazakhstan</option>
+													<option value="KE">Kenya</option>
+													<option value="KI">Kiribati</option>
+													<option value="KP">Korea, Democratic People's Republic of</option>
+													<option value="KR">Korea, Republic of</option>
+													<option value="KW">Kuwait</option>
+													<option value="KG">Kyrgyzstan</option>
+													<option value="LA">Lao People's Democratic Republic</option>
+													<option value="LV">Latvia</option>
+													<option value="LB">Lebanon</option>
+													<option value="LS">Lesotho</option>
+													<option value="LR">Liberia</option>
+													<option value="LY">Libyan Arab Jamahiriya</option>
+													<option value="LI">Liechtenstein</option>
+													<option value="LT">Lithuania</option>
+													<option value="LU">Luxembourg</option>
+													<option value="MO">Macao</option>
+													<option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+													<option value="MG">Madagascar</option>
+													<option value="MW">Malawi</option>
+													<option value="MY">Malaysia</option>
+													<option value="MV">Maldives</option>
+													<option value="ML">Mali</option>
+													<option value="MT">Malta</option>
+													<option value="MH">Marshall Islands</option>
+													<option value="MQ">Martinique</option>
+													<option value="MR">Mauritania</option>
+													<option value="MU">Mauritius</option>
+													<option value="YT">Mayotte</option>
+													<option value="MX">Mexico</option>
+													<option value="FM">Micronesia, Federated States of</option>
+													<option value="MD">Moldova, Republic of</option>
+													<option value="MC">Monaco</option>
+													<option value="MN">Mongolia</option>
+													<option value="ME">Montenegro</option>
+													<option value="MS">Montserrat</option>
+													<option value="MA">Morocco</option>
+													<option value="MZ">Mozambique</option>
+													<option value="MM">Myanmar</option>
+													<option value="NA">Namibia</option>
+													<option value="NR">Nauru</option>
+													<option value="NP">Nepal</option>
+													<option value="NL">Netherlands</option>
+													<option value="AN">Netherlands Antilles</option>
+													<option value="NC">New Caledonia</option>
+													<option value="NZ">New Zealand</option>
+													<option value="NI">Nicaragua</option>
+													<option value="NE">Niger</option>
+													<option value="NG">Nigeria</option>
+													<option value="NU">Niue</option>
+													<option value="NF">Norfolk Island</option>
+													<option value="MP">Northern Mariana Islands</option>
+													<option value="NO">Norway</option>
+													<option value="OM">Oman</option>
+													<option value="PK">Pakistan</option>
+													<option value="PW">Palau</option>
+													<option value="PS">Palestinian Territory, Occupied</option>
+													<option value="PA">Panama</option>
+													<option value="PG">Papua New Guinea</option>
+													<option value="PY">Paraguay</option>
+													<option value="PE">Peru</option>
+													<option value="PH">Philippines</option>
+													<option value="PN">Pitcairn</option>
+													<option value="PL">Poland</option>
+													<option value="PT">Portugal</option>
+													<option value="PR">Puerto Rico</option>
+													<option value="QA">Qatar</option>
+													<option value="RE">Reunion</option>
+													<option value="RO">Romania</option>
+													<option value="RU">Russian Federation</option>
+													<option value="RW">Rwanda</option>
+													<option value="SH">Saint Helena</option>
+													<option value="KN">Saint Kitts and Nevis</option>
+													<option value="LC">Saint Lucia</option>
+													<option value="PM">Saint Pierre and Miquelon</option>
+													<option value="VC">Saint Vincent and The Grenadines</option>
+													<option value="WS">Samoa</option>
+													<option value="SM">San Marino</option>
+													<option value="ST">Sao Tome and Principe</option>
+													<option value="SA">Saudi Arabia</option>
+													<option value="SN">Senegal</option>
+													<option value="RS">Serbia</option>
+													<option value="SC">Seychelles</option>
+													<option value="SL">Sierra Leone</option>
+													<option value="SG">Singapore</option>
+													<option value="SK">Slovakia</option>
+													<option value="SI">Slovenia</option>
+													<option value="SB">Solomon Islands</option>
+													<option value="SO">Somalia</option>
+													<option value="ZA">South Africa</option>
+													<option value="GS">South Georgia and The South Sandwich Islands</option>
+													<option value="ES">Spain</option>
+													<option value="LK">Sri Lanka</option>
+													<option value="SD">Sudan</option>
+													<option value="SR">Suriname</option>
+													<option value="SJ">Svalbard and Jan Mayen</option>
+													<option value="SZ">Swaziland</option>
+													<option value="SE">Sweden</option>
+													<option value="CH">Switzerland</option>
+													<option value="SY">Syrian Arab Republic</option>
+													<option value="TW">Taiwan, Province of China</option>
+													<option value="TJ">Tajikistan</option>
+													<option value="TZ">Tanzania, United Republic of</option>
+													<option value="TH">Thailand</option>
+													<option value="TL">Timor-leste</option>
+													<option value="TG">Togo</option>
+													<option value="TK">Tokelau</option>
+													<option value="TO">Tonga</option>
+													<option value="TT">Trinidad and Tobago</option>
+													<option value="TN">Tunisia</option>
+													<option value="TR">Turkey</option>
+													<option value="TM">Turkmenistan</option>
+													<option value="TC">Turks and Caicos Islands</option>
+													<option value="TV">Tuvalu</option>
+													<option value="UG">Uganda</option>
+													<option value="UA">Ukraine</option>
+													<option value="AE">United Arab Emirates</option>
+													<option value="GB">United Kingdom</option>
+													<option value="US" selected>United States</option>
+													<option value="UM">United States Minor Outlying Islands</option>
+													<option value="UY">Uruguay</option>
+													<option value="UZ">Uzbekistan</option>
+													<option value="VU">Vanuatu</option>
+													<option value="VE">Venezuela</option>
+													<option value="VN">Vietnam</option>
+													<option value="VG">Virgin Islands, British</option>
+													<option value="VI">Virgin Islands, U.S.</option>
+													<option value="WF">Wallis and Futuna</option>
+													<option value="EH">Western Sahara</option>
+													<option value="YE">Yemen</option>
+													<option value="ZM">Zambia</option>
+													<option value="ZW">Zimbabwe</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="shippingMethod" class="col-md-5 mr-0">Shipping Type</label>
+											<div class="col-md-7">
+												<select class="form-control" name="shippingMethod" id="shippingMethod">
+													<optgroup label="United Parcel Service" style="font-style: normal">
+														<option value="Worldwide Expedited">Worldwide Expedited - $8.00</option>
+														<option value="Worldwide Express Saver">Worldwide Express Saver - $4.00</option>
+													</optgroup>
+													<optgroup label="Flat Rate" style="font-style: normal">
+														<option value="Fixed" selected>Fixed - $2.00</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+										<div class="d-flex justify-content-between">
+											<button
+												type="submit"
+												id="to-payments"
+												class="btn btn-success"
+												data-toggle="collapse"
+												data-target="#payments"
+												aria-expanded="true"
+												aria-controls="payments"
+												disabled
+											>
+												Continue to Shipping
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<li class="list-group-item border-0 d-flex align-items-center pt-4">
+								<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
+								<h1 class="card-title mb-0">Payment options</h1>
+								<span
+									class="ml-auto d-none"
+									id="payments"
+									data-toggle="collapse"
+									data-target="#payments"
+									aria-expanded="false"
+									aria-controls="payments"
+									aria-controls="payments"
+								>
+									Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span
+								></span>
+							</li>
+							<div id="payments" class="collapse" aria-labelledby="payments" data-parent="#accordionExample">
+								<div class="p-3 bg-white">
+									<div class="btn-group-toggle" data-toggle="buttons">
+										<label class="btn select-payment-btn shadow-sm border active mb-3">
+											<img height="50" src="../assets/images/payments/PayPal.svg" alt="" />
+											<input type="radio" name="options" id="option1" autocomplete="off" checked />
+										</label>
+										<label class="btn select-payment-btn shadow-sm border mb-3">
+											<img height="50" src="../assets/images/payments/stripe-4.svg" alt="" />
+											<input type="radio" name="options" id="option2" autocomplete="off" />
+										</label>
+										<label class="btn select-payment-btn shadow-sm border mb-3">
+											<img height="50" src="../assets/images/payments/apple-pay.svg" alt="" />
+											<input type="radio" name="options" id="option3" autocomplete="off" />
+										</label>
+									</div>
+								</div>
+							</div>
+							<li class="list-group-item border-0 d-flex align-items-center pt-4">
+								<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
+								<h1 class="card-title mb-0">Review Order</h1>
+								<span
+									class="ml-auto d-none"
+									id="orderReview"
+									data-toggle="collapse"
+									data-target="#orderReview"
+									aria-expanded="false"
+									aria-controls="orderReview"
+									aria-controls="orderReview"
+								>
+									<!-- Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span -->
+								</span>
+							</li>
+							<div class="collapse" aria-labelledby="orderReview" data-parent="#accordionExample">
+								<div class="p-3 bg-white">
+									<div class="btn-group-toggle" data-toggle="buttons">
+										<label class="btn select-payment-btn shadow-sm border active mb-3">
+											<img height="50" src="../assets/images/payments/PayPal.svg" alt="" />
+											<input type="radio" name="options" id="option1" autocomplete="off" checked />
+										</label>
+										<label class="btn select-payment-btn shadow-sm border mb-3">
+											<img height="50" src="../assets/images/payments/stripe-4.svg" alt="" />
+											<input type="radio" name="options" id="option2" autocomplete="off" />
+										</label>
+										<label class="btn select-payment-btn shadow-sm border mb-3">
+											<img height="50" src="../assets/images/payments/apple-pay.svg" alt="" />
+											<input type="radio" name="options" id="option3" autocomplete="off" />
+										</label>
+									</div>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- start of cart content -->
+			<div class="col-md-5 mb-4">
+				<div class="rounded shadow-sm bg-white p-3">
+					<span class="mx-4">
+						<h4>Shopping Cart</h4>
+					</span>
+					<table class="responsive-table table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">Details</th>
+								<th class="text-right" scope="col">Quantity</th>
+								<th class="text-right" scope="col">Price</th>
+							</tr>
+						</thead>
+						<tbody class="">
+							<tr class="bg-white border">
+								<td colspan="3" class="d-flex">
+									<div class="cart-item-img text-center">
+										<a href="app-ecommerce-details.html">
+											<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+										</a>
+									</div>
+									<div class="item-name ml-2 text-left">
+										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+										<span></span>
+										<p class="text-success">In Stock</p>
+										<div class="d-flex">
+											<p class="text-muted"><strong>Color :</strong> Yellow</p>
+											<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+											<p class="text-muted ml-4"><strong>Quantity :</strong>1</p>
+										</div>
+									</div>
+									<h4 class="ml-auto">$1,190</h4>
+								</td>
+							</tr>
+							<tr class="bg-white border">
+								<td colspan="3" class="d-flex">
+									<div class="cart-item-img text-center">
+										<a href="app-ecommerce-details.html">
+											<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+										</a>
+									</div>
+									<div class="item-name ml-2 text-left">
+										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+										<span></span>
+										<p class="text-success">In Stock</p>
+										<div class="d-flex">
+											<p class="text-muted"><strong>Color :</strong> Yellow</p>
+											<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+											<p class="text-muted ml-4"><strong>Quantity :</strong>1</p>
+										</div>
+									</div>
+									<h4 class="ml-auto">$1,190</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="text-left cart-summary" colspan="3">
+									<h4>Shopping summary</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary d-flex" colspan="3">
+									<h6 class="mb-0">Sub Total :</h6>
+									<h4 class="ml-auto">$489.00</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary d-flex" colspan="3">
+									<h6 class="mb-0">Discount :</h6>
+									<h4 class="ml-auto">$489.00</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary d-flex" colspan="3">
+									<h6 class="mb-0">Shipping &amp; Handling :</h6>
+									<h4 class="ml-auto">$489.00</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary d-flex" colspan="3">
+									<h6 class="mb-0">Tax :</h6>
+									<h4 class="ml-auto">$489.00</h4>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary d-flex" colspan="3">
+									<h3 class="mb-0">Grand Total :</h3>
+									<h3 class="ml-auto">$489.00</h3>
+								</td>
+							</tr>
+							<tr>
+								<td class="cart-summary" colspan="3">
+									<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+	<div class="cart-overlay d-none"></div>
+	<div id="shopping-cart" class="sidenav">
+		<div class="px-3">
+			<span class="mx-4">
+				<a id="cart-close" class="closebtn">&times;</a>
+				<h4>Shopping Cart</h4>
+			</span>
+			<table class="responsive-table table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">Details</th>
+						<th class="text-right" scope="col">Quantity</th>
+						<th class="text-right" scope="col">Price</th>
+					</tr>
+				</thead>
+				<tbody class>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr class="bg-white border">
+						<td colspan="3" class="d-flex">
+							<div class="cart-item-img text-center">
+								<a href="app-ecommerce-details.html">
+									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+								</a>
+							</div>
+							<div class="item-name ml-2 text-left">
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<span></span>
+								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-muted"><strong>Color :</strong> Yellow</p>
+									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								</div>
+							</div>
+						</td>
+						<td data-label="Quantity : ">
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
+									><input type="text" class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"
+										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
+									>
+								</div>
+							</div>
+						</td>
+						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+					</tr>
+					<tr>
+						<td class="text-left cart-summary" colspan="3">
+							<h4>Shopping summary</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Sub Total :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Discount :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Shipping & Handling :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h6 class="mb-0">Tax :</h6>
+							<h4 class="ml-auto">$489.00</h4>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary d-flex" colspan="3">
+							<h3 class="mb-0">Grand Total :</h3>
+							<h3 class="ml-auto">$489.00</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="cart-summary" colspan="3">
+								<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+	<section class="section-subscribe bg-white">
+		<div class="container">
+			<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5 col-md-6">
+					<form class="p-2 shadow-sm bg-light rounded" action="#">
+						<div class="input-group">
+							<input class="form-control border-0 mr-2 bg-light" type="search" placeholder="Search tools and resources...">
+							<div class="input-group-append">
+								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
+							</div>
+						</div>
+					</form>
+					<small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
+				</div>
+				<!-- col-md-6.// -->
+			</div>
+		</div>
+	</section>
+	<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+	
+	<footer class="section-footer border-top ">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md-4">
+						<article class="mr-3">
+							<img src="assets/images/logo-light.svg" class="logo-footer" />
+							<p class="mt-3">
+								Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his
+								friends.
+							</p>
+							<div>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
+								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
+								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
+							</div>
+						</article>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">About</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Rules and terms</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">Services</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">Help center</a></li>
+							<li><a href="#">Money refund</a></li>
+							<li><a href="#">Terms and Policy</a></li>
+							<li><a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">For users</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"> User Login </a></li>
+							<li><a href="#"> User register </a></li>
+							<li><a href="#"> Account Setting </a></li>
+							<li><a href="#"> My Orders </a></li>
+							<li><a href="#"> My Wishlist </a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-2 col-md-2">
+						<h6 class="title">Our app</h6>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/appstore.png" height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/playmarket.png" height="40" /></a>
+					</aside>
+				</div>
+				<!-- row.// -->
+			</section>
+			<!-- footer-top.// -->
+			<section class="footer-copyright border-top d-flex align-items-center justify-content-between">
+				<p class="float-left text-muted mb-0">© 2020 Company All rights reserved</p>
+				<p target="_blank" class="float-right text-muted mb-0">
+					<a href="#">Privacy &amp; Cookies</a> &nbsp; &nbsp;
+					<a href="#">Accessibility</a>
+				</p>
+			</section>
+		</div>
+		<!-- //container -->
+	</footer>
+</body>
+<script src="assets/js/bundle.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+	$('#category-nav .nav-item').mouseover(()=>{
+			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
+			.css('margin-left', $('#category-nav').outerWidth())
+		})
+	$('#carousel').owlCarousel({
+		autoplay: false,
+		lazyLoad: true,
+		loop: true,
+		margin: 20,
+		/*
+animateOut: 'fadeOut',
+animateIn: 'fadeIn',
+*/
+		responsiveClass: true,
+		autoHeight: true,
+		autoplayTimeout: 7000,
+		smartSpeed: 800,
+		nav: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+
+			600: {
+				items: 3,
+			},
+
+			1024: {
+				items: 4,
+			},
+
+			1366: {
+				items: 4,
+			},
+		},
+	});
+</script>
+<!-- JS, Popper.js, and jQuery -->
+<script>
+	$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+	$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
+
+	$('#cart-btn').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('#cart-close').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$('.cart-overlay').click(() => {
+		$('#shopping-cart').toggleClass('cart-area');
+		$('.cart-overlay').toggleClass('d-none');
+	});
+	$(document).ready(function () {
+		var pic_X = $('.menu').offset().left;
+		var pic_Y = $('.menu').offset().top;
+		var pic_W = $('.menu').width() / 2;
+		var pic_H = $('.menu').height() / 2;
+		var center_X = pic_X + pic_W;
+		var center_Y = pic_Y + pic_H;
+		var movestop = pic_W / 10;
+		$('.menu').mousemove(function (event) {
+			var mouse_X = event.pageX;
+			var mouse_Y = event.pageY;
+			if (mouse_X - center_X <= 0) {
+				moveImg(mouse_X, mouse_Y, 'left');
+			} else {
+				moveImg(mouse_X, mouse_Y);
+			}
+		});
+		function moveImg(m_X, m_Y, dir) {
+			var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
+			if (dir) {
+				$('.menu img').eq(index).show().siblings().hide();
+			} else {
+				$('.menu img')
+					.eq(18 - index)
+					.show()
+					.siblings()
+					.hide();
+			}
+		}
+	});
+	$(window).resize(function () {
+		$('.drop-list').css('width', $('#slider').outerWidth()).css('height', $('#slider').outerHeight()).css('margin-left', $('#category-nav').outerWidth);
+	});
+	// cart buttons
+	// personal details
+	$('#to-shopping').click((e) => {
+		e.preventDefault();
+		$('#shipping').addClass('show');
+		$('[data-target="#personalDetails"]').removeClass('d-none');
+	});
+
+	$('input').keyup(() => {
+		if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
+			$('#to-shopping').removeAttr('disabled');
+		}
+	});
+
+	// Javascript to enable link to tab
+	$(document).ready(() => {
+		var url = document.location.toString();
+
+		if (url.match('#')) {
+			// $(`#profile`).tab('dispose');
+			$(`#${url.split('#')[1]}`).tab('dispose');
+		}
+
+		// Change hash for page-reload
+		$('.nav-tabs a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	})
+
+
+	$('input').keyup(() => {
+		console.log('jjdfdfdf')
+		const emptyValue = $('#shipping-form')
+			.serializeArray()
+			.find((e) => e.value == '');
+		if (!emptyValue) {
+			$('#to-payments').removeAttr('disabled');
+		}
+	});
+	$('#to-payments').click((e) => {
+		e.preventDefault();
+		$('#payments').addClass('show');
+		$('[data-target="#shipping"]').removeClass('d-none');
+	});
+
+	(function init() {
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function initializeClock(endtime){
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    document.querySelector(".days > .value").innerText=t.days;
+    document.querySelector(".hours > .value").innerText=t.hours;
+    document.querySelector(".minutes > .value").innerText=t.minutes;
+    document.querySelector(".seconds > .value").innerText=t.seconds;
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  },1000);
+}
+initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+})()
+</script>
+
+</html>
