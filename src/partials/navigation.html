@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 	<div class="container">
 		<div class="dropdown nav-item category-menu" data-menu="dropdown">
-			<a class="dropdown-toggle nav-link " href="/" data-toggle="dropdown">
+			<a class="nav-link " href="/">
 				<img src="{{root}}assets/images/logo.svg" height="35 " />
 			</a>
 		</div>
@@ -112,6 +112,7 @@
 					</div>
 				</div>
 				<div class="row col-md-2"></div>
+			</ul>
 		</li>
 		</ul>
 		</li>
@@ -158,61 +159,12 @@
 <!-- container .// -->
 {{#ifpage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter'
 'auth-forgot-password' 'auth-register' 'auth-login' '_headers'}}
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
+<nav class="navbar fixed-top">
 	<div class="container">
 		<div class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="dropdown-toggle nav-link " href="/" data-toggle="dropdown">
-				<img src="{{root}}assets/images/logo.svg" height="35 " />
+				<img src="{{root}}assets/images/logo-light.svg" height="35 " />
 			</a>
-		</div>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<div class="input-group search-bar mx-auto col-md-8">
-				<input type="text" class="form-control search-bar" placeholder="Search for products here">
-				<div class="input-group-append">
-					<!-- <span class="lnr lnr-magnifier"></span> -->
-					<span class="lnr lnr-magnifier input-group-text"></span>
-				</div>
-			</div>
-			<div class="d-flex mt-2 mt-md-0">
-				<div class="dropdown dropdown-user mr-3">
-					<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-						<div class="text-center">
-							<ion-icon class="header-icons" src="{{root}}assets/icons/svg/user.svg"></ion-icon>
-							<span class="notify">3</span>
-						</div>
-						<small class="text lr-only"> My profile </small>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile.html">
-							<ion-icon class="mr-1" src="{{root}}assets/icons/svg/user.svg"></ion-icon> Edit Profile
-						</a><a class="dropdown-item" href="notifications.html">
-							<ion-icon name="chatbox-outline"></ion-icon> My Inbox
-						</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/"><i class="feather icon-power"></i> Logout</a>
-					</div>
-				</div>
-				<div class="widget-header mx-3">
-					<a href="/page-profile-orders.html" class="widget-view">
-						<div class="text-center header-icons">
-							<span class="lnr lnr-store"></span>
-						</div>
-						<small class="text lr-only"> Orders </small>
-					</a>
-				</div>
-				<div class="widget-header ml-3">
-					<span id="cart-btn" class="widget-view">
-						<div class="text-center header-icons">
-							<span class="lnr lnr-cart"></span>
-						</div>
-						<small class="text lr-only"> Cart </small>
-					</span>
-				</div>
-			</div>
 		</div>
 	</div>
 </nav>

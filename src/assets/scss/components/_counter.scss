@@ -1,0 +1,56 @@
+
+.counter {
+	font-weight: 700;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	div {
+		display: inline-block;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		width: 25%;
+		float: left;
+		text-align: center;
+		.value {
+			display: block;
+			font-size: 2rem;
+			width: 100%;
+		}
+		span {
+			font-size: 8pt;
+			opacity: 0.8;
+			width: 100%;
+			display: block;
+		}
+	}
+	.hours::before,
+	.minutes::before,
+	.seconds::before {
+		content: ':';
+		float: left;
+		font-size: 2rem;
+		position: relative;
+		opacity: 0.7;
+		animation: pink 1s ease-in-out infinite;
+	}
+}
+
+.centerIt {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes pink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}

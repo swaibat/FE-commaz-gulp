@@ -20,7 +20,7 @@
 <body class="">
 	<b class="screen-overlay"></b>
 	{{>navigation}}
-	<div class="container px-0">{{> body}}</div>
+		{{> body}}
 	{{> footer}}
 </body>
 <script src="{{root}}assets/js/bundle.js"></script>
@@ -28,7 +28,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
-	jQuery('#carousel').owlCarousel({
+	$('#category-nav .nav-item').mouseover(()=>{
+			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
+			.css('margin-left', $('#category-nav').outerWidth())
+		})
+	$('#carousel').owlCarousel({
 		autoplay: false,
 		lazyLoad: true,
 		loop: true,
@@ -107,19 +111,9 @@ animateIn: 'fadeIn',
 					.hide();
 			}
 		}
-		$('.drop-list')
-			.css('width', $('#slider').width())
-			.css('margin-left', $('#category-nav').width() + 20);
-		$('.btn-link').mouseover((e) => {
-			console.log(e.target);
-			$('.drop-list').addClass('show');
-		});
-		$('.btn-link').mouseover(() => {
-			$('.drop-list').addClass('show');
-		});
 	});
 	$(window).resize(function () {
-		$('.drop-list').css('width', $('#slider').width()).css('height', $('#slider').height()).css('margin-left', $('#category-nav').width());
+		$('.drop-list').css('width', $('#slider').outerWidth()).css('height', $('#slider').outerHeight()).css('margin-left', $('#category-nav').outerWidth);
 	});
 	// cart buttons
 	// personal details
@@ -166,7 +160,36 @@ animateIn: 'fadeIn',
 		$('[data-target="#shipping"]').removeClass('d-none');
 	});
 
-		// console.log($('#slider').height())
+	(function init() {
+  function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 60 * 24));
+    return {
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
+    };
+  }
+  
+  function initializeClock(endtime){
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    document.querySelector(".days > .value").innerText=t.days;
+    document.querySelector(".hours > .value").innerText=t.hours;
+    document.querySelector(".minutes > .value").innerText=t.minutes;
+    document.querySelector(".seconds > .value").innerText=t.seconds;
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  },1000);
+}
+initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+})()
 </script>
 
 </html>
