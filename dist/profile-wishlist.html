@@ -17,11 +17,11 @@
 
 <body class="">
 	<b class="screen-overlay"></b>
-	
+
 	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link " href="/">
+				<a class="nav-link " href="">
 					<img src="assets/images/logo.svg" height="35 " />
 				</a>
 			</div>
@@ -152,14 +152,14 @@
 					</li>
 				</ul>
 			</li>
-	
+
 			<!-- <li class="nav-item ml-md-auto lr-only">
 				<a class="dropdown-item bg-primary text-white" href="app-calender.html" data-toggle="dropdown"
 					data-i18n="Calender">Get our App</a>
 			</li> -->
 			<li class="dropdown dropdown-language nav-item">
-				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
 						class="selected-language">English</span></a>
 				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag">
 					<a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i>
@@ -171,266 +171,270 @@
 			</li>
 		</nav>
 	</div>
-	
+
 	<!-- container .// -->
-		<div class="bread-overlay"></div>
-		<div class="py-2 d-flex">
-			<span>
-				<h1 class="">My Account</h1>
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb bg-transparent px-0">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">user Profile</li>
-					</ol>
-				</nav>
-			</span>
-			<div class="switch ml-auto">
-				<input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
-					for="switch"></label>
+	<div class="bread-overlay"></div>
+	<div class="py-2 d-flex">
+		<span>
+			<h1 class="">My Account</h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb bg-transparent px-0">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">user Profile</li>
+				</ol>
+			</nav>
+		</span>
+		<div class="switch ml-auto">
+			<input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
+				for="switch"></label>
+		</div>
+	</div>
+
+	<ul class="nav nav-pills mb-3 bg-white p-3 border">
+		<li class="nav-item">
+			<a class="nav-link " href="profile.html">Profile</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="profile-wishlist.html">Whishlist</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-orders.html">My Orders</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
+		</li>
+	</ul>
+
+	<div class="tab-content">
+		<section id="ecommerce-products" class="grid-view grid-view-sm">
+			<div class="card ecommerce-card mb-4 shadow-sm">
+				<div class="card-content">
+					<div class="btn-group-vertical position-absolute right-0">
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+						</span>
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+						</span>
+					</div>
+					<div class="item-img text-center">
+						<a href="product-details.html"> <img class="img-fluid" src="assets/images/pages/eCommerce/1.png"
+								alt="img-placeholder" /></a>
+					</div>
+					<div class="card-body">
+						<div class="item-wrapper">
+							<div class="item-rating">
+								<div class="badge badge-primary badge-md">
+									<span>4</span>
+									<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+								</div>
+							</div>
+							<div>
+								<h6 class="item-price">$39.99</h6>
+							</div>
+						</div>
+						<div class="item-name">
+							<a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+							<p class="item-company">By <span class="company-name">Google</span></p>
+						</div>
+						<div>
+							<p class="item-description">
+								Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa
+								voice
+								remote lets you deliver hands-free
+								commands when you want to watch television or engage with other applications. With a
+								quad-core processor, 1GB internal memory and 8GB
+								of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		
-		<ul class="nav nav-pills mb-3 bg-white p-3 border">
-			<li class="nav-item">
-				<a class="nav-link " href="profile.html">Profile</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link active" href="profile-wishlist.html">Whishlist</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-orders.html">My Orders</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-Addresses.html">My Shipping Details</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
-			</li>
-		</ul>
-		
-		<div class="tab-content">
-			<section id="ecommerce-products" class="grid-view grid-view-sm">
-				<div class="card ecommerce-card mb-4 shadow-sm">
-					<div class="card-content">
-						<div class="btn-group-vertical position-absolute right-0">
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
-							</span>
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-							</span>
-						</div>
-						<div class="item-img text-center">
-							<a href="product-details.html"> <img class="img-fluid"
-									src="assets/images/pages/eCommerce/1.png" alt="img-placeholder" /></a>
-						</div>
-						<div class="card-body">
-							<div class="item-wrapper">
-								<div class="item-rating">
-									<div class="badge badge-primary badge-md">
-										<span>4</span>
-										<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
-									</div>
+			<div class="card ecommerce-card mb-4 shadow-sm">
+				<div class="card-content">
+					<div class="btn-group-vertical position-absolute right-0">
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+						</span>
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+						</span>
+					</div>
+					<div class="item-img text-center">
+						<a href="product-details.html">
+							<img class="img-fluid" src="assets/images/pages/eCommerce/2.png" alt="img-placeholder" />
+						</a>
+					</div>
+					<div class="card-body">
+						<div class="item-wrapper">
+							<div class="item-rating">
+								<div class="badge badge-primary badge-md">
+									<span>4</span>
+									<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
 								</div>
-								<div>
-									<h6 class="item-price">$39.99</h6>
-								</div>
-							</div>
-							<div class="item-name">
-								<a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-								<p class="item-company">By <span class="company-name">Google</span></p>
 							</div>
 							<div>
-								<p class="item-description">
-									Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice
-									remote lets you deliver hands-free
-									commands when you want to watch television or engage with other applications. With a
-									quad-core processor, 1GB internal memory and 8GB
-									of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.
-								</p>
+								<h6 class="item-price">$35.00</h6>
 							</div>
+						</div>
+						<div class="item-name">
+							<a href="product-details.html">Google - Chromecast - Black</a>
+							<p class="item-company">By <span class="company-name">Amazon</span></p>
+						</div>
+						<div>
+							<p class="item-description">
+								Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect
+								to
+								your HDTV's HDMI interface and your home
+								Wi-Fi network to get started. You can stream your favorite apps from your compatible
+								phone,
+								tablet or laptop, plus use your phone as a
+								remote to search, play and pause content.
+							</p>
 						</div>
 					</div>
 				</div>
-				<div class="card ecommerce-card mb-4 shadow-sm">
-					<div class="card-content">
-						<div class="btn-group-vertical position-absolute right-0">
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
-							</span>
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-							</span>
-						</div>
-						<div class="item-img text-center">
-							<a href="product-details.html">
-								<img class="img-fluid" src="assets/images/pages/eCommerce/2.png"
-									alt="img-placeholder" />
-							</a>
-						</div>
-						<div class="card-body">
-							<div class="item-wrapper">
-								<div class="item-rating">
-									<div class="badge badge-primary badge-md">
-										<span>4</span>
-										<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
-									</div>
+			</div>
+			<div class="card ecommerce-card mb-4 shadow-sm">
+				<div class="card-content">
+					<div class="btn-group-vertical position-absolute right-0">
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+						</span>
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+						</span>
+					</div>
+					<div class="item-img text-center">
+						<a href="product-details.html"><img class="img-fluid" src="assets/images/pages/eCommerce/3.png"
+								alt="img-placeholder" /></a>
+					</div>
+					<div class="card-body">
+						<div class="item-wrapper">
+							<div class="item-rating">
+								<div class="badge badge-primary badge-md">
+									<span>4</span>
+									<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
 								</div>
-								<div>
-									<h6 class="item-price">$35.00</h6>
-								</div>
-							</div>
-							<div class="item-name">
-								<a href="product-details.html">Google - Chromecast - Black</a>
-								<p class="item-company">By <span class="company-name">Amazon</span></p>
 							</div>
 							<div>
-								<p class="item-description">
-									Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to
-									your HDTV's HDMI interface and your home
-									Wi-Fi network to get started. You can stream your favorite apps from your compatible phone,
-									tablet or laptop, plus use your phone as a
-									remote to search, play and pause content.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card ecommerce-card mb-4 shadow-sm">
-					<div class="card-content">
-						<div class="btn-group-vertical position-absolute right-0">
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
-							</span>
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-							</span>
-						</div>
-						<div class="item-img text-center">
-							<a href="product-details.html"><img class="img-fluid"
-									src="assets/images/pages/eCommerce/3.png" alt="img-placeholder" /></a>
-						</div>
-						<div class="card-body">
-							<div class="item-wrapper">
-								<div class="item-rating">
-									<div class="badge badge-primary badge-md">
-										<span>4</span>
-										<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
-									</div>
-								</div>
-								<div>
-									<div class="item-cost">
-										<h6 class="item-price">$499.99</h6>
-									</div>
-								</div>
-							</div>
-							<div class="item-name">
-								<a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
-								<p class="item-company">By <span class="company-name">Dell</span></p>
-							</div>
-							<div>
-								<p class="item-description">
-									Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop.
-									Supported by an Intel Core i5-5200U
-									processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple
-									applications without lag. The 1TB hard drive in
-									this Dell Inspiron laptop lets you store multiple music, video and document files.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card ecommerce-card mb-4 shadow-sm">
-					<div class="card-content">
-						<div class="btn-group-vertical position-absolute right-0">
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
-							</span>
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-							</span>
-						</div>
-						<div class="item-img text-center">
-							<a href="product-details.html"> <img class="img-fluid"
-									src="assets/images/pages/eCommerce/4.png" alt="img-placeholder" /></a>
-						</div>
-						<div class="card-body">
-							<div class="item-wrapper">
-								<div class="item-rating">
-									<div class="badge badge-primary badge-md">
-										<span>4</span>
-										<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
-									</div>
-								</div>
 								<div class="item-cost">
-									<h6 class="item-price">$49.99</h6>
+									<h6 class="item-price">$499.99</h6>
 								</div>
 							</div>
-							<div class="item-name">
-								<a href="product-details.html">Amazon - Echo Dot</a>
-								<p class="item-company">By <span class="company-name">Amazon</span></p>
-							</div>
-							<div>
-								<p class="item-description">
-									Echo Dot is the latest addition to Amazon's voice-controlled devices. Deliver your favorite
-									playlist anywhere in your home with the
-									Amazon Echo Dot voice-controlled device. Control most electric devices through voice
-									activation, or schedule a ride with Uber and
-									order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart home
-									with the Alexa app on a smartphone or
-									tablet.
-								</p>
-							</div>
+						</div>
+						<div class="item-name">
+							<a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+							<p class="item-company">By <span class="company-name">Dell</span></p>
+						</div>
+						<div>
+							<p class="item-description">
+								Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron
+								laptop.
+								Supported by an Intel Core i5-5200U
+								processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple
+								applications without lag. The 1TB hard drive in
+								this Dell Inspiron laptop lets you store multiple music, video and document files.
+							</p>
 						</div>
 					</div>
 				</div>
-		
-				<div class="card ecommerce-card mb-4 shadow-sm">
-					<div class="card-content">
-						<div class="btn-group-vertical position-absolute right-0 pr-2 pt-2">
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
-							</span>
-							<span class="btn bg-white p-2">
-								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-							</span>
-						</div>
-						<div class="item-img text-center">
-							<a href="product-details.html">
-								<img class="img-fluid" src="assets/images/pages/eCommerce/9.png"
-									alt="img-placeholder" />
-							</a>
-						</div>
-						<div class="card-body">
-							<div class="item-wrapper">
-								<div class="item-rating">
-									<div class="badge badge-primary badge-md">
-										<span>4</span>
-										<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
-									</div>
-								</div>
-								<div class="item-cost">
-									<h6 class="item-price">$14.99</h6>
+			</div>
+			<div class="card ecommerce-card mb-4 shadow-sm">
+				<div class="card-content">
+					<div class="btn-group-vertical position-absolute right-0">
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+						</span>
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+						</span>
+					</div>
+					<div class="item-img text-center">
+						<a href="product-details.html"> <img class="img-fluid" src="assets/images/pages/eCommerce/4.png"
+								alt="img-placeholder" /></a>
+					</div>
+					<div class="card-body">
+						<div class="item-wrapper">
+							<div class="item-rating">
+								<div class="badge badge-primary badge-md">
+									<span>4</span>
+									<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
 								</div>
 							</div>
-							<div class="item-name">
-								<a href="product-details.html"> Philips - hue A19 Smart LED Light Bulb - White Only </a>
-								<p class="item-company">By <span class="company-name">Philips</span></p>
+							<div class="item-cost">
+								<h6 class="item-price">$49.99</h6>
 							</div>
-							<div>
-								<p class="item-description">
-									Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can
-									easily dim this light bulb and set timers and
-									alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination
-									while using minimal energy.Get lighting
-									that's as smart as you are.
-								</p>
-							</div>
+						</div>
+						<div class="item-name">
+							<a href="product-details.html">Amazon - Echo Dot</a>
+							<p class="item-company">By <span class="company-name">Amazon</span></p>
+						</div>
+						<div>
+							<p class="item-description">
+								Echo Dot is the latest addition to Amazon's voice-controlled devices. Deliver your
+								favorite
+								playlist anywhere in your home with the
+								Amazon Echo Dot voice-controlled device. Control most electric devices through voice
+								activation, or schedule a ride with Uber and
+								order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart
+								home
+								with the Alexa app on a smartphone or
+								tablet.
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
-		</div>
+			</div>
+
+			<div class="card ecommerce-card mb-4 shadow-sm">
+				<div class="card-content">
+					<div class="btn-group-vertical position-absolute right-0 pr-2 pt-2">
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+						</span>
+						<span class="btn bg-white p-2">
+							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+						</span>
+					</div>
+					<div class="item-img text-center">
+						<a href="product-details.html">
+							<img class="img-fluid" src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
+						</a>
+					</div>
+					<div class="card-body">
+						<div class="item-wrapper">
+							<div class="item-rating">
+								<div class="badge badge-primary badge-md">
+									<span>4</span>
+									<ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+								</div>
+							</div>
+							<div class="item-cost">
+								<h6 class="item-price">$14.99</h6>
+							</div>
+						</div>
+						<div class="item-name">
+							<a href="product-details.html"> Philips - hue A19 Smart LED Light Bulb - White Only </a>
+							<p class="item-company">By <span class="company-name">Philips</span></p>
+						</div>
+						<div>
+							<p class="item-description">
+								Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can
+								easily dim this light bulb and set timers and
+								alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination
+								while using minimal energy.Get lighting
+								that's as smart as you are.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
 		<div class="px-3">
@@ -455,7 +459,8 @@
 								</a>
 							</div>
 							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+									Black</a>
 								<span></span>
 								<p class="text-success">In Stock</p>
 								<div class="d-flex">
@@ -467,16 +472,20 @@
 						<td data-label="Quantity : ">
 							<div class="item-quantity mb-2 ml-auto">
 								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
+									<span
+										class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-down"
+											type="button">-</button></span><input type="text"
+										class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-up"
+											type="button">+</button></span>
 								</div>
 							</div>
 						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+						<td class="text-right" data-label="Price :">
+							<h6>$1,190</h6>
+						</td>
 					</tr>
 					<tr class="bg-white border">
 						<td colspan="3" class="d-flex">
@@ -486,7 +495,8 @@
 								</a>
 							</div>
 							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+									Black</a>
 								<span></span>
 								<p class="text-success">In Stock</p>
 								<div class="d-flex">
@@ -498,16 +508,20 @@
 						<td data-label="Quantity : ">
 							<div class="item-quantity mb-2 ml-auto">
 								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
+									<span
+										class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-down"
+											type="button">-</button></span><input type="text"
+										class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-up"
+											type="button">+</button></span>
 								</div>
 							</div>
 						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+						<td class="text-right" data-label="Price :">
+							<h6>$1,190</h6>
+						</td>
 					</tr>
 					<tr class="bg-white border">
 						<td colspan="3" class="d-flex">
@@ -517,7 +531,8 @@
 								</a>
 							</div>
 							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+									Black</a>
 								<span></span>
 								<p class="text-success">In Stock</p>
 								<div class="d-flex">
@@ -529,16 +544,20 @@
 						<td data-label="Quantity : ">
 							<div class="item-quantity mb-2 ml-auto">
 								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
+									<span
+										class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-down"
+											type="button">-</button></span><input type="text"
+										class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-up"
+											type="button">+</button></span>
 								</div>
 							</div>
 						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
+						<td class="text-right" data-label="Price :">
+							<h6>$1,190</h6>
+						</td>
 					</tr>
 					<tr>
 						<td class="text-left cart-summary" colspan="3">
@@ -577,36 +596,39 @@
 					</tr>
 					<tr>
 						<td class="cart-summary" colspan="3">
-								<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
+							<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	</div>
-	
+
 	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
 	<section class="section-subscribe bg-white">
 		<div class="container">
-			<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+			<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to
+				your inbox</p>
 			<div class="row justify-content-md-center">
 				<div class="col-lg-5 col-md-6">
 					<form class="p-2 shadow-sm bg-light rounded" action="#">
 						<div class="input-group">
-							<input class="form-control border-0 mr-2 bg-light" type="search" placeholder="Search tools and resources...">
+							<input class="form-control border-0 mr-2 bg-light" type="search"
+								placeholder="Search tools and resources...">
 							<div class="input-group-append">
 								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
 							</div>
 						</div>
 					</form>
-					<small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
+					<small class="form-text text-white-50">We’ll never share your email address with a third-party.
+					</small>
 				</div>
 				<!-- col-md-6.// -->
 			</div>
 		</div>
 	</section>
 	<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
-	
+
 	<footer class="section-footer border-top ">
 		<div class="container">
 			<section class="footer-top padding-y">
@@ -615,14 +637,19 @@
 						<article class="mr-3">
 							<img src="assets/images/logo-light.svg" class="logo-footer" />
 							<p class="mt-3">
-								Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his
+								Some short text about company like You might remember the Dell computer commercials in
+								which a youth reports this exciting news to his
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
-								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
-								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
-								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i
+										class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i
+										class="fas fa-instagram"></i></a>
+								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i
+										class="fas fa-youtube"></i></a>
+								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i
+										class="fas fa-twitter"></i></a>
 							</div>
 						</article>
 					</aside>
@@ -679,10 +706,10 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
-	$('#category-nav .nav-item').mouseover(()=>{
-			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
+	$('#category-nav .nav-item').mouseover(() => {
+		$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
 			.css('margin-left', $('#category-nav').outerWidth())
-		})
+	})
 	$('#carousel').owlCarousel({
 		autoplay: false,
 		lazyLoad: true,
@@ -812,35 +839,35 @@ animateIn: 'fadeIn',
 	});
 
 	(function init() {
-  function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-  
-  function initializeClock(endtime){
-  var timeinterval = setInterval(function(){
-    var t = getTimeRemaining(endtime);
-    document.querySelector(".days > .value").innerText=t.days;
-    document.querySelector(".hours > .value").innerText=t.hours;
-    document.querySelector(".minutes > .value").innerText=t.minutes;
-    document.querySelector(".seconds > .value").innerText=t.seconds;
-    if(t.total<=0){
-      clearInterval(timeinterval);
-    }
-  },1000);
-}
-initializeClock(((new Date()).getFullYear()+1) + "/1/1")
-})()
+		function getTimeRemaining(endtime) {
+			var t = Date.parse(endtime) - Date.parse(new Date());
+			var seconds = Math.floor((t / 1000) % 60);
+			var minutes = Math.floor((t / 1000 / 60) % 60);
+			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			var days = Math.floor(t / (1000 * 60 * 60 * 60 * 24));
+			return {
+				'total': t,
+				'days': days,
+				'hours': hours,
+				'minutes': minutes,
+				'seconds': seconds
+			};
+		}
+
+		function initializeClock(endtime) {
+			var timeinterval = setInterval(function () {
+				var t = getTimeRemaining(endtime);
+				document.querySelector(".days > .value").innerText = t.days;
+				document.querySelector(".hours > .value").innerText = t.hours;
+				document.querySelector(".minutes > .value").innerText = t.minutes;
+				document.querySelector(".seconds > .value").innerText = t.seconds;
+				if (t.total <= 0) {
+					clearInterval(timeinterval);
+				}
+			}, 1000);
+		}
+		initializeClock(((new Date()).getFullYear() + 1) + "/1/1")
+	})()
 </script>
 
 </html>

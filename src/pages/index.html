@@ -665,7 +665,7 @@
                         <a href="#" class="item">
                             <div class="card-body p-4">
                                 <h6 class="title">{{ this.title }} </h6>
-                                <img class="img-sm float-right" src="{{ this.image }}">
+                                <img class="img-sm float-right" src="{{root}}{{ this.image }}">
                                 <h6 class="item-price">
                                     {{ this.price }}
                                 </h6>
@@ -692,7 +692,7 @@
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                     <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
-                    <img src="../assets/images/items/men_shoes_PNG7492.png" class="img-bg">
+                    <img src="{{root}}assets/images/products/men-gentle-shoes.png" class="img-bg">
                 </div>
             </div> <!-- col.// -->
             <div class="col-md-9">
@@ -702,7 +702,7 @@
                         <a href="#" class="item">
                             <div class="card-body p-4">
                                 <h6 class="title">{{ this.title }} </h6>
-                                <img class="img-sm float-right" src="{{ this.image }}">
+                                <img class="img-sm float-right" src="{{root}}{{ this.image }}">
                                 <h6 class="item-price">
                                     {{ this.price }}
                                 </h6>
@@ -717,8 +717,8 @@
 </section>
 
 <!-- =============== SECTION ITEMS =============== -->
-<section class="mb-3">
 
+<section class="mb-3">
     <header class="section-heading heading-line">
         <h4 class="title-section text-uppercase">Recommended items</h4>
     </header>
