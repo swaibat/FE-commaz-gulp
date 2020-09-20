@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="463.015" height="335.011" viewBox="0 0 463.015 335.011">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke-width: 15px;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #b50305;
+      }
+
+      .cls-3 {
+        stroke: #b50305;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="game-controller-outline" transform="translate(-24.473 -88.499)">
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M467.51,248.83c-18.4-83.18-45.69-136.24-89.43-149.17A91.5,91.5,0,0,0,352,96c-26.89,0-48.11,16-96,16s-69.15-16-96-16a99.09,99.09,0,0,0-27.2,3.66C89,112.59,61.94,165.7,43.33,248.83c-19,84.91-15.56,152,21.58,164.88,26,9,49.25-9.61,71.27-37,25-31.2,55.79-40.8,119.82-40.8s93.62,9.6,118.66,40.8c22,27.41,46.11,45.79,71.42,37.16C487.1,399.86,486.52,334.74,467.51,248.83Z"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="20" cy="20" r="20" transform="translate(272 204)"/>
+    <path id="Path_7" data-name="Path 7" class="cls-2" d="M336,288a20,20,0,1,1,20-19.95A20,20,0,0,1,336,288Z"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-2" cx="20" cy="20" r="20" transform="translate(316 160)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-2" cx="20" cy="20" r="20" transform="translate(360 204)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-3" y2="96" transform="translate(160 176)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-3" x1="96" transform="translate(112 224)"/>
+  </g>
+</svg>

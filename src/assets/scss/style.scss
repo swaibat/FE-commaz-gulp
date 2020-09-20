@@ -640,21 +640,18 @@ $width: $height * 2;
 		background-color: #1fa2ff;
 	}
 }
-.vh-max {
-	max-height: calc(100% - 4.6rem);
-}
 
 .bg-light-orange {
 	background-color: rgba(0, 0, 0, 0.904);
 }
 
 .with-overlay {
-	background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url('https://i.imgur.com/JYlHEsM.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url('../images/banners/ad.png');
 	background-position: right;
 	background-repeat: no-repeat;
-	@include media-breakpoint-down(md) {
-		height: 20%;
-	}
+	// @include media-breakpoint-down(md) {
+	// 	height: 35%;
+	// }
 	height: 100%;
 }
 
