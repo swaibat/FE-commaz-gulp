@@ -15,7 +15,7 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="">
+<body class="dark-theme">
 	<b class="screen-overlay"></b>
 	
 	<!-- container .// -->
@@ -54,19 +54,23 @@
 		                                        <div class="card-body pt-0">
 		                                            <form action="index.html">
 		                                                <div class="form-label-group">
-		                                                    <input type="text" id="inputName" class="form-control" placeholder="Name" required>
+		                                                    <input type="text" id="inputName" class="form-control"
+		                                                        placeholder="Name" required>
 		                                                    <label for="inputName">Name</label>
 		                                                </div>
 		                                                <div class="form-label-group">
-		                                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+		                                                    <input type="email" id="inputEmail" class="form-control"
+		                                                        placeholder="Email" required>
 		                                                    <label for="inputEmail">Email</label>
 		                                                </div>
 		                                                <div class="form-label-group">
-		                                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+		                                                    <input type="password" id="inputPassword" class="form-control"
+		                                                        placeholder="Password" required>
 		                                                    <label for="inputPassword">Password</label>
 		                                                </div>
 		                                                <div class="form-label-group">
-		                                                    <input type="password" id="inputConfPassword" class="form-control" placeholder="Confirm Password" required>
+		                                                    <input type="password" id="inputConfPassword" class="form-control"
+		                                                        placeholder="Confirm Password" required>
 		                                                    <label for="inputConfPassword">Confirm Password</label>
 		                                                </div>
 		                                                <div class="form-group row">
@@ -84,8 +88,10 @@
 		                                                        </fieldset>
 		                                                    </div>
 		                                                </div>
-		                                                <a href="auth-login.html" class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
-		                                                <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</a>
+		                                                <a href="auth-login.html"
+		                                                    class="btn btn-outline-primary float-left btn-inline ">Login</a>
+		                                                <button type="submit"
+		                                                    class="btn btn-primary float-right btn-inline ">Register</a>
 		                                            </form>
 		                                        </div>
 		                                    </div>
@@ -105,6 +111,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#toggle-filter').click(()=>{
+		$('.content-body').toggleClass('ml-0')
+		$('.grid-view').toggleClass('grid-view-sm')
+		$('.sidebar-shop').toggleClass('w-0')
+	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
 			.css('margin-left', $('#category-nav').outerWidth())
