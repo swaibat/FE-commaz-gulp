@@ -15,13 +15,13 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="">
+<body class="dark-theme">
 	<b class="screen-overlay"></b>
 	
 	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link " href="">
+				<a class="nav-link " href="./">
 					<img src="assets/images/logo.svg" height="35 " />
 				</a>
 			</div>
@@ -42,7 +42,6 @@
 						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
 							<div class="text-center">
 								<ion-icon class="header-icons" src="assets/icons/svg/user.svg"></ion-icon>
-								<span class="notify">3</span>
 							</div>
 							<small class="text lr-only"> My profile </small>
 						</a>
@@ -68,6 +67,7 @@
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="lnr lnr-cart"></span>
+								<span class="c-badge badge-cart">3</span>
 							</div>
 							<small class="text lr-only"> Cart </small>
 						</span>
@@ -80,7 +80,7 @@
 		<nav class="nav d-flex justify-content-between">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-					<span class="lnr lnr-list pr-1"></span>Categories</a>
+					<span class="lnr lnr-list pr-1"></span>Genre</a>
 				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4">
 					<div class="row col-md-10 ">
 						<div class="col-md-3">
@@ -173,418 +173,377 @@
 	</div>
 	
 	<!-- container .// -->
-		<div class="app-content content">
-		    <div class="content-overlay"></div>
-		    <div class="header-navbar-shadow"></div>
-		    <div class="content-wrapper">
-		        <div class="content-header row">
-		            <div class="content-header-left col-md-9 col-12 mb-2">
-		                <div class="row breadcrumbs-top">
-		                    <div class="col-12">
-		                        <h2 class="content-header-title float-left mb-0">Account Settings</h2>
-		                        <div class="breadcrumb-wrapper col-12">
-		                            <ol class="breadcrumb">
-		                                <li class="breadcrumb-item"><a href="index.html">Home</a>
-		                                </li>
-		                                <li class="breadcrumb-item"><a href="#">Pages</a>
-		                                </li>
-		                                <li class="breadcrumb-item active"> Account Settings
-		                                </li>
-		                            </ol>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-		                <div class="form-group breadcrum-right">
-		                    <div class="dropdown">
-		                        <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle waves-effect waves-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
-		                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
-		                    </div>
-		                </div>
-		            </div>
+		<div class="bread-overlay"></div>
+		<div class="container p-0">
+		    <div class="py-2 d-flex">
+		        <span>
+		            <h1 class="">My Account</h1>
+		            <nav aria-label="breadcrumb">
+		                <ol class="breadcrumb bg-transparent px-0">
+		                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+		                    <li class="breadcrumb-item active" aria-current="page">user Profile</li>
+		                </ol>
+		            </nav>
+		        </span>
+		        <div class="switch ml-auto">
+		            <input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
+		                for="switch"></label>
 		        </div>
-		        <div class="content-body">
-		            <!-- account setting page start -->
-		            <section id="page-account-settings">
-		                <div class="row">
-		                    <!-- left menu section -->
-		                    <div class="col-md-3 mb-2 mb-md-0">
-		                        <ul class="nav nav-pills flex-column mt-md-0 mt-1">
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75" id="account-pill-general" data-toggle="pill" href="#account-vertical-general" aria-expanded="true">
-		                                    <i class="feather icon-globe mr-50 font-medium-3"></i>
-		                                    General
-		                                </a>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75" id="account-pill-password" data-toggle="pill" href="#account-vertical-password" aria-expanded="false">
-		                                    <i class="feather icon-lock mr-50 font-medium-3"></i>
-		                                    Change Password
-		                                </a>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75 active" id="account-pill-info" data-toggle="pill" href="#account-vertical-info" aria-expanded="false">
-		                                    <i class="feather icon-info mr-50 font-medium-3"></i>
-		                                    Info
-		                                </a>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75" id="account-pill-social" data-toggle="pill" href="#account-vertical-social" aria-expanded="false">
-		                                    <i class="feather icon-camera mr-50 font-medium-3"></i>
-		                                    Social links
-		                                </a>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75" id="account-pill-connections" data-toggle="pill" href="#account-vertical-connections" aria-expanded="false">
-		                                    <i class="feather icon-feather mr-50 font-medium-3"></i>
-		                                    Connections
-		                                </a>
-		                            </li>
-		                            <li class="nav-item">
-		                                <a class="nav-link d-flex py-75" id="account-pill-notifications" data-toggle="pill" href="#account-vertical-notifications" aria-expanded="false">
-		                                    <i class="feather icon-message-circle mr-50 font-medium-3"></i>
-		                                    Notifications
-		                                </a>
-		                            </li>
-		                        </ul>
-		                    </div>
-		                    <!-- right content section -->
-		                    <div class="col-md-9">
-		                        <div class="card">
-		                            <div class="card-content">
-		                                <div class="card-body">
-		                                    <div class="tab-content">
-		                                        <div role="tabpanel" class="tab-pane" id="account-vertical-general" aria-labelledby="account-pill-general" aria-expanded="true">
-		                                            <div class="media">
-		                                                <a href="javascript: void(0);">
-		                                                    <img src="assets/images/portrait/small/avatar-s-12.jpg" class="rounded mr-75" alt="profile image" height="64" width="64">
-		                                                </a>
-		                                                <div class="media-body mt-75">
-		                                                    <div class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start">
-		                                                        <label class="btn btn-sm btn-primary ml-50 mb-50 mb-sm-0 cursor-pointer waves-effect waves-light" for="account-upload">Upload new photo</label>
-		                                                        <input type="file" id="account-upload" hidden="">
-		                                                        <button class="btn btn-sm btn-outline-warning ml-50 waves-effect waves-light">Reset</button>
+		    </div>
+		
+		    <ul class="nav nav-pills mb-3 bg-white p-3 border">
+		        <li class="nav-item">
+		            <a class="nav-link active " href="profile.html">Profile</a>
+		        </li>
+		        <li class="nav-item">
+		            <a class="nav-link" href="profile-wishlist.html">Whishlist</a>
+		        </li>
+		        <li class="nav-item">
+		            <a class="nav-link" href="profile-orders.html">My Orders</a>
+		        </li>
+		        <li class="nav-item">
+		            <a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
+		        </li>
+		        <li class="nav-item">
+		            <a class="nav-link" href="product-details.html">My Recently viewed products</a>
+		        </li>
+		    </ul>
+		    <section id="page-account-settings">
+		        <div class="row">
+		            <!-- left menu section -->
+		            <div class="col-md-3 mb-2">
+		                <ul class="nav nav-pills flex-column bg-white p-3">
+		                    <li class="nav-item">
+		                        <a class="nav-link d-flex py-3" id="account-pill-general" data-toggle="pill"
+		                            href="#account-vertical-general" aria-expanded="true">
+		                            <i class="feather icon-globe mr-50 font-medium-3"></i>
+		                            General
+		                        </a>
+		                    </li>
+		                    <li class="nav-item">
+		                        <a class="nav-link d-flex py-3" id="account-pill-password" data-toggle="pill"
+		                            href="#account-vertical-password" aria-expanded="false">
+		                            <i class="feather icon-lock mr-50 font-medium-3"></i>
+		                            Change Password
+		                        </a>
+		                    </li>
+		                    <li class="nav-item">
+		                        <a class="nav-link d-flex py-3" id="account-pill-social" data-toggle="pill"
+		                            href="#account-vertical-social" aria-expanded="false">
+		                            <i class="feather icon-camera mr-50 font-medium-3"></i>
+		                            Social links
+		                        </a>
+		                    </li>
+		                    <li class="nav-item">
+		                        <a class="nav-link d-flex py-3" id="account-pill-connections" data-toggle="pill"
+		                            href="#account-vertical-connections" aria-expanded="false">
+		                            <i class="feather icon-feather mr-50 font-medium-3"></i>
+		                            Connections
+		                        </a>
+		                    </li>
+		                    <li class="nav-item">
+		                        <a class="nav-link d-flex py-3" id="account-pill-notifications" data-toggle="pill"
+		                            href="#account-vertical-notifications" aria-expanded="false">
+		                            <i class="feather icon-message-circle mr-50 font-medium-3"></i>
+		                            Notifications
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <!-- right content section -->
+		            <div class="col-md-9">
+		                <div class="card">
+		                    <div class="card-content">
+		                        <div class="card-body">
+		                            <div class="tab-content">
+		                                <div role="tabpanel" class="tab-pane active show" id="account-vertical-general"
+		                                    aria-labelledby="account-pill-general" aria-expanded="true">
+		                                    <div class="media">
+		                                        <a href="javascript: void(0);">
+		                                            <img src="assets/images/portrait/small/avatar-s-12.jpg"
+		                                                class="rounded mr-3" alt="profile image" height="64" width="64">
+		                                        </a>
+		                                        <div class="media-body">
+		                                            <div
+		                                                class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start">
+		                                                <label
+		                                                    class="btn btn-sm btn-primary mb-sm-0 cursor-pointer waves-effect waves-light"
+		                                                    for="account-upload">Upload new photo</label>
+		                                                <input type="file" id="account-upload" hidden="">
+		                                                <button
+		                                                    class="btn btn-sm btn-outline-warning ml-3 waves-effect waves-light">Reset</button>
+		                                            </div>
+		                                            <p class="text-muted ml-75 mt-50"><small>Allowed JPG, GIF or PNG. Max
+		                                                    size of
+		                                                    800kB</small></p>
+		                                        </div>
+		                                    </div>
+		                                    <hr>
+		                                    <form novalidate="">
+		                                        <div class="row">
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-username">Username</label>
+		                                                        <input type="text" class="form-control" id="account-username"
+		                                                            placeholder="Username" value="hermione007" required=""
+		                                                            data-validation-required-message="This username field is required">
 		                                                    </div>
-		                                                    <p class="text-muted ml-75 mt-50"><small>Allowed JPG, GIF or PNG. Max
-		                                                            size of
-		                                                            800kB</small></p>
 		                                                </div>
 		                                            </div>
-		                                            <hr>
-		                                            <form novalidate="">
-		                                                <div class="row">
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-username">Username</label>
-		                                                                <input type="text" class="form-control" id="account-username" placeholder="Username" value="hermione007" required="" data-validation-required-message="This username field is required">
-		                                                            </div>
-		                                                        </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-name">Name</label>
+		                                                        <input type="text" class="form-control" id="account-name"
+		                                                            placeholder="Name" value="Hermione Granger" required=""
+		                                                            data-validation-required-message="This name field is required">
 		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-name">Name</label>
-		                                                                <input type="text" class="form-control" id="account-name" placeholder="Name" value="Hermione Granger" required="" data-validation-required-message="This name field is required">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-e-mail">E-mail</label>
-		                                                                <input type="email" class="form-control" id="account-e-mail" placeholder="Email" value="granger007@hogward.com" required="" data-validation-required-message="This email field is required">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="alert alert-warning alert-dismissible mb-2" role="alert">
-		                                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		                                                                <span aria-hidden="true">×</span>
-		                                                            </button>
-		                                                            <p class="mb-0">
-		                                                                Your email is not confirmed. Please check your inbox.
-		                                                            </p>
-		                                                            <a href="javascript: void(0);">Resend confirmation</a>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-company">Company</label>
-		                                                            <input type="text" class="form-control" id="account-company" placeholder="Company name">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                            changes</button>
-		                                                        <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-		                                                    </div>
-		                                                </div>
-		                                            </form>
-		                                        </div>
-		                                        <div class="tab-pane fade" id="account-vertical-password" role="tabpanel" aria-labelledby="account-pill-password" aria-expanded="false">
-		                                            <form novalidate="">
-		                                                <div class="row">
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-old-password">Old Password</label>
-		                                                                <input type="password" class="form-control" id="account-old-password" required="" placeholder="Old Password" data-validation-required-message="This old password field is required">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-new-password">New Password</label>
-		                                                                <input type="password" name="password" id="account-new-password" class="form-control" placeholder="New Password" required="" data-validation-required-message="The password field is required" minlength="6">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-retype-new-password">Retype New
-		                                                                    Password</label>
-		                                                                <input type="password" name="con-password" class="form-control" required="" id="account-retype-new-password" data-validation-match-match="password" placeholder="New Password" data-validation-required-message="The Confirm password field is required" minlength="6">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                            changes</button>
-		                                                        <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-		                                                    </div>
-		                                                </div>
-		                                            </form>
-		                                        </div>
-		                                        <div class="tab-pane fade active show" id="account-vertical-info" role="tabpanel" aria-labelledby="account-pill-info" aria-expanded="false">
-		                                            <form novalidate="">
-		                                                <div class="row">
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="accountTextarea">Bio</label>
-		                                                            <textarea class="form-control" id="accountTextarea" rows="3" placeholder="Your Bio data here..."></textarea>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-birth-date">Birth date</label>
-		                                                                <input type="text" class="form-control birthdate-picker picker__input" required="" placeholder="Birth date" id="account-birth-date" data-validation-required-message="This birthdate field is required" readonly="" aria-haspopup="true" aria-readonly="false" aria-owns="account-birth-date_root"><div class="picker" id="account-birth-date_root" aria-hidden="true"><div class="picker__holder" tabindex="-1"><div class="picker__frame"><div class="picker__wrap"><div class="picker__box"><div class="picker__header"><div class="picker__month">September</div><div class="picker__year">2020</div><div class="picker__nav--prev" data-nav="-1" tabindex="0" role="button" aria-controls="account-birth-date_table" title="Previous month"> </div><div class="picker__nav--next" data-nav="1" tabindex="0" role="button" aria-controls="account-birth-date_table" title="Next month"> </div></div><table class="picker__table" id="account-birth-date_table" role="grid" aria-controls="account-birth-date" aria-readonly="true"><thead><tr><th class="picker__weekday" scope="col" title="Sunday">Sun</th><th class="picker__weekday" scope="col" title="Monday">Mon</th><th class="picker__weekday" scope="col" title="Tuesday">Tue</th><th class="picker__weekday" scope="col" title="Wednesday">Wed</th><th class="picker__weekday" scope="col" title="Thursday">Thu</th><th class="picker__weekday" scope="col" title="Friday">Fri</th><th class="picker__weekday" scope="col" title="Saturday">Sat</th></tr></thead><tbody><tr><td><div class="picker__day picker__day--outfocus" data-pick="1598734800000" id="account-birth-date_1598734800000" tabindex="0" role="gridcell" aria-label="August, 30, 2020">30</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1598821200000" id="account-birth-date_1598821200000" tabindex="0" role="gridcell" aria-label="August, 31, 2020">31</div></td><td><div class="picker__day picker__day--infocus" data-pick="1598907600000" id="account-birth-date_1598907600000" tabindex="0" role="gridcell" aria-label="September, 1, 2020">1</div></td><td><div class="picker__day picker__day--infocus" data-pick="1598994000000" id="account-birth-date_1598994000000" tabindex="0" role="gridcell" aria-label="September, 2, 2020">2</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599080400000" id="account-birth-date_1599080400000" tabindex="0" role="gridcell" aria-label="September, 3, 2020">3</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599166800000" id="account-birth-date_1599166800000" tabindex="0" role="gridcell" aria-label="September, 4, 2020">4</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599253200000" id="account-birth-date_1599253200000" tabindex="0" role="gridcell" aria-label="September, 5, 2020">5</div></td></tr><tr><td><div class="picker__day picker__day--infocus" data-pick="1599339600000" id="account-birth-date_1599339600000" tabindex="0" role="gridcell" aria-label="September, 6, 2020">6</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599426000000" id="account-birth-date_1599426000000" tabindex="0" role="gridcell" aria-label="September, 7, 2020">7</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599512400000" id="account-birth-date_1599512400000" tabindex="0" role="gridcell" aria-label="September, 8, 2020">8</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599598800000" id="account-birth-date_1599598800000" tabindex="0" role="gridcell" aria-label="September, 9, 2020">9</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599685200000" id="account-birth-date_1599685200000" tabindex="0" role="gridcell" aria-label="September, 10, 2020">10</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599771600000" id="account-birth-date_1599771600000" tabindex="0" role="gridcell" aria-label="September, 11, 2020">11</div></td><td><div class="picker__day picker__day--infocus" data-pick="1599858000000" id="account-birth-date_1599858000000" tabindex="0" role="gridcell" aria-label="September, 12, 2020">12</div></td></tr><tr><td><div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1599944400000" id="account-birth-date_1599944400000" tabindex="0" role="gridcell" aria-label="September, 13, 2020" aria-activedescendant="1599944400000">13</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600030800000" id="account-birth-date_1600030800000" tabindex="0" role="gridcell" aria-label="September, 14, 2020">14</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600117200000" id="account-birth-date_1600117200000" tabindex="0" role="gridcell" aria-label="September, 15, 2020">15</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600203600000" id="account-birth-date_1600203600000" tabindex="0" role="gridcell" aria-label="September, 16, 2020">16</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600290000000" id="account-birth-date_1600290000000" tabindex="0" role="gridcell" aria-label="September, 17, 2020">17</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600376400000" id="account-birth-date_1600376400000" tabindex="0" role="gridcell" aria-label="September, 18, 2020">18</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600462800000" id="account-birth-date_1600462800000" tabindex="0" role="gridcell" aria-label="September, 19, 2020">19</div></td></tr><tr><td><div class="picker__day picker__day--infocus" data-pick="1600549200000" id="account-birth-date_1600549200000" tabindex="0" role="gridcell" aria-label="September, 20, 2020">20</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600635600000" id="account-birth-date_1600635600000" tabindex="0" role="gridcell" aria-label="September, 21, 2020">21</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600722000000" id="account-birth-date_1600722000000" tabindex="0" role="gridcell" aria-label="September, 22, 2020">22</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600808400000" id="account-birth-date_1600808400000" tabindex="0" role="gridcell" aria-label="September, 23, 2020">23</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600894800000" id="account-birth-date_1600894800000" tabindex="0" role="gridcell" aria-label="September, 24, 2020">24</div></td><td><div class="picker__day picker__day--infocus" data-pick="1600981200000" id="account-birth-date_1600981200000" tabindex="0" role="gridcell" aria-label="September, 25, 2020">25</div></td><td><div class="picker__day picker__day--infocus" data-pick="1601067600000" id="account-birth-date_1601067600000" tabindex="0" role="gridcell" aria-label="September, 26, 2020">26</div></td></tr><tr><td><div class="picker__day picker__day--infocus" data-pick="1601154000000" id="account-birth-date_1601154000000" tabindex="0" role="gridcell" aria-label="September, 27, 2020">27</div></td><td><div class="picker__day picker__day--infocus" data-pick="1601240400000" id="account-birth-date_1601240400000" tabindex="0" role="gridcell" aria-label="September, 28, 2020">28</div></td><td><div class="picker__day picker__day--infocus" data-pick="1601326800000" id="account-birth-date_1601326800000" tabindex="0" role="gridcell" aria-label="September, 29, 2020">29</div></td><td><div class="picker__day picker__day--infocus" data-pick="1601413200000" id="account-birth-date_1601413200000" tabindex="0" role="gridcell" aria-label="September, 30, 2020">30</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1601499600000" id="account-birth-date_1601499600000" tabindex="0" role="gridcell" aria-label="October, 1, 2020">1</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1601586000000" id="account-birth-date_1601586000000" tabindex="0" role="gridcell" aria-label="October, 2, 2020">2</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1601672400000" id="account-birth-date_1601672400000" tabindex="0" role="gridcell" aria-label="October, 3, 2020">3</div></td></tr><tr><td><div class="picker__day picker__day--outfocus" data-pick="1601758800000" id="account-birth-date_1601758800000" tabindex="0" role="gridcell" aria-label="October, 4, 2020">4</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1601845200000" id="account-birth-date_1601845200000" tabindex="0" role="gridcell" aria-label="October, 5, 2020">5</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1601931600000" id="account-birth-date_1601931600000" tabindex="0" role="gridcell" aria-label="October, 6, 2020">6</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1602018000000" id="account-birth-date_1602018000000" tabindex="0" role="gridcell" aria-label="October, 7, 2020">7</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1602104400000" id="account-birth-date_1602104400000" tabindex="0" role="gridcell" aria-label="October, 8, 2020">8</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1602190800000" id="account-birth-date_1602190800000" tabindex="0" role="gridcell" aria-label="October, 9, 2020">9</div></td><td><div class="picker__day picker__day--outfocus" data-pick="1602277200000" id="account-birth-date_1602277200000" tabindex="0" role="gridcell" aria-label="October, 10, 2020">10</div></td></tr></tbody></table><div class="picker__footer"><button class="picker__button--today" type="button" data-pick="1599944400000" disabled="" aria-controls="account-birth-date">Today</button><button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="account-birth-date">Clear</button><button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="account-birth-date">Close</button></div></div></div></div></div></div>
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="accountSelect">Country</label>
-		                                                            <select class="form-control" id="accountSelect">
-		                                                                <option>USA</option>
-		                                                                <option>India</option>
-		                                                                <option>Canada</option>
-		                                                            </select>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="languageselect2">Languages</label>
-		                                                            <select class="form-control select2-hidden-accessible" id="languageselect2" multiple="" data-select2-id="languageselect2" tabindex="-1" aria-hidden="true">
-		                                                                <option value="English" selected="" data-select2-id="2">English</option>
-		                                                                <option value="Spanish">Spanish</option>
-		                                                                <option value="French">French</option>
-		                                                                <option value="Russian">Russian</option>
-		                                                                <option value="German">German</option>
-		                                                                <option value="Arabic" selected="" data-select2-id="3">Arabic</option>
-		                                                                <option value="Sanskrit">Sanskrit</option>
-		                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="English" data-select2-id="4"><span class="select2-selection__choice__remove" role="presentation">×</span>English</li><li class="select2-selection__choice" title="Arabic" data-select2-id="5"><span class="select2-selection__choice__remove" role="presentation">×</span>Arabic</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <div class="controls">
-		                                                                <label for="account-phone">Phone</label>
-		                                                                <input type="text" class="form-control" id="account-phone" required="" placeholder="Phone number" value="(+656) 254 2568" data-validation-required-message="This phone number field is required">
-		                                                            </div>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-website">Website</label>
-		                                                            <input type="text" class="form-control" id="account-website" placeholder="Website address">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="musicselect2">Favourite Music</label>
-		                                                            <select class="form-control select2-hidden-accessible" id="musicselect2" multiple="" data-select2-id="musicselect2" tabindex="-1" aria-hidden="true">
-		                                                                <option value="Rock">Rock</option>
-		                                                                <option value="Jazz" selected="" data-select2-id="7">Jazz</option>
-		                                                                <option value="Disco">Disco</option>
-		                                                                <option value="Pop">Pop</option>
-		                                                                <option value="Techno">Techno</option>
-		                                                                <option value="Folk" selected="" data-select2-id="8">Folk</option>
-		                                                                <option value="Hip hop">Hip hop</option>
-		                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="6" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="Jazz" data-select2-id="9"><span class="select2-selection__choice__remove" role="presentation">×</span>Jazz</li><li class="select2-selection__choice" title="Folk" data-select2-id="10"><span class="select2-selection__choice__remove" role="presentation">×</span>Folk</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="moviesselect2">Favourite movies</label>
-		                                                            <select class="form-control select2-hidden-accessible" id="moviesselect2" multiple="" data-select2-id="moviesselect2" tabindex="-1" aria-hidden="true">
-		                                                                <option value="The Dark Knight" selected="" data-select2-id="12">The Dark Knight
-		                                                                </option>
-		                                                                <option value="Harry Potter" selected="" data-select2-id="13">Harry Potter</option>
-		                                                                <option value="Airplane!">Airplane!</option>
-		                                                                <option value="Perl Harbour">Perl Harbour</option>
-		                                                                <option value="Spider Man">Spider Man</option>
-		                                                                <option value="Iron Man" selected="" data-select2-id="14">Iron Man</option>
-		                                                                <option value="Avatar">Avatar</option>
-		                                                            </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="11" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="The Dark Knight
-		                                                                " data-select2-id="15"><span class="select2-selection__choice__remove" role="presentation">×</span>The Dark Knight
-		                                                                </li><li class="select2-selection__choice" title="Harry Potter" data-select2-id="16"><span class="select2-selection__choice__remove" role="presentation">×</span>Harry Potter</li><li class="select2-selection__choice" title="Iron Man" data-select2-id="17"><span class="select2-selection__choice__remove" role="presentation">×</span>Iron Man</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                            changes</button>
-		                                                        <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-		                                                    </div>
-		                                                </div>
-		                                            </form>
-		                                        </div>
-		                                        <div class="tab-pane fade" id="account-vertical-social" role="tabpanel" aria-labelledby="account-pill-social" aria-expanded="false">
-		                                            <form>
-		                                                <div class="row">
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-twitter">Twitter</label>
-		                                                            <input type="text" id="account-twitter" class="form-control" placeholder="Add link" value="https://www.twitter.com">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-facebook">Facebook</label>
-		                                                            <input type="text" id="account-facebook" class="form-control" placeholder="Add link">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-google">Google+</label>
-		                                                            <input type="text" id="account-google" class="form-control" placeholder="Add link">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-linkedin">LinkedIn</label>
-		                                                            <input type="text" id="account-linkedin" class="form-control" placeholder="Add link" value="https://www.linkedin.com">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-instagram">Instagram</label>
-		                                                            <input type="text" id="account-instagram" class="form-control" placeholder="Add link">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12">
-		                                                        <div class="form-group">
-		                                                            <label for="account-quora">Quora</label>
-		                                                            <input type="text" id="account-quora" class="form-control" placeholder="Add link">
-		                                                        </div>
-		                                                    </div>
-		                                                    <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                        <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                            changes</button>
-		                                                        <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-		                                                    </div>
-		                                                </div>
-		                                            </form>
-		                                        </div>
-		                                        <div class="tab-pane fade" id="account-vertical-connections" role="tabpanel" aria-labelledby="account-pill-connections" aria-expanded="false">
-		                                            <div class="row">
-		                                                <div class="col-12 mb-3">
-		                                                    <a href="javascript: void(0);" class="btn btn-info waves-effect waves-light">Connect to
-		                                                        <strong>Twitter</strong></a>
-		                                                </div>
-		                                                <div class="col-12 mb-3">
-		                                                    <button class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
-		                                                    <h6>You are connected to facebook.</h6>
-		                                                    <span>Johndoe@gmail.com</span>
-		                                                </div>
-		                                                <div class="col-12 mb-3">
-		                                                    <a href="javascript: void(0);" class="btn btn-danger waves-effect waves-light">Connect to
-		                                                        <strong>Google</strong>
-		                                                    </a>
-		                                                </div>
-		                                                <div class="col-12 mb-2">
-		                                                    <button class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
-		                                                    <h6>You are connected to Instagram.</h6>
-		                                                    <span>Johndoe@gmail.com</span>
-		                                                </div>
-		                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                    <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                        changes</button>
-		                                                    <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
 		                                                </div>
 		                                            </div>
-		                                        </div>
-		                                        <div class="tab-pane fade" id="account-vertical-notifications" role="tabpanel" aria-labelledby="account-pill-notifications" aria-expanded="false">
-		                                            <div class="row">
-		                                                <h6 class="m-1">Activity</h6>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" checked="" id="accountSwitch1">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch1"></label>
-		                                                        <span class="switch-label w-100">Email me when someone comments
-		                                                            onmy
-		                                                            article</span>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-e-mail">E-mail</label>
+		                                                        <input type="email" class="form-control" id="account-e-mail"
+		                                                            placeholder="Email" value="granger007@hogward.com"
+		                                                            required=""
+		                                                            data-validation-required-message="This email field is required">
 		                                                    </div>
-		                                                </div>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" checked="" id="accountSwitch2">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch2"></label>
-		                                                        <span class="switch-label w-100">Email me when someone answers on
-		                                                            my
-		                                                            form</span>
-		                                                    </div>
-		                                                </div>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" id="accountSwitch3">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch3"></label>
-		                                                        <span class="switch-label w-100">Email me hen someone follows
-		                                                            me</span>
-		                                                    </div>
-		                                                </div>
-		                                                <h6 class="m-1">Application</h6>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" checked="" id="accountSwitch4">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch4"></label>
-		                                                        <span class="switch-label w-100">News and announcements</span>
-		                                                    </div>
-		                                                </div>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" id="accountSwitch5">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch5"></label>
-		                                                        <span class="switch-label w-100">Weekly product updates</span>
-		                                                    </div>
-		                                                </div>
-		                                                <div class="col-12 mb-1">
-		                                                    <div class="custom-control custom-switch custom-control-inline">
-		                                                        <input type="checkbox" class="custom-control-input" checked="" id="accountSwitch6">
-		                                                        <label class="custom-control-label mr-1" for="accountSwitch6"></label>
-		                                                        <span class="switch-label w-100">Weekly blog digest</span>
-		                                                    </div>
-		                                                </div>
-		                                                <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-		                                                    <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-		                                                        changes</button>
-		                                                    <button type="reset" class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
 		                                                </div>
 		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="alert alert-warning alert-dismissible mb-2" role="alert">
+		                                                    <button type="button" class="close" data-dismiss="alert"
+		                                                        aria-label="Close">
+		                                                        <span aria-hidden="true">×</span>
+		                                                    </button>
+		                                                    <p class="mb-0">
+		                                                        Your email is not confirmed. Please check your inbox.
+		                                                    </p>
+		                                                    <a href="javascript: void(0);">Resend confirmation</a>
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-company">Company</label>
+		                                                    <input type="text" class="form-control" id="account-company"
+		                                                        placeholder="Company name">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
+		                                                <button type="submit"
+		                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
+		                                                    changes</button>
+		                                                <button type="reset"
+		                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
+		                                            </div>
+		                                        </div>
+		                                    </form>
+		                                </div>
+		                                <div class="tab-pane fade" id="account-vertical-password" role="tabpanel"
+		                                    aria-labelledby="account-pill-password" aria-expanded="false">
+		                                    <form novalidate="">
+		                                        <div class="row">
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-old-password">Old Password</label>
+		                                                        <input type="password" class="form-control"
+		                                                            id="account-old-password" required=""
+		                                                            placeholder="Old Password"
+		                                                            data-validation-required-message="This old password field is required">
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-new-password">New Password</label>
+		                                                        <input type="password" name="password" id="account-new-password"
+		                                                            class="form-control" placeholder="New Password" required=""
+		                                                            data-validation-required-message="The password field is required"
+		                                                            minlength="6">
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <div class="controls">
+		                                                        <label for="account-retype-new-password">Retype New
+		                                                            Password</label>
+		                                                        <input type="password" name="con-password" class="form-control"
+		                                                            required="" id="account-retype-new-password"
+		                                                            data-validation-match-match="password"
+		                                                            placeholder="New Password"
+		                                                            data-validation-required-message="The Confirm password field is required"
+		                                                            minlength="6">
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
+		                                                <button type="submit"
+		                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
+		                                                    changes</button>
+		                                                <button type="reset"
+		                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
+		                                            </div>
+		                                        </div>
+		                                    </form>
+		                                </div>
+		                                <div class="tab-pane fade" id="account-vertical-social" role="tabpanel"
+		                                    aria-labelledby="account-pill-social" aria-expanded="false">
+		                                    <form>
+		                                        <div class="row">
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-twitter">Twitter</label>
+		                                                    <input type="text" id="account-twitter" class="form-control"
+		                                                        placeholder="Add link" value="https://www.twitter.com">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-facebook">Facebook</label>
+		                                                    <input type="text" id="account-facebook" class="form-control"
+		                                                        placeholder="Add link">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-google">Google+</label>
+		                                                    <input type="text" id="account-google" class="form-control"
+		                                                        placeholder="Add link">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-linkedin">LinkedIn</label>
+		                                                    <input type="text" id="account-linkedin" class="form-control"
+		                                                        placeholder="Add link" value="https://www.linkedin.com">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-instagram">Instagram</label>
+		                                                    <input type="text" id="account-instagram" class="form-control"
+		                                                        placeholder="Add link">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12">
+		                                                <div class="form-group">
+		                                                    <label for="account-quora">Quora</label>
+		                                                    <input type="text" id="account-quora" class="form-control"
+		                                                        placeholder="Add link">
+		                                                </div>
+		                                            </div>
+		                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
+		                                                <button type="submit"
+		                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
+		                                                    changes</button>
+		                                                <button type="reset"
+		                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
+		                                            </div>
+		                                        </div>
+		                                    </form>
+		                                </div>
+		                                <div class="tab-pane fade" id="account-vertical-connections" role="tabpanel"
+		                                    aria-labelledby="account-pill-connections" aria-expanded="false">
+		                                    <div class="row">
+		                                        <div class="col-12 mb-3">
+		                                            <a href="javascript: void(0);"
+		                                                class="btn btn-info waves-effect waves-light">Connect to
+		                                                <strong>Twitter</strong></a>
+		                                        </div>
+		                                        <div class="col-12 mb-3">
+		                                            <button
+		                                                class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
+		                                            <h6>You are connected to facebook.</h6>
+		                                            <span>Johndoe@gmail.com</span>
+		                                        </div>
+		                                        <div class="col-12 mb-3">
+		                                            <a href="javascript: void(0);"
+		                                                class="btn btn-danger waves-effect waves-light">Connect to
+		                                                <strong>Google</strong>
+		                                            </a>
+		                                        </div>
+		                                        <div class="col-12 mb-2">
+		                                            <button
+		                                                class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
+		                                            <h6>You are connected to Instagram.</h6>
+		                                            <span>Johndoe@gmail.com</span>
+		                                        </div>
+		                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
+		                                            <button type="submit"
+		                                                class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
+		                                                changes</button>
+		                                            <button type="reset"
+		                                                class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <div class="tab-pane fade" id="account-vertical-notifications" role="tabpanel"
+		                                    aria-labelledby="account-pill-notifications" aria-expanded="false">
+		                                    <div class="row">
+		                                        <h6 class="m-1">Activity</h6>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" checked=""
+		                                                    id="accountSwitch1">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch1"></label>
+		                                                <span class="switch-label w-100">Email me when someone comments
+		                                                    onmy
+		                                                    article</span>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" checked=""
+		                                                    id="accountSwitch2">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch2"></label>
+		                                                <span class="switch-label w-100">Email me when someone answers on
+		                                                    my
+		                                                    form</span>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" id="accountSwitch3">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch3"></label>
+		                                                <span class="switch-label w-100">Email me hen someone follows
+		                                                    me</span>
+		                                            </div>
+		                                        </div>
+		                                        <h6 class="m-1">Application</h6>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" checked=""
+		                                                    id="accountSwitch4">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch4"></label>
+		                                                <span class="switch-label w-100">News and announcements</span>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" id="accountSwitch5">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch5"></label>
+		                                                <span class="switch-label w-100">Weekly product updates</span>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-12 mb-1">
+		                                            <div class="custom-control custom-switch custom-control-inline">
+		                                                <input type="checkbox" class="custom-control-input" checked=""
+		                                                    id="accountSwitch6">
+		                                                <label class="custom-control-label mr-1" for="accountSwitch6"></label>
+		                                                <span class="switch-label w-100">Weekly blog digest</span>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
+		                                            <button type="submit"
+		                                                class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
+		                                                changes</button>
+		                                            <button type="reset"
+		                                                class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
 		                                        </div>
 		                                    </div>
 		                                </div>
@@ -592,15 +551,13 @@
 		                        </div>
 		                    </div>
 		                </div>
-		            </section>
-		            <!-- account setting page end -->
-		
+		            </div>
 		        </div>
-		    </div>
+		    </section>
 		</div>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
-		<div class="px-3">
+		<div class="px-3 cart-wrapper">
 			<span class="mx-4">
 				<a id="cart-close" class="closebtn">&times;</a>
 				<h4>Shopping Cart</h4>
@@ -786,7 +743,7 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><span class="ti-facebook"></span></a>
 								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
 								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
 								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
@@ -846,6 +803,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#toggle-filter').click(()=>{
+		$('.content-body').toggleClass('ml-0')
+		$('.grid-view').toggleClass('grid-view-sm')
+		$('.sidebar-shop').toggleClass('w-0')
+	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
 			.css('margin-left', $('#category-nav').outerWidth())

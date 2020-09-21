@@ -15,13 +15,13 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="">
+<body class="dark-theme">
 	<b class="screen-overlay"></b>
 	
 	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link " href="">
+				<a class="nav-link " href="./">
 					<img src="assets/images/logo.svg" height="35 " />
 				</a>
 			</div>
@@ -42,7 +42,6 @@
 						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
 							<div class="text-center">
 								<ion-icon class="header-icons" src="assets/icons/svg/user.svg"></ion-icon>
-								<span class="notify">3</span>
 							</div>
 							<small class="text lr-only"> My profile </small>
 						</a>
@@ -68,6 +67,7 @@
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="lnr lnr-cart"></span>
+								<span class="c-badge badge-cart">3</span>
 							</div>
 							<small class="text lr-only"> Cart </small>
 						</span>
@@ -80,7 +80,7 @@
 		<nav class="nav d-flex justify-content-between">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-					<span class="lnr lnr-list pr-1"></span>Categories</a>
+					<span class="lnr lnr-list pr-1"></span>Genre</a>
 				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4">
 					<div class="row col-md-10 ">
 						<div class="col-md-3">
@@ -764,7 +764,7 @@
 		
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
-		<div class="px-3">
+		<div class="px-3 cart-wrapper">
 			<span class="mx-4">
 				<a id="cart-close" class="closebtn">&times;</a>
 				<h4>Shopping Cart</h4>
@@ -950,7 +950,7 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><span class="ti-facebook"></span></a>
 								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
 								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
 								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
@@ -1010,6 +1010,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#toggle-filter').click(()=>{
+		$('.content-body').toggleClass('ml-0')
+		$('.grid-view').toggleClass('grid-view-sm')
+		$('.sidebar-shop').toggleClass('w-0')
+	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
 			.css('margin-left', $('#category-nav').outerWidth())

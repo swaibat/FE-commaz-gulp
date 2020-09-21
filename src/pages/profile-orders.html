@@ -1,190 +1,192 @@
 <div class="bread-overlay"></div>
-<div class="py-2 d-flex">
-    <span>
-        <h1 class="">My Account</h1>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-transparent px-0">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">user Profile</li>
-            </ol>
-        </nav>
-    </span>
-    <div class="switch ml-auto">
-        <input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
-            for="switch"></label>
+<div class="container p-0">
+    <div class="py-2 d-flex">
+        <span>
+            <h1 class="">My Account</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent px-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">user Profile</li>
+                </ol>
+            </nav>
+        </span>
+        <div class="switch ml-auto">
+            <input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
+                for="switch"></label>
+        </div>
     </div>
-</div>
 
-<ul class="nav nav-pills mb-3 bg-white p-3 border">
-    <li class="nav-item">
-        <a class="nav-link " href="profile.html">Profile</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="profile-wishlist.html">Whishlist</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="profile-orders.html">My Orders</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
-    </li>
-</ul>
+    <ul class="nav nav-pills mb-3 bg-white p-3 border">
+        <li class="nav-item">
+            <a class="nav-link " href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profile-wishlist.html">Whishlist</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="profile-orders.html">My Orders</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
+        </li>
+    </ul>
 
-<div class="tab-content">
-    <div class="bg-white p-3 mb-5 rounded">
-        <h3 class="py-2">My Orders</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Order ID</th>
-                    <th scope="col">Products</th>
-                    <th scope="col">Date and time</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Type</th>
-                    <th scope="col">Status</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">#000000920</th>
-                    <td>
-                        <ul class="list-unstyled users-list m-0 d-flex align-items-center">
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Trina Lynes" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Lilian Nenez" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Alberto Glotzbach" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="George Nordic" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Vinnie Mostowy" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                        </ul>
-                    </td>
-                    <td>15:39 14/9/2020</td>
-                    <td>$89.00</td>
-                    <td>Purchase</td>
-                    <td>Pending</td>
-                    <td class="text-right">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Options
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="profile-order-details.html">View Order</a>
-                                <a class="dropdown-item" href="checkout.html">Remake Order</a>
+    <div class="tab-content">
+        <div class="bg-white p-3 mb-5 rounded">
+            <h3 class="py-2">My Orders</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Order ID</th>
+                        <th scope="col">Products</th>
+                        <th scope="col">Date and time</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">#000000920</th>
+                        <td>
+                            <ul class="list-unstyled users-list m-0 d-flex align-items-center">
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Trina Lynes" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Lilian Nenez" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Alberto Glotzbach" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="George Nordic" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Vinnie Mostowy" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                            </ul>
+                        </td>
+                        <td>15:39 14/9/2020</td>
+                        <td>$89.00</td>
+                        <td>Purchase</td>
+                        <td>Pending</td>
+                        <td class="text-right">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Options
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile-order-details.html">View Order</a>
+                                    <a class="dropdown-item" href="checkout.html">Remake Order</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">#000000921</th>
-                    <td>
-                        <ul class="list-unstyled users-list m-0 d-flex align-items-center">
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Trina Lynes" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Lilian Nenez" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                        </ul>
-                    </td>
-                    <td>15:39 14/9/2020</td>
-                    <td>$89.00</td>
-                    <td>Purchase</td>
-                    <td>Pending</td>
-                    <td class="text-right">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Options
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="profile-order-details.html">View Order</a>
-                                <a class="dropdown-item" href="checkout.html">Remake Order</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#000000921</th>
+                        <td>
+                            <ul class="list-unstyled users-list m-0 d-flex align-items-center">
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Trina Lynes" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Lilian Nenez" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                            </ul>
+                        </td>
+                        <td>15:39 14/9/2020</td>
+                        <td>$89.00</td>
+                        <td>Purchase</td>
+                        <td>Pending</td>
+                        <td class="text-right">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Options
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile-order-details.html">View Order</a>
+                                    <a class="dropdown-item" href="checkout.html">Remake Order</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">#000000920</th>
-                    <td>
-                        <ul class="list-unstyled users-list m-0 d-flex align-items-center">
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Lilian Nenez" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Alberto Glotzbach" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="George Nordic" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                            <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
-                                data-original-title="Vinnie Mostowy" class="avatar pull-up">
-                                <img class="media-object rounded-circle"
-                                    src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar" height="30"
-                                    width="30" />
-                            </li>
-                        </ul>
-                    </td>
-                    <td>15:39 14/9/2020</td>
-                    <td>$89.00</td>
-                    <td>Purchase</td>
-                    <td>Pending</td>
-                    <td class="text-right">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Options
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="profile-order-details.html">View Order</a>
-                                <a class="dropdown-item" href="checkout.html">Remake Order</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">#000000920</th>
+                        <td>
+                            <ul class="list-unstyled users-list m-0 d-flex align-items-center">
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Lilian Nenez" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Alberto Glotzbach" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="George Nordic" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                                <li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+                                    data-original-title="Vinnie Mostowy" class="avatar pull-up">
+                                    <img class="media-object rounded-circle"
+                                        src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar"
+                                        height="30" width="30" />
+                                </li>
+                            </ul>
+                        </td>
+                        <td>15:39 14/9/2020</td>
+                        <td>$89.00</td>
+                        <td>Purchase</td>
+                        <td>Pending</td>
+                        <td class="text-right">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Options
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="profile-order-details.html">View Order</a>
+                                    <a class="dropdown-item" href="checkout.html">Remake Order</a>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

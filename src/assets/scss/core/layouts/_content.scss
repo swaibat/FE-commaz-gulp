@@ -37,7 +37,6 @@ body {
 		bottom: 0;
 		background-color: rgba($pure-black, 0.5);
 		cursor: pointer;
-		transition: all 0.7s;
 		z-index: -1;
 	}
 	.content-area-wrapper {
@@ -126,7 +125,8 @@ body {
 				float: right;
 				margin-left: -$sidebar-width;
 				.content-body {
-					margin-left: $sidebar-width;
+					margin-left: $sidebar-width + 20;
+					transition: 0.5s;
 				}
 			}
 			&.content-left {

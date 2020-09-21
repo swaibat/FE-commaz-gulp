@@ -15,13 +15,13 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="">
+<body class="dark-theme">
 	<b class="screen-overlay"></b>
 	
 	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link " href="">
+				<a class="nav-link " href="./">
 					<img src="assets/images/logo.svg" height="35 " />
 				</a>
 			</div>
@@ -42,7 +42,6 @@
 						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
 							<div class="text-center">
 								<ion-icon class="header-icons" src="assets/icons/svg/user.svg"></ion-icon>
-								<span class="notify">3</span>
 							</div>
 							<small class="text lr-only"> My profile </small>
 						</a>
@@ -68,6 +67,7 @@
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="lnr lnr-cart"></span>
+								<span class="c-badge badge-cart">3</span>
 							</div>
 							<small class="text lr-only"> Cart </small>
 						</span>
@@ -80,7 +80,7 @@
 		<nav class="nav d-flex justify-content-between">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-					<span class="lnr lnr-list pr-1"></span>Categories</a>
+					<span class="lnr lnr-list pr-1"></span>Genre</a>
 				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4">
 					<div class="row col-md-10 ">
 						<div class="col-md-3">
@@ -187,7 +187,8 @@
 		                        </span>
 		                        <div class="header-profile-sidebar">
 		                            <div class="avatar">
-		                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="70" width="70">
+		                                <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar"
+		                                    height="70" width="70">
 		                                <span class="avatar-status-online avatar-status-lg"></span>
 		                            </div>
 		                            <h4 class="chat-user-name">John Doe</h4>
@@ -198,9 +199,12 @@
 		                            <h6>About</h6>
 		                            <div class="about-user">
 		                                <fieldset class="mb-0">
-		                                    <textarea data-length="120" class="form-control char-textarea" id="textarea-counter" rows="5" placeholder="About User">Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.</textarea>
+		                                    <textarea data-length="120" class="form-control char-textarea" id="textarea-counter"
+		                                        rows="5"
+		                                        placeholder="About User">Dessert chocolate cake lemon drops jujubes. Biscuit cupcake ice cream bear claw brownie brownie marshmallow.</textarea>
 		                                </fieldset>
-		                                <small class="counter-value float-right"><span class="char-count">108</span> / 120 </small>
+		                                <small class="counter-value float-right"><span class="char-count">108</span> / 120
+		                                </small>
 		                            </div>
 		                            <h6 class="mt-3">Status</h6>
 		                            <ul class="list-unstyled user-status mb-0">
@@ -253,7 +257,13 @@
 		                                    </fieldset>
 		                                </li>
 		                            </ul>
-		                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 111px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 29px;"></div></div></div>
+		                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+		                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+		                            </div>
+		                            <div class="ps__rail-y" style="top: 0px; height: 111px; right: 0px;">
+		                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 29px;"></div>
+		                            </div>
+		                        </div>
 		                    </div>
 		                </div>
 		                <!--/ User Chat profile area -->
@@ -266,13 +276,15 @@
 		                        <div class="d-flex align-items-center">
 		                            <div class="sidebar-profile-toggle position-relative d-inline-flex">
 		                                <div class="avatar">
-		                                    <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="user_avatar" height="40" width="40">
+		                                    <img src="../../../app-assets/images/portrait/small/avatar-s-11.jpg"
+		                                        alt="user_avatar" height="40" width="40">
 		                                    <span class="avatar-status-online"></span>
 		                                </div>
 		                                <div class="bullet-success bullet-sm position-absolute"></div>
 		                            </div>
 		                            <fieldset class="form-group position-relative has-icon-left mx-1 my-0 w-100">
-		                                <input type="text" class="form-control round" id="chat-search" placeholder="Search or start a new chat">
+		                                <input type="text" class="form-control round" id="chat-search"
+		                                    placeholder="Search or start a new chat">
 		                                <div class="form-control-position">
 		                                    <i class="feather icon-search"></i>
 		                                </div>
@@ -284,14 +296,17 @@
 		                        <ul class="chat-users-list-wrapper media-list">
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-3.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Elizabeth Elliott</h5>
-		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah cake. Pudding cookie lemon drops icing</p>
+		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah
+		                                            cake. Pudding cookie lemon drops icing</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25">4:14 PM</span>
@@ -301,14 +316,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Kristopher Candy</h5>
-		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah cake. Pudding cookie lemon drops icing</p>
+		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah
+		                                            cake. Pudding cookie lemon drops icing</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25">9:09 AM</span>
@@ -320,14 +338,17 @@
 		                        <ul class="chat-users-list-wrapper media-list">
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-8.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-8.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Sarah Woods</h5>
-		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah cake. Pudding cookie lemon drops icing.</p>
+		                                        <p class="truncate">Cake pie jelly jelly beans. Marzipan lemon drops halvah
+		                                            cake. Pudding cookie lemon drops icing.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -336,14 +357,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Jenny Perich</h5>
-		                                        <p class="truncate">Tart dragée carrot cake chocolate bar. Chocolate cake jelly beans caramels tootsie roll candy canes.</p>
+		                                        <p class="truncate">Tart dragée carrot cake chocolate bar. Chocolate cake jelly
+		                                            beans caramels tootsie roll candy canes.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -352,14 +376,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-5.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-5.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Sarah Montgomery</h5>
-		                                        <p class="truncate">Tootsie roll sesame snaps biscuit icing jelly-o biscuit chupa chups powder.</p>
+		                                        <p class="truncate">Tootsie roll sesame snaps biscuit icing jelly-o biscuit
+		                                            chupa chups powder.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -368,14 +395,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-9.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-9.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Heather Howell</h5>
-		                                        <p class="truncate">Tart cookie dragée sesame snaps halvah. Fruitcake sugar plum gummies cheesecake toffee.</p>
+		                                        <p class="truncate">Tart cookie dragée sesame snaps halvah. Fruitcake sugar plum
+		                                            gummies cheesecake toffee.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -384,14 +414,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Kelly Reyes</h5>
-		                                        <p class="truncate">Wafer toffee tart jelly cake croissant chocolate bar cupcake donut. Fruitcake gingerbread tiramisu sweet jelly-o.</p>
+		                                        <p class="truncate">Wafer toffee tart jelly cake croissant chocolate bar cupcake
+		                                            donut. Fruitcake gingerbread tiramisu sweet jelly-o.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -400,14 +433,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-14.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-14.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Vincent Nelson</h5>
-		                                        <p class="truncate">Toffee gummi bears sugar plum gummi bears chocolate bar donut. Pudding cookie lemon drops icing</p>
+		                                        <p class="truncate">Toffee gummi bears sugar plum gummi bears chocolate bar
+		                                            donut. Pudding cookie lemon drops icing</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -416,14 +452,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-3.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-3.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Elizabeth Elliott</h5>
-		                                        <p class="truncate">Candy canes ice cream jelly beans carrot cake chocolate bar pastry candy jelly-o.</p>
+		                                        <p class="truncate">Candy canes ice cream jelly beans carrot cake chocolate bar
+		                                            pastry candy jelly-o.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -432,14 +471,17 @@
 		                            </li>
 		                            <li>
 		                                <div class="pr-1">
-		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle" src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42" width="42" alt="Generic placeholder image">
+		                                    <span class="avatar m-0 avatar-md"><img class="media-object rounded-circle"
+		                                            src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" height="42"
+		                                            width="42" alt="Generic placeholder image">
 		                                        <i></i>
 		                                    </span>
 		                                </div>
 		                                <div class="user-chat-info">
 		                                    <div class="contact-info">
 		                                        <h5 class="font-weight-bold mb-0">Kristopher Candy</h5>
-		                                        <p class="truncate">Marzipan bonbon chocolate bar biscuit lemon drops muffin jelly-o sweet jujubes.</p>
+		                                        <p class="truncate">Marzipan bonbon chocolate bar biscuit lemon drops muffin
+		                                            jelly-o sweet jujubes.</p>
 		                                    </div>
 		                                    <div class="contact-meta">
 		                                        <span class="float-right mb-25"></span>
@@ -447,7 +489,13 @@
 		                                </div>
 		                            </li>
 		                        </ul>
-		                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 156px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 26px;"></div></div></div>
+		                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+		                            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+		                        </div>
+		                        <div class="ps__rail-y" style="top: 0px; height: 156px; right: 0px;">
+		                            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 26px;"></div>
+		                        </div>
+		                    </div>
 		                </div>
 		                <!--/ Chat Sidebar area -->
 		
@@ -468,9 +516,11 @@
 		                            <div class="chat_navbar">
 		                                <header class="chat_header d-flex justify-content-between align-items-center p-1">
 		                                    <div class="vs-con-items d-flex align-items-center">
-		                                        <div class="sidebar-toggle d-block d-lg-none mr-1"><i class="feather icon-menu font-large-1"></i></div>
+		                                        <div class="sidebar-toggle d-block d-lg-none mr-1"><i
+		                                                class="feather icon-menu font-large-1"></i></div>
 		                                        <div class="avatar user-profile-toggle m-0 m-0 mr-1">
-		                                            <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="" height="40" width="40">
+		                                            <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt=""
+		                                                height="40" width="40">
 		                                            <span class="avatar-status-busy"></span>
 		                                        </div>
 		                                        <h6 class="mb-0">Felecia Rower</h6>
@@ -482,8 +532,10 @@
 		                                <div class="chats">
 		                                    <div class="chat">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -494,8 +546,10 @@
 		                                    </div>
 		                                    <div class="chat chat-left">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -513,8 +567,10 @@
 		                                    </div>
 		                                    <div class="chat">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -528,8 +584,10 @@
 		                                    </div>
 		                                    <div class="chat chat-left">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -546,8 +604,10 @@
 		                                    </div>
 		                                    <div class="chat">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -558,8 +618,10 @@
 		                                    </div>
 		                                    <div class="chat chat-left">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-7.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -573,8 +635,10 @@
 		                                    </div>
 		                                    <div class="chat">
 		                                        <div class="chat-avatar">
-		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="avatar" height="40" width="40">
+		                                            <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right"
+		                                                title="" data-original-title="">
+		                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg"
+		                                                    alt="avatar" height="40" width="40">
 		                                            </a>
 		                                        </div>
 		                                        <div class="chat-body">
@@ -587,11 +651,21 @@
 		                                        </div>
 		                                    </div>
 		                                </div>
-		                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+		                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+		                                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+		                                </div>
+		                                <div class="ps__rail-y" style="top: 0px; right: 0px;">
+		                                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
+		                                </div>
+		                            </div>
 		                            <div class="chat-app-form">
-		                                <form class="chat-app-input d-flex" onsubmit="enter_chat();" action="javascript:void(0);">
-		                                    <input type="text" class="form-control message mr-1 ml-50" id="iconLeft4-1" placeholder="Type your message">
-		                                    <button type="button" class="btn btn-primary send waves-effect waves-light" onclick="enter_chat();"><i class="fa fa-paper-plane-o d-lg-none"></i> <span class="d-none d-lg-block">Send</span></button>
+		                                <form class="chat-app-input d-flex" onsubmit="enter_chat();"
+		                                    action="javascript:void(0);">
+		                                    <input type="text" class="form-control message mr-1 " id="iconLeft4-1"
+		                                        placeholder="Type your message">
+		                                    <button type="button" class="btn btn-primary send waves-effect waves-light"
+		                                        onclick="enter_chat();"><i class="fa fa-paper-plane-o d-lg-none"></i> <span
+		                                            class="d-none d-lg-block">Send</span></button>
 		                                </form>
 		                            </div>
 		                        </div>
@@ -604,7 +678,8 @@
 		                            </span>
 		                            <div class="header-profile-sidebar">
 		                                <div class="avatar">
-		                                    <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="user_avatar" height="70" width="70">
+		                                    <img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg"
+		                                        alt="user_avatar" height="70" width="70">
 		                                    <span class="avatar-status-busy avatar-status-lg"></span>
 		                                </div>
 		                                <h4 class="chat-user-name">Felecia Rower</h4>
@@ -612,8 +687,15 @@
 		                        </header>
 		                        <div class="user-profile-sidebar-area p-2 ps ps--active-y">
 		                            <h6>About</h6>
-		                            <p>Toffee caramels jelly-o tart gummi bears cake I love ice cream lollipop. Sweet liquorice croissant candy danish dessert icing. Cake macaroon gingerbread toffee sweet.</p>
-		                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 110px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 85px;"></div></div></div>
+		                            <p>Toffee caramels jelly-o tart gummi bears cake I love ice cream lollipop. Sweet liquorice
+		                                croissant candy danish dessert icing. Cake macaroon gingerbread toffee sweet.</p>
+		                            <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+		                                <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+		                            </div>
+		                            <div class="ps__rail-y" style="top: 0px; height: 110px; right: 0px;">
+		                                <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 85px;"></div>
+		                            </div>
+		                        </div>
 		                    </div>
 		                    <!--/ User Chat profile right area -->
 		
@@ -624,7 +706,7 @@
 		</div>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
-		<div class="px-3">
+		<div class="px-3 cart-wrapper">
 			<span class="mx-4">
 				<a id="cart-close" class="closebtn">&times;</a>
 				<h4>Shopping Cart</h4>
@@ -810,7 +892,7 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fas fa-facebook-f"></i></a>
+								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><span class="ti-facebook"></span></a>
 								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
 								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
 								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
@@ -870,6 +952,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#toggle-filter').click(()=>{
+		$('.content-body').toggleClass('ml-0')
+		$('.grid-view').toggleClass('grid-view-sm')
+		$('.sidebar-shop').toggleClass('w-0')
+	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
 			.css('margin-left', $('#category-nav').outerWidth())

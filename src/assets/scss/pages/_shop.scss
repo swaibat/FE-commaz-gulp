@@ -14,6 +14,7 @@ $wishlist-bg: #f6f6f6;
 
 .content-body {
 	position: relative;
+
 }
 
 .shop-content-overlay {
@@ -119,15 +120,18 @@ $wishlist-bg: #f6f6f6;
 		}
 
 		& ~ .stars-received {
-			margin-top: 0.35rem;
+			margin-top: 1rem;
 		}
 	}
 }
 
 .sidebar-shop {
-	margin-top: 2rem;
 	width: $sidebar-width;
 	z-index: 4;
+	transition: 0.5s;
+	.card {
+		width: $sidebar-width;
+	}
 }
 
 // shop main content
@@ -315,6 +319,10 @@ $wishlist-bg: #f6f6f6;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
 	column-gap: 28px;
+	@include media-breakpoint-down(md) {
+		grid-template-columns: 1fr !important;
+	}
+
 }
 .grid-view {
 	display: grid;
@@ -651,7 +659,7 @@ $wishlist-bg: #f6f6f6;
 	.sidebar-left {
 		.sidebar {
 			position: absolute;
-			top: 14rem;
+			top: -2rem;
 
 			.card {
 				border-radius: 0;

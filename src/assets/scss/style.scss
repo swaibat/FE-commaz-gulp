@@ -35,6 +35,8 @@ PAGES
 
 @import './vuesax.scss';
 
+@import './core/themes/dark';
+
 .slider-home-banner {
 	.carousel-item {
 		img {
@@ -64,13 +66,12 @@ PAGES
 	}
 }
 // counter
-$bg-color: #eef1f6;
 $continer-color: #0a6cf1;
 $continer-padding: 30px 20px 10px 20px;
+
 body {
 	font-family: 'Poppins', sans-serif;
 	min-height: 100%;
-	background-color: $bg-color;
 	user-select: none;
 }
 
@@ -384,8 +385,8 @@ svg {
 	top: 0;
 	right: 0;
 	overflow-x: hidden;
-	background: $bg-color;
-	// transition: width 0.3s;
+	background: $body-bg;
+	transition: width 0.5s;
 }
 
 .cart-overlay {
@@ -465,6 +466,9 @@ svg {
 
 .cart-area {
 	width: 350px !important;
+	.cart-wrapper{
+		width: 350px !important;
+	}
 	@include media-breakpoint-down(md) {
 		width: 100% !important;
 	}
@@ -522,6 +526,9 @@ svg {
 
 .mt-r-2 {
 	margin-top: 4.5rem !important;
+	@include media-breakpoint-down(md) {
+		margin-top: 4.2rem !important;
+	}
 }
 
 $height: 28px;
@@ -538,27 +545,30 @@ $width: $height * 2;
 	cursor: pointer;
 	width: $width;
 	height: $height;
-	background: lightgray;
+	background: $primary;
 	display: block;
 	border-radius: $height / 4;
 	position: relative;
 }
 
 .switch label:before {
-	content: attr(data-off);
+	font-family: "Linearicons-Free";
+	content: "\e808";
 	position: absolute;
-	top: $height * 0.05;
+	top: -.2rem;
 	right: 0;
-	font-size: $height * 0.3;
+	font-size: $height * 0.5;
+	top: -.2rem;
 	padding: ($height / 4) ($height / 4);
 	color: white;
 }
 
 .switch input:checked + label:before {
-	content: attr(data-on);
+	font-family: "Linearicons-Free";
+	content: "\e807";
 	position: absolute;
 	left: 0;
-	font-size: $height * 0.3;
+	font-size: $height * 0.5;
 	padding-left: $height / 4;
 	color: white;
 }
@@ -576,7 +586,7 @@ $width: $height * 2;
 }
 
 .switch input:checked + label {
-	background: $primary;
+	background: lightgray;
 	//transition: $transition-time;
 }
 
@@ -694,4 +704,34 @@ $width: $height * 2;
 	&:hover {
 		color: #fff;
 	}
+}
+
+.w-0 {
+	width: 0px !important;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.c-badge {
+    position: absolute;
+    background: $primary;
+    // box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.6);
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .6rem;
+    border-radius: 50%;
+    z-index: 120;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.badge-cart{
+	top: .5rem;
+    right: 1.1rem;
 }

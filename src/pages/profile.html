@@ -1,598 +1,559 @@
 <div class="bread-overlay"></div>
-<div class="py-2 d-flex">
-	<span>
-		<h1 class="">My Account</h1>
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb bg-transparent px-0">
-				<li class="breadcrumb-item"><a href="#">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">user Profile</li>
-			</ol>
-		</nav>
-	</span>
-	<div class="switch ml-auto">
-		<input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label>
+<div class="container p-0">
+	<div class="py-2 d-flex">
+		<span>
+			<h1 class="">My Account</h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb bg-transparent px-0">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">user Profile</li>
+				</ol>
+			</nav>
+		</span>
+		<div class="switch ml-auto">
+			<input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
+				for="switch"></label>
+		</div>
 	</div>
-</div>
 
-<ul class="nav nav-pills mb-3 bg-white p-3 border">
-	<li class="nav-item">
-		<a class="nav-link active" href="profile.html">Profile</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="profile-wishlist.html">Whishlist</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="profile-orders.html">My Orders</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
-	</li>
-	<li class="nav-item">
-		<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
-	</li>
-</ul>
+	<ul class="nav nav-pills mb-3 bg-white p-3 border">
+		<li class="nav-item">
+			<a class="nav-link active" href="profile.html">Profile</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-wishlist.html">Whishlist</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-orders.html">My Orders</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
+		</li>
+	</ul>
 
-<div class="tab-content" id="pills-tabContent">
-	<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-		<div class="content-body">
-			<!-- page users view start -->
-			<section class="page-users-view row">
-				<div class="col-12">
-					<div class="card mb-4 shadow-sm">
-						<div class="card-header">
-							<div class="card-title">Account</div>
-						</div>
-						<div class="card-body">
-							<div class="row">
-								<div class="users-view-image">
-									<img
-										src="{{root}}assets/images/portrait/small/avatar-s-12.jpg"
-										class="users-avatar-shadow w-100 rounded-circle mb-2 pr-2 ml-1"
-										alt="avatar"
-									/>
-								</div>
-								<div class="col-12 col-sm-9 col-md-6 col-lg-5">
-									<table>
-										<tbody>
-											<tr>
-												<td class="font-weight-bold">Username</td>
-												<td>adoptionism744</td>
-											</tr>
-											<tr>
-												<td class="font-weight-bold">Name</td>
-												<td>Angelo Sashington</td>
-											</tr>
-											<tr>
-												<td class="font-weight-bold">Email</td>
-												<td>angelo@sashington.com</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="col-12 col-md-12 col-lg-5">
-									<table class="ml-0 ml-sm-0 ml-lg-0">
-										<tbody>
-											<tr>
-												<td class="font-weight-bold">Status</td>
-												<td>active</td>
-											</tr>
-											<tr>
-												<td class="font-weight-bold">Role</td>
-												<td>admin</td>
-											</tr>
-											<tr>
-												<td class="font-weight-bold">Company</td>
-												<td>WinDon Technologies Pvt Ltd</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="col-12">
-									<a href="profile-edit.html" class="btn btn-primary mr-1 waves-effect waves-light"><i class="feather icon-edit-1"></i> Edit</a>
-									<button class="btn btn-outline-danger waves-effect waves-light"><i class="feather icon-trash-2"></i> Delete</button>
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+			<div class="content-body">
+				<!-- page users view start -->
+				<section class="page-users-view row">
+					<div class="col-12">
+						<div class="card mb-4 shadow-sm">
+							<div class="card-header">
+								<div class="card-title">Account</div>
+							</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="users-view-image">
+										<img src="{{root}}assets/images/portrait/small/avatar-s-12.jpg"
+											class="users-avatar-shadow w-100 rounded-circle mb-2 pr-2 ml-1"
+											alt="avatar" />
+									</div>
+									<div class="col-12 col-sm-9 col-md-6 col-lg-5">
+										<table>
+											<tbody>
+												<tr>
+													<td class="font-weight-bold">Username</td>
+													<td>adoptionism744</td>
+												</tr>
+												<tr>
+													<td class="font-weight-bold">Name</td>
+													<td>Angelo Sashington</td>
+												</tr>
+												<tr>
+													<td class="font-weight-bold">Email</td>
+													<td>angelo@sashington.com</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-12 col-md-12 col-lg-5">
+										<table class="ml-0 ml-sm-0 ml-lg-0">
+											<tbody>
+												<tr>
+													<td class="font-weight-bold">Status</td>
+													<td>active</td>
+												</tr>
+												<tr>
+													<td class="font-weight-bold">Role</td>
+													<td>admin</td>
+												</tr>
+												<tr>
+													<td class="font-weight-bold">Company</td>
+													<td>WinDon Technologies Pvt Ltd</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-12">
+										<a href="profile-edit.html"
+											class="btn btn-primary mr-1 waves-effect waves-light"><i
+												class="feather icon-edit-1"></i> Edit</a>
+										<button class="btn btn-outline-danger waves-effect waves-light"><i
+												class="feather icon-trash-2"></i> Delete</button>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- account end -->
-				<!-- information start -->
-				<div class="col-md-6 col-12">
-					<div class="card mb-4 shadow-sm">
-						<div class="card-header">
-							<div class="card-title mb-2">Information</div>
+					<!-- account end -->
+					<!-- information start -->
+					<div class="col-md-6 col-12">
+						<div class="card mb-4 shadow-sm">
+							<div class="card-header">
+								<div class="card-title mb-2">Information</div>
+							</div>
+							<div class="card-body">
+								<table>
+									<tbody>
+										<tr>
+											<td class="font-weight-bold">Birth Date</td>
+											<td>28 January 1998</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Mobile</td>
+											<td>+65958951757</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Website</td>
+											<td>https://rowboat.com/insititious/Angelo</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Languages</td>
+											<td>English, Arabic</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Gender</td>
+											<td>female</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Contact</td>
+											<td>email, message, phone</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- information start -->
+					<!-- social links end -->
+					<div class="col-md-6 col-12">
+						<div class="card mb-4 shadow-sm">
+							<div class="card-header">
+								<div class="card-title mb-2">Social Links</div>
+							</div>
+							<div class="card-body">
+								<table>
+									<tbody>
+										<tr>
+											<td class="font-weight-bold">Twitter</td>
+											<td>https://twitter.com/adoptionism744</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Facebook</td>
+											<td>https://www.facebook.com/adoptionism664</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Instagram</td>
+											<td>https://www.instagram.com/adopt-ionism744/</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Github</td>
+											<td>https://github.com/madop818</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">CodePen</td>
+											<td>https://codepen.io/adoptism243</td>
+										</tr>
+										<tr>
+											<td class="font-weight-bold">Slack</td>
+											<td>@adoptionism744</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- social links end -->
+				</section>
+			</div>
+		</div>
+
+		<!-- start of orders -->
+		<div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+			<div class="bg-white p-3 mb-5">
+				<ul class="list-unstyled users-list m-0 d-flex align-items-center">
+					<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+						data-original-title="Trina Lynes" class="avatar pull-up">
+						<img class="media-object rounded-circle"
+							src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" height="30"
+							width="30" />
+					</li>
+					<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+						data-original-title="Lilian Nenez" class="avatar pull-up">
+						<img class="media-object rounded-circle"
+							src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30"
+							width="30" />
+					</li>
+					<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+						data-original-title="Alberto Glotzbach" class="avatar pull-up">
+						<img class="media-object rounded-circle"
+							src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" height="30"
+							width="30" />
+					</li>
+					<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+						data-original-title="George Nordic" class="avatar pull-up">
+						<img class="media-object rounded-circle"
+							src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30"
+							width="30" />
+					</li>
+					<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+						data-original-title="Vinnie Mostowy" class="avatar pull-up">
+						<img class="media-object rounded-circle"
+							src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar" height="30"
+							width="30" />
+					</li>
+					<li class="d-inline-block pl-50">
+						<span>+140 more</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- shipping-details of orders -->
+		<div class="tab-pane fade" id="shipping-details" role="tabpanel" aria-labelledby="shipping-details-tab">
+			<div class="bg-white p-3 mb-5 rounded">
+				<h3 class="py-2">My Orders</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">Order ID</th>
+							<th scope="col">Products</th>
+							<th scope="col">Date and time</th>
+							<th scope="col">Amount</th>
+							<th scope="col">Type</th>
+							<th scope="col">Status</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">#000000920</th>
+							<td>
+								<ul class="list-unstyled users-list m-0 d-flex align-items-center">
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Trina Lynes" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Lilian Nenez" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Alberto Glotzbach" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="George Nordic" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Vinnie Mostowy" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+								</ul>
+							</td>
+							<td>15:39 14/9/2020</td>
+							<td>$89.00</td>
+							<td>Purchase</td>
+							<td>Pending</td>
+							<td class="text-right">
+								<div class="dropdown">
+									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Options
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">View Order</a>
+										<a class="dropdown-item" href="#">Remake Order</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">#000000921</th>
+							<td>
+								<ul class="list-unstyled users-list m-0 d-flex align-items-center">
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Trina Lynes" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+									<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom"
+										data-original-title="Lilian Nenez" class="avatar pull-up">
+										<img class="media-object rounded-circle"
+											src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar"
+											height="30" width="30" />
+									</li>
+								</ul>
+							</td>
+							<td>15:39 14/9/2020</td>
+							<td>$89.00</td>
+							<td>Purchase</td>
+							<td>Pending</td>
+							<td class="text-right">
+								<div class="dropdown">
+									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Options
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">View Order</a>
+										<a class="dropdown-item" href="#">Remake Order</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- start of viewed products -->
+		<div class="tab-pane fade" id="viewed-products" role="tabpanel" aria-labelledby="viewed-products-tab">
+			<section id="ecommerce-products" class="grid-view">
+				<div class="card ecommerce-card mb-4 shadow-sm">
+					<div class="card-content">
+						<div class="btn-group-vertical position-absolute right-0">
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+							</span>
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+							</span>
+						</div>
+						<div class="item-img text-center">
+							<a href="product-details.html"> <img class="img-fluid"
+									src="{{root}}assets/images/pages/eCommerce/1.png" alt="img-placeholder" /></a>
 						</div>
 						<div class="card-body">
-							<table>
-								<tbody>
-									<tr>
-										<td class="font-weight-bold">Birth Date</td>
-										<td>28 January 1998</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Mobile</td>
-										<td>+65958951757</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Website</td>
-										<td>https://rowboat.com/insititious/Angelo</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Languages</td>
-										<td>English, Arabic</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Gender</td>
-										<td>female</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Contact</td>
-										<td>email, message, phone</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-primary badge-md">
+										<span>4</span>
+										<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+									</div>
+								</div>
+								<div>
+									<h6 class="item-price">$39.99</h6>
+								</div>
+							</div>
+							<div class="item-name">
+								<a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+									Black</a>
+								<p class="item-company">By <span class="company-name">Google</span></p>
+							</div>
+							<div>
+								<p class="item-description">
+									Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its
+									Alexa voice remote lets you deliver hands-free
+									commands when you want to watch television or engage with other applications. With a
+									quad-core processor, 1GB internal memory and 8GB
+									of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- information start -->
-				<!-- social links end -->
-				<div class="col-md-6 col-12">
-					<div class="card mb-4 shadow-sm">
-						<div class="card-header">
-							<div class="card-title mb-2">Social Links</div>
+				<div class="card ecommerce-card mb-4 shadow-sm">
+					<div class="card-content">
+						<div class="btn-group-vertical position-absolute right-0">
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+							</span>
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+							</span>
+						</div>
+						<div class="item-img text-center">
+							<a href="product-details.html">
+								<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/2.png"
+									alt="img-placeholder" />
+							</a>
 						</div>
 						<div class="card-body">
-							<table>
-								<tbody>
-									<tr>
-										<td class="font-weight-bold">Twitter</td>
-										<td>https://twitter.com/adoptionism744</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Facebook</td>
-										<td>https://www.facebook.com/adoptionism664</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Instagram</td>
-										<td>https://www.instagram.com/adopt-ionism744/</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Github</td>
-										<td>https://github.com/madop818</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">CodePen</td>
-										<td>https://codepen.io/adoptism243</td>
-									</tr>
-									<tr>
-										<td class="font-weight-bold">Slack</td>
-										<td>@adoptionism744</td>
-									</tr>
-								</tbody>
-							</table>
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-primary badge-md">
+										<span>4</span>
+										<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+									</div>
+								</div>
+								<div>
+									<h6 class="item-price">$35.00</h6>
+								</div>
+							</div>
+							<div class="item-name">
+								<a href="product-details.html">Google - Chromecast - Black</a>
+								<p class="item-company">By <span class="company-name">Amazon</span></p>
+							</div>
+							<div>
+								<p class="item-description">
+									Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just
+									connect to your HDTV's HDMI interface and your home
+									Wi-Fi network to get started. You can stream your favorite apps from your compatible
+									phone, tablet or laptop, plus use your phone as a
+									remote to search, play and pause content.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-				<!-- social links end -->
+				<div class="card ecommerce-card mb-4 shadow-sm">
+					<div class="card-content">
+						<div class="btn-group-vertical position-absolute right-0">
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+							</span>
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+							</span>
+						</div>
+						<div class="item-img text-center">
+							<a href="product-details.html"><img class="img-fluid"
+									src="{{root}}assets/images/pages/eCommerce/3.png" alt="img-placeholder" /></a>
+						</div>
+						<div class="card-body">
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-primary badge-md">
+										<span>4</span>
+										<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+									</div>
+								</div>
+								<div>
+									<div class="item-cost">
+										<h6 class="item-price">$499.99</h6>
+									</div>
+								</div>
+							</div>
+							<div class="item-name">
+								<a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
+								<p class="item-company">By <span class="company-name">Dell</span></p>
+							</div>
+							<div>
+								<p class="item-description">
+									Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron
+									laptop. Supported by an Intel Core i5-5200U
+									processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple
+									applications without lag. The 1TB hard drive in
+									this Dell Inspiron laptop lets you store multiple music, video and document files.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card ecommerce-card mb-4 shadow-sm">
+					<div class="card-content">
+						<div class="btn-group-vertical position-absolute right-0">
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+							</span>
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+							</span>
+						</div>
+						<div class="item-img text-center">
+							<a href="product-details.html"> <img class="img-fluid"
+									src="{{root}}assets/images/pages/eCommerce/4.png" alt="img-placeholder" /></a>
+						</div>
+						<div class="card-body">
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-primary badge-md">
+										<span>4</span>
+										<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+									</div>
+								</div>
+								<div class="item-cost">
+									<h6 class="item-price">$49.99</h6>
+								</div>
+							</div>
+							<div class="item-name">
+								<a href="product-details.html">Amazon - Echo Dot</a>
+								<p class="item-company">By <span class="company-name">Amazon</span></p>
+							</div>
+							<div>
+								<p class="item-description">
+									Echo Dot is the latest addition to Amazon's voice-controlled devices. Deliver your
+									favorite playlist anywhere in your home with the
+									Amazon Echo Dot voice-controlled device. Control most electric devices through voice
+									activation, or schedule a ride with Uber and
+									order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a
+									smart home with the Alexa app on a smartphone or
+									tablet.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card ecommerce-card mb-4 shadow-sm">
+					<div class="card-content">
+						<div class="btn-group-vertical position-absolute right-0 pr-2 pt-2">
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+							</span>
+							<span class="btn bg-white p-2">
+								<ion-icon class="card-icon" name="heart-outline"></ion-icon>
+							</span>
+						</div>
+						<div class="item-img text-center">
+							<a href="product-details.html">
+								<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/9.png"
+									alt="img-placeholder" />
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="item-wrapper">
+								<div class="item-rating">
+									<div class="badge badge-primary badge-md">
+										<span>4</span>
+										<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+									</div>
+								</div>
+								<div class="item-cost">
+									<h6 class="item-price">$14.99</h6>
+								</div>
+							</div>
+							<div class="item-name">
+								<a href="product-details.html"> Philips - hue A19 Smart LED Light Bulb - White Only </a>
+								<p class="item-company">By <span class="company-name">Philips</span></p>
+							</div>
+							<div>
+								<p class="item-description">
+									Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You
+									can easily dim this light bulb and set timers and
+									alarms using your smartphone or tablet. Plus, LED technology offers lasting
+									illumination while using minimal energy.Get lighting
+									that's as smart as you are.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
-	</div>
-
-	<!-- start of orders -->
-	<div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-		<div class="bg-white p-3 mb-5">
-			<ul class="list-unstyled users-list m-0 d-flex align-items-center">
-				<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Trina Lynes" class="avatar pull-up">
-					<img class="media-object rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-1.jpg" alt="Avatar" height="30" width="30" />
-				</li>
-				<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Lilian Nenez" class="avatar pull-up">
-					<img class="media-object rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-2.jpg" alt="Avatar" height="30" width="30" />
-				</li>
-				<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Alberto Glotzbach" class="avatar pull-up">
-					<img class="media-object rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" height="30" width="30" />
-				</li>
-				<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="George Nordic" class="avatar pull-up">
-					<img class="media-object rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-5.jpg" alt="Avatar" height="30" width="30" />
-				</li>
-				<li data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Vinnie Mostowy" class="avatar pull-up">
-					<img class="media-object rounded-circle" src="{{root}}assets/images/portrait/small/avatar-s-4.jpg" alt="Avatar" height="30" width="30" />
-				</li>
-				<li class="d-inline-block pl-50">
-					<span>+140 more</span>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!-- shipping-details of orders -->
-	<div class="tab-pane fade" id="shipping-details" role="tabpanel" aria-labelledby="shipping-details-tab">
-		<div class="bg-white p-3 mb-5 rounded">
-			<h3 class="py-2">My Orders</h3>
-			<table class="table">
-				<thead>
-					<tr>
-						<th scope="col">Order ID</th>
-						<th scope="col">Products</th>
-						<th scope="col">Date and time</th>
-						<th scope="col">Amount</th>
-						<th scope="col">Type</th>
-						<th scope="col">Status</th>
-						<th scope="col"></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">#000000920</th>
-						<td>
-							<ul class="list-unstyled users-list m-0 d-flex align-items-center">
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Trina Lynes"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-1.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Lilian Nenez"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-2.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Alberto Glotzbach"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-3.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="George Nordic"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-5.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Vinnie Mostowy"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-4.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-							</ul>
-						</td>
-						<td>15:39 14/9/2020</td>
-						<td>$89.00</td>
-						<td>Purchase</td>
-						<td>Pending</td>
-						<td class="text-right">
-							<div class="dropdown">
-								<button
-									class="btn dropdown-toggle"
-									type="button"
-									id="dropdownMenuButton"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false"
-								>
-									Options
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">View Order</a>
-									<a class="dropdown-item" href="#">Remake Order</a>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">#000000921</th>
-						<td>
-							<ul class="list-unstyled users-list m-0 d-flex align-items-center">
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Trina Lynes"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-1.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-								<li
-									data-toggle="tooltip"
-									data-popup="tooltip-custom"
-									data-placement="bottom"
-									data-original-title="Lilian Nenez"
-									class="avatar pull-up"
-								>
-									<img
-										class="media-object rounded-circle"
-										src="{{root}}assets/images/portrait/small/avatar-s-2.jpg"
-										alt="Avatar"
-										height="30"
-										width="30"
-									/>
-								</li>
-							</ul>
-						</td>
-						<td>15:39 14/9/2020</td>
-						<td>$89.00</td>
-						<td>Purchase</td>
-						<td>Pending</td>
-						<td class="text-right">
-							<div class="dropdown">
-								<button
-									class="btn dropdown-toggle"
-									type="button"
-									id="dropdownMenuButton"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false"
-								>
-									Options
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									<a class="dropdown-item" href="#">View Order</a>
-									<a class="dropdown-item" href="#">Remake Order</a>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<!-- start of viewed products -->
-	<div class="tab-pane fade" id="viewed-products" role="tabpanel" aria-labelledby="viewed-products-tab">
-		<section id="ecommerce-products" class="grid-view">
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/1.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<h6 class="item-price">$39.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-							<p class="item-company">By <span class="company-name">Google</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you deliver hands-free
-								commands when you want to watch television or engage with other applications. With a quad-core processor, 1GB internal memory and 8GB
-								of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/2.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<h6 class="item-price">$35.00</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Google - Chromecast - Black</a>
-							<p class="item-company">By <span class="company-name">Amazon</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI interface and your home
-								Wi-Fi network to get started. You can stream your favorite apps from your compatible phone, tablet or laptop, plus use your phone as a
-								remote to search, play and pause content.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"><img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/3.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div>
-								<div class="item-cost">
-									<h6 class="item-price">$499.99</h6>
-								</div>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Dell - Inspiron 15.6" Touch-Screen Laptop - Black</a>
-							<p class="item-company">By <span class="company-name">Dell</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an Intel Core i5-5200U
-								processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple applications without lag. The 1TB hard drive in
-								this Dell Inspiron laptop lets you store multiple music, video and document files.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html"> <img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/4.png" alt="img-placeholder" /></a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$49.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html">Amazon - Echo Dot</a>
-							<p class="item-company">By <span class="company-name">Amazon</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Echo Dot is the latest addition to Amazon's voice-controlled devices. Deliver your favorite playlist anywhere in your home with the
-								Amazon Echo Dot voice-controlled device. Control most electric devices through voice activation, or schedule a ride with Uber and
-								order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone or
-								tablet.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="card ecommerce-card mb-4 shadow-sm">
-				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0 pr-2 pt-2">
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-						</span>
-						<span class="btn bg-white p-2">
-							<ion-icon class="card-icon" name="heart-outline"></ion-icon>
-						</span>
-					</div>
-					<div class="item-img text-center">
-						<a href="product-details.html">
-							<img class="img-fluid" src="{{root}}assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-						</a>
-					</div>
-					<div class="card-body">
-						<div class="item-wrapper">
-							<div class="item-rating">
-								<div class="badge badge-primary badge-md">
-									<span>4</span>
-									<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
-								</div>
-							</div>
-							<div class="item-cost">
-								<h6 class="item-price">$14.99</h6>
-							</div>
-						</div>
-						<div class="item-name">
-							<a href="product-details.html"> Philips - hue A19 Smart LED Light Bulb - White Only </a>
-							<p class="item-company">By <span class="company-name">Philips</span></p>
-						</div>
-						<div>
-							<p class="item-description">
-								Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light bulb and set timers and
-								alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination while using minimal energy.Get lighting
-								that's as smart as you are.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 	</div>
 </div>

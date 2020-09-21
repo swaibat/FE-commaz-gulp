@@ -302,7 +302,7 @@
 
 .sidebar-shop .filter-heading {
   font-weight: 700;
-  color: #626262;
+  color: #212529;
   position: relative;
   top: -7px;
 }
@@ -372,13 +372,18 @@
 }
 
 .sidebar-shop .ratings-list ~ .stars-received {
-  margin-top: 0.35rem;
+  margin-top: 1rem;
 }
 
 .sidebar-shop {
-  margin-top: 2rem;
   width: 260px;
   z-index: 4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar-shop .card {
+  width: 260px;
 }
 
 .ecommerce-header-items {
@@ -398,7 +403,7 @@
   margin-right: 10px;
   background-color: #fff;
   padding: 0.5rem;
-  color: #626262;
+  color: #212529;
   -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14) !important;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.14) !important;
 }
@@ -416,7 +421,7 @@
 }
 
 .ecommerce-header-items .view-options .view-btn-option .btn.view-btn:hover, .ecommerce-header-items .view-options .view-btn-option .btn.view-btn:active {
-  color: #626262;
+  color: #212529;
 }
 
 .ecommerce-header-items .view-options .select2 {
@@ -451,13 +456,13 @@
 }
 
 .ecommerce-header-items .result-toggler .shop-sidebar-toggler .navbar-toggler-icon i {
-  color: #626262;
+  color: #212529;
   vertical-align: middle;
 }
 
 .ecommerce-header-items .result-toggler .search-results {
   font-weight: 700;
-  color: #626262;
+  color: #212529;
   display: inline-block;
 }
 
@@ -521,7 +526,7 @@
 }
 
 .ecommerce-card .item-name a {
-  color: #626262;
+  color: #212529;
 }
 
 .ecommerce-card .item-name a:hover {
@@ -580,6 +585,12 @@
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
+}
+
+@media (max-width: 991.98px) {
+  .grid-view-sm {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .grid-view {
@@ -860,7 +871,7 @@
 }
 
 .checkout-options .detail .detail-title.detail-total {
-  color: #626262;
+  color: #212529;
   font-weight: 600;
 }
 
@@ -908,7 +919,7 @@
 @media (max-width: 991.98px) {
   .sidebar-left .sidebar {
     position: absolute;
-    top: 14rem;
+    top: -2rem;
   }
   .sidebar-left .sidebar .card {
     border-radius: 0;
@@ -1301,8 +1312,8 @@
   width: 0;
   height: 0;
   z-index: 1;
-  border-top: 11px solid #f8f8f8;
-  border-bottom: 11px solid #f8f8f8;
+  border-top: 11px solid #eef1f6;
+  border-bottom: 11px solid #eef1f6;
   border-left: 11px solid #fff;
 }
 
@@ -1425,8 +1436,8 @@
   width: 0;
   height: 0;
   z-index: 1;
-  border-top: 11px solid #f8f8f8;
-  border-bottom: 11px solid #f8f8f8;
+  border-top: 11px solid #eef1f6;
+  border-bottom: 11px solid #eef1f6;
   border-right: 11px solid #fff;
 }
 
@@ -1520,8 +1531,8 @@
   transform: translate(-50%, 0);
   top: -10px;
   border: 0;
-  border-left: 11px solid #f8f8f8;
-  border-right: 11px solid #f8f8f8;
+  border-left: 11px solid #eef1f6;
+  border-right: 11px solid #eef1f6;
   border-bottom: 11px solid #fff;
 }
 
@@ -1562,8 +1573,8 @@
   transform: translate(-50%, 0);
   top: -10px;
   border: 0;
-  border-left: 11px solid #f8f8f8;
-  border-right: 11px solid #f8f8f8;
+  border-left: 11px solid #eef1f6;
+  border-right: 11px solid #eef1f6;
   border-bottom: 11px solid #fff;
 }
 
@@ -1750,8 +1761,8 @@
     transform: translate(0, 0);
     left: 40px;
     top: 21px;
-    border-top: 11px solid #f8f8f8;
-    border-bottom: 11px solid #f8f8f8;
+    border-top: 11px solid #eef1f6;
+    border-bottom: 11px solid #eef1f6;
     border-right: 11px solid #fff;
   }
   .timeline-item:nth-child(even):before {
@@ -1782,8 +1793,8 @@
     transform: translate(0, 0);
     left: 40px;
     top: 21px;
-    border-top: 11px solid #f8f8f8;
-    border-bottom: 11px solid #f8f8f8;
+    border-top: 11px solid #eef1f6;
+    border-bottom: 11px solid #eef1f6;
     border-right: 11px solid #fff;
   }
   .timeline-item:nth-child(odd):before {
@@ -1817,8 +1828,8 @@
     transform: translate(0, 0);
     left: 20px;
     top: 11px;
-    border-top: 11px solid #f8f8f8;
-    border-bottom: 11px solid #f8f8f8;
+    border-top: 11px solid #eef1f6;
+    border-bottom: 11px solid #eef1f6;
     border-right: 11px solid #fff;
   }
   .timeline-item.block:nth-child(even):before {
@@ -1852,8 +1863,8 @@
     transform: translate(0, 0);
     left: 20px;
     top: 11px;
-    border-top: 11px solid #f8f8f8;
-    border-bottom: 11px solid #f8f8f8;
+    border-top: 11px solid #eef1f6;
+    border-bottom: 11px solid #eef1f6;
     border-right: 11px solid #fff;
   }
   .timeline-item.block:nth-child(odd):before {
@@ -2114,7 +2125,7 @@
 
 .email-application .content-area-wrapper .sidebar .list-group .list-group-item:hover, .email-application .content-area-wrapper .sidebar .list-group .list-group-item:focus {
   background-color: transparent;
-  color: #626262;
+  color: #212529;
 }
 
 .email-application .content-area-wrapper .sidebar .list-group .list-group-item.active {
@@ -27284,15 +27295,15 @@
 }
 
 .email-application .app-content .content-area-wrapper .email-user-list .users-list-wrapper li .user-details .list-group-item-text {
-  color: #626262;
+  color: #212529;
 }
 
 .email-application .app-content .content-area-wrapper .email-user-list .users-list-wrapper li .mail-date {
-  color: #626262;
+  color: #212529;
 }
 
 .email-application .app-content .content-area-wrapper .email-user-list .users-list-wrapper li .mail-message p {
-  color: #626262;
+  color: #212529;
 }
 
 .email-application .app-content .content-area-wrapper .email-user-list .users-list-wrapper .user-action {
@@ -27343,7 +27354,7 @@
 }
 
 .email-application .app-action .action-right .dropdown-toggle {
-  color: #626262;
+  color: #212529;
   white-space: normal;
 }
 
@@ -27364,7 +27375,7 @@
   opacity: 0;
   top: 0;
   width: calc(100% - 260px);
-  background-color: #f8f8f8;
+  background-color: #eef1f6;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: all 0.3s ease;
@@ -27401,7 +27412,7 @@
 }
 
 .email-application .email-app-details .email-header-right .dropdown-toggle {
-  color: #626262;
+  color: #212529;
 }
 
 .email-application .email-app-details .email-scroll-area {
@@ -27889,7 +27900,7 @@
   text-align: left;
   float: left;
   margin: 0 0 10px 20px;
-  color: #626262;
+  color: #212529;
   background: none;
   background-color: white;
 }
