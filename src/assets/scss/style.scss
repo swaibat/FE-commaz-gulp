@@ -525,10 +525,7 @@ svg {
 }
 
 .mt-r-2 {
-	margin-top: 4.5rem !important;
-	@include media-breakpoint-down(md) {
-		margin-top: 4.2rem !important;
-	}
+	margin-top: 4.2rem !important;
 }
 
 $height: 28px;

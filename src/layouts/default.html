@@ -17,8 +17,7 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="dark-theme">
-	<b class="screen-overlay"></b>
+<body>
 	{{>navigation}}
 		{{> body}}
 	{{> footer}}
@@ -28,6 +27,12 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#switch').change(()=> {
+		console.log('hhehe')
+		$('body').toggleClass('dark-mode')
+		!localStorage.getItem('theme') ? localStorage.setItem('theme','dark-mode') : localStorage.removeItem('theme')
+	})
+	$('body').addClass(localStorage.getItem('theme'))
 	$('#toggle-filter').click(()=>{
 		$('.content-body').toggleClass('ml-0')
 		$('.grid-view').toggleClass('grid-view-sm')

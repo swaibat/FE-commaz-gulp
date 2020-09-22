@@ -1,7 +1,7 @@
 $body-bg:#18191c;
 $component-bg:#1e2023;
 body {
-	&.dark-theme {
+	&.dark-mode {
         color: lighten($color: $component-bg, $amount: 70) !important;
         background-color: $body-bg !important;
         .bread-overlay{
