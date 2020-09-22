@@ -2,9 +2,10 @@ $body-bg:#18191c;
 $component-bg:#1e2023;
 body {
 	&.dark-theme {
+        color: lighten($color: $component-bg, $amount: 70) !important;
         background-color: $body-bg !important;
         .bread-overlay{
-            background: lighten($color: $body-bg, $amount: 10);
+            background: lighten($color: $body-bg, $amount: 18);
         }
         .bg-white {
             background-color: $component-bg !important;
@@ -31,7 +32,7 @@ body {
             color: lighten($color: $component-bg, $amount: 48) !important;
         }
         .item-name, a {
-            color: lighten($color: $component-bg, $amount: 30) !important;
+            color: lighten($color: $component-bg, $amount: 40) !important;
         }
         .swiper-slide {
             background-color: lighten($color: $component-bg, $amount: 10) !important;
