@@ -57178,11 +57178,12 @@ tr {
 }
 
 body.dark-theme {
+  color: #d0d2d6 !important;
   background-color: #18191c !important;
 }
 
 body.dark-theme .bread-overlay {
-  background: #303237;
+  background: #42454d;
 }
 
 body.dark-theme .bg-white {
@@ -57213,16 +57214,12 @@ body.dark-theme .bg-light {
   background-color: #36393e !important;
 }
 
-body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6, body.dark-theme .h1, body.dark-theme .h2, body.dark-theme .h3, body.dark-theme .h4, body.dark-theme .h5, body.dark-theme .h6 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
+body.dark-theme .item-description, body.dark-theme h1, body.dark-theme h2, body.dark-theme h3, body.dark-theme h4, body.dark-theme h5, body.dark-theme h6, body.dark-theme .h1, body.dark-theme .h2, body.dark-theme .h3, body.dark-theme .h4, body.dark-theme .h5, body.dark-theme .h6 {
   color: #9399a3 !important;
 }
 
-body.dark-theme a {
-  color: #656b75;
+body.dark-theme .item-name, body.dark-theme a {
+  color: #7d8590 !important;
 }
 
 body.dark-theme .swiper-slide {

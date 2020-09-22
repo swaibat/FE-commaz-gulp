@@ -15,14 +15,13 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="dark-theme">
-	<b class="screen-overlay"></b>
+<body>
 	
 	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="nav-link " href="./">
-					<img src="assets/images/logo.svg" height="35 " />
+					<img src="assets/images/logo-light.svg" height="35 " />
 				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -173,7 +172,6 @@
 	</div>
 	
 	<!-- container .// -->
-		
 		<div class="bread-overlay"></div>
 		<div class="py-2 d-flex">
 			<span>
@@ -185,7 +183,8 @@
 					</ol>
 				</nav>
 			</span>
-			<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON" for="switch"></label></div>
+			<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
+					for="switch"></label></div>
 		</div>
 		<div class="row">
 			<div class="col-md-7">
@@ -195,11 +194,12 @@
 							<li class="list-group-item border-0 d-flex align-items-center pb-4">
 								<span class="lnr lnr-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Personal Details</h1>
-								<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true" aria-controls="personalDetails">
-									Edit personal details <span class="lnr lnr-pencil mr-2 mb-n2"></span
-								></span>
+								<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails"
+									aria-expanded="true" aria-controls="personalDetails">
+									Edit personal details <span class="lnr lnr-pencil mr-2 mb-n2"></span></span>
 							</li>
-							<div id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div id="personalDetails" class="collapse show" aria-labelledby="headingOne"
+								data-parent="#accordionExample">
 								<div class="p-3 bg-white">
 									<form id="user-details-form">
 										<div class="form-row">
@@ -218,16 +218,9 @@
 										</div>
 										<div class="form-group form-check">
 											<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-											<label
-												class="form-check-label"
-												for="exampleCheck1"
-												data-toggle="collapse"
-												href="#collapseExample"
-												role="button"
-												aria-expanded="false"
-												aria-controls="collapseExample"
-												>I want to create an Account</label
-											>
+											<label class="form-check-label" for="exampleCheck1" data-toggle="collapse"
+												href="#collapseExample" role="button" aria-expanded="false"
+												aria-controls="collapseExample">I want to create an Account</label>
 										</div>
 										<div class="collapse" id="collapseExample">
 											<div class="form-group">
@@ -236,16 +229,9 @@
 											</div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<button
-												type="submit"
-												id="to-shopping"
-												class="btn btn-primary"
-												data-toggle="collapse"
-												data-target="#personalDetails"
-												aria-expanded="true"
-												aria-controls="personalDetails"
-												disabled
-											>
+											<button type="submit" id="to-shopping" class="btn btn-primary"
+												data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
+												aria-controls="personalDetails" disabled>
 												Continue to Shipping
 											</button>
 											<span>Or</span>
@@ -257,17 +243,9 @@
 							<li class="list-group-item border-0 d-flex align-items-center py-4">
 								<span class="lnr lnr-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Shipping</h1>
-								<span
-									class="ml-auto d-none"
-									id="headingTwo"
-									data-toggle="collapse"
-									data-target="#shipping"
-									aria-expanded="false"
-									aria-controls="shipping"
-									aria-controls="shipping"
-								>
-									Edit Shipping details <span class="lnr lnr-pencil mr-2 mb-n2"></span
-								></span>
+								<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping"
+									aria-expanded="false" aria-controls="shipping" aria-controls="shipping">
+									Edit Shipping details <span class="lnr lnr-pencil mr-2 mb-n2"></span></span>
 							</li>
 							<div id="shipping" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 								<div class="p-3 bg-white">
@@ -276,25 +254,29 @@
 										<div class="form-group row">
 											<label for="recipient_name" class="col-md-5 mr-0">Recipient Name</label>
 											<div class="col-md-7">
-												<input class="form-control" type="text" id="recipient_name" name="recipient_name" value="Jane Doe" />
+												<input class="form-control" type="text" id="recipient_name"
+													name="recipient_name" value="Jane Doe" />
 											</div>
 										</div>
 										<div class="form-group row">
 											<label for="line1" class="col-md-5 mr-0">Address Line 1</label>
 											<div class="col-md-7">
-												<input class="form-control" type="text" id="line1" name="line1" value="55 East 52nd Street" />
+												<input class="form-control" type="text" id="line1" name="line1"
+													value="55 East 52nd Street" />
 											</div>
 										</div>
 										<div class="form-group row">
 											<label for="line2" class="col-md-5 mr-0">Address Line 1</label>
 											<div class="col-md-7">
-												<input class="form-control" type="text" id="line2" name="line2" value="21st Floor" />
+												<input class="form-control" type="text" id="line2" name="line2"
+													value="21st Floor" />
 											</div>
 										</div>
 										<div class="form-group row">
 											<label for="city" class="col-md-5 mr-0">City</label>
 											<div class="col-md-7">
-												<input class="form-control" type="text" id="city" name="city" value="New York" />
+												<input class="form-control" type="text" id="city" name="city"
+													value="New York" />
 											</div>
 										</div>
 										<div class="form-group row">
@@ -566,7 +548,8 @@
 												<select class="form-control" name="shippingMethod" id="shippingMethod">
 													<optgroup label="United Parcel Service" style="font-style: normal">
 														<option value="Worldwide Expedited">Worldwide Expedited - $8.00</option>
-														<option value="Worldwide Express Saver">Worldwide Express Saver - $4.00</option>
+														<option value="Worldwide Express Saver">Worldwide Express Saver - $4.00
+														</option>
 													</optgroup>
 													<optgroup label="Flat Rate" style="font-style: normal">
 														<option value="Fixed" selected>Fixed - $2.00</option>
@@ -575,16 +558,9 @@
 											</div>
 										</div>
 										<div class="d-flex justify-content-between">
-											<button
-												type="submit"
-												id="to-payments"
-												class="btn btn-success"
-												data-toggle="collapse"
-												data-target="#payments"
-												aria-expanded="true"
-												aria-controls="payments"
-												disabled
-											>
+											<button type="submit" id="to-payments" class="btn btn-success"
+												data-toggle="collapse" data-target="#payments" aria-expanded="true"
+												aria-controls="payments" disabled>
 												Continue to Shipping
 											</button>
 										</div>
@@ -594,17 +570,9 @@
 							<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
 								<h1 class="card-title mb-0">Payment options</h1>
-								<span
-									class="ml-auto d-none"
-									id="payments"
-									data-toggle="collapse"
-									data-target="#payments"
-									aria-expanded="false"
-									aria-controls="payments"
-									aria-controls="payments"
-								>
-									Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span
-								></span>
+								<span class="ml-auto d-none" id="payments" data-toggle="collapse" data-target="#payments"
+									aria-expanded="false" aria-controls="payments" aria-controls="payments">
+									Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span></span>
 							</li>
 							<div id="payments" class="collapse" aria-labelledby="payments" data-parent="#accordionExample">
 								<div class="p-3 bg-white">
@@ -627,15 +595,8 @@
 							<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
 								<h1 class="card-title mb-0">Review Order</h1>
-								<span
-									class="ml-auto d-none"
-									id="orderReview"
-									data-toggle="collapse"
-									data-target="#orderReview"
-									aria-expanded="false"
-									aria-controls="orderReview"
-									aria-controls="orderReview"
-								>
+								<span class="ml-auto d-none" id="orderReview" data-toggle="collapse" data-target="#orderReview"
+									aria-expanded="false" aria-controls="orderReview" aria-controls="orderReview">
 									<!-- Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span -->
 								</span>
 							</li>
@@ -684,7 +645,8 @@
 										</a>
 									</div>
 									<div class="item-name ml-2 text-left">
-										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+											Black</a>
 										<span></span>
 										<p class="text-success">In Stock</p>
 										<div class="d-flex">
@@ -704,7 +666,8 @@
 										</a>
 									</div>
 									<div class="item-name ml-2 text-left">
-										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
+										<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
+											Black</a>
 										<span></span>
 										<p class="text-success">In Stock</p>
 										<div class="d-flex">
@@ -761,7 +724,6 @@
 				</div>
 			</div>
 		</div>
-		
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
 		<div class="px-3 cart-wrapper">
@@ -917,9 +879,9 @@
 	</div>
 	
 	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
-	<section class="section-subscribe bg-white">
+	<section class="section-subscribe bg-white p-3">
 		<div class="container">
-			<p class="pb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+			<p class="mb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
 			<div class="row justify-content-md-center">
 				<div class="col-lg-5 col-md-6">
 					<form class="p-2 shadow-sm bg-light rounded" action="#">
@@ -930,7 +892,6 @@
 							</div>
 						</div>
 					</form>
-					<small class="form-text text-white-50">We’ll never share your email address with a third-party. </small>
 				</div>
 				<!-- col-md-6.// -->
 			</div>
@@ -1010,6 +971,12 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+	$('#switch').change(()=> {
+		console.log('hhehe')
+		$('body').toggleClass('dark-mode')
+		!localStorage.getItem('theme') ? localStorage.setItem('theme','dark-mode') : localStorage.removeItem('theme')
+	})
+	$('body').addClass(localStorage.getItem('theme'))
 	$('#toggle-filter').click(()=>{
 		$('.content-body').toggleClass('ml-0')
 		$('.grid-view').toggleClass('grid-view-sm')
