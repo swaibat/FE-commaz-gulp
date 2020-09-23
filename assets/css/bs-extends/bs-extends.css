@@ -1439,7 +1439,7 @@ html [type="button"],
 
 .dropdown .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 5px;
+  border-radius: 0 0 0.5rem 0.5rem;
   -webkit-transform: scale(1, 0);
   transform: scale(1, 0);
   z-index: 1050;
