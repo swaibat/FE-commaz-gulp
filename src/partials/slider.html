@@ -1,0 +1,33 @@
+<div class="card shadow-sm mb-4">
+    <div class="p-3">
+        <div class="row">
+            {{> _slider_category}}
+            <div id="slider" class="col-md-8">
+                <div id="carousel1_indicator" class="slider-home-banner carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item rounded active ">
+                            <div class="rounded position-absolute px-3" style="z-index: 1; top: 30%;">
+                                <h2 class="title">Comsumer Electronics</h2>
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
+                                <a href="#" class="btn btn-outline-primary">Explore Category</a>
+                            </div>
+                            <img class="rounded" src="{{ root }}assets/images/banners/slide-2.svg" alt="Second slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
+                        <span class="lnr lnr-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel1_indicator" role="button" data-slide="next">
+                        <span class="lnr lnr-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            {{> _slider_offers}}
+        </div>
+    </div>
+</div>

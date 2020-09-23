@@ -44,6 +44,9 @@ PAGES
 			height: 375px;
 			-o-object-fit: cover;
 			object-fit: cover;
+			@include media-breakpoint-down(sm) {
+				height: 40vw;
+			}
 		}
 	}
 }
@@ -731,4 +734,8 @@ $width: $height * 2;
 .badge-cart{
 	top: .5rem;
     right: 1.1rem;
+}
+
+.title{
+ 	font-size: 140% !important;
 }

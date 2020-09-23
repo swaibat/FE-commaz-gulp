@@ -25,7 +25,7 @@ body {
         .card{
             background: $component-bg !important;
         }
-        .bg-light {
+        .bg-light,.dropdown-menu,.dropdown-menu::before {
             background-color: lighten($color: $component-bg, $amount: 10) !important;
         }
         .item-description, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -49,5 +49,14 @@ body {
         .search-bar .input-group-text, .search-bar input {
             background: $component-bg !important;
         }
+        .form-control, .btn {
+            color: lighten($color: $component-bg, $amount: 50);
+        }
+        .form-control::placeholder {
+            color: $gray-500;
+        }
+        .search-bar{
+            background: $body-bg !important;
+        } 
 	}
 }

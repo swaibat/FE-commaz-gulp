@@ -30,10 +30,11 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<div class="input-group search-bar mx-auto col-md-8">
-					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+					<input type="text" class="form-control" placeholder="Search for products here">
 					<div class="input-group-append">
-						<!-- <span class="lnr lnr-magnifier"></span> -->
-						<span class="lnr lnr-magnifier input-group-text"></span>
+						<button class="btn btn-sm btn-outline-secondary" type="button">
+							<span class="lnr lnr-magnifier input-group-text"></span>
+						</button>
 					</div>
 				</div>
 				<div class="d-flex mt-2 mt-md-0">
@@ -190,23 +191,29 @@
 			</div>
 		</div>
 		
-		<ul class="nav nav-pills mb-3 bg-white p-3 border">
-			<li class="nav-item">
-				<a class="nav-link " href="profile.html">Profile</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link active" href="profile-wishlist.html">Whishlist</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-orders.html">My Orders</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
-			</li>
-		</ul>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#profileNav"
+				aria-controls="profileNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="lnr lnr-menu"></span>
+			</button>
+			<div class="collapse " id="profileNav">
+				<ul class="nav nav-pills flex-sm-row flex-column mb-3 bg-white p-3 border">
+					<li class="nav-item">
+						<a class="nav-link active" href="profile.html">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile-wishlist.html">Whishlist</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile-orders.html">My Orders</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile-addresses.html">My Shipping Details</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile-viewed-products.html">My Recently viewed products</a>
+					</li>
+				</ul>
+			</div>
 		
 		<div class="tab-content">
 			<section id="ecommerce-products" class="grid-view grid-view-sm">
