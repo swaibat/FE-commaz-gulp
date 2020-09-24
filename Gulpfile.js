@@ -147,7 +147,7 @@ function watchfiles() {
   gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, browserSyncReload));
   gulp.watch('src/pages/**/*', html);
   gulp.watch('src/assets/images/**/*', images);
-  gulp.watch('src/{layouts,includes,helpers,partials}/**/*', gulp.series(htmlReset, html, browserSyncReload));
+  gulp.watch('src/{layouts,includes,helpers,partials,data}/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
 const build = gulp.series(
   clean, gulp.parallel(html, styles, vendors, modules, images, icons),

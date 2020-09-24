@@ -5,7 +5,7 @@
         "price": 11.99,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
         "category": "fashion",
-        "image": "assets/images/products/men-polo-shirt.png"
+        "image": "assets/images/products/polo-shirt.png"
     },
     {
         "id": 2,

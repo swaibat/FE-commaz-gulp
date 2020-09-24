@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="nav-link " href="./">
-				<img src="{{root}}assets/images/logo-light.svg" height="35 " />
+				{{> _logo}}
 			</a>
 		</div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -14,7 +14,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="input-group search-bar mx-auto col-md-8">
-				<input type="text" class="form-control" placeholder="Search for products here">
+				<input type="text" class="form-control search-bar" placeholder="Search for products here">
 				<div class="input-group-append">
 					<button class="btn btn-sm btn-outline-secondary" type="button">
 						<span class="lnr lnr-magnifier input-group-text"></span>
@@ -25,18 +25,22 @@
 				<div class="dropdown dropdown-user mr-3">
 					<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
 						<div class="text-center">
-							<ion-icon class="header-icons" src="{{root}}assets/icons/svg/user.svg"></ion-icon>
+							<span class="lnr lnr-user header-icons"></span>
 						</div>
 						<small class="text lr-only"> My profile </small>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
 						<a class="dropdown-item" href="profile.html">
-							<ion-icon class="mr-1" src="{{root}}assets/icons/svg/user.svg"></ion-icon> Edit Profile
+							<span class="lnr lnr-user mr-1"></span>
+							Edit Profile
 						</a><a class="dropdown-item" href="notifications.html">
 							<ion-icon name="chatbox-outline"></ion-icon> My Inbox
 						</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/"><i class="feather icon-power"></i> Logout</a>
+						<a class="dropdown-item" href="/">
+							<span class="lnr lnr-power-switch"></span>
+							 Logout
+							</a>
 					</div>
 				</div>
 				<div class="widget-header mx-3">
@@ -60,7 +64,7 @@
 		</div>
 	</div>
 </nav>
-<div class="container bg-white px-4 py-2 rounded-bottom border mt-r-2 mb-3">
+<div class="container bg-white px-4 py-2 rounded-bottom border mt-r-2">
 	<nav class="nav d-flex justify-content-between">
 		<li class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">

@@ -364,7 +364,6 @@ svg {
 .menu {
 	width: 100%;
 	height: 100%;
-	border: 1px solid #ccc;
 	overflow: hidden;
 }
 
@@ -528,7 +527,10 @@ svg {
 }
 
 .mt-r-2 {
-	margin-top: 4.2rem !important;
+	margin-top: 5.1rem !important;
+	@include media-breakpoint-down(md) {
+		margin-top: 4.2rem !important;
+	}
 }
 
 $height: 28px;
@@ -739,3 +741,16 @@ $width: $height * 2;
 .title{
  	font-size: 140% !important;
 }
+// logo svg
+.cls-1 {
+	fill: $primary;
+  }
+
+  .cls-2, .cls-3 {
+	fill: $primary;
+  }
+
+  .cls-3 {
+	stroke: rgba(0,0,0,0);
+	stroke-miterlimit: 10;
+  }
