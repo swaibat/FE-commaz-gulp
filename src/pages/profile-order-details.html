@@ -1,26 +1,12 @@
-<div class="bread-overlay"></div>
+---
+title: Order Details
+---
 <div class="container p-0">
-    <div class="py-2 d-flex">
-        <span>
-            <h1 class="">My Account</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent px-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">user Profile</li>
-                </ol>
-            </nav>
-        </span>
-        <div class="switch ml-auto">
-            <input class="switch" id="switch" name="switch" type="checkbox" /><label data-off="OFF" data-on="ON"
-                for="switch"></label>
-        </div>
-    </div>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#profileNav"
-    aria-controls="profileNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="lnr lnr-menu"></span>
-</button>
-<div class="collapse " id="profileNav">
+    <button class="navbar-toggler d-none d-sm-none" type="button" data-toggle="collapse" data-target="#profileNav"
+		aria-controls="profileNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="lnr lnr-menu"></span>
+	</button>
+	<div class="collapse show" id="profileNav">
     <ul class="nav nav-pills flex-sm-row flex-column mb-3 bg-white p-3 border">
         <li class="nav-item">
             <a class="nav-link active" href="profile.html">Profile</a>
@@ -43,8 +29,8 @@
     <div class="tab-content">
         <div class="bg-white p-3 mb-5 rounded">
             <div class="row">
-                <div class="col-12 d-flex justify-content-between my-2">
-                    <div class="d-flex">
+                <div class="col-12 d-flex flex-wrap my-2">
+                    <div class="col-md-4 d-flex d-sm-flex justify-content-sm-between justify-content-between mb-4">
                         <button class="btn btn-light">
                             <span class="lnr lnr-printer"></span>
                         </button>
@@ -52,13 +38,15 @@
                             Remake Order
                         </a>
                     </div>
-                    <h2>Order #000000920 </h2>
-                    <h4>
+                    <h2 class="col-md-4 text-sm-center text-center">
+                        Order #000000920
+                    </h2>
+                    <h4 class="col-md-4 text-sm-center text-right">
                         Order Date: 16 December 2020
                     </h4>
                 </div>
                 <hr class="w-100">
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 col-sm-auto mb-4">
                     <div class="card">
                         <div class="card-body">
                             <ul class="list-group border-0">
@@ -72,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 col-sm-6 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <ul class="list-group border-0">
@@ -85,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 col-sm-6 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <ul class="list-group border-0">
@@ -99,8 +87,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card">
+                <div class="col-md-3 col-sm-6 mb-4 text-right">
+                    <div class="card ml-auto">
                         <div class="card-body">
                             <ul class="list-group border-0">
                                 <li class="list-group-item border-0 py-1 font-weight-bold">
@@ -131,7 +119,7 @@
                 <tbody>
                     <tr>
                         <td scope="row">
-                            <img class="media-object rounded" src="{{root}}assets/images/portrait/small/avatar-s-1.jpg"
+                            <img class="media-object rounded" src="{{root}}assets/images/products/double-speaker.png"
                                 alt="Avatar" height="75" width="75" />
                         </td>
                         <td>Amazon - Fire TV Stick with Alexa Voice Remote - Black</td>
@@ -153,7 +141,7 @@
                     </tr>
                     <tr>
                         <td scope="row">
-                            <img class="media-object rounded" src="{{root}}assets/images/portrait/small/avatar-s-1.jpg"
+                            <img class="media-object rounded" src="{{root}}assets/images/products/asus-laptop.png"
                                 alt="Avatar" height="75" width="75" />
                         </td>
                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
@@ -175,7 +163,7 @@
                     </tr>
                     <tr>
                         <td scope="row">
-                            <img class="media-object rounded" src="{{root}}assets/images/portrait/small/avatar-s-1.jpg"
+                            <img class="media-object rounded" src="{{root}}assets/images/products/polo-shirt.png"
                                 alt="Avatar" height="75" width="75" />
                         </td>
                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>

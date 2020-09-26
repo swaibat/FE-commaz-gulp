@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Categories</title>
 	<!-- Google Font -->
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/icons/themify/themify-icons.css" />
 	<link rel="stylesheet" href="assets/icons/linearicons/style.css" />
@@ -15,9 +16,9 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="dark-mode">
+<body class="dark-mod">
 	
-	<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white border-bottom">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="nav-link " href="./">
@@ -53,16 +54,14 @@
 				<div class="input-group search-bar mx-auto col-md-8">
 					<input type="text" class="form-control search-bar" placeholder="Search for products here">
 					<div class="input-group-append">
-						<button class="btn btn-sm btn-outline-secondary" type="button">
-							<span class="lnr lnr-magnifier input-group-text"></span>
-						</button>
+						<span class="lnr lnr-magnifier input-group-text"></span>
 					</div>
 				</div>
 				<div class="d-flex mt-2 mt-md-0">
 					<div class="dropdown dropdown-user mr-3">
-						<a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-							<div class="text-center">
-								<span class="lnr lnr-user header-icons"></span>
+						<a class="dropdown-toggle nav-link dropdown-user-link py-0" href="#" data-toggle="dropdown">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-user"></span>
 							</div>
 							<small class="text lr-only"> My profile </small>
 						</a>
@@ -76,12 +75,12 @@
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="/">
 								<span class="lnr lnr-power-switch"></span>
-								 Logout
-								</a>
+								Logout
+							</a>
 						</div>
 					</div>
 					<div class="widget-header mx-3">
-						<a href="/page-profile-orders.html" class="widget-view">
+						<a href="profile-orders.html" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="lnr lnr-store"></span>
 							</div>
@@ -101,8 +100,8 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container bg-white px-4 py-2 rounded-bottom border mt-r-2">
-		<nav class="nav d-flex justify-content-between">
+	<div class="bg-white px-4 py-2 border mt-r-2">
+		<nav class="nav d-flex justify-content-between container">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
 					<span class="lnr lnr-list pr-1"></span>Genre</a>
@@ -198,6 +197,21 @@
 	</div>
 	
 	<!-- container .// -->
+	
+	<div class="bread-overlay"></div>
+	<div class="py-2 container px-0 d-flex">
+		<span>
+			<h1 class="mb-0">Categories</h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb bg-transparent px-0 mb-0 lr-only">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Categories</li>
+				</ol>
+			</nav>
+		</span>
+		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
+				for="switch"></label></div>
+	</div>
 		<div class="row mt-4">
 			<div class="col-md-3">
 				<div class="card card-category">
@@ -347,167 +361,158 @@
 		
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav">
-		<div class="px-3 cart-wrapper">
-			<span class="mx-4">
-				<a id="cart-close" class="closebtn">&times;</a>
-				<h4>Shopping Cart</h4>
-			</span>
-			<table class="responsive-table table table-bordered">
-				<thead>
-					<tr>
-						<th scope="col">Details</th>
-						<th class="text-right" scope="col">Quantity</th>
-						<th class="text-right" scope="col">Price</th>
-					</tr>
-				</thead>
-				<tbody class>
-					<tr class="bg-white border">
-						<td colspan="3" class="d-flex">
-							<div class="cart-item-img text-center">
-								<a href="app-ecommerce-details.html">
-									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-								</a>
-							</div>
-							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-								<span></span>
+		<div class="d-flex">
+			<div class="px-3 cart-wrapper w-100">
+				<span class="mx-4">
+					<a id="cart-close" class="closebtn">&times;</a>
+					<h4>Shopping Cart</h4>
+				</span>
+				<div class="media bg-light p-3 rounded mb-3">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
+							<span></span>
+							<div class="d-flex">
 								<p class="text-success">In Stock</p>
-								<div class="d-flex">
-									<p class="text-muted"><strong>Color :</strong> Yellow</p>
-									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
 								</div>
 							</div>
-						</td>
-						<td data-label="Quantity : ">
-							<div class="item-quantity mb-2 ml-auto">
-								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
-								</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
 							</div>
-						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
-					</tr>
-					<tr class="bg-white border">
-						<td colspan="3" class="d-flex">
-							<div class="cart-item-img text-center">
-								<a href="app-ecommerce-details.html">
-									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-								</a>
-							</div>
-							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-								<span></span>
+						</div>
+					</div>
+					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
 								<p class="text-success">In Stock</p>
-								<div class="d-flex">
-									<p class="text-muted"><strong>Color :</strong> Yellow</p>
-									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
 								</div>
 							</div>
-						</td>
-						<td data-label="Quantity : ">
-							<div class="item-quantity mb-2 ml-auto">
-								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
-								</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
 							</div>
-						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
-					</tr>
-					<tr class="bg-white border">
-						<td colspan="3" class="d-flex">
-							<div class="cart-item-img text-center">
-								<a href="app-ecommerce-details.html">
-									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-								</a>
-							</div>
-							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black</a>
-								<span></span>
+						</div>
+					</div>
+					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
 								<p class="text-success">In Stock</p>
-								<div class="d-flex">
-									<p class="text-muted"><strong>Color :</strong> Yellow</p>
-									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
 								</div>
 							</div>
-						</td>
-						<td data-label="Quantity : ">
-							<div class="item-quantity mb-2 ml-auto">
-								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span
-									><input type="text" class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"
-										><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span
-									>
-								</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
 							</div>
-						</td>
-						<td class="text-right" data-label="Price :"><h6>$1,190</h6></td>
-					</tr>
-					<tr>
-						<td class="text-left cart-summary" colspan="3">
+						</div>
+					</div>
+					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="bg-light p-3">
+						<div class="text-left cart-summary">
 							<h4>Shopping summary</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Sub Total :</h6>
 							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Discount :</h6>
 							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Shipping & Handling :</h6>
 							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Tax :</h6>
 							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
 							<h3 class="mb-0">Grand Total :</h3>
 							<h3 class="ml-auto">$489.00</h3>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary" colspan="3">
+						</div>
+					
+						<div class="cart-summary py-2">
 								<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+						</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 	
 	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
 	<section class="section-subscribe bg-white p-3">
 		<div class="container">
-			<p class="mb-2 text-center text-white">Delivering the latest product trends and industry news straight to your inbox</p>
+			<p class="mb-2 text-center text-white">Delivering the latest product trends and industry news straight to your
+				inbox</p>
 			<div class="row justify-content-md-center">
 				<div class="col-lg-5 col-md-6">
 					<form class="p-2 shadow-sm bg-light rounded" action="#">
 						<div class="input-group">
-							<input class="form-control border-0 mr-2 bg-light" type="search" placeholder="Search tools and resources...">
+							<input class="form-control border-0 mr-2 bg-light" type="search"
+								placeholder="Search tools and resources...">
 							<div class="input-group-append">
 								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
 							</div>
@@ -528,14 +533,15 @@
 						<article class="mr-3">
 							<img src="assets/images/logo-light.svg" class="logo-footer" />
 							<p class="mt-3">
-								Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his
+								Some short text about company like You might remember the Dell computer commercials in which
+								a youth reports this exciting news to his
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><span class="ti-facebook"></span></a>
-								<a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fas fa-instagram"></i></a>
-								<a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fas fa-youtube"></i></a>
-								<a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fas fa-twitter"></i></a>
+								<a class="btn btn-icon btn-light btn-facebook" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-google" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-twitter" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-youtube" title="Facebook" target="_blank" href="#"></a>
 							</div>
 						</article>
 					</aside>
@@ -569,8 +575,10 @@
 					</aside>
 					<aside class="col-sm-2 col-md-2">
 						<h6 class="title">Our app</h6>
-						<a href="#" class="d-block mb-2"><img src="assets/images/misc/appstore.png" height="40" /></a>
-						<a href="#" class="d-block mb-2"><img src="assets/images/misc/playmarket.png" height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/appstore.png"
+								height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="assets/images/misc/playmarket.png"
+								height="40" /></a>
 					</aside>
 				</div>
 				<!-- row.// -->
@@ -592,8 +600,146 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+var containerWidth = null,
+    box1Width = 0.5,
+    box2Width = 0.5,
+    dragStartX = null,
+    dragStartBox1Width = null,
+    dragStartBox2Width = null,   
+    isDragging = false;
+
+function resize(){
+  setContainerSize();
+  update();
+}
+
+function setContainerSize(){
+  containerWidth = $("#view-container").width();  
+}
+
+function mouseDownDragHandle(event){
+  dragStart(event);
+  $(window).on('mousemove', dragMove);
+  $(window).on('mouseup', mouseUpDragHandle);
+}
+
+function mouseUpDragHandle(event){
+  dragEnd(event);
+  $(window).off('mousemove', dragMove);
+  $(window).off('mouseup', mouseUpDragHandle);  
+}
+
+function dragStart(event){
+  isDragging = true;
+  dragStartX = event.clientX;
+  dragStartBox1Width = box1Width;
+  dragStartBox2Width = box2Width;
+}
+
+function dragMove(event){
+  var diff = (event.clientX - dragStartX) / containerWidth;
+  box1Width = dragStartBox1Width + diff;
+  box2Width = dragStartBox2Width - diff;
+  update();
+}
+
+function dragEnd(event){
+  dragStartX = null;
+  dragStartBox1Width = null;
+  dragStartBox2Width = null;   
+  isDragging = false;
+}
+
+function update(){
+  $("#box1").css('width', (box1Width * 100) + '%');
+  $("#box2").css('width', (box2Width * 100) + '%');
+}
+
+$(function(){
+  setContainerSize();
+  update();
+  
+  $(window).resize(resize);
+  
+  $("#dragHandle").mousedown(mouseDownDragHandle);
+});
+
+// 	var magnifierSize = 250;
+
+// /*How many times magnification of image on page.*/
+// var magnification = 4;
+
+// function magnifier() {
+
+//   this.magnifyImg = function(ptr, magnification, magnifierSize) {
+//     var $pointer;
+//     if (typeof ptr == "string") {
+//       $pointer = $(ptr);
+//     } else if (typeof ptr == "object") {
+//       $pointer = ptr;
+//     }
+    
+//     if(!($pointer.is('img'))){
+//       alert('Object must be image.');
+//       return false;
+//     }
+
+//     magnification = +(magnification);
+
+//     $pointer.hover(function() {
+//       $(this).css('cursor', 'none');
+//       $('.magnify').show();
+//       //Setting some variables for later use
+//       var width = $(this).width();
+//       var height = $(this).height();
+//       var src = $(this).attr('src');
+//       var imagePos = $(this).offset();
+//       var image = $(this);
+
+//       if (magnifierSize == undefined) {
+//         magnifierSize = '150px';
+//       }
+
+//       $('.magnify').css({
+//         'background-size': width * magnification + 'px ' + height * magnification + "px",
+//         'background-image': 'url("' + src + '")',
+//         'width': magnifierSize,
+//         'height': magnifierSize
+//       });
+
+//       //Setting a few more...
+//       var magnifyOffset = +($('.magnify').width() / 2);
+//       var rightSide = +(imagePos.left + $(this).width());
+//       var bottomSide = +(imagePos.top + $(this).height());
+
+//       $(document).mousemove(function(e) {
+//         if (e.pageX < +(imagePos.left - magnifyOffset / 6) || e.pageX > +(rightSide + magnifyOffset / 6) || e.pageY < +(imagePos.top - magnifyOffset / 6) || e.pageY > +(bottomSide + magnifyOffset / 6)) {
+//           $('.magnify').hide();
+//           $(document).unbind('mousemove');
+//         }
+//         var backgroundPos = "" - ((e.pageX - imagePos.left) * magnification - magnifyOffset) + "px " + -((e.pageY - imagePos.top) * magnification - magnifyOffset) + "px";
+//         $('.magnify').css({
+//           'left': e.pageX - magnifyOffset,
+//           'top': e.pageY - magnifyOffset,
+//           'background-position': backgroundPos
+//         });
+//       });
+//     }, function() {
+
+//     });
+//   };
+
+//   this.init = function() {
+//     $('body').prepend('<div class="magnify"></div>');
+//   }
+
+//   return this.init();
+// }
+
+// var magnify = new magnifier();
+// magnify.magnifyImg('img', magnification, magnifierSize);
+
 	$('#switch').change(()=> {
-		console.log('hhehe')
 		$('body').toggleClass('dark-mode')
 		!localStorage.getItem('theme') ? localStorage.setItem('theme','dark-mode') : localStorage.removeItem('theme')
 	})
@@ -765,6 +911,8 @@ animateIn: 'fadeIn',
 }
 initializeClock(((new Date()).getFullYear()+1) + "/1/1")
 })()
+
+
 </script>
 
 </html>

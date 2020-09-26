@@ -25,6 +25,7 @@ PAGES
 @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 // themify
 @import './helpers/mixins';
 @import './helpers/bg';
@@ -36,6 +37,15 @@ PAGES
 @import './vuesax.scss';
 
 @import './core/themes/dark';
+
+.twitter {
+	@extend %fa-icon;
+	@extend .fab;
+
+	&:before {
+		content: fa-content($fa-var-twitter);
+	}
+}
 
 .slider-home-banner {
 	.carousel-item {
@@ -187,15 +197,18 @@ ul.row-sm {
 
 .section-footer {
 	background: darken($color: $primary, $amount: 48);
+	p,
+	h6 {
+		color: $gray-600;
+	}
 	ul {
 		li {
 			margin-bottom: 5px;
 		}
 
 		a {
-			color: inherit;
 			&:hover {
-				color: $primary;
+				color: $gray-300;
 			}
 		}
 	}
@@ -468,8 +481,11 @@ svg {
 
 .cart-area {
 	width: 350px !important;
-	.cart-wrapper{
+	.cart-wrapper {
 		width: 350px !important;
+		@include media-breakpoint-down(md) {
+			width: 100% !important;
+		}
 	}
 	@include media-breakpoint-down(md) {
 		width: 100% !important;
@@ -527,7 +543,7 @@ svg {
 }
 
 .mt-r-2 {
-	margin-top: 5.1rem !important;
+	margin-top: 4.3rem !important;
 	@include media-breakpoint-down(md) {
 		margin-top: 4.2rem !important;
 	}
@@ -554,20 +570,20 @@ $width: $height * 2;
 }
 
 .switch label:before {
-	font-family: "Linearicons-Free";
-	content: "\e808";
+	font-family: 'Linearicons-Free';
+	content: '\e808';
 	position: absolute;
-	top: -.2rem;
+	top: -0.2rem;
 	right: 0;
 	font-size: $height * 0.5;
-	top: -.2rem;
+	top: -0.2rem;
 	padding: ($height / 4) ($height / 4);
 	color: white;
 }
 
 .switch input:checked + label:before {
-	font-family: "Linearicons-Free";
-	content: "\e807";
+	font-family: 'Linearicons-Free';
+	content: '\e807';
 	position: absolute;
 	left: 0;
 	font-size: $height * 0.5;
@@ -668,28 +684,28 @@ $width: $height * 2;
 }
 
 .btn-facebook {
-	background-color: #405d9d !important;
+	background-color: $gray-900;
 	color: #fff;
 	&:hover {
 		color: #fff;
 	}
 }
 .btn-instagram {
-	background-color: #e52d27;
+	background-color: $gray-900;
 	color: #fff;
 	&:hover {
 		color: #fff;
 	}
 }
 .btn-youtube {
-	background-color: #c8046c;
+	background-color: $gray-900;
 	color: #fff;
 	&:hover {
 		color: #fff;
 	}
 }
 .btn-twitter {
-	background-color: #42aeec;
+	background-color: $gray-900;
 	color: #fff;
 	@extend %fa-icon;
 	@extend .fab;
@@ -701,13 +717,40 @@ $width: $height * 2;
 	}
 }
 .btn-google {
-	background-color: #af0000;
+	background-color: $gray-900;
 	color: #fff;
+	@extend %fa-icon;
+	@extend .fab;
 	&:hover {
 		color: #fff;
 	}
+	&:before {
+		content: fa-content($fa-var-google);
+	}
+}
+.btn-facebook {
+	color: #fff;
+	@extend %fa-icon;
+	@extend .fab;
+	&:hover {
+		color: #fff;
+	}
+	&:before {
+		content: fa-content($fa-var-facebook);
+	}
 }
 
+.btn-youtube {
+	color: #fff;
+	@extend %fa-icon;
+	@extend .fab;
+	&:hover {
+		color: #fff;
+	}
+	&:before {
+		content: fa-content($fa-var-youtube);
+	}
+}
 .w-0 {
 	width: 0px !important;
 	overflow: hidden;
@@ -715,42 +758,166 @@ $width: $height * 2;
 }
 
 .c-badge {
-    position: absolute;
-    background: $primary;
-    // box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.6);
-    width: 20px;
-    height: 20px;
-    color: #fff;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .6rem;
-    border-radius: 50%;
-    z-index: 120;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	position: absolute;
+	background: $primary;
+	// box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.6);
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.6rem;
+	border-radius: 50%;
+	z-index: 120;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-.badge-cart{
-	top: .5rem;
-    right: 1.1rem;
+.badge-cart {
+	top: 0.5rem;
+	right: 1.1rem;
 }
 
-.title{
- 	font-size: 140% !important;
-}
 // logo svg
 .cls-1 {
 	fill: $primary;
-  }
+}
 
-  .cls-2, .cls-3 {
+.cls-2,
+.cls-3 {
 	fill: $primary;
-  }
+}
 
-  .cls-3 {
-	stroke: rgba(0,0,0,0);
+.cls-3 {
+	stroke: rgba(0, 0, 0, 0);
 	stroke-miterlimit: 10;
-  }
+}
+.carousel-inner {
+	background: #7979791f;
+	border-radius: $border-radius;
+}
+
+.btn-cancel {
+	position: absolute;
+	right: 1.5rem;
+	padding: 0;
+	min-width: 22px;
+	min-height: 22px;
+	border-radius: 5px !important;
+	background: #000;
+	margin-top: -1.5rem;
+}
+
+.product-carousel-imgs {
+	li {
+		height: 4rem;
+		width: 4rem;
+		border-radius: 0.5rem;
+		border: 0;
+		img {
+			height: 100%;
+			border-radius: 0.5rem;
+		}
+	}
+}
+.magnify {
+	border-radius: 50%;
+	border: 2px solid black;
+	position: absolute;
+	z-index: 20;
+	background-repeat: no-repeat;
+	background-color: white;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+	display: none;
+	cursor: none;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.float {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+// .drag-target
+.view-container {
+	width: 50rem;
+	height: 50vmin;
+	display: flex;
+	border-radius: 4px;
+	overflow: hidden;
+	box-shadow: 0px 10px 40px 20px rgba(0, 0, 0, 0.1);
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
+}
+
+.box {
+	height: 100%;
+	overflow: hidden;
+	img {
+		width: 50rem;
+	}
+}
+
+.separate {
+	background-color: #eee;
+	position: relative;
+}
+
+.drag-handle {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	bottom: -5px;
+	right: -5px;
+	z-index: 1;
+	cursor: col-resize;
+}
+
+.drag-handle::before,
+.drag-handle::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-sizing: border-box;
+}
+
+.drag-handle::before {
+	width: 6vmin;
+	height: 6vmin;
+	margin-left: -3vmin;
+	margin-top: -3vmin;
+	background-color: #eee;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.4s ease 0s;
+}
+
+.drag-handle::after {
+	width: 1.4vmin;
+	height: 3vmin;
+	border-left: solid 2px #999;
+	border-right: solid 2px #999;
+	margin-left: -0.7vmin;
+	margin-top: -1.5vmin;
+}
+
+.drag-handle:active::before {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+}

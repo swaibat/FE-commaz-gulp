@@ -1,18 +1,7 @@
-<div class="bread-overlay"></div>
+---
+title: Checkout
+---
 <div class="container p-0">
-<div class="py-2 d-flex">
-	<span>
-		<h1 class="">Checkout</h1>
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb bg-transparent px-0">
-				<li class="breadcrumb-item"><a href="#">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">checkout</li>
-			</ol>
-		</nav>
-	</span>
-	<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
-			for="switch"></label></div>
-</div>
 <div class="row">
 	<div class="col-md-7">
 		<div class="p-5 bg-white mb-5 rounded shadow-sm">
@@ -452,102 +441,68 @@
 	<!-- start of cart content -->
 	<div class="col-md-5 mb-4">
 		<div class="rounded shadow-sm bg-white p-3">
-			<span class="mx-4">
-				<h4>Shopping Cart</h4>
-			</span>
-			<table class="responsive-table table table-bordered">
-				<thead>
-					<tr>
-						<th scope="col">Details</th>
-						<th class="text-right" scope="col">Quantity</th>
-						<th class="text-right" scope="col">Price</th>
-					</tr>
-				</thead>
-				<tbody class="">
-					<tr class="bg-white border">
-						<td colspan="3" class="d-flex">
-							<div class="cart-item-img text-center">
-								<a href="app-ecommerce-details.html">
-									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-								</a>
-							</div>
+			<div class="d-flex">
+				<div class="px-3 cart-wrapper w-100">
+					<span class="mx-4">
+						<h4>Shopping Cart</h4>
+					</span>
+					{{#each cart}}
+					<div class="media bg-light p-3 rounded mb-3">
+						<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}{{this.image}}" alt="{{this.title}}">
+						<div class="media-body">
 							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
-									Black</a>
+								<a href="app-ecommerce-details.html">{{this.title}}</a>
 								<span></span>
-								<p class="text-success">In Stock</p>
+								<div class="d-flex">
+									<p class="text-success">In Stock</p>
+								</div>
 								<div class="d-flex">
 									<p class="text-muted"><strong>Color :</strong> Yellow</p>
 									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-									<p class="text-muted ml-4"><strong>Quantity :</strong>1</p>
+									<p class="text-muted ml-4"><strong>Qty :</strong>3</p>
+									<h5 class="ml-auto">$1,190</h5>
 								</div>
 							</div>
-							<h4 class="ml-auto">$1,190</h4>
-						</td>
-					</tr>
-					<tr class="bg-white border">
-						<td colspan="3" class="d-flex">
-							<div class="cart-item-img text-center">
-								<a href="app-ecommerce-details.html">
-									<img src="assets/images/pages/eCommerce/9.png" alt="img-placeholder" />
-								</a>
+						</div>
+					</div>
+					{{/each}}
+					<div class="bg-light p-3">
+							<div class="text-left cart-summary">
+								<h4>Shopping summary</h4>
 							</div>
-							<div class="item-name ml-2 text-left">
-								<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote -
-									Black</a>
-								<span></span>
-								<p class="text-success">In Stock</p>
-								<div class="d-flex">
-									<p class="text-muted"><strong>Color :</strong> Yellow</p>
-									<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-									<p class="text-muted ml-4"><strong>Quantity :</strong>1</p>
-								</div>
+						
+							<div class="cart-summary py-2 d-flex">
+								<h6 class="mb-0">Sub Total :</h6>
+								<h4 class="ml-auto">$489.00</h4>
 							</div>
-							<h4 class="ml-auto">$1,190</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="text-left cart-summary" colspan="3">
-							<h4>Shopping summary</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
-							<h6 class="mb-0">Sub Total :</h6>
-							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
-							<h6 class="mb-0">Discount :</h6>
-							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
-							<h6 class="mb-0">Shipping &amp; Handling :</h6>
-							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
-							<h6 class="mb-0">Tax :</h6>
-							<h4 class="ml-auto">$489.00</h4>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary d-flex" colspan="3">
-							<h3 class="mb-0">Grand Total :</h3>
-							<h3 class="ml-auto">$489.00</h3>
-						</td>
-					</tr>
-					<tr>
-						<td class="cart-summary" colspan="3">
-							<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+						
+							<div class="cart-summary py-2 d-flex">
+								<h6 class="mb-0">Discount :</h6>
+								<h4 class="ml-auto">$489.00</h4>
+							</div>
+						
+							<div class="cart-summary py-2 d-flex">
+								<h6 class="mb-0">Shipping & Handling :</h6>
+								<h4 class="ml-auto">$489.00</h4>
+							</div>
+						
+							<div class="cart-summary py-2 d-flex">
+								<h6 class="mb-0">Tax :</h6>
+								<h4 class="ml-auto">$489.00</h4>
+							</div>
+						
+							<div class="cart-summary py-2 d-flex">
+								<h3 class="mb-0">Grand Total :</h3>
+								<h3 class="ml-auto">$489.00</h3>
+							</div>
+						
+							<div class="cart-summary py-2">
+									<a href="{{root}}/checkout.html" class="btn btn-success btn-block">Checkout</a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

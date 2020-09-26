@@ -14,7 +14,6 @@ $wishlist-bg: #f6f6f6;
 
 .content-body {
 	position: relative;
-
 }
 
 .shop-content-overlay {
@@ -199,7 +198,6 @@ $wishlist-bg: #f6f6f6;
 			}
 
 			.navbar-toggler-icon {
-				
 				i {
 					color: $body-color;
 					vertical-align: middle;
@@ -320,90 +318,102 @@ $wishlist-bg: #f6f6f6;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
 	column-gap: 28px;
 	@include media-breakpoint-down(md) {
-		grid-template-columns: 1fr !important;
+		grid-template-columns: 1fr 1fr !important;
+		column-gap: 0;
 	}
-
 }
 .grid-view {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	column-gap: 28px;
+	@include media-breakpoint-down(md) {
+		grid-template-columns: 1fr 1fr !important;
+		column-gap: 0;
+	}
+}
 
-	.ecommerce-card {
-		overflow: hidden;
+.ecommerce-card {
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 0;
+		border-radius: 0;
+	}
 
-		.card-content {
-			.item-img {
-				padding-top: 0.5rem;
-				min-height: 15.85rem;
+	.card-content {
+		.item-img {
+			padding-top: 0.5rem;
+			min-height: 15.85rem;
+			@include media-breakpoint-down(md) {
+				min-height: 4rem;
+			}
+		}
+
+		.item-wrapper {
+			display: flex;
+			justify-content: space-between;
+
+			.item-price {
+				position: relative;
+				top: 5px;
 			}
 
-			.item-wrapper {
-				display: flex;
-				justify-content: space-between;
+			.shipping {
+				display: none;
+			}
+		}
 
-				.item-price {
-					position: relative;
-					top: 5px;
-				}
+		.item-company {
+			display: none;
+		}
 
-				.shipping {
+		.item-options {
+			display: flex;
+			flex-wrap: wrap;
+
+			.cart,
+			.wishlist {
+				flex-grow: 1;
+				position: absolute;
+				top: 0;
+				right: 0.5rem;
+				padding: 0.2rem !important;
+				span {
 					display: none;
 				}
 			}
 
-			.item-company {
-				display: none;
+			.wishlist {
+				padding: 2rem;
+				top: 2rem !important;
 			}
 
-			.item-options {
-				display: flex;
-				flex-wrap: wrap;
-
-				.cart,
-				.wishlist {
-					flex-grow: 1;
-					position: absolute;
-					top: 0;
-					right: 0.5rem;
-					padding: 0.2rem !important;
-					span {
-						display: none;
-					}
+			.item-wrapper {
+				.item-rating {
+					display: none;
 				}
 
-				.wishlist {
-					padding: 2rem;
-					top: 2rem !important;
+				.item-price {
+					display: none;
 				}
-
-				.item-wrapper {
-					.item-rating {
-						display: none;
-					}
-
-					.item-price {
-						display: none;
-					}
-				}
-			}
-
-			.item-name {
-				margin-top: 1rem;
-			}
-
-			.item-name,
-			.item-description {
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
 			}
 		}
 
-		.card-body {
-			padding: 1rem;
-			padding-bottom: 0;
+		.item-name {
+			margin-top: 1rem;
 		}
+
+		.item-name,
+		.item-description {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
+
+	.card-body {
+		padding: 1rem;
+		padding-bottom: 0;
 	}
 }
 

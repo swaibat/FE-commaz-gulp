@@ -1,20 +1,8 @@
+---
+title: Shop
+---
 <div class="bread-overlay bread-overlay-shop"></div>
 <div class="container p-0">
-    <div class="py-2 d-flex">
-        <span>
-            <h1 class="mb-0">Shop</h1>
-            <nav class="lr-only" aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent px-0 mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
-                </ol>
-            </nav>
-        </span>
-        <div class="switch ml-auto lr-only">
-            <input class="switch" id="switch" name="switch" type="checkbox" />
-            <label for="switch"></label>
-        </div>
-    </div>
     <div class="app-content content">
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
@@ -32,7 +20,7 @@
                                     <div class="result-toggler d-flex align-items-center">
                                         <button class="navbar-toggler btn bg-white d-flex align-items-center py-2 "
                                             id="toggle-filter">
-                                            <ion-icon name="filter-outline"></ion-icon>
+                                            <span class="lnr lnr-menu"></span>
                                         </button>
                                         <div class="search-results ml-3">
                                             16285 results found
@@ -84,7 +72,7 @@
                     <!-- Ecommerce Products Starts -->
                     <section id="ecommerce-products" class="grid-view">
                         {{#each allproducts}}
-                        <div class="card ecommerce-card mb-4 shadow-sm ">
+                        <div class="card ecommerce-card shadow-sm">
                             <div class="card-content">
                                 <div class="btn-group-vertical position-absolute right-0">
                                     <span class="btn bg-white p-2">

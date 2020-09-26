@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Amazon - Fire TV Stick with Alexa Voice Remote - Black ",
+        "price": 1001.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/asus-laptop.png"
+    },
+    {
+        "title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
+        "price": 1001.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/polo-shirt.png"
+    },
+    {
+        "title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
+        "price": 1001.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/watch-red.png"
+    }
+]

@@ -17,11 +17,8 @@ body {
 		.navbar-light {
 			background: $component-bg !important;
 		}
-		.border-bottom {
-			border-bottom: 1px solid lighten($color: $component-bg, $amount: 20) !important;
-		}
-		.form-control {
-			background: $component-bg !important;
+		.border-bottom, .border-left  {
+			border-bottom: 1px solid $gray-800 !important;
 		}
 		.card {
 			background: $component-bg !important;
@@ -66,11 +63,10 @@ body {
 		.card-banner {
 			background: $component-bg !important;
 		}
-		.search-bar .input-group-text,
+		.search-bar,
 		.search-bar input {
 			background: $component-bg !important;
 		}
-		.form-control,
 		.btn {
 			color: lighten($color: $component-bg, $amount: 50);
 		}
@@ -91,6 +87,21 @@ body {
 		.table thead th,
 		td {
 			border: 1px solid lighten($color: $component-bg, $amount: 10);
+		}
+
+		.form-control {
+			background: #0e0e0f !important;
+			color: $gray-500 !important;
+			border: none !important;
+		}
+		label ,.input-group-append .input-group-text  {
+			color: $gray-500 !important;
+		}
+		.input-group-append .input-group-text{
+			background: lighten($color: $primary, $amount: 5) !important;
+		}
+		.table-bordered th, .table-bordered td {
+			border: 1px solid $gray-700;
 		}
 	}
 }

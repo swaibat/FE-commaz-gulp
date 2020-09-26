@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title></title>
 	<!-- Google Font -->
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/icons/themify/themify-icons.css" />
 	<link rel="stylesheet" href="assets/icons/linearicons/style.css" />
@@ -15,7 +16,7 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body class="dark-mode">
+<body class="dark-mod">
 	
 	<!-- container .// -->
 	<nav class="navbar fixed-top">
@@ -27,6 +28,21 @@
 			</div>
 		</div>
 	</nav>
+	
+	<div class="bread-overlay"></div>
+	<div class="py-2 container px-0 d-flex">
+		<span>
+			<h1 class="mb-0"></h1>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb bg-transparent px-0 mb-0 lr-only">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page"></li>
+				</ol>
+			</nav>
+		</span>
+		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
+				for="switch"></label></div>
+	</div>
 		<div class="app-content content">
 		    <div class="content-overlay"></div>
 		    <div class="header-navbar-shadow"></div>
@@ -110,8 +126,146 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+var containerWidth = null,
+    box1Width = 0.5,
+    box2Width = 0.5,
+    dragStartX = null,
+    dragStartBox1Width = null,
+    dragStartBox2Width = null,   
+    isDragging = false;
+
+function resize(){
+  setContainerSize();
+  update();
+}
+
+function setContainerSize(){
+  containerWidth = $("#view-container").width();  
+}
+
+function mouseDownDragHandle(event){
+  dragStart(event);
+  $(window).on('mousemove', dragMove);
+  $(window).on('mouseup', mouseUpDragHandle);
+}
+
+function mouseUpDragHandle(event){
+  dragEnd(event);
+  $(window).off('mousemove', dragMove);
+  $(window).off('mouseup', mouseUpDragHandle);  
+}
+
+function dragStart(event){
+  isDragging = true;
+  dragStartX = event.clientX;
+  dragStartBox1Width = box1Width;
+  dragStartBox2Width = box2Width;
+}
+
+function dragMove(event){
+  var diff = (event.clientX - dragStartX) / containerWidth;
+  box1Width = dragStartBox1Width + diff;
+  box2Width = dragStartBox2Width - diff;
+  update();
+}
+
+function dragEnd(event){
+  dragStartX = null;
+  dragStartBox1Width = null;
+  dragStartBox2Width = null;   
+  isDragging = false;
+}
+
+function update(){
+  $("#box1").css('width', (box1Width * 100) + '%');
+  $("#box2").css('width', (box2Width * 100) + '%');
+}
+
+$(function(){
+  setContainerSize();
+  update();
+  
+  $(window).resize(resize);
+  
+  $("#dragHandle").mousedown(mouseDownDragHandle);
+});
+
+// 	var magnifierSize = 250;
+
+// /*How many times magnification of image on page.*/
+// var magnification = 4;
+
+// function magnifier() {
+
+//   this.magnifyImg = function(ptr, magnification, magnifierSize) {
+//     var $pointer;
+//     if (typeof ptr == "string") {
+//       $pointer = $(ptr);
+//     } else if (typeof ptr == "object") {
+//       $pointer = ptr;
+//     }
+    
+//     if(!($pointer.is('img'))){
+//       alert('Object must be image.');
+//       return false;
+//     }
+
+//     magnification = +(magnification);
+
+//     $pointer.hover(function() {
+//       $(this).css('cursor', 'none');
+//       $('.magnify').show();
+//       //Setting some variables for later use
+//       var width = $(this).width();
+//       var height = $(this).height();
+//       var src = $(this).attr('src');
+//       var imagePos = $(this).offset();
+//       var image = $(this);
+
+//       if (magnifierSize == undefined) {
+//         magnifierSize = '150px';
+//       }
+
+//       $('.magnify').css({
+//         'background-size': width * magnification + 'px ' + height * magnification + "px",
+//         'background-image': 'url("' + src + '")',
+//         'width': magnifierSize,
+//         'height': magnifierSize
+//       });
+
+//       //Setting a few more...
+//       var magnifyOffset = +($('.magnify').width() / 2);
+//       var rightSide = +(imagePos.left + $(this).width());
+//       var bottomSide = +(imagePos.top + $(this).height());
+
+//       $(document).mousemove(function(e) {
+//         if (e.pageX < +(imagePos.left - magnifyOffset / 6) || e.pageX > +(rightSide + magnifyOffset / 6) || e.pageY < +(imagePos.top - magnifyOffset / 6) || e.pageY > +(bottomSide + magnifyOffset / 6)) {
+//           $('.magnify').hide();
+//           $(document).unbind('mousemove');
+//         }
+//         var backgroundPos = "" - ((e.pageX - imagePos.left) * magnification - magnifyOffset) + "px " + -((e.pageY - imagePos.top) * magnification - magnifyOffset) + "px";
+//         $('.magnify').css({
+//           'left': e.pageX - magnifyOffset,
+//           'top': e.pageY - magnifyOffset,
+//           'background-position': backgroundPos
+//         });
+//       });
+//     }, function() {
+
+//     });
+//   };
+
+//   this.init = function() {
+//     $('body').prepend('<div class="magnify"></div>');
+//   }
+
+//   return this.init();
+// }
+
+// var magnify = new magnifier();
+// magnify.magnifyImg('img', magnification, magnifierSize);
+
 	$('#switch').change(()=> {
-		console.log('hhehe')
 		$('body').toggleClass('dark-mode')
 		!localStorage.getItem('theme') ? localStorage.setItem('theme','dark-mode') : localStorage.removeItem('theme')
 	})
@@ -283,6 +437,8 @@ animateIn: 'fadeIn',
 }
 initializeClock(((new Date()).getFullYear()+1) + "/1/1")
 })()
+
+
 </script>
 
 </html>

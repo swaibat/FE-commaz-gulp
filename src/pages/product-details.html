@@ -1,45 +1,61 @@
-<div class="bread-overlay"></div>
+---
+title: Product Details
+---
 <div class="p-0 container mb-4">
-	<div class="py-2 d-flex">
-		<span>
-			<h1 class="mb-0">My Account</h1>
-			<nav class="lr-only" aria-label="breadcrumb">
-                <ol class="breadcrumb bg-transparent px-0 mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
-                </ol>
-            </nav>
-		</span>
-		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
-				for="switch"></label></div>
-	</div>
 	<div class="content-wrapper">
 		<div class="content-body">
 			<!-- app ecommerce details start -->
 			<section class="app-ecommerce-details">
-				<div class="card">
-					<div class="card-body">
-						<div class="row mb-5 mt-2">
+				<div class="">
+					<div class="p-3 bg-white rounded">
+						<div class="row  mt-2">
 							<div class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
-								<div class="menu d-flex align-items-center justify-content-center">
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_1.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_2.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_3.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_4.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_5.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_6.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_7.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_8.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_9.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_10.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_11.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_12.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_13.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_14.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_15.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_16.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_17.jpg" />
-									<img class="img-fluid" src="{{root}}assets/images/3ds/image1_18.jpg" />
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+									data-interval="false">
+									<div class="carousel-inner rounded-top">
+										<div class="carousel-item active">
+											<img class="d-block w-100 product-img"
+												src="{{root}}assets/images/products/mac-face.png" alt="First slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100 product-img"
+												src="{{root}}assets/images/products/macbook-pro-13.png"
+												alt="Second slide">
+										</div>
+										<div class="carousel-item">
+											<img class="d-block w-100 product-img"
+												src="{{root}}assets/images/products/macbook_PNG62.png"
+												alt="Third slide">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+										data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+										data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+									<ol
+										class="carousel-indicators position-relative mt-n2 p-3 mx-0 product-carousel-imgs">
+										<li data-target="#carouselExampleIndicators" data-slide-to="0"
+											class="rounded-sm active">
+											<img class="d-block w-100" src="{{root}}assets/images/products/mac-face.png"
+												alt="First slide">
+										</li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="1">
+											<img class="d-block w-100"
+												src="{{root}}assets/images/products/macbook-pro-13.png"
+												alt="Second slide">
+										</li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="2">
+											<img class="d-block w-100"
+												src="{{root}}assets/images/products/macbook_PNG62.png"
+												alt="Third slide">
+										</li>
+									</ol>
 								</div>
 							</div>
 							<div class="col-12 col-md-6">
@@ -54,7 +70,7 @@
 										<i class="fas fa-star text-warning"></i>
 										<i class="fas fa-star text-secondary"></i>
 									</span>
-									<span class=" text-dark font-medium-1">424 ratings</span>
+									<span class="ml-3">424 ratings</span>
 								</div>
 								<hr />
 								<p>
@@ -65,13 +81,13 @@
 									give you the images you want from this Canon EOS 5D Mk V 24-70mm lens kit.
 								</p>
 								<p class="font-weight-bold mb-25"><i
-										class="feather icon-truck mr-50 font-medium-2"></i>Free Shipping</p>
+										class="feather icon-truck mb-2 font-medium-2"></i>Free Shipping</p>
 								<p class="font-weight-bold"><i
 										class="feather icon-dollar-sign mr-50 font-medium-2"></i>EMI options available
 								</p>
 								<hr />
 								<div class="form-group">
-									<label class="font-weight-bold">Color</label>
+									<label class="font-weight-bold mb-2">Color</label>
 									<ul class="list-unstyled mb-0 product-color-options">
 										<li class="d-inline-block selected">
 											<div class="color-option b-primary">
@@ -100,6 +116,39 @@
 										</li>
 									</ul>
 								</div>
+								<div class="form-group">
+									<label class="font-weight-bold mb-2">Sizes</label>
+									<div class="btn-group-toggle" data-toggle="buttons">
+										<label class="btn btn-secondary active">
+											<input type="radio" name="options" id="option1" autocomplete="off" checked>
+											12.5
+										</label>
+										<label class="btn btn-secondary">
+											<input type="radio" name="options" id="option2" autocomplete="off">
+											13
+										</label>
+										<label class="btn btn-secondary">
+											<input type="radio" name="options" id="option3" autocomplete="off">
+											16
+										</label>
+									</div>
+								</div>
+								<hr />
+								<div class="form-group">
+									<label class="font-weight-bold mb-2">Qty</label>
+									<div class="item-quantity mb-2">
+										<div class="input-group quantity-counter-wrapper bootstrap-touchspin">
+											<span
+												class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+													class="btn btn-primary bootstrap-touchspin-down"
+													type="button">-</button></span><input type="text"
+												class="quantity-counter form-control" value="1"><span
+												class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+													class="btn btn-primary bootstrap-touchspin-up"
+													type="button">+</button></span>
+										</div>
+									</div>
+								</div>
 								<hr />
 								<p>Available - <span class="text-success">In stock</span></p>
 
@@ -107,8 +156,8 @@
 									<button class="btn btn-primary mr-0 mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">
 										<i class="feather icon-shopping-cart mr-25"></i>ADD TO CART
 									</button>
-									<button class="btn btn-outline-danger waves-effect waves-light"><i
-											class="feather icon-heart mr-25"></i>WISHLIST</button>
+									<button class="btn btn-outline-danger waves-effect waves-light">
+										<i class="feather icon-heart mr-25"></i>WISHLIST</button>
 								</div>
 								<hr />
 								<button type="button"
@@ -130,9 +179,10 @@
 							</div>
 						</div>
 					</div>
-					<section class="section-name padding-y bg">
-						<div class="container">
 
+
+					<section class="section-name mt-4 p-3 bg-white rounded">
+						<div class="container">
 							<div class="row">
 								<div class="col-md-8">
 									<h5 class="title-description">Description</h5>
@@ -233,7 +283,6 @@
 
 										<h5 class="title-description">Videos</h5>
 
-
 										<article class="media mb-3">
 											<a href="#"><img class="img-sm mr-3"
 													src="{{root}}assets/images/posts/3.jpg"></a>
@@ -272,18 +321,18 @@
 
 						</div> <!-- container .//  -->
 					</section>
-					<section class="mb-3 p-3">
+					<section class="my-4">
 						<header class="section-heading heading-line">
-							<h4 class="title-section text-uppercase">Recommended items</h4>
+							<h4 class="title-section text-uppercase">Related Products</h4>
 						</header>
-				
 						<section id="ecommerce-products" class="grid-view grid-view-sm">
 							{{#each recent_products}}
 							<div class="card ecommerce-card mb-4 shadow-sm ">
 								<div class="card-content">
 									<div class="btn-group-vertical position-absolute right-0">
 										<span class="btn bg-white p-2">
-											<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
+											<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg">
+											</ion-icon>
 										</span>
 										<span class="btn bg-white p-2">
 											<ion-icon class="card-icon" name="heart-outline"></ion-icon>
@@ -299,7 +348,8 @@
 											<div class="item-rating">
 												<div class="badge badge-primary badge-md">
 													<span>4</span>
-													<ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+													<ion-icon class="text-white"
+														src="{{root}}assets/icons/svg/star.svg"></ion-icon>
 												</div>
 											</div>
 											<div>
