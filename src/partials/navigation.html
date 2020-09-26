@@ -1,10 +1,10 @@
 {{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
-'auth-forgot-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
+'auth-forgot-password' 'auth-reset-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white border-bottom">
 	<div class="container">
 		<div class="dropdown nav-item category-menu" data-menu="dropdown">
-			<a class="nav-link " href="./">
+			<a class="nav-link logo" href="./">
 				{{> _logo}}
 			</a>
 		</div>
@@ -161,19 +161,19 @@
 
 <!-- container .// -->
 {{#ifpage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter'
-'auth-forgot-password' 'auth-register' '_headers'}}
+'auth-forgot-password' 'auth-reset-password' 'auth-register' '_headers'}}
 <nav class="navbar fixed-top">
 	<div class="container d-flex justify-content-xs-around">
 		<div class="nav-item category-menu">
-			<a class="dropdown-toggle nav-link " href="/" data-toggle="dropdown">
-				<img src="{{root}}assets/images/logo-light.svg" height="35 " />
+			<a class="nav-link " href="/">
+				{{> _logo}}
 			</a>
 		</div>
 	</div>
 </nav>
 {{/ifpage}}
 
-{{#unlesspage 'index' 'auth-login' 'documentation' 'auth-login' 'auth-register'}}
+{{#unlesspage 'index' 'documentation' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
 <div class="bread-overlay"></div>
 <div class="py-2 container px-0 d-flex my-4">
 	<span>
