@@ -58274,11 +58274,10 @@ svg .c {
 
 .view-container {
   width: 50rem;
-  height: 50vmin;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 4px;
+  border-radius: 1rem;
   overflow: hidden;
   -webkit-box-shadow: 0px 10px 40px 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 40px 20px rgba(0, 0, 0, 0.1);
