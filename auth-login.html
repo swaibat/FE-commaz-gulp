@@ -20,62 +20,58 @@
 	
 	<!-- container .// -->
 	
-		<div class="content h-100 vh-max">
-		    <div class="h-100 row bg-white">
-		        <div class="col-md-7 p-0">
-		            <div class="with-overlay d-flex align-items-center justify-content-around">
-		                <div class="p-3 text-white text-center">
-		                    <h3 class="text-white">Nice to see you agian</h3>
-		                    <h1 class="text-white">WELCOME BACK</h1>
-		                    <h3 class="text-white">please login to enjoy unlimited services</h3>
+		<div class="container d-flex align-items-center h-100 vh-max">
+		    <div class="row col-md-8 m-auto">
+		        <div class="col-md-6 bg-white">
+		            <div class="card">
+		                <div class="card-body">
+		                    <h1>Login</h1>
+		                    <p>Welcome Back please login to your acount</p>
+		                    <form action="index.html">
+		                        <div class="form-label-group">
+		                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+		                            <label for="inputEmail">Email</label>
+		                        </div>
+		                        <div class="form-label-group">
+		                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+		                                required>
+		                            <label for="inputPassword">Password</label>
+		                        </div>
+		                        <div class="form-group d-flex flex-wrap">
+		                            <div class="custom-control custom-checkbox">
+		                                <input type="checkbox" class="custom-control-input" id="remember">
+		                                <label class="custom-control-label" for="remember">Remember me </label>
+		                            </div>
+		                            <a class="ml-auto" href="auth-forgot-password.html">Forgot password</a>
+		                        </div>
+		                        <a href="auth-login.html" class="btn btn-primary btn-block btn-inline ">Login</a>
+		                        <h5 class="font-weight-bold mt-3 text-center">OR</h5>
+		                    </form>
+		                    <div class="w-100">
+		                        <div class="d-flex mx-auto my-3 col-10">
+		                            <a class="btn btn-icon btn-light border-0 btn-facebook " href="#">
+		                                facebook
+		                            </a>
+		                            <a class="btn btn-icon btn-light border-0  btn-google mx-4" href="#">
+		                                Google
+		                            </a>
+		                            <a class="btn btn-icon btn-light border-0 btn-twitter" href="#">
+		                                Twitter
+		                            </a>
+		                        </div>
+		                    </div>
 		                </div>
 		            </div>
 		        </div>
-		        <div class="col-md-5 p-5 bg-white border-left d-flex align-items-center">
-		            <div class="card-body col-md-12">
-		                <h2 class="mb-5 text-center">Account Login</h2>
-		                <form class="" action="index.html">
-		                    <fieldset class="form-label-group form-group position-relative has-icon-left">
-		                        <input type="text" class="form-control" id="user-name" placeholder="Username" required>
-		                        <div class="form-control-position">
-		                            <i class="feather icon-user"></i>
-		                        </div>
-		                        <label for="user-name">Username</label>
-		                    </fieldset>
-		
-		                    <fieldset class="form-label-group position-relative has-icon-left">
-		                        <input type="password" class="form-control" id="user-password" placeholder="Password" required>
-		                        <div class="form-control-position">
-		                            <i class="feather icon-lock"></i>
-		                        </div>
-		                        <label for="user-password">Password</label>
-		                    </fieldset>
-		                    <div class="form-group d-flex justify-content-between align-items-center">
-		                        <div class="checkbox">
-		                            <label class="d-flex align-items-center">
-		                                <input type="checkbox" value="remember-me" class="mr-2"> Remember me
-		                            </label>
-		                        </div>
-		                        <div class="ml-auto"><a href="auth-forgot-password.html" class="card-link">Forgot Password?</a>
-		                        </div>
-		                    </div>
-		                    <button type="submit" class="btn btn-primary float-right btn-block">Login</button>
-		                </form>
-		                <div class="w-100 d-flex justify-content-around mt-5">
-		                    <span>
-		                    <p class="mt-5 mb-4">Or Signup Using</p>
-		                    <div class="d-flex justify-content-around">
-		                        <button type="button" class="btn btn-icon btn-warning">
-		                            <ion-icon name="logo-twitter"></ion-icon>
-		                        </button>
-		                        
-		                        <button type="button" class="btn btn-icon"><i
-		                                class="fab fa-facebook-f"></i></button>
-		                        <button type="button" class="btn btn-icon btn-facebook mr-4">
-		                            <ion-icon name="logo-twitter"></ion-icon>
-		                        </button>
-		                    </div>
-		                </span>
+		        <div class="col-md-6 p-5 bg-primary d-flex align-items-center">
+		            <div class="card-body">
+		                <div class="d-flex flex-column text-center">
+		                    <h1 class="mb-3">Register</h1>
+		                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio voluptates minus, esse
+		                        consequuntur modi illum quas!</p>
+		                    <button class="btn btn-light border-0">
+		                        Register
+		                    </button>
 		                </div>
 		            </div>
 		        </div>
