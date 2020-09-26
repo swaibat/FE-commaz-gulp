@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
+        "price": 1001.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/asus-laptop.png"
+    },
+    {
+        "title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
+        "price": 1001.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/polo-shirt.png"
+    },
+    {
+        "title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
+        "price": 2919.9,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/macbook-pro-13.png"
+    },
+    {
+        "title": "iPhone Se 2020 Plus 11 Pro",
+        "price": 1201.99,
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+        "category": "electronics",
+        "image": "assets/images/products/iphone-11-gray.png"
+    },
+    {
+        "title": "Ecobee Smart Thermostat with Voice Control",
+        "price": 315.0,
+        "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+        "category": "electronics",
+        "image": "assets/images/products/double-speaker.png"
+    }
+    
+]

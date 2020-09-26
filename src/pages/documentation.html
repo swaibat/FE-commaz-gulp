@@ -1,180 +1,168 @@
-<nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-            Doolbay
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-    </div>
-</nav>
-
-<div class="position-relative overflow-hidden p-3 p-md-5 bg-light"
-    style="clip-path: polygon(0 0, 100% 1%, 100% 58%, 0% 100%);height: 90vh;">
-    <div class="container row">
-        <div class="col-md-5 py-lg-5 my-5">
-            <h1 class="display-4 font-weight-normal">Punny headline</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
-                with
-                this example based on Apple's marketing pages.</p>
-            <a class="btn btn-secondary" href="#">Coming soon</a>
-        </div>
-        <div class="col-md-7 d-flex">
-            <div class="view-container float" id="view-container" style="background: url(assets/images/docs/dark.png);">
-                <div class="box" id="box1">
-                    <img src="{{root}}assets/images/docs/light.png" alt="">
+<body>
+    <!-- Hero Section-->
+    <section class="hero bg-top" id="hero"
+        style="background: url(img/banner-4.86a86274.png) no-repeat; background-size: 100% 80%">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-5 py-5">
+                    <h1 class="font-weight-bold">DOOL ECOMMERCE PLATFORM</h1>
+                    <p class="my-4 text-muted">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod.</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mb-2 mb-lg-0"><a class="btn btn-primary btn-lg px-4" href="#"> <i
+                                    class="fab fa-google-play mr-3"></i>Google Play</a></li>
+                        <li class="list-inline-item"><a class="btn btn-primary btn-lg px-4" href="#"> <i
+                                    class="fab fa-app-store mr-3"></i>App Store</a></li>
+                    </ul>
                 </div>
-                <div class="separate">
-                    <div class="drag-handle" id="dragHandle"></div>
+                <div class="col-lg-6 ml-auto mr-4">
+                    <div class="view-container" id="view-container"
+                        style="background: url(assets/images/docs/dark.png); background-size: cover;">
+                        <div class="box" id="box1">
+                            <img src="{{root}}assets/images/docs/light.png" alt="">
+                        </div>
+                        <div class="separate">
+                            <div class="drag-handle" id="dragHandle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="float" style="width:13rem;">
-                <div class="card ecommerce-card mb-4 shadow-sm ">
-                    <div class="card-content">
-                        <div class="btn-group-vertical position-absolute right-0">
-                            <span class="btn bg-white p-2">
-                                <ion-icon class="card-icon md hydrated" src="assets/icons/svg/cart.svg" role="img"></ion-icon>
-                            </span>
-                            <span class="btn bg-white p-2">
-                                <ion-icon class="card-icon md hydrated" name="heart-outline" role="img" aria-label="heart outline"></ion-icon>
-                            </span>
+        </div>
+    </section>
+
+
+    <section class="bg-center py-0" id="about"
+        style="background: url(img/service-bg.d0e67e81.svg) no-repeat; background-size: cover">
+        <section class="about py-0">
+            <div class="container">
+                <p class="h6 text-uppercase text-primary">Services</p>
+                <h2 class="mb-5">Make your own success</h2>
+                <div class="row pb-5">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <!-- Services Item-->
+                        <div class="card border-0 shadow rounded-lg py-4 text-left">
+                            <div class="card-body p-5">
+                                <svg class="svg-icon svg-icon-light" style="width:60px;height:60px;color:#ff904e">
+                                    <use xlink:href="#document-saved-1"> </use>
+                                </svg>
+                                <h3 class="font-weight-normal h4 my-4">Online Marketing</h3>
+                                <p class="text-small mb-0">Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod
+                                    tempor incididunt ut labore.</p>
+                            </div>
                         </div>
-                        <div class="item-img text-center" style="min-height: 3rem;">
-                            <a href="product-details.html">
-                                <img class="img-fluid" src="assets/images/products/black-speaker.png" alt="img-placeholder"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <!-- Services Item-->
+                        <div class="card border-0 shadow rounded-lg py-4 text-left">
+                            <div class="card-body p-5">
+                                <svg class="svg-icon svg-icon-light" style="width:60px;height:60px;color:#39f8d2">
+                                    <use xlink:href="#map-marker-1"> </use>
+                                </svg>
+                                <h3 class="font-weight-normal h4 my-4">Track your move </h3>
+                                <p class="text-small mb-0">Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod
+                                    tempor incididunt ut labore.</p>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <div class="item-wrapper">
-                                <div class="item-rating">
-                                    <div class="badge badge-primary badge-md">
-                                        <span>4</span>
-                                        <ion-icon class="text-white md hydrated" src="assets/icons/svg/star.svg" role="img"></ion-icon>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Services Item-->
+                        <div class="card border-0 shadow rounded-lg py-4 text-left">
+                            <div class="card-body p-5">
+                                <svg class="svg-icon svg-icon-light" style="width:60px;height:60px;color:#8190ff">
+                                    <use xlink:href="#arrow-target-1"> </use>
+                                </svg>
+                                <h3 class="font-weight-normal h4 my-4">Market analysis</h3>
+                                <p class="text-small mb-0">Lorem ipsum dolor amet consectetur adipisicing sed do eiusmod
+                                    tempor incididunt ut labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="with-pattern-1" id="services">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6 mb-5 mb-lg-0"><img class="img-fluid w-100 px-lg-5"
+                            src="img/objects.e4497cfa.svg" alt=""></div>
+                    <div class="col-lg-6">
+                        <h2>The Best Business Solutions Guide for You</h2>
+                        <p class="text-muted">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore
+                            dolore magna aliqua enim ad minim veniam quis nostrud exercitation.</p>
+                        <button class="btn btn-primary js-modal-btn" data-video-id="B6uuIHpFkuo"><i
+                                class="fas fa-play-circle mr-2"></i>Play video</button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2>Make your own success as simple you clap</h2>
+                        <p class="text-muted">Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore
+                            dolore magna aliqua enim ad minim veniam quis nostrud exercitation.</p>
+                        <ul class="list-check">
+                            <li class="text-muted mb-2">Various Analysis Options</li>
+                            <li class="text-muted mb-2">Page Load Details (time, size, number of requests)</li>
+                            <li class="text-muted mb-2">Waterfall, Video and Report History</li>
+                        </ul>
+                        <button class="btn btn-primary js-modal-btn" data-video-id="B6uuIHpFkuo"><i
+                                class="fas fa-play-circle mr-2"></i>Play video</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <!-- Services Item-->
+                                <div class="card border-0 shadow rounded-lg text-left px-2">
+                                    <div class="card-body px py-5">
+                                        <svg class="svg-icon" style="width:40px;height:40px;color:#ff904e">
+                                            <use xlink:href="#document-saved-1"> </use>
+                                        </svg>
+                                        <h3 class="h5 font-weight-normal h4 my-3">Online Marketing</h3>
+                                        <p class="text-small mb-0 text-muted">Lorem ipsum dolor amet consectetur
+                                            adipisicing.</p>
                                     </div>
                                 </div>
-                                <div>
-                                    <h6 class="item-price">
-                                        1001.99
-                                    </h6>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <!-- Services Item-->
+                                <div class="card border-0 shadow rounded-lg text-left px-2">
+                                    <div class="card-body px py-5">
+                                        <svg class="svg-icon" style="width:40px;height:40px;color:#39f8d2">
+                                            <use xlink:href="#map-marker-1"> </use>
+                                        </svg>
+                                        <h3 class="h5 font-weight-normal h4 my-3">Track your move </h3>
+                                        <p class="text-small mb-0 text-muted">Lorem ipsum dolor amet consectetur
+                                            adipisicing.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-name">
-                                <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+                            <div class="col-lg-6 col-sm-6 mb-4">
+                                <!-- Services Item-->
+                                <div class="card border-0 shadow rounded-lg text-left px-2">
+                                    <div class="card-body px py-5">
+                                        <svg class="svg-icon" style="width:40px;height:40px;color:#8190ff">
+                                            <use xlink:href="#arrow-target-1"> </use>
+                                        </svg>
+                                        <h3 class="h5 font-weight-normal h4 my-3">Market analysis</h3>
+                                        <p class="text-small mb-0 text-muted">Lorem ipsum dolor amet consectetur
+                                            adipisicing.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <p class="item-description">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
-                                </p>
+                            <div class="col-lg-6 col-sm-6">
+                                <!-- Services Item-->
+                                <div class="card border-0 shadow rounded-lg text-left px-2">
+                                    <div class="card-body px py-5">
+                                        <svg class="svg-icon" style="width:40px;height:40px;color:#ff634b">
+                                            <use xlink:href="#sorting-1"> </use>
+                                        </svg>
+                                        <h3 class="h5 font-weight-normal h4 my-3">Full Settings</h3>
+                                        <p class="text-small mb-0 text-muted">Lorem ipsum dolor amet consectetur
+                                            adipisicing.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="float media p-3 rounded mb-3 shadow-sm bg-white ml-4" style="height: 8rem;">
-                <img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
-                <div class="media-body">
-                    <div class="item-name ml-2 text-left">
-                        <a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
-                        <span></span>
-                        <div class="d-flex">
-                            <p class="text-success">In Stock</p>
-                            <div class="item-quantity mb-2 ml-auto">
-                                <div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-                                    <span class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button class="btn btn-primary bootstrap-touchspin-down" type="button">-</button></span><input type="text" class="quantity-counter form-control" value="1"><span class="input-group-btn input-group-append bootstrap-touchspin-injected"><button class="btn btn-primary bootstrap-touchspin-up" type="button">+</button></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <p class="text-muted"><strong>Color :</strong> Yellow</p>
-                            <p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-                            <h5 class="ml-auto">$1,190</h5>
-                        </div>
-                    </div>
-                </div>
-                <span class="btn btn-cancel text-white bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-                    <span class="lnr lnr-cross"></span>
-                </span>
-            </div> -->
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row w-100 my-md-3 pl-md-3">
-        <div class="col-md-6 bg-dark pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-    </div>
-
-    <div class="row w-100 my-md-3 pl-md-3">
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-        <div class="col-md-6 bg-primary pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-    </div>
-
-    <div class="row w-100 my-md-3 pl-md-3">
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-    </div>
-
-    <div class="row w-100 my-md-3 pl-md-3">
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-        <div class="col-md-6 bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 py-3">
-                <h2 class="display-5">Another headline</h2>
-                <p class="lead">And an even wittier subheading.</p>
-            </div>
-            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-            </div>
-        </div>
-    </div>
-</div>
+        </section>
+    </section>

@@ -855,9 +855,8 @@ $width: $height * 2;
 // .drag-target
 .view-container {
 	width: 50rem;
-	height: 50vmin;
 	display: flex;
-	border-radius: 4px;
+	border-radius: 1rem;
 	overflow: hidden;
 	box-shadow: 0px 10px 40px 20px rgba(0, 0, 0, 0.1);
 	background-size: contain !important;

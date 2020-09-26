@@ -1,11 +1,8 @@
 ---
 title: Shop
 ---
-<div class="bread-overlay bread-overlay-shop"></div>
 <div class="container p-0">
     <div class="app-content content">
-        <div class="content-overlay"></div>
-        <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-detached content-right">
                 <div class="content-body">
@@ -18,7 +15,7 @@ title: Shop
                                     <span class="navbar-toggler-icon"></span>
                                 </button> -->
                                     <div class="result-toggler d-flex align-items-center">
-                                        <button class="navbar-toggler btn bg-white d-flex align-items-center py-2 "
+                                        <button class="navbar-toggler btn bg-white d-flex align-items-center py-2"
                                             id="toggle-filter">
                                             <span class="lnr lnr-menu"></span>
                                         </button>
@@ -26,23 +23,27 @@ title: Shop
                                             16285 results found
                                         </div>
                                     </div>
-                                    <div class="view-options d-flex ">
-                                        <div class="bg-white mr-3 p-1 rounded">
-                                            <select class="bg-white form-control custom-select border-0">
-                                                <option selected="" data-select2-id="2">Featured</option>
-                                                <option value="1">Lowest</option>
-                                                <option value="2">Highest</option>
-                                            </select>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <form class="p-2 shadow-sm bg-white rounded my-2" action="#">
+                                                <div class="input-group">
+                                                    <input class="form-control border-0 mr-2 " type="search"
+                                                        placeholder="Search tools and resources...">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-primary rounded" type="submit"><i
+                                                                class="ti-search"></i>Search</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <div class="d-flex">
-                                            <button
-                                                class="btn bg-white navbar-toggler btn bg-white d-flex align-items-center">
-                                                <ion-icon name="grid-outline"></ion-icon>
-                                            </button>
-                                            <button
-                                                class="btn bg-white navbar-toggler btn bg-white d-flex align-items-center ml-3">
-                                                <ion-icon name="list-outline"></ion-icon>
-                                            </button>
+                                        <div class="col-md-4">
+                                            <div class="bg-white mr-3 p-1 rounded">
+                                                <select class="bg-white form-control custom-select border-0">
+                                                    <option selected="" data-select2-id="2">Featured</option>
+                                                    <option value="1">Lowest</option>
+                                                    <option value="2">Highest</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -52,19 +53,7 @@ title: Shop
                     <!-- Ecommerce Search Bar Starts -->
                     <section id="ecommerce-searchbar">
                         <div class="row mt-1">
-                            <div class="col-sm-12">
-                                <form class="p-2 shadow-sm bg-white rounded my-2" action="#">
-                                    <div class="input-group">
-                                        <input class="form-control border-0 mr-2 " type="search"
-                                            placeholder="Search tools and resources...">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary rounded" type="submit"><i
-                                                    class="ti-search"></i>
-                                                Search</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
+
                         </div>
                     </section>
                     <!-- Ecommerce Search Bar Ends -->
