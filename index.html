@@ -8,12 +8,10 @@
 	<title></title>
 	<!-- Google Font -->
 	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
-	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="assets/icons/themify/themify-icons.css" />
 	<link rel="stylesheet" href="assets/icons/linearicons/style.css" />
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body class="dark-mode">
@@ -176,11 +174,6 @@
 					</li>
 				</ul>
 			</li>
-	
-			<!-- <li class="nav-item ml-md-auto lr-only">
-				<a class="dropdown-item bg-primary text-white" href="app-calender.html" data-toggle="dropdown"
-					data-i18n="Calender">Get our App</a>
-			</li> -->
 			<li class="dropdown dropdown-language nav-item">
 				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
@@ -191,6 +184,12 @@
 							class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
 						data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
 						href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+				</div>
+			</li>
+			<li class="nav-item ml-3 lr-only">
+				<div class="switch" style="height: 2rem;margin-top: -1.3rem;">
+					<input class="switch" id="switch" name="switch" type="checkbox">
+					<label for="switch"></label>
 				</div>
 			</li>
 		</nav>
@@ -574,13 +573,13 @@
 		                        </li>
 		                    </ul>
 		                </aside>            <div id="slider" class="col-md-8">
-		                    <div id="carousel1_indicator" class="slider-home-banner carousel slide" data-ride="carousel">
+		                    <div id="carousel1_indicator" class="slider-home-banner carousel slide overflow-hidden" data-ride="carousel">
 		                        <ol class="carousel-indicators">
 		                            <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
 		                        </ol>
 		                        <div class="carousel-inner">
 		                            <div class="carousel-item rounded active ">
-		                                <div class="rounded position-absolute px-3" style="z-index: 1; top: 30%;">
+		                                <div class="rounded position-absolute pl-5" style="z-index: 1; top: 33%;">
 		                                    <h2 class="title">Comsumer Electronics</h2>
 		                                    <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
 		                                    <a href="#" class="btn btn-primary">Explore Category</a>
@@ -590,10 +589,11 @@
 		                        </div>
 		                        <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
 		                            <span class="lnr lnr-chevron-left"></span>
+		                            <span class="lnr lnr-chevron-left px-2 py-3 btn btn-primary ml-2 rounded-right"></span>
 		                            <span class="sr-only">Previous</span>
 		                        </a>
 		                        <a class="carousel-control-next" href="#carousel1_indicator" role="button" data-slide="next">
-		                            <span class="lnr lnr-chevron-right"></span>
+		                            <span class="lnr lnr-chevron-right px-2 py-3 btn btn-primary mr-4 rounded-left"></span>
 		                            <span class="sr-only">Next</span>
 		                        </a>
 		                    </div>
@@ -605,8 +605,8 @@
 		                                src="assets/icons/svg/color-shop-outline.svg"></ion-icon>
 		                            <h6 class="text-center">start Selling with us</h6>
 		                            <div class="d-flex justify-content-around mb-2">
-		                                <a href="#" class="btn btn-light btn-sm"> sign in</a>
-		                                <a href="#" class="btn btn-primary btn-sm"> Sign up </a>
+		                                <a href="/auth-login.html" class="btn btn-light btn-sm"> sign in</a>
+		                                <a href="/auth-register.html" class="btn btn-primary btn-sm"> Sign up </a>
 		                            </div>
 		                        </div>
 		                        <div class="card-banner flex-column border-bottom py-2">
@@ -628,7 +628,7 @@
 		    <section class="card mb-4 shadow-sm ">
 		        <div class="card-body">
 		            <div class="row">
-		                
+		
 		                <div class="col-md-3">
 		                    <div>
 		                        <h4>FLASH SALE</h4>
@@ -659,7 +659,7 @@
 		                    </div>
 		                    <button class="btn btn-primary mt-3">View more</button>
 		                </div>
-		                
+		
 		                <div class="col-md-9">
 		                    <div class="owl-slider">
 		                        <div id="carousel" class="owl-carousel">
@@ -1238,23 +1238,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/asus-laptop.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/asus-laptop.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1278,23 +1277,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/polo-shirt.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1318,23 +1316,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/cctv-black.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/cctv-black.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1358,23 +1355,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/men-casual-shoes.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/men-casual-shoes.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1398,23 +1394,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/white-drone.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/white-drone.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1438,23 +1433,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/printer.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/printer.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1478,23 +1472,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/cctv-top.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/cctv-top.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1518,23 +1511,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/black-speaker.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/black-speaker.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1558,23 +1550,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/smart-tv-43.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/smart-tv-43.png" alt="43 inch UHD 4k tv smart television led tv"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1598,23 +1589,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/washing_machine_PNG15614.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/washing_machine_PNG15614.png" alt="New Shoe Washing Machine Remote Control Small "></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1638,23 +1628,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/headphones_PNG7660.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/headphones_PNG7660.png" alt="4.2 Stereo Earphone Headset Wireless Magnetic"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1678,23 +1667,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/macbook-pro-13.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/macbook-pro-13.png" alt="Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1718,23 +1706,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/iphone-11-gray.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/iphone-11-gray.png" alt="iPhone Se 2020 Plus 11 Pro"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1758,23 +1745,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/stopwatch_PNG152.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/stopwatch_PNG152.png" alt="Digital Handheld Sports Stopwatch"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1798,23 +1784,22 @@
 		                <div class="card-content">
 		                    <div class="btn-group-vertical position-absolute right-0">
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" src="assets/icons/svg/cart.svg"></ion-icon>
+		                            <span class="lnr lnr-cart card-icon"></span>
 		                        </span>
 		                        <span class="btn bg-white p-2">
-		                            <ion-icon class="card-icon" name="heart-outline"></ion-icon>
+		                            <span class="lnr lnr-heart card-icon"></span>
 		                        </span>
 		                    </div>
 		                    <div class="item-img text-center">
 		                        <a href="product-details.html">
-		                            <img class="img-fluid" src="assets/images/products/double-speaker.png"
-		                                alt="img-placeholder"></a>
+		                            <img class="img-fluid" src="assets/images/products/double-speaker.png" alt="Ecobee Smart Thermostat with Voice Control"></a>
 		                    </div>
 		                    <div class="card-body">
 		                        <div class="item-wrapper">
 		                            <div class="item-rating">
 		                                <div class="badge badge-primary badge-md">
 		                                    <span>4</span>
-		                                    <ion-icon class="text-white" src="assets/icons/svg/star.svg"></ion-icon>
+		                                    <span class="lnr lnr-picture"></span>
 		                                </div>
 		                            </div>
 		                            <div>
@@ -1838,14 +1823,14 @@
 		    </section>
 		</div>
 	<div class="cart-overlay d-none"></div>
-	<div id="shopping-cart" class="sidenav">
+	<div id="shopping-cart" class="sidenav bg-white">
 		<div class="d-flex">
 			<div class="px-3 cart-wrapper w-100">
 				<span class="mx-4">
 					<a id="cart-close" class="closebtn">&times;</a>
 					<h4>Shopping Cart</h4>
 				</span>
-				<div class="media bg-light p-3 rounded mb-3">
+				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
@@ -1873,11 +1858,11 @@
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
 						<span class="lnr lnr-cross"></span>
 					</span>
 				</div>
-				<div class="media bg-light p-3 rounded mb-3">
+				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
@@ -1905,11 +1890,11 @@
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
 						<span class="lnr lnr-cross"></span>
 					</span>
 				</div>
-				<div class="media bg-light p-3 rounded mb-3">
+				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
@@ -1937,33 +1922,33 @@
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
 						<span class="lnr lnr-cross"></span>
 					</span>
 				</div>
-				<div class="bg-light p-3">
+				<div>
 						<div class="text-left cart-summary">
 							<h4>Shopping summary</h4>
 						</div>
 					
 						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Sub Total :</h6>
-							<h4 class="ml-auto">$489.00</h4>
+							<h5 class="ml-auto">$489.00</h5>
 						</div>
 					
 						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Discount :</h6>
-							<h4 class="ml-auto">$489.00</h4>
+							<h5 class="ml-auto">$489.00</h5>
 						</div>
 					
 						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Shipping & Handling :</h6>
-							<h4 class="ml-auto">$489.00</h4>
+							<h5 class="ml-auto">$489.00</h5>
 						</div>
 					
 						<div class="cart-summary py-2 d-flex">
 							<h6 class="mb-0">Tax :</h6>
-							<h4 class="ml-auto">$489.00</h4>
+							<h5 class="ml-auto">$489.00</h5>
 						</div>
 					
 						<div class="cart-summary py-2 d-flex">
@@ -1979,7 +1964,6 @@
 			</div>
 		</div>
 	</div>
-	
 	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
 	<section class="section-subscribe bg-white p-3">
 		<div class="container">
@@ -2026,7 +2010,7 @@
 					<aside class="col-sm-3 col-md-2">
 						<h6 class="title">About</h6>
 						<ul class="list-unstyled">
-							<li><a href="#">About us</a></li>
+							<li><a href="/page-about.html">About us</a></li>
 							<li><a href="#">Services</a></li>
 							<li><a href="#">Rules and terms</a></li>
 							<li><a href="#">Blogs</a></li>
@@ -2044,11 +2028,11 @@
 					<aside class="col-sm-3 col-md-2">
 						<h6 class="title">For users</h6>
 						<ul class="list-unstyled">
-							<li><a href="#"> User Login </a></li>
-							<li><a href="#"> User register </a></li>
-							<li><a href="#"> Account Setting </a></li>
-							<li><a href="#"> My Orders </a></li>
-							<li><a href="#"> My Wishlist </a></li>
+							<li><a href="/auth-login.html"> User Login </a></li>
+							<li><a href="/auth-register.html"> User register </a></li>
+							<li><a href="/profile-settings.html"> Account Setting </a></li>
+							<li><a href="/profile-orders.html"> My Orders </a></li>
+							<li><a href="/profile-wishlist.html"> My Wishlist </a></li>
 						</ul>
 					</aside>
 					<aside class="col-sm-2 col-md-2">
@@ -2076,7 +2060,7 @@
 <script src="assets/js/bundle.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script>
 var containerWidth = null,
     box1Width = 0.5,
@@ -2226,6 +2210,7 @@ $(function(){
 		$('.content-body').toggleClass('ml-0')
 		$('.grid-view').toggleClass('grid-view-sm')
 		$('.sidebar-shop').toggleClass('w-0')
+		$('.sidebar-shop').toggleClass('w-260')
 	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())
