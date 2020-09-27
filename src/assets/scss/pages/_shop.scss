@@ -125,9 +125,7 @@ $wishlist-bg: #f6f6f6;
 }
 
 .sidebar-shop {
-	width: $sidebar-width;
 	z-index: 4;
-	transition: 0.5s;
 	.card {
 		width: $sidebar-width;
 	}

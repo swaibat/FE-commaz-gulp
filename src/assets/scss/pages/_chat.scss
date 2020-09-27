@@ -13,7 +13,7 @@
 //Variables
 $chat-image-back-color: #dfdbe5;
 
-.chat-application {
+
 	.content-area-wrapper .content-right .content-wrapper {
 		padding: 0;
 	}
@@ -357,7 +357,7 @@ $chat-image-back-color: #dfdbe5;
 			right: 2.35rem;
 		}
 	}
-}
+
 @include media-breakpoint-down(md) {
 	.content-right {
 		width: 100%;

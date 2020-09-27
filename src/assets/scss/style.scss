@@ -398,7 +398,7 @@ svg {
 	top: 0;
 	right: 0;
 	overflow-x: hidden;
-	background: $body-bg;
+	// background: $body-bg;
 	transition: width 0.5s;
 }
 
@@ -495,25 +495,37 @@ svg {
 .owl-nav {
 	button {
 		position: absolute;
-		top: 50%;
 		background-color: #000;
 		color: #fff;
 		margin: 0;
 		transition: all 0.3s ease-in-out;
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		transform: translateY(-50%);
-		background: rgba(255, 255, 255, 0.38) !important;
+		background: $primary !important;
+		font-size: 2rem !important;
 		&:focus {
 			outline: none;
 		}
+		&.owl-prev {
+			left: 0;
+			border-bottom-right-radius: .4rem;
+			border-top-right-radius: .4rem;
+			span {
+				padding: .5rem !important;
+			}
+			
+		}
+		&.owl-next {
+			right: 0;
+			border-bottom-left-radius: .4rem;
+			border-top-left-radius: .4rem;
+			span {
+				padding: .5rem !important;
+			}
+		}
 	}
-	button.owl-prev {
-		left: 0;
-	}
-	button.owl-next {
-		right: 0;
-	}
+	
 }
 .owl-dots {
 	text-align: center;
@@ -532,6 +544,28 @@ svg {
 	button.owl-dot.active {
 		background-color: #000;
 	}
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 0%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
 }
 
 .list-group-item {
@@ -752,6 +786,10 @@ $width: $height * 2;
 .w-0 {
 	width: 0px !important;
 	overflow: hidden;
+	transition: 0.5s;
+}
+.w-260 {
+	width: 260px;
 	transition: 0.5s;
 }
 

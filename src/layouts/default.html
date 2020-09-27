@@ -10,12 +10,10 @@
 	<title>{{ title }}</title>
 	<!-- Google Font -->
 	<link rel="icon" type="image/x-icon" href="{{root}}assets/images/favicon.ico"/>
-	<link rel="stylesheet" href="{{root}}assets/css/style.css" />
+	<link rel="stylesheet" href="{{root}}assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="{{root}}assets/icons/themify/themify-icons.css" />
 	<link rel="stylesheet" href="{{root}}assets/icons/linearicons/style.css" />
-	<script src="{{root}}assets/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="{{root}}assets/css/style.css" />
 </head>
 
 <body class="dark-mode">
@@ -26,7 +24,7 @@
 <script src="{{root}}assets/js/bundle.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="{{root}}assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script>
 var containerWidth = null,
     box1Width = 0.5,
@@ -176,6 +174,7 @@ $(function(){
 		$('.content-body').toggleClass('ml-0')
 		$('.grid-view').toggleClass('grid-view-sm')
 		$('.sidebar-shop').toggleClass('w-0')
+		$('.sidebar-shop').toggleClass('w-260')
 	})
 	$('#category-nav .nav-item').mouseover(()=>{
 			$('.drop-list').css('height', $('.carousel-inner').height()).css('width', $('.carousel-inner').outerWidth())

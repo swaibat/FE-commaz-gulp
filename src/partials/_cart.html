@@ -1,0 +1,80 @@
+<div class="cart-overlay d-none"></div>
+<div id="shopping-cart" class="sidenav bg-white">
+	<div class="d-flex">
+		<div class="px-3 cart-wrapper w-100">
+			<span class="mx-4">
+				<a id="cart-close" class="closebtn">&times;</a>
+				<h4>Shopping Cart</h4>
+			</span>
+			{{#each cart}}
+			<div class="media bg-light p-3 rounded mb-3 border">
+				<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}{{this.image}}" alt="{{this.title}}">
+				<div class="media-body">
+					<div class="item-name ml-2 text-left">
+						<a href="app-ecommerce-details.html">{{this.title}}</a>
+						<span></span>
+						<div class="d-flex">
+							<p class="text-success">In Stock</p>
+							<div class="item-quantity mb-2 ml-auto">
+								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+									<span
+										class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-down"
+											type="button">-</button></span><input type="text"
+										class="quantity-counter form-control" value="1" /><span
+										class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+											class="btn btn-primary bootstrap-touchspin-up"
+											type="button">+</button></span>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex">
+							<p class="text-muted"><strong>Color :</strong> Yellow</p>
+							<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+							<h5 class="ml-auto">$1,190</h5>
+						</div>
+					</div>
+				</div>
+				<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+					<span class="lnr lnr-cross"></span>
+				</span>
+			</div>
+			{{/each}}
+			<div>
+					<div class="text-left cart-summary">
+						<h4>Shopping summary</h4>
+					</div>
+				
+					<div class="cart-summary py-2 d-flex">
+						<h6 class="mb-0">Sub Total :</h6>
+						<h5 class="ml-auto">$489.00</h5>
+					</div>
+				
+					<div class="cart-summary py-2 d-flex">
+						<h6 class="mb-0">Discount :</h6>
+						<h5 class="ml-auto">$489.00</h5>
+					</div>
+				
+					<div class="cart-summary py-2 d-flex">
+						<h6 class="mb-0">Shipping & Handling :</h6>
+						<h5 class="ml-auto">$489.00</h5>
+					</div>
+				
+					<div class="cart-summary py-2 d-flex">
+						<h6 class="mb-0">Tax :</h6>
+						<h5 class="ml-auto">$489.00</h5>
+					</div>
+				
+					<div class="cart-summary py-2 d-flex">
+						<h3 class="mb-0">Grand Total :</h3>
+						<h3 class="ml-auto">$489.00</h3>
+					</div>
+				
+					<div class="cart-summary py-2">
+							<a href="{{root}}/checkout.html" class="btn btn-success btn-block">Checkout</a>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</div>

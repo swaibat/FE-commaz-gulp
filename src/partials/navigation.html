@@ -138,11 +138,6 @@
 				</li>
 			</ul>
 		</li>
-
-		<!-- <li class="nav-item ml-md-auto lr-only">
-			<a class="dropdown-item bg-primary text-white" href="app-calender.html" data-toggle="dropdown"
-				data-i18n="Calender">Get our App</a>
-		</li> -->
 		<li class="dropdown dropdown-language nav-item">
 			<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
 				aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
@@ -155,6 +150,14 @@
 					href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
 			</div>
 		</li>
+		{{#ifpage 'index'}}
+		<li class="nav-item ml-3 lr-only">
+			<div class="switch" style="height: 2rem;margin-top: -1.3rem;">
+				<input class="switch" id="switch" name="switch" type="checkbox">
+				<label for="switch"></label>
+			</div>
+		</li>
+		{{/ifpage}}
 	</nav>
 </div>
 {{/unlesspage}}

@@ -1,7 +1,7 @@
 ---
 title: Shop
 ---
-<div class="container p-0">
+<div class="container p-0 mt-n4">
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-detached content-right">
@@ -9,11 +9,8 @@ title: Shop
                     <!-- Ecommerce Content Section Starts -->
                     <section id="ecommerce-header">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-md-6">
                                 <div class="ecommerce-header-items">
-                                    <!-- <button class="navbar-toggler text-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button> -->
                                     <div class="result-toggler d-flex align-items-center">
                                         <button class="navbar-toggler btn bg-white d-flex align-items-center py-2"
                                             id="toggle-filter">
@@ -23,53 +20,31 @@ title: Shop
                                             16285 results found
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-5">
-                                            <form class="p-2 shadow-sm bg-white rounded my-2" action="#">
-                                                <div class="input-group">
-                                                    <input class="form-control border-0 mr-2 " type="search"
-                                                        placeholder="Search tools and resources...">
-                                                    <div class="input-group-append">
-                                                        <button class="btn btn-primary rounded" type="submit"><i
-                                                                class="ti-search"></i>Search</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="bg-white mr-3 p-1 rounded">
-                                                <select class="bg-white form-control custom-select border-0">
-                                                    <option selected="" data-select2-id="2">Featured</option>
-                                                    <option value="1">Lowest</option>
-                                                    <option value="2">Highest</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ml-auto">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Price: High to low</option>
+                                        <option>Price: Low to high</option>
+                                        <option>Latest</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <!-- Ecommerce Search Bar Starts -->
-                    <section id="ecommerce-searchbar">
-                        <div class="row mt-1">
-
-                        </div>
-                    </section>
-                    <!-- Ecommerce Search Bar Ends -->
-
                     <!-- Ecommerce Products Starts -->
                     <section id="ecommerce-products" class="grid-view">
                         {{#each allproducts}}
                         <div class="card ecommerce-card shadow-sm">
                             <div class="card-content">
                                 <div class="btn-group-vertical position-absolute right-0">
-                                    <span class="btn bg-white p-2">
-                                        <ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg"></ion-icon>
-                                    </span>
-                                    <span class="btn bg-white p-2">
-                                        <ion-icon class="card-icon" name="heart-outline"></ion-icon>
-                                    </span>
+                                    <button class="btn btn-white p-2">
+                                        <span class="lnr lnr-cart card-icon"></span>
+                                    </button>
+                                    <button class="btn btn-white p-2">
+                                        <span class="lnr lnr-heart card-icon"></span>
+                                    </button>
                                 </div>
                                 <div class="item-img text-center">
                                     <a href="product-details.html">
@@ -80,7 +55,7 @@ title: Shop
                                         <div class="item-rating">
                                             <div class="badge badge-primary badge-md">
                                                 <span>4</span>
-                                                <ion-icon class="text-white" src="{{root}}assets/icons/svg/star.svg">
+                                                <span class="lnr lnr-picture"></span>
                                                 </ion-icon>
                                             </div>
                                         </div>
