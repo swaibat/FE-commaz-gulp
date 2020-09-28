@@ -1,0 +1,25 @@
+<li class="list-group-item border-0 d-flex align-items-center pt-4">
+	<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
+	<h1 class="card-title mb-0">Review Order</h1>
+	<span class="ml-auto d-none" id="orderReview" data-toggle="collapse" data-target="#orderReview"
+		aria-expanded="false" aria-controls="orderReview" aria-controls="orderReview">
+	</span>
+</li>
+<div class="collapse" aria-labelledby="orderReview" data-parent="#accordionExample">
+	<div class="p-3 bg-white">
+		<div class="btn-group-toggle" data-toggle="buttons">
+			<label class="btn select-payment-btn shadow-sm border active mb-3">
+				<img height="50" src="../assets/images/payments/PayPal.svg" alt="" />
+				<input type="radio" name="options" id="option1" autocomplete="off" checked />
+			</label>
+			<label class="btn select-payment-btn shadow-sm border mb-3">
+				<img height="50" src="../assets/images/payments/stripe-4.svg" alt="" />
+				<input type="radio" name="options" id="option2" autocomplete="off" />
+			</label>
+			<label class="btn select-payment-btn shadow-sm border mb-3">
+				<img height="50" src="../assets/images/payments/apple-pay.svg" alt="" />
+				<input type="radio" name="options" id="option3" autocomplete="off" />
+			</label>
+		</div>
+	</div>
+</div>

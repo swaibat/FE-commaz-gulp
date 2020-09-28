@@ -1,0 +1,29 @@
+<li class="list-group-item border-0 d-flex align-items-center pt-4">
+	<ion-icon class="p-3 btn-lg btn-primary ml-n5 mr-3" name="wallet-outline"></ion-icon>
+	<h1 class="card-title mb-0">Payment options</h1>
+	<span class="ml-auto d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
+		aria-controls="payments" aria-controls="payments">
+		Edit Payment Options <span class="lnr lnr-pencil mr-2 mb-n2"></span></span>
+</li>
+<div id="payments" class="collapse" aria-labelledby="payments" data-parent="#accordionExample">
+	<span class="d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
+		aria-controls="payments" aria-controls="payments">
+		<img height="30" src="../assets/images/payments/PayPal.svg" alt="" /> Paypal
+	</span>
+	<div class="p-3 bg-white">
+		<div class="btn-group-toggle" data-toggle="buttons">
+			<label class="btn select-payment-btn shadow-sm border active mb-3">
+				<img height="50" src="../assets/images/payments/PayPal.svg" alt="" />
+				<input type="radio" name="options" id="option1" autocomplete="off" checked />
+			</label>
+			<label class="btn select-payment-btn shadow-sm border mb-3">
+				<img height="50" src="../assets/images/payments/stripe-4.svg" alt="" />
+				<input type="radio" name="options" id="option2" autocomplete="off" />
+			</label>
+			<label class="btn select-payment-btn shadow-sm border mb-3">
+				<img height="50" src="../assets/images/payments/apple-pay.svg" alt="" />
+				<input type="radio" name="options" id="option3" autocomplete="off" />
+			</label>
+		</div>
+	</div>
+</div>

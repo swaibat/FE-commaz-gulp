@@ -1,0 +1,54 @@
+<li class="list-group-item border-0 d-flex align-items-center pb-4">
+	<span class="lnr lnr-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
+	<h1 class="card-title mb-0">Personal Details</h1>
+	<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
+		aria-controls="personalDetails">
+		Edit personal details <span class="lnr lnr-pencil mr-2 mb-n2"></span>
+	</span>
+
+</li>
+<div>
+	<div class="px-3 bg-white">
+		<span class="d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
+			aria-controls="personalDetails">
+			<h5>Rumbiiha Swaibu</h5>
+			<h5>rswaib@gmail.com</h5>
+		</span>
+		<form id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="firstname">First Name</label>
+					<input type="text" class="form-control" id="firstname" />
+				</div>
+				<div class="form-group col-md-6">
+					<label for="lastname">Last Name</label>
+					<input type="text" class="form-control" id="lastname" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email address</label>
+				<input type="text" class="form-control" id="email" aria-describedby="emailHelp" />
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+				<label class="form-check-label" for="exampleCheck1" data-toggle="collapse" href="#collapseExample"
+					role="button" aria-expanded="false" aria-controls="collapseExample">I want to create an
+					Account</label>
+			</div>
+			<div class="collapse" id="collapseExample">
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" />
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center justify-content-between">
+				<button type="submit" id="to-shopping" class="btn btn-outline-primary mt-3" data-toggle="collapse"
+					data-target="#personalDetails" aria-expanded="true" aria-controls="personalDetails" disabled>
+					Continue to Shipping
+				</button>
+				<span>Or</span>
+				<a href="/login" class="btn btn-primary mt-3">Have account Login</a>
+			</div>
+		</form>
+	</div>
+</div>

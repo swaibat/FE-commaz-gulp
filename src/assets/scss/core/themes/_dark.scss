@@ -89,7 +89,7 @@ body {
 			border: 1px solid lighten($color: $component-bg, $amount: 10);
 		}
 
-		.form-control {
+		.form-control,.select2-container--default .select2-selection--single {
 			background: #0e0e0f !important;
 			color: $gray-500 !important;
 			border: none !important;
@@ -102,6 +102,10 @@ body {
 		}
 		.table-bordered th, .table-bordered td {
 			border: 1px solid $gray-700;
+		}
+		.dool-toggler {
+			color: rgba(255, 255, 255, 0.5);
+			border-color: rgba(255, 255, 255, 0.1);
 		}
 	}
 

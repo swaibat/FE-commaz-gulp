@@ -1,0 +1,96 @@
+<li class="list-group-item border-0 d-flex align-items-center py-4">
+	<span class="lnr lnr-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
+	<h1 class="card-title mb-0">Shipping</h1>
+	<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping" aria-expanded="false"
+		aria-controls="shipping" aria-controls="shipping">
+		Edit Shipping details <span class="lnr lnr-pencil mr-2 mb-n2"></span></span>
+</li>
+<div>
+	<div class="p-3 bg-white">
+		<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping"
+			aria-expanded="false" aria-controls="shipping" aria-controls="shipping">
+			<ul class="list-group">
+				<li class="list-group-item border-0">Rumbiiha Swaibu</li>
+				<li class="list-group-item border-0">55 East 52nd Street</li>
+				<li class="list-group-item border-0">21st Floor</li>
+				<li class="list-group-item border-0">New York, NY</li>
+				<li class="list-group-item border-0">+89 5454443</li>
+				<li class="list-group-item border-0"><h4>Shipping Method</h4></li>
+				<li class="list-group-item border-0">Fixed | $10.0</li>
+			</ul>
+		</span>
+
+		<form class="col-md-12" id="shipping" class="collapse" aria-labelledby="headingTwo"
+			data-parent="#accordionExample">
+			<!-- Shipping Information -->
+			<div class="form-group row">
+				<label for="recipient_name" class="col-md-5 mr-0">Recipient Name</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="recipient_name" name="recipient_name"
+						value="Jane Doe" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="line1" class="col-md-5 mr-0">Address Line 1</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="line1" name="line1" value="55 East 52nd Street" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="line2" class="col-md-5 mr-0">Address Line 1</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="line2" name="line2" value="21st Floor" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="city" class="col-md-5 mr-0">City</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="city" name="city" value="New York" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="state" class="col-md-5 mr-0">State</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="state" name="state" value="NY" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="zip" class="col-md-5 mr-0">Postal Code</label>
+				<div class="col-md-7">
+					<input class="form-control" type="text" id="zip" name="zip" value="10022" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="countrySelect" class="col-md-5 mr-0">Country</label>
+				<div class="col-md-7">
+					<select class="form-control select2" name="countrySelect" id="countrySelect">
+						{{#each countries}}
+						<option value="{{this.alpha2Code}}">{{this.name}}</option>
+						{{/each}}
+					</select>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="shippingMethod" class="col-md-5 mr-0">Shipping Type</label>
+				<div class="col-md-7">
+					<select class="form-control select2" name="shippingMethod" id="shippingMethod">
+						<optgroup label="United Parcel Service" style="font-style: normal">
+							<option value="Worldwide Expedited">Worldwide Expedited - $8.00</option>
+							<option value="Worldwide Express Saver">Worldwide Express Saver - $4.00
+							</option>
+						</optgroup>
+						<optgroup label="Flat Rate" style="font-style: normal">
+							<option value="Fixed" selected>Fixed - $2.00</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between">
+				<button type="submit" id="to-payments" class="btn btn-success" data-toggle="collapse"
+					data-target="#payments" aria-expanded="true" aria-controls="payments" disabled>
+					Continue to Shipping
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
