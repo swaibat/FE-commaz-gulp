@@ -17,11 +17,10 @@
 
 <body class="dark-mode">
 	
-	<!-- container .// -->
-	<nav class="navbar fixed-top">
-		<div class="container d-flex justify-content-xs-around">
-			<div class="nav-item category-menu">
-				<a class="nav-link " href="/">
+	<nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
+		<div class="container">
+			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="nav-link logo" href="./">
 					<svg xmlns="http://www.w3.org/2000/svg" width="187.427" height="36.175" viewBox="0 0 187.427 36.175">
 					    <g id="Group_81" data-name="Group 81" transform="translate(-908.34 -1825.6)">
 					        <g id="Group_80" data-name="Group 80">
@@ -46,8 +45,151 @@
 					    </g>
 					</svg>			</a>
 			</div>
+			<button class="navbar-toggler dool-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="lnr lnr-menu"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="input-group search-bar mx-auto col-md-8">
+					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+					<div class="input-group-append">
+						<span class="lnr lnr-magnifier input-group-text"></span>
+					</div>
+				</div>
+				<div class="d-flex mt-2 mt-md-0">
+					<div class="dropdown dropdown-user mr-3">
+						<a class="dropdown-toggle nav-link dropdown-user-link py-0" href="#" data-toggle="dropdown">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-user"></span>
+							</div>
+							<small class="text lr-only"> My profile </small>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="profile.html">
+								<span class="lnr lnr-user mr-1"></span>
+								Edit Profile
+							</a><a class="dropdown-item" href="notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/">
+								<span class="lnr lnr-power-switch"></span>
+								Logout
+							</a>
+						</div>
+					</div>
+					<div class="widget-header mx-3">
+						<a href="profile-orders.html" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-store"></span>
+							</div>
+							<small class="text lr-only"> Orders </small>
+						</a>
+					</div>
+					<div class="widget-header ml-3">
+						<span id="cart-btn" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-cart"></span>
+							</div>
+							<small class="text lr-only ml-4"> Cart </small>
+							<span class="c-badge badge-cart">3</span>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</nav>
+	<div class="bg-white px-4 py-2 border mt-r-2">
+		<nav class="nav d-flex justify-content-between container">
+			<li class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
+					<span class="lnr lnr-list pr-1"></span>Genre</a>
+				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4 category-dropdown">
+					<div class="row col-md-10">
+						<div class="col-md-3 mb-3">
+							<h6 class="font-weight-bold">Electronics & Computers</h6>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Cell Phones</a>
+								<a class="nav-link" href="#">TV, Audio & Visual</a>
+								<a class="nav-link" href="#">Computers & Laptops</a>
+								<a class="nav-link" href="#">Gaming & Consoles</a>
+								<a class="nav-link" href="#">Computer Hardware & Accessories</a>
+								<a class="nav-link" href="#">Cameras</a>
+								<a class="nav-link" href="#">iPads & Tablets</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Fashion & Beauty</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Clothing</a>
+								<a class="nav-link" href="#">Shoes</a>
+								<a class="nav-link" href="#">Jewellery & Accessories</a>
+								<a class="nav-link" href="#">Health, Beauty & Cosmetics</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Vehicles</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Cars & Bakkies</a>
+								<a class="nav-link" href="#">Car Parts & Accessories</a>
+								<a class="nav-link" href="#">Motorcycles & Scooters</a>
+								<a class="nav-link" href="#">Trucks & Commercial Vehicles</a>
+								<a class="nav-link" href="#">Caravans & Trailers</a>
+								<a class="nav-link" href="#">Motorcycles & Scooters</a>
+								<a class="nav-link" href="#">Boats & Aviation</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Hobbies & Interests</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link active" href="#">Toys, Games & Remote Control</a>
+								<a class="nav-link" href="#">Musical Instruments</a>
+								<a class="nav-link" href="#">Art, Collectibles & Rare Items</a>
+								<a class="nav-link" href="#">Community Announcements</a>
+								<a class="nav-link" href="#">Books, CDs & DVDs</a>
+							</nav>
+						</div>
+					</div>
+					<div class="row col-md-2"></div>
+				</ul>
+			</li>
+			</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="shop.html">
+					<span class="lnr lnr-store px-1"></span>
+					<span>Shop</span>
+				</a>
+			</li>
+			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+					<span class="lnr lnr-question-circle pr-2"></span><span data-i18n="Apps">Help</span></a>
+				<ul class="dropdown-menu">
+					<li class="">
+						<a class="nav-link" href="/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="/knowledgebase.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>Knowledge base</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown dropdown-language nav-item">
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+						class="selected-language">English</span></a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag">
+					<a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i>
+						English</a><a class="dropdown-item" href="#" data-language="fr"><i
+							class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
+						data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
+						href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+				</div>
+			</li>
+		</nav>
+	</div>
+	
+	<!-- container .// -->
 	
 	<div class="bread-overlay"></div>
 	<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-4">
@@ -63,452 +205,561 @@
 		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
 				for="switch"></label></div>
 	</div>
-	<header class="section-header bg-white my-4 shadow-sm">
-	    <section class="header-main border-bottom">
-	        <div class="container">
-	            <div class="row align-items-center">
-	                <div class="col-lg-3 col-sm-4 col-md-4 col-5">
-	                    <a href="http://bootstrap-ecommerce.com" class="brand-wrap">
-	                        <img class="logo" src="../assets/images/logo.png">
-	                    </a> <!-- brand-wrap.// -->
-	                </div>
-	                <div class="col-lg-4 col-xl-5 col-sm-8 col-md-4 d-none d-md-block">
-	                    <form action="#" class="search-wrap">
-	                        <div class="input-group w-100">
-	                            <input type="text" class="form-control" style="width:55%;" placeholder="Search">
-	                            <div class="input-group-append">
-	                                <button class="btn btn-primary" type="submit">
-	                                    <i class="fa fa-search"></i>
-	                                </button>
-	                            </div>
-	                        </div>
-	                    </form> <!-- search-wrap .end// -->
-	                </div> <!-- col.// -->
-	                <div class="col-lg-5 col-xl-4 col-sm-8 col-md-4 col-7">
-	                    <div class="widgets-wrap d-flex justify-content-end">
-	                        <div class="widget-header">
-	                            <a href="#" class="ml-4 icontext">
-	                                <div class="icon"><i class="text-primary fa fa-lg fa-heart"></i></div>
-	                                <div class="text">
-	                                    <small class="text-muted">Favorites</small>
-	                                    <div>0 item</div>
-	                                </div>
-	                            </a>
-	                        </div> <!-- widget .// -->
-	                        <div class="widget-header">
-	                            <a href="#" class="ml-4 icontext">
-	                                <div class="icon"><i class="text-primary fa fa-lg fa-shopping-cart"></i></div>
-	                                <div class="text">
-	                                    <small class="text-muted">Cart</small>
-	                                    <div>3 items</div>
-	                                </div>
-	                            </a>
-	                        </div> <!-- widget .// -->
-	                        <div class="widget-header dropdown">
-	                            <a href="#" class="ml-4 icontext" data-toggle="dropdown" data-offset="20,10">
-	                                <div class="icon"><i class="text-primary fa fa-lg fa-user"></i></div>
-	                                <div class="text">
-	                                    <small class="text-muted">Hello.</small>
-	                                    <div>Login <i class="fa fa-caret-down"></i></div>
-	                                </div>
-	                            </a>
-	                            <div class="dropdown-menu dropdown-menu-right">
-	                                <a class="dropdown-item" href="#">Profile setting</a>
-	                                <a class="dropdown-item" href="#">My orders</a>
-	                                <hr class="dropdown-divider">
-	                                <a class="dropdown-item" href="#">Log out</a>
-	                            </div> <!--  dropdown-menu .// -->
-	                        </div> <!-- widget  dropdown.// -->
-	                    </div> <!-- widgets-wrap.// -->
-	                </div> <!-- col.// -->
-	            </div> <!-- row.// -->
-	        </div> <!-- container.// -->
-	    </section> <!-- header-main .// -->
+	<footer class="section-footer my-4">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md-4">
+						<article class="mr-3">
+							<img src="..//assets/images/logo.png" class="logo-footer">
+							<p class="mt-3">Some short text about company like You might remember the Dell computer commercials in which a youth reports this exciting news to his friends.</p>
+							<div>
+							    <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+							    <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+							    <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+							    <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+						</article>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">About</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#">About us</a></li>
+							<li> <a href="#">Services</a></li>
+							<li> <a href="#">Rules and terms</a></li>
+							<li> <a href="#">Blogs</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3 col-md-2">
+						<h6 class="title">Services</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#">Help center</a></li>
+							<li> <a href="#">Money refund</a></li>
+							<li> <a href="#">Terms and Policy</a></li>
+							<li> <a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-3  col-md-2">
+						<h6 class="title">For users</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#"> User Login </a></li>
+							<li> <a href="#"> User register </a></li>
+							<li> <a href="#"> Account Setting </a></li>
+							<li> <a href="#"> My Orders </a></li>
+							<li> <a href="#"> My Wishlist </a></li>
+						</ul>
+					</aside>
+					<aside class="col-sm-2  col-md-2">
+						<h6 class="title">Our app</h6>
+						<a href="#" class="d-block mb-2"><img src="..//assets/images/misc/appstore.png" height="40"></a>
+						<a href="#" class="d-block mb-2"><img src="..//assets/images/misc/playmarket.png" height="40"></a>
+					</aside>
+				</div> <!-- row.// -->
+			</section>	<!-- footer-top.// -->
 	
+			<section class="footer-copyright border-top">
+					<p class="float-left text-muted"> © 2019 Company  All rights resetved </p>
+					<p target="_blank" class="float-right text-muted">
+						<a href="#">Privacy &amp; Cookies</a> &nbsp;   &nbsp; 
+						<a href="#">Accessibility</a>
+					</p>
+			</section>
+		</div><!-- //container -->
+	</footer>
 	
-	    <nav class="navbar navbar-expand-md navbar-main border-bottom">
+	<!-- FOOTER 2 -->
+	
+	<footer class="section-footer my-4">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md">
+						<h6 class="title">Brands</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#">Adidas</a></li>
+							<li> <a href="#">Puma</a></li>
+							<li> <a href="#">Reebok</a></li>
+							<li> <a href="#">Nike</a></li>
+						</ul>
+					</aside>
+					<aside class="col-md">
+						<h6 class="title">Company</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#">About us</a></li>
+							<li> <a href="#">Career</a></li>
+							<li> <a href="#">Find a store</a></li>
+							<li> <a href="#">Rules and terms</a></li>
+							<li> <a href="#">Sitemap</a></li>
+						</ul>
+					</aside>
+					<aside class="col-md">
+						<h6 class="title">Help</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#">Contact us</a></li>
+							<li> <a href="#">Money refund</a></li>
+							<li> <a href="#">Order status</a></li>
+							<li> <a href="#">Shipping info</a></li>
+							<li> <a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-md">
+						<h6 class="title">Account</h6>
+						<ul class="list-unstyled">
+							<li> <a href="#"> User Login </a></li>
+							<li> <a href="#"> User register </a></li>
+							<li> <a href="#"> Account Setting </a></li>
+							<li> <a href="#"> My Orders </a></li>
+						</ul>
+					</aside>
+					<aside class="col-md">
+						<h6 class="title">Social</h6>
+						<ul class="list-unstyled">
+							<li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
+							<li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
+							<li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
+							<li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
+						</ul>
+					</aside>
+				</div> <!-- row.// -->
+			</section>	<!-- footer-top.// -->
+	
+			<section class="footer-bottom border-top row">
+				<div class="col-md-2">
+					<p class="text-muted"> © 2019 Company name </p>
+				</div>
+				<div class="col-md-8 text-md-center">
+					<span class="px-2">info@pixsellz.io</span>
+					<span class="px-2">+879-332-9375</span>
+					<span class="px-2">Street name 123, Avanue abc</span>
+				</div>
+				<div class="col-md-2 text-md-right text-muted">
+					<i class="fab fa-lg fa-cc-visa"></i>
+					<i class="fab fa-lg fa-cc-paypal"></i>
+					<i class="fab fa-lg fa-cc-mastercard"></i>
+				</div>
+			</section>
+		</div><!-- //container -->
+	</footer>
+	
+	<!-- FOOTER 3 -->
+	
+	<footer class="section-footer my-4">
+	    <section class="footer-top padding-y-sm">
 	        <div class="container">
-	            <form class="d-md-none my-2">
-	                <div class="input-group">
-	                    <input type="search" name="search" class="form-control" placeholder="Search" required="">
-	                    <div class="input-group-append">
-	                        <button type="submit" class="btn btn-secondary"> <i class="fas fa-search"></i> </button>
+	                <div class="row">
+	                    <div class="col-md-4">
+	                        <div class="form-inline">
+	                            <select class="form-control mr-2">
+	                                <option>USD</option>
+	                                <option>EUR</option>
+	                                <option>RUBL</option>
+	                            </select>
+	                            <select class="form-control">
+	                                <option>United States</option>
+	                                <option>Russia</option>
+	                                <option>Uzbekistan</option>
+	                            </select>
+	                        </div> <!-- form-inline.// -->
 	                    </div>
-	                </div>
-	            </form>
-	
-	            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown6">
-	                <span class="navbar-toggler-icon"></span>
-	            </button>
-	
-	            <div class="collapse navbar-collapse" id="dropdown6">
-	                <ul class="navbar-nav mr-auto">
-	                    <li class="nav-item dropdown">
-	                        <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown"> All
-	                            categories</a>
-	                        <div class="dropdown-menu">
-	                            <a class="dropdown-item" href="page-category.html">Foods and Drink</a>
-	                            <a class="dropdown-item" href="page-category.html">Home interior</a>
-	                            <a class="dropdown-item" href="page-category.html">Computer electronics</a>
-	                            <a class="dropdown-item" href="page-category.html">Clothing</a>
-	                            <a class="dropdown-item" href="page-category.html">Gardening and flowers</a>
-	                            <a class="dropdown-item" href="page-category.html">Hand made items</a>
-	                            <a class="dropdown-item" href="page-category.html">Smartphones</a>
-	                            <a class="dropdown-item" href="page-category.html">Digital products</a>
-	                        </div>
-	                    </li>
-	                    <li class="nav-item"> <a class="nav-link" href="page-deal.html">Hot deals</a> </li>
-	                    <li class="nav-item"> <a class="nav-link" href="page-blog.html">Markets</a> </li>
-	                    <li class="nav-item"> <a class="nav-link" href="page-blog.html">Blog</a> </li>
-	                </ul>
-	
-	                <ul class="navbar-nav">
-	                    <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-	                    <li class="nav-item"><a href="#" class="btn btn-primary ml-md-4"><i class="fa fa-plus"></i> Post
-	                            item </a></li>
-	                </ul>
-	            </div> <!-- collapse .// -->
-	        </div> <!-- container .// -->
-	    </nav>
-	
-	</header>
-	
-	<header class="section-header bg-white my-4 shadow-sm">
-	    <section class="navbar-light border-bottom">
-	        <div class="container">
-	            <nav class="d-flex align-items-center flex-column flex-md-row">
-	                <ul class="nav mr-md-auto">
-	                    <li class="nav-item dropdown">
-	                        <a href="#" class="nav-link pl-0 dropdown-toggle" data-toggle="dropdown"> USD </a>
-	                        <ul class="dropdown-menu small">
-	                            <li><a class="dropdown-item" href="#">EUR</a></li>
-	                            <li><a class="dropdown-item" href="#">AED</a></li>
-	                            <li><a class="dropdown-item" href="#">RUBL </a></li>
-	                        </ul>
-	                    </li>
-	                    <li class="nav-item dropdown">
-	                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Language </a>
-	                        <ul class="dropdown-menu small">
-	                            <li><a class="dropdown-item" href="#">English</a></li>
-	                            <li><a class="dropdown-item" href="#">Arabic</a></li>
-	                            <li><a class="dropdown-item" href="#">Russian </a></li>
-	                        </ul>
-	                    </li>
-	                </ul>
-	
-	                <ul class="nav ">
-	                    <li class="nav-item"><a href="#" class="nav-link"> <i class="fa fa-user-circle"></i> My Account </a>
-	                    </li>
-	                    <li class="nav-item"><a href="#" class="nav-link"> <i class="fa fa-heart"></i> Wishlist </a></li>
-	                    <li class="nav-item"><a href="#" class="nav-link"> <i class="fa fa-shopping-cart"></i> My Cart <span
-	                                class="badge badge-pill badge-danger">1</span> </a></li>
-	                </ul>
-	            </nav> <!-- nav .// -->
-	        </div> <!-- container //  -->
-	    </section> <!-- header-top .// -->
-	
-	    <section class="border-bottom">
-	        <nav class="navbar navbar-main  navbar-expand-lg navbar-light">
-	            <div class="container">
-	                <a class="navbar-brand" href="http://bootstrap-ecommerce.com"><img src="../assets/images/logo.png"
-	                        class="logo"></a>
-	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav2"
-	                    aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
-	                    <span class="navbar-toggler-icon"></span>
-	                </button>
-	
-	                <div class="collapse navbar-collapse" id="main_nav2">
-	                    <ul class="navbar-nav mr-auto">
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#">Home </a>
-	                        </li>
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#">Products</a>
-	                        </li>
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#">Supermarket</a>
-	                        </li>
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#">Electronics</a>
-	                        </li>
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#">Fitness sport</a>
-	                        </li>
-	                        <li class="nav-item dropdown">
-	                            <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-	                                href="http://example.com">More</a>
-	                            <div class="dropdown-menu">
-	                                <a class="dropdown-item" href="#">Foods and Drink</a>
-	                                <a class="dropdown-item" href="#">Home interior</a>
-	                                <div class="dropdown-divider"></div>
-	                                <a class="dropdown-item" href="#">Category 1</a>
-	                                <a class="dropdown-item" href="#">Category 2</a>
-	                                <a class="dropdown-item" href="#">Category 3</a>
-	                            </div>
-	                        </li>
-	                    </ul>
-	
-	                    <form class="form-inline my-2 my-lg-0">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control" placeholder="Search">
-	                            <div class="input-group-append">
-	                                <button class="btn btn-primary" type="submit">
-	                                    <i class="fa fa-search"></i>
-	                                </button>
-	                            </div>
-	                        </div>
-	                    </form>
-	
-	                </div> <!-- collapse .// -->
-	            </div> <!-- container .// -->
-	        </nav>
-	    </section> <!-- header-main .// -->
-	</header>
-	
-	
-	<header class="section-header bg-white my-4 shadow-sm">
-	    <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
-	    <div class="container">
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	      <div class="collapse navbar-collapse" id="navbarTop4">
-	        <ul class="navbar-nav mr-auto">
-	            <li class="nav-item dropdown">
-	                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">   Language </a>
-	                <ul class="dropdown-menu small">
-	                    <li><a class="dropdown-item" href="#">English</a></li>
-	                    <li><a class="dropdown-item" href="#">Arabic</a></li>
-	                    <li><a class="dropdown-item" href="#">Russian </a></li>
-	                </ul>
-	            </li>
-	            <li class="nav-item dropdown">
-	                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> USD </a>
-	                <ul class="dropdown-menu small">
-	                    <li><a class="dropdown-item" href="#">EUR</a></li>
-	                    <li><a class="dropdown-item" href="#">AED</a></li>
-	                    <li><a class="dropdown-item" href="#">RUBL </a></li>
-	                </ul>
-	            </li>
-	        </ul>
-	        <ul class="navbar-nav">
-	            <li><a href="#" class="nav-link"> <i class="fa fa-comment"></i> Live chat </a></li>
-	            <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
-	        </ul> <!-- list-inline //  -->
-	      </div> <!-- navbar-collapse .// -->
-	    </div> <!-- container //  -->
-	    </nav>
-	    
-	    <section class="header-main border-bottom">
-	        <div class="container">
-	    <div class="row row-sm align-items-center">
-	        <div class="col-lg-2 col-md-3 col-6">
-	            <a href="http://bootstrap-ecommerce.com" class="brand-wrap">
-	                <img class="logo" src="../assets/images/logo.png">
-	            </a> <!-- brand-wrap.// -->
-	        </div>
-	        <div class="col-lg col-sm col-md col-6 flex-grow-0">
-	            <div class="category-wrap dropdown d-inline-block float-md-right">
-	                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> 
-	                    <i class="fa fa-bars"></i> All category 
-	                </button>
-	                <div class="dropdown-menu">
-	                    <a class="dropdown-item" href="#">Machinery / Mechanical Parts / Tools </a>
-	                    <a class="dropdown-item" href="#">Consumer Electronics / Home Appliances </a>
-	                    <a class="dropdown-item" href="#">Auto / Transportation</a>
-	                    <a class="dropdown-item" href="#">Apparel / Textiles / Timepieces </a>
-	                    <a class="dropdown-item" href="#">Home &amp; Garden / Construction / Lights </a>
-	                    <a class="dropdown-item" href="#">Beauty &amp; Personal Care / Health </a> 
-	                </div>
-	            </div>  <!-- category-wrap.// -->
-	        </div> <!-- col.// -->
-	        <div class="col-lg  col-md-6 col-sm-12 col">
-	            <form action="#" class="search-header">
-	                <div class="input-group w-100">
-	                    <input type="text" class="form-control" style="width:60%;" placeholder="Search">
-	                    <select class="custom-select border-left" name="category_name">
-	                            <option value="">All type</option><option value="codex">Special</option>
-	                            <option value="comments">Only best</option>
-	                            <option value="content">Latest</option>
-	                    </select>
-	                    <div class="input-group-append">
-	                      <button class="btn btn-primary" type="submit">
-	                        <i class="fa fa-search"></i>
-	                      </button>
+	                    <div class="col-md-4">
+	                        <form>
+	                            <div class="input-group">
+	                                <input type="text" placeholder="Email" class="form-control" name="">
+	                                <span class="input-group-append">
+	                                    <button type="submit" class="btn btn-primary"> Subscribe</button>
+	                                </span>
+	                            </div> <!-- input-group.// -->
+	                        </form>
 	                    </div>
+	                    <div class="col-md-4 text-md-right">
+	                        <a href="#" class="btn btn-icon btn-light"><i class="fab fa-facebook-f"></i></a>
+	                        <a href="#" class="btn btn-icon btn-light"><i class="fab fa-twitter"></i></a>
+	                        <a href="#" class="btn btn-icon btn-light"><i class="fab fa-instagram"></i></a>
+	                        <a href="#" class="btn btn-icon btn-light"><i class="fab fa-youtube"></i></a>
+	                    </div>
+	                </div> <!-- row.// -->
+	        </div><!-- //container -->
+	    </section>	<!-- footer-top.// -->
+	    <section class="footer-main border-top padding-y">
+	        <div class="container">
+	        <div class="row">
+	            <aside class="col-md">
+	                <h6 class="title">Brands</h6>
+	                <ul class="list-unstyled">
+	                    <li> <a href="#">Adidas</a></li>
+	                    <li> <a href="#">Puma</a></li>
+	                    <li> <a href="#">Reebok</a></li>
+	                    <li> <a href="#">Nike</a></li>
+	                </ul>
+	            </aside>
+	            <aside class="col-md">
+	                <h6 class="title">Company</h6>
+	                <ul class="list-unstyled">
+	                    <li> <a href="#">About us</a></li>
+	                    <li> <a href="#">Career</a></li>
+	                    <li> <a href="#">Find a store</a></li>
+	                    <li> <a href="#">Rules and terms</a></li>
+	                    <li> <a href="#">Sitemap</a></li>
+	                </ul>
+	            </aside>
+	            <aside class="col-md">
+	                <h6 class="title">Help</h6>
+	                <ul class="list-unstyled">
+	                    <li> <a href="#">Contact us</a></li>
+	                    <li> <a href="#">Money refund</a></li>
+	                    <li> <a href="#">Order status</a></li>
+	                    <li> <a href="#">Shipping info</a></li>
+	                    <li> <a href="#">Open dispute</a></li>
+	                </ul>
+	            </aside>
+	            <aside class="col-md">
+	                <h6 class="title">Account</h6>
+	                <ul class="list-unstyled">
+	                    <li> <a href="#"> User Login </a></li>
+	                    <li> <a href="#"> User register </a></li>
+	                    <li> <a href="#"> Account Setting </a></li>
+	                    <li> <a href="#"> My Orders </a></li>
+	                </ul>
+	            </aside>
+	            <aside class="col-md">
+	                <h6 class="title">Resources</h6>
+	                <ul class="list-unstyled">
+	                    <li><a href="#"> Documents </a> </li>
+	                    <li><a href="#"> Webinars</a> </li>
+	                    <li><a href="#"> Product samples </a></li>
+	                </ul>
+	            </aside>
+	        </div> <!-- row.// -->
+	        </div><!-- //container -->
+	    </section>	<!-- footer-top.// -->
+	
+	    <section class="footer-bottom border-top">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <span class="pr-2">© 2019 Company name</span>
+	                    <span class="pr-2"><a href="#">Privacy policy</a></span>
+	                    <span class="pr-2"><a href="#">Terms of use</a></span>
 	                </div>
-	            </form> <!-- search-wrap .end// -->
-	        </div> <!-- col.// -->
-	        <div class="col-lg-3 col-sm-12 col-md-12 col-12">
-	            <div class="widgets-wrap float-md-right">
-	                <a href="#" class="widget-header mr-2">
-	                    <i class="icon icon-sm rounded-circle border fa fa-shopping-cart"></i>
-	                    <span class="notify">2</span>
-	                </a>
-	                <a href="#" class="widget-header mr-2">
-	                     <i class="icon icon-sm rounded-circle border fa fa-heart"></i>
-	                </a>
-	                <div class="widget-header dropdown">
-	                    <a href="#" data-toggle="dropdown" data-offset="20,10">
-	                        <div class="icontext">
-	                            <div class="icon">
-	                                <i class="icon-sm rounded-circle border fa fa-user"></i>
-	                            </div>
-	                            <div class="text">
-	                                <small class="text-muted">Sign in | Join</small>
-	                                <div>My account <i class="fa fa-caret-down"></i> </div>
-	                            </div>
-	                        </div>
-	                    </a>
-	                    <div class="dropdown-menu dropdown-menu-right">
-	                        <form class="px-4 py-3">
-	                            <div class="form-group">
-	                              <label>Email address</label>
-	                              <input type="email" class="form-control" placeholder="email@example.com">
-	                            </div>
-	                            <div class="form-group">
-	                              <label>Password</label>
-	                              <input type="password" class="form-control" placeholder="Password">
-	                            </div>
-	                            <button type="submit" class="btn btn-primary">Sign in</button>
-	                            </form>
-	                            <hr class="dropdown-divider">
-	                            <a class="dropdown-item" href="#">Have account? Sign up</a>
-	                            <a class="dropdown-item" href="#">Forgot password?</a>
-	                    </div> <!--  dropdown-menu .// -->
-	                </div>  <!-- widget-header .// -->
-	            </div> <!-- widgets-wrap.// -->
-	        </div> <!-- col.// -->
-	    </div> <!-- row.// -->
-	        </div> <!-- container.// -->
-	    </section> <!-- header-main .// -->
-	    
-	    
-	    <nav class="navbar navbar-main navbar-expand-lg border-bottom">
-	      <div class="container">
-	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav4" aria-expanded="false" aria-label="Toggle navigation">
-	          <span class="navbar-toggler-icon"></span>
-	        </button>
-	        <div class="collapse navbar-collapse" id="main_nav4">
-	          <ul class="navbar-nav">
-	            <li class="nav-item">
-	              <a class="nav-link pl-0" href="#"> <strong>All category</strong></a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Fashion</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Supermarket</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Electronics</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Baby &amp; Toys</a>
-	            </li>
-	            <li class="nav-item">
-	              <a class="nav-link" href="#">Fitness sport</a>
-	            </li>
-	            <li class="nav-item dropdown">
-	              <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-	              <div class="dropdown-menu">
-	                <a class="dropdown-item" href="#">Foods and Drink</a>
-	                <a class="dropdown-item" href="#">Home interior</a>
-	                <div class="dropdown-divider"></div>
-	                <a class="dropdown-item" href="#">Category 1</a>
-	                <a class="dropdown-item" href="#">Category 2</a>
-	                <a class="dropdown-item" href="#">Category 3</a>
-	              </div>
-	            </li>
-	          </ul>
-	        </div> <!-- collapse .// -->
-	      </div> <!-- container .// -->
-	    </nav> <!-- navbar main end.// -->
-	    
-	    </header>
-	
-	
-	
-	
-	
-	    <header class="section-header bg-white my-4 shadow-sm">
-	        <section class="header-main">
-	            <div class="container">
-	            <div class="row align-items-center">
-	                <div class="col-md-3 col-lg-3 col-12">
-	                  <a href="http://bootstrap-ecommerce.com" class="brand-wrap">
-	                  <img class="logo" src="../assets/images/logo.png">
-	                </a> <!-- brand-wrap.// -->
+	                <div class="col-md-6 text-md-right">
+	                    <a href=""><img src="..//assets/images/misc/appstore.png" height="30"></a>
+	                    <a href=""><img src="..//assets/images/misc/playmarket.png" height="30"></a>
 	                </div>
-	                <div class="col-md-4 col-lg-5 col-12">
-	                    <form action="#" class="search">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control" placeholder="Search">
-	                            <div class="input-group-append">
-	                              <button class="btn btn-primary" type="submit">
-	                                <i class="fa fa-search"></i>
-	                              </button>
-	                            </div>
-	                        </div>
-	                    </form> <!-- search-wrap .end// -->
-	                </div> <!-- col.// -->
-	                <div class="col-md-5 col-lg-4 col-sm-12 col-12 text-md-right">
-	                    <div class="mt-3 mt-md-0">
-	                  <a href="#" class="btn btn-outline-primary"> Login </a>
-	                  <a href="#" class="btn btn-primary"> Sign up </a>
-	                  <a href="#" class="btn btn-light"> My cart <span class="ml-2 badge badge-warning">4</span>
-	                  </a>  
-	                  <button class="btn float-right btn-light d-md-none" type="button" data-toggle="collapse" data-target="#main_nav8" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
-	                    <i class="fa fa-bars"></i>
-	                  </button>
-	                </div>
-	                </div> <!-- col.// -->
 	            </div> <!-- row.// -->
-	            </div> <!-- container.// -->
-	        </section> <!-- header-main .// -->
-	        
-	        
-	        <nav class="navbar navbar-main navbar-expand-md border-top border-bottom">
-	          <div class="container">
-	            <div class="collapse navbar-collapse" id="main_nav8">
-	              <ul class="navbar-nav">
-	                <li class="nav-item">
-	                  <a class="nav-link pl-0" href="#"> Home </a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="#">Fashion</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="#">Supermarket</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="#">Electronics</a>
-	                </li>
-	                <li class="nav-item">
-	                  <a class="nav-link" href="#">Baby &amp; Toys</a>
-	                </li>
-	              </ul>
-	              <ul class="navbar-nav ml-auto">
-	                  <li class="nav-item dropdown">
-	                  <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown">USD</a>
-	                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown07">
-	                    <a class="dropdown-item" href="#">RUBL</a>
-	                    <a class="dropdown-item" href="#">UZS</a>
-	                  </div>
-	                </li>
-	                <li class="nav-item dropdown">
-	                  <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown">English</a>
-	                  <div class="dropdown-menu dropdown-menu-right">
-	                    <a class="dropdown-item" href="#">Russian</a>
-	                    <a class="dropdown-item" href="#">Uzbek</a>
-	                  </div>
-	                </li>
-	              </ul>
-	            </div> <!-- collapse .// -->
-	          </div> <!-- container .// -->
-	        </nav>
-	        
-	        </header>
+	        </div><!-- //container -->
+	    </section>
+	
+	</footer>
+	
+	<!-- FOOTER 4 -->
+	
+	<footer class="section-footer my-4">
+		<div class="container">
+			<section class="footer-top  padding-y">
+				<div class="row">
+					<aside class="col-md-4 col-12">
+						<article class="mr-md-4">
+							<h5 class="title">Contact us</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. </p>
+							<ul class="list-icon">
+								<li> <i class="icon fa fa-map-marker"> </i>542 Fake Street, Cityname 10021 Netheerlends </li>
+								<li> <i class="icon fa fa-envelope"> </i> info@example.com</li>
+								<li> <i class="icon fa fa-phone"> </i> (800) 060-0730, (800) 060-0730</li>
+								<li> <i class="icon fa fa-clock"> </i>Mon-Sat 10:00pm - 7:00pm</li>
+							</ul>
+						</article>
+					</aside>
+					<aside class="col-md col-6">
+						<h5 class="title">Information</h5>
+						<ul class="list-unstyled">
+							<li> <a href="#">About us</a></li>
+							<li> <a href="#">Career</a></li>
+							<li> <a href="#">Find a store</a></li>
+							<li> <a href="#">Rules and terms</a></li>
+							<li> <a href="#">Sitemap</a></li>
+						</ul>
+					</aside>
+					<aside class="col-md col-6">
+						<h5 class="title">My Account</h5>
+						<ul class="list-unstyled">
+							<li> <a href="#">Contact us</a></li>
+							<li> <a href="#">Money refund</a></li>
+							<li> <a href="#">Order status</a></li>
+							<li> <a href="#">Shipping info</a></li>
+							<li> <a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-md-4 col-12">
+						<h5 class="title">Newsletter</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat lorem. </p>
+						
+						<form class="form-inline mb-3">
+							<input type="text" placeholder="Email" class="form-control" name="">
+							<button class="btn ml-2 btn-warning"> Subscribe</button>
+						</form>
+	
+						<p class="text-white-50 mb-2">Follow us on social media</p>
+						<div>
+							<a href="#" class="btn btn-icon btn-light"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="btn btn-icon btn-light"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="btn btn-icon btn-light"><i class="fab fa-instagram"></i></a>
+							<a href="#" class="btn btn-icon btn-light"><i class="fab fa-youtube"></i></a>
+						</div>
+	
+					</aside>
+				</div> <!-- row.// -->
+			</section>	<!-- footer-top.// -->
+	
+			<section class="footer-bottom border-top row">
+				<div class="col-md-6">
+					<p class="mb-0">
+						<a href="">Terms and Conditions</a> | 
+						<a href="">Privacy</a> | 
+						<a href="">Cookies</a>
+					</p>
+				</div>
+				<div class="col-md-6 text-md-right">
+					<i class="fab fa-lg fa-cc-visa"></i>
+					<i class="fab fa-lg fa-cc-paypal"></i>
+					<i class="fab fa-lg fa-cc-mastercard"></i>
+				</div>
+			</section>
+		</div><!-- //container -->
+	</footer>
+	<div class="cart-overlay d-none"></div>
+	<div id="shopping-cart" class="sidenav bg-white">
+		<div class="d-flex w-350">
+			<div class="px-3 cart-wrapper w-100">
+				<span class="mx-4">
+					<a id="cart-close" class="closebtn">&times;</a>
+					<h4>Shopping Cart</h4>
+				</span>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div>
+						<div class="text-left cart-summary">
+							<h4>Shopping summary</h4>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Sub Total :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Discount :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Shipping & Handling :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Tax :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h3 class="mb-0">Grand Total :</h3>
+							<h3 class="ml-auto">$489.00</h3>
+						</div>
+					
+						<div class="cart-summary py-2">
+								<a href="..//checkout.html" class="btn btn-success btn-block">Checkout</a>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+	<section class="section-subscribe bg-white p-3">
+		<div class="container">
+			<p class="mb-2 text-center text-white">Delivering the latest product trends and industry news straight to your
+				inbox</p>
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5 col-md-6">
+					<form class="p-2 shadow-sm bg-light rounded" action="#">
+						<div class="input-group">
+							<input class="form-control border-0 mr-2 bg-light" type="search"
+								placeholder="Search tools and resources...">
+							<div class="input-group-append">
+								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- col-md-6.// -->
+			</div>
+		</div>
+	</section>
+	<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+	
+	<footer class="section-footer border-top ">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md-4 mb-3 text-center text-sm-left">
+						<article class="mr-3">
+							<img src="../assets/images/logo-light.svg" class="logo-footer" />
+							<p class="mt-3">
+								Some short text about company like You might remember the Dell computer commercials in which
+								a youth reports this exciting news to his
+								friends.
+							</p>
+							<div>
+								<a class="btn btn-icon btn-light btn-facebook" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-google" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-twitter" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-youtube" title="Facebook" target="_blank" href="#"></a>
+							</div>
+						</article>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">About</h6>
+						<ul class="list-unstyled">
+							<li><a href="/page-about.html">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Rules and terms</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">Services</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">Help center</a></li>
+							<li><a href="#">Money refund</a></li>
+							<li><a href="#">Terms and Policy</a></li>
+							<li><a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">For users</h6>
+						<ul class="list-unstyled">
+							<li><a href="/auth-login.html"> User Login </a></li>
+							<li><a href="/auth-register.html"> User register </a></li>
+							<li><a href="/profile-settings.html"> Account Setting </a></li>
+							<li><a href="/profile-orders.html"> My Orders </a></li>
+							<li><a href="/profile-wishlist.html"> My Wishlist </a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">Our app</h6>
+						<a href="#" class="d-block mb-2"><img src="../assets/images/misc/appstore.png"
+								height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="../assets/images/misc/playmarket.png"
+								height="40" /></a>
+					</aside>
+				</div>
+				<!-- row.// -->
+			</section>
+			<!-- footer-top.// -->
+			<section class="footer-copyright border-top d-flex align-items-center justify-content-between">
+				<p class="float-left text-muted mb-0">© 2020 Company All rights reserved</p>
+				<p target="_blank" class="float-right text-muted mb-0">
+					<a href="#">Privacy &amp; Cookies</a> &nbsp; &nbsp;
+					<a href="#">Accessibility</a>
+				</p>
+			</section>
+		</div>
+		<!-- //container -->
+	</footer>
 </body>
 <script src="../assets/js/bundle.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>

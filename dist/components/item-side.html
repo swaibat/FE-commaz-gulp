@@ -17,11 +17,10 @@
 
 <body class="dark-mode">
 	
-	<!-- container .// -->
-	<nav class="navbar fixed-top">
-		<div class="container d-flex justify-content-xs-around">
-			<div class="nav-item category-menu">
-				<a class="nav-link " href="/">
+	<nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
+		<div class="container">
+			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="nav-link logo" href="./">
 					<svg xmlns="http://www.w3.org/2000/svg" width="187.427" height="36.175" viewBox="0 0 187.427 36.175">
 					    <g id="Group_81" data-name="Group 81" transform="translate(-908.34 -1825.6)">
 					        <g id="Group_80" data-name="Group 80">
@@ -46,8 +45,151 @@
 					    </g>
 					</svg>			</a>
 			</div>
+			<button class="navbar-toggler dool-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="lnr lnr-menu"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="input-group search-bar mx-auto col-md-8">
+					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+					<div class="input-group-append">
+						<span class="lnr lnr-magnifier input-group-text"></span>
+					</div>
+				</div>
+				<div class="d-flex mt-2 mt-md-0">
+					<div class="dropdown dropdown-user mr-3">
+						<a class="dropdown-toggle nav-link dropdown-user-link py-0" href="#" data-toggle="dropdown">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-user"></span>
+							</div>
+							<small class="text lr-only"> My profile </small>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="profile.html">
+								<span class="lnr lnr-user mr-1"></span>
+								Edit Profile
+							</a><a class="dropdown-item" href="notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="/">
+								<span class="lnr lnr-power-switch"></span>
+								Logout
+							</a>
+						</div>
+					</div>
+					<div class="widget-header mx-3">
+						<a href="profile-orders.html" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-store"></span>
+							</div>
+							<small class="text lr-only"> Orders </small>
+						</a>
+					</div>
+					<div class="widget-header ml-3">
+						<span id="cart-btn" class="widget-view">
+							<div class="text-center header-icons">
+								<span class="lnr lnr-cart"></span>
+							</div>
+							<small class="text lr-only ml-4"> Cart </small>
+							<span class="c-badge badge-cart">3</span>
+						</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</nav>
+	<div class="bg-white px-4 py-2 border mt-r-2">
+		<nav class="nav d-flex justify-content-between container">
+			<li class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
+					<span class="lnr lnr-list pr-1"></span>Genre</a>
+				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4 category-dropdown">
+					<div class="row col-md-10">
+						<div class="col-md-3 mb-3">
+							<h6 class="font-weight-bold">Electronics & Computers</h6>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Cell Phones</a>
+								<a class="nav-link" href="#">TV, Audio & Visual</a>
+								<a class="nav-link" href="#">Computers & Laptops</a>
+								<a class="nav-link" href="#">Gaming & Consoles</a>
+								<a class="nav-link" href="#">Computer Hardware & Accessories</a>
+								<a class="nav-link" href="#">Cameras</a>
+								<a class="nav-link" href="#">iPads & Tablets</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Fashion & Beauty</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Clothing</a>
+								<a class="nav-link" href="#">Shoes</a>
+								<a class="nav-link" href="#">Jewellery & Accessories</a>
+								<a class="nav-link" href="#">Health, Beauty & Cosmetics</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Vehicles</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link" href="#">Cars & Bakkies</a>
+								<a class="nav-link" href="#">Car Parts & Accessories</a>
+								<a class="nav-link" href="#">Motorcycles & Scooters</a>
+								<a class="nav-link" href="#">Trucks & Commercial Vehicles</a>
+								<a class="nav-link" href="#">Caravans & Trailers</a>
+								<a class="nav-link" href="#">Motorcycles & Scooters</a>
+								<a class="nav-link" href="#">Boats & Aviation</a>
+							</nav>
+						</div>
+						<div class="col-md-3 mb-3">
+							<h4>Hobbies & Interests</h4>
+							<nav class="nav flex-column">
+								<a class="nav-link active" href="#">Toys, Games & Remote Control</a>
+								<a class="nav-link" href="#">Musical Instruments</a>
+								<a class="nav-link" href="#">Art, Collectibles & Rare Items</a>
+								<a class="nav-link" href="#">Community Announcements</a>
+								<a class="nav-link" href="#">Books, CDs & DVDs</a>
+							</nav>
+						</div>
+					</div>
+					<div class="row col-md-2"></div>
+				</ul>
+			</li>
+			</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="shop.html">
+					<span class="lnr lnr-store px-1"></span>
+					<span>Shop</span>
+				</a>
+			</li>
+			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+					<span class="lnr lnr-question-circle pr-2"></span><span data-i18n="Apps">Help</span></a>
+				<ul class="dropdown-menu">
+					<li class="">
+						<a class="nav-link" href="/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="/knowledgebase.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>Knowledge base</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown dropdown-language nav-item">
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+						class="selected-language">English</span></a>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag">
+					<a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i>
+						English</a><a class="dropdown-item" href="#" data-language="fr"><i
+							class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"
+						data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item"
+						href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+				</div>
+			</li>
+		</nav>
+	</div>
+	
+	<!-- container .// -->
 	
 	<div class="bread-overlay"></div>
 	<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-4">
@@ -386,6 +528,240 @@
 	
 	
 	</div>
+	<div class="cart-overlay d-none"></div>
+	<div id="shopping-cart" class="sidenav bg-white">
+		<div class="d-flex w-350">
+			<div class="px-3 cart-wrapper w-100">
+				<span class="mx-4">
+					<a id="cart-close" class="closebtn">&times;</a>
+					<h4>Shopping Cart</h4>
+				</span>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div class="media bg-light p-3 rounded mb-3 border">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<div class="media-body">
+						<div class="item-name ml-2 text-left">
+							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<span></span>
+							<div class="d-flex">
+								<p class="text-success">In Stock</p>
+								<div class="item-quantity mb-2 ml-auto">
+									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
+										<span
+											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-down"
+												type="button">-</button></span><input type="text"
+											class="quantity-counter form-control" value="1" /><span
+											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
+												class="btn btn-primary bootstrap-touchspin-up"
+												type="button">+</button></span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<p class="text-muted"><strong>Color :</strong> Yellow</p>
+								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
+								<h5 class="ml-auto">$1,190</h5>
+							</div>
+						</div>
+					</div>
+					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="lnr lnr-cross"></span>
+					</span>
+				</div>
+				<div>
+						<div class="text-left cart-summary">
+							<h4>Shopping summary</h4>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Sub Total :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Discount :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Shipping & Handling :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h6 class="mb-0">Tax :</h6>
+							<h5 class="ml-auto">$489.00</h5>
+						</div>
+					
+						<div class="cart-summary py-2 d-flex">
+							<h3 class="mb-0">Grand Total :</h3>
+							<h3 class="ml-auto">$489.00</h3>
+						</div>
+					
+						<div class="cart-summary py-2">
+								<a href="..//checkout.html" class="btn btn-success btn-block">Checkout</a>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+	<section class="section-subscribe bg-white p-3">
+		<div class="container">
+			<p class="mb-2 text-center text-white">Delivering the latest product trends and industry news straight to your
+				inbox</p>
+			<div class="row justify-content-md-center">
+				<div class="col-lg-5 col-md-6">
+					<form class="p-2 shadow-sm bg-light rounded" action="#">
+						<div class="input-group">
+							<input class="form-control border-0 mr-2 bg-light" type="search"
+								placeholder="Search tools and resources...">
+							<div class="input-group-append">
+								<button class="btn btn-primary rounded" type="submit">Subscriibe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- col-md-6.// -->
+			</div>
+		</div>
+	</section>
+	<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+	
+	<footer class="section-footer border-top ">
+		<div class="container">
+			<section class="footer-top padding-y">
+				<div class="row">
+					<aside class="col-md-4 mb-3 text-center text-sm-left">
+						<article class="mr-3">
+							<img src="../assets/images/logo-light.svg" class="logo-footer" />
+							<p class="mt-3">
+								Some short text about company like You might remember the Dell computer commercials in which
+								a youth reports this exciting news to his
+								friends.
+							</p>
+							<div>
+								<a class="btn btn-icon btn-light btn-facebook" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-google" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-twitter" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-youtube" title="Facebook" target="_blank" href="#"></a>
+							</div>
+						</article>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">About</h6>
+						<ul class="list-unstyled">
+							<li><a href="/page-about.html">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Rules and terms</a></li>
+							<li><a href="#">Blogs</a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">Services</h6>
+						<ul class="list-unstyled">
+							<li><a href="#">Help center</a></li>
+							<li><a href="#">Money refund</a></li>
+							<li><a href="#">Terms and Policy</a></li>
+							<li><a href="#">Open dispute</a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">For users</h6>
+						<ul class="list-unstyled">
+							<li><a href="/auth-login.html"> User Login </a></li>
+							<li><a href="/auth-register.html"> User register </a></li>
+							<li><a href="/profile-settings.html"> Account Setting </a></li>
+							<li><a href="/profile-orders.html"> My Orders </a></li>
+							<li><a href="/profile-wishlist.html"> My Wishlist </a></li>
+						</ul>
+					</aside>
+					<aside class="col-6 col-md-2 text-center text-sm-left">
+						<h6 class="title">Our app</h6>
+						<a href="#" class="d-block mb-2"><img src="../assets/images/misc/appstore.png"
+								height="40" /></a>
+						<a href="#" class="d-block mb-2"><img src="../assets/images/misc/playmarket.png"
+								height="40" /></a>
+					</aside>
+				</div>
+				<!-- row.// -->
+			</section>
+			<!-- footer-top.// -->
+			<section class="footer-copyright border-top d-flex align-items-center justify-content-between">
+				<p class="float-left text-muted mb-0">© 2020 Company All rights reserved</p>
+				<p target="_blank" class="float-right text-muted mb-0">
+					<a href="#">Privacy &amp; Cookies</a> &nbsp; &nbsp;
+					<a href="#">Accessibility</a>
+				</p>
+			</section>
+		</div>
+		<!-- //container -->
+	</footer>
 </body>
 <script src="../assets/js/bundle.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
