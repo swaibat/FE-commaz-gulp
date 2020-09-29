@@ -90,9 +90,9 @@
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="lnr lnr-cart"></span>
-								<span class="c-badge badge-cart">3</span>
 							</div>
-							<small class="text lr-only"> Cart </small>
+							<small class="text lr-only ml-4"> Cart </small>
+							<span class="c-badge badge-cart">3</span>
 						</span>
 					</div>
 				</div>
@@ -192,7 +192,7 @@
 	<!-- container .// -->
 	
 	<div class="bread-overlay"></div>
-	<div class="py-2 container px-0 d-flex align-items-center my-4">
+	<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-4">
 		<span>
 			<h1 class="mb-0">Shop</h1>
 			<nav aria-label="breadcrumb">
@@ -205,18 +205,18 @@
 		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
 				for="switch"></label></div>
 	</div>
-	<div class="container p-0 mt-n4">
+	<div class="container px-2 mt-sm-n4">
 	    <div class="app-content content">
 	        <div class="content-wrapper">
 	            <div class="content-detached content-right">
 	                <div class="content-body">
 	                    <!-- Ecommerce Content Section Starts -->
 	                    <section id="ecommerce-header">
-	                        <div class="row">
-	                            <div class="col-md-6">
+	                        <div class="row align-items-center">
+	                            <div class="col-6 col-md-6">
 	                                <div class="ecommerce-header-items">
 	                                    <div class="result-toggler d-flex align-items-center">
-	                                        <button class="btn bg-primary btn-lg d-flex align-items-center py-2"
+	                                        <button class="btn bg-primary btn-lg d-flex align-items-center py-2 px-2"
 	                                            id="toggle-filter">
 	                                            <span class="lnr lnr-menu"></span>
 	                                        </button>
@@ -226,19 +226,17 @@
 	                                    </div>
 	                                </div>
 	                            </div>
-	                            <div class="col-md-2 col-xs-6 ml-auto">
-	                                <div class="form-group">
-	                                    <select class="form-control select2" id="exampleFormControlSelect1">
-	                                        <option>Price: High to low</option>
-	                                        <option>Price: Low to high</option>
-	                                        <option>Latest</option>
-	                                    </select>
-	                                </div>
+	                            <div class="col-6 col-sm-3 ml-auto">
+	                                <select class="form-control select2" id="exampleFormControlSelect1">
+	                                    <option>Price: High to low</option>
+	                                    <option>Price: Low to high</option>
+	                                    <option>Latest</option>
+	                                </select>
 	                            </div>
 	                        </div>
 	                    </section>
 	                    <!-- Ecommerce Products Starts -->
-	                    <section id="ecommerce-products" class="grid-view">
+	                    <section id="ecommerce-products" class="grid-view overflow-hidden rounded">
 	                        <div class="card ecommerce-card shadow-sm">
 	                            <div class="card-content">
 	                                <div class="btn-group-vertical position-absolute right-0">
@@ -883,7 +881,7 @@
 	                    <!-- Ecommerce Products Ends -->
 	
 	                    <!-- Ecommerce Pagination Starts -->
-	                    <section id="ecommerce-pagination">
+	                    <section id="ecommerce-pagination" class="mt-3">
 	                        <div class="row">
 	                            <div class="col-sm-12">
 	                                <nav aria-label="Page navigation example">
@@ -1494,7 +1492,7 @@
 		<div class="container">
 			<section class="footer-top padding-y">
 				<div class="row">
-					<aside class="col-md-4 mb-3">
+					<aside class="col-md-4 mb-3 text-center text-sm-left">
 						<article class="mr-3">
 							<img src="assets/images/logo-light.svg" class="logo-footer" />
 							<p class="mt-3">
@@ -1510,7 +1508,7 @@
 							</div>
 						</article>
 					</aside>
-					<aside class="col-6 col-md-2">
+					<aside class="col-6 col-md-2 text-center text-sm-left">
 						<h6 class="title">About</h6>
 						<ul class="list-unstyled">
 							<li><a href="/page-about.html">About us</a></li>
@@ -1519,7 +1517,7 @@
 							<li><a href="#">Blogs</a></li>
 						</ul>
 					</aside>
-					<aside class="col-6 col-md-2">
+					<aside class="col-6 col-md-2 text-center text-sm-left">
 						<h6 class="title">Services</h6>
 						<ul class="list-unstyled">
 							<li><a href="#">Help center</a></li>
@@ -1528,7 +1526,7 @@
 							<li><a href="#">Open dispute</a></li>
 						</ul>
 					</aside>
-					<aside class="col-6 col-md-2">
+					<aside class="col-6 col-md-2 text-center text-sm-left">
 						<h6 class="title">For users</h6>
 						<ul class="list-unstyled">
 							<li><a href="/auth-login.html"> User Login </a></li>
@@ -1538,7 +1536,7 @@
 							<li><a href="/profile-wishlist.html"> My Wishlist </a></li>
 						</ul>
 					</aside>
-					<aside class="col-6 col-md-2">
+					<aside class="col-6 col-md-2 text-center text-sm-left">
 						<h6 class="title">Our app</h6>
 						<a href="#" class="d-block mb-2"><img src="assets/images/misc/appstore.png"
 								height="40" /></a>

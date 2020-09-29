@@ -11419,7 +11419,7 @@ PAGES
 @media (max-width: 991.98px) {
   .ecommerce-card {
     margin-bottom: 0;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 }
 
@@ -50345,7 +50345,8 @@ body.dark-mode .navbar-light {
   background: #1e2023 !important;
 }
 
-body.dark-mode .border-bottom, body.dark-mode .border-left {
+body.dark-mode .border-bottom,
+body.dark-mode .border-left {
   border-bottom: 1px solid #343a40 !important;
 }
 
@@ -50443,17 +50444,25 @@ body.dark-mode .cls-3 {
 }
 
 body.dark-mode .table thead th,
-body.dark-mode td {
+body.dark-mode td,
+body.dark-mode .table td {
   border: 1px solid #36393e;
 }
 
-body.dark-mode .form-control, body.dark-mode .select2-container--default .select2-selection--single {
+body.dark-mode .table th,
+body.dark-mode .table td {
+  border: 1px solid #36393e;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .select2-container--default .select2-selection--single {
   background: #0e0e0f !important;
   color: #adb5bd !important;
   border: none !important;
 }
 
-body.dark-mode label, body.dark-mode .input-group-append .input-group-text {
+body.dark-mode label,
+body.dark-mode .input-group-append .input-group-text {
   color: #adb5bd !important;
 }
 
@@ -50461,13 +50470,70 @@ body.dark-mode .input-group-append .input-group-text {
   background: #0d0d0d !important;
 }
 
-body.dark-mode .table-bordered th, body.dark-mode .table-bordered td {
+body.dark-mode .table-bordered th,
+body.dark-mode .table-bordered td {
   border: 1px solid #495057;
 }
 
 body.dark-mode .dool-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .page-item .page-link {
+  color: #6c757d;
+  background-color: #212529;
+  border: 1px solid #343a40;
+}
+
+body.dark-mode .page-item .page-link.disabled {
+  background-color: #495057;
+}
+
+body.dark-mode .page-item.disabled .page-link {
+  color: #6c757d;
+  background-color: #343a40;
+  border: 1px solid #343a40;
+}
+
+@media screen and (max-width: 600px) {
+  body.dark-mode table {
+    border: 0;
+  }
+  body.dark-mode table caption {
+    font-size: 1.3em;
+  }
+  body.dark-mode table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  body.dark-mode table tr {
+    border-bottom: 4px solid #ddd;
+    border: 0;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  body.dark-mode table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  body.dark-mode table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  body.dark-mode table td:last-child {
+    border-bottom: 0;
+  }
 }
 
 .twitter:before {
@@ -51052,6 +51118,12 @@ svg .c {
   }
 }
 
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .switch input[type='checkbox'] {
   height: 0;
   width: 0;
@@ -51080,16 +51152,6 @@ svg .c {
   color: white;
 }
 
-.switch input:checked + label:before {
-  font-family: 'Linearicons-Free';
-  content: '\e807';
-  position: absolute;
-  left: 0;
-  font-size: 14px;
-  padding-left: 7px;
-  color: white;
-}
-
 .switch label:after {
   content: '';
   position: absolute;
@@ -51103,6 +51165,16 @@ svg .c {
 
 .switch input:checked + label {
   background: lightgray;
+}
+
+.switch input:checked + label:before {
+  font-family: 'Linearicons-Free';
+  content: '\e807';
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  padding-left: 7px;
+  color: white;
 }
 
 .switch input:checked + label:after {
@@ -51267,7 +51339,6 @@ svg .c {
 }
 
 .c-badge {
-  position: absolute;
   background: black;
   width: 20px;
   height: 20px;
@@ -51289,6 +51360,8 @@ svg .c {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: -3.1rem;
+  margin-left: 3rem;
 }
 
 .badge-cart {
@@ -51511,6 +51584,10 @@ svg .c {
 .sidebar-close-icon .btn {
   border: 0;
   border-bottom-left-radius: 0.3rem !important;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .category-dropdown {
@@ -51779,4 +51856,8 @@ span.select2-selection.select2-selection--single {
 
 .select2-container--default .select2-results__option--selected {
   background-color: #495057;
+}
+
+#toggle-filter {
+  font-size: 1.5rem;
 }

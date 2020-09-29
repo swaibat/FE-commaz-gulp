@@ -618,7 +618,7 @@
 @media (max-width: 991.98px) {
   .ecommerce-card {
     margin-bottom: 0;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
 }
 
