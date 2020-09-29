@@ -1,18 +1,18 @@
 ---
 title: Shop
 ---
-<div class="container p-0 mt-n4">
+<div class="container px-2 mt-sm-n4">
     <div class="app-content content">
         <div class="content-wrapper">
             <div class="content-detached content-right">
                 <div class="content-body">
                     <!-- Ecommerce Content Section Starts -->
                     <section id="ecommerce-header">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6">
                                 <div class="ecommerce-header-items">
                                     <div class="result-toggler d-flex align-items-center">
-                                        <button class="btn bg-primary btn-lg d-flex align-items-center py-2"
+                                        <button class="btn bg-primary btn-lg d-flex align-items-center py-2 px-2"
                                             id="toggle-filter">
                                             <span class="lnr lnr-menu"></span>
                                         </button>
@@ -22,19 +22,17 @@ title: Shop
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-xs-6 ml-auto">
-                                <div class="form-group">
-                                    <select class="form-control select2" id="exampleFormControlSelect1">
-                                        <option>Price: High to low</option>
-                                        <option>Price: Low to high</option>
-                                        <option>Latest</option>
-                                    </select>
-                                </div>
+                            <div class="col-6 col-sm-3 ml-auto">
+                                <select class="form-control select2" id="exampleFormControlSelect1">
+                                    <option>Price: High to low</option>
+                                    <option>Price: Low to high</option>
+                                    <option>Latest</option>
+                                </select>
                             </div>
                         </div>
                     </section>
                     <!-- Ecommerce Products Starts -->
-                    <section id="ecommerce-products" class="grid-view">
+                    <section id="ecommerce-products" class="grid-view overflow-hidden rounded">
                         {{#each allproducts}}
                         <div class="card ecommerce-card shadow-sm">
                             <div class="card-content">

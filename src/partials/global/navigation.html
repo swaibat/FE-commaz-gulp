@@ -53,9 +53,9 @@
 					<span id="cart-btn" class="widget-view">
 						<div class="text-center header-icons">
 							<span class="lnr lnr-cart"></span>
-							<span class="c-badge badge-cart">3</span>
 						</div>
-						<small class="text lr-only"> Cart </small>
+						<small class="text lr-only ml-4"> Cart </small>
+						<span class="c-badge badge-cart">3</span>
 					</span>
 				</div>
 			</div>
@@ -151,7 +151,7 @@
 		</li>
 		{{#ifpage 'index'}}
 		<li class="nav-item ml-3 lr-only">
-			<div class="switch" style="height: 2rem;margin-top: -1.3rem;">
+			<div class="switch">
 				<input class="switch" id="switch" name="switch" type="checkbox">
 				<label for="switch"></label>
 			</div>
@@ -177,7 +177,7 @@
 
 {{#unlesspage 'index' 'documentation' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
 <div class="bread-overlay"></div>
-<div class="py-2 container px-0 d-flex align-items-center my-4">
+<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-4">
 	<span>
 		<h1 class="mb-0">{{title}}</h1>
 		<nav aria-label="breadcrumb">

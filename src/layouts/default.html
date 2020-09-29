@@ -1,4 +1,4 @@
-{{!-- This is the base layout for your project, and will be used on every page. --}}
+{{#unlesspage 'abandoned_cart' 'user_verification' 'forgot-password' 'order_email'}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +19,9 @@
 
 <body class="dark-mode">
 	{{>navigation}}
+	{{/unlesspage}}
 	{{> body}}
+	{{#unlesspage 'abandoned_cart' 'user_verification' 'forgot-password' 'order_email'}}
 	{{> footer}}
 </body>
 <script src="{{root}}assets/js/bundle.js"></script>
@@ -2325,3 +2327,4 @@
 </script>
 
 </html>
+{{/unlesspage}}

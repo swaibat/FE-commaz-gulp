@@ -582,68 +582,67 @@ svg {
 
 $height: 28px;
 $width: $height * 2;
-//$transition-time: 0.3s;
 
-.switch input[type='checkbox'] {
-	height: 0;
-	width: 0;
-	visibility: hidden;
+.switch {
+	display: flex;
+	input[type='checkbox'] {
+		height: 0;
+		width: 0;
+		visibility: hidden;
+	}
+	label {
+		cursor: pointer;
+		width: $width;
+		height: $height;
+		background: $primary;
+		display: block;
+		border-radius: $height / 4;
+		position: relative;
+		&:before {
+			font-family: 'Linearicons-Free';
+			content: '\e808';
+			position: absolute;
+			top: -0.2rem;
+			right: 0;
+			font-size: $height * 0.5;
+			top: -0.2rem;
+			padding: ($height / 4) ($height / 4);
+			color: white;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: $height * 0.05;
+			left: $height * 0.05;
+			width: $height * 0.9;
+			height: $height * 0.9;
+			background: #fff;
+			border-radius: $height / 5;
+		}
+	}
+	input {
+		&:checked {
+			+ {
+				label {
+					&:before {
+						font-family: 'Linearicons-Free';
+						content: '\e807';
+						position: absolute;
+						left: 0;
+						font-size: $height * 0.5;
+						padding-left: $height / 4;
+						color: white;
+					}
+					background: lightgray;
+					&:after {
+						transform: translateX($width - $height);
+					}
+				}
+			}
+		}
+	}
 }
 
-.switch label {
-	cursor: pointer;
-	width: $width;
-	height: $height;
-	background: $primary;
-	display: block;
-	border-radius: $height / 4;
-	position: relative;
-}
-
-.switch label:before {
-	font-family: 'Linearicons-Free';
-	content: '\e808';
-	position: absolute;
-	top: -0.2rem;
-	right: 0;
-	font-size: $height * 0.5;
-	top: -0.2rem;
-	padding: ($height / 4) ($height / 4);
-	color: white;
-}
-
-.switch input:checked + label:before {
-	font-family: 'Linearicons-Free';
-	content: '\e807';
-	position: absolute;
-	left: 0;
-	font-size: $height * 0.5;
-	padding-left: $height / 4;
-	color: white;
-}
-
-.switch label:after {
-	content: '';
-	position: absolute;
-	top: $height * 0.05;
-	left: $height * 0.05;
-	width: $height * 0.9;
-	height: $height * 0.9;
-	background: #fff;
-	border-radius: $height / 5;
-	//transition: $transition-time;
-}
-
-.switch input:checked + label {
-	background: lightgray;
-	//transition: $transition-time;
-}
-
-.switch input:checked + label:after {
-	//left: calc(100% - 0.1rem);
-	//transform: translateX(-100%);
-	transform: translateX($width - $height);
-}
 
 .bread-overlay-shop {
 	height: 16.8rem !important;
@@ -784,7 +783,6 @@ $width: $height * 2;
 }
 
 .c-badge {
-	position: absolute;
 	background: $primary;
 	// box-shadow: 0 4px 10px 0 rgba(119, 119, 119, 0.6);
 	width: 20px;
@@ -797,10 +795,9 @@ $width: $height * 2;
 	font-size: 0.6rem;
 	border-radius: 50%;
 	z-index: 120;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
+	margin-top: -3.1rem;
+    margin-left: 3rem;
 }
 .badge-cart {
 	top: 0.5rem;
@@ -982,6 +979,10 @@ $width: $height * 2;
 	.btn {
 		border: 0;
 		border-bottom-left-radius: 0.3rem !important;
+		font-size: 1.2rem;
+		padding: 0.4rem;
+		margin-right: 0.5rem;
+		margin-top: 0.5rem;
 	}
 }
 
@@ -1241,4 +1242,8 @@ span {
 	.select2-results__option--selected {
 		background-color: $gray-700;
 	}
+}
+
+#toggle-filter {
+	font-size: 1.5rem;
 }
