@@ -49732,151 +49732,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.bg-white {
-  background-color: #fff;
-}
-
-.bg-orange {
-  background-color: #ff9f43;
-}
-
-.bg-green {
-  background-color: #28c76f;
-}
-
-.bg-blue {
-  background-color: #00cfe8;
-}
-
-.bg-red {
-  background-color: #ea5455;
-}
-
-.bg-light-warning {
-  background-color: #ffdcb0;
-}
-
-.bg-light-success {
-  background-color: #abeae8;
-}
-
-.bg-light-blue {
-  background-color: #9fe0ff;
-}
-
-.bg-light-danger {
-  background-color: #fbd5e7;
-}
-
-.bg-gradient-blue {
-  background: rgba(52, 58, 64, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 207, 232, 0.65)), to(rgba(52, 58, 64, 0.4)));
-  background: linear-gradient(to bottom right, rgba(0, 207, 232, 0.65), rgba(52, 58, 64, 0.4));
-  /* Standard syntax */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.bg-gradient-green {
-  background: rgba(52, 58, 64, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(40, 199, 111, 0.65)), to(rgba(52, 58, 64, 0.4)));
-  background: linear-gradient(to bottom right, rgba(40, 199, 111, 0.65), rgba(52, 58, 64, 0.4));
-  /* Standard syntax */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.bg-gradient-orange {
-  background: rgba(52, 58, 64, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 159, 67, 0.65)), to(rgba(52, 58, 64, 0.4)));
-  background: linear-gradient(to bottom right, rgba(255, 159, 67, 0.65), rgba(52, 58, 64, 0.4));
-  /* Standard syntax */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.bg-gradient-red {
-  background: rgba(52, 58, 64, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(234, 84, 85, 0.65)), to(rgba(52, 58, 64, 0.4)));
-  background: linear-gradient(to bottom right, rgba(234, 84, 85, 0.65), rgba(52, 58, 64, 0.4));
-  /* Standard syntax */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.bg-gradient-pink {
-  background: rgba(52, 58, 64, 0.4);
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(232, 62, 140, 0.65)), to(rgba(52, 58, 64, 0.4)));
-  background: linear-gradient(to bottom right, rgba(232, 62, 140, 0.65), rgba(52, 58, 64, 0.4));
-  /* Standard syntax */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.bg-pattern {
-  background-image: url(../assets/images/banners/bg-pattern.svg), linear-gradient(135deg, black, #6c757d);
-  background-size: cover, auto;
-  background-repeat: no-repeat, repeat;
-  background-position: 0px 0px, 50% 50%;
-}
-
-.bg-img {
-  overflow: hidden;
-  background-color: #ddd;
-  background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(108, 117, 125, 0.9)), url("../assets/images/banners/bg-cpu.jpg");
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto cover;
-}
-
-.overlay-gradient {
-  position: relative;
-}
-
-.overlay-gradient:before {
-  position: absolute;
-  content: '';
-  display: block;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #6c757d;
-  /* For browsers that do not support gradients */
-  /* For Safari 5.1 to 6.0 */
-  /* For Opera 11.1 to 12.0 */
-  /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(black), to(#6c757d));
-  background: linear-gradient(to bottom right, black, #6c757d);
-  /* Standard syntax */
-}
-
-.overlay-gradient:hover:before {
-  opacity: 0.9;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -51023,7 +50878,7 @@ svg .c {
 .owl-nav button {
   position: absolute;
   background-color: #000;
-  color: #fff;
+  color: #fff !important;
   margin: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -51860,4 +51715,32 @@ span.select2-selection.select2-selection--single {
 
 #toggle-filter {
   font-size: 1.5rem;
+}
+
+.logo-sm {
+  width: 35px;
+  overflow: hidden;
+  height: 35px;
+}
+
+@media (max-width: 767.98px) {
+  .logo-sm .cls-3 {
+    display: none;
+  }
+}
+
+.blog-img {
+  padding-top: 0.5rem;
+  height: 19rem;
+}
+
+.blog-img a {
+  width: auto;
+  height: 90%;
+}
+
+.profile-cover {
+  height: 20rem;
+  background-size: cover;
+  background-image: url(../images/banners/company.jpg);
 }

@@ -28,7 +28,6 @@ PAGES
 @import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 // themify
 @import './helpers/mixins';
-@import './helpers/bg';
 @import './helpers/helper-classes';
 @import './components/items';
 @import './components/table';
@@ -496,7 +495,7 @@ svg {
 	button {
 		position: absolute;
 		background-color: #000;
-		color: #fff;
+		color: #fff !important;
 		margin: 0;
 		transition: all 0.3s ease-in-out;
 		position: absolute;
@@ -642,7 +641,6 @@ $width: $height * 2;
 		}
 	}
 }
-
 
 .bread-overlay-shop {
 	height: 16.8rem !important;
@@ -797,7 +795,7 @@ $width: $height * 2;
 	z-index: 120;
 	user-select: none;
 	margin-top: -3.1rem;
-    margin-left: 3rem;
+	margin-left: 3rem;
 }
 .badge-cart {
 	top: 0.5rem;
@@ -1246,4 +1244,29 @@ span {
 
 #toggle-filter {
 	font-size: 1.5rem;
+}
+
+.logo-sm {
+	width: 35px;
+	overflow: hidden;
+	height: 35px;
+	.cls-3 {
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+
+.blog-img {
+	padding-top: 0.5rem;
+	height: 19rem;
+	a {
+		width: auto;
+		height: 90%;
+	}
+}
+.profile-cover {
+	height: 20rem;
+	background-size: cover;
+	background-image: url(../images/banners/company.jpg);
 }
