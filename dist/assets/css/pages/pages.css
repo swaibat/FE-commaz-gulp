@@ -17,15 +17,6 @@
 /*========================================================
         DARK LAYOUT
 =========================================================*/
-.faq-bg {
-  background: url(../../../assets/images/pages/faq.jpg) no-repeat;
-  background-size: cover;
-}
-
-.faq-bg .form-control:focus ~ .form-control-position i {
-  color: black;
-}
-
 .faq .faq-content .faq-table-content {
   cursor: pointer;
   padding: 0.5rem;
@@ -27708,11 +27699,6 @@
 .sidebar-content .chat-fixed-search .sidebar-profile-toggle .avatar {
   display: inline-table;
   width: calc(32px + 8px);
-}
-
-.sidebar-content .chat-fixed-search input.form-control {
-  padding: 0.9rem 1rem 0.9rem 3rem;
-  height: calc(1.25em + 1.4rem + 4px);
 }
 
 .sidebar-content .chat-fixed-search .form-control-position {

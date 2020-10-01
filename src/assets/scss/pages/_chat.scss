@@ -103,10 +103,6 @@ $chat-image-back-color: #dfdbe5;
 					width: calc(#{$avatar-size} + 8px);
 				}
 			}
-			input.form-control {
-				padding: 0.9rem 1rem 0.9rem 3rem;
-				height: calc(1.25em + 1.4rem + 4px);
-			}
 			.form-control-position {
 				top: 5px;
 				i {

@@ -8,21 +8,6 @@
 
 @import '../core/variables/components-variables';
 
-// FAQ jumbotron scss
-.faq-bg {
-	background: url(../../../assets/images/pages/faq.jpg) no-repeat;
-	background-size: cover;
-	.form-control {
-		&:focus {
-			// after focus search icon color
-			~ .form-control-position {
-				i {
-					color: $primary;
-				}
-			}
-		}
-	}
-}
 
 .faq {
 	//faq sidebar scss

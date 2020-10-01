@@ -1,0 +1,89 @@
+---
+title: Shop
+---
+<div class="container px-2 mt-sm-n4">
+    <div class="app-content content">
+        <div class="content-wrapper">
+            <div class="content-detached content-right">
+                <div class="content-body">
+                    <!-- Ecommerce Content Section Starts -->
+                    <section id="ecommerce-header">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-6">
+                                <div class="ecommerce-header-items">
+                                    <div class="result-toggler d-flex align-items-center">
+                                        <button class="btn bg-primary btn-lg d-flex align-items-center py-2 px-2"
+                                            id="toggle-filter">
+                                            <span class="lnr lnr-menu text-light"></span>
+                                        </button>
+                                        <div class="search-results ml-3">
+                                            16285 results found
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3 ml-auto">
+                                <select class="form-control select2" id="exampleFormControlSelect1">
+                                    <option>Price: High to low</option>
+                                    <option>Price: Low to high</option>
+                                    <option>Latest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Ecommerce Products Starts -->
+                    <section id="ecommerce-products" class="grid-view overflow-hidden rounded">
+                        {{#each allproducts}}
+                        <div class="card ecommerce-card shadow-sm">
+                            <div class="card-content">
+                                <div class="btn-group-vertical position-absolute right-0">
+                                    <button class="btn btn-white p-2">
+                                        <span class="lnr lnr-cart card-icon"></span>
+                                    </button>
+                                    <button class="btn btn-white p-2">
+                                        <span class="lnr lnr-heart card-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="item-img text-center">
+                                    <a href="product-details.html">
+                                        <img class="img-fluid" src="{{root}}{{ this.image }}" alt="img-placeholder"></a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="item-wrapper">
+                                        <div class="item-rating">
+                                            <div class="badge badge-primary badge-md">
+                                                <span>4</span>
+                                                <span class="lnr lnr-picture"></span>
+                                                </ion-icon>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 class="item-price">
+                                                {{ this.price }}
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="item-name">
+                                        <a href="product-details.html">{{ this.title }}</a>
+                                    </div>
+                                    <div>
+                                        <p class="item-description">
+                                            {{ this.description }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </section>
+                    <!-- Ecommerce Products Ends -->
+
+                    <!-- Ecommerce Pagination Starts -->
+                    {{> _pagination}}
+                    <!-- Ecommerce Pagination Ends -->
+                </div>
+            </div>
+            {{> _filter_side_nav}}
+        </div>
+    </div>
+</div>
