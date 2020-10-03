@@ -196,7 +196,7 @@
 					<h4>Shopping Cart</h4>
 				</span>
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
 							<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
@@ -228,7 +228,7 @@
 					</span>
 				</div>
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
 							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
@@ -260,7 +260,7 @@
 					</span>
 				</div>
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
 							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
@@ -428,6 +428,51 @@
 <script src="assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="assets/vendors/select2/js/select2.full.min.js"></script>
 <script>
+	$(window).scroll(function () {
+		var height = $(window).scrollTop();
+		if (height > 102) {
+			console.log(height);
+		}
+	});
+	var options = {
+		valueNames: ['name', 'subject', 'body', 'read', 'status'],
+		page: 5,
+		pagination: true
+	};
+
+	var hackerList = new List('hacker-list', options);
+
+	$('#notify-nav li').click(({ target }) => {
+		hackerList.filter(function (item) {
+			console.log(target.id);
+			if (item.values().status == target.id) {
+				return true;
+			} else {
+				return false;
+			}
+		});
+		hackerList.filter();
+	})
+
+	$('.jPaginateNext').on('click', function () {
+		var list = $('.pagination').find('li');
+		$.each(list, function (position, element) {
+			if ($(element).is('.active')) {
+				$(list[position + 1]).trigger('click');
+			}
+		})
+	});
+
+
+	$('.jPaginateBack').on('click', function () {
+		var list = $('.pagination').find('li');
+		$.each(list, function (position, element) {
+			if ($(element).is('.active')) {
+				$(list[position - 1]).trigger('click');
+			}
+		})
+	});
+
 	// select 2
 	$(document).ready(function () {
 		$('.select2').select2();
