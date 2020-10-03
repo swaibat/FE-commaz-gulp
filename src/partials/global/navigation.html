@@ -119,7 +119,7 @@
 		</ul>
 		</li>
 		<li class="nav-item active">
-			<a class="nav-link" href="shop.html">
+			<a class="nav-link" href="/shop/shop.html">
 				<span class="lnr lnr-store px-1"></span>
 				<span>Shop</span>
 			</a>
@@ -129,17 +129,17 @@
 				<span class="lnr lnr-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
 			<ul class="dropdown-menu">
 				<li class="">
-					<a class="nav-link" href="/about-us.html" data-i18n="Email"><i class="feather icon-mail"></i>About
+					<a class="nav-link" href="/others/about-us.html" data-i18n="Email"><i class="feather icon-mail"></i>About
 						us</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="/blog.html" data-i18n="Email"><i class="feather icon-mail"></i>Blog</a>
+					<a class="nav-link" href="/others/blog.html" data-i18n="Email"><i class="feather icon-mail"></i>Blog</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
+					<a class="nav-link" href="/others/faq.html" data-i18n="Email"><i class="feather icon-mail"></i>FAQ</a>
 				</li>
 				<li class="">
-					<a class="nav-link" href="/knowledgebase.html" data-i18n="Email"><i
+					<a class="nav-link" href="/knowledge-base/knowledge-base.html" data-i18n="Email"><i
 							class="feather icon-mail"></i>Knowledge base</a>
 				</li>
 			</ul>
@@ -150,25 +150,31 @@
 					class="selected-language">English</span></a>
 			<div class="dropdown-menu dropdown-lg dropdown-menu-right p-3" aria-labelledby="dropdown-flag">
 				<form action="">
-					<h5 class="font-weight-bold">
+					<h5 class="font-weight-bold mb-3">
 						Regional Settings
 					</h5>
 					<div class="form-group mb-2">
 						<label for="country">country</label>
-						<select name="country" id="country" class="select2 form-control form-control-sm">
-							<option value="Uganda">Uganda</option>
+						<select name="country" id="country" class="select2 form-control select2">
+							{{#each countries}}
+							<option value="Uganda">{{this.name}}</option>
+							{{/each}}
 						</select>
 					</div>
 					<div class="form-group mb-2">
 						<label for="language">language</label>
-						<select name="language" id="language" class="select2 form-control form-control-sm">
-							<option value="Uganda">Uganda</option>
+						<select name="language" id="language" class="select2 form-control select2">
+							{{#each countries}}
+							<option value="Uganda">{{this.languages.0.nativeName}}</option>
+							{{/each}}
 						</select>
 					</div>
 					<div class="form-group mb-2">
 						<label for="currency">currency</label>
-						<select name="currency" id="currency" class="form-control form-control-sm">
-							<option value="Uganda">Uganda</option>
+						<select name="currency" id="currency" class="form-control select2">
+							{{#each countries}}
+							<option value="Uganda">{{this.currencies.0.name}}</option>
+							{{/each}}
 						</select>
 					</div>	
 				</form>

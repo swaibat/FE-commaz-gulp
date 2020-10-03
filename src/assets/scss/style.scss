@@ -472,6 +472,9 @@ svg {
 	background: $gray-300;
 	left: 0;
 	z-index: -1;
+	@include media-breakpoint-down(md) {
+		height: 10.5rem;
+	}
 }
 
 // shopping cart class
@@ -1178,7 +1181,6 @@ $width: $height * 2;
 
 .select2 {
 	width: 100% !important;
-	
 
 	.select2-container--default {
 		.select2-selection--single {
@@ -1329,4 +1331,43 @@ $width: $height * 2;
 .dropdown-lg {
 	left: -5rem;
 	width: 17rem;
+}
+
+.sticky-sidenav {
+	top: 4.5rem;
+	width: 15rem;
+}
+.list {
+	.active {
+		background: $gray-200;
+	}
+}
+.btn-icon {
+	background: lighten($color: $primary, $amount: 90%);
+}
+
+.pagination {
+	li {
+		a {
+			position: relative;
+			display: block;
+			padding: 0.5rem 0.75rem;
+			margin-left: -1px;
+			line-height: 1.25;
+			color: $primary;
+			background-color: #fff;
+			border-radius: $border-radius;
+		}
+		&.active {
+			a {
+				z-index: 1;
+				color: #fff;
+				background-color: $primary;
+			}
+		}
+	}
+}
+
+.chat-nav-icons{
+	font-size: large;
 }

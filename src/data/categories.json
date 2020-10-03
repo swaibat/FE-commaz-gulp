@@ -1,0 +1,156 @@
+[
+	{
+		"name": "Vehicles",
+        "total": 746,
+        "icon": "lnr lnr-earth",
+		"sub": [
+			{
+				"name": "Cars & Bakkies",
+				"total": 633
+			},
+			{
+				"name": "Car Parts & Accessories",
+				"total": 345
+			},
+			{
+				"name": "Motorcycles & Scooters",
+				"total": 6345
+			},
+			{
+				"name": "Trucks & Commercial Vehicles",
+				"total": 453
+			},
+			{
+				"name": "Caravans & Trailers",
+				"total": 345
+			},
+			{
+				"name": "Boats & Aviation",
+				"total": 32
+			}
+		]
+	},
+	{
+		"name": "Electronics & Computers",
+        "total": 746,
+        "icon": "lnr lnr-earth",
+		"sub": [
+			{
+				"name": "Cell Phones",
+				"total": 633
+			},
+			{
+				"name": "TV, Audio & Visual",
+				"total": 345
+			},
+			{
+				"name": "Computers & Laptops",
+				"total": 6345
+			},
+			{
+				"name": "Gaming & Consoles",
+				"total": 453
+			},
+			{
+				"name": "Computer Hardware & Accessories",
+				"total": 345
+			},
+			{
+				"name": "Cameras",
+				"total": 32
+			},
+			{
+				"name": "iPads & Tablets",
+				"total": 32
+			}
+		]
+	},
+	{
+		"name": "Fashion & Beauty",
+        "total": 746,
+        "icon": "lnr lnr-earth",
+		"sub": [
+			{
+				"name": "Clothing & Shoes",
+				"total": 633
+			},
+			{
+				"name": "Jewellery & Accessories",
+				"total": 345
+			},
+			{
+				"name": "Health, Beauty & Cosmetics",
+				"total": 6345
+			}
+		]
+	},
+	{
+		"name": "Hobbies & Interests",
+        "total": 746,
+        "icon": "lnr lnr-earth",
+		"sub": [
+			{
+				"name": "Toys, Games & Remote Control",
+				"total": 633
+			},
+			{
+				"name": "Musical Instruments",
+				"total": 345
+			},
+			{
+				"name": "Community Announcements",
+				"total": 6345
+			},
+			{
+				"name": "Books, CDs & DVDs",
+				"total": 6345
+			}
+		]
+	},
+	{
+		"name": "Home, Garden & Tools",
+        "total": 746,
+        "icon": "lnr lnr-earth",
+		"sub": [
+			{
+				"name": "Furniture & Decor",
+				"total": 633
+			},
+			{
+				"name": "Homeware & Appliances",
+				"total": 345
+			},
+			{
+				"name": "Tools & DIY",
+				"total": 6345
+			},
+			{
+				"name": "Garden & Braai",
+				"total": 6345
+			}
+		]
+	},
+	{
+		"name": "Farming & Industrial",
+        "total": 746,
+        "icon-name": "paw-outline",
+		"sub": [
+			{
+				"name": "Farming Equipment & Vehicles",
+				"total": 633
+			},
+			{
+				"name": "Livestock",
+				"total": 345
+			},
+			{
+				"name": "Business & Industrial Equipment",
+				"total": 6345
+			},
+			{
+				"name": "Feeds, Supplements & Seeds",
+				"total": 6345
+			}
+		]
+	}
+]

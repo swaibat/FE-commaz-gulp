@@ -9,17 +9,6 @@
 	}
 }
 
-.btn-light {
-	background-color: #fff;
-	border-color: $border-color;
-	i {
-		color: $gray-500;
-	}
-	&:hover {
-		background-color: #fff;
-		border-color: darken($border-color, 30%);
-	}
-}
 
 .btn-light.active i {
 	color: $primary;

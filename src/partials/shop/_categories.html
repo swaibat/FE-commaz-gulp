@@ -1,0 +1,17 @@
+<!-- Categories Starts -->
+<div id="product-categories">
+    <div class="product-category-title">
+        <h6 class="filter-title mb-1">Categories</h6>
+    </div>
+    <nav class="nav flex-column">
+        {{#each categories}}
+        <a class="nav-link active" href="#">
+            <span class="btn btn-light p-2 mr-2 border-0">
+                <span class="{{this.icon}}"></span>
+            </span>
+            {{this.name}}
+        </a>
+        {{/each}}
+    </nav>
+</div>
+<hr>

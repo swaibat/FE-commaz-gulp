@@ -1,0 +1,50 @@
+[
+	{
+		"name": "John Doe",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+        "read": false,
+        "status" :"received"
+	},
+	{
+		"name": "Support Team",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+        "read": true,
+        "status" : "received"
+    },
+    {
+		"name": "Admin",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+        "read": false,
+        "status" : "received"
+	},
+    {
+		"name": "Admin",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+        "read": false,
+        "status" : "received"
+	},
+	{
+		"name": "Support Team",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+		"read": true,
+        "status" : "stared"
+	},
+	{
+		"name": "Password Reset",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+		"read": true,
+        "status" : "achieved"
+	}
+]
