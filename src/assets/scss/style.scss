@@ -1,26 +1,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@import "./bootstrap/bootstrap.scss";
-
 // over-ride variables
 @import 'variables';
 
+@import "bootstrap/bootstrap.scss";
+
 //vamoo icons
-@import './vamoo/style.scss';
+@import 'vamoo/style.scss';
 
-//custom scss
-@import './custom/custom.scss';
+// Global
+@import 'custom/global';
+
+// components
+@import 'custom/components/buttons';
+@import 'custom/components/cards-item';
+@import 'custom/components/counter';
+@import 'custom/components/elements';
+@import 'custom/components/fav-icon';
+@import 'custom/components/forms';
+@import 'custom/components/items';
+@import 'custom/components/lists';
+@import 'custom/components/menu';
+@import 'custom/components/table';
+@import 'custom/components/icons';
+@import 'custom/components/search';
+
+// pages
+@import 'custom/pages/authentication';
+@import 'custom/pages/faq';
+@import 'custom/pages/knowledge-base';
+@import 'custom/pages/product-details';
+@import 'custom/pages/shop';
+@import 'custom/pages/timeline';
+@import 'custom/pages/user';
+@import 'custom/pages/chat';
+
+// themes
+@import 'custom/themes/dark';
 
 
 
 
-
-.cart:checked + label .cart-icon {
-	&:before {
-		content: $va-cart-solid;
-	}
-}
 
 .slider-home-banner {
 	.carousel-item {
@@ -56,12 +77,6 @@
 // counter
 $continer-color: #0a6cf1;
 $continer-padding: 30px 20px 10px 20px;
-
-body {
-	font-family: 'Poppins', sans-serif;
-	min-height: 100%;
-	user-select: none;
-}
 
 .counter-continer {
 	background-color: $continer-color;
@@ -683,7 +698,7 @@ $width: $height * 2;
 }
 
 .with-overlay {
-	background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url('../images/banners/ad.png');
+	background: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.644)), url('.images/banners/ad.png');
 	background-position: right;
 	background-repeat: no-repeat;
 	// @include media-breakpoint-down(md) {
@@ -1209,7 +1224,7 @@ $width: $height * 2;
 .profile-cover {
 	height: 20rem;
 	background-size: cover;
-	background-image: url(../images/banners/company.jpg);
+	background-image: url(.images/banners/company.jpg);
 }
 
 .desc-text {
@@ -1217,47 +1232,7 @@ $width: $height * 2;
 	overflow: hidden;
 }
 
-@include media-breakpoint-down(sm) {
-	.responsive {
-		&.table {
-			border: 0;
-			caption {
-				font-size: 1.3em;
-			}
-			thead {
-				border: none;
-				clip: rect(0 0 0 0);
-				height: 1px;
-				margin: -1px;
-				overflow: hidden;
-				padding: 0;
-				position: absolute;
-				width: 1px;
-			}
-			tr {
-				border-bottom: 4px solid #ddd;
-				border: 0;
-				display: block;
-				margin-bottom: 0.625em;
-			}
-			td {
-				border-bottom: 1px solid #ddd;
-				display: block;
-				font-size: 0.8em;
-				text-align: right;
-				&::before {
-					content: attr(data-label);
-					float: left;
-					font-weight: bold;
-					text-transform: uppercase;
-				}
-				&:last-child {
-					border-bottom: 0;
-				}
-			}
-		}
-	}
-}
+
 
 .dropdown-lg {
 	left: -5rem;

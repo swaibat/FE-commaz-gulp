@@ -1,5 +1,4 @@
 html {
-	font-size: $font-size-base;
 	height: 100%;
 	letter-spacing: 0.01rem;
 }
@@ -16,18 +15,21 @@ body {
 }
 
 @include media-breakpoint-down(sm) {
-	 .content-wrapper {
+	.content-wrapper {
 		padding: 0;
 	}
 }
 
-
 // scroll to Top Footer Button
-.scroll-top{
-    position:fixed;
-    bottom:5%;
-    right:30px;
-    display: none;
-    z-index: 99;
-  }
-  
+.scroll-top {
+	position: fixed;
+	bottom: 5%;
+	right: 30px;
+	display: none;
+	z-index: 99;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

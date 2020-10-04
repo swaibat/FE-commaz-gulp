@@ -293,7 +293,7 @@ title: Product Details
 						</header>
 						<section id="ecommerce-products" class="grid-view grid-view-sm">
 							{{#each recent_products}}
-							<div class="card ecommerce-card mb-4 shadow-sm ">
+							<div class="card ecommerce-card shadow-sm">
 								<div class="card-content">
 									<div class="btn-group-vertical position-absolute right-0">
 										<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -303,10 +303,11 @@ title: Product Details
 											</label>
 										</span>
 										<span data-toggle="tooltip" data-title="add to wislist"
-											class="btn bg-white p-2">
+											class="btn btn-fav bg-white p-2">
 											<input type="checkbox" class="d-none fav" id="fav-{{ this.id }}">
 											<label for="fav-{{ this.id }}">
 												<span class="va fav-icon card-icon"></span>
+												{{>  _fav}}
 											</label>
 										</span>
 									</div>
@@ -316,25 +317,25 @@ title: Product Details
 												alt="img-placeholder"></a>
 									</div>
 									<div class="card-body">
-										<div class="item-wrapper">
+										<div class="d-flex justify-content-between">
 											<div class="item-rating">
-												<div class="badge badge-primary badge-md">
+												<div class="badge badge-primary">
 													<span>4</span>
-													<ion-icon class="text-white"
-														src="{{root}}assets/icons/svg/star.svg"></ion-icon>
+													<span class="lnr lnr-picture"></span>
+													</ion-icon>
 												</div>
 											</div>
 											<div>
-												<h6 class="item-price">
+												<h5 class="font-weight-bold">
 													{{ this.price }}
-												</h6>
+												</h5>
 											</div>
 										</div>
-										<div class="item-name">
-											<a href="product-details.html">{{ this.title }}</a>
+										<div class="item-name text-truncate">
+											<a class="title" href="product-details.html">{{ this.title }}</a>
 										</div>
 										<div>
-											<p class="item-description">
+											<p class="item-description text-truncate description">
 												{{ this.description }}
 											</p>
 										</div>

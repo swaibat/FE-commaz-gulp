@@ -18,3 +18,9 @@
 		}
 	}
 }
+
+.cart:checked + label .cart-icon {
+	&:before {
+		content: $va-cart-solid;
+	}
+}
