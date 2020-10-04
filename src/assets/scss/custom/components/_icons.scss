@@ -1,0 +1,20 @@
+.fav-icon {
+	&:before {
+		content: $va-heart;
+	}
+	&:hover {
+		&:before {
+			content: $va-heart-solid;
+		}
+	}
+}
+.cart-icon {
+	&:before {
+		content: $va-cart;
+	}
+	&:hover {
+		&:before {
+			content: $va-cart-solid;
+		}
+	}
+}

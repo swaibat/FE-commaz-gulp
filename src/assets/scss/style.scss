@@ -1,77 +1,24 @@
-/* ==== BASE STYLES ====*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-@import './bootstrap/functions';
+@import "./bootstrap/bootstrap.scss";
+
+// over-ride variables
 @import 'variables';
 
-/* ==================== GLOBAL STYLES ======================= */
+//vamoo icons
+@import './vamoo/style.scss';
 
-@import './bootstrap/scss/bootstrap.scss';
-
-/* ================== 
-PAGES
-=================== */
-@import './pages/pages.scss';
+//custom scss
+@import './custom/custom.scss';
 
 
-@import './core/layouts/footer';
-@import './core/layouts/content';
-@import './core/menu/navigation';
-@import './core/menu/menu-types/horizontal-menu.scss';
 
-// Import Icons
-@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
-
-// themify
-@import './helpers/mixins';
-@import './helpers/helper-classes';
-@import './components/items';
-@import './components/table';
-@import './components/counter';
-
-@import './core/themes/dark';
-
-@import './vamoo-icons-v1.0/style.scss';
-@import './components/fav-icon';
-
-.fav-icon {
-	&:before {
-		content: $va-heart;
-	}
-	&:hover {
-		&:before {
-			content: $va-heart-solid;
-		}
-	}
-}
-.cart-icon {
-	&:before {
-		content: $va-cart;
-	}
-	&:hover {
-		&:before {
-			content: $va-cart-solid;
-		}
-	}
-}
 
 
 .cart:checked + label .cart-icon {
 	&:before {
 		content: $va-cart-solid;
-	}
-}
-
-.twitter {
-	@extend %fa-icon;
-	@extend .fab;
-
-	&:before {
-		content: fa-content($fa-var-twitter);
 	}
 }
 
@@ -764,53 +711,6 @@ $width: $height * 2;
 	color: #fff;
 	&:hover {
 		color: #fff;
-	}
-}
-.btn-twitter {
-	background-color: $gray-900;
-	color: #fff;
-	@extend %fa-icon;
-	@extend .fab;
-	&:hover {
-		color: #fff;
-	}
-	&:before {
-		content: fa-content($fa-var-twitter);
-	}
-}
-.btn-google {
-	background-color: $gray-900;
-	color: #fff;
-	@extend %fa-icon;
-	@extend .fab;
-	&:hover {
-		color: #fff;
-	}
-	&:before {
-		content: fa-content($fa-var-google);
-	}
-}
-.btn-facebook {
-	color: #fff;
-	@extend %fa-icon;
-	@extend .fab;
-	&:hover {
-		color: #fff;
-	}
-	&:before {
-		content: fa-content($fa-var-facebook);
-	}
-}
-
-.btn-youtube {
-	color: #fff;
-	@extend %fa-icon;
-	@extend .fab;
-	&:hover {
-		color: #fff;
-	}
-	&:before {
-		content: fa-content($fa-var-youtube);
 	}
 }
 

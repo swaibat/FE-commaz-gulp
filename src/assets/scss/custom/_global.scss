@@ -1,0 +1,33 @@
+html {
+	font-size: $font-size-base;
+	height: 100%;
+	letter-spacing: 0.01rem;
+}
+
+body {
+	height: 100%;
+}
+
+.content {
+	padding: 0;
+	position: relative;
+	backface-visibility: hidden;
+	min-height: calc(100% - 20rem);
+}
+
+@include media-breakpoint-down(sm) {
+	 .content-wrapper {
+		padding: 0;
+	}
+}
+
+
+// scroll to Top Footer Button
+.scroll-top{
+    position:fixed;
+    bottom:5%;
+    right:30px;
+    display: none;
+    z-index: 99;
+  }
+  

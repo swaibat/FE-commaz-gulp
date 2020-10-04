@@ -5,21 +5,6 @@ $wishlist-bg: #f6f6f6;
 	position: relative;
 }
 
-.shop-content-overlay {
-	position: absolute;
-	top: 4.2rem;
-	height: 100%;
-	width: 100%;
-	background: rgba($pure-black, 0.2);
-	z-index: 0;
-	opacity: 0;
-
-	&.show {
-		opacity: 1;
-		z-index: 1;
-	}
-}
-
 // Shop Sidebar
 .sidebar-shop {
 	//close icon
@@ -113,120 +98,10 @@ $wishlist-bg: #f6f6f6;
 	}
 }
 
-.sidebar-shop {
-	z-index: 4;
-	.card {
-		width: $sidebar-width;
-	}
-}
-
-// shop main content
-
-//ecommerce header
-.ecommerce-header-items {
-	display: flex;
-	justify-content: space-between;
-
-	.view-options {
-		.view-btn-option {
-			display: inline-block;
-
-			.btn.view-btn {
-				margin-right: 10px;
-				background-color: $white;
-				padding: 0.5rem;
-				color: $body-color;
-				box-shadow: 0 2px 8px 0 rgba($pure-black, 0.14) !important;
-
-				ion-icon {
-					font-size: 1.7rem;
-				}
-
-				&.active {
-					&:hover,
-					&:active {
-						color: $primary !important;
-					}
-
-					color: $primary !important;
-				}
-
-				&:hover,
-				&:active {
-					color: $body-color;
-				}
-			}
-		}
-
-		.select2 {
-			margin-right: 10px;
-			width: auto !important;
-
-			.select2-selection--single {
-				border: none !important;
-				box-shadow: 0 2px 8px 0 rgba($pure-black, 0.14);
-				border-radius: 5px;
-			}
-		}
-	}
-
-	.result-toggler {
-		display: flex;
-		align-items: flex-end;
-
-		.shop-sidebar-toggler {
-			font-size: 1.7rem;
-			padding-left: 0;
-			margin-left: -6px;
-
-			&:active,
-			&:focus {
-				outline: 0;
-			}
-
-			.navbar-toggler-icon {
-				i {
-					color: $body-color;
-					vertical-align: middle;
-				}
-			}
-		}
-
-		.search-results {
-			font-weight: 700;
-			color: $body-color;
-			display: inline-block;
-		}
-	}
-}
-
-// Product search bar
-.search-product {
-	height: 48px;
-	border: none;
-	box-shadow: 0 2px 8px 0 rgba($pure-black, 0.14);
-	font-size: 1.2rem;
-	padding-left: 1rem;
-
-	& ~ .form-control-position {
-		top: 10px;
-		right: 10px;
-
-		i {
-			font-size: 1.5rem;
-		}
-	}
-
-	&::placeholder {
-		font-size: 0.95rem;
-	}
-}
-
 // main Products
 .ecommerce-card {
 	&:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 4px 25px 0 rgba($pure-black, 0.25);
 	}
 
 	.item-price {
