@@ -20,7 +20,7 @@
 	<nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link logo" href="./">
+				<a class="nav-link logo" href="/">
 					<svg xmlns="http://www.w3.org/2000/svg" width="187.427" height="36.175" viewBox="0 0 187.427 36.175">
 					    <g id="Group_81" data-name="Group 81" transform="translate(-908.34 -1825.6)">
 					        <g id="Group_80" data-name="Group 80">
@@ -65,11 +65,15 @@
 							<small class="text lr-only"> My profile </small>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="profile.html">
+							<a class="dropdown-item" href="../profile/profile.html">
 								<span class="lnr lnr-user mr-1"></span>
 								Edit Profile
-							</a><a class="dropdown-item" href="notifications.html">
-								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<a class="dropdown-item" href="../notify/notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Notifications
+							</a>
+							<a class="dropdown-item" href="../notify/chat.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Chat
 							</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="/">
@@ -89,7 +93,7 @@
 					<div class="widget-header ml-3">
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
-								<span class="lnr lnr-cart"></span>
+								<span class="lnr cart-icon"></span>
 							</div>
 							<small class="text lr-only ml-4"> Cart </small>
 							<span class="c-badge badge-cart">3</span>
@@ -99,12 +103,12 @@
 			</div>
 		</div>
 	</nav>
-	<div class="bg-white px-4 py-2 border mt-r-2">
+	<div class="bg-white px-4 py-2 mt-r-2">
 		<nav class="nav d-flex justify-content-between container">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
 					<span class="lnr lnr-list pr-1"></span>Genre</a>
-				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4 category-dropdown">
+				<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown">
 					<div class="row col-md-10">
 						<div class="col-md-3 mb-3">
 							<h6 class="font-weight-bold">Electronics & Computers</h6>
@@ -980,7 +984,7 @@
 	</div>
 	<div class="container p-0 mb-4">
 	    <div class="px-2">
-	        <ul class="container nav nav-pills profile-nav  mb-3 bg-white p-3 border">
+	        <ul class="container nav nav-pills profile-nav  mb-3 bg-white p-3 shadow-sm">
 	            <li class="nav-item">
 	                <img src="../assets/images/portrait/small/avatar-s-12.jpg"
 	                    class="profile-avatar rounded-circle img-border box-shadow-1" alt="avatar" />
@@ -988,30 +992,32 @@
 	            <ul class="nav nav-item collapse navbar-collapse d-md-flex" id="profileNav">
 	                <div class="m-auto d-flex flex-column flex-sm-row w-100">
 	                    <li class="nav-item text-center">
-	                        <a class="nav-link " href="profile.html">Profile</a>
+	                        <a class="nav-link " href="../profile/profile.html">Profile</a>
 	                    </li>
 	                    <li class="nav-item">
 	                        <a class="nav-link "
-	                            href="profile-wishlist.html">Whishlist</a>
+	                            href="../profile/profile-wishlist.html">Whishlist</a>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a class="nav-link " href="profile-orders.html">My
+	                        <a class="nav-link " href="../profile/profile-orders.html">My
 	                            Orders</a>
 	                    </li>
 	                    <li class="nav-item">
 	                        <a class="nav-link "
-	                            href="profile-addresses.html">My Shipping Details</a>
+	                            href="../profile/profile-addresses.html">My Shipping Details</a>
 	                    </li>
 	                    <li class="nav-item">
 	                        <a class="nav-link "
-	                            href="profile-viewed-products.html">My Recently viewed products</a>
+	                            href="../profile/profile-viewed-products.html">My Recently viewed products</a>
 	                    </li>
 	                </div>
 	            </ul>
 	            <li class="nav-item ml-auto mt-md-n4 order-0 order-sm-2">
-	                <a class="btn btn-sm btn-primary ml-auto p-2" href="profile-edit.html"><span class="lnr lnr-pencil"></span>
+	                <a data-toggle="tooltip" data-original-title="Edit Profile"
+	                    class="btn btn-sm btn-primary ml-auto p-2" href="../profile/profile-edit.html"><span class="lnr lnr-pencil"></span>
 	                </a>
-	                <a class="btn btn-sm btn-primary ml-auto p-2" href="profile-viewed-products.html">
+	                <a data-toggle="tooltip" data-original-title="settings"
+	                    class="btn btn-sm btn-primary ml-auto p-2" href="../profile/profile-viewed-products.html">
 	                    <span class="lnr lnr-cog"></span>
 	                </a>
 	                <button class="btn btn-sm btn-primary d-md-none p-2" type="button" data-toggle="collapse"
@@ -1546,10 +1552,10 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light btn-facebook" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-google" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-twitter" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-youtube" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-facebook" data-toggle="tooltip" data-title="Facebook" href="#"></a>
+								<a class="btn btn-icon btn-light btn-google" data-toggle="tooltip" data-title="Google" href="#"></a>
+								<a class="btn btn-icon btn-light btn-twitter" data-toggle="tooltip" data-title="Twitter" href="#"></a>
+								<a class="btn btn-icon btn-light btn-youtube" data-toggle="tooltip" data-title="Youtube" href="#"></a>
 							</div>
 						</article>
 					</aside>
@@ -1608,13 +1614,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="../assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="../assets/vendors/select2/js/select2.full.min.js"></script>
+<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 <script>
-	$(window).scroll(function () {
-		var height = $(window).scrollTop();
-		if (height > 102) {
-			console.log(height);
-		}
-	});
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 	var options = {
 		valueNames: ['name', 'subject', 'body', 'read', 'status'],
 		page: 5,
@@ -1635,24 +1639,7 @@
 		hackerList.filter();
 	})
 
-	$('.jPaginateNext').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position + 1]).trigger('click');
-			}
-		})
-	});
 
-
-	$('.jPaginateBack').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position - 1]).trigger('click');
-			}
-		})
-	});
 
 	// select 2
 	$(document).ready(function () {

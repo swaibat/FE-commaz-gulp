@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @import './bootstrap/functions';
-@import './core/variables/variables';
+@import 'variables';
 
 /* ==================== GLOBAL STYLES ======================= */
 
@@ -14,7 +14,6 @@ PAGES
 =================== */
 @import './pages/pages.scss';
 
-@import './bs-extends/bs-extends.scss';
 
 @import './core/layouts/footer';
 @import './core/layouts/content';
@@ -26,6 +25,7 @@ PAGES
 @import 'node_modules/@fortawesome/fontawesome-free/scss/solid';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/regular';
 @import 'node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
 // themify
 @import './helpers/mixins';
 @import './helpers/helper-classes';
@@ -34,6 +34,37 @@ PAGES
 @import './components/counter';
 
 @import './core/themes/dark';
+
+@import './vamoo-icons-v1.0/style.scss';
+@import './components/fav-icon';
+
+.fav-icon {
+	&:before {
+		content: $va-heart;
+	}
+	&:hover {
+		&:before {
+			content: $va-heart-solid;
+		}
+	}
+}
+.cart-icon {
+	&:before {
+		content: $va-cart;
+	}
+	&:hover {
+		&:before {
+			content: $va-cart-solid;
+		}
+	}
+}
+
+
+.cart:checked + label .cart-icon {
+	&:before {
+		content: $va-cart-solid;
+	}
+}
 
 .twitter {
 	@extend %fa-icon;
@@ -1368,6 +1399,6 @@ $width: $height * 2;
 	}
 }
 
-.chat-nav-icons{
+.chat-nav-icons {
 	font-size: large;
 }

@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
 	<div class="container">
 		<div class="dropdown nav-item category-menu" data-menu="dropdown">
-			<a class="nav-link logo" href="./">
+			<a class="nav-link logo" href="/">
 				{{> _logo}}
 			</a>
 		</div>
@@ -28,11 +28,15 @@
 						<small class="text lr-only"> My profile </small>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile.html">
+						<a class="dropdown-item" href="{{root}}profile/profile.html">
 							<span class="lnr lnr-user mr-1"></span>
 							Edit Profile
-						</a><a class="dropdown-item" href="notifications.html">
-							<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+						</a>
+						<a class="dropdown-item" href="{{root}}notify/notifications.html">
+							<ion-icon name="chatbox-outline"></ion-icon> My Notifications
+						</a>
+						<a class="dropdown-item" href="{{root}}notify/chat.html">
+							<ion-icon name="chatbox-outline"></ion-icon> My Chat
 						</a>
 						<div class="dropdown-divider"></div>
 						<a class="dropdown-item" href="/">
@@ -52,7 +56,7 @@
 				<div class="widget-header ml-3">
 					<span id="cart-btn" class="widget-view">
 						<div class="text-center header-icons">
-							<span class="lnr lnr-cart"></span>
+							<span class="lnr cart-icon"></span>
 						</div>
 						<small class="text lr-only ml-4"> Cart </small>
 						<span class="c-badge badge-cart">3</span>
@@ -62,12 +66,12 @@
 		</div>
 	</div>
 </nav>
-<div class="bg-white px-4 py-2 border mt-r-2">
+<div class="bg-white px-4 py-2 mt-r-2">
 	<nav class="nav d-flex justify-content-between container">
 		<li class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
 				<span class="lnr lnr-list pr-1"></span>Genre</a>
-			<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4 category-dropdown">
+			<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown">
 				<div class="row col-md-10">
 					<div class="col-md-3 mb-3">
 						<h6 class="font-weight-bold">Electronics & Computers</h6>
@@ -182,7 +186,7 @@
 			</div>
 		</li>
 		{{#ifpage 'index'}}
-		<li class="nav-item ml-3 lr-only">
+		<li class="nav-item ml-3 lr-only" data-toggle="tooltip" data-original-title="display mode">
 			<div class="switch">
 				<input class="switch" id="switch" name="switch" type="checkbox">
 				<label for="switch"></label>

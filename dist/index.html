@@ -20,7 +20,7 @@
 	<nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
 		<div class="container">
 			<div class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link logo" href="./">
+				<a class="nav-link logo" href="/">
 					<svg xmlns="http://www.w3.org/2000/svg" width="187.427" height="36.175" viewBox="0 0 187.427 36.175">
 					    <g id="Group_81" data-name="Group 81" transform="translate(-908.34 -1825.6)">
 					        <g id="Group_80" data-name="Group 80">
@@ -65,11 +65,15 @@
 							<small class="text lr-only"> My profile </small>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right">
-							<a class="dropdown-item" href="profile.html">
+							<a class="dropdown-item" href="profile/profile.html">
 								<span class="lnr lnr-user mr-1"></span>
 								Edit Profile
-							</a><a class="dropdown-item" href="notifications.html">
-								<ion-icon name="chatbox-outline"></ion-icon> My Inbox
+							</a>
+							<a class="dropdown-item" href="notify/notifications.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Notifications
+							</a>
+							<a class="dropdown-item" href="notify/chat.html">
+								<ion-icon name="chatbox-outline"></ion-icon> My Chat
 							</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="/">
@@ -89,7 +93,7 @@
 					<div class="widget-header ml-3">
 						<span id="cart-btn" class="widget-view">
 							<div class="text-center header-icons">
-								<span class="lnr lnr-cart"></span>
+								<span class="lnr cart-icon"></span>
 							</div>
 							<small class="text lr-only ml-4"> Cart </small>
 							<span class="c-badge badge-cart">3</span>
@@ -99,12 +103,12 @@
 			</div>
 		</div>
 	</nav>
-	<div class="bg-white px-4 py-2 border mt-r-2">
+	<div class="bg-white px-4 py-2 mt-r-2">
 		<nav class="nav d-flex justify-content-between container">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
 					<span class="lnr lnr-list pr-1"></span>Genre</a>
-				<ul class="dropdown-menu container row p-3 shadowl-lg ml-n4 category-dropdown">
+				<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown">
 					<div class="row col-md-10">
 						<div class="col-md-3 mb-3">
 							<h6 class="font-weight-bold">Electronics & Computers</h6>
@@ -959,7 +963,7 @@
 					
 				</div>
 			</li>
-			<li class="nav-item ml-3 lr-only">
+			<li class="nav-item ml-3 lr-only" data-toggle="tooltip" data-original-title="display mode">
 				<div class="switch">
 					<input class="switch" id="switch" name="switch" type="checkbox">
 					<label for="switch"></label>
@@ -2007,15 +2011,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-1">
+	                            <label for="cart-1">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-1">
+	                            <label for="fav-1">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/asus-laptop.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2033,7 +2081,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2046,15 +2094,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-2">
+	                            <label for="cart-2">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-2">
+	                            <label for="fav-2">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2072,7 +2164,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2085,15 +2177,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-3">
+	                            <label for="cart-3">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-3">
+	                            <label for="fav-3">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/cctv-black.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2111,7 +2247,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2124,15 +2260,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-4">
+	                            <label for="cart-4">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-4">
+	                            <label for="fav-4">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/men-casual-shoes.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2150,7 +2330,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2163,15 +2343,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-5">
+	                            <label for="cart-5">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-5">
+	                            <label for="fav-5">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/white-drone.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2189,7 +2413,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2202,15 +2426,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-6">
+	                            <label for="cart-6">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-6">
+	                            <label for="fav-6">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/printer.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2228,7 +2496,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2241,15 +2509,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-7">
+	                            <label for="cart-7">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-7">
+	                            <label for="fav-7">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/cctv-top.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2267,7 +2579,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2280,15 +2592,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-8">
+	                            <label for="cart-8">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-8">
+	                            <label for="fav-8">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/black-speaker.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2306,7 +2662,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+	                            <a href="shop/product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2319,15 +2675,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-9">
+	                            <label for="cart-9">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-9">
+	                            <label for="fav-9">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/smart-tv-43.png" alt="43 inch UHD 4k tv smart television led tv"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2345,7 +2745,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">43 inch UHD 4k tv smart television led tv</a>
+	                            <a href="shop/product-details.html">43 inch UHD 4k tv smart television led tv</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2358,15 +2758,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-10">
+	                            <label for="cart-10">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-10">
+	                            <label for="fav-10">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/washing_machine_PNG15614.png" alt="New Shoe Washing Machine Remote Control Small "></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2384,7 +2828,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">New Shoe Washing Machine Remote Control Small </a>
+	                            <a href="shop/product-details.html">New Shoe Washing Machine Remote Control Small </a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2397,15 +2841,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-11">
+	                            <label for="cart-11">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-11">
+	                            <label for="fav-11">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/headphones_PNG7660.png" alt="4.2 Stereo Earphone Headset Wireless Magnetic"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2423,7 +2911,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">4.2 Stereo Earphone Headset Wireless Magnetic</a>
+	                            <a href="shop/product-details.html">4.2 Stereo Earphone Headset Wireless Magnetic</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2436,15 +2924,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-12">
+	                            <label for="cart-12">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-12">
+	                            <label for="fav-12">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/macbook-pro-13.png" alt="Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2462,7 +2994,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core</a>
+	                            <a href="shop/product-details.html">Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2475,15 +3007,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-13">
+	                            <label for="cart-13">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-13">
+	                            <label for="fav-13">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/iphone-11-gray.png" alt="iPhone Se 2020 Plus 11 Pro"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2501,7 +3077,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">iPhone Se 2020 Plus 11 Pro</a>
+	                            <a href="shop/product-details.html">iPhone Se 2020 Plus 11 Pro</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2514,15 +3090,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-14">
+	                            <label for="cart-14">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-14">
+	                            <label for="fav-14">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/stopwatch_PNG152.png" alt="Digital Handheld Sports Stopwatch"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2540,7 +3160,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Digital Handheld Sports Stopwatch</a>
+	                            <a href="shop/product-details.html">Digital Handheld Sports Stopwatch</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2553,15 +3173,59 @@
 	            <div class="card ecommerce-card mb-0 mb-sm-4  shadow-sm ">
 	                <div class="card-content">
 	                    <div class="btn-group-vertical position-absolute right-0">
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-cart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+	                            <input type="checkbox" class="d-none cart" id="cart-15">
+	                            <label for="cart-15">
+	                                <span class="va cart-icon card-icon"></span>
+	                            </label>
 	                        </span>
-	                        <span class="btn bg-white p-2">
-	                            <span class="lnr lnr-heart card-icon"></span>
+	                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+	                            <input type="checkbox" class="d-none fav" id="fav-15">
+	                            <label for="fav-15">
+	                                <span class="va fav-icon card-icon"></span>
+	                                <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+	                                    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+	                                        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+	                                        <g id="grp7" opacity="0" transform="translate(7 6)">
+	                                            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+	                                            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp6" opacity="0" transform="translate(0 28)">
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp3" opacity="0" transform="translate(52 28)">
+	                                            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+	                                            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp2" opacity="0" transform="translate(44 6)">
+	                                            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+	                                            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp5" opacity="0" transform="translate(14 50)">
+	                                            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp4" opacity="0" transform="translate(35 50)">
+	                                            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+	                                            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+	                                        </g>
+	                                
+	                                        <g id="grp1" opacity="0" transform="translate(24)">
+	                                            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+	                                            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+	                                        </g>
+	                                    </g>
+	                                </svg>                            </label>
 	                        </span>
 	                    </div>
 	                    <div class="item-img text-center">
-	                        <a href="product-details.html">
+	                        <a href="shop/product-details.html">
 	                            <img class="img-fluid" src="assets/images/products/double-speaker.png" alt="Ecobee Smart Thermostat with Voice Control"></a>
 	                    </div>
 	                    <div class="card-body">
@@ -2579,7 +3243,7 @@
 	                            </div>
 	                        </div>
 	                        <div class="item-name">
-	                            <a href="product-details.html">Ecobee Smart Thermostat with Voice Control</a>
+	                            <a href="shop/product-details.html">Ecobee Smart Thermostat with Voice Control</a>
 	                        </div>
 	                        <div>
 	                            <p class="item-description">
@@ -2770,10 +3434,10 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light btn-facebook" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-google" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-twitter" title="Facebook" target="_blank" href="#"></a>
-								<a class="btn btn-icon btn-light btn-youtube" title="Facebook" target="_blank" href="#"></a>
+								<a class="btn btn-icon btn-light btn-facebook" data-toggle="tooltip" data-title="Facebook" href="#"></a>
+								<a class="btn btn-icon btn-light btn-google" data-toggle="tooltip" data-title="Google" href="#"></a>
+								<a class="btn btn-icon btn-light btn-twitter" data-toggle="tooltip" data-title="Twitter" href="#"></a>
+								<a class="btn btn-icon btn-light btn-youtube" data-toggle="tooltip" data-title="Youtube" href="#"></a>
 							</div>
 						</article>
 					</aside>
@@ -2832,13 +3496,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="assets/vendors/select2/js/select2.full.min.js"></script>
+<script src="assets/vendors/listjs-v1.5.0/list.min.js"></script>
 <script>
-	$(window).scroll(function () {
-		var height = $(window).scrollTop();
-		if (height > 102) {
-			console.log(height);
-		}
-	});
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 	var options = {
 		valueNames: ['name', 'subject', 'body', 'read', 'status'],
 		page: 5,
@@ -2859,24 +3521,7 @@
 		hackerList.filter();
 	})
 
-	$('.jPaginateNext').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position + 1]).trigger('click');
-			}
-		})
-	});
 
-
-	$('.jPaginateBack').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position - 1]).trigger('click');
-			}
-		})
-	});
 
 	// select 2
 	$(document).ready(function () {

@@ -117,13 +117,11 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="../assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="../assets/vendors/select2/js/select2.full.min.js"></script>
+<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 <script>
-	$(window).scroll(function () {
-		var height = $(window).scrollTop();
-		if (height > 102) {
-			console.log(height);
-		}
-	});
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 	var options = {
 		valueNames: ['name', 'subject', 'body', 'read', 'status'],
 		page: 5,
@@ -144,24 +142,7 @@
 		hackerList.filter();
 	})
 
-	$('.jPaginateNext').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position + 1]).trigger('click');
-			}
-		})
-	});
 
-
-	$('.jPaginateBack').on('click', function () {
-		var list = $('.pagination').find('li');
-		$.each(list, function (position, element) {
-			if ($(element).is('.active')) {
-				$(list[position - 1]).trigger('click');
-			}
-		})
-	});
 
 	// select 2
 	$(document).ready(function () {

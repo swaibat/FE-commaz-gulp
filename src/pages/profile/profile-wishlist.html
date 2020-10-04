@@ -9,16 +9,23 @@ title: My Whishlist
 			<div class="card ecommerce-card shadow-sm">
 				<div class="card-content">
 					<div class="btn-group-vertical position-absolute right-0">
-						<span class="btn bg-white p-2">
-							<span class="lnr lnr-cart card-icon"></span>
-						</span>
-						<span class="btn bg-white p-2">
-							<span class="lnr lnr-heart card-icon"></span>
-						</span>
-					</div>
+                        <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+                            <input type="checkbox" class="d-none cart" id="cart-{{ this.id }}">
+                            <label for="cart-{{ this.id }}">
+                                <span class="va cart-icon card-icon"></span>
+                            </label>
+                        </span>
+                        <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+                            <input type="checkbox" class="d-none fav" id="fav-{{ this.id }}" checked>
+                            <label for="fav-{{ this.id }}">
+                                <span class="va fav-icon card-icon"></span>
+                                {{>  _fav}}
+                            </label>
+                        </span>
+                    </div>
 					<div class="item-img text-center">
-						<a href="product-details.html"> <img class="img-fluid" src="{{root}}{{this.image}}"
-								alt="{{this.image}}" /></a>
+						<a href="{{root}}shop/product-details.html"> <img class="img-fluid" src="{{root}}../{{this.image}}"
+								alt="{{this.name}}" /></a>
 					</div>
 					<div class="card-body">
 						<div class="item-wrapper">

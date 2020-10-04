@@ -264,7 +264,7 @@ title: Product Details
 										{{#each wishlist}}
 										<div class="itemside mb-4 p-3 border rounded">
 											<div class="aside">
-												<img src="{{root}}{{this.image}}"
+												<img src="{{root}}../{{this.image}}"
 													class="img-sm bg-light border rounded"></div>
 											<div class="info d-flex flex-column">
 												<a href="#" class="title font-weight-bold">{{this.title}}</a>
@@ -296,17 +296,23 @@ title: Product Details
 							<div class="card ecommerce-card mb-4 shadow-sm ">
 								<div class="card-content">
 									<div class="btn-group-vertical position-absolute right-0">
-										<span class="btn bg-white p-2">
-											<ion-icon class="card-icon" src="{{root}}assets/icons/svg/cart.svg">
-											</ion-icon>
+										<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+											<input type="checkbox" class="d-none cart" id="cart-{{ this.id }}">
+											<label for="cart-{{ this.id }}">
+												<span class="va cart-icon card-icon"></span>
+											</label>
 										</span>
-										<span class="btn bg-white p-2">
-											<span class="lnr lnr-heart card-icon"></span>
+										<span data-toggle="tooltip" data-title="add to wislist"
+											class="btn bg-white p-2">
+											<input type="checkbox" class="d-none fav" id="fav-{{ this.id }}">
+											<label for="fav-{{ this.id }}">
+												<span class="va fav-icon card-icon"></span>
+											</label>
 										</span>
 									</div>
 									<div class="item-img text-center">
 										<a href="product-details.html">
-											<img class="img-fluid" src="{{root}}{{ this.image }}"
+											<img class="img-fluid" src="{{root}}../{{ this.image }}"
 												alt="img-placeholder"></a>
 									</div>
 									<div class="card-body">
