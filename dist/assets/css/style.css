@@ -10852,6 +10852,10 @@ html {
   letter-spacing: 0.01rem;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   height: 100%;
 }
@@ -15015,7 +15019,7 @@ svg .c {
 }
 
 .profile-avatar {
-  width: 5.5rem;
+  width: 4rem;
   margin-top: -2rem;
   position: absolute;
   border: solid;

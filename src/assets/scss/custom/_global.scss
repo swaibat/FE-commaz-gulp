@@ -2,6 +2,9 @@ html {
 	height: 100%;
 	letter-spacing: 0.01rem;
 }
+li {
+	list-style: none;
+}
 
 body {
 	height: 100%;
@@ -30,6 +33,6 @@ body {
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+	outline: none !important;
+	box-shadow: none !important;
 }
