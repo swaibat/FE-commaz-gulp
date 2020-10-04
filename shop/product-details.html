@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="../assets/icons/linearicons/style.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
+	<script src="../assets/js/bundle.js"></script>
+	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
 <body class="dark-mod">
@@ -1347,7 +1349,7 @@
 								<h4 class="title-section text-uppercase">Related Products</h4>
 							</header>
 							<section id="ecommerce-products" class="grid-view grid-view-sm">
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1357,11 +1359,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-1">
 												<label for="fav-1">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1370,32 +1410,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1405,11 +1445,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-2">
 												<label for="fav-2">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1418,32 +1496,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1453,11 +1531,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-3">
 												<label for="fav-3">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1466,32 +1582,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1501,11 +1617,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-4">
 												<label for="fav-4">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1514,32 +1668,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1549,11 +1703,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-5">
 												<label for="fav-5">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1562,32 +1754,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1597,11 +1789,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-6">
 												<label for="fav-6">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1610,32 +1840,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1645,11 +1875,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-7">
 												<label for="fav-7">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1658,32 +1926,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1693,11 +1961,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-8">
 												<label for="fav-8">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1706,32 +2012,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1001.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1741,11 +2047,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-9">
 												<label for="fav-9">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1754,32 +2098,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														340.3
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">43 inch UHD 4k tv smart television led tv</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">43 inch UHD 4k tv smart television led tv</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1789,11 +2133,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-10">
 												<label for="fav-10">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1802,32 +2184,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														695
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">New Shoe Washing Machine Remote Control Small </a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">New Shoe Washing Machine Remote Control Small </a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean&#x27;s pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1837,11 +2219,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-11">
 												<label for="fav-11">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1850,32 +2270,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														6.8
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">4.2 Stereo Earphone Headset Wireless Magnetic</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">4.2 Stereo Earphone Headset Wireless Magnetic</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1885,11 +2305,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-12">
 												<label for="fav-12">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1898,32 +2356,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														2919.9
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1933,11 +2391,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-13">
 												<label for="fav-13">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1946,32 +2442,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														1201.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">iPhone Se 2020 Plus 11 Pro</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">iPhone Se 2020 Plus 11 Pro</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1981,11 +2477,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-14">
 												<label for="fav-14">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -1994,32 +2528,32 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														18.99
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Digital Handheld Sports Stopwatch</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Digital Handheld Sports Stopwatch</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine&#x27;s Day...
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card mb-4 shadow-sm ">
+								<div class="card ecommerce-card shadow-sm">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0">
 											<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2029,11 +2563,49 @@
 												</label>
 											</span>
 											<span data-toggle="tooltip" data-title="add to wislist"
-												class="btn bg-white p-2">
+												class="btn btn-fav bg-white p-2">
 												<input type="checkbox" class="d-none fav" id="fav-15">
 												<label for="fav-15">
 													<span class="va fav-icon card-icon"></span>
-												</label>
+													<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													    <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+													        <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													        <g id="grp7" opacity="0" transform="translate(7 6)">
+													            <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+													            <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp6" opacity="0" transform="translate(0 28)">
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp3" opacity="0" transform="translate(52 28)">
+													            <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+													            <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp2" opacity="0" transform="translate(44 6)">
+													            <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+													            <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp5" opacity="0" transform="translate(14 50)">
+													            <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp4" opacity="0" transform="translate(35 50)">
+													            <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+													            <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+													        </g>
+													
+													        <g id="grp1" opacity="0" transform="translate(24)">
+													            <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+													            <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+													        </g>
+													    </g>
+													</svg>											</label>
 											</span>
 										</div>
 										<div class="item-img text-center">
@@ -2042,25 +2614,25 @@
 													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
-											<div class="item-wrapper">
+											<div class="d-flex justify-content-between">
 												<div class="item-rating">
-													<div class="badge badge-primary badge-md">
+													<div class="badge badge-primary">
 														<span>4</span>
-														<ion-icon class="text-white"
-															src="assets/icons/svg/star.svg"></ion-icon>
+														<span class="lnr lnr-picture"></span>
+														</ion-icon>
 													</div>
 												</div>
 												<div>
-													<h6 class="item-price">
+													<h5 class="font-weight-bold">
 														315
-													</h6>
+													</h5>
 												</div>
 											</div>
-											<div class="item-name">
-												<a href="product-details.html">Ecobee Smart Thermostat with Voice Control</a>
+											<div class="item-name text-truncate">
+												<a class="title" href="product-details.html">Ecobee Smart Thermostat with Voice Control</a>
 											</div>
 											<div>
-												<p class="item-description">
+												<p class="item-description text-truncate description">
 													Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel
 												</p>
 											</div>
@@ -2310,13 +2882,15 @@
 		<!-- //container -->
 	</footer>
 </body>
-<script src="../assets/js/bundle.js"></script>
+
 <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="../assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="../assets/vendors/select2/js/select2.full.min.js"></script>
-<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
+
 <script>
+	// shop
+	
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
