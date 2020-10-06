@@ -25,6 +25,9 @@
 @import 'custom/components/table';
 @import 'custom/components/icons';
 @import 'custom/components/search';
+@import 'custom/components/checkbox';
+@import 'custom/components/slider';
+@import 'custom/components/custom-select';
 
 // pages
 @import 'custom/pages/authentication';
@@ -458,7 +461,7 @@ svg {
 }
 
 .bread-overlay {
-	height: 15rem;
+	height: 12.3rem;
 	width: 100%;
 	top: 3rem;
 	position: fixed;
@@ -846,234 +849,6 @@ $width: $height * 2;
 	position: relative;
 }
 
-.drag-handle {
-	position: absolute;
-	top: -5px;
-	left: -5px;
-	bottom: -5px;
-	right: -5px;
-	z-index: 1;
-	cursor: col-resize;
-}
-
-.drag-handle::before,
-.drag-handle::after {
-	content: '';
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	box-sizing: border-box;
-}
-
-.drag-handle::before {
-	width: 6vmin;
-	height: 6vmin;
-	margin-left: -3vmin;
-	margin-top: -3vmin;
-	background-color: #eee;
-	border: solid 1px #ccc;
-	border-radius: 2px;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-	transition: box-shadow 0.4s ease 0s;
-}
-
-.drag-handle::after {
-	width: 1.4vmin;
-	height: 3vmin;
-	border-left: solid 2px #999;
-	border-right: solid 2px #999;
-	margin-left: -0.7vmin;
-	margin-top: -1.5vmin;
-}
-
-.drag-handle:active::before {
-	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-}
-
-.filter-sidenav {
-	height: 100%;
-	z-index: 1050;
-	overflow-x: hidden;
-	transition: 0.5s;
-	width: 260px;
-	@include media-breakpoint-down(sm) {
-		position: absolute;
-		top: 0;
-		width: 0;
-	}
-}
-.toggle-filter {
-	width: 0;
-	@include media-breakpoint-down(sm) {
-		width: 260px;
-	}
-}
-
-.w-0 {
-	width: 0px !important;
-	overflow: hidden;
-}
-
-.w-260 {
-	width: 260px;
-}
-
-.sidebar-close-icon {
-	right: 0;
-	position: absolute;
-	z-index: 1;
-	.btn {
-		border: 0;
-		border-bottom-left-radius: 0.3rem !important;
-		font-size: 1.2rem;
-		padding: 0.4rem;
-		margin-right: 0.5rem;
-		margin-top: 0.5rem;
-	}
-}
-
-.category-dropdown {
-	left: 1rem !important;
-	@include media-breakpoint-down(sm) {
-		top: 6.5rem !important;
-	}
-}
-
-/* Functional styling;
- * These styles are required for noUiSlider to function.
- * You don't need to change these rules to apply your design.
- */
-/* Painting and performance;
- * Browsers can paint handles in their own layer.
- */
-/* Slider size and handle placement;
- */
-/* Styling;
- */
-/* Handles and cursors;
- */
-/* Disabled state;
- */
-.slider-labels {
-	margin-top: 10px;
-}
-.noUi-target {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-ms-touch-action: none;
-	touch-action: none;
-	-ms-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	position: relative;
-	direction: ltr;
-	border-radius: 2px;
-	* {
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-ms-touch-action: none;
-		touch-action: none;
-		-ms-user-select: none;
-		-moz-user-select: none;
-		user-select: none;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-}
-.noUi-base {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	z-index: 1;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-.noUi-origin {
-	position: absolute;
-	right: 0;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	border-radius: 2px;
-}
-.noUi-handle {
-	position: relative;
-	z-index: 1;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	cursor: default;
-	-webkit-box-sizing: content-box !important;
-	-moz-box-sizing: content-box !important;
-	box-sizing: content-box !important;
-	&:active {
-		border: 8px solid #345dbb;
-		border: 8px solid rgba(53, 93, 187, 0.38);
-		-webkit-background-clip: padding-box;
-		background-clip: padding-box;
-		left: -14px;
-		top: -14px;
-	}
-}
-.noUi-stacking {
-	.noUi-handle {
-		z-index: 10;
-	}
-}
-.noUi-state-tap {
-	.noUi-origin {
-		-webkit-transition: left 0.3s, top 0.3s;
-		transition: left 0.3s, top 0.3s;
-	}
-}
-.noUi-state-drag {
-	* {
-		cursor: inherit !important;
-	}
-}
-.noUi-horizontal {
-	height: 4px;
-	.noUi-handle {
-		width: 18px;
-		height: 18px;
-		border-radius: 50%;
-		left: -7px;
-		top: -7px;
-		background-color: #345dbb;
-	}
-}
-.noUi-background {
-	background: #d6d7d9;
-}
-.noUi-connect {
-	background: #345dbb;
-	-webkit-transition: background 450ms;
-	transition: background 450ms;
-}
-.noUi-draggable {
-	cursor: w-resize;
-}
-.noUi-vertical {
-	.noUi-draggable {
-		cursor: n-resize;
-	}
-}
-[disabled].noUi-connect {
-	background: #b8b8b8;
-}
-[disabled] {
-	.noUi-connect {
-		background: #b8b8b8;
-	}
-	.noUi-handle {
-		cursor: not-allowed;
-	}
-}
-[disabled].noUi-origin {
-	cursor: not-allowed;
-}
 
 .hero-text {
 	z-index: 1;
@@ -1277,3 +1052,4 @@ $width: $height * 2;
 .chat-nav-icons {
 	font-size: large;
 }
+

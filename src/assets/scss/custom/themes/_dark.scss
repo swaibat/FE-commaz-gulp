@@ -105,9 +105,9 @@ body {
 		.input-group-append .input-group-text {
 			color: $gray-500 !important;
 		}
-		.input-group-append .input-group-text {
-			background: lighten($color: $primary, $amount: 5) !important;
-		}
+		// .input-group-append .input-group-text {
+		// 	background: lighten($color: $primary, $amount: 5) !important;
+		// }
 		.table-bordered th,
 		.table-bordered td {
 			border: 1px solid $gray-700;

@@ -1,17 +1,29 @@
 <!-- Categories Starts -->
 <div id="product-categories">
-    <div class="product-category-title">
-        <h6 class="filter-title mb-1">Categories</h6>
+    <span data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="categories"
+        data-parent="#filter-Sidenav">
+        <h6>Categories</h6>
+        <span></span>
+    </span>
+    <div class="collapse show s mt-3" id="categories">
+        <div class="d-flex">
+            <div class="input-group search-bar mx-auto ">
+                <input type="text" class="form-control search-bar rounded" placeholder="Search Category">
+                <div class="input-group-append ml-2">
+                    <span class="lnr lnr-magnifier  bg-light input-group-text rounded"></span>
+                </div>
+            </div>
+        </div>
+        <nav class="nav flex-column">
+            {{#each categories}}
+            <a class="nav-link px-0" href="#">
+                <span class="btn btn-light p-2 mr-2 border-0">
+                    <span class="{{this.icon}}"></span>
+                </span>
+                {{this.name}}
+            </a>
+            {{/each}}
+        </nav>
     </div>
-    <nav class="nav flex-column">
-        {{#each categories}}
-        <a class="nav-link active" href="#">
-            <span class="btn btn-light p-2 mr-2 border-0">
-                <span class="{{this.icon}}"></span>
-            </span>
-            {{this.name}}
-        </a>
-        {{/each}}
-    </nav>
 </div>
 <hr>

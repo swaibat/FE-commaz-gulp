@@ -133,7 +133,7 @@
 	{
 		"name": "Farming & Industrial",
         "total": 746,
-        "icon-name": "paw-outline",
+        "icon": "lnr lnr-earth",
 		"sub": [
 			{
 				"name": "Farming Equipment & Vehicles",

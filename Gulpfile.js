@@ -69,7 +69,11 @@ function modules() {
   const webfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*').pipe(gulp.dest('./dist/assets/webfonts/'));
 
   const jquery = gulp
-    .src(['./node_modules/jquery/dist/jquery.slim.min.js', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', './src/assets/js/**/*.js'])
+    .src([
+      './node_modules/jquery/dist/jquery.slim.min.js',
+      './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+      './src/assets/js/**/*.js',
+    ])
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./dist/assets/js'));
 

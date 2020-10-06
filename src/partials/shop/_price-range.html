@@ -1,59 +1,22 @@
 <div class="multi-range-price">
     <div class="multi-range-title pb-75">
-        <h6 class="filter-title mb-0">Multi Range</h6>
+        <h6 class="filter-title mb-0">Price Range</h6>
     </div>
     <ul class="list-unstyled price-range" id="price-range">
-        <li>
-            <span class="vs-radio-con vs-radio-primary py-2">
-                <input type="radio" name="price-range" checked="" value="false">
-                <span class="vs-radio">
-                    <span class="vs-radio--border"></span>
-                    <span class="vs-radio--circle"></span>
-                </span>
-                <span class="">All</span>
-            </span>
-        </li>
-        <li>
-            <span class="vs-radio-con vs-radio-primary py-2">
-                <input type="radio" name="price-range" value="false">
-                <span class="vs-radio">
-                    <span class="vs-radio--border"></span>
-                    <span class="vs-radio--circle"></span>
-                </span>
-                <span class=""> &lt;=$10</span>
-            </span>
-        </li>
-        <li>
-            <span class="vs-radio-con vs-radio-primary py-2">
-                <input type="radio" name="price-range" value="false">
-                <span class="vs-radio">
-                    <span class="vs-radio--border"></span>
-                    <span class="vs-radio--circle"></span>
-                </span>
-                <span class="">$10 - $100</span>
-            </span>
-        </li>
-        <li>
-            <span class="vs-radio-con vs-radio-primary py-2">
-                <input type="radio" name="price-range" value="false">
-                <span class="vs-radio">
-                    <span class="vs-radio--border"></span>
-                    <span class="vs-radio--circle"></span>
-                </span>
-                <span class="">$100 - $500</span>
-            </span>
-        </li>
-        <li>
-            <span class="vs-radio-con vs-radio-primary py-2">
-                <input type="radio" name="price-range" value="false">
-                <span class="vs-radio">
-                    <span class="vs-radio--border"></span>
-                    <span class="vs-radio--circle"></span>
-                </span>
-                <span class="">&gt;= $500</span>
-            </span>
-        </li>
-
+        <!-- With number fields -->
+        <div class="filter level-filter level-req">
+            <div id="rangeSlider" class="range-slider">
+                <div class="range-group">
+                    <input class="range-input" value="1" min="1" max="50" step="1" type="range" />
+                    <input class="range-input" value="50" min="1" max="50" step="1" type="range" />
+                </div>
+                <div class="number-group mt-4 text-center">
+                    <input class="number-input" type="number" value="1" min="0" max="50" /> 
+                    To : 
+                    <input class="number-input" type="number" value="50" min="0" max="50" />
+                </div>
+            </div>
+        </div>
     </ul>
 </div>
 <!-- /Price Filter -->

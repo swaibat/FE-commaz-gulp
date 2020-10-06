@@ -1,9 +1,10 @@
 ---
 title: Shop
 ---
-<div class="container">
+<div class="container p-0">
     <div class="content">
-        <div class="" id="products-list">
+        {{> _filter_sidenav}}
+        <div class="products-list" id="products-list">
             <div id="ecommerce-header" class="p-2 rounded bg-white shadow-sm mb-4">
                 <div class="row align-items-center">
                     <div class="col-4 col-md-6">
@@ -13,7 +14,7 @@ title: Shop
                                     id="toggle-filter">
                                     <ion-icon name="filter-outline"></ion-icon>
                                 </button>
-                                <div class="search-results ml-3">
+                                <div class="search-results ml-3 d-none">
                                     16285 results found
                                 </div>
                             </div>
@@ -21,24 +22,49 @@ title: Shop
                     </div>
 
                     <div class="col-8 col-sm-3 ml-auto ">
-                        <div class="form-row px-3 align-items-center">
-                            <div class="search-container  ml-auto mr-3">
+                        <div class="d-flex align-items-center">
+                            <div class="search-container  ml-auto mr-0 mr-sm-3 order-1 order-sm-first">
                                 <input class="search-open search expandright form-control" id="searchright"
                                     type="search" name="q" placeholder="Search">
-                                <label class="btn btn-light searchbutton" for="searchright"><span
-                                        class="mglass">⚲</span></label>
+                                <label class="btn btn-light searchbutton" for="searchright">
+                                    <span class="mglass">⚲</span>
                             </div>
                             <div class="" style="width: 156px !important;">
-                                <select class="form-control">
-                                    <option>Price: High to low</option>
-                                    <option>Price: Low to high</option>
-                                    <option>Latest</option>
-                                </select>
+                                <div class="select-dropdown form-control">
+                                    <div class="current d-flex align-items-center" tabindex="1">
+                                        <div class="value">
+                                            <input class="d-none" type="radio" id="latest" value="1" name="sort"
+                                                checked />
+                                            <span class="input-text">Latest</span>
+                                        </div>
+                                        <div class="value">
+                                            <input class="d-none" type="radio" id="low-to-high" value="1" name="sort" />
+                                            <span class="input-text">Low to High</span>
+                                        </div>
+                                        <div class="value">
+                                            <input class="d-none" type="radio" id="high-to-low" value="1" name="sort" />
+                                            <span class="input-text">High to Low</span>
+                                        </div>
+                                        <span class="lnr lnr-chevron-down ml-auto"></span>
+                                    </div>
+                                    <span class="nav flex-column border-top-0 rounded-bottom bg-white border">
+                                        <li class="nav-item border-0">
+                                            <label class="mb-0 p-2 w-100" for="latest">Latest</label>
+                                        </li>
+                                        <li class="nav-item border-0">
+                                            <label class="mb-0 p-2 w-100" for="low-to-high">Price: Low to High</label>
+                                        </li>
+                                        <li class="nav-item border-0">
+                                            <label class="mb-0 p-2 w-100" for="high-to-low">Price: High to Low</label>
+                                        </li>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- products -->
             <div class="grid-view overflow-hidden rounded list">
                 {{#each allproducts}}
@@ -96,6 +122,9 @@ title: Shop
     </div>
 </div>
 
+
+
+
 <script>
     var shopOptions = {
         valueNames: ['title', 'description', '', 'read', 'status'],
@@ -104,4 +133,7 @@ title: Shop
     };
 
     var products = new List('products-list', shopOptions);
+    $("input").change(() => {
+        console.log(this);
+    })
 </script>

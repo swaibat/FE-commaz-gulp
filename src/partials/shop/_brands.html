@@ -1,9 +1,11 @@
 <!-- Brands -->
 <div class="brands">
-    <div class="brand-title mt-1 pb-1">
-        <h6 class="filter-title mb-0">Brands</h6>
-    </div>
-    <div class="brand-list" id="brands">
+    <span data-toggle="collapse" data-target="#brands" aria-expanded="false" aria-controls="brands"
+        data-parent="#filter-Sidenav">
+        <h6>Brands</h6>
+        <span></span>
+    </span>
+    <div class="brand-list collapse" id="brands">
         <ul class="list-unstyled">
             {{#each brands}}
             <li class="d-flex justify-content-between align-items-center py-2">

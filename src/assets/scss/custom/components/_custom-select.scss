@@ -1,0 +1,81 @@
+.select-dropdown {
+	position: relative;
+	display: block;
+	border: solid 1px $border-color;
+
+	.current {
+		position: relative;
+		box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+		cursor: pointer;
+		outline: none;
+
+		&:focus {
+			& + .nav {
+				display: flex;
+				animation-name: none;
+				label {
+					cursor: pointer;
+					&:hover {
+						background: gainsboro;
+					}
+				}
+			}
+
+			.lnr-chevron-down {
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	.lnr-chevron-down {
+		transition: 0.2s ease;
+	}
+
+	.value {
+		display: flex;
+	}
+
+	input:checked + .input-text {
+		display: block;
+	}
+
+	.input-text {
+		display: none;
+	}
+
+	.nav {
+		position: absolute;
+		z-index: 150;
+		width: calc(100% + 2px);
+		padding: 0;
+		list-style: none;
+		display: none;
+		animation-name: HideList;
+		animation-duration: 0.5s;
+		animation-delay: 0.5s;
+		animation-fill-mode: forwards;
+		animation-timing-function: step-start;
+		margin-left: -13px;
+		margin-top: 2px;
+	}
+
+	.option {
+		display: block;
+		padding: 15px;
+
+		&:hover,
+		&:focus {
+			color: #546c84;
+			background-color: #fbfbfb;
+		}
+	}
+}
+
+// @keyframes HideList {
+//   from {
+//     transform: scaleY(1);
+//   }
+//   to {
+//     transform: scaleY(0);
+//   }
+// }

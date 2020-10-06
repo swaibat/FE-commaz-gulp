@@ -44,14 +44,14 @@ ul.row-sm {
 }
 
 /* ================= lists ================= */
-[class*='list-'] li:after {
-	visibility: hidden;
-	display: block;
-	content: '';
-	overflow: hidden;
-	height: 0;
-	clear: both;
-}
+// [class*='list-'] li:after {
+// 	visibility: hidden;
+// 	display: block;
+// 	content: '';
+// 	overflow: hidden;
+// 	height: 0;
+// 	clear: both;
+// }
 
 .list-icon {
 	list-style: none;

@@ -1,4 +1,3 @@
-
 .search-container {
 	position: relative;
 	display: inline-block;
@@ -41,6 +40,9 @@
 .search:focus {
 	width: 363px; /* Bar width+1px */
 	padding: 0 16px 0 0;
+	@include media-breakpoint-down(sm) {
+		width: 83vw;
+	}
 }
 
 .expandright {
