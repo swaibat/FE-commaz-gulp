@@ -1,8 +1,8 @@
 [
 	{
 		"name": "Vehicles",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "car_sport",
 		"sub": [
 			{
 				"name": "Cars & Bakkies",
@@ -32,8 +32,8 @@
 	},
 	{
 		"name": "Electronics & Computers",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "earth",
 		"sub": [
 			{
 				"name": "Cell Phones",
@@ -67,8 +67,8 @@
 	},
 	{
 		"name": "Fashion & Beauty",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "earth",
 		"sub": [
 			{
 				"name": "Clothing & Shoes",
@@ -86,8 +86,8 @@
 	},
 	{
 		"name": "Hobbies & Interests",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "earth",
 		"sub": [
 			{
 				"name": "Toys, Games & Remote Control",
@@ -109,8 +109,8 @@
 	},
 	{
 		"name": "Home, Garden & Tools",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "earth",
 		"sub": [
 			{
 				"name": "Furniture & Decor",
@@ -132,8 +132,8 @@
 	},
 	{
 		"name": "Farming & Industrial",
-        "total": 746,
-        "icon": "lnr lnr-earth",
+		"total": 746,
+		"icon": "earth",
 		"sub": [
 			{
 				"name": "Farming Equipment & Vehicles",

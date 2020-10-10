@@ -1,7 +1,7 @@
 <div class="filter-sidenav rounded shadow-sm" id="filter-Sidenav">
     <div class="w-260">
         <span class="sidebar-close-icon d-block d-md-none">
-            <span class="lnr lnr-cross btn btn-primary"></span>
+            <span class="va va-cross btn btn-primary"></span>
         </span>
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
@@ -10,7 +10,7 @@
                 {{> _brands}}
                 {{> _ratings}}
                 <div id="clear-filters">
-                    <button class="btn btn-block btn-primary waves-effect waves-light">
+                    <button class="btn btn-block btn-primary">
                         CLEAR ALL FILTERS
                     </button>
                 </div>
@@ -18,3 +18,46 @@
         </div>
     </div>
 </div>
+<script>
+    (function () {
+
+        var parent = document.querySelector("#rangeSlider");
+        if (!parent) return;
+
+        var
+            rangeS = parent.querySelectorAll("input[type=range]"),
+            numberS = parent.querySelectorAll("input[type=number]");
+
+        rangeS.forEach(function (el) {
+            el.oninput = function () {
+                var slide1 = parseFloat(rangeS[0].value),
+                    slide2 = parseFloat(rangeS[1].value);
+
+                if (slide1 > slide2) {
+                    [slide1, slide2] = [slide2, slide1];
+                }
+
+                numberS[0].value = slide1;
+                numberS[1].value = slide2;
+            }
+        });
+
+        numberS.forEach(function (el) {
+            el.oninput = function () {
+                var number1 = parseFloat(numberS[0].value),
+                    number2 = parseFloat(numberS[1].value);
+
+                if (number1 > number2) {
+                    var tmp = number1;
+                    numberS[0].value = number2;
+                    numberS[1].value = tmp;
+                }
+
+                rangeS[0].value = number1;
+                rangeS[1].value = number2;
+
+            }
+        });
+
+    })();
+</script>

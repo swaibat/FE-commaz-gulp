@@ -17,14 +17,13 @@ $swiper-bg: #f7f7f7;
 
 // centered slides option-1
 
-		.swiper-slide {
-			text-align: center;
-			font-weight: $headings-font-weight;
-			background-color: $swiper-bg;
-			padding: 1.5rem;
-			cursor: pointer;
-		}
-
+.swiper-slide {
+	text-align: center;
+	font-weight: $headings-font-weight;
+	background-color: $swiper-bg;
+	padding: 1.5rem;
+	cursor: pointer;
+}
 
 //navigation button custom feather icons
 .swiper-button-prev,
@@ -77,9 +76,9 @@ $swiper-bg: #f7f7f7;
 // color options
 
 .product-color-options {
-	.color-option {
-		border: 2px solid transparent;
-		border-radius: 50%;
+	input + .color-option {
+		border: 1px solid transparent;
+		border-radius: $border-radius;
 		position: relative;
 		cursor: pointer;
 		padding: 0.3rem;
@@ -87,31 +86,13 @@ $swiper-bg: #f7f7f7;
 		.filloption {
 			height: 21px;
 			width: 21px;
-			border-radius: 50%;
+			border-radius: $border-radius;
 		}
 	}
-
-	// selected
-	.selected {
-		// these use for border color only page specific
-		.b-primary {
-			border-color: $primary;
-		}
-
-		.b-success {
-			border-color: $success;
-		}
-
-		.b-danger {
-			border-color: $danger;
-		}
-
-		.b-warning {
-			border-color: $warning;
-		}
-
-		.b-black {
-			border-color: $black;
-		}
+	// .color-option {
+	// 	border: none;
+	// }
+	input:checked + .color-option {
+		border: solid 1px blue !important;
 	}
 }

@@ -7,11 +7,11 @@
 				</span>
 				{{#each cart}}
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}{{this.image}}"
+					<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}../{{this.image}}"
 						alt="{{this.title}}">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html">{{this.title}}</a>
+							<a href="{{root}}shop/product-details.html">{{this.title}}</a>
 							<span></span>
 							<div class="d-flex">
 								<p class="text-success">In Stock</p>
@@ -57,7 +57,7 @@
 					</div>
 
 					<div class="cart-summary py-2">
-						<a href="{{root}}/checkout.html" class="btn btn-success btn-block">Checkout</a>
+						<a href="{{root}}/shop/checkout.html" class="btn btn-success btn-block">Checkout</a>
 					</div>
 
 				</div>

@@ -7,7 +7,7 @@
 @import "bootstrap/bootstrap.scss";
 
 //vamoo icons
-@import 'vamoo/style.scss';
+@import '../icons/vamoo/style.scss';
 
 // Global
 @import 'custom/global';
@@ -43,7 +43,10 @@
 @import 'custom/themes/dark';
 
 
-
+.fixed-sidenav{
+	position: fixed;
+    top: 5rem;
+}
 
 
 .slider-home-banner {
@@ -774,13 +777,14 @@ $width: $height * 2;
 }
 
 .btn-cancel {
-	position: absolute;
-	right: 1.5rem;
+	margin-right: -1.5rem;
 	padding: 0;
-	min-width: 22px;
-	min-height: 22px;
-	border-radius: 5px !important;
-	background: #000;
+	width: 22px;
+	height: 22px;
+	border-radius: $border-radius-sm !important;
+	background: $gray-300;
+	border: 0;
+	color: $primary;
 	margin-top: -1.5rem;
 }
 

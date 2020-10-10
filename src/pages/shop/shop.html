@@ -12,7 +12,7 @@ title: Shop
                             <div class="result-toggler d-flex align-items-center">
                                 <button class="btn bg-primary btn-lg d-flex align-items-center py-2 px-2"
                                     id="toggle-filter">
-                                    <ion-icon name="filter-outline"></ion-icon>
+                                    <span class="va va-options"></span>
                                 </button>
                                 <div class="search-results ml-3 d-none">
                                     16285 results found
@@ -45,9 +45,9 @@ title: Shop
                                             <input class="d-none" type="radio" id="high-to-low" value="1" name="sort" />
                                             <span class="input-text">High to Low</span>
                                         </div>
-                                        <span class="lnr lnr-chevron-down ml-auto"></span>
+                                        <span class="va va-chevron-down ml-auto"></span>
                                     </div>
-                                    <span class="nav flex-column border-top-0 rounded-bottom bg-white border">
+                                    <span class="nav select-nav flex-column border-top-0 rounded-bottom bg-white border collapse">
                                         <li class="nav-item border-0">
                                             <label class="mb-0 p-2 w-100" for="latest">Latest</label>
                                         </li>
@@ -94,7 +94,7 @@ title: Shop
                                 <div class="item-rating">
                                     <div class="badge badge-primary">
                                         <span>4</span>
-                                        <span class="lnr lnr-picture"></span>
+                                        <span class="va va-picture"></span>
                                         </ion-icon>
                                     </div>
                                 </div>
@@ -123,8 +123,6 @@ title: Shop
 </div>
 
 
-
-
 <script>
     var shopOptions = {
         valueNames: ['title', 'description', '', 'read', 'status'],
@@ -132,8 +130,14 @@ title: Shop
         pagination: true
     };
 
-    var products = new List('products-list', shopOptions);
-    $("input").change(() => {
-        console.log(this);
-    })
+    new List('products-list', shopOptions);
+</script>
+
+<script>
+    var categoryOptions = {
+        valueNames: ['name'],
+    };
+
+    const categories = new List('product-categories', categoryOptions);
+
 </script>

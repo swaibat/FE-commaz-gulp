@@ -48,7 +48,8 @@
 
 /* Bootstrap touchspin */
 
-.bootstrap-touchspin {
+.item-quantity {
+	width: 8.4rem;
 	&.input-group {
 		width: 8.4rem;
 		align-items: center;
@@ -65,44 +66,6 @@
 				box-shadow: none;
 			}
 		}
-	}
-
-	.bootstrap-touchspin-injected {
-		margin: 0 !important;
-		.bootstrap-touchspin-down,
-		.bootstrap-touchspin-up {
-			padding: 0;
-			min-width: 22px;
-			min-height: 22px;
-			border-radius: 5px !important;
-			position: relative;
-			i {
-				font-size: 0.8rem;
-				position: relative;
-				top: -1px;
-			}
-		}
-		.bootstrap-touchspin-down {
-			left: 12px;
-		}
-		.bootstrap-touchspin-up {
-			right: 12px;
-		}
-	}
-
-	// Disabled Touchspin
-	&.disabled-touchspin {
-		.bootstrap-touchspin-down,
-		.bootstrap-touchspin-up {
-			background-color: rgba(0, 0, 0, 0.5) !important;
-			cursor: default;
-			opacity: 0.5;
-		}
-	}
-
-	.btn.disabled-max-min {
-		background-color: rgba(0, 0, 0, 0.5) !important;
-		cursor: default;
 	}
 }
 /* Number Type Input Box Scss for - Remove arrow on hover */

@@ -50,7 +50,7 @@
 }
 .filter-sidenav {
 	height: 100%;
-	z-index: 1050;
+	z-index: 1;
 	overflow-x: hidden;
 	transition: 0.5s;
 	width: 260px;
@@ -105,5 +105,26 @@
 	margin-left: 280px;
 	@include media-breakpoint-down(sm) {
 		margin-left: 0;
+	}
+}
+
+#shopping-cart {
+	height: 100%;
+	overflow: hidden;
+	.list {
+		min-height: calc(100vh - 315px);
+		height: calc(100vh - 315px);
+		overflow: scroll;
+	}
+	.btn span {
+		pointer-events: none;
+	}
+}
+.module {
+	overflow: hidden;
+	&.line-clamp {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
 	}
 }

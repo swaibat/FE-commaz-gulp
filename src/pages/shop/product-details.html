@@ -30,15 +30,15 @@ title: Product Details
 									</div>
 									<a class="carousel-control-prev ml-n2" href="#carouselExampleIndicators"
 										role="button" data-slide="prev">
-										<span class="lnr lnr-chevron-left"></span>
+										<span class="va va-chevron-left"></span>
 										<span
-											class="lnr lnr-chevron-left px-2 py-3 btn btn-primary ml-2 rounded-right"></span>
+											class="va va-chevron-left px-2 py-3 btn btn-primary ml-2 rounded-right"></span>
 										<span class="sr-only">Previous</span>
 									</a>
 									<a class="carousel-control-next mr-n2" href="#carouselExampleIndicators"
 										role="button" data-slide="next">
 										<span
-											class="lnr lnr-chevron-right px-2 py-3 btn btn-primary mr-4 rounded-left"></span>
+											class="va va-chevron-right px-2 py-3 btn btn-primary mr-4 rounded-left"></span>
 										<span class="sr-only">Next</span>
 									</a>
 									<ol
@@ -66,17 +66,17 @@ title: Product Details
 								<p class="text-muted">by Apple</p>
 								<div class="ecommerce-details-price d-flex flex-wrap align-items-center">
 									<p class="text-primary font-medium-3 mr-3 mb-0">$43.99</p>
-									<span class="pl-3 font-medium-3 border-left ">
-										<i class="fas fa-star text-warning"></i>
-										<i class="fas fa-star text-warning"></i>
-										<i class="fas fa-star text-warning"></i>
-										<i class="fas fa-star text-warning"></i>
-										<i class="fas fa-star text-secondary"></i>
+									<span class="pl-3 font-medium-3 border-left">
+										<span class="va va-star-fill text-warning"></span>
+										<span class="va va-star-fill text-warning"></span>
+										<span class="va va-star-fill text-warning"></span>
+										<span class="va va-star-fill text-warning"></span>
+										<span class="va va-star-fill text-secondary"></span>
 									</span>
 									<div class="rating-wrap ml-3">
 										<span class="label-rating text-muted">132 reviews</span>
-										<span class="label-rating text-success ml-3"> <i
-												class="fas fa-clipboard-check"></i>
+										<span class="label-rating text-success ml-3"> <span
+												class="va va-clipboard-checked"></span>
 											154 orders </span>
 									</div>
 								</div>
@@ -97,30 +97,17 @@ title: Product Details
 								<div class="form-group">
 									<label class="font-weight-bold mb-2">Color</label>
 									<ul class="list-unstyled mb-0 product-color-options">
-										<li class="d-inline-block selected">
-											<div class="color-option b-primary">
+										<li class="d-inline-block">
+											<input class="d-none" type="radio" name="colors" id="primary">
+											<label class="color-option border-primary">
 												<div class="filloption bg-primary"></div>
-											</div>
+											</label>
 										</li>
 										<li class="d-inline-block">
-											<div class="color-option b-success">
+											<input class="d-none" type="radio" name="colors" id="success">
+											<label class="color-option border-primary">
 												<div class="filloption bg-success"></div>
-											</div>
-										</li>
-										<li class="d-inline-block">
-											<div class="color-option b-danger">
-												<div class="filloption bg-danger"></div>
-											</div>
-										</li>
-										<li class="d-inline-block">
-											<div class="color-option b-warning">
-												<div class="filloption bg-warning"></div>
-											</div>
-										</li>
-										<li class="d-inline-block">
-											<div class="color-option b-black">
-												<div class="filloption bg-black"></div>
-											</div>
+											</label>
 										</li>
 									</ul>
 								</div>
@@ -145,15 +132,14 @@ title: Product Details
 								<div class="form-group">
 									<label class="font-weight-bold mb-2">Qty</label>
 									<div class="item-quantity mb-2">
-										<div class="input-group quantity-counter-wrapper bootstrap-touchspin">
-											<span
-												class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
-													class="btn btn-primary bootstrap-touchspin-down"
-													type="button">-</button></span><input type="text"
-												class="quantity-counter form-control" value="1"><span
-												class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
-													class="btn btn-primary bootstrap-touchspin-up"
-													type="button">+</button></span>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend cursor-pointer">
+												<span class="input-group-text">-</span>
+											</div>
+											<input type="text" value="1" class="form-control">
+											<div class="input-group-append cursor-pointer">
+												<span class="input-group-text">+</span>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -186,12 +172,20 @@ title: Product Details
 										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 										consequat.
 									</p>
-									<ul class="list-check">
-										<li>Material: Stainless steel</li>
-										<li>Weight: 82kg</li>
-										<li>built-in drip tray</li>
-										<li>Open base for pots and pans</li>
-										<li>On request available in propane execution</li>
+									<ul class="list-group mb-3">
+										<li class="list-group-item border-0"><span
+												class="va va-chevron-right mr-2"></span>
+											Material: Stainless steel</li>
+										<li class="list-group-item border-0"><span
+												class="va va-chevron-right mr-2"></span>Weight: 82kg</li>
+										<li class="list-group-item border-0"><span
+												class="va va-chevron-right mr-2"></span>built-in drip tray</li>
+										<li class="list-group-item border-0"><span
+												class="va va-chevron-right mr-2"></span>Open
+											base for pots and pans</li>
+										<li class="list-group-item border-0"><span
+												class="va va-chevron-right mr-2"></span>On
+											request available in propane execution</li>
 									</ul>
 
 									<h5 class="title-description">Specifications</h5>
@@ -272,11 +266,10 @@ title: Product Details
 													<small class="">{{this.description}}</small>
 												</div>
 												<div class="d-flex mt-auto justify-content-between">
-													<a href="#" class="btn btn-primary p-2">
-														<span class="lnr lnr-cart"></span>
+													<a class="va va-cart btn btn-primary p-2">
 													</a>
 													<a href="#" class="btn btn-outline-primary p-2">
-														<span class="lnr lnr-heart"></span>
+														<span class="va va-heart"></span>
 													</a>
 												</div>
 											</div>
@@ -321,8 +314,7 @@ title: Product Details
 											<div class="item-rating">
 												<div class="badge badge-primary">
 													<span>4</span>
-													<span class="lnr lnr-picture"></span>
-													</ion-icon>
+													<span class="va va-picture"></span>
 												</div>
 											</div>
 											<div>

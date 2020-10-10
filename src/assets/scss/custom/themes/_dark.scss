@@ -17,8 +17,10 @@ body {
 		.navbar-light {
 			background: $component-bg-dark !important;
 		}
-		.border-bottom,
 		.border-left {
+			border-left: 1px solid $gray-800 !important;
+		}
+		.border-bottom {
 			border-bottom: 1px solid $gray-800 !important;
 		}
 		.card {

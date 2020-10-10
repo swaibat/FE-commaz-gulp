@@ -1,0 +1,14 @@
+#categories {
+	.va {
+		background: #f4f7f8;
+	}
+	input:checked + label {
+		.va {
+			background: lighten($color: $primary, $amount: 40%);
+			color: $primary;
+		}
+		.name {
+			color: $primary;
+		}
+	}
+}

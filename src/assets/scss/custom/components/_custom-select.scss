@@ -11,7 +11,10 @@
 
 		&:focus {
 			& + .nav {
-				display: flex;
+				opacity: 1;
+
+				// We have to set "animation-name: none;" to make the list visible (read below how it works)
+
 				animation-name: none;
 				label {
 					cursor: pointer;
@@ -49,7 +52,7 @@
 		width: calc(100% + 2px);
 		padding: 0;
 		list-style: none;
-		display: none;
+		opacity: 0;
 		animation-name: HideList;
 		animation-duration: 0.5s;
 		animation-delay: 0.5s;
@@ -57,6 +60,14 @@
 		animation-timing-function: step-start;
 		margin-left: -13px;
 		margin-top: 2px;
+		.nav-item {
+			display: block;
+			&:hover,
+			&:focus {
+				color: #546c84;
+				background-color: #fbfbfb;
+			}
+		}
 	}
 
 	.option {
