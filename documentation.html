@@ -17,7 +17,7 @@
 	<script src="assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="dark-mod">
+<body class="">
 	
 	<!-- container .// -->
 	
@@ -191,20 +191,27 @@
 	    </section>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav bg-white">
-		<div class="d-flex w-350">
-			<div class="px-3 cart-wrapper w-100">
-				<span class="mx-4">
-					<a id="cart-close" class="closebtn">&times;</a>
-					<h4>Shopping Cart</h4>
+		<div class="d-flex w-350 flex-column">
+			<span class="py-1 px-3 d-flex align-items-center justify-content-between">
+				<!-- <a id="cart-close" class="closebtn">&times;</a> -->
+				<h4 class="mb-0">Shopping Cart</h4>
+				<span class="btn d-flex align-items-center clear-cart">
+					<span class="va va-cross p-2"></span>
+					Clear Cart
 				</span>
+			</span>
+			<div class="p-3 cart-wrapper w-100 list border">
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png" alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
+						alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html">Amazon - Fire TV Stick with Alexa Voice Remote - Black </a>
+							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
+								<span class="title">Amazon - Fire TV Stick with Alexa Voice Remote - Black </span>
+							</a>
 							<span></span>
 							<div class="d-flex">
-								<p class="text-success">In Stock</p>
+								<p class="text-success mb-1">In Stock</p>
 								<div class="item-quantity mb-2 ml-auto">
 									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
 										<span
@@ -219,24 +226,30 @@
 								</div>
 							</div>
 							<div class="d-flex">
-								<p class="text-muted"><strong>Color :</strong> Yellow</p>
-								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-								<h5 class="ml-auto">$1,190</h5>
+								<div>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
+								</div>
+								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-						<span class="lnr lnr-cross"></span>
+					<span id="cart-item-1"
+						class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="va va-cross"></span>
 					</span>
 				</div>
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png"
+						alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
+								<span class="title">Case For iPhone  Se 2020 Plus 11 Pro XR XS </span>
+							</a>
 							<span></span>
 							<div class="d-flex">
-								<p class="text-success">In Stock</p>
+								<p class="text-success mb-1">In Stock</p>
 								<div class="item-quantity mb-2 ml-auto">
 									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
 										<span
@@ -251,24 +264,30 @@
 								</div>
 							</div>
 							<div class="d-flex">
-								<p class="text-muted"><strong>Color :</strong> Yellow</p>
-								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-								<h5 class="ml-auto">$1,190</h5>
+								<div>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
+								</div>
+								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-						<span class="lnr lnr-cross"></span>
+					<span id="cart-item-2"
+						class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="va va-cross"></span>
 					</span>
 				</div>
 				<div class="media bg-light p-3 rounded mb-3 border">
-					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png" alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png"
+						alt="Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html">Case For iPhone  Se 2020 Plus 11 Pro XR XS </a>
+							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
+								<span class="title">Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon</span>
+							</a>
 							<span></span>
 							<div class="d-flex">
-								<p class="text-success">In Stock</p>
+								<p class="text-success mb-1">In Stock</p>
 								<div class="item-quantity mb-2 ml-auto">
 									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
 										<span
@@ -283,55 +302,56 @@
 								</div>
 							</div>
 							<div class="d-flex">
-								<p class="text-muted"><strong>Color :</strong> Yellow</p>
-								<p class="text-muted ml-4"><strong>Size :</strong>XXL</p>
-								<h5 class="ml-auto">$1,190</h5>
+								<div>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
+								</div>
+								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
 							</div>
 						</div>
 					</div>
-					<span class="btn btn-cancel btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-						<span class="lnr lnr-cross"></span>
+					<span id="cart-item-3"
+						class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
+						<span class="va va-cross"></span>
 					</span>
 				</div>
-				<div>
-						<div class="text-left cart-summary">
-							<h4>Shopping summary</h4>
-						</div>
-					
-						<div class="cart-summary py-2 d-flex">
-							<h6 class="mb-0">Sub Total :</h6>
-							<h5 class="ml-auto">$489.00</h5>
-						</div>
-					
-						<div class="cart-summary py-2 d-flex">
-							<h6 class="mb-0">Discount :</h6>
-							<h5 class="ml-auto">$489.00</h5>
-						</div>
-					
-						<div class="cart-summary py-2 d-flex">
-							<h6 class="mb-0">Shipping & Handling :</h6>
-							<h5 class="ml-auto">$489.00</h5>
-						</div>
-					
-						<div class="cart-summary py-2 d-flex">
-							<h6 class="mb-0">Tax :</h6>
-							<h5 class="ml-auto">$489.00</h5>
-						</div>
-					
-						<div class="cart-summary py-2 d-flex">
-							<h3 class="mb-0">Grand Total :</h3>
-							<h3 class="ml-auto">$489.00</h3>
-						</div>
-					
-						<div class="cart-summary py-2">
-								<a href="/checkout.html" class="btn btn-success btn-block">Checkout</a>
-						</div>
-					
+			</div>
+			<div class="cart-footer px-3 py-2">
+				<div class="text-left cart-summary">
+					<h4>Shopping summary</h4>
+				</div>
+	
+				<div class="cart-summary py-1 d-flex">
+					<h6 class="mb-0">Sub Total :</h6>
+					<h5 class="ml-auto">$489.00</h5>
+				</div>
+	
+				<div class="cart-summary py-1 d-flex">
+					<h6 class="mb-0">Discount :</h6>
+					<h5 class="ml-auto">$489.00</h5>
+				</div>
+	
+				<div class="cart-summary py-1 d-flex">
+					<h6 class="mb-0">Shipping & Handling :</h6>
+					<h5 class="ml-auto">$489.00</h5>
+				</div>
+	
+				<div class="cart-summary py-1 d-flex">
+					<h6 class="mb-0">Tax :</h6>
+					<h5 class="ml-auto">$489.00</h5>
+				</div>
+	
+				<div class="cart-summary py-1 d-flex">
+					<h3 class="mb-0">Grand Total :</h3>
+					<h3 class="ml-auto">$489.00</h3>
+				</div>
+	
+				<div class="cart-summary py-1">
+					<a href="shop/checkout.html" class="btn btn-success btn-block">Checkout</a>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+	</div><!-- ========================= SECTION SUBSCRIBE  ========================= -->
 	<section class="section-subscribe bg-white p-3">
 		<div class="container">
 			<p class="mb-2 text-center text-secondary">Delivering the latest product trends and industry news straight to your
@@ -367,10 +387,18 @@
 								friends.
 							</p>
 							<div>
-								<a class="btn btn-icon btn-light btn-facebook" data-toggle="tooltip" data-title="Facebook" href="#"></a>
-								<a class="btn btn-icon btn-light btn-google" data-toggle="tooltip" data-title="Google" href="#"></a>
-								<a class="btn btn-icon btn-light btn-twitter" data-toggle="tooltip" data-title="Twitter" href="#"></a>
-								<a class="btn btn-icon btn-light btn-youtube" data-toggle="tooltip" data-title="Youtube" href="#"></a>
+								<a class="btn btn-icon" data-toggle="tooltip" data-title="Facebook" href="#">
+									<span class="va va-facebook"></span>
+								</a>
+								<a class="btn btn-icon" data-toggle="tooltip" data-title="Google" href="#">
+									<span class="va va-google"></span>
+								</a>
+								<a class="btn btn-icon" data-toggle="tooltip" data-title="Twitter" href="#">
+									<span class="va va-twitter"></span>
+								</a>
+								<a class="btn btn-icon" data-toggle="tooltip" data-title="Youtube" href="#">
+									<span class="va va-youtube"></span>
+								</a>
 							</div>
 						</article>
 					</aside>
@@ -431,8 +459,38 @@
 <script src="assets/vendors/select2/js/select2.full.min.js"></script>
 
 <script>
+	// $(window).scroll(function () {
+	// 	// if ($('.filter-sidenav').scrollHeight > 200) {
+	// 		console.log($('.filter-sidenav').scrollTop( 3000 ))
+	// 	// }
+	// });
+	document.querySelector('input').addEventListener('input', function () {
+		console.log('helios')
+	}, false);
+	$('input').change(() => {
+		console.log($('input').val())
+	})
+	$('.dropdown-item').click(() => console.log('hello'))
+	$('.current').click(() => {
+		$('.select-nav').addClass('show');
+	});
+	$('.select-nav .nav-item').click(() => {
+		$('.select-nav').toggleClass('show');
+	});
+	// Cart script
+	var cartOptions = { valueNames: ['title'] };
+	const cart = new List('shopping-cart', cartOptions);
+	$('.btn').click(({ target }) => {
+		cart.remove('title', $(`#${target.id}`).parent().find(".title").text());
+	})
+	$('.clear-cart').click(() => {
+		console.log('hello')
+		new List('shopping-cart', cartOptions).clear()
+	})
+
+
 	// shop
-	
+
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
@@ -636,7 +694,6 @@
 		}
 		initializeClock(((new Date()).getFullYear() + 1) + "/1/1")
 	})()
-
 
 </script>
 
