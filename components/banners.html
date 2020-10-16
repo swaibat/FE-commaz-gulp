@@ -85,7 +85,7 @@
 						</div>
 					</div>
 					<div class="widget-header mx-3">
-						<a href="profile-orders.html" class="widget-view">
+						<a href="../profile/profile-orders.html" class="widget-view">
 							<div class="text-center header-icons">
 								<span class="va va-store"></span>
 							</div>
@@ -162,7 +162,7 @@
 			</ul>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="/shop/shop.html">
+				<a class="nav-link" href="../shop/shop.html">
 					<span class="va va-store px-1"></span>
 					<span>Shop</span>
 				</a>
@@ -172,20 +172,20 @@
 					<span class="va va-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
 				<ul class="dropdown-menu">
 					<li class="">
-						<a class="nav-link" href="/others/about-us.html" data-i18n="Email"><i
+						<a class="nav-link" href="../others/about-us.html" data-i18n="Email"><i
 								class="feather icon-mail"></i>About
 							us</a>
 					</li>
 					<li class="">
-						<a class="nav-link" href="/others/blog.html" data-i18n="Email"><i
+						<a class="nav-link" href="../others/blog.html" data-i18n="Email"><i
 								class="feather icon-mail"></i>Blog</a>
 					</li>
 					<li class="">
-						<a class="nav-link" href="/others/faq.html" data-i18n="Email"><i
+						<a class="nav-link" href="../others/faq.html" data-i18n="Email"><i
 								class="feather icon-mail"></i>FAQ</a>
 					</li>
 					<li class="">
-						<a class="nav-link" href="/knowledge-base/knowledge-base.html" data-i18n="Email"><i
+						<a class="nav-link" href="../knowledge-base/knowledge-base.html" data-i18n="Email"><i
 								class="feather icon-mail"></i>Knowledge base</a>
 					</li>
 				</ul>
@@ -1174,7 +1174,7 @@
 			<span class="py-1 px-3 d-flex align-items-center justify-content-between">
 				<!-- <a id="cart-close" class="closebtn">&times;</a> -->
 				<h4 class="mb-0">Shopping Cart</h4>
-				<span class="btn d-flex align-items-center clear-cart">
+				<span class="btn d-flex align-items-center" id="clear-cart">
 					<span class="va va-cross p-2"></span>
 					Clear Cart
 				</span>
@@ -1182,25 +1182,24 @@
 			<div class="p-3 cart-wrapper w-100 list border">
 				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
-						alt="Amazon - Fire TV Stick with Alexa Voice Remote - Black ">
+						alt="Asus vivobook x405ua core i5">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
-								<span class="title">Amazon - Fire TV Stick with Alexa Voice Remote - Black </span>
+							<a href="shop/product-details.html" class="module line-clamp mb-1">
+								<span class="title">Asus vivobook x405ua core i5</span>
 							</a>
 							<span></span>
 							<div class="d-flex">
 								<p class="text-success mb-1">In Stock</p>
-								<div class="item-quantity mb-2 ml-auto">
-									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-										<span
-											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-down"
-												type="button">-</button></span><input type="text"
-											class="quantity-counter form-control" value="1" /><span
-											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-up"
-												type="button">+</button></span>
+								<div class="item-quantity item-quantity-cart mb-2 ml-auto">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend cursor-pointer">
+											<span class="btn input-group-text btn-down" id="btn-down-1">-</span>
+										</div>
+										<input type="text" value="1" min="1" class="form-control" id="form-control-1">
+										<div class="input-group-append cursor-pointer">
+											<span class="btn input-group-text btn-up" id="btn-up-1">+</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1209,7 +1208,7 @@
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
-								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
+								<h5 class="ml-auto mt-auto mb-0 price" id="price-1">1190</h5>
 							</div>
 						</div>
 					</div>
@@ -1220,25 +1219,24 @@
 				</div>
 				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png"
-						alt="Case For iPhone  Se 2020 Plus 11 Pro XR XS ">
+						alt="iPhone  Se 2020 Plus 11 Pro XR  ">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
-								<span class="title">Case For iPhone  Se 2020 Plus 11 Pro XR XS </span>
+							<a href="shop/product-details.html" class="module line-clamp mb-1">
+								<span class="title">iPhone  Se 2020 Plus 11 Pro XR  </span>
 							</a>
 							<span></span>
 							<div class="d-flex">
 								<p class="text-success mb-1">In Stock</p>
-								<div class="item-quantity mb-2 ml-auto">
-									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-										<span
-											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-down"
-												type="button">-</button></span><input type="text"
-											class="quantity-counter form-control" value="1" /><span
-											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-up"
-												type="button">+</button></span>
+								<div class="item-quantity item-quantity-cart mb-2 ml-auto">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend cursor-pointer">
+											<span class="btn input-group-text btn-down" id="btn-down-2">-</span>
+										</div>
+										<input type="text" value="1" min="1" class="form-control" id="form-control-2">
+										<div class="input-group-append cursor-pointer">
+											<span class="btn input-group-text btn-up" id="btn-up-2">+</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1247,7 +1245,7 @@
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
-								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
+								<h5 class="ml-auto mt-auto mb-0 price" id="price-2">1190</h5>
 							</div>
 						</div>
 					</div>
@@ -1261,22 +1259,21 @@
 						alt="Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon">
 					<div class="media-body">
 						<div class="item-name ml-2 text-left">
-							<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
+							<a href="shop/product-details.html" class="module line-clamp mb-1">
 								<span class="title">Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon</span>
 							</a>
 							<span></span>
 							<div class="d-flex">
 								<p class="text-success mb-1">In Stock</p>
-								<div class="item-quantity mb-2 ml-auto">
-									<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-										<span
-											class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-down"
-												type="button">-</button></span><input type="text"
-											class="quantity-counter form-control" value="1" /><span
-											class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
-												class="btn btn-primary bootstrap-touchspin-up"
-												type="button">+</button></span>
+								<div class="item-quantity item-quantity-cart mb-2 ml-auto">
+									<div class="input-group input-group-sm">
+										<div class="input-group-prepend cursor-pointer">
+											<span class="btn input-group-text btn-down" id="btn-down-3">-</span>
+										</div>
+										<input type="text" value="1" min="1" class="form-control" id="form-control-3">
+										<div class="input-group-append cursor-pointer">
+											<span class="btn input-group-text btn-up" id="btn-up-3">+</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -1285,7 +1282,7 @@
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
-								<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
+								<h5 class="ml-auto mt-auto mb-0 price" id="price-3">1190</h5>
 							</div>
 						</div>
 					</div>
@@ -1306,18 +1303,13 @@
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
-					<h6 class="mb-0">Discount :</h6>
-					<h5 class="ml-auto">$489.00</h5>
-				</div>
-	
-				<div class="cart-summary py-1 d-flex">
 					<h6 class="mb-0">Shipping & Handling :</h6>
-					<h5 class="ml-auto">$489.00</h5>
+					<h5 class="ml-auto">$10</h5>
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
 					<h6 class="mb-0">Tax :</h6>
-					<h5 class="ml-auto">$489.00</h5>
+					<h5 class="ml-auto text-success">$0.0</h5>
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
@@ -1436,13 +1428,44 @@
 <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="../assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="../assets/vendors/select2/js/select2.full.min.js"></script>
+<script src="../assets/vendors/star-rating-svg/jquery.star-rating-svg.min.js"></script>
 
 <script>
+	// shopping cart
+	$(document).ready(()=>{
+			$('input').change(()=>{
+				console.log('hello')
+			})
+	})
+	$('.btn-up').click(({ target }) => {
+		const id = target.id.split('-')[2]
+		const input = $(`#form-control-${id}`)
+		input.val(JSON.parse(input.val()) + 1)
+		// const price = JSON.parse($(`#price-${id}`).text())
+		// console.log(JSON.parse($(`#price-${id}`).text()))
+		$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()))
+	})
+	$('.btn-down').click(({ target }) => {
+		const id = target.id.split('-')[2]
+		const input = $(`#form-control-${id}`)
+		if (input.val() > 1) {
+			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()))
+			input.val(JSON.parse(input.val()) - 1)
+		}
+	})
 	// $(window).scroll(function () {
 	// 	// if ($('.filter-sidenav').scrollHeight > 200) {
 	// 		console.log($('.filter-sidenav').scrollTop( 3000 ))
 	// 	// }
 	// });
+
+	$(".read-only").starRating({
+		starShape: 'rounded',
+		readOnly: true,
+		starSize: 17,
+		activeColor: 'orange',
+		useGradient: false
+	});
 	document.querySelector('input').addEventListener('input', function () {
 		console.log('helios')
 	}, false);
@@ -1459,13 +1482,10 @@
 	// Cart script
 	var cartOptions = { valueNames: ['title'] };
 	const cart = new List('shopping-cart', cartOptions);
-	$('.btn').click(({ target }) => {
+	$('#shopping-cart .btn').click(({ target }) => {
 		cart.remove('title', $(`#${target.id}`).parent().find(".title").text());
-	})
-	$('.clear-cart').click(() => {
-		console.log('hello')
-		new List('shopping-cart', cartOptions).clear()
-	})
+	});
+	$('#clear-cart').click(() => cart.clear())
 
 
 	// shop
@@ -1548,6 +1568,7 @@
 		},
 	});
 </script>
+
 <!-- JS, Popper.js, and jQuery -->
 <script>
 	$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
@@ -1629,7 +1650,6 @@
 
 
 	$('input').keyup(() => {
-		console.log('jjdfdfdf')
 		const emptyValue = $('#shipping-form')
 			.serializeArray()
 			.find((e) => e.value == '');
