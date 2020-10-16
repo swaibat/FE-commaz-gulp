@@ -14,13 +14,12 @@ title: Shop
                                     id="toggle-filter">
                                     <span class="va va-options"></span>
                                 </button>
-                                <div class="search-results ml-3 d-none">
+                                <div class="search-results ml-3">
                                     16285 results found
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-8 col-sm-3 ml-auto ">
                         <div class="d-flex align-items-center">
                             <div class="search-container  ml-auto mr-0 mr-sm-3 order-1 order-sm-first">
@@ -47,7 +46,8 @@ title: Shop
                                         </div>
                                         <span class="va va-chevron-down ml-auto"></span>
                                     </div>
-                                    <span class="nav select-nav flex-column border-top-0 rounded-bottom bg-white border collapse">
+                                    <span
+                                        class="nav select-nav flex-column border-top-0 rounded-bottom bg-white border collapse">
                                         <li class="nav-item border-0">
                                             <label class="mb-0 p-2 w-100" for="latest">Latest</label>
                                         </li>
@@ -63,6 +63,7 @@ title: Shop
                         </div>
                     </div>
                 </div>
+                {{> filter-panel}}
             </div>
 
             <!-- products -->
@@ -92,15 +93,17 @@ title: Shop
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div class="item-rating">
-                                    <div class="badge badge-primary">
-                                        <span>4</span>
-                                        <span class="va va-picture"></span>
+                                    <div class="badge border">
+                                        <span>40%</span>
                                         </ion-icon>
                                     </div>
                                 </div>
-                                <div>
-                                    <h5 class="font-weight-bold">
-                                        {{ this.price }}
+                                <div class="d-flex">
+                                    <p class="mr-2">
+                                        <del>$ {{ this.price }}</del>
+                                    </p>
+                                    <h5 class="font-weight-bold price">
+                                        $ {{ this.price }}
                                     </h5>
                                 </div>
                             </div>
@@ -111,6 +114,9 @@ title: Shop
                                 <p class="item-description text-truncate description">
                                     {{ this.description }}
                                 </p>
+                                <div class="d-none">
+                                    <p class="category">{{this.category}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,12 +131,84 @@ title: Shop
 
 <script>
     var shopOptions = {
-        valueNames: ['title', 'description', '', 'read', 'status'],
+        valueNames: ['title', 'description', 'price', 'category'],
         page: 8,
         pagination: true
     };
 
-    new List('products-list', shopOptions);
+    const products = new List('products-list', shopOptions);
+
+    (function () {
+
+        var parent = document.querySelector("#rangeSlider");
+        if (!parent) return;
+
+        var
+            rangeS = parent.querySelectorAll("input[type=range]"),
+            numberS = parent.querySelectorAll("input[type=number]");
+
+        rangeS.forEach(function (el) {
+            el.oninput = function () {
+                var slide1 = parseFloat(rangeS[0].value),
+                    slide2 = parseFloat(rangeS[1].value);
+
+                if (slide1 > slide2) {
+                    [slide1, slide2] = [slide2, slide1];
+                }
+
+                numberS[0].value = slide1;
+                numberS[1].value = slide2;
+
+                products.filter(function (item) {
+                    const itemPrice = JSON.parse(item.values().price)
+                    if (itemPrice > slide1 && itemPrice < slide2) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+
+            }
+        });
+
+        numberS.forEach(function (el) {
+            el.oninput = function () {
+                var number1 = parseFloat(numberS[0].value),
+                    number2 = parseFloat(numberS[1].value);
+
+                if (number1 > number2) {
+                    var tmp = number1;
+                    numberS[0].value = number2;
+                    numberS[1].value = tmp;
+                }
+
+                rangeS[0].value = number1;
+                rangeS[1].value = number2;
+
+                products.filter(function (item) {
+                    const itemPrice = JSON.parse(item.values().price)
+                    if (itemPrice > number1 && itemPrice < number2) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                });
+
+            }
+        });
+
+    })();
+    
+    // $('#product-categories input').change(({ target }) => {
+    //     products.filter(function (item) {
+    //         if (item.values().category == target.id) {
+    //             return true;
+    //         } else {
+    //             return false;
+    //         }
+    //     });
+    // });
+
 </script>
 
 <script>

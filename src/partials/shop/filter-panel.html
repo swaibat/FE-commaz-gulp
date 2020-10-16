@@ -1,0 +1,46 @@
+<div class="w-100 px-3 py-1 bg-light mt-2 border rounded collapse show" id="filter-panel">
+    <div class="d-flex justify-content-between align-items-center">
+        <p class="font-weight-bold mb-0">Your filters:
+        </p>
+        <span class="btn p-0 m-0 text-muted" id="clear-all" >clear All</span>
+    </div>
+    <div class="row px-3 list">
+
+    </div>
+</div>
+<script>
+
+</script>
+<script>
+    var filterOptions = {
+        valueNames: ['name', 'type'],
+        item: `<li class="chip shadow-sm p-2">
+            <span class="type font-weight-bold">category</span><span class="mr-1">:</span><span class="name"></span>
+            <span class="btn p-0 m-0 va va-cross ml-3" onclick="remove(this)"></span>
+        </li>`
+    };
+
+    const filters = new List('filter-panel', filterOptions);
+
+    function remove(data) {
+        const name = $(data).parent().find('.name').text();
+        $(`#filter-Sidenav #${name}`).prop('checked', false)
+        filters.remove('name', name);
+    }
+
+    $('#filter-Sidenav input').change(({ target }) => {
+        if (!filters.get("type", target.name).length) {
+            filters.add({ name: target.id, type: target.name });
+        }
+    })
+
+    // clear the filter List
+    $('#clear-all').click(() => {
+        $("#filter-Sidenav input:checked").each((e)=> {
+            // $(this).prop('checked', false)
+            console.log($(this),'ddsddsds');
+        });
+        filters.clear()
+
+    })
+</script>

@@ -12,3 +12,37 @@
 		}
 	}
 }
+
+#categories label,
+#discounts label,
+#ratings label {
+	.va {
+		border: $border-width solid $border-color;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0rem;
+		width: 1.2rem;
+		height: 1.2rem;
+		margin-right: 0.3rem;
+		border-radius: $border-radius-sm;
+	}
+	input:checked + .va {
+		border-radius: $border-radius-sm;
+		background: gainsboro;
+		font-size: 0.9rem !important;
+	}
+}
+
+.chip {
+	background: white;
+	margin: 0.6rem 0.6rem 0.6rem 0;
+	border-radius: $border-radius-sm;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	font-family: 'Inter', sans-serif;
+	letter-spacing: 0.6px;
+	font-size: 72.5%;
+}

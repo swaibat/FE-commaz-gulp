@@ -1,6 +1,7 @@
 [
 	{
 		"name": "Vehicles",
+		"slug": "vehicles",
 		"total": 746,
 		"icon": "car_sport",
 		"sub": [
@@ -32,6 +33,7 @@
 	},
 	{
 		"name": "Electronics & Computers",
+		"slug": "electronics",
 		"total": 746,
 		"icon": "earth",
 		"sub": [
@@ -67,6 +69,7 @@
 	},
 	{
 		"name": "Fashion & Beauty",
+		"slug": "fashion",
 		"total": 746,
 		"icon": "earth",
 		"sub": [
@@ -86,6 +89,7 @@
 	},
 	{
 		"name": "Hobbies & Interests",
+		"slug": "hobbies-interests",
 		"total": 746,
 		"icon": "earth",
 		"sub": [
@@ -109,6 +113,7 @@
 	},
 	{
 		"name": "Home, Garden & Tools",
+		"slug": "home-garden-tools",
 		"total": 746,
 		"icon": "earth",
 		"sub": [
@@ -132,6 +137,7 @@
 	},
 	{
 		"name": "Farming & Industrial",
+		"slug": "farming-industrial",
 		"total": 746,
 		"icon": "earth",
 		"sub": [

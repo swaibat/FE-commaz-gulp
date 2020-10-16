@@ -12779,6 +12779,10 @@ a[class*='card']:hover .title {
 }
 
 /* Bootstrap touchspin */
+.item-quantity-cart {
+  width: 5.4rem !important;
+}
+
 .item-quantity {
   width: 8.4rem;
 }
@@ -13262,6 +13266,53 @@ ul.row-sm {
 
 #categories input:checked + label .name {
   color: #007bff;
+}
+
+#categories label .va,
+#discounts label .va,
+#ratings label .va {
+  border: 1px solid #dee2e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+#categories label input:checked + .va,
+#discounts label input:checked + .va,
+#ratings label input:checked + .va {
+  border-radius: 0.2rem;
+  background: gainsboro;
+  font-size: 0.9rem !important;
+}
+
+.chip {
+  background: white;
+  margin: 0.6rem 0.6rem 0.6rem 0;
+  border-radius: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 72.5%;
 }
 
 .range-slider {
@@ -13804,6 +13855,7 @@ ul.row-sm {
 
 .products-list {
   margin-left: 280px;
+  min-height: 95vh;
 }
 
 @media (max-width: 767.98px) {
@@ -13818,8 +13870,8 @@ ul.row-sm {
 }
 
 #shopping-cart .list {
-  min-height: calc(100vh - 315px);
-  height: calc(100vh - 315px);
+  min-height: calc(100vh - 275px);
+  height: calc(100vh - 275px);
   overflow: scroll;
 }
 
@@ -14828,11 +14880,11 @@ ul.row-sm {
 
 body.dark-mode {
   color: #d0d2d6 !important;
-  background-color: #18191c !important;
+  background-color: #101011 !important;
 }
 
 body.dark-mode .bread-overlay {
-  background: #42454d;
+  background: #3d3d40;
 }
 
 body.dark-mode .bg-white,
@@ -14937,7 +14989,7 @@ body.dark-mode .form-control::placeholder {
 }
 
 body.dark-mode .form-control.search-bar {
-  background: #18191c !important;
+  background: #101011 !important;
 }
 
 body.dark-mode .cls-1 {
@@ -16099,4 +16151,40 @@ svg .c {
 
 .chat-nav-icons {
   font-size: large;
+}
+
+.jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+.jq-shadow {
+  -webkit-filter: drop-shadow(-2px -2px 2px #888);
+  filter: drop-shadow(-2px -2px 2px #888);
 }

@@ -4,7 +4,7 @@
 		<span class="py-1 px-3 d-flex align-items-center justify-content-between">
 			<!-- <a id="cart-close" class="closebtn">&times;</a> -->
 			<h4 class="mb-0">Shopping Cart</h4>
-			<span class="btn d-flex align-items-center clear-cart">
+			<span class="btn d-flex align-items-center" id="clear-cart">
 				<span class="va va-cross p-2"></span>
 				Clear Cart
 			</span>
@@ -16,22 +16,21 @@
 					alt="{{this.title}}">
 				<div class="media-body">
 					<div class="item-name ml-2 text-left">
-						<a href="app-ecommerce-details.html" class="module line-clamp mb-1">
+						<a href="{{root}}shop/product-details.html" class="module line-clamp mb-1">
 							<span class="title">{{this.title}}</span>
 						</a>
 						<span></span>
 						<div class="d-flex">
 							<p class="text-success mb-1">In Stock</p>
-							<div class="item-quantity mb-2 ml-auto">
-								<div class="input-group quantity-counter-wrapper bootstrap-touchspin ml-auto">
-									<span
-										class="input-group-btn input-group-prepend bootstrap-touchspin-injected"><button
-											class="btn btn-primary bootstrap-touchspin-down"
-											type="button">-</button></span><input type="text"
-										class="quantity-counter form-control" value="1" /><span
-										class="input-group-btn input-group-append bootstrap-touchspin-injected"><button
-											class="btn btn-primary bootstrap-touchspin-up"
-											type="button">+</button></span>
+							<div class="item-quantity item-quantity-cart mb-2 ml-auto">
+								<div class="input-group input-group-sm">
+									<div class="input-group-prepend cursor-pointer">
+										<span class="btn input-group-text btn-down" id="btn-down-{{this.id}}">-</span>
+									</div>
+									<input type="text" value="1" min="1" class="form-control" id="form-control-{{this.id}}">
+									<div class="input-group-append cursor-pointer">
+										<span class="btn input-group-text btn-up" id="btn-up-{{this.id}}">+</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -40,7 +39,7 @@
 								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
 								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 							</div>
-							<h5 class="ml-auto mt-auto mb-0">$1,190</h5>
+							<h5 class="ml-auto mt-auto mb-0 price" id="price-{{this.id}}">1190</h5>
 						</div>
 					</div>
 				</div>
@@ -62,18 +61,13 @@
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
-				<h6 class="mb-0">Discount :</h6>
-				<h5 class="ml-auto">$489.00</h5>
-			</div>
-
-			<div class="cart-summary py-1 d-flex">
 				<h6 class="mb-0">Shipping & Handling :</h6>
-				<h5 class="ml-auto">$489.00</h5>
+				<h5 class="ml-auto">$10</h5>
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
 				<h6 class="mb-0">Tax :</h6>
-				<h5 class="ml-auto">$489.00</h5>
+				<h5 class="ml-auto text-success">$0.0</h5>
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
