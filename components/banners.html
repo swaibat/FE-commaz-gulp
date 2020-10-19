@@ -9,8 +9,6 @@
 	<!-- Google Font -->
 	<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
-	<link rel="stylesheet" href="../assets/icons/themify/themify-icons.css" />
-	<link rel="stylesheet" href="../assets/icons/linearicons/style.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
 	<script src="../assets/js/bundle.js"></script>
@@ -69,13 +67,13 @@
 						<div class="dropdown-menu dropdown-menu-right">
 							<a class="dropdown-item" href="../profile/profile.html">
 								<span class="va va-user mr-1"></span>
-								Edit Profile
+								My Account
 							</a>
 							<a class="dropdown-item" href="../notify/notifications.html">
-								<ion-icon name="chatbox-outline"></ion-icon> My Notifications
+								<span class="va va-chatbox"></span> My Messages
 							</a>
 							<a class="dropdown-item" href="../notify/chat.html">
-								<ion-icon name="chatbox-outline"></ion-icon> My Chat
+								<span class="va va-clipboard"></span> My Orders
 							</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="/">
@@ -85,11 +83,11 @@
 						</div>
 					</div>
 					<div class="widget-header mx-3">
-						<a href="../profile/profile-orders.html" class="widget-view">
+						<a href="../notify/notifications.html" class="widget-view">
 							<div class="text-center header-icons">
-								<span class="va va-store"></span>
+								<span class="va va-notifications"></span>
 							</div>
-							<small class="text lr-only"> Orders </small>
+							<small class="text lr-only"> Notifications</small>
 						</a>
 					</div>
 					<div class="widget-header ml-3">
@@ -105,12 +103,12 @@
 			</div>
 		</div>
 	</nav>
-	<div class="bg-white py-2 mt-r-2">
+	<div class="bg-white mt-r-2">
 		<nav class="nav d-flex justify-content-between container">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
 					<span class="va va-list pr-1"></span>Genre</a>
-				<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown">
+				<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown mt-2">
 					<div class="row col-md-10">
 						<div class="col-md-3 mb-3">
 							<h6 class="font-weight-bold">Electronics & Computers</h6>
@@ -177,16 +175,8 @@
 							us</a>
 					</li>
 					<li class="">
-						<a class="nav-link" href="../others/blog.html" data-i18n="Email"><i
-								class="feather icon-mail"></i>Blog</a>
-					</li>
-					<li class="">
 						<a class="nav-link" href="../others/faq.html" data-i18n="Email"><i
 								class="feather icon-mail"></i>FAQ</a>
-					</li>
-					<li class="">
-						<a class="nav-link" href="../knowledge-base/knowledge-base.html" data-i18n="Email"><i
-								class="feather icon-mail"></i>Knowledge base</a>
 					</li>
 				</ul>
 			</li>
@@ -1172,14 +1162,14 @@
 	<div id="shopping-cart" class="sidenav bg-white">
 		<div class="d-flex w-350 flex-column">
 			<span class="py-1 px-3 d-flex align-items-center justify-content-between">
-				<!-- <a id="cart-close" class="closebtn">&times;</a> -->
+				<a id="cart-close" class="btn bg-white shadow closebtn">&times;</a>
 				<h4 class="mb-0">Shopping Cart</h4>
 				<span class="btn d-flex align-items-center" id="clear-cart">
 					<span class="va va-cross p-2"></span>
 					Clear Cart
 				</span>
 			</span>
-			<div class="p-3 cart-wrapper w-100 list border">
+			<div class="p-3 d-flex flex-column cart-wrapper w-100 list border">
 				<div class="media bg-light p-3 rounded mb-3 border">
 					<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
 						alt="Asus vivobook x405ua core i5">
@@ -1196,7 +1186,8 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-1">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control" id="form-control-1">
+										<input type="text" value="1" min="1" class="form-control"
+											id="form-control-1" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-1">+</span>
 										</div>
@@ -1205,7 +1196,8 @@
 							</div>
 							<div class="d-flex">
 								<div>
-									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow
+									</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
 								<h5 class="ml-auto mt-auto mb-0 price" id="price-1">1190</h5>
@@ -1233,7 +1225,8 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-2">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control" id="form-control-2">
+										<input type="text" value="1" min="1" class="form-control"
+											id="form-control-2" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-2">+</span>
 										</div>
@@ -1242,7 +1235,8 @@
 							</div>
 							<div class="d-flex">
 								<div>
-									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow
+									</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
 								<h5 class="ml-auto mt-auto mb-0 price" id="price-2">1190</h5>
@@ -1270,7 +1264,8 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-3">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control" id="form-control-3">
+										<input type="text" value="1" min="1" class="form-control"
+											id="form-control-3" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-3">+</span>
 										</div>
@@ -1279,7 +1274,8 @@
 							</div>
 							<div class="d-flex">
 								<div>
-									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow
+									</p>
 									<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 								</div>
 								<h5 class="ml-auto mt-auto mb-0 price" id="price-3">1190</h5>
@@ -1299,22 +1295,22 @@
 	
 				<div class="cart-summary py-1 d-flex">
 					<h6 class="mb-0">Sub Total :</h6>
-					<h5 class="ml-auto">$489.00</h5>
+					<h5 class="ml-auto"><span>$</span><span id="s-total">489.00</span></h5>
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
 					<h6 class="mb-0">Shipping & Handling :</h6>
-					<h5 class="ml-auto">$10</h5>
+					<h5 class="ml-auto"><span>$</span> <span id="shipping">0.0</span></h5>
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
 					<h6 class="mb-0">Tax :</h6>
-					<h5 class="ml-auto text-success">$0.0</h5>
+					<h5 class="ml-auto text-success"><span>$</span> <span id="tax">0.0</span></h5>
 				</div>
 	
 				<div class="cart-summary py-1 d-flex">
 					<h3 class="mb-0">Grand Total :</h3>
-					<h3 class="ml-auto">$489.00</h3>
+					<h3 class="ml-auto"><span>$</span><span id="g-total">489.00</span></h3>
 				</div>
 	
 				<div class="cart-summary py-1">
@@ -1423,41 +1419,41 @@
 		<!-- //container -->
 	</footer>
 </body>
-
-<script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
 <script src="../assets/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
 <script src="../assets/vendors/select2/js/select2.full.min.js"></script>
 <script src="../assets/vendors/star-rating-svg/jquery.star-rating-svg.min.js"></script>
-
 <script>
-	// shopping cart
-	$(document).ready(()=>{
-			$('input').change(()=>{
-				console.log('hello')
-			})
-	})
-	$('.btn-up').click(({ target }) => {
-		const id = target.id.split('-')[2]
-		const input = $(`#form-control-${id}`)
-		input.val(JSON.parse(input.val()) + 1)
-		// const price = JSON.parse($(`#price-${id}`).text())
-		// console.log(JSON.parse($(`#price-${id}`).text()))
-		$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()))
-	})
-	$('.btn-down').click(({ target }) => {
-		const id = target.id.split('-')[2]
-		const input = $(`#form-control-${id}`)
-		if (input.val() > 1) {
-			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()))
-			input.val(JSON.parse(input.val()) - 1)
+	var filterOptions = {
+		valueNames: ['name', 'type'],
+		item: `<li class="chip shadow-sm p-2">
+            <span class="type font-weight-bold">category</span><span class="mr-1">:</span><span class="name"></span>
+            <span class="btn p-0 m-0 va va-cross ml-3" onclick="remove(this)"></span>
+        </li>`
+	};
+
+	const filters = new List('filter-panel', filterOptions);
+
+	function remove(data) {
+		const name = $(data).parent().find('.name').text();
+		$(`#filter-Sidenav #${name}`).prop('checked', false)
+		filters.remove('name', name);
+	}
+
+	$('#filter-Sidenav input').change(({ target }) => {
+		if (!filters.get("type", target.name).length) {
+			filters.add({ name: target.id, type: target.name });
 		}
 	})
-	// $(window).scroll(function () {
-	// 	// if ($('.filter-sidenav').scrollHeight > 200) {
-	// 		console.log($('.filter-sidenav').scrollTop( 3000 ))
-	// 	// }
-	// });
+
+	// clear the filter List
+	$('#clear-all').click(() => {
+		filters.clear()
+	})
+</script>
+<script>
+
+	// shopping cart
+
 
 	$(".read-only").starRating({
 		starShape: 'rounded',
@@ -1466,26 +1462,86 @@
 		activeColor: 'orange',
 		useGradient: false
 	});
-	document.querySelector('input').addEventListener('input', function () {
-		console.log('helios')
-	}, false);
-	$('input').change(() => {
-		console.log($('input').val())
-	})
-	$('.dropdown-item').click(() => console.log('hello'))
 	$('.current').click(() => {
 		$('.select-nav').addClass('show');
 	});
 	$('.select-nav .nav-item').click(() => {
 		$('.select-nav').toggleClass('show');
 	});
+
 	// Cart script
-	var cartOptions = { valueNames: ['title'] };
+	const cartOptions = { valueNames: ['title', 'price'] };
+	const notFound = () => {
+		$('#tax, #shipping').text(0)
+		$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo(".cart-wrapper")
+	};
+
 	const cart = new List('shopping-cart', cartOptions);
+	// update total
+
+
+	// $('#shopping-cart .btn').click(() => {
+	// 	const domPrices = $('.price').map((e, i) => JSON.parse($(i).text())).get();
+	// 	const domSumPrices = domPrices.reduce(function (a, b) {
+	// 		return a + b;
+	// 	}, 0);
+	// 	// add to sub total 
+	// 	$('#s-total').text(domSumPrices);
+	// 	// add to total (sub-total + shipping + tax)
+	// 	$('#g-total').text(domSumPrices + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
+	// });
+
+
+
+	$('.btn-up').click(({ target }) => {
+		const id = target.id.split('-')[2]
+		const input = $(`#form-control-${id}`)
+		input.val(JSON.parse(input.val()) + 1)
+		$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()))
+		// updateTotal(cart)
+	})
+
+	$('.btn-down').click(({ target }) => {
+		const id = target.id.split('-')[2]
+		const input = $(`#form-control-${id}`)
+		if (input.val() > 1) {
+			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()))
+			input.val(JSON.parse(input.val()) - 1)
+		}
+		// updateTotal(cart)
+	})
+
 	$('#shopping-cart .btn').click(({ target }) => {
 		cart.remove('title', $(`#${target.id}`).parent().find(".title").text());
 	});
-	$('#clear-cart').click(() => cart.clear())
+	// clear cart
+	$('#clear-cart').click(() => {
+		cart.clear()
+		$('.badge-cart, #g-total, #s-total, #shipping').text(0)
+		notFound()
+	})
+	// remove one item
+	$("#shopping-cart .btn-cancel").click(() => {
+		// reduce the counter price
+		const prices = cart.visibleItems.map((e) => count = + JSON.parse(e.values().price));
+		const sum = prices.reduce(function (a, b) {
+			return a + b;
+		}, 0);
+		// add to sub total 
+		$('#s-total').text(sum);
+		// add to total (sub-total + shipping + tax)
+		$('#g-total').text(sum + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
+		$('.badge-cart').text(cart.visibleItems.length)
+		if (!cart.visibleItems.length) {
+			notFound()
+		}
+	})
+
+	// add to cart
+	$('.ecommerce-card .cart').change(() => {
+		$('.badge-cart').text(JSON.parse($('.badge-cart').text()) + 1)
+	})
+
 
 
 	// shop
@@ -1503,7 +1559,6 @@
 
 	$('#notify-nav li').click(({ target }) => {
 		hackerList.filter(function (item) {
-			console.log(target.id);
 			if (item.values().status == target.id) {
 				return true;
 			} else {
