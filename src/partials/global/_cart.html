@@ -2,14 +2,14 @@
 <div id="shopping-cart" class="sidenav bg-white">
 	<div class="d-flex w-350 flex-column">
 		<span class="py-1 px-3 d-flex align-items-center justify-content-between">
-			<!-- <a id="cart-close" class="closebtn">&times;</a> -->
+			<a id="cart-close" class="btn bg-white shadow closebtn">&times;</a>
 			<h4 class="mb-0">Shopping Cart</h4>
 			<span class="btn d-flex align-items-center" id="clear-cart">
 				<span class="va va-cross p-2"></span>
 				Clear Cart
 			</span>
 		</span>
-		<div class="p-3 cart-wrapper w-100 list border">
+		<div class="p-3 d-flex flex-column cart-wrapper w-100 list border">
 			{{#each cart}}
 			<div class="media bg-light p-3 rounded mb-3 border">
 				<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}../{{this.image}}"
@@ -27,7 +27,8 @@
 									<div class="input-group-prepend cursor-pointer">
 										<span class="btn input-group-text btn-down" id="btn-down-{{this.id}}">-</span>
 									</div>
-									<input type="text" value="1" min="1" class="form-control" id="form-control-{{this.id}}">
+									<input type="text" value="1" min="1" class="form-control"
+										id="form-control-{{this.id}}" readonly>
 									<div class="input-group-append cursor-pointer">
 										<span class="btn input-group-text btn-up" id="btn-up-{{this.id}}">+</span>
 									</div>
@@ -36,7 +37,8 @@
 						</div>
 						<div class="d-flex">
 							<div>
-								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow</p>
+								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Color : </span> Yellow
+								</p>
 								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 							</div>
 							<h5 class="ml-auto mt-auto mb-0 price" id="price-{{this.id}}">1190</h5>
@@ -57,22 +59,22 @@
 
 			<div class="cart-summary py-1 d-flex">
 				<h6 class="mb-0">Sub Total :</h6>
-				<h5 class="ml-auto">$489.00</h5>
+				<h5 class="ml-auto"><span>$</span><span id="s-total">489.00</span></h5>
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
 				<h6 class="mb-0">Shipping & Handling :</h6>
-				<h5 class="ml-auto">$10</h5>
+				<h5 class="ml-auto"><span>$</span> <span id="shipping">0.0</span></h5>
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
 				<h6 class="mb-0">Tax :</h6>
-				<h5 class="ml-auto text-success">$0.0</h5>
+				<h5 class="ml-auto text-success"><span>$</span> <span id="tax">0.0</span></h5>
 			</div>
 
 			<div class="cart-summary py-1 d-flex">
 				<h3 class="mb-0">Grand Total :</h3>
-				<h3 class="ml-auto">$489.00</h3>
+				<h3 class="ml-auto"><span>$</span><span id="g-total">489.00</span></h3>
 			</div>
 
 			<div class="cart-summary py-1">

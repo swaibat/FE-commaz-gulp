@@ -15,7 +15,7 @@ title: Shop
                                     <span class="va va-options"></span>
                                 </button>
                                 <div class="search-results ml-3">
-                                    16285 results found
+                                    <span class="products-count mr-2">0</span>results found
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,6 @@ title: Shop
                         </div>
                     </div>
                 </div>
-                {{> filter-panel}}
             </div>
 
             <!-- products -->
@@ -93,17 +92,16 @@ title: Shop
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div class="item-rating">
-                                    <div class="badge border">
-                                        <span>40%</span>
-                                        </ion-icon>
+                                    <div class="btn py-0 px-2 alert-primary text-primary">
+                                        <span class="discount">{{this.discount}}</span><span>%</span>
                                     </div>
                                 </div>
                                 <div class="d-flex">
                                     <p class="mr-2">
                                         <del>$ {{ this.price }}</del>
                                     </p>
-                                    <h5 class="font-weight-bold price">
-                                        $ {{ this.price }}
+                                    <h5 class="font-weight-bold">
+                                        $ <span class="price">{{ this.discountPrice }}</span>
                                     </h5>
                                 </div>
                             </div>
@@ -116,6 +114,7 @@ title: Shop
                                 </p>
                                 <div class="d-none">
                                     <p class="category">{{this.category}}</p>
+                                    <p class="rating">{{this.rating}}</p>
                                 </div>
                             </div>
                         </div>
@@ -130,13 +129,23 @@ title: Shop
 
 
 <script>
+
     var shopOptions = {
-        valueNames: ['title', 'description', 'price', 'category'],
+        valueNames: ['title', 'description', 'price', 'category', 'discount', 'rating'],
         page: 8,
         pagination: true
     };
 
-    const products = new List('products-list', shopOptions);
+    let products = new List('products-list', shopOptions);
+
+    // $(document).ready(() => $('.products-count').text(products.matchingItems.length));
+    $('input').change(() => {
+        console.log(products.matchingItems.length);
+        if (!products.matchingItems.length) {
+            console.log('hello');
+            $(`<h4 class="m-auto">No Items in Cart</h4>`).appendTo(".grid-view")
+        }
+    });
 
     (function () {
 
@@ -160,7 +169,7 @@ title: Shop
                 numberS[1].value = slide2;
 
                 products.filter(function (item) {
-                    const itemPrice = JSON.parse(item.values().price)
+                    const itemPrice = parseInt(item.values().price)
                     if (itemPrice > slide1 && itemPrice < slide2) {
                         return true;
                     } else {
@@ -186,7 +195,7 @@ title: Shop
                 rangeS[1].value = number2;
 
                 products.filter(function (item) {
-                    const itemPrice = JSON.parse(item.values().price)
+                    const itemPrice = parseInt(item.values().price)
                     if (itemPrice > number1 && itemPrice < number2) {
                         return true;
                     } else {
@@ -198,16 +207,37 @@ title: Shop
         });
 
     })();
-    
-    // $('#product-categories input').change(({ target }) => {
-    //     products.filter(function (item) {
-    //         if (item.values().category == target.id) {
-    //             return true;
-    //         } else {
-    //             return false;
-    //         }
-    //     });
-    // });
+
+    $('#product-categories input').change(({ target }) => {
+        products.add(products.filter(function (item) {
+            if (item.values().category == target.id) {
+                // console.log(filters)
+                return true;
+            } else {
+                return false;
+            }
+        }));
+    });
+
+    $('#discounts input').change(({ target }) => {
+        products.filter(function (item) {
+            if (item.values().discount >= target.id) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+    });
+
+    $('#ratings input').change(({ target }) => {
+        products.filter(function (item) {
+            if (item.values().discount >= target.id) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+    });
 
 </script>
 

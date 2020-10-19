@@ -76,23 +76,40 @@ $swiper-bg: #f7f7f7;
 // color options
 
 .product-color-options {
-	input + .color-option {
-		border: 1px solid transparent;
+	label {
+		height: 30px;
+		width: 30px;
 		border-radius: $border-radius;
-		position: relative;
-		cursor: pointer;
-		padding: 0.3rem;
+		background: gainsboro;
+		span {
+			&:before {
 
-		.filloption {
-			height: 21px;
-			width: 21px;
-			border-radius: $border-radius;
+				display: none;
+			}
 		}
-	}
-	// .color-option {
-	// 	border: none;
-	// }
-	input:checked + .color-option {
-		border: solid 1px blue !important;
+		input:checked + span {
+			margin-left: 19px;
+			margin-top: -4px;
+			
+			&:before {
+				border-radius: $border-radius;
+				border: solid $border-width $border-color;
+				background: $success;
+				color: $white;
+				display: inline-block;
+			}
+		}
+		&.space-gray{
+			background: $gray-500;
+		}
+		&.gold{
+			background: rgb(255, 174, 0);
+		}
+		&.gray{
+			background: gray;
+		}
+		&.rose-gold{
+			background: #e3b29f;
+		}
 	}
 }

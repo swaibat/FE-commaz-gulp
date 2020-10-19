@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 // over-ride variables
 @import 'variables';
 
-@import "bootstrap/bootstrap.scss";
+@import 'bootstrap/bootstrap.scss';
 
 //vamoo icons
 @import '../icons/vamoo/style.scss';
@@ -28,7 +27,7 @@
 @import 'custom/components/checkbox';
 @import 'custom/components/slider';
 @import 'custom/components/custom-select';
-
+@import 'custom/components/loader';
 // pages
 @import 'custom/pages/authentication';
 @import 'custom/pages/faq';
@@ -42,12 +41,10 @@
 // themes
 @import 'custom/themes/dark';
 
-
-.fixed-sidenav{
+.fixed-sidenav {
 	position: fixed;
-    top: 5rem;
+	top: 5rem;
 }
-
 
 .slider-home-banner {
 	.carousel-item {
@@ -395,8 +392,6 @@ svg {
 	z-index: 1050;
 	top: 0;
 	right: 0;
-	overflow-x: hidden;
-	// background: $body-bg;
 	transition: width 0.5s;
 }
 
@@ -407,17 +402,21 @@ svg {
 	z-index: 1049;
 	top: 0;
 	right: 0;
-	overflow-x: hidden;
 	transition: background-color 0.5s;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.sidenav .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px;
-	margin-left: 50px;
+.sidenav.cart-area {
+	.closebtn {
+		position: absolute !important;
+		top: 0;
+		font-size: 2rem;
+		margin-left: 50px;
+		left: 0;
+		margin-left: -47px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
 }
 
 @media screen and (max-height: 450px) {
@@ -600,8 +599,8 @@ $width: $height * 2;
 		border-radius: $height / 4;
 		position: relative;
 		&:before {
-			font-family: 'Linearicons-Free';
-			content: '\e808';
+			font-family: 'vamoo';
+			content: '\e97b';
 			position: absolute;
 			top: -0.2rem;
 			right: 0;
@@ -626,8 +625,8 @@ $width: $height * 2;
 			+ {
 				label {
 					&:before {
-						font-family: 'Linearicons-Free';
-						content: '\e807';
+						font-family: 'vamoo';
+						content: '\e9a3';
 						position: absolute;
 						left: 0;
 						font-size: $height * 0.5;
@@ -853,7 +852,6 @@ $width: $height * 2;
 	position: relative;
 }
 
-
 .hero-text {
 	z-index: 1;
 	top: 33%;
@@ -1011,8 +1009,6 @@ $width: $height * 2;
 	overflow: hidden;
 }
 
-
-
 .dropdown-lg {
 	left: -5rem;
 	width: 17rem;
@@ -1059,36 +1055,59 @@ $width: $height * 2;
 
 .jq-stars {
 	display: inline-block;
-  }
-  
-  .jq-rating-label {
+}
+
+.jq-rating-label {
 	font-size: 22px;
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
 	font-family: helvetica, arial, verdana;
-  }
-  
-  .jq-star {
+}
+
+.jq-star {
 	width: 100px;
 	height: 100px;
 	display: inline-block;
 	cursor: pointer;
-  }
-  
-  .jq-star-svg {
+}
+
+.jq-star-svg {
 	padding-left: 3px;
 	width: 100%;
-	height: 100% ;
-  }
-  
-  .jq-star-svg path {
+	height: 100%;
+}
+
+.jq-star-svg path {
 	/* stroke: #000; */
 	stroke-linejoin: round;
-  }
-  
-  /* un-used */
-  .jq-shadow {
-	-webkit-filter: drop-shadow( -2px -2px 2px #888 );
-	filter: drop-shadow( -2px -2px 2px #888 );
-  }
+}
+
+/* un-used */
+.jq-shadow {
+	-webkit-filter: drop-shadow(-2px -2px 2px #888);
+	filter: drop-shadow(-2px -2px 2px #888);
+}
+
+.badge-lg {
+	padding: 0.3rem 0.75rem;
+	@include media-breakpoint-up(sm) {
+		font-size: $font-size-base;
+	}
+}
+.btn-light-200 {
+	background: $gray-200;
+}
+
+.bg-light-200 {
+	background: $gray-200;
+}
+.carousel-indicators {
+	display: block !important;
+	li {
+		opacity: 1 !important;
+		&.active {
+			border: solid $border-width $border-color;
+		}
+	}
+}

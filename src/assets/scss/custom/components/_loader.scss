@@ -1,0 +1,83 @@
+/* page loader css*/
+
+.loader #navAccordion {
+	background: white ! important;
+}
+
+.loader #navAccordion .active {
+	background: #241e1e1a !important;
+}
+
+@keyframes placeHolderShimmer {
+	0% {
+		background-position: -468px 0
+	}
+	100% {
+		background-position: 468px 0
+	}
+}
+.loader .logo a,.loader button,.loader .green,.loader h2,.loader .form-input,.loader .card .btn,.loader .price,
+.loader p,.loader h4,.loader h5,.loader h6,.loader badge,.loader .teal-txt,.loader h3.align-center,.loader .white.shadow.price-tag,.loader span,.loader i,
+.loader #navAccordion i,.loader .page,.loader .btn,.loader .page-title,.loader .d-flex.float-right.margin-t-2 a,.loader .btn.blue,.loader h1,.loader b,.loader li q{
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: placeHolderShimmer;
+	animation-timing-function: linear;
+	background: $gray-200;
+	background: linear-gradient(to right, $gray-100 8%, $gray-200 18%, $gray-100 33%);
+	background-size: auto auto;
+	background-size: 800px 104px;
+	border: none ! important;
+	color: transparent ! important;
+	z-index: 1001 ! important;
+    border-radius: 5px;
+}
+
+.loader #navbarDropdown {
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+}
+
+.loader .hamburger-toggle * {
+	visibility: hidden ! important;
+	padding: 3px;
+}
+
+.loader .card-body::after, .loader .table-striped tbody tr:nth-of-type(2n+1),
+.loader .alert * {
+	background: none !important;
+}
+.loader span.shadow{
+	box-shadow: none;
+}
+.loader .card-foot {
+	border-top: solid 1px gainsboro;
+	box-shadow: none;
+}
+
+.loader .progress *,
+.loader span * {
+	visibility: hidden;
+}
+
+
+.loader .dot {
+	visibility: hidden ! important;
+}
+
+.loader .wrapper canvas {
+	visibility: hidden;
+}
+
+.loader #bg{
+    display: none;
+}
+.loader a{
+	color: transparent !important;
+}
+
+.loader img{
+    background: $gray-200;
+}
