@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Edit My Profile</title>
+	<title>Order confirmation</title>
 	<!-- Google Font -->
 	<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
@@ -966,408 +966,49 @@
 	<div class="bread-overlay"></div>
 	<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
 		<span>
-			<h1 class="mb-0">Edit My Profile</h1>
+			<h1 class="mb-0">Order confirmation</h1>
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb bg-transparent px-0 mb-0 lr-only">
 					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Edit My Profile</li>
+					<li class="breadcrumb-item active" aria-current="page">Order confirmation</li>
 				</ol>
 			</nav>
 		</span>
 		<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
 				for="switch"></label></div>
 	</div>
+	
 	<div class="container p-0 mb-4">
-	    <div class="px-2 container">
-	        <ul class="nav flex-nowrap nav-pills profile-nav  mb-3 bg-white p-2 shadow-sm align-items-center rounded">
-	            <li class="nav-item">
-	                <img src="../assets/images/portrait/small/avatar-s-12.jpg"
-	                    class="profile-avatar rounded-circle img-border box-shadow-1" alt="avatar" />
-	            </li>
-	            <li class="nav nav-item collapse navbar-collapse d-md-flex" id="profileNav">
-	                <ul class="m-auto d-flex flex-column flex-sm-row w-100">
-	                    <li class="nav-item text-center ml-0 ml-sm-5">
-	                        <a class="nav-link " href="../profile/profile.html">Profile</a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link "
-	                            href="../profile/profile-wishlist.html">Whishlist</a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link " href="../profile/profile-orders.html">My
-	                            Orders</a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link "
-	                            href="../profile/profile-addresses.html">My Shipping Details</a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link "
-	                            href="../profile/profile-viewed-products.html">My viewed products</a>
-	                    </li>
-	                </ul>
-	            </li>
-	            <li class="nav-item d-flex order-0 ml-auto ml-sm-2 order-sm-2">
-	                <a data-toggle="tooltip" data-original-title="Edit Profile"
-	                    class="btn btn-sm btn-primary ml-auto p-2" href="../profile/profile-edit.html"><span class="va va-pencil"></span>
-	                </a>
-	                <a data-toggle="tooltip" data-original-title="settings"
-	                    class="btn btn-sm btn-primary ml-2 p-2" href="../profile/profile-viewed-products.html">
-	                    <span class="va va-cog"></span>
-	                </a>
-	                <button class="btn btn-sm btn-primary d-md-none p-2 ml-2" type="button" data-toggle="collapse"
-	                    data-target="#profileNav" aria-controls="profileNav" aria-expanded="false"
-	                    aria-label="Toggle navigation">
-	                    <span class="va va-menu"></span>
-	                </button>
-	            </li>
-	        </ul>
-	    </div>    <section id="page-account-settings" class="px-2">
-	        <div class="row">
-	            <!-- left menu section -->
-	            <div class="col-md-3 mb-2">
-	                <ul class="nav nav-pills flex-column bg-white p-3">
-	                    <li class="nav-item">
-	                        <a class="nav-link d-flex py-3" id="account-pill-general" data-toggle="pill"
-	                            href="#account-vertical-general" aria-expanded="true">
-	                            <i class="feather icon-globe mr-50 font-medium-3"></i>
-	                            General
-	                        </a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link d-flex py-3" id="account-pill-password" data-toggle="pill"
-	                            href="#account-vertical-password" aria-expanded="false">
-	                            <i class="feather icon-lock mr-50 font-medium-3"></i>
-	                            Change Password
-	                        </a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link d-flex py-3" id="account-pill-social" data-toggle="pill"
-	                            href="#account-vertical-social" aria-expanded="false">
-	                            <i class="feather icon-camera mr-50 font-medium-3"></i>
-	                            Social links
-	                        </a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link d-flex py-3" id="account-pill-connections" data-toggle="pill"
-	                            href="#account-vertical-connections" aria-expanded="false">
-	                            <i class="feather icon-feather mr-50 font-medium-3"></i>
-	                            Connections
-	                        </a>
-	                    </li>
-	                    <li class="nav-item">
-	                        <a class="nav-link d-flex py-3" id="account-pill-notifications" data-toggle="pill"
-	                            href="#account-vertical-notifications" aria-expanded="false">
-	                            <i class="feather icon-message-circle mr-50 font-medium-3"></i>
-	                            Notifications
-	                        </a>
-	                    </li>
-	                </ul>
-	            </div>
-	            <!-- right content section -->
-	            <div class="col-md-9">
-	                <div class="card">
-	                    <div class="card-content">
-	                        <div class="card-body">
-	                            <div class="tab-content">
-	                                <div role="tabpanel" class="tab-pane active show" id="account-vertical-general"
-	                                    aria-labelledby="account-pill-general" aria-expanded="true">
-	                                    <div class="media">
-	                                        <a href="javascript: void(0);">
-	                                            <img src="../assets/images/portrait/small/avatar-s-12.jpg"
-	                                                class="rounded mr-3" alt="profile image" height="64" width="64">
-	                                        </a>
-	                                        <div class="media-body">
-	                                            <div
-	                                                class="col-12 px-0 d-flex flex-sm-row flex-column justify-content-start">
-	                                                <label
-	                                                    class="btn btn-sm btn-primary mb-sm-0 cursor-pointer waves-effect waves-light"
-	                                                    for="account-upload">Upload new photo</label>
-	                                                <input type="file" id="account-upload" hidden="">
-	                                                <button
-	                                                    class="btn btn-sm btn-outline-warning ml-3 waves-effect waves-light">Reset</button>
-	                                            </div>
-	                                            <p class="text-muted ml-75 mt-50"><small>Allowed JPG, GIF or PNG. Max
-	                                                    size of
-	                                                    800kB</small></p>
-	                                        </div>
-	                                    </div>
-	                                    <hr>
-	                                    <form novalidate="">
-	                                        <div class="row">
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-username">Username</label>
-	                                                        <input type="text" class="form-control" id="account-username"
-	                                                            placeholder="Username" value="hermione007" required=""
-	                                                            data-validation-required-message="This username field is required">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-name">Name</label>
-	                                                        <input type="text" class="form-control" id="account-name"
-	                                                            placeholder="Name" value="Hermione Granger" required=""
-	                                                            data-validation-required-message="This name field is required">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-e-mail">E-mail</label>
-	                                                        <input type="email" class="form-control" id="account-e-mail"
-	                                                            placeholder="Email" value="granger007@hogward.com"
-	                                                            required=""
-	                                                            data-validation-required-message="This email field is required">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="alert alert-warning alert-dismissible mb-2" role="alert">
-	                                                    <button type="button" class="close" data-dismiss="alert"
-	                                                        aria-label="Close">
-	                                                        <span aria-hidden="true">×</span>
-	                                                    </button>
-	                                                    <p class="mb-0">
-	                                                        Your email is not confirmed. Please check your inbox.
-	                                                    </p>
-	                                                    <a href="javascript: void(0);">Resend confirmation</a>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-company">Company</label>
-	                                                    <input type="text" class="form-control" id="account-company"
-	                                                        placeholder="Company name">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-	                                                <button type="submit"
-	                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-	                                                    changes</button>
-	                                                <button type="reset"
-	                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-	                                            </div>
-	                                        </div>
-	                                    </form>
-	                                </div>
-	                                <div class="tab-pane fade" id="account-vertical-password" role="tabpanel"
-	                                    aria-labelledby="account-pill-password" aria-expanded="false">
-	                                    <form novalidate="">
-	                                        <div class="row">
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-old-password">Old Password</label>
-	                                                        <input type="password" class="form-control"
-	                                                            id="account-old-password" required=""
-	                                                            placeholder="Old Password"
-	                                                            data-validation-required-message="This old password field is required">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-new-password">New Password</label>
-	                                                        <input type="password" name="password" id="account-new-password"
-	                                                            class="form-control" placeholder="New Password" required=""
-	                                                            data-validation-required-message="The password field is required"
-	                                                            minlength="6">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <div class="controls">
-	                                                        <label for="account-retype-new-password">Retype New
-	                                                            Password</label>
-	                                                        <input type="password" name="con-password" class="form-control"
-	                                                            required="" id="account-retype-new-password"
-	                                                            data-validation-match-match="password"
-	                                                            placeholder="New Password"
-	                                                            data-validation-required-message="The Confirm password field is required"
-	                                                            minlength="6">
-	                                                    </div>
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-	                                                <button type="submit"
-	                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-	                                                    changes</button>
-	                                                <button type="reset"
-	                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-	                                            </div>
-	                                        </div>
-	                                    </form>
-	                                </div>
-	                                <div class="tab-pane fade" id="account-vertical-social" role="tabpanel"
-	                                    aria-labelledby="account-pill-social" aria-expanded="false">
-	                                    <form>
-	                                        <div class="row">
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-twitter">Twitter</label>
-	                                                    <input type="text" id="account-twitter" class="form-control"
-	                                                        placeholder="Add link" value="https://www.twitter.com">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-facebook">Facebook</label>
-	                                                    <input type="text" id="account-facebook" class="form-control"
-	                                                        placeholder="Add link">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-google">Google+</label>
-	                                                    <input type="text" id="account-google" class="form-control"
-	                                                        placeholder="Add link">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-linkedin">LinkedIn</label>
-	                                                    <input type="text" id="account-linkedin" class="form-control"
-	                                                        placeholder="Add link" value="https://www.linkedin.com">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-instagram">Instagram</label>
-	                                                    <input type="text" id="account-instagram" class="form-control"
-	                                                        placeholder="Add link">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12">
-	                                                <div class="form-group">
-	                                                    <label for="account-quora">Quora</label>
-	                                                    <input type="text" id="account-quora" class="form-control"
-	                                                        placeholder="Add link">
-	                                                </div>
-	                                            </div>
-	                                            <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-	                                                <button type="submit"
-	                                                    class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-	                                                    changes</button>
-	                                                <button type="reset"
-	                                                    class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-	                                            </div>
-	                                        </div>
-	                                    </form>
-	                                </div>
-	                                <div class="tab-pane fade" id="account-vertical-connections" role="tabpanel"
-	                                    aria-labelledby="account-pill-connections" aria-expanded="false">
-	                                    <div class="row">
-	                                        <div class="col-12 mb-3">
-	                                            <a href="javascript: void(0);"
-	                                                class="btn btn-info waves-effect waves-light">Connect to
-	                                                <strong>Twitter</strong></a>
-	                                        </div>
-	                                        <div class="col-12 mb-3">
-	                                            <button
-	                                                class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
-	                                            <h6>You are connected to facebook.</h6>
-	                                            <span>Johndoe@gmail.com</span>
-	                                        </div>
-	                                        <div class="col-12 mb-3">
-	                                            <a href="javascript: void(0);"
-	                                                class="btn btn-danger waves-effect waves-light">Connect to
-	                                                <strong>Google</strong>
-	                                            </a>
-	                                        </div>
-	                                        <div class="col-12 mb-2">
-	                                            <button
-	                                                class=" btn btn-sm btn-secondary float-right waves-effect waves-light">edit</button>
-	                                            <h6>You are connected to Instagram.</h6>
-	                                            <span>Johndoe@gmail.com</span>
-	                                        </div>
-	                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-	                                            <button type="submit"
-	                                                class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-	                                                changes</button>
-	                                            <button type="reset"
-	                                                class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                                <div class="tab-pane fade" id="account-vertical-notifications" role="tabpanel"
-	                                    aria-labelledby="account-pill-notifications" aria-expanded="false">
-	                                    <div class="row">
-	                                        <h6 class="m-1">Activity</h6>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" checked=""
-	                                                    id="accountSwitch1">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch1"></label>
-	                                                <span class="switch-label w-100">Email me when someone comments
-	                                                    onmy
-	                                                    article</span>
-	                                            </div>
-	                                        </div>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" checked=""
-	                                                    id="accountSwitch2">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch2"></label>
-	                                                <span class="switch-label w-100">Email me when someone answers on
-	                                                    my
-	                                                    form</span>
-	                                            </div>
-	                                        </div>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" id="accountSwitch3">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch3"></label>
-	                                                <span class="switch-label w-100">Email me hen someone follows
-	                                                    me</span>
-	                                            </div>
-	                                        </div>
-	                                        <h6 class="m-1">Application</h6>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" checked=""
-	                                                    id="accountSwitch4">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch4"></label>
-	                                                <span class="switch-label w-100">News and announcements</span>
-	                                            </div>
-	                                        </div>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" id="accountSwitch5">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch5"></label>
-	                                                <span class="switch-label w-100">Weekly product updates</span>
-	                                            </div>
-	                                        </div>
-	                                        <div class="col-12 mb-1">
-	                                            <div class="custom-control custom-switch custom-control-inline">
-	                                                <input type="checkbox" class="custom-control-input" checked=""
-	                                                    id="accountSwitch6">
-	                                                <label class="custom-control-label mr-1" for="accountSwitch6"></label>
-	                                                <span class="switch-label w-100">Weekly blog digest</span>
-	                                            </div>
-	                                        </div>
-	                                        <div class="col-12 d-flex flex-sm-row flex-column justify-content-end">
-	                                            <button type="submit"
-	                                                class="btn btn-primary mr-sm-1 mb-1 mb-sm-0 waves-effect waves-light">Save
-	                                                changes</button>
-	                                            <button type="reset"
-	                                                class="btn btn-outline-warning waves-effect waves-light">Cancel</button>
-	                                        </div>
-	                                    </div>
-	                                </div>
-	                            </div>
+	    <div class="row mx-0 bg-white px-4 py-5 shadow-sm rounded">
+	        <div class="col-md-7 px-2">
+	            <div class="bg-white text-center">
+	                <span class="va va-checkmark badge-finish text-white"></span>
+	                <div class="mt-3">
+	                    <h2>Order Placed Successfully</h2>
+	                    <p>You have successfuly placed the order. You can check status of your order by using our delivery
+	                        status feature. You will receive an order confirmation e-mail with details of your order and a
+	                        link to track its progress.</p>
+	                    <h5>The Order Number is 000001145</h5>
+	                    <div class="d-flex flex-column">
+	                        <div class="custom-control custom-checkbox mr-sm-2 mt-3">
+	                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+	                            <label class="custom-control-label" for="customControlAutosizing">Send Invoice to my Email</a></label>
 	                        </div>
+	                        <a href="..//shop/shop.html" class="btn btn-lg btn-light-200 my-3">Return To Shopping</a>
 	                    </div>
 	                </div>
 	            </div>
 	        </div>
-	    </section>
+	        <div class="col-md-5">
+	            <div>
+	                <h2>What can we Improve ?</h2>
+	                <p>Your Feedback is Important to Us Kiindly Let us Know what you feel</p>
+	                <textarea name="" id="" rows="8" class="form-control my-3">Submit your feedback</textarea>
+	                <button class="btn btn-light-200">Submit Feedback</button>
+	            </div>
+	
+	        </div>
+	    </div>
 	</div>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav bg-white">

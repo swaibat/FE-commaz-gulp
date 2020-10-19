@@ -50,8 +50,8 @@
 				<span class="va va-menu"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<div class="input-group search-bar mx-auto col-md-8">
-					<input type="text" class="form-control search-bar" placeholder="Search for products here">
+				<div class="input-group input-group-lg mx-auto col-md-8">
+					<input type="text" class="form-control" placeholder="Search anything">
 					<div class="input-group-append">
 						<span class="va va-magnifier input-group-text"></span>
 					</div>
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class="bg-white mt-r-2">
+	<div class="bg-white mt-r-2 py-1">
 		<nav class="nav d-flex justify-content-between container">
 			<li class="dropdown nav-item category-menu" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
@@ -997,7 +997,7 @@
 	                                <div class="input-group search-bar ">
 	                                    <input type="text" class="form-control search-bar fuzzy-search" placeholder="Search Category">
 	                                    <div class="input-group-append">
-	                                        <span class="va va-magnifier  bg-light input-group-text rounded"></span>
+	                                        <span class="va va-magnifier  bg-light input-group-text"></span>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -1072,13 +1072,13 @@
 	                                <div class="filter level-filter level-req">
 	                                    <div id="rangeSlider" class="range-slider">
 	                                        <div class="range-group">
-	                                            <input class="range-input" value="1" min="1" max="10000" step="1" type="range" id="from"/>
-	                                            <input class="range-input" value="10000" min="1" max="10000" step="1" type="range" id="to"/>
+	                                            <input class="range-input" value="1" min="1" max="2000" step="1" type="range" id="from"/>
+	                                            <input class="range-input" value="2000" min="1" max="2000" step="1" type="range" id="to"/>
 	                                        </div>
 	                                        <div class="number-group mt-4 text-center">
-	                                            <input class="number-input bg-light-200" type="number" value="1" min="0" max="10000" /> 
+	                                            <input class="number-input bg-light-200" type="number" value="1" min="0" max="2000" /> 
 	                                            To : 
-	                                            <input class="number-input bg-light-200" type="number" value="10000" min="0" max="10000" />
+	                                            <input class="number-input bg-light-200" type="number" value="2000" min="0" max="2000" />
 	                                        </div>
 	                                    </div>
 	                                </div>
@@ -1275,7 +1275,7 @@
 	                    <div class="col-4 col-md-6">
 	                        <div class="ecommerce-header-items">
 	                            <div class="result-toggler d-flex align-items-center">
-	                                <button class="btn bg-primary btn-lg d-flex align-items-center py-2 px-2"
+	                                <button class="btn btn-primary btn-lg d-flex align-items-center py-2 px-2"
 	                                    id="toggle-filter">
 	                                    <span class="va va-options"></span>
 	                                </button>
@@ -1293,36 +1293,15 @@
 	                                <label class="btn btn-light searchbutton" for="searchright">
 	                                    <span class="mglass">⚲</span>
 	                            </div>
-	                            <div class="" style="width: 156px !important;">
-	                                <div class="select-dropdown form-control">
-	                                    <div class="current d-flex align-items-center" tabindex="1">
-	                                        <div class="value">
-	                                            <input class="d-none" type="radio" id="latest" value="1" name="sort"
-	                                                checked />
-	                                            <span class="input-text">Latest</span>
-	                                        </div>
-	                                        <div class="value">
-	                                            <input class="d-none" type="radio" id="low-to-high" value="1" name="sort" />
-	                                            <span class="input-text">Low to High</span>
-	                                        </div>
-	                                        <div class="value">
-	                                            <input class="d-none" type="radio" id="high-to-low" value="1" name="sort" />
-	                                            <span class="input-text">High to Low</span>
-	                                        </div>
-	                                        <span class="va va-chevron-down ml-auto"></span>
+	                            <div class="" style="width: 400px !important;">
+	                                <div class="d-flex align-items-center">
+	                                    <label class="flex-fill col-4 p-0 mb-0" for="exampleFormControlSelect1">SORT BY</label>
+	                                    <div class="flex-fill p-0">
+	                                        <select class="form-control " id="exampleFormControlSelect1">
+	                                            <option>Date created</option>
+	                                            <option>Popularity</option>
+	                                        </select>
 	                                    </div>
-	                                    <span
-	                                        class="nav select-nav flex-column border-top-0 rounded-bottom bg-white border collapse">
-	                                        <li class="nav-item border-0">
-	                                            <label class="mb-0 p-2 w-100" for="latest">Latest</label>
-	                                        </li>
-	                                        <li class="nav-item border-0">
-	                                            <label class="mb-0 p-2 w-100" for="low-to-high">Price: Low to High</label>
-	                                        </li>
-	                                        <li class="nav-item border-0">
-	                                            <label class="mb-0 p-2 w-100" for="high-to-low">Price: High to Low</label>
-	                                        </li>
-	                                    </span>
 	                                </div>
 	                            </div>
 	                        </div>
@@ -1332,7 +1311,7 @@
 	
 	            <!-- products -->
 	            <div class="grid-view overflow-hidden rounded list">
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1421,7 +1400,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1510,7 +1489,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1599,7 +1578,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1688,7 +1667,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1777,7 +1756,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1866,7 +1845,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -1955,7 +1934,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2044,7 +2023,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2133,7 +2112,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2222,7 +2201,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2311,7 +2290,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2400,7 +2379,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2489,7 +2468,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2578,7 +2557,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
@@ -2667,7 +2646,7 @@
 	                        </div>
 	                    </div>
 	                </div>
-	                <div class="card ecommerce-card shadow-sm">
+	                <div class="card ecommerce-card shadow-sm rounded">
 	                    <div class="card-content">
 	                        <div class="btn-group-vertical position-absolute right-0">
 	                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
