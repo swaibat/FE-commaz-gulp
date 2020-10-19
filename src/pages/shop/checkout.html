@@ -2,20 +2,55 @@
 title: Checkout
 ---
 <div class="container p-0">
-<div class="row mx-0">
-	<div class="col-md-7 px-2">
-		<div class="pl-5 pr-2 bg-white mb-5 rounded shadow-sm">
-			<div class="accordion border-left" id="accordionExample">
-				<ul class="list-group">
-					{{> checkout_personal_details}}
-					{{> checkout_shipping_info}}
-					{{> checkout_payment_method}}
-					{{> checkout_order_review}}
-				</ul>
+	<div class="row mx-0">
+		<div class="col-md-7 px-2">
+			<div class="pl-5 pr-2 bg-white mb-5 rounded shadow-sm">
+				<div class="accordion border-left" id="accordionExample">
+					<ul class="list-group">
+						{{> checkout_personal_details}}
+						{{> checkout_shipping_info}}
+						{{> checkout_payment_method}}
+						{{> checkout_order_review}}
+					</ul>
+				</div>
 			</div>
 		</div>
+		<!-- start of cart content -->
+		{{> checkout_summary}}
 	</div>
-	<!-- start of cart content -->
-	{{> checkout_summary}}
 </div>
-</div>
+
+<script>
+	$("form").on("submit", function (event) {
+		event.preventDefault();
+		const formData = $(this).serializeArray();
+		$(".form-text").remove();
+		validate(formData, errors => {
+			console.log(errors)
+		})
+	});
+
+	const errors = []
+	function validate(reqData, cb) {
+		reqData.map(({ name, value }) => {
+			const field = $(`[name="${name}"]`);
+
+			const minLen = field.attr('minlength') && JSON.parse(field.attr('minlength'));
+			const maxLen = field.attr('maxlength') && JSON.parse(field.attr('maxlength'));
+			// const min = field.attr('min') && JSON.parse(field.attr('min').trim());
+			const max = field.attr('max') && JSON.parse(field.attr('max'));
+			field.attr('required') && !value && $(`#${name}`).after(showError(`${name} is required`));
+			value && minLen > value.length && $(`#${name}`).after(showError(`${name} is too short (${minLen} minimum)`));
+			value && maxLen < value.length && $(`#${name}`).after(showError(`${name} is too long (${maxLen} maximum)`));
+			// value && min > value && $(`#${name}`).after(showError(`${name} is less (${min} minimum)`));
+			value && max < value && $(`#${name}`).after(showError(`${name} is much try (${max} maximum)`));
+		})
+		if (errors) return cb(errors);
+	}
+
+	function showError(error) {
+		errors.push(error);
+		return `<small class="form-text text-danger">${error}</small>`;
+	};
+
+</script>

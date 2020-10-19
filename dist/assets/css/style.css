@@ -15015,7 +15015,7 @@ body.dark-mode .list-group-item {
 }
 
 body.dark-mode .border {
-  border: 1px solid #1e2023 !important;
+  border: 1px solid #343a40 !important;
 }
 
 body.dark-mode .navbar-light {
@@ -15034,11 +15034,17 @@ body.dark-mode .card {
   background: #1e2023 !important;
 }
 
+body.dark-mode .select-payment-btn.active,
+body.dark-mode .filter-sidenav .va,
+body.dark-mode .btn-light-200,
+body.dark-mode .bg-light-200,
+body.dark-mode .btn-icon,
 body.dark-mode .bg-light,
 body.dark-mode .btn-light,
 body.dark-mode .dropdown-menu,
 body.dark-mode .dropdown-menu::before {
   background-color: #36393e !important;
+  border: 1px solid #36393e !important;
 }
 
 body.dark-mode .table,
@@ -15148,7 +15154,7 @@ body.dark-mode .input-group-append .input-group-text {
 
 body.dark-mode .table-bordered th,
 body.dark-mode .table-bordered td {
-  border: 1px solid #495057;
+  border: 1px solid #343a40;
 }
 
 body.dark-mode .dool-toggler {
@@ -15163,7 +15169,7 @@ body.dark-mode .page-item .page-link {
 }
 
 body.dark-mode .page-item .page-link.disabled {
-  background-color: #495057;
+  background-color: #343a40;
 }
 
 body.dark-mode .page-item.disabled .page-link {
@@ -15538,10 +15544,48 @@ svg .c {
   display: none;
 }
 
+.badge-finish {
+  font-size: 3rem;
+  background: #28a745;
+  border-radius: 50%;
+}
+
 .select-payment-btn.active {
   color: #212529;
-  background-color: #fafcff;
+  background-color: #ebf4ff;
   border: solid 1px #007bff !important;
+}
+
+.select-payment-btn.active .payment-text::before {
+  font-size: large;
+  font-family: 'vamoo';
+  content: '\e92d';
+  padding: 2px;
+  color: #007bff;
+  left: 0;
+}
+
+.dropdown .dropdown-menu.dropdown-menu-right::before {
+  right: 0.6rem;
+  left: auto;
+}
+
+.dropdown .dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 1.2rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+  background: #fff;
+  -webkit-transform: rotate(45deg) translate(-7px);
+  transform: rotate(45deg) translate(-7px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .sidenav {
@@ -15995,6 +16039,7 @@ svg .c {
   width: 4rem;
   border-radius: 0.5rem;
   border: 0;
+  margin-bottom: .4rem;
 }
 
 .product-carousel-imgs li img {

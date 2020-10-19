@@ -14,36 +14,37 @@
 			<h5>John Doe</h5>
 			<h5>doe@example.com</h5>
 		</span>
-		<form id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+		<form id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"
+			novalidate>
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="firstname">First Name</label>
-					<input type="text" value="John" class="form-control" id="firstname" />
+					<input type="text" name="firstname" value="John" class="form-control" id="firstname" />
 				</div>
 				<div class="form-group col-md-6">
 					<label for="lastname">Last Name</label>
-					<input type="text" value="Doe" class="form-control" id="lastname" />
+					<input type="text" name="lastname" value="Doe" class="form-control" id="lastname" />
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="email">Email address</label>
-				<input type="text" value="doe@example.com" class="form-control" id="email" aria-describedby="emailHelp" />
+				<input type="text" name="email" value="doe@example.com" class="form-control" id="email"
+					aria-describedby="emailHelp" />
 			</div>
-			<div class="form-group form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1" />
-				<label class="form-check-label" for="exampleCheck1" data-toggle="collapse" href="#collapseExample"
+			<div class="custom-control custom-checkbox mr-sm-2 my-3">
+				<input type="checkbox" class="custom-control-input" id="create-accoount">
+				<label class="custom-control-label" for="create-accoount" data-toggle="collapse" href="#collapseExample"
 					role="button" aria-expanded="false" aria-controls="collapseExample">I want to create an
-					Account</label>
+					Account</a></label>
 			</div>
 			<div class="collapse" id="collapseExample">
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" />
+					<input type="password" name="password" id="password" class="form-control" required />
 				</div>
 			</div>
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
-				<button type="submit" id="to-shopping" class="btn btn-outline-primary mt-3" data-toggle="collapse"
-					data-target="#personalDetails" aria-expanded="true" aria-controls="personalDetails" disabled>
+				<button type="submit" class="btn btn-outline-primary mt-3">
 					Continue to Shipping
 				</button>
 				<span>Or</span>

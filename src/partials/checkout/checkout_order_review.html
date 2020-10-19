@@ -5,21 +5,18 @@
 		aria-expanded="false" aria-controls="orderReview" aria-controls="orderReview">
 	</span>
 </li>
-<div class="collapse" aria-labelledby="orderReview" data-parent="#accordionExample">
-	<div class="p-3 bg-white">
-		<div class="btn-group-toggle" data-toggle="buttons">
-			<label class="btn select-payment-btn shadow-sm border active mb-3">
-				<img height="50" src="../assets/images/payments/PayPal.svg" alt="" />
-				<input type="radio" name="options" id="option1" autocomplete="off" checked />
-			</label>
-			<label class="btn select-payment-btn shadow-sm border mb-3">
-				<img height="50" src="../assets/images/payments/stripe-4.svg" alt="" />
-				<input type="radio" name="options" id="option2" autocomplete="off" />
-			</label>
-			<label class="btn select-payment-btn shadow-sm border mb-3">
-				<img height="50" src="../assets/images/payments/apple-pay.svg" alt="" />
-				<input type="radio" name="options" id="option3" autocomplete="off" />
-			</label>
-		</div>
+<div class="collapse show" id="order-review" aria-labelledby="orderReview" data-parent="#accordionExample">
+	<div class="p-4 bg-white text-center">
+		<span class="va va-checkmark badge-finish text-white"></span>
+		<form class="mt-3">
+			<h3>All set</h3>
+			<h6>Please check if all the Data you have provided is correct</h6>
+			<div class="custom-control custom-checkbox mr-sm-2">
+				<input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+				<label class="custom-control-label" for="customControlAutosizing">I agree to <a href="">Terms and
+						Conditions</a></label>
+			</div>
+			<a href="{{root}}shop/order-confirmation.html" class="btn btn-lg btn-light-200 mt-3">Place Order</a>
+		</form>
 	</div>
 </div>
