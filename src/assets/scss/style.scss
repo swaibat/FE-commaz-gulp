@@ -376,7 +376,7 @@ svg {
 .menu img:not(:first-child) {
 	display: none;
 }
-.badge-finish{
+.badge-finish {
 	font-size: 3rem;
 	background: $green;
 	border-radius: 50%;
@@ -494,19 +494,6 @@ svg {
 .lr-only {
 	@include media-breakpoint-down(md) {
 		display: none !important;
-	}
-}
-
-.bread-overlay {
-	height: 12.3rem;
-	width: 100%;
-	top: 3rem;
-	position: fixed;
-	background: $gray-300;
-	left: 0;
-	z-index: -1;
-	@include media-breakpoint-down(md) {
-		height: 10.5rem;
 	}
 }
 
@@ -828,7 +815,7 @@ $width: $height * 2;
 		width: 4rem;
 		border-radius: 0.5rem;
 		border: 0;
-		margin-bottom: .4rem;
+		margin-bottom: 0.4rem;
 		img {
 			height: 100%;
 			border-radius: 0.5rem;
@@ -1144,6 +1131,40 @@ $width: $height * 2;
 		opacity: 1 !important;
 		&.active {
 			border: solid $border-width $border-color;
+		}
+	}
+}
+
+.list-group-item.active {
+	z-index: 2;
+	color: $gray-900;
+	border-color: transparent;
+}
+
+.status {
+	width: 1rem;
+	height: 1rem;
+	border: solid 2px $white;
+	border-radius: 50%;
+	&.status-success {
+		background: $success;
+	}
+	&.status-secondary {
+		background: $secondary;
+	}
+	&.status-warning {
+		background: $warning;
+	}
+}
+
+.notifications-sidenav {
+	.nav-link {
+		&.active {
+			color: $primary;
+			.btn {
+				color: $primary;
+				background: lighten($color: $primary, $amount: 40);
+			}
 		}
 	}
 }

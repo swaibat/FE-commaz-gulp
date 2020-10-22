@@ -2,37 +2,49 @@
 title: Notifications
 ---
 <div class="content container mb-4 mt-n3">
-    <div class="card">
+    <div class="card shadow-sm">
         <div class="card-body row">
             <div class="col-md-2">
-                <div class="bg-white">
+                <div class="bg-white notifications-sidenav">
                     <button class="btn btn-primary btn-block">
                         <span class="va va-pencil mr-2"></span>Compose
                     </button>
-                    <ul class="list-group mt-2" id="notify-nav">
-                        <li class="list-group-item border-0" id="received">
-                            <span class="va va-star btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Inbox
+                    <ul class="nav flex-column ">
+                        <li class="nav-item" id="received">
+                            <a class="nav-link d-flex align-items-center active" href="#">
+                                <span class="va va-star btn p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">Inbox</span> 
+                            </a>
                         </li>
-                        <li class="list-group-item border-0" id="stared">
-                            <span class="va va-star btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Starred
+                        <li class="nav-item" id="stared">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span class="va va-star btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">Starred</span>
+                            </a>
                         </li>
-                        <li class="list-group-item border-0" id="achieved">
-                            <span class="va va-rocket btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Achieved
+                        <li class="nav-item" id="achieved">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span class="va va-rocket btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">Achieved</span>
+                            </a>
                         </li>
-                        <li class="list-group-item border-0" id="Read">
-                            <span class="va va-mail_open btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Read
+                        <li class="nav-item" id="Read">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span class="va va-mail_unread btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">read</span>
+                            </a>
                         </li>
-                        <li class="list-group-item border-0" id="un-read">
-                            <span class="va va-mail_unread btn btn-icon btn-light-200 p-2"></span>
-                            Un read
+                        <li class="nav-item" id="unRead">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span class="va va-mail_unread btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">unread</span>
+                            </a>
                         </li>
-                        <li class="list-group-item border-0" id="all">
-                            <span class="va va-alarm btn btn-icon btn-light-200 p-2"></span>
-                            All Notifications
+                        <li class="nav-item" id="all">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span class="va va-alarm btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                <span class="flex-fill py-2 px-2">All Notifications</span>
+                            </a>
                         </li>
                     </ul>
                     <h5 class="my-3">Types</h5>
@@ -74,7 +86,7 @@ title: Notifications
                         <li class="list-group-item {{#if this.read }} active {{/if}}">
                             <div class="media">
                                 <div class="avatar">
-                                    <img class="mr-3 rounded" width="50" height="50"
+                                    <img class="mr-3 rounded" width="40" height="40"
                                         src="{{root}}../assets/images/portrait/small/avatar-s-12.jpg"
                                         alt="Generic placeholder image">
                                 </div>
@@ -83,11 +95,11 @@ title: Notifications
                                     <h6 class="mt-0 subject">{{this.subject}}</h6>
                                 </div>
                             </div>
-                            <div class="d-flex mt-2 align-items-center">
+                            <div class="d-flex mt-1 align-items-center">
                                 <div class="d-flex" style="font-size: large;">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="{{this.name}}">
-                                        <label class="custom-control-label" for="{{this.name}}"></label>
+                                        <input type="checkbox" class="custom-control-input" id="{{this.id}}">
+                                        <label class="custom-control-label" for="{{this.id}}"></label>
                                     </div>
                                     <span class="va va-star"></span>
                                 </div>

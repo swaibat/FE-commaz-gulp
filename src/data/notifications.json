@@ -1,50 +1,56 @@
 [
 	{
+		"id": 1,
 		"name": "John Doe",
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-        "read": false,
-        "status" :"received"
-	},
-	{
-		"name": "Support Team",
-		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
-		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-        "read": true,
-        "status" : "received"
-    },
-    {
-		"name": "Admin",
-		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
-		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-        "read": false,
-        "status" : "received"
-	},
-    {
-		"name": "Admin",
-		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
-		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
-        "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-        "read": false,
-        "status" : "received"
+		"read": false,
+		"status": "received"
 	},
 	{
+		"id": 2,
 		"name": "Support Team",
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
 		"read": true,
-        "status" : "stared"
+		"status": "received"
 	},
 	{
+		"id": 3,
+		"name": "Admin",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+		"read": false,
+		"status": "received"
+	},
+	{
+		"id": 4,
+		"name": "Admin",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+		"read": false,
+		"status": "received"
+	},
+	{
+		"id": 5,
+		"name": "Support Team",
+		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
+		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
+		"read": true,
+		"status": "stared"
+	},
+	{
+		"id": 6,
 		"name": "Password Reset",
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
 		"read": true,
-        "status" : "achieved"
+		"status": "achieved"
 	}
 ]

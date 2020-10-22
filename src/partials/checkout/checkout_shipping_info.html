@@ -1,14 +1,12 @@
 <li class="list-group-item border-0 d-flex align-items-center py-4">
 	<span class="va va-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 	<h1 class="card-title mb-0">Shipping</h1>
-	<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping" aria-expanded="false"
-		aria-controls="shipping" aria-controls="shipping">
+	<span class="step-2 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-2">
 		Edit Shipping details <span class="va va-pencil mr-2 mb-n2"></span></span>
 </li>
-<div>
-	<div class="p-3 bg-white">
-		<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping"
-			aria-expanded="false" aria-controls="shipping" aria-controls="shipping">
+<span>
+	<div class="bg-white">
+		<span class="step-2 ml-auto collapse">
 			<ul class="list-group">
 				<li class="list-group-item py-1 border-0">Rumbiiha Swaibu</li>
 				<li class="list-group-item py-1 border-0">55 East 52nd Street</li>
@@ -16,14 +14,13 @@
 				<li class="list-group-item py-1 border-0">New York, NY</li>
 				<li class="list-group-item py-1 border-0">+89 5454443</li>
 				<li class="list-group-item py-1 border-0">
-					<h4>Shipping Method</h4>
+					<h5>Shipping Method</h5>
 				</li>
 				<li class="list-group-item py-1 border-0">Fixed | $10.0</li>
 			</ul>
 		</span>
 
-		<form class="col-md-12 px-0 collapse" id="shipping" aria-labelledby="headingTwo"
-			data-parent="#accordionExample">
+		<form class="step-1 col-md-12 p-3 collapse" data-parent="#checkout-collapse">
 			<!-- Shipping Information -->
 			<div class="form-group row">
 				<label for="recipient_name" class="col-md-5 mr-0">Recipient Name</label>
@@ -87,8 +84,7 @@
 					</select>
 				</div>
 			</div>
-			<button id="to-payments" class="btn btn-outline-primary" data-toggle="collapse" data-target="#payments"
-				aria-expanded="true" aria-controls="payments" disabled>continue to Payments</button>
+			<button id="to-payments" class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-2">continue to Payments</button>
 		</form>
 	</div>
-</div>
+</span>

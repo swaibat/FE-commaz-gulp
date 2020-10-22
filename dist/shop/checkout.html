@@ -981,40 +981,37 @@
 		<div class="row mx-0">
 			<div class="col-md-7 px-2">
 				<div class="pl-5 pr-2 bg-white mb-5 rounded shadow-sm">
-					<div class="accordion border-left" id="accordionExample">
+					<div class="accordion border-left" id="checkout-collapse">
 						<ul class="list-group">
 							<li class="list-group-item border-0 d-flex align-items-center pb-4">
 								<span class="va va-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Personal Details</h1>
-								<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
-									aria-controls="personalDetails">
+								<span class="step-1 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-1">
 									Edit personal details <span class="va va-pencil mr-2 mb-n2"></span>
 								</span>
 							
 							</li>
 							<div>
 								<div class="px-3 bg-white">
-									<span class="d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
-										aria-controls="personalDetails">
+									<span id="show-personal" class="step-1 collapse" >
 										<h5>John Doe</h5>
 										<h5>doe@example.com</h5>
 									</span>
-									<form id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"
+									<form id="step-1" class="step-1 collapse show" data-parent="#checkout-collapse"
 										novalidate>
 										<div class="form-row">
 											<div class="form-group col-md-6">
 												<label for="firstname">First Name</label>
-												<input type="text" name="firstname" value="John" class="form-control" id="firstname" />
+												<input type="text" name="firstname" value="John" class="form-control" id="firstname" required/>
 											</div>
 											<div class="form-group col-md-6">
 												<label for="lastname">Last Name</label>
-												<input type="text" name="lastname" value="Doe" class="form-control" id="lastname" />
+												<input type="text" name="lastname" value="Doe" class="form-control" id="lastname" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="email">Email address</label>
-											<input type="text" name="email" value="doe@example.com" class="form-control" id="email"
-												aria-describedby="emailHelp" />
+											<input type="text" name="email" value="doe@example.com" class="form-control" id="email" required/>
 										</div>
 										<div class="custom-control custom-checkbox mr-sm-2 my-3">
 											<input type="checkbox" class="custom-control-input" id="create-accoount">
@@ -1025,11 +1022,11 @@
 										<div class="collapse" id="collapseExample">
 											<div class="form-group">
 												<label for="password">Password</label>
-												<input type="password" name="password" id="password" class="form-control" required />
+												<input type="password" name="password" id="password" class="form-control" minlength="4" required />
 											</div>
 										</div>
 										<div class="d-flex flex-wrap align-items-center justify-content-between">
-											<button type="submit" class="btn btn-outline-primary mt-3">
+											<button id="details-btn" type="submit" class="btn btn-outline-primary mt-3" data-toggle="collapse" data-target=".step-1">
 												Continue to Shipping
 											</button>
 											<span>Or</span>
@@ -1040,14 +1037,12 @@
 							</div>						<li class="list-group-item border-0 d-flex align-items-center py-4">
 								<span class="va va-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Shipping</h1>
-								<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping" aria-expanded="false"
-									aria-controls="shipping" aria-controls="shipping">
+								<span class="step-2 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-2">
 									Edit Shipping details <span class="va va-pencil mr-2 mb-n2"></span></span>
 							</li>
-							<div>
-								<div class="p-3 bg-white">
-									<span class="ml-auto d-none" id="headingTwo" data-toggle="collapse" data-target="#shipping"
-										aria-expanded="false" aria-controls="shipping" aria-controls="shipping">
+							<span>
+								<div class="bg-white">
+									<span class="step-2 ml-auto collapse">
 										<ul class="list-group">
 											<li class="list-group-item py-1 border-0">Rumbiiha Swaibu</li>
 											<li class="list-group-item py-1 border-0">55 East 52nd Street</li>
@@ -1055,14 +1050,13 @@
 											<li class="list-group-item py-1 border-0">New York, NY</li>
 											<li class="list-group-item py-1 border-0">+89 5454443</li>
 											<li class="list-group-item py-1 border-0">
-												<h4>Shipping Method</h4>
+												<h5>Shipping Method</h5>
 											</li>
 											<li class="list-group-item py-1 border-0">Fixed | $10.0</li>
 										</ul>
 									</span>
 							
-									<form class="col-md-12 px-0 collapse" id="shipping" aria-labelledby="headingTwo"
-										data-parent="#accordionExample">
+									<form class="step-1 col-md-12 p-3 collapse" data-parent="#checkout-collapse">
 										<!-- Shipping Information -->
 										<div class="form-group row">
 											<label for="recipient_name" class="col-md-5 mr-0">Recipient Name</label>
@@ -1373,23 +1367,21 @@
 												</select>
 											</div>
 										</div>
-										<button id="to-payments" class="btn btn-outline-primary" data-toggle="collapse" data-target="#payments"
-											aria-expanded="true" aria-controls="payments" disabled>continue to Payments</button>
+										<button id="to-payments" class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-2">continue to Payments</button>
 									</form>
 								</div>
-							</div>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
+							</span>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-card"></span>
 								<h1 class="card-title mb-0">Payment options</h1>
-								<span class="ml-auto d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
-									aria-controls="payments" aria-controls="payments">
-									Edit Payment Options <span class="va va-pencil mr-2 mb-n2"></span></span>
-							</li>
-							<div id="payments" class="collapse show" aria-labelledby="payments" data-parent="#accordionExample">
-								<span class="d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
-									aria-controls="payments" aria-controls="payments">
-									<img height="30" src="../assets/images/payments/PayPal.svg" alt="" /> Paypal
+								<span class="step-3 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-3">
+									Edit Payment Options <span class="va va-pencil mr-2 mb-n2"></span>
 								</span>
-								<form class="payment-form p-3 bg-white">
+							</li>
+							<span class="step-3 collapse">
+								<img class="mx-3" height="30" src="../assets/images/payments/PayPal.svg" alt="" />
+							</span>
+							<div class="step-2 collapse" data-parent="#checkout-collapse">
+								<form  class="payment-form p-3 bg-white">
 									<div class="btn-group-toggle" data-toggle="buttons">
 										<label
 											class="btn btn-block select-payment-btn shadow-sm border active mb-3 d-flex align-items-center justify-content-between">
@@ -1432,21 +1424,13 @@
 											</span>
 										</label>
 									</div>
-									<button id="to-oder-review" class="btn btn-outline-primary" data-toggle="collapse" data-target="#oder-review"
-										aria-expanded="true" aria-controls="oder-review">continue to Payments</button>
+									<button class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-3">continue to Payments</button>
 								</form>
-							</div>
-							
-							<script>
-							
-							</script>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
+							</div>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-checkmark"></span>
 								<h1 class="card-title mb-0">Review Order</h1>
-								<span class="ml-auto d-none" id="orderReview" data-toggle="collapse" data-target="#orderReview"
-									aria-expanded="false" aria-controls="orderReview" aria-controls="orderReview">
-								</span>
 							</li>
-							<div class="collapse show" id="order-review" aria-labelledby="orderReview" data-parent="#accordionExample">
+							<div class="collapse step-3"  data-parent="#checkout-collapse">
 								<div class="p-4 bg-white text-center">
 									<span class="va va-checkmark badge-finish text-white"></span>
 									<form class="mt-3">
@@ -1566,38 +1550,65 @@
 	</div>
 	
 	<script>
-		$("form").on("submit", function (event) {
-			event.preventDefault();
-			const formData = $(this).serializeArray();
+		// steps
+		// personal
+		$('.btn-edit-checkout').click((e) => {
+			$(`#form-${e.target.id}`).addClass('show')
+			$(`#show-${e.target.id}`).addClass('d-none')
+		})
+	
+		let errors = []
+	
+		$('input').keydown(({ target }) => {
+			errors = []
 			$(".form-text").remove();
-			validate(formData, errors => {
-				console.log(errors)
-			})
-		});
+			getFields({ name: target.name, value: target.value })
+			if (!errors.length) {
+				console.log('hello');
+				$(target).closest('form').find(':submit').removeAttr('disabled')
+			} else {
+				$(target).closest('form').find(':submit').attr('disabled')
+			}
+		})
 	
-		const errors = []
-		function validate(reqData, cb) {
-			reqData.map(({ name, value }) => {
-				const field = $(`[name="${name}"]`);
+		$('input').focusout(({ target }) => {
+			errors = []
+			$(".form-text").remove();
+			getFields({ name: target.name, value: target.value })
+			if (!errors.length) {
+				$(target).closest('form').find(':submit').prop('disabled', false)
+			} else {
+				$(target).closest('form').find(':submit').prop('disabled', true)
+			}
+		})
 	
-				const minLen = field.attr('minlength') && JSON.parse(field.attr('minlength'));
-				const maxLen = field.attr('maxlength') && JSON.parse(field.attr('maxlength'));
-				// const min = field.attr('min') && JSON.parse(field.attr('min').trim());
-				const max = field.attr('max') && JSON.parse(field.attr('max'));
-				field.attr('required') && !value && $(`#${name}`).after(showError(`${name} is required`));
-				value && minLen > value.length && $(`#${name}`).after(showError(`${name} is too short (${minLen} minimum)`));
-				value && maxLen < value.length && $(`#${name}`).after(showError(`${name} is too long (${maxLen} maximum)`));
-				// value && min > value && $(`#${name}`).after(showError(`${name} is less (${min} minimum)`));
-				value && max < value && $(`#${name}`).after(showError(`${name} is much try (${max} maximum)`));
+		$('form').submit((e) => {
+			e.preventDefault();
+			$(".form-text").remove();
+			$(e.target).serializeArray().map((el) => {
+				getFields({ name: el.name, value: el.value })
 			})
-			if (errors) return cb(errors);
-		}
+		})
+	
 	
 		function showError(error) {
 			errors.push(error);
 			return `<small class="form-text text-danger">${error}</small>`;
 		};
 	
+		function getFields(target) {
+			console.log(target);
+			const field = $(`#${target.name}`);
+			const minLen = field.attr('minlength') && parseInt(field.attr('minlength'));
+			const maxLen = field.attr('maxlength') && parseInt(field.attr('maxlength'));
+			// const min = field.attr('min') && parseInt(field.attr('min').trim());
+			const max = field.attr('max') && parseInt(field.attr('max'));
+			field.attr('required') && !target.value && $(`#${target.name}`).after(showError(`${target.name} is required`));
+			target.value && minLen > target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too short (${minLen} minimum)`));
+			target.value && maxLen < target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too long (${maxLen} maximum)`));
+			// value && min > value && $(`#${target.name}`).after(showError(`${target.name} is less (${min} minimum)`));
+			target.value && max < target.value && $(`#${target.name}`).after(showError(`${target.name} is much try (${max} maximum)`));
+		}
 	</script>
 	<div class="cart-overlay d-none"></div>
 	<div id="shopping-cart" class="sidenav bg-white">
@@ -1627,7 +1638,7 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-1">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control"
+										<input type="text" value="1" min="1" class="form-control text-center"
 											id="form-control-1" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-1">+</span>
@@ -1666,7 +1677,7 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-2">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control"
+										<input type="text" value="1" min="1" class="form-control text-center"
 											id="form-control-2" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-2">+</span>
@@ -1705,7 +1716,7 @@
 										<div class="input-group-prepend cursor-pointer">
 											<span class="btn input-group-text btn-down" id="btn-down-3">-</span>
 										</div>
-										<input type="text" value="1" min="1" class="form-control"
+										<input type="text" value="1" min="1" class="form-control text-center"
 											id="form-control-3" readonly>
 										<div class="input-group-append cursor-pointer">
 											<span class="btn input-group-text btn-up" id="btn-up-3">+</span>

@@ -1,35 +1,32 @@
 <li class="list-group-item border-0 d-flex align-items-center pb-4">
 	<span class="va va-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 	<h1 class="card-title mb-0">Personal Details</h1>
-	<span class="ml-auto d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
-		aria-controls="personalDetails">
+	<span class="step-1 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-1">
 		Edit personal details <span class="va va-pencil mr-2 mb-n2"></span>
 	</span>
 
 </li>
 <div>
 	<div class="px-3 bg-white">
-		<span class="d-none" data-toggle="collapse" data-target="#personalDetails" aria-expanded="true"
-			aria-controls="personalDetails">
+		<span id="show-personal" class="step-1 collapse" >
 			<h5>John Doe</h5>
 			<h5>doe@example.com</h5>
 		</span>
-		<form id="personalDetails" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample"
+		<form id="step-1" class="step-1 collapse show" data-parent="#checkout-collapse"
 			novalidate>
 			<div class="form-row">
 				<div class="form-group col-md-6">
 					<label for="firstname">First Name</label>
-					<input type="text" name="firstname" value="John" class="form-control" id="firstname" />
+					<input type="text" name="firstname" value="John" class="form-control" id="firstname" required/>
 				</div>
 				<div class="form-group col-md-6">
 					<label for="lastname">Last Name</label>
-					<input type="text" name="lastname" value="Doe" class="form-control" id="lastname" />
+					<input type="text" name="lastname" value="Doe" class="form-control" id="lastname" required/>
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="email">Email address</label>
-				<input type="text" name="email" value="doe@example.com" class="form-control" id="email"
-					aria-describedby="emailHelp" />
+				<input type="text" name="email" value="doe@example.com" class="form-control" id="email" required/>
 			</div>
 			<div class="custom-control custom-checkbox mr-sm-2 my-3">
 				<input type="checkbox" class="custom-control-input" id="create-accoount">
@@ -40,11 +37,11 @@
 			<div class="collapse" id="collapseExample">
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="password" name="password" id="password" class="form-control" required />
+					<input type="password" name="password" id="password" class="form-control" minlength="4" required />
 				</div>
 			</div>
 			<div class="d-flex flex-wrap align-items-center justify-content-between">
-				<button type="submit" class="btn btn-outline-primary mt-3">
+				<button id="details-btn" type="submit" class="btn btn-outline-primary mt-3" data-toggle="collapse" data-target=".step-1">
 					Continue to Shipping
 				</button>
 				<span>Or</span>

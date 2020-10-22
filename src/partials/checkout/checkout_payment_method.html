@@ -1,16 +1,15 @@
 <li class="list-group-item border-0 d-flex align-items-center pt-4">
 	<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-card"></span>
 	<h1 class="card-title mb-0">Payment options</h1>
-	<span class="ml-auto d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
-		aria-controls="payments" aria-controls="payments">
-		Edit Payment Options <span class="va va-pencil mr-2 mb-n2"></span></span>
-</li>
-<div id="payments" class="collapse show" aria-labelledby="payments" data-parent="#accordionExample">
-	<span class="d-none" id="payments" data-toggle="collapse" data-target="#payments" aria-expanded="false"
-		aria-controls="payments" aria-controls="payments">
-		<img height="30" src="../assets/images/payments/PayPal.svg" alt="" /> Paypal
+	<span class="step-3 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-3">
+		Edit Payment Options <span class="va va-pencil mr-2 mb-n2"></span>
 	</span>
-	<form class="payment-form p-3 bg-white">
+</li>
+<span class="step-3 collapse">
+	<img class="mx-3" height="30" src="../assets/images/payments/PayPal.svg" alt="" />
+</span>
+<div class="step-2 collapse" data-parent="#checkout-collapse">
+	<form  class="payment-form p-3 bg-white">
 		<div class="btn-group-toggle" data-toggle="buttons">
 			<label
 				class="btn btn-block select-payment-btn shadow-sm border active mb-3 d-flex align-items-center justify-content-between">
@@ -53,11 +52,6 @@
 				</span>
 			</label>
 		</div>
-		<button id="to-oder-review" class="btn btn-outline-primary" data-toggle="collapse" data-target="#oder-review"
-			aria-expanded="true" aria-controls="oder-review">continue to Payments</button>
+		<button class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-3">continue to Payments</button>
 	</form>
 </div>
-
-<script>
-
-</script>
