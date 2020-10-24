@@ -161,16 +161,27 @@
 	};
 
 	var hackerList = new List('hacker-list', options);
-
-	$('#notify-nav li').click(({ target }) => {
+	$('.notifications-sidenav .read-filter').click(({ target }) => {
+		const queryId = $(target).closest('li').attr("id");
 		hackerList.filter(function (item) {
-			if (item.values().status == target.id) {
+			console.log(item.values().read, queryId);
+			if (item.values().read == queryId) {
 				return true;
 			} else {
 				return false;
 			}
 		});
-		hackerList.filter();
+	})
+
+	$('.notifications-sidenav .status-filter').click(({ target }) => {
+		const queryId = $(target).closest('li').attr("id");
+		hackerList.filter(function (item) {
+			if (item.values().status == queryId) {
+				return true;
+			} else {
+				return false;
+			}
+		});
 	})
 
 

@@ -61,8 +61,6 @@
 }
 
 .card-banner {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	overflow: hidden;
@@ -237,8 +235,7 @@ ul.row-sm {
 
 .header-icons {
 	font-size: 1.8rem;
-	margin-bottom: -0.65rem;
-	.lnr-user {
+	.va-user {
 		font-size: 1.6rem;
 	}
 }
@@ -350,19 +347,16 @@ ul.row-sm {
 	font-size: 8rem;
 }
 // svg styles
-svg {
-	.a {
-		fill: lighten($color: $primary, $amount: 30);
-	}
-	.b,
-	.c {
-		fill: $primary;
-	}
-	.c {
-		stroke: rgba(0, 0, 0, 0);
-		stroke-miterlimit: 10;
-		@include media-breakpoint-down(md) {
-			display: none;
+.logo {
+	svg {
+		.a {
+			fill: $primary;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+		}
+		.b {
+			fill: $primary;
 		}
 	}
 }
@@ -595,13 +589,6 @@ svg {
 	}
 }
 
-.mt-r-2 {
-	margin-top: 4.3rem !important;
-	@include media-breakpoint-down(md) {
-		margin-top: 4.2rem !important;
-	}
-}
-
 $height: 28px;
 $width: $height * 2;
 
@@ -627,7 +614,6 @@ $width: $height * 2;
 			top: -0.2rem;
 			right: 0;
 			font-size: $height * 0.5;
-			top: -0.2rem;
 			padding: ($height / 4) ($height / 4);
 			color: white;
 		}
@@ -811,14 +797,14 @@ $width: $height * 2;
 
 .product-carousel-imgs {
 	li {
-		height: 4rem;
-		width: 4rem;
-		border-radius: 0.5rem;
+		height: 2.7rem;
+		width: 2.7rem;
+		border-radius: $border-radius-sm;
 		border: 0;
-		margin-bottom: 0.4rem;
+		margin-bottom: 0.2rem;
 		img {
 			height: 100%;
-			border-radius: 0.5rem;
+			border-radius: $border-radius-sm;
 		}
 	}
 }
@@ -1126,7 +1112,6 @@ $width: $height * 2;
 	background: $gray-200;
 }
 .carousel-indicators {
-	display: block !important;
 	li {
 		opacity: 1 !important;
 		&.active {
@@ -1160,11 +1145,87 @@ $width: $height * 2;
 .notifications-sidenav {
 	.nav-link {
 		&.active {
+			background: transparent !important;
 			color: $primary;
 			.btn {
 				color: $primary;
 				background: lighten($color: $primary, $amount: 40);
 			}
 		}
+	}
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+.btn-icon-nav {
+	font-size: 1.8rem;
+	color: $gray-800 !important;
+	@include media-breakpoint-down(sm) {
+		font-size: 1.5rem;
+		&.va-user {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+.left-icon-nav {
+	@include media-breakpoint-down(sm) {
+		flex: 1 1 auto !important;
+	}
+	@include media-breakpoint-up(sm) {
+		width: 17%;
+	}
+}
+svg {
+	.shop-cls-1 {
+		fill: none;
+		stroke: $body-color;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-width: 1.5px;
+	}
+
+	.support-cls-1,
+	.support-cls-5 {
+		fill: none;
+	}
+
+	.support-cls-1 {
+		stroke: $body-color;
+		stroke-width: 1.5px;
+	}
+
+	.support-cls-2,
+	.disc-cls-2,
+	.shop-cls-2 {
+		fill: $body-color;
+	}
+
+	.support-cls-3,
+	.disc-cls-1,
+	.shop-cls-3 {
+		fill: $primary;
+	}
+
+	.support-cls-4,
+	.disc-cls-5 {
+		stroke: none;
+	}
+
+	.disc-cls-3,
+	.disc-cls-6,
+	.disc-cls-4 {
+		fill: none;
+	}
+
+	.disc-cls-3,
+	.disc-cls-4 {
+		stroke: $body-color;
+	}
+
+	.disc-cls-3 {
+		stroke-linecap: round;
+		stroke-width: 1.5px;
 	}
 }

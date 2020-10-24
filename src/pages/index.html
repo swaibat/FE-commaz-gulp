@@ -42,22 +42,26 @@
                             {{#each recent_products}}
                             <div class="swiper-slide rounded swiper-shadow swiper-slide-active">
                                 <div class="item-heading">
-                                    <p class="text-truncate mb-0">{{ this.title }}</p>
+                                    <div
+                                        class="text-truncate mb-0 w-100">{{ this.title }}</div>
                                     <p>
                                         <small>by</small>
                                         <small>Bowers &amp; Wilkins</small>
                                     </p>
                                 </div>
                                 <div class="img-container w-50 mx-auto my-2 py-75">
-                                    <img src="{{root}}{{ this.image }}" class="img-fluid" alt="image">
+                                    <a href="{{root}}shop/product-details.html">
+                                        <img src="{{root}}{{ this.image }}" class="img-fluid" alt="image">
+                                    </a>
+
                                 </div>
                                 <div class="item-meta">
                                     <div class="product-rating">
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-warning"></i>
-                                        <i class="fas fa-star text-secondary"></i>
+                                        <i class="va va-star-fill text-warning"></i>
+                                        <i class="va va-star-fill text-warning"></i>
+                                        <i class="va va-star-fill text-warning"></i>
+                                        <i class="va va-star-fill text-warning"></i>
+                                        <i class="va va-star-fill text-secondary"></i>
                                     </div>
                                     <p class="text-primary mb-0">{{ this.price }}</p>
                                 </div>
@@ -91,7 +95,7 @@
                     <ul class="row no-gutters bordered-cols">
                         {{#each products}}
                         <li class="col-6 col-lg-3 col-md-4">
-                            <a href="#" class="item">
+                            <a href="{{root}}shop/product-details.html" class="item">
                                 <div class="card-body p-4">
                                     <h6 class="title">{{ this.title }} </h6>
                                     <img class="img-sm float-right" src="{{root}}{{ this.image }}">
@@ -129,7 +133,7 @@
                     <ul class="row no-gutters bordered-cols">
                         {{#each fashion}}
                         <li class="col-6 col-lg-3 col-md-4">
-                            <a href="#" class="item">
+                            <a href="{{root}}shop/product-details.html" class="item">
                                 <div class="card-body p-4">
                                     <h6 class="title">{{ this.title }} </h6>
                                     <img class="img-sm float-right" src="{{root}}{{ this.image }}">
@@ -155,7 +159,7 @@
 
         <section id="ecommerce-products" class="grid-view grid-view-sm">
             {{#each recent_products}}
-            <div class="card ecommerce-card shadow-sm">
+            <div class="card ecommerce-card shadow-sm rounded">
                 <div class="card-content">
                     <div class="btn-group-vertical position-absolute right-0">
                         <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">

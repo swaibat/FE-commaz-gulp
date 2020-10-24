@@ -42,19 +42,19 @@ title: Product Details
 										</a>
 									</div>
 									<ol
-										class="carousel-indicators d-none d-md-flex flex-column order-first position-relative mt-n2 p-3 mx-0 product-carousel-imgs">
-										<li class="bg-light-200 active p-2" data-target="#carouselExampleIndicators"
+										class="d-none d-md-flex flex-column carousel-indicators order-first position-relative mt-n2 px-3 py-2 mx-0 product-carousel-imgs justify-content-start">
+										<li class="bg-light-200 active p-1" data-target="#carouselExampleIndicators"
 											data-slide-to="0" class="rounded-sm active">
 											<img class="d-block w-100" src="{{root}}assets/images/products/mac-face.png"
 												alt="First slide">
 										</li>
-										<li class="bg-light-200 p-2" data-target="#carouselExampleIndicators"
+										<li class="bg-light-200 p-1" data-target="#carouselExampleIndicators"
 											data-slide-to="1">
 											<img class="d-block w-100"
 												src="{{root}}assets/images/products/macbook-pro-13.png"
 												alt="Second slide">
 										</li>
-										<li class="bg-light-200 p-2" data-target="#carouselExampleIndicators"
+										<li class="bg-light-200 p-1" data-target="#carouselExampleIndicators"
 											data-slide-to="2">
 											<img class="d-block w-100"
 												src="{{root}}assets/images/products/macbook_PNG62.png"
@@ -87,7 +87,7 @@ title: Product Details
 								<p class="font-weight-bold"><i
 										class="feather icon-dollar-sign mr-50 font-medium-2"></i>EMI options available
 								</p>
-								<hr /> 
+								<hr />
 								<div class="d-flex flex-wrap">
 									<div class="form-group">
 										<label class="font-weight-bold mb-2">Color</label>
@@ -157,7 +157,8 @@ title: Product Details
 											<div class="input-group-prepend cursor-pointer">
 												<span class="input-group-text btn btn-down">-</span>
 											</div>
-											<input type="text" value="1" class="form-control" min="1" max="100" readonly>
+											<input type="text" value="1" class="form-control" min="1" max="100"
+												readonly>
 											<div class="input-group-append cursor-pointer">
 												<span class="input-group-text btn btn-up">+</span>
 											</div>
@@ -288,33 +289,26 @@ title: Product Details
 									</table>
 								</div>
 							</div>
-
-							<aside class="col-md-4">
-
-								<div class=" bg-white shadow-sm p-3 rouded">
-									<h5 class="title-description">Recomended for you</h5>
-									{{#each wishlist}}
-									<div class="itemside mb-4 p-3 border rounded">
-										<div class="aside">
-											<img src="{{root}}../{{this.image}}" class="img-sm bg-light border rounded">
-										</div>
-										<div class="info d-flex flex-column">
-											<a href="#" class="title font-weight-bold">{{this.title}}</a>
-											<div class="desc-text">
-												<small class="">{{this.description}}</small>
+							<div class="col-md-4">
+								<div class="bg-white p-3 rounded shadow-sm">
+									<h5>Recomended for you</h5>
+									<div class="form-row">
+										{{#each wishlist}}
+										<div class="col-md-4 p-1">
+											<div class="mb-3 d-flex flex-column">
+												<div class="w-100">
+												<img src="{{root}}../{{this.image}}"
+													class="img-fluid bg-light border rounded">
 											</div>
-											<div class="d-flex mt-auto justify-content-between">
-												<a class="va va-cart btn btn-primary p-2">
-												</a>
-												<a href="#" class="btn btn-outline-primary p-2">
-													<span class="va va-heart"></span>
-												</a>
+												<a href="{{root}}shop/product-details.html"
+												class="font-weight-bold text-truncate">{{this.title}}</a>
+											<h5 class="font-weight-bold">{{this.price}}</h5>
 											</div>
 										</div>
+										{{/each}}
 									</div>
-									{{/each}}
 								</div>
-							</aside>
+							</div>
 						</div>
 					</div>
 					<section class="my-4">
@@ -323,7 +317,7 @@ title: Product Details
 						</header>
 						<section id="ecommerce-products" class="grid-view grid-view-sm">
 							{{#each recent_products}}
-							<div class="card ecommerce-card shadow-sm">
+							<div class="card ecommerce-card shadow-sm rounded">
 								<div class="card-content">
 									<div class="btn-group-vertical position-absolute right-0">
 										<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">

@@ -6,62 +6,68 @@ title: Notifications
         <div class="card-body row">
             <div class="col-md-2">
                 <div class="bg-white notifications-sidenav">
-                    <button class="btn btn-primary btn-block">
-                        <span class="va va-pencil mr-2"></span>Compose
-                    </button>
-                    <ul class="nav flex-column ">
-                        <li class="nav-item" id="received">
-                            <a class="nav-link d-flex align-items-center active" href="#">
-                                <span class="va va-star btn p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">Inbox</span> 
-                            </a>
-                        </li>
-                        <li class="nav-item" id="stared">
-                            <a class="nav-link d-flex align-items-center" href="#">
-                                <span class="va va-star btn btn-icon btn-light-200 p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">Starred</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="achieved">
-                            <a class="nav-link d-flex align-items-center" href="#">
-                                <span class="va va-rocket btn btn-icon btn-light-200 p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">Achieved</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="Read">
-                            <a class="nav-link d-flex align-items-center" href="#">
-                                <span class="va va-mail_unread btn btn-icon btn-light-200 p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">read</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="unRead">
-                            <a class="nav-link d-flex align-items-center" href="#">
-                                <span class="va va-mail_unread btn btn-icon btn-light-200 p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">unread</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="all">
-                            <a class="nav-link d-flex align-items-center" href="#">
-                                <span class="va va-alarm btn btn-icon btn-light-200 p-2 mr-1"></span>
-                                <span class="flex-fill py-2 px-2">All Notifications</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <h5 class="my-3">Types</h5>
-                    <ul class="list-group" id="notify-nav">
-                        <li class="list-group-item border-0" id="sales">
-                            <span class="va va-tag btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Sales
-                        </li>
-                        <li class="list-group-item border-0" id="Offers">
-                            <span class="va va-gift btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Gifts & Offers
-                        </li>
-                        <li class="list-group-item border-0" id="Payments">
-                            <span class="va va-card btn btn-icon btn-light-200 p-2 mr-2"></span>
-                            Payments
-                        </li>
-                    </ul>
+                    <div class="d-flex">
+                        <span class="bg-light-200 d-flex flex-fill align-items-center rounded px-3">
+                            General
+                        </span>
+                        <span class="va va-pencil btn btn-primary p-2 ml-2" data-toggle="modal"
+                            data-target="#create"></span>
+                    </div>
+                    <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item status-filter" id="received">
+                                <span class="nav-link d-flex align-items-center active" data-toggle="pill" role="tab">
+                                    <span class="va va-star btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Inbox</span>
+                                </span>
+                            </li>
+                            <li class="nav-item status-filter" id="starred">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-star btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Starred</span>
+                                </span>
+                            </li>
+                            <li class="nav-item status-filter" id="achieved">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-rocket btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Achieved</span>
+                                </span>
+                            </li>
+                            <li class="nav-item read-filter" id="read">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-mail_open btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">read</span>
+                                </span>
+                            </li>
+                            <li class="nav-item read-filter" id="unread">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-mail_unread btn btn-icon btn-light-200 p-2 mr-1"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">unread</span>
+                                </span>
+                            </li>
+                            <h5 class="my-3 p-2 bg-light-200 d-flex rounded">Types <span
+                                    class="ml-auto badge badge-primary">
+                                    Coming soon</span></h5>
+                            <li class="nav-item" id="sales">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-tag btn btn-icon btn-light-200 p-2 mr-2"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Sales</span>
+                                </span>
+                            </li>
+                            <li class="nav-item" id="Offers">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-gift btn btn-icon btn-light-200 p-2 mr-2"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Gifts & Offers</span>
+                                </span>
+                            </li>
+                            <li class="nav-item" id="Payments">
+                                <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
+                                    <span class="va va-card btn btn-icon btn-light-200 p-2 mr-2"></span>
+                                    <span class="flex-fill py-2 px-2 cursor-pointer">Payments</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-md-10 p-0 notifications">
@@ -83,7 +89,7 @@ title: Notifications
 
                     <ul class="list list-group">
                         {{#each notifications}}
-                        <li class="list-group-item {{#if this.read }} active {{/if}}">
+                        <li class="list-group-item cursor-pointer {{#if this.isread.read }} active {{/if}}" data-toggle="modal" data-target="#exampleModalLong">
                             <div class="media">
                                 <div class="avatar">
                                     <img class="mr-3 rounded" width="40" height="40"
@@ -101,13 +107,13 @@ title: Notifications
                                         <input type="checkbox" class="custom-control-input" id="{{this.id}}">
                                         <label class="custom-control-label" for="{{this.id}}"></label>
                                     </div>
-                                    <span class="va va-star"></span>
+                                    <span class="va va-star {{#if this.status.starred }} text-warning {{/if}}"></span>
                                 </div>
                                 <p class="d-inline-block text-truncate w-100 mb-0 ml-2 body">
                                     {{this.body}}
                                 </p>
-                                <div class="d-none status">{{this.status}}</div>
-                                <div class="d-none read">{{this.read}}</div>
+                                <div class="d-none status">{{this.status.name}}</div>
+                                <div class="d-none read">{{this.isread.name}}</div>
                             </div>
                         </li>
                         {{/each}}
@@ -118,3 +124,78 @@ title: Notifications
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="create" tabindex="-1" role="dialog" aria-labelledby="createLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <form class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <select name="" id="to" class="form-control select2">
+                        <option value="">Select Department</option>
+                        <option value="sales">Sales Department</option>
+                        <option value="sales">Technical Department</option>
+                        <option value="sales">General Department</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="body">Your message</label>
+                    <textarea class="form-control" name="" id="body" rows="5" required></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="media">
+                <div class="avatar">
+                    <img class="mr-3 rounded" width="40" height="40"
+                        src="{{root}}../assets/images/portrait/small/avatar-s-12.jpg"
+                        alt="Generic placeholder image">
+                </div>
+                <div class="media-body">
+                    <h5 class="mt-0 name">john Doe</h5>
+                    <h6 class="mt-0 subject">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                </div>
+            </div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

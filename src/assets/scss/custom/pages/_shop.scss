@@ -7,14 +7,14 @@
 
 // margin for both views
 .grid-view {
-	margin-top: 0.7rem;
+	margin-top: 0.4rem;
 }
 
 // Grid View
 .grid-view-sm {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
-	column-gap: 28px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+	column-gap: .7rem;
 	@include media-breakpoint-down(md) {
 		grid-template-columns: 1fr 1fr !important;
 		column-gap: 0;
@@ -22,8 +22,8 @@
 }
 .grid-view {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	column-gap: 28px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	column-gap: .7rem;
 	@include media-breakpoint-down(md) {
 		grid-template-columns: 1fr 1fr !important;
 		column-gap: 0;
@@ -32,7 +32,7 @@
 
 .ecommerce-card {
 	overflow: hidden;
-	margin-bottom: 1.5rem;
+	margin-bottom: .7rem;
 	@include media-breakpoint-down(md) {
 		margin-bottom: 0;
 		border-radius: 0 !important;
@@ -51,7 +51,6 @@
 .filter-sidenav {
 	height: 100%;
 	z-index: 1;
-	overflow-x: hidden;
 	transition: 0.5s;
 	width: 260px;
 	position: absolute;

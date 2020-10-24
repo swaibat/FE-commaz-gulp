@@ -1,30 +1,25 @@
 {{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
 'auth-forgot-password' 'auth-reset-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
 
-<nav class="navbar navbar-expand-md fixed-top bg-white border-bottom">
+<nav class="navbar navbar-expand-md bg-white border-bottom">
 	<div class="container">
-		<div class="dropdown nav-item category-menu" data-menu="dropdown">
-			<a class="nav-link logo" href="/">
-				{{> _logo}}
-			</a>
-		</div>
-		<button class="navbar-toggler dool-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-			aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="va va-menu"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<div class="input-group input-group-lg mx-auto col-md-8">
+		<div class="d-flex align-items-center w-100">
+			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="logo" href="/">
+					{{> _logo}}
+				</a>
+			</div>
+			<div class="input-group input-group-lg mx-auto col-md-6 d-none d-sm-flex">
 				<input type="text" class="form-control" placeholder="Search anything">
 				<div class="input-group-append">
 					<span class="va va-magnifier input-group-text"></span>
 				</div>
 			</div>
-			<div class="d-flex mt-2 mt-md-0">
-				<div class="dropdown dropdown-user mr-3">
-					<a class="dropdown-toggle nav-link dropdown-user-link py-0" href="#" data-toggle="dropdown">
-						<div class="text-center header-icons">
-							<span class="va va-user"></span>
-						</div>
+			<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
+				<div class="dropdown dropdown-user">
+					<a class="dropdown-toggle nav-link dropdown-user-link p-0 d-flex flex-column" href="#"
+						data-toggle="dropdown">
+						<span class="va va-user btn btn-icon-nav p-0"></span>
 						<small class="text lr-only"> My profile </small>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right">
@@ -45,32 +40,29 @@
 						</a>
 					</div>
 				</div>
-				<div class="widget-header mx-3">
-					<a href="{{root}}notify/notifications.html" class="widget-view">
-						<div class="text-center header-icons">
-							<span class="va va-notifications"></span>
-						</div>
+				<div class="widget-header">
+					<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
+						<span class="va va-notifications btn btn-icon-nav p-0"></span>
 						<small class="text lr-only"> Notifications</small>
 					</a>
 				</div>
-				<div class="widget-header ml-3">
-					<span id="cart-btn" class="widget-view">
-						<div class="text-center header-icons">
-							<span class="va cart-icon"></span>
-						</div>
-						<small class="text lr-only ml-4"> Cart </small>
-						<span class="c-badge badge-cart">3</span>
+				<div class="widget-header">
+					<span id="cart-btn" class="widget-view d-flex flex-column">
+						<span class="va va-cart btn btn-icon-nav p-0"></span>
+						<small class="text lr-only"> Cart </small>
+						<!-- <span class="c-badge badge-cart">3</span> -->
 					</span>
 				</div>
 			</div>
+			<!-- </div> -->
 		</div>
 	</div>
 </nav>
-<div class="bg-white mt-r-2 py-1">
-	<nav class="nav d-flex justify-content-between container">
+<div class="bg-white py-1">
+	<nav class="nav d-flex justify-content-between container pr-0">
 		<li class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-				<span class="va va-list pr-1"></span>Genre</a>
+				<span class="va va-list pr-1"></span>Catalog</a>
 			<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown mt-2">
 				<div class="row col-md-10">
 					<div class="col-md-3 mb-3">
@@ -181,10 +173,11 @@
 			</div>
 		</li>
 		{{#ifpage 'index'}}
-		<li class="nav-item ml-3 lr-only" data-toggle="tooltip" data-original-title="display mode">
+		<li class="nav-item ml-3 lr-only d-flex align-items-center" data-toggle="tooltip"
+			data-original-title="display mode">
 			<div class="switch">
 				<input class="switch" id="switch" name="switch" type="checkbox">
-				<label for="switch"></label>
+				<label class="mb-0" for="switch"></label>
 			</div>
 		</li>
 		{{/ifpage}}
@@ -210,7 +203,7 @@
 <div class="bread-overlay"></div>
 <div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
 	<span>
-		<h1 class="mb-0">{{title}}</h1>
+		<h3 class="mb-0">{{title}}</h3>
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb bg-transparent px-0 mb-0 lr-only">
 				<li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -218,7 +211,9 @@
 			</ol>
 		</nav>
 	</span>
-	<div class="switch ml-auto"><input class="switch" id="switch" name="switch" type="checkbox" /><label
-			for="switch"></label></div>
+	<div class="switch ml-auto">
+		<input class="switch" id="switch" name="switch" type="checkbox" />
+		<label class="mb-0" for="switch"></label>
+	</div>
 </div>
 {{/unlesspage}}

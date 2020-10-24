@@ -5,8 +5,14 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": false,
-		"status": "received"
+		"status": {
+			"name": "starred",
+			"starred": true
+		},
+		"isread": {
+			"name": "unread",
+			"unread": true
+		}
 	},
 	{
 		"id": 2,
@@ -14,8 +20,14 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": true,
-		"status": "received"
+		"status": {
+			"name": "received",
+			"received": true
+		},
+		"isread": {
+			"name": "read",
+			"read": true
+		}
 	},
 	{
 		"id": 3,
@@ -23,8 +35,14 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": false,
-		"status": "received"
+		"status": {
+			"name": "received",
+			"received": true
+		},
+		"isread": {
+			"name": "unread",
+			"unread": true
+		}
 	},
 	{
 		"id": 4,
@@ -32,8 +50,14 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": false,
-		"status": "received"
+		"status": {
+			"name": "received",
+			"received": true
+		},
+		"isread": {
+			"name": "unread",
+			"unread": true
+		}
 	},
 	{
 		"id": 5,
@@ -41,8 +65,14 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": true,
-		"status": "stared"
+		"status": {
+			"name": "starred",
+			"starred": true
+		},
+		"isread": {
+			"name": "read",
+			"read": true
+		}
 	},
 	{
 		"id": 6,
@@ -50,7 +80,13 @@
 		"avatar": "assets/images/portrait/small/avatar-s-12.jpg",
 		"subject": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
 		"body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate commodi expedita et debitis ratione mollitia neque hic labore? Nisi at cupiditate fugit dolor corrupti quibusdam repellendus exercitationem aut beatae dolore?",
-		"read": true,
-		"status": "achieved"
+		"status": {
+			"name": "achieved",
+			"achieved": true
+		},
+		"isread": {
+			"name": "read",
+			"read": true
+		}
 	}
 ]

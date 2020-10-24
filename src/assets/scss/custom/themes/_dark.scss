@@ -4,6 +4,18 @@ body {
 	&.dark-mode {
 		color: lighten($color: $component-bg-dark, $amount: 70) !important;
 		background-color: $body-bg-dark !important;
+		.logo {
+			svg {
+				.a {
+					fill: none;
+					stroke: $gray-100;
+				}
+				.b {
+					fill: $gray-100;
+				}
+			}
+		}
+
 		.bread-overlay {
 			background: lighten($color: $body-bg-dark, $amount: 18);
 		}
@@ -18,10 +30,14 @@ body {
 			background: $component-bg-dark !important;
 		}
 		.border-left {
-			border-left: 1px solid $gray-800 !important;
+			border-left: 1px solid $gray-700 !important;
 		}
+		.modal-header,
 		.border-bottom {
-			border-bottom: 1px solid $gray-800 !important;
+			border-bottom: 1px solid $gray-700 !important;
+		}
+		.modal-footer {
+			border-top: 1px solid $gray-700 !important;
 		}
 		.card {
 			background: $component-bg-dark !important;
@@ -34,12 +50,14 @@ body {
 		.bg-light,
 		.btn-light,
 		.dropdown-menu,
+		.modal-content,
 		.dropdown-menu::before {
 			background-color: lighten($color: $component-bg-dark, $amount: 10) !important;
 			border: 1px solid lighten($color: $component-bg-dark, $amount: 10) !important;
 		}
 		.table,
 		.item-description,
+		.list-group-item.active,
 		h1,
 		h2,
 		h3,
@@ -77,7 +95,7 @@ body {
 			background: $component-bg-dark !important;
 		}
 		.btn {
-			color: lighten($color: $component-bg-dark, $amount: 50);
+			color: $white !important;
 		}
 		.form-control::placeholder {
 			color: $gray-500;
@@ -142,6 +160,26 @@ body {
 		.custom-control-label::before {
 			background-color: #343a40;
 			border: #343a40 solid 1px;
+		}
+		// side icons
+		svg {
+			.shop-cls-1 {
+				stroke: $gray-300;
+			}
+			.support-cls-1 {
+				stroke: $gray-300;
+			}
+
+			.support-cls-2,
+			.disc-cls-2,
+			.shop-cls-2 {
+				fill: $gray-300;
+			}
+
+			.disc-cls-3,
+			.disc-cls-4 {
+				stroke: $gray-300;
+			}
 		}
 	}
 }
