@@ -24,6 +24,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	column-gap: .7rem;
+	min-height: 100vh;
 	@include media-breakpoint-down(md) {
 		grid-template-columns: 1fr 1fr !important;
 		column-gap: 0;
@@ -41,7 +42,7 @@
 	.card-content {
 		.item-img {
 			padding-top: 0.5rem;
-			min-height: 15.85rem;
+			min-height: 10.85rem;
 			@include media-breakpoint-down(md) {
 				min-height: 4rem;
 			}
@@ -54,6 +55,8 @@
 	transition: 0.5s;
 	width: 260px;
 	position: absolute;
+	margin-bottom: 1rem;
+	overflow-y: scroll;
 	@include media-breakpoint-down(sm) {
 		top: 0;
 		width: 0;

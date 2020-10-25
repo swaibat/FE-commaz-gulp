@@ -1,19 +1,19 @@
 <div class="container d-flex align-items-center h-100 vh-max">
     <div class="row col-md-8 m-auto">
-        <div class="col-md-6 bg-white">
+        <div class="col-md-6 bg-white shadow-sm">
             <div class="card">
                 <div class="card-body">
                     <h1>Login</h1>
                     <p>Welcome Back please login to your acount</p>
                     <form action="index.html">
-                        <div class="form-label-group">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                        <div class="form-group">
                             <label for="inputEmail">Email</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
                         </div>
-                        <div class="form-label-group">
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
                             <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                                 required>
-                            <label for="inputPassword">Password</label>
                         </div>
                         <div class="form-group d-flex flex-wrap">
                             <div class="custom-control custom-checkbox">
@@ -22,22 +22,23 @@
                             </div>
                             <a class="ml-auto" href="auth-forgot-password.html">Forgot password</a>
                         </div>
-                        <a href="auth-login.html" class="btn btn-primary btn-block btn-inline ">Login</a>
-                        <h5 class="font-weight-bold mt-3 text-center">OR</h5>
-                    </form>
-                    <div class="w-100">
-                        <div class="d-flex mx-auto my-3 col-10">
-                            <a class="btn btn-icon btn-light border-0 btn-facebook " href="#">
-                                facebook
+                        <div class="form-group d-flex">
+                            <a href="" class="btn btn-primary btn-block btn-inline ">Login</a>
+                            <a class="btn btn-light-200 btn-icon google-btn ml-3" data-toggle="tooltip" data-title="Google"
+                                href="#">
+                                <span class="va va-google"></span>
                             </a>
-                            <a class="btn btn-icon btn-light border-0  btn-google mx-4" href="#">
-                                Google
+                            <a class="btn btn-light-200 btn-icon facebook-btn ml-3" data-toggle="tooltip" data-title="Facebook"
+                                href="#">
+                                <span class="va va-facebook"></span>
                             </a>
-                            <a class="btn btn-icon btn-light border-0 btn-twitter" href="#">
-                                Twitter
+                            <a class="btn btn-light-200 btn-icon twitter-btn ml-3" data-toggle="tooltip" data-title="Twitter"
+                                href="#">
+                                <span class="va va-twitter"></span>
                             </a>
                         </div>
-                    </div>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -47,9 +48,9 @@
                     <h1 class="mb-3">Register</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo optio voluptates minus, esse
                         consequuntur modi illum quas!</p>
-                    <button class="btn btn-light border-0">
+                    <a href="{{root}}authentication/auth-register.html" class="btn btn-light border-0">
                         Register
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

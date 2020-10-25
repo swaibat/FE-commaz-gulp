@@ -62,7 +62,7 @@
 	<nav class="nav d-flex justify-content-between container pr-0">
 		<li class="dropdown nav-item category-menu" data-menu="dropdown">
 			<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-				<span class="va va-list pr-1"></span>Catalog</a>
+				<span class="va va-list pr-1"></span>Genre</a>
 			<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown mt-2">
 				<div class="row col-md-10">
 					<div class="col-md-3 mb-3">
@@ -186,12 +186,11 @@
 {{/unlesspage}}
 
 <!-- container .// -->
-{{#ifpage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter'
-'auth-forgot-password' 'auth-reset-password' 'auth-register' '_headers'}}
+{{#ifpage 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
 <nav class="navbar fixed-top">
 	<div class="container d-flex justify-content-xs-around">
 		<div class="nav-item category-menu">
-			<a class="nav-link " href="/">
+			<a class="nav-link logo" href="/">
 				{{> _logo}}
 			</a>
 		</div>
@@ -199,7 +198,7 @@
 </nav>
 {{/ifpage}}
 
-{{#unlesspage 'index' 'documentation' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
+{{#unlesspage 'index' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password' 'shop'}}
 <div class="bread-overlay"></div>
 <div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
 	<span>

@@ -3,18 +3,72 @@
         <div class="row">
             {{> _slider_category}}
             <div id="slider" class="col-md-8">
-                <div id="carousel1_indicator" class="slider-home-banner carousel slide overflow-hidden" data-ride="carousel">
+                <div id="carousel1_indicator" class="slider-home-banner carousel slide overflow-hidden h-100"
+                    data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel1_indicator" data-slide-to="0" class="active"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner h-100">
                         <div class="carousel-item rounded active ">
                             <div class="hero-text rounded position-absolute pl-5">
                                 <h2 class="title">Comsumer Electronics</h2>
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor </p>
                                 <a href="#" class="btn btn-primary">Explore Category</a>
                             </div>
-                            <img class="rounded" src="{{ root }}assets/images/banners/slider-banner.svg" alt="Second slide">
+                            <img class="rounded" src="{{ root }}assets/images/banners/slider-banner.svg"
+                                alt="Second slide">
+                        </div>
+                        <div class="tab-content h-100" id="categoriesContent">
+                            {{#each allcategories}}
+                            <div class="tab-pane fade p-3 h-100 categories-slider" id="v-pills-{{this.id}}" role="tabpanel"
+                                aria-labelledby="v-pills-{{this.id}}-tab">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <h6>Electronics & Computers</h6>
+                                        <nav class="nav flex-column">
+                                            <a class="nav-link" href="#">Cell Phones</a>
+                                            <a class="nav-link" href="#">TV, Audio & Visual</a>
+                                            <a class="nav-link" href="#">Computers & Laptops</a>
+                                            <a class="nav-link" href="#">Gaming & Consoles</a>
+                                            <a class="nav-link" href="#">Computer Hardware & Accessories</a>
+                                            <a class="nav-link" href="#">Cameras</a>
+                                            <a class="nav-link" href="#">iPads & Tablets</a>
+                                        </nav>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <h6>Fashion & Beauty</h6>
+                                        <nav class="nav flex-column">
+                                            <a class="nav-link" href="#">Clothing</a>
+                                            <a class="nav-link" href="#">Shoes</a>
+                                            <a class="nav-link" href="#">Jewellery & Accessories</a>
+                                            <a class="nav-link" href="#">Health, Beauty & Cosmetics</a>
+                                        </nav>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <h6>Vehicles</h6>
+                                        <nav class="nav flex-column">
+                                            <a class="nav-link" href="#">Cars & Bakkies</a>
+                                            <a class="nav-link" href="#">Car Parts & Accessories</a>
+                                            <a class="nav-link" href="#">Motorcycles & Scooters</a>
+                                            <a class="nav-link" href="#">Trucks & Commercial Vehicles</a>
+                                            <a class="nav-link" href="#">Caravans & Trailers</a>
+                                            <a class="nav-link" href="#">Motorcycles & Scooters</a>
+                                            <a class="nav-link" href="#">Boats & Aviation</a>
+                                        </nav>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <h6>Hobbies & Interests</h6>
+                                        <nav class="nav flex-column">
+                                            <a class="nav-link active" href="#">Toys, Games & Remote Control</a>
+                                            <a class="nav-link" href="#">Musical Instruments</a>
+                                            <a class="nav-link" href="#">Art, Collectibles & Rare Items</a>
+                                            <a class="nav-link" href="#">Community Announcements</a>
+                                            <a class="nav-link" href="#">Books, CDs & DVDs</a>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">

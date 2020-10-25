@@ -7,8 +7,7 @@ body {
 		.logo {
 			svg {
 				.a {
-					fill: none;
-					stroke: $gray-100;
+					fill: $gray-100;
 				}
 				.b {
 					fill: $gray-100;
@@ -70,7 +69,7 @@ body {
 		.h4,
 		.h5,
 		.h6 {
-			color: lighten($color: $component-bg-dark, $amount: 48) !important;
+			color: $gray-300;
 		}
 		.item-name,
 		.header-icons,
@@ -122,6 +121,7 @@ body {
 		}
 
 		.form-control,
+		.input-group-text,
 		.select2-container--default .select2-selection--single {
 			background: #0e0e0f !important;
 			color: $gray-500 !important;
@@ -179,6 +179,40 @@ body {
 			.disc-cls-3,
 			.disc-cls-4 {
 				stroke: $gray-300;
+			}
+		}
+		.categories-slider {
+			background: lighten($color: $component-bg-dark, $amount: 10);
+			border: solid 1px $gray-600;
+		}
+
+		.price,h5 {
+			font-weight: 600;
+			color: $gray-300;
+		}
+		.alert-primary{
+			background: lighten($color: $component-bg-dark, $amount: 10);
+			color: $body-bg-dark;
+			border: none;
+		}
+		.theme-bg{
+			background: $component-bg-dark !important;
+		}
+		.pagination {
+			li {
+				a {
+					background-color: $gray-800;
+				}
+				&:not(:first-child) {
+					margin-left: 0.5rem;
+				}
+				&.active {
+					a {
+						z-index: 1;
+						color: $gray-100;
+						background-color: $primary;
+					}
+				}
 			}
 		}
 	}

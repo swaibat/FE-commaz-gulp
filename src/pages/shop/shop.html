@@ -2,64 +2,120 @@
 title: Shop
 ---
 <div class="container p-0">
-    <div class="content">
+    <div class="content mt-3">
         {{> _filter_sidenav}}
         <div class="products-list" id="products-list">
-            <div id="ecommerce-header" class="p-2 rounded bg-white shadow-sm mb-4">
-                <div class="row align-items-center">
-                    <div class="col-4 col-md-6">
-                        <div class="ecommerce-header-items">
-                            <div class="result-toggler d-flex align-items-center">
-                                <button class="btn btn-primary btn-lg d-flex align-items-center py-2 px-2"
-                                    id="toggle-filter">
-                                    <span class="va va-options"></span>
-                                </button>
-                                <div class="search-results ml-3">
-                                    <span class="products-count mr-2">0</span>results found
-                                </div>
-                            </div>
+            <nav aria-label="breadcrumb" class="d-flex align-items-center justify-content-between">
+                <ol class="breadcrumb bg-transparent p-2 mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                </ol>
+                <div class="switch ml-auto p-2">
+                    <input class="switch" id="switch" name="switch" type="checkbox" />
+                    <label class="mb-0" for="switch"></label>
+                </div>
+            </nav>
+            <div class="d-flex flex-wrap align-items-center p-3 theme-bg rounded mb-2">
+                <div class="col-md-9 row justify-content-start align-items-center ">
+                    <div class="d-flex align-items-center">
+                        <label class="flex-fill col-4 p-0 mb-0 text-truncate" for="exampleFormControlSelect1">SORT
+                            BY</label>
+                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                Newest
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Popular
+                            </label>
+                            <label class="btn btn-outline-secondary text-nowrap">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Most Reviews
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Price
+                            </label>
                         </div>
                     </div>
-                    <div class="col-8 col-sm-3 ml-auto ">
-                        <div class="d-flex align-items-center">
-                            <div class="search-container  ml-auto mr-0 mr-sm-3 order-1 order-sm-first">
-                                <input class="search-open search expandright form-control" id="searchright"
-                                    type="search" name="q" placeholder="Search">
-                                <label class="btn btn-light searchbutton" for="searchright">
-                                    <span class="mglass">⚲</span>
-                            </div>
-                            <div class="" style="width: 400px !important;">
-                                <div class="d-flex align-items-center">
-                                    <label class="flex-fill col-4 p-0 mb-0" for="exampleFormControlSelect1">SORT BY</label>
-                                    <div class="flex-fill p-0">
-                                        <select class="form-control " id="exampleFormControlSelect1">
-                                            <option>Date created</option>
-                                            <option>Popularity</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="d-flex align-items-center">
+                        <label class="flex-fill col-4 p-0 mb-0 text-nowrap mx-3" for="exampleFormControlSelect1">SHIPPING
+                            FROM</label>
+                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Abroad
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Local
+                            </label>
+                        </div>
+                    </div>
+                    <div class="custom-control custom-radio ml-auto">
+                        <input type="checkbox" id="free-shipping" name="free-shipping" class="custom-control-input">
+                        <label class="custom-control-label text-nowrap" for="free-shipping">Free shipping</label>
+                    </div>
+                    <div class="input-group col-12 p-0 mt-3 ">
+                        <input type="search" class="form-control fuzzy-search" placeholder="Search for products . . .">
+                        <div class="input-group-append">
+                            <span class="va va-magnifier input-group-text"></span>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <label class="flex-fill col-4 p-0 mb-0 text-nowrap" for="exampleFormControlSelect1">SHOP
+                            BY GROUPED FILTERS
+                        </label>
+                        <ul class="barchart p-0 m-0">
+                            <li class="data-bar">
+                                <div class="visual" data-toggle="tooltip"
+                                    data-title="20% of users shopped with this filter">
+                                    <div style="height: 20%;"></div>
+                                </div>
+                            </li>
+                            <li class="data-bar">
+                                <div class="visual" data-toggle="tooltip"
+                                    data-title="80% of users shopped with this filter">
+                                    <div style="height: 80%;"></div>
+                                </div>
+                            </li>
+                            <li class="data-bar">
+                                <div class="visual" data-toggle="tooltip"
+                                    data-title="40% of users shopped with this filter">
+                                    <div style="height: 40%;"></div>
+                                </div>
+                            </li>
+                            <li class="data-bar">
+                                <div class="visual" data-toggle="tooltip"
+                                    data-title="30% of users shopped with this filter">
+                                    <div style="height: 30%;"></div>
+                                </div>
+                            </li>
+                            <li class="data-bar">
+                                <div class="visual" data-toggle="tooltip"
+                                    data-title="10% of users shopped with this filter">
+                                    <div style="height: 10%;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
             <!-- products -->
-            <div class="grid-view overflow-hidden rounded list">
+            <div class="grid-view overflow-hidden rounded list mt-3">
                 {{#each allproducts}}
-                <div class="card ecommerce-card shadow-sm rounded">
+                <div class="card ecommerce-card shadow-sm rounded align-self-start">
                     <div class="card-content">
-                        <div class="btn-group-vertical position-absolute right-0">
-                            <span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+                        <div class="btn-group-vertical position-absolute right-0 mt-2">
+                            <span data-toggle="tooltip" data-title="add to cart">
                                 <input type="checkbox" class="d-none cart" id="cart-{{ this.id }}">
                                 <label for="cart-{{ this.id }}">
-                                    <span class="va cart-icon card-icon"></span>
+                                    <span class="va cart-icon card-icon btn btn-light-200 p-2"></span>
                                 </label>
                             </span>
-                            <span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+                            <span data-toggle="tooltip" data-title="add to wislist">
                                 <input type="checkbox" class="d-none fav" id="fav-{{ this.id }}">
                                 <label for="fav-{{ this.id }}">
-                                    <span class="va fav-icon card-icon"></span>
+                                    <span class="va fav-icon card-icon btn btn-light-200 p-2"></span>
                                     {{>  _fav}}
                                 </label>
                             </span>

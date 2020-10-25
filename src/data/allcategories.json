@@ -1,77 +1,179 @@
 [
 	{
-		"name": "Vehicles",
-		"slug": "vehicles",
-		"total": 746,
-		"icon": "car_sport",
-		"sub": [
-			{
-				"name": "Cars & Bakkies",
-				"total": 633
-			},
-			{
-				"name": "Car Parts & Accessories",
-				"total": 345
-			},
-			{
-				"name": "Motorcycles & Scooters",
-				"total": 6345
-			},
-			{
-				"name": "Trucks & Commercial Vehicles",
-				"total": 453
-			},
-			{
-				"name": "Caravans & Trailers",
-				"total": 345
-			},
-			{
-				"name": "Boats & Aviation",
-				"total": 32
-			}
-		]
-	},
-	{
-		"name": "Electronics & Computers",
+		"id": 1,
+		"name": "Electronics",
 		"slug": "electronics",
 		"total": 746,
-		"icon": "earth",
+		"icon": "tv",
 		"sub": [
 			{
 				"name": "Cell Phones",
 				"total": 633
 			},
 			{
-				"name": "TV, Audio & Visual",
-				"total": 345
+				"name": "Home Audio & Video",
+				"sub": [
+					{
+						"name": "TV Boxes",
+						"slug": "tv-boxes"
+					},
+					{
+						"name": "Television & Accessories",
+						"slug": "television-accessories"
+					},
+					{
+						"name": "Amplifiers",
+						"slug": "amplifiers"
+					},
+					{
+						"name": "Home Theatre System",
+						"slug": "home-theatre-system"
+					},
+					{
+						"name": "Mini Keyboard & Remote",
+						"slug": "mini-keyboard-aemote"
+					},
+					{
+						"name": "TV Receiver & Accessories",
+						"slug": "tv-receiver-accessories"
+					}
+				]
 			},
 			{
-				"name": "Computers & Laptops",
-				"total": 6345
+				"name": "Photography & Camera Acc",
+				"sub": [
+					{
+						"name": "Digital Cameras",
+						"slug": "digital-cameras"
+					},
+					{
+						"name": "Sports Camera & Accessories",
+						"slug": "sports-camera-accessories"
+					},
+					{
+						"name": "Mobile Photography",
+						"slug": "mobile-photography"
+					},
+					{
+						"name": "Studio Equipments",
+						"slug": "studio-equipments"
+					},
+					{
+						"name": "Camera Accessories",
+						"slug": "camera-accessories"
+					}
+				]
 			},
 			{
-				"name": "Gaming & Consoles",
-				"total": 453
+				"name": "Video Games Accessories",
+				"sub": [
+					{
+						"name": "Video Games Console",
+						"slug": "video-games-console"
+					},
+					{
+						"name": "Video Games Controller",
+						"slug": "video-games-controller"
+					},
+					{
+						"name": "Arcade Video Games",
+						"slug": "arcade-video-games"
+					},
+					{
+						"name": "Game Peripherals",
+						"slug": "game-peripherals"
+					},
+					{
+						"name": "Retro Games Accessories",
+						"slug": "retro-games-accessories"
+					}
+				]
 			},
 			{
-				"name": "Computer Hardware & Accessories",
-				"total": 345
+				"name": "Portable Audio & Video",
+				"sub": [
+					{
+						"name": "Wired Headphones & Earphones",
+						"slug": "wired-headphones-earphones"
+					},
+					{
+						"name": "On-ear & Over-ear Headphones & Earphones",
+						"slug": "on-ear-Over-ear-headphones-earphones"
+					},
+					{
+						"name": "Game Headphones & Headsets",
+						"slug": "game-headphones-headsets"
+					},
+					{
+						"name": "Headphone Amp & Sound Card",
+						"slug": "headphone-amp-sound-card"
+					},
+					{
+						"name": "Portable Audio & Video Accessories",
+						"slug": "portable-audioa-video-accessories"
+					}
+				]
+			},
+			
+			{
+				"name": "Security & Protection",
+				"total": [
+					{ "name": "Security Cameras" },
+					{ "name": "Alarm System" },
+					{ "name": "CCTV Security Accessories" },
+					{ "name": "Video Doorbell" },
+					{ "name": "Labor Insurance Supplies" }
+				]
 			},
 			{
-				"name": "Cameras",
-				"total": 32
-			},
-			{
-				"name": "iPads & Tablets",
-				"total": 32
+				"name": "3D Printer & Supplies",
+				"sub": [
+					{
+						"name": "D Printer"
+					},
+					{
+						"name": "3D Printer Pen"
+					},
+					{
+						"name": "3D Printer Accessories"
+					},
+					{
+						"name": "3D Printer Module Board"
+					},
+					{
+						"name": "3D Printer Filament"
+					}
+				]
 			}
 		]
 	},
 	{
-		"name": "Fashion & Beauty",
-		"slug": "fashion",
+		"id":3,
+		"name": "Phones & Tablets",
+		"slug": "phones-tablets",
 		"total": 746,
-		"icon": "earth",
+		"icon": "phone_portrait",
+		"sub": [
+			{
+				"name": "Clothing & Shoes",
+				"total": 633
+			},
+			{
+				"name": "Jewellery & Accessories",
+				"total": 345
+			},
+			{
+				"name": "Health, Beauty & Cosmetics",
+				"total": 6345
+			}
+		]
+	},
+	{	
+		"id":4,
+		"name": "Home & Office",
+		"slug": "phones-tablets",
+		"total": 746,
+		"icon": "home",
 		"sub": [
 			{
 				"name": "Clothing & Shoes",
@@ -88,99 +190,52 @@
 		]
 	},
 	{
-		"name": "Hobbies & Interests",
-		"slug": "hobbies-interests",
+		"id":5,
+		"name": "Fashion & Beauty",
+		"slug": "fashion",
 		"total": 746,
-		"icon": "earth",
+		"icon": "shirt_outline",
 		"sub": [
 			{
-				"name": "Toys, Games & Remote Control",
+				"name": "Clothing & Shoes",
 				"total": 633
 			},
 			{
-				"name": "Musical Instruments",
+				"name": "Jewellery & Accessories",
 				"total": 345
 			},
 			{
-				"name": "Community Announcements",
-				"total": 6345
-			},
-			{
-				"name": "Books, CDs & DVDs",
+				"name": "Health, Beauty & Cosmetics",
 				"total": 6345
 			}
 		]
 	},
 	{
-		"name": "Home, Garden & Tools",
-		"slug": "home-garden-tools",
-		"total": 746,
-		"icon": "earth",
-		"sub": [
-			{
-				"name": "Furniture & Decor",
-				"total": 633
-			},
-			{
-				"name": "Homeware & Appliances",
-				"total": 345
-			},
-			{
-				"name": "Tools & DIY",
-				"total": 6345
-			},
-			{
-				"name": "Garden & Braai",
-				"total": 6345
-			}
-		]
-	},
-	{
-		"name": "Farming & Industrial",
-		"slug": "farming-industrial",
-		"total": 746,
-		"icon": "earth",
-		"sub": [
-			{
-				"name": "Farming Equipment & Vehicles",
-				"total": 633
-			},
-			{
-				"name": "Livestock",
-				"total": 345
-			},
-			{
-				"name": "Business & Industrial Equipment",
-				"total": 6345
-			},
-			{
-				"name": "Feeds, Supplements & Seeds",
-				"total": 6345
-			}
-		]
-    },
-    {
+		"id":7,
 		"name": "Toys & Games",
 		"slug": "toys-games",
 		"total": 746,
-		"icon": "earth",
+		"icon": "game_controller_outl_f1B1m",
 		"sub": []
 	},
-    {
-		"name": "machinery",
-		"slug": "machinery",
+	{
+		"id":8,
+		"name": "Pets",
+		"slug": "pets",
 		"total": 746,
-		"icon": "earth",
+		"icon": "paw",
 		"sub": []
 	},
-    {
+	{
+		"id":9,
 		"name": "property",
 		"slug": "property",
 		"total": 746,
-		"icon": "earth",
+		"icon": "apartment",
 		"sub": []
 	},
-    {
+	{
+		"id":10,
 		"name": "others",
 		"slug": "others",
 		"total": 746,
