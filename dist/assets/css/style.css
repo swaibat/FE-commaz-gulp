@@ -11707,48 +11707,6 @@ a.text-dark:hover, a.text-dark:focus {
   content: "";
 }
 
-html {
-  height: 100%;
-  letter-spacing: 0.01rem;
-}
-
-li {
-  list-style: none;
-}
-
-body {
-  padding-top: 6.3rem;
-  height: 100%;
-}
-
-.content {
-  padding: 0;
-  position: relative;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  min-height: calc(100% - 20rem);
-}
-
-@media (max-width: 767.98px) {
-  .content-wrapper {
-    padding: 0;
-  }
-}
-
-.scroll-top {
-  position: fixed;
-  bottom: 5%;
-  right: 30px;
-  display: none;
-  z-index: 99;
-}
-
-*:focus {
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-
 /* IF CARD IS LINKED */
 a[class*='card'] {
   color: initial;
@@ -15244,6 +15202,11 @@ body.dark-mode .theme-bg {
   background: #1e2023 !important;
 }
 
+body.dark-mode .select2-dropdown {
+  background-color: #0e0e0f !important;
+  border: 1px solid #0e0e0f !important;
+}
+
 body.dark-mode .pagination li a {
   background-color: #343a40;
 }
@@ -15256,6 +15219,48 @@ body.dark-mode .pagination li.active a {
   z-index: 1;
   color: #f8f9fa;
   background-color: #FD2534;
+}
+
+html {
+  height: 100%;
+  letter-spacing: 0.01rem;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  padding-top: 6.3rem;
+  height: 100%;
+}
+
+.content {
+  padding: 0;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  min-height: calc(100% - 20rem);
+}
+
+@media (max-width: 767.98px) {
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 5%;
+  right: 30px;
+  display: none;
+  z-index: 99;
+}
+
+*:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .fixed-sidenav {
@@ -16687,11 +16692,6 @@ svg .disc-cls-3 {
   background: white !important;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-
-.select2-dropdown {
-  background-color: #0e0e0f !important;
-  border: 1px solid #0e0e0f !important;
 }
 
 .dropdown-menu {
