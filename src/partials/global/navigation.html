@@ -1,10 +1,11 @@
+<div class="fixed-top shadow-sm">
 {{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
 'auth-forgot-password' 'auth-reset-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
 
 <nav class="navbar navbar-expand-md bg-white border-bottom">
 	<div class="container">
 		<div class="d-flex align-items-center w-100">
-			<div class="dropdown nav-item category-menu" data-menu="dropdown">
+			<div class="nav-item">
 				<a class="logo" href="/">
 					{{> _logo}}
 				</a>
@@ -16,29 +17,11 @@
 				</div>
 			</div>
 			<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
-				<div class="dropdown dropdown-user">
-					<a class="dropdown-toggle nav-link dropdown-user-link p-0 d-flex flex-column" href="#"
-						data-toggle="dropdown">
+				<div class="widget-header">
+					<a class="p-0 d-flex flex-column" href="{{root}}profile/profile.html">
 						<span class="va va-user btn btn-icon-nav p-0"></span>
 						<small class="text lr-only"> My profile </small>
 					</a>
-					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="{{root}}profile/profile.html">
-							<span class="va va-user mr-1"></span>
-							My Account
-						</a>
-						<a class="dropdown-item" href="{{root}}notify/notifications.html">
-							<span class="va va-chatbox"></span> My Messages
-						</a>
-						<a class="dropdown-item" href="{{root}}notify/chat.html">
-							<span class="va va-clipboard"></span> My Orders
-						</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="/">
-							<span class="va va-power-switch"></span>
-							Logout
-						</a>
-					</div>
 				</div>
 				<div class="widget-header">
 					<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
@@ -58,6 +41,7 @@
 		</div>
 	</div>
 </nav>
+{{#unlesspage 'store'}}
 <div class="bg-white py-1">
 	<nav class="nav d-flex justify-content-between container pr-0">
 		<li class="dropdown nav-item category-menu" data-menu="dropdown">
@@ -184,6 +168,7 @@
 	</nav>
 </div>
 {{/unlesspage}}
+{{/unlesspage}}
 
 <!-- container .// -->
 {{#ifpage 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
@@ -197,19 +182,16 @@
 	</div>
 </nav>
 {{/ifpage}}
-
-{{#unlesspage 'index' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password' 'shop'}}
+</div>
+{{#unlesspage 'index' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password' 'shop' 'store'}}
 <div class="bread-overlay"></div>
 <div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
-	<span>
-		<h3 class="mb-0">{{title}}</h3>
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb bg-transparent px-0 mb-0 lr-only">
+			<ol class="breadcrumb bg-transparent px-0 mb-0">
 				<li class="breadcrumb-item"><a href="#">Home</a></li>
 				<li class="breadcrumb-item active" aria-current="page">{{title}}</li>
 			</ol>
 		</nav>
-	</span>
 	<div class="switch ml-auto">
 		<input class="switch" id="switch" name="switch" type="checkbox" />
 		<label class="mb-0" for="switch"></label>

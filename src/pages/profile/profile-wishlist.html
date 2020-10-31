@@ -8,17 +8,17 @@ title: My Whishlist
 			{{#each wishlist}}
 			<div class="card ecommerce-card shadow-sm rounded align-self-start">
 				<div class="card-content">
-					<div class="btn-group-vertical position-absolute right-0">
-						<span data-toggle="tooltip" data-title="add to cart" class="btn bg-white p-2">
+					<div class="btn-group-vertical position-absolute right-0 mt-2">
+						<span data-toggle="tooltip" data-title="add to cart">
 							<input type="checkbox" class="d-none cart" id="cart-{{ this.id }}">
 							<label for="cart-{{ this.id }}">
-								<span class="va cart-icon card-icon"></span>
+								<span class="va cart-icon card-icon btn btn-light-200 p-2"></span>
 							</label>
 						</span>
-						<span data-toggle="tooltip" data-title="add to wislist" class="btn btn-fav bg-white p-2">
+						<span data-toggle="tooltip" data-title="add to wislist">
 							<input type="checkbox" class="d-none fav" id="fav-{{ this.id }}">
 							<label for="fav-{{ this.id }}">
-								<span class="va fav-icon card-icon"></span>
+								<span class="va fav-icon card-icon btn btn-light-200 p-2"></span>
 								{{>  _fav}}
 							</label>
 						</span>
@@ -30,16 +30,17 @@ title: My Whishlist
 					<div class="card-body">
 						<div class="d-flex justify-content-between">
 							<div class="item-rating">
-								<div class="badge badge-primary">
-									<span>4</span>
-									<span class="va va-picture"></span>
-									</ion-icon>
+								<div class="btn py-0 px-2 alert-primary text-primary">
+									<span class="discount">{{this.discount}}</span><span>%</span>
 								</div>
 							</div>
-							<div>
-								<h5 class="font-weight-bold">
-									{{ this.price }}
+							<div class="d-flex flex-column">
+								<h5 class="font-weight-bold mb-1 text-right">
+									$ <span class="price">{{ this.discountPrice }}</span>
 								</h5>
+								<p class="text-right mb-1">
+									<del>$ {{ this.price }}</del>
+								</p>
 							</div>
 						</div>
 						<div class="item-name text-truncate">
@@ -49,6 +50,10 @@ title: My Whishlist
 							<p class="item-description text-truncate description">
 								{{ this.description }}
 							</p>
+							<div class="d-none">
+								<p class="category">{{this.category}}</p>
+								<p class="rating">{{this.rating}}</p>
+							</div>
 						</div>
 					</div>
 				</div>

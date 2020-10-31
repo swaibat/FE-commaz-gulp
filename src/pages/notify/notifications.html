@@ -1,9 +1,9 @@
 ---
 title: Notifications
 ---
-<div class="content container mb-4 mt-n3">
-    <div class="card shadow-sm">
-        <div class="card-body row">
+<div class="container p-0 mb-4">
+    <div class="content-wrapper px-2">
+        <div class="p-3 bg-white rounded d-flex flex-wrap">
             <div class="col-md-2">
                 <div class="bg-white notifications-sidenav">
                     <div class="d-flex">
@@ -45,9 +45,9 @@ title: Notifications
                                     <span class="flex-fill py-2 px-2 cursor-pointer">unread</span>
                                 </span>
                             </li>
-                            <h5 class="my-3 p-2 bg-light-200 d-flex rounded">Types <span
+                            <span class="my-3 p-2 bg-light-200 d-flex rounded">Types <span
                                     class="ml-auto badge badge-primary">
-                                    Coming soon</span></h5>
+                                    Coming soon</span></span>
                             <li class="nav-item" id="sales">
                                 <span class="nav-link d-flex align-items-center" data-toggle="pill" role="tab">
                                     <span class="va va-tag btn btn-icon btn-light-200 p-2 mr-2"></span>
@@ -89,7 +89,8 @@ title: Notifications
 
                     <ul class="list list-group">
                         {{#each notifications}}
-                        <li class="list-group-item cursor-pointer {{#if this.isread.read }} active {{/if}}" data-toggle="modal" data-target="#exampleModalLong">
+                        <li class="list-group-item cursor-pointer {{#if this.isread.read }} active {{/if}}"
+                            data-toggle="modal" data-target="#exampleModalLong">
                             <div class="media">
                                 <div class="avatar">
                                     <img class="mr-3 rounded" width="40" height="40"
@@ -162,40 +163,50 @@ title: Notifications
     </div>
 </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-            <div class="media">
-                <div class="avatar">
-                    <img class="mr-3 rounded" width="40" height="40"
-                        src="{{root}}../assets/images/portrait/small/avatar-s-12.jpg"
-                        alt="Generic placeholder image">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="media">
+                    <div class="avatar">
+                        <img class="mr-3 rounded" width="40" height="40"
+                            src="{{root}}../assets/images/portrait/small/avatar-s-12.jpg"
+                            alt="Generic placeholder image">
+                    </div>
+                    <div class="media-body">
+                        <h5 class="mt-0 name">john Doe</h5>
+                        <h6 class="mt-0 subject">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+                    </div>
                 </div>
-                <div class="media-body">
-                    <h5 class="mt-0 name">john Doe</h5>
-                    <h6 class="mt-0 subject">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
-                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+            <div class="modal-body">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+                    eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                    laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+                    eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                    laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas
+                    eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue
+                    laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>

@@ -2,8 +2,8 @@
 title: Frequently Asked Questions
 ---
 
-<div class="content container p-0">
-    <div class="app-content content mb-5">
+<div class="container p-0">
+    <div class="content-wrapper px-2 mb-5">
         <div class="content-wrapper">
             <div class="content-body">
                 <section id="ecommerce-searchbar" class="mb-3">
@@ -102,13 +102,13 @@ title: Frequently Asked Questions
                         <div class="col-xl-9 col-md-7 col-12">
                             <div class="card bg-transparent border-0 shadow-none collapse-icon accordion-icon-rotate">
                                 <div class="card-body p-0">
-                                    <ul class="list-group accordion search-content-info" id="accordionExample" data-toggle-hover="true">
+                                    <ul class="list-group accordion search-content-info" id="accordionFaq" data-toggle-hover="true">
                                         {{#each faq}}
-                                        <li class="list-group-item d-flex align-items-center" id="headingOne" role="button"
-                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">{{this.question}}</li>
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                                data-parent="#accordionExample">
+                                        <li class="list-group-item d-flex align-items-center" id="heading{{this.id}}" role="button"
+                                        data-toggle="collapse" data-target="#collapse{{this.id}}" aria-expanded="true"
+                                        aria-controls="collapse-{{this.id}}">{{this.question}}</li>
+                                        <div id="collapse{{this.id}}" class="collapse show" aria-labelledby="heading{{this.id}}"
+                                                data-parent="#accordionFaq">
                                                 <div class="card-body">
                                                     {{this.answer}}
                                                 </div>

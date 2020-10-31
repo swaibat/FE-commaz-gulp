@@ -1,9 +1,9 @@
 .btn-fav svg {
 	cursor: pointer;
 	overflow: visible;
-    position: absolute;
-    right: 0;
-    top: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 	#heart {
 		transform-origin: center;
 		animation: animateHeartOut 0.3s linear forwards;
@@ -143,13 +143,18 @@
 	}
 }
 
-.fav:checked + label .fav-icon{
-	color: #e2264d;
-	font-size: 1.3rem;
-	transform: scale(0.2);
-	animation: animateHeart 0.3s linear forwards 0.25s;
-	&:before {
-		content: $va-heart-solid;
+.fav:checked + label {
+	.fav-icon {
+		&:before {
+			color: #e2264d;
+			transform: scale(0.2);
+			animation: animateHeart 0.3s linear forwards 0.25s;
+			content: $va-heart-solid;
+		}
+	}
+
+	#heart-svg{
+		margin-top: -3.5rem;
 	}
 }
 

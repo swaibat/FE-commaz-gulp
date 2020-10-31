@@ -24,7 +24,7 @@
         "url": "https://github.com/LucasWinkler/gulp-boilerplate/issues"
     },
     "homepage": "https://github.com/LucasWinkler/gulp-boilerplate#readme",
-    "devDependencies": {
+    "dependencies": {
         "@fortawesome/fontawesome-free": "^5.8.1",
         "@typescript-eslint/eslint-plugin": "^4.0.1",
         "@typescript-eslint/parser": "^4.0.1",
@@ -47,7 +47,7 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
         "gulp-sourcemaps": "2.6.5",
-        "gulp-uglify": "3.0.2",
+        "gulp-uglify": "^3.0.2",
         "jquery": "^3.5.1",
         "merge-stream": "1.0.1",
         "panini": "1.6.3",

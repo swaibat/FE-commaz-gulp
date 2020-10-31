@@ -1,7 +1,7 @@
 /*
 Author: Rumbiiha Swaibu
-Website: Sassybootstrap.com
-Email :admin@bootstrap.com or rumbiihas@gmail.com
+Website: doolbay.com
+Email :admin@doolbay.com or rumbiihas@gmail.com
 Repository:https://github.com/swaibat/sassadminlite
 License:https://github.com/swaibat/sassadminlite/blob/master/LICENSE
 */
@@ -69,10 +69,9 @@ function modules() {
   const webfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/*').pipe(gulp.dest('./dist/assets/webfonts/'));
 
   const jquery = gulp
-    .src(['./node_modules/jquery/dist/jquery.slim.min.js', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', './src/assets/js/**/*.js'])
+    .src(['./node_modules/jquery/dist/jquery.slim.min.js', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./dist/assets/js'));
-
   const bootstrapJS = gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js').pipe(gulp.dest('./dist/assets/bootstrap/js'));
 
   return merge(bootstrapJS, webfonts, jquery);
@@ -130,6 +129,11 @@ function images() {
 }
 
 // JS task
+function appJs() {
+  return gulp.src('./src/assets/js/**/*').pipe(gulp.dest('./dist/assets/js')).pipe(browsersync.stream());
+}
+
+// JS task
 function icons() {
   return gulp.src('./src/assets/icons/**/*').pipe(gulp.dest('./dist/assets/icons')).pipe(browsersync.stream());
 }
@@ -143,12 +147,12 @@ function vendors() {
 }
 // watch tasks
 function watchfiles() {
-  gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, browserSyncReload));
+  gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, appJs, browserSyncReload));
   gulp.watch('src/pages/**/**/*', html);
   gulp.watch('src/assets/images/**/*', images);
   gulp.watch('src/{layouts,includes,helpers,partials,data}/**/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
 const build = gulp.series(clean, gulp.parallel(
-  html, styles, vendors, modules, images, icons, cname,
+  html, styles, vendors, modules, appJs, images, icons, cname,
 ));
 exports.default = gulp.series(build, gulp.parallel(browserSync, watchfiles));

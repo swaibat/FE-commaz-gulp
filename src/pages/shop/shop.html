@@ -1,8 +1,8 @@
 ---
 title: Shop
 ---
-<div class="container p-0">
-    <div class="content mt-3">
+<div class="container p-0 mt-2">
+    <div class="content-wrapper px-2">
         {{> _filter_sidenav}}
         <div class="products-list" id="products-list">
             <nav aria-label="breadcrumb" class="d-flex align-items-center justify-content-between">
@@ -15,12 +15,12 @@ title: Shop
                     <label class="mb-0" for="switch"></label>
                 </div>
             </nav>
-            <div class="d-flex flex-wrap align-items-center p-3 theme-bg rounded mb-2">
-                <div class="col-md-9 row justify-content-start align-items-center ">
-                    <div class="d-flex align-items-center">
+            <div class="d-none d-sm-flex flex-wrap align-items-center p-3 theme-bg rounded mb-2">
+                <div class="col-sm-9 col-12 row justify-content-start align-items-center ">
+                    <div class="align-items-center">
                         <label class="flex-fill col-4 p-0 mb-0 text-truncate" for="exampleFormControlSelect1">SORT
                             BY</label>
-                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-outline-secondary active">
                                 <input type="radio" name="options" id="option1" autocomplete="off" checked>
                                 Newest
@@ -36,7 +36,7 @@ title: Shop
                             </label>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="align-items-center">
                         <label class="flex-fill col-4 p-0 mb-0 text-nowrap mx-3" for="exampleFormControlSelect1">SHIPPING
                             FROM</label>
                         <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
@@ -52,7 +52,7 @@ title: Shop
                         <input type="checkbox" id="free-shipping" name="free-shipping" class="custom-control-input">
                         <label class="custom-control-label text-nowrap" for="free-shipping">Free shipping</label>
                     </div>
-                    <div class="input-group col-12 p-0 mt-3 ">
+                    <div class="input-group col-12 p-0 mt-sm-3 ">
                         <input type="search" class="form-control fuzzy-search" placeholder="Search for products . . .">
                         <div class="input-group-append">
                             <span class="va va-magnifier input-group-text"></span>
@@ -98,7 +98,18 @@ title: Shop
                         </ul>
                     </div>
                 </div>
-
+            </div>
+            <div class="d-flex d-sm-none w-100">
+                <form class="p-2 shadow-sm bg-white rounded my-2 w-100" action="#">
+                    <div class="input-group">
+                        <input class="form-control border-0 mr-2 " type="search"
+                            placeholder="Search tools and resources...">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary rounded" type="submit"><i class="ti-search"></i>
+                                Search</button>
+                        </div>
+                    </div>
+                </form>
             </div>
             <!-- products -->
             <div class="grid-view overflow-hidden rounded list mt-3">
@@ -131,13 +142,13 @@ title: Shop
                                         <span class="discount">{{this.discount}}</span><span>%</span>
                                     </div>
                                 </div>
-                                <div class="d-flex">
-                                    <p class="mr-2">
-                                        <del>$ {{ this.price }}</del>
-                                    </p>
-                                    <h5 class="font-weight-bold">
+                                <div class="d-flex flex-column">
+                                    <h5 class="font-weight-bold mb-1 text-right">
                                         $ <span class="price">{{ this.discountPrice }}</span>
                                     </h5>
+                                    <p class="text-right mb-1">
+                                        <del>$ {{ this.price }}</del>
+                                    </p>
                                 </div>
                             </div>
                             <div class="item-name text-truncate">
@@ -161,125 +172,3 @@ title: Shop
         </div>
     </div>
 </div>
-
-
-<script>
-
-    var shopOptions = {
-        valueNames: ['title', 'description', 'price', 'category', 'discount', 'rating'],
-        page: 16,
-        pagination: true
-    };
-
-    let products = new List('products-list', shopOptions);
-    // $(document).ready(() => $('.products-count').text(products.matchingItems.length));
-    $('input').change(() => {
-        console.log(products.matchingItems.length);
-        if (!products.matchingItems.length) {
-            console.log('hello');
-            $(`<h4 class="m-auto">No Items in Cart</h4>`).appendTo(".grid-view")
-        }
-    });
-
-    (function () {
-
-        var parent = document.querySelector("#rangeSlider");
-        if (!parent) return;
-
-        var
-            rangeS = parent.querySelectorAll("input[type=range]"),
-            numberS = parent.querySelectorAll("input[type=number]");
-
-        rangeS.forEach(function (el) {
-            el.oninput = function () {
-                var slide1 = parseFloat(rangeS[0].value),
-                    slide2 = parseFloat(rangeS[1].value);
-
-                if (slide1 > slide2) {
-                    [slide1, slide2] = [slide2, slide1];
-                }
-
-                numberS[0].value = slide1;
-                numberS[1].value = slide2;
-
-                products.filter(function (item) {
-                    const itemPrice = parseInt(item.values().price)
-                    if (itemPrice > slide1 && itemPrice < slide2) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                });
-
-            }
-        });
-
-        numberS.forEach(function (el) {
-            el.oninput = function () {
-                var number1 = parseFloat(numberS[0].value),
-                    number2 = parseFloat(numberS[1].value);
-
-                if (number1 > number2) {
-                    var tmp = number1;
-                    numberS[0].value = number2;
-                    numberS[1].value = tmp;
-                }
-
-                rangeS[0].value = number1;
-                rangeS[1].value = number2;
-
-                products.filter(function (item) {
-                    const itemPrice = parseInt(item.values().price)
-                    if (itemPrice > number1 && itemPrice < number2) {
-                        return true;
-                    } else {
-                        return false;
-                    }
-                });
-
-            }
-        });
-
-    })();
-
-    $('#product-categories input').change(({ target }) => {
-        products.add(products.filter(function (item) {
-            if (item.values().category == target.id) {
-                // console.log(filters)
-                return true;
-            } else {
-                return false;
-            }
-        }));
-    });
-
-    $('#discounts input').change(({ target }) => {
-        products.filter(function (item) {
-            if (item.values().discount >= target.id) {
-                return true;
-            } else {
-                return false;
-            }
-        });
-    });
-
-    $('#ratings input').change(({ target }) => {
-        products.filter(function (item) {
-            if (item.values().discount >= target.id) {
-                return true;
-            } else {
-                return false;
-            }
-        });
-    });
-
-</script>
-
-<script>
-    var categoryOptions = {
-        valueNames: ['name'],
-    };
-
-    const categories = new List('product-categories', categoryOptions);
-
-</script>

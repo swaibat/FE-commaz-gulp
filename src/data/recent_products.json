@@ -5,55 +5,76 @@
 		"price": 1001.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png"
+		"image": "assets/images/products/asus-laptop.png",
+		"discountPrice": 10.95,
+		"discount":"90",
+		"rating":4.5
 	},
 	{
 		"id": 2,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 500.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/polo-shirt.png"
+		"image": "assets/images/products/polo-shirt.png",
+		"discountPrice": 300,
+		"discount":"20",
+		"rating":4.5
 	},
 	{
 		"id": 3,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 330.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-black.png"
+		"image": "assets/images/products/cctv-black.png",
+		"discountPrice": 30.5,
+		"discount":"10",
+		"rating":4.5
 	},
 	{
 		"id": 4,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 850.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/men-casual-shoes.png"
+		"image": "assets/images/products/men-casual-shoes.png",
+		"discountPrice": 659.9,
+		"discount":"20",
+		"rating":4.5
 	},
 	{
 		"id": 5,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 900.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png"
+		"image": "assets/images/products/white-drone.png",
+		"discountPrice": 130.00,
+		"discount":"90",
+		"rating":4.5
 	},
 	{
 		"id": 6,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 2001.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png"
+		"image": "assets/images/products/printer.png",
+		"discountPrice": 1000.0,
+		"discount":"90",
+		"rating":4.5
 	},
 	{
 		"id": 7,
 		"title": "Case For iPhone  Se 2020 Plus 11 Pro XR XS ",
-		"price": 1001.99,
+		"price": 1100.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png"
+		"image": "assets/images/products/cctv-top.png",
+		"discountPrice": 520.0,
+		"discount":"50",
+		"rating":4.5
 	},
 	{
 		"id": 8,
@@ -61,7 +82,10 @@
 		"price": 1001.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png"
+		"image": "assets/images/products/black-speaker.png",
+		"discountPrice": 1001.99,
+		"discount":"0",
+		"rating":4.5
 	},
 	{
 		"id": 9,
@@ -69,7 +93,10 @@
 		"price": 340.3,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png"
+		"image": "assets/images/products/smart-tv-43.png",
+		"discountPrice": 34.90,
+		"discount":"90",
+		"rating":5
 	},
 	{
 		"id": 10,
@@ -77,7 +104,10 @@
 		"price": 695.0,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png"
+		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"discountPrice": 495.0,
+		"discount":"20",
+		"rating":4.5
 	},
 	{
 		"id": 11,
@@ -85,7 +115,10 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png"
+		"image": "assets/images/products/headphones_PNG7660.png",
+		"discountPrice": 5.8,
+		"discount":"10",
+		"rating":4.5
 	},
 	{
 		"id": 12,
@@ -93,7 +126,10 @@
 		"price": 2919.9,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png"
+		"image": "assets/images/products/macbook-pro-13.png",
+		"discountPrice": 2919.0,
+		"discount":"1",
+		"rating":5
 	},
 	{
 		"id": 13,
@@ -101,7 +137,10 @@
 		"price": 1201.99,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png"
+		"image": "assets/images/products/iphone-11-gray.png",
+		"discountPrice": 1000.9,
+		"discount":"20",
+		"rating":3.5
 	},
 	{
 		"id": 14,
@@ -109,7 +148,10 @@
 		"price": 18.99,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png"
+		"image": "assets/images/products/stopwatch_PNG152.png",
+		"discountPrice": 10.95,
+		"discount":"60",
+		"rating":4.5
 	},
 	{
 		"id": 15,
@@ -117,6 +159,42 @@
 		"price": 315.0,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png"
+		"image": "assets/images/products/double-speaker.png",
+		"discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
+	},
+	{
+		"id": 14,
+		"title": "Digital Handheld Sports Stopwatch",
+		"price": 18.99,
+		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+		"category": "electronics",
+		"image": "assets/images/products/stopwatch_PNG152.png",
+		"discountPrice": 10.95,
+		"discount":"60",
+		"rating":4.5
+	},
+	{
+		"id": 15,
+		"title": "Ecobee Smart Thermostat with Voice Control",
+		"price": 315.0,
+		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+		"category": "electronics",
+		"image": "assets/images/products/double-speaker.png",
+		"discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
+	},
+	{
+		"id": 15,
+		"title": "Ecobee Smart Thermostat with Voice Control",
+		"price": 315.0,
+		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+		"category": "electronics",
+		"image": "assets/images/products/double-speaker.png",
+		"discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
 	}
 ]

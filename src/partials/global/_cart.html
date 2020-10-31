@@ -22,7 +22,7 @@
 						<span></span>
 						<div class="d-flex">
 							<p class="text-success mb-1">In Stock</p>
-							<div class="item-quantity item-quantity-cart mb-2 ml-auto">
+							<div class="item-quantity item-quantity-cart mb-0 ml-auto">
 								<div class="input-group input-group-sm">
 									<div class="input-group-prepend cursor-pointer">
 										<span class="btn input-group-text btn-down" id="btn-down-{{this.id}}">-</span>
@@ -41,7 +41,7 @@
 								</p>
 								<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size :</span>XXL</p>
 							</div>
-							<h5 class="ml-auto mt-auto mb-0 price" id="price-{{this.id}}">1190</h5>
+							<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-{{this.id}}">1190</h5>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,9 @@
 			</div>
 
 			<div class="cart-summary py-1">
-				<a href="{{root}}shop/checkout.html" class="btn btn-success btn-block">Checkout</a>
+				<a href="{{root}}shop/checkout.html" class="btn btn-success btn-block">
+					Checkout <span class="p-2 va va-chevron-right btn-light"></span>
+				</a>
 			</div>
 		</div>
 	</div>
