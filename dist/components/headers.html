@@ -70,7 +70,7 @@
 		<div class="bg-white py-1">
 			<nav class="nav d-flex justify-content-between container pr-0">
 				<li class="dropdown nav-item category-menu" data-menu="dropdown">
-					<a class="nav-link" href="#" data-toggle="modal" data-target="#categories">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#categories-modal">
 						<span class="va va-list pr-1"></span>Genre</a>
 				</li>
 				</ul>
@@ -1121,14 +1121,12 @@
 	        </nav>
 	    </section>
 	</header>
-	<div id="categories" class="modal fixed-left fade" tabindex="-1" role="dialog">
+	<div id="categories-modal" class="modal fixed-left fade" tabindex="-1" role="dialog">
 	    <div class="modal-dialog modal-dialog-aside" role="document">
 	        <div class="modal-content">
-	            <div class="modal-header">
+	            <div class="modal-header modal-header d-flex align-items-center shadow-sm">
 	                <h5 class="modal-title">Categories</h5>
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	                    <span aria-hidden="true">&times;</span>
-	                </button>
+	                <span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal" aria-label="Close"></span>
 	            </div>
 	            <div class="modal-body">
 	                <div class="row">
@@ -1184,11 +1182,9 @@
 	</div><div id="shopping-cart" class="modal fixed-right fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-aside" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Shopping Cart</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+				<div class="modal-header shadow-sm d-flex align-items-center">
+					<span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal" aria-label="Close"></span>
+					<h5 class="modal-title mx-auto">Shopping Cart</h5>
 				</div>
 				<div class="modal-body cart-wrapper">
 					<!-- <div class="p-3 d-flex flex-column cart-wrapper w-100 list border"> -->
@@ -1323,7 +1319,7 @@
 						</div>
 					<!-- </div> -->
 				</div>
-				<div class="modal-footer cart-footer align-items-stretch flex-column">
+				<div class="modal-footer cart-footer align-items-stretch flex-column shadow-sm-top">
 						<div class="text-left cart-summary">
 							<h4>Shopping summary</h4>
 						</div>

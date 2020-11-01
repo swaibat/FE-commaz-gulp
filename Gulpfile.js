@@ -2,8 +2,6 @@
 Author: Rumbiiha Swaibu
 Website: doolbay.com
 Email :admin@doolbay.com or rumbiihas@gmail.com
-Repository:https://github.com/swaibat/sassadminlite
-License:https://github.com/swaibat/sassadminlite/blob/master/LICENSE
 */
 
 // Load plugins
