@@ -2,8 +2,6 @@
 Author: Rumbiiha Swaibu
 Website: doolbay.com
 Email :admin@doolbay.com or rumbiihas@gmail.com
-Repository:https://github.com/swaibat/sassadminlite
-License:https://github.com/swaibat/sassadminlite/blob/master/LICENSE
 */
 
 // Load plugins
@@ -137,10 +135,6 @@ function appJs() {
 function icons() {
   return gulp.src('./src/assets/icons/**/*').pipe(gulp.dest('./dist/assets/icons')).pipe(browsersync.stream());
 }
-// JS task
-function cname() {
-  return gulp.src('./src/pages/CNAME').pipe(gulp.dest('./dist')).pipe(browsersync.stream());
-}
 
 function vendors() {
   return gulp.src('./src/assets/vendors/**/*').pipe(gulp.dest('./dist/assets/vendors')).pipe(browsersync.stream());
@@ -154,6 +148,6 @@ function watchfiles() {
   gulp.watch('src/{layouts,includes,helpers,partials,data}/**/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
 const build = gulp.series(clean, gulp.parallel(
-  html, styles, vendors, modules, appJs, images, icons, cname,
+  html, styles, vendors, modules, appJs, images, icons,
 ));
 exports.default = gulp.series(build, gulp.parallel(browserSync, watchfiles));

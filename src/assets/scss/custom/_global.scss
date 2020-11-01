@@ -5,6 +5,11 @@ html {
 li {
 	list-style: none;
 }
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 body {
 	padding-top: 6.3rem;
@@ -264,7 +269,6 @@ ul.row-sm {
 }
 
 .item-img {
-	padding-top: 0.5rem;
 	min-height: 10.85rem;
 }
 
@@ -1365,7 +1369,7 @@ svg {
 		transition: opacity 0.15s ease-in-out;
 		opacity: 0;
 		visibility: hidden;
-		background-color: rgba(0, 0, 0, 0.363);
+		background-color: rgba(0, 0, 0, 0.2);
 		pointer-events: none;
 		position: absolute;
 	}
@@ -1400,11 +1404,24 @@ svg {
 .modal.fixed-right .modal-dialog-aside {
 	margin-left: auto;
 	transform: translateX(100%);
+	.close {
+		background: white;
+		margin-left: -1.9rem !important;
+		opacity: 1;
+	}
 }
 .modal.fixed-left .modal-dialog-aside {
 	margin-right: auto;
 	transform: translateX(-100%);
+	.close {
+		background: white;
+		margin-right: -1.9rem !important;
+		opacity: 1;
+	}
 }
 .modal.show .modal-dialog-aside {
 	transform: translateX(0);
+}
+.shadow-sm-top {
+	box-shadow: 1px -7px 11px 0px rgba(0, 0, 0, 0.075);
 }

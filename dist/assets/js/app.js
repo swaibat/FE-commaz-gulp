@@ -1,3 +1,52 @@
+// const notificationsOptions = {
+// 	valueNames: ['name', 'subject', 'body', 'read', 'status'],
+// 	page: 5,
+// 	pagination: true,
+// };
+
+// // Notifications List
+// const notifications = new List('notifications-list', notificationsOptions);
+// $('.notifications-sidenav .read-filter').click(({ target }) => {
+// 	console.log(target);
+// 	const queryId = $(target).closest('li').attr('id');
+// 	notifications.filter((item) => {
+// 		console.log(item.values().read, queryId);
+// 		if (item.values().read == queryId) {
+// 			return true;
+// 		} else {
+// 			return false;
+// 		}
+// 	});
+// });
+
+$('.notifications-sidenav .status-filter').click(({ target }) => {
+	const queryId = $(target).closest('li').attr('id');
+	notifications.filter((item) => {
+		if (item.values().status == queryId) {
+			return true;
+		} else {
+			return false;
+		}
+	});
+});
+
+$('.jTablePageNext').on('click', function(){
+    var list = $('.pagination').find('li');
+    $.each(list, function(position, element){
+        if($(element).is('.active')){
+            $(list[position+1]).trigger('click');
+        }
+    })
+})
+$('.jTablePagePrev').on('click', function(){
+	console.log('hello');
+    var list = $('.pagination').find('li');
+    $.each(list, function(position, element){
+        if($(element).is('.active')){
+            $(list[position-1]).trigger('click');
+        }
+    })
+})
 
 $(window).scroll(function () {
 	// console.log($(window).scrollTop())
@@ -119,35 +168,6 @@ $('.ecommerce-card .cart').change(() => {
 
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
-});
-var options = {
-	valueNames: ['name', 'subject', 'body', 'read', 'status'],
-	page: 5,
-	pagination: true,
-};
-
-var hackerList = new List('hacker-list', options);
-$('.notifications-sidenav .read-filter').click(({ target }) => {
-	const queryId = $(target).closest('li').attr('id');
-	hackerList.filter(function (item) {
-		console.log(item.values().read, queryId);
-		if (item.values().read == queryId) {
-			return true;
-		} else {
-			return false;
-		}
-	});
-});
-
-$('.notifications-sidenav .status-filter').click(({ target }) => {
-	const queryId = $(target).closest('li').attr('id');
-	hackerList.filter(function (item) {
-		if (item.values().status == queryId) {
-			return true;
-		} else {
-			return false;
-		}
-	});
 });
 
 // select 2

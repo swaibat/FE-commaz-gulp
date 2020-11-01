@@ -1,5 +1,5 @@
 {
-    "name": "fe-comaz-gulp",
+    "name": "vamoo-strorefront",
     "version": "1.0.0",
     "description": "A simple boilerplate for front-end web development - built with Gulp v4",
     "main": "gulpfile.js",
@@ -8,22 +8,12 @@
         "build": "gulp",
         "clean": "gulp clean"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/LucasWinkler/gulp-boilerplate.git"
-    },
     "keywords": [
         "gulp",
         "gulp-v4",
         "boilerplate",
         "front-end"
     ],
-    "author": "Lucas Winkler",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/LucasWinkler/gulp-boilerplate/issues"
-    },
-    "homepage": "https://github.com/LucasWinkler/gulp-boilerplate#readme",
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.8.1",
         "@typescript-eslint/eslint-plugin": "^4.0.1",
@@ -41,6 +31,7 @@
         "gulp-clean-css": "^4.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-cssnano": "2.1.3",
+        "gulp-gh-pages": "^0.5.4",
         "gulp-imagemin": "5.0.3",
         "gulp-plumber": "1.2.1",
         "gulp-postcss": "^8.0.0",

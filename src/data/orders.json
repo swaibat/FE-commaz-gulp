@@ -6,11 +6,11 @@
 		"status": "complete",
 		"created_at": "14/9/2020 15:39",
 		"products": [
-			{ "name": "asus laptop", "image": "assets/images/products/asus-laptop.png" },
-			{ "name": "double bluetooth speackers", "image": "assets/images/products/double-speaker.png" },
-			{ "name": "polo shirt", "image": "assets/images/products/polo-shirt.png" },
-			{ "name": "earphones", "image": "assets/images/products/headphones_PNG7660.png" },
-			{ "name": "Gray casual shoes", "image": "assets/images/products/men-casual-shoes.png" }
+			{ "name": "asus laptop", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "double bluetooth speackers", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "polo shirt", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "earphones", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "Gray casual shoes", "image": "assets/images/products/product-placeholder.svg" }
 		]
 	},
 	{
@@ -20,8 +20,8 @@
         "status": "pending",
         "created_at": "13/10/2020 13:34",
 		"products": [
-			{ "name": "smart tv", "image": "assets/images/products/smart-tv-43.png" },
-			{ "name": "double bluetooth speackers", "image": "assets/images/products/double-speaker.png" }
+			{ "name": "smart tv", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "double bluetooth speackers", "image": "assets/images/products/product-placeholder.svg" }
 		]
 	},
 	{
@@ -31,9 +31,9 @@
         "status": "pending",
         "created_at": "12/4/2020 14:19",
 		"products": [
-			{ "name": "polo shirt", "image": "assets/images/products/polo-shirt.png" },
-			{ "name": "earphones", "image": "assets/images/products/headphones_PNG7660.png" },
-			{ "name": "Gray casual shoes", "image": "assets/images/products/men-casual-shoes.png" }
+			{ "name": "polo shirt", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "earphones", "image": "assets/images/products/product-placeholder.svg" },
+			{ "name": "Gray casual shoes", "image": "assets/images/products/product-placeholder.svg" }
 		]
 	}
 ]

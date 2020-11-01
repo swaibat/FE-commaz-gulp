@@ -5,7 +5,10 @@
         "price": 1001.99,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
         "category": "electronics",
-        "image": "assets/images/products/asus-laptop.png"
+        "image": "assets/images/products/product-placeholder.svg",
+        "discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
     },
     {
         "id": 2,
@@ -13,7 +16,10 @@
         "price": 1001.99,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
         "category": "electronics",
-        "image": "assets/images/products/polo-shirt.png"
+        "image": "assets/images/products/product-placeholder.svg",
+        "discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
     },
     {
         "id": 3,
@@ -21,7 +27,10 @@
         "price": 2919.9,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
         "category": "electronics",
-        "image": "assets/images/products/macbook-pro-13.png"
+        "image": "assets/images/products/product-placeholder.svg",
+        "discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
     },
     {
         "id": 4,
@@ -29,7 +38,10 @@
         "price": 1201.99,
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
         "category": "electronics",
-        "image": "assets/images/products/iphone-11-gray.png"
+        "image": "assets/images/products/product-placeholder.svg",
+        "discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
     },
     {
         "id": 5,
@@ -37,7 +49,10 @@
         "price": 315.0,
         "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
         "category": "electronics",
-        "image": "assets/images/products/double-speaker.png"
+        "image": "assets/images/products/product-placeholder.svg",
+        "discountPrice": 150,
+		"discount":"50",
+		"rating":3.5
     }
     
 ]

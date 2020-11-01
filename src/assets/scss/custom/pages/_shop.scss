@@ -40,7 +40,6 @@
 
 	.card-content {
 		.item-img {
-			padding-top: 0.5rem;
 			min-height: 10.85rem;
 			@include media-breakpoint-down(md) {
 				min-height: 4rem;

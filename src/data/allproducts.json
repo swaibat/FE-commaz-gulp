@@ -6,7 +6,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -17,7 +17,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -28,7 +28,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -39,7 +39,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -50,7 +50,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -61,7 +61,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -72,7 +72,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -83,7 +83,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -94,7 +94,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -105,7 +105,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -116,7 +116,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -126,7 +126,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -137,7 +137,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -148,7 +148,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -159,7 +159,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	},
@@ -170,7 +170,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -181,7 +181,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -192,7 +192,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -202,7 +202,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -213,7 +213,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -224,7 +224,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -235,7 +235,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -246,7 +246,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -257,7 +257,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -268,7 +268,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -279,7 +279,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -290,7 +290,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -301,7 +301,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -312,7 +312,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -323,7 +323,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -335,7 +335,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -346,7 +346,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	},
@@ -358,7 +358,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -369,7 +369,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -380,7 +380,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -391,7 +391,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -402,7 +402,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -413,7 +413,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -424,7 +424,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -435,7 +435,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -446,7 +446,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -457,7 +457,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -468,7 +468,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -478,7 +478,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -489,7 +489,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -500,7 +500,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -511,7 +511,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	},
@@ -522,7 +522,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -533,7 +533,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -544,7 +544,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -554,7 +554,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -565,7 +565,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -576,7 +576,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -587,7 +587,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -598,7 +598,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -609,7 +609,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -620,7 +620,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -631,7 +631,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -642,7 +642,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -653,7 +653,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -664,7 +664,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -675,7 +675,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -687,7 +687,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -698,7 +698,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	},
@@ -709,7 +709,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -720,7 +720,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -731,7 +731,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -742,7 +742,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -753,7 +753,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -764,7 +764,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -775,7 +775,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -786,7 +786,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -797,7 +797,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -808,7 +808,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -819,7 +819,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -829,7 +829,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -840,7 +840,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -851,7 +851,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -862,7 +862,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	},
@@ -873,7 +873,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -884,7 +884,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/smart-tv-43.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -895,7 +895,7 @@
 		"discountPrice": 220.5,
 		"description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
 		"category": "electronics",
-		"image": "assets/images/products/washing_machine_PNG15614.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"77",
 		"rating":3.5
 	},
@@ -905,7 +905,7 @@
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
-		"image": "assets/images/products/headphones_PNG7660.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -916,7 +916,7 @@
 		"discountPrice":1598.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/macbook-pro-13.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"43",
 		"rating":4.5
 	},
@@ -927,7 +927,7 @@
 		"discountPrice": 896.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/iphone-11-gray.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"21",
 		"rating":4.0
 	},
@@ -938,7 +938,7 @@
 		"discountPrice": 490.10,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"50",
 		"rating":4.5
 	},
@@ -949,7 +949,7 @@
 		"discountPrice": 4.66,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/polo-shirt.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"20",
 		"rating":4.0
 	},
@@ -960,7 +960,7 @@
 		"discountPrice": 396.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/gray-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -971,7 +971,7 @@
 		"discountPrice": 27.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/watch-red.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"45",
 		"rating":5.0
 	},
@@ -982,7 +982,7 @@
 		"discountPrice":16.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "fashion",
-		"image": "assets/images/products/men-casual-shoes.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"80",
 		"rating":3.5
 	},
@@ -993,7 +993,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/white-drone.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"65",
 		"rating":3.0
 	},
@@ -1004,7 +1004,7 @@
 		"discountPrice": 220.5,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/printer.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"40",
 		"rating":4.0
 	},
@@ -1015,7 +1015,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/cctv-top.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"27",
 		"rating":4.0
 	},
@@ -1026,7 +1026,7 @@
 		"discountPrice": 23.43,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/black-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"75",
 		"rating":4.0
 	},
@@ -1038,7 +1038,7 @@
 		"discountPrice": 220.5,
 		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
 		"category": "electronics",
-		"image": "assets/images/products/double-speaker.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"30",
 		"rating":4.0
 	},
@@ -1049,7 +1049,7 @@
 		"discountPrice": 1.95,
 		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
 		"category": "electronics",
-		"image": "assets/images/products/stopwatch_PNG152.png",
+		"image": "assets/images/products/product-placeholder.svg",
 		"discount":"90",
 		"rating":4.5
 	}

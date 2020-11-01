@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Edit My Profile</title>
 	<!-- Google Font -->
-	<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
@@ -70,7 +70,7 @@
 		<div class="bg-white py-1">
 			<nav class="nav d-flex justify-content-between container pr-0">
 				<li class="dropdown nav-item category-menu" data-menu="dropdown">
-					<a class="nav-link" href="#" data-toggle="modal" data-target="#categories">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#categories-modal">
 						<span class="va va-list pr-1"></span>Genre</a>
 				</li>
 				</ul>
@@ -896,7 +896,7 @@
 	    <div class="px-2 container">
 	        <ul class="nav flex-nowrap nav-pills profile-nav  mb-3 bg-white p-2 shadow-sm align-items-center rounded">
 	            <li class="nav-item">
-	                <img src="../assets/images/portrait/small/avatar-s-12.jpg"
+	                <img src="../assets/images/avatar/avatar-1.jpg"
 	                    class="profile-avatar rounded-circle img-border box-shadow-1" alt="avatar" />
 	            </li>
 	            <li class="nav nav-item collapse navbar-collapse d-md-flex" id="profileNav">
@@ -989,7 +989,7 @@
 	                                    aria-labelledby="account-pill-general" aria-expanded="true">
 	                                    <div class="media">
 	                                        <a href="javascript: void(0);">
-	                                            <img src="../assets/images/portrait/small/avatar-s-12.jpg"
+	                                            <img src="../assets/images/avatar/avatar-1.jpg"
 	                                                class="rounded mr-3" alt="profile image" height="64" width="64">
 	                                        </a>
 	                                        <div class="media-body">
@@ -1284,14 +1284,12 @@
 	        </div>
 	    </section>
 	</div>
-	<div id="categories" class="modal fixed-left fade" tabindex="-1" role="dialog">
+	<div id="categories-modal" class="modal fixed-left fade" tabindex="-1" role="dialog">
 	    <div class="modal-dialog modal-dialog-aside" role="document">
 	        <div class="modal-content">
-	            <div class="modal-header">
+	            <div class="modal-header modal-header d-flex align-items-center shadow-sm">
 	                <h5 class="modal-title">Categories</h5>
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	                    <span aria-hidden="true">&times;</span>
-	                </button>
+	                <span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal" aria-label="Close"></span>
 	            </div>
 	            <div class="modal-body">
 	                <div class="row">
@@ -1347,16 +1345,14 @@
 	</div><div id="shopping-cart" class="modal fixed-right fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-aside" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Shopping Cart</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+				<div class="modal-header shadow-sm d-flex align-items-center">
+					<span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal" aria-label="Close"></span>
+					<h5 class="modal-title mx-auto">Shopping Cart</h5>
 				</div>
 				<div class="modal-body cart-wrapper">
 					<!-- <div class="p-3 d-flex flex-column cart-wrapper w-100 list border"> -->
 						<div class="media bg-light p-3 rounded mb-3 border">
-							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
+							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/product-placeholder.svg"
 								alt="Asus vivobook x405ua core i5">
 							<div class="media-body">
 								<div class="item-name ml-2 text-left">
@@ -1399,7 +1395,7 @@
 							</span>
 						</div>
 						<div class="media bg-light p-3 rounded mb-3 border">
-							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png"
+							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/product-placeholder.svg"
 								alt="iPhone  Se 2020 Plus 11 Pro XR  ">
 							<div class="media-body">
 								<div class="item-name ml-2 text-left">
@@ -1442,7 +1438,7 @@
 							</span>
 						</div>
 						<div class="media bg-light p-3 rounded mb-3 border">
-							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png"
+							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/product-placeholder.svg"
 								alt="Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon">
 							<div class="media-body">
 								<div class="item-name ml-2 text-left">
@@ -1486,7 +1482,7 @@
 						</div>
 					<!-- </div> -->
 				</div>
-				<div class="modal-footer cart-footer align-items-stretch flex-column">
+				<div class="modal-footer cart-footer align-items-stretch flex-column shadow-sm-top">
 						<div class="text-left cart-summary">
 							<h4>Shopping summary</h4>
 						</div>

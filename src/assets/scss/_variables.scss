@@ -34,11 +34,11 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #FD2534 !default;
+$blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #FD2534 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
@@ -65,7 +65,7 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $red !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -393,7 +393,7 @@ $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
-$input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-focus-box-shadow:  none !default;
 
 $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
@@ -950,16 +950,16 @@ $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba($black, .2) !default;
-$modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-border-color:        none !default;
+$modal-content-border-width:        0 !default;
+$modal-content-border-radius:       $border-radius !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
 $modal-backdrop-bg:                 $black !default;
-$modal-backdrop-opacity:            .5 !default;
-$modal-header-border-color:         $border-color !default;
+$modal-backdrop-opacity:            .2 !default;
+$modal-header-border-color:         transparent !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
