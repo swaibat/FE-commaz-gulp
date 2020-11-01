@@ -5,6 +5,11 @@ html {
 li {
 	list-style: none;
 }
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
 
 body {
 	padding-top: 6.3rem;
@@ -264,7 +269,6 @@ ul.row-sm {
 }
 
 .item-img {
-	padding-top: 0.5rem;
 	min-height: 10.85rem;
 }
 
@@ -1418,6 +1422,6 @@ svg {
 .modal.show .modal-dialog-aside {
 	transform: translateX(0);
 }
-.shadow-sm-top{
+.shadow-sm-top {
 	box-shadow: 1px -7px 11px 0px rgba(0, 0, 0, 0.075);
 }

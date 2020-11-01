@@ -5,7 +5,7 @@
 		"price": 405.30,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/asus-laptop.png"
+		"image": "assets/images/products/product-placeholder.svg"
 	},
 	{
 		"id": 2,
@@ -13,7 +13,7 @@
 		"price": 902.00,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/polo-shirt.png"
+		"image": "assets/images/products/product-placeholder.svg"
 	},
 	{
 		"id": 3,
@@ -21,6 +21,6 @@
 		"price": 13.50,
 		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
 		"category": "electronics",
-		"image": "assets/images/products/watch-red.png"
+		"image": "assets/images/products/product-placeholder.svg"
     }
 ]
