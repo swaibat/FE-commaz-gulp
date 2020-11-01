@@ -147,9 +147,10 @@ function vendors() {
 }
 // watch tasks
 function watchfiles() {
-  gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, appJs, browserSyncReload));
+  gulp.watch('./src/assets/scss/**/*', gulp.series(htmlReset, styles, browserSyncReload));
   gulp.watch('src/pages/**/**/*', html);
   gulp.watch('src/assets/images/**/*', images);
+  gulp.watch('src/assets/js/**/*', appJs);
   gulp.watch('src/{layouts,includes,helpers,partials,data}/**/**/*', gulp.series(htmlReset, html, browserSyncReload));
 }
 const build = gulp.series(clean, gulp.parallel(

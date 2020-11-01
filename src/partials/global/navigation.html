@@ -1,197 +1,149 @@
 <div class="fixed-top shadow-sm">
-{{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
+	{{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
 'auth-forgot-password' 'auth-reset-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
 
-<nav class="navbar navbar-expand-md bg-white border-bottom">
-	<div class="container">
-		<div class="d-flex align-items-center w-100">
-			<div class="nav-item">
-				<a class="logo" href="/">
+	<nav class="navbar navbar-expand-md bg-white border-bottom">
+		<div class="container">
+			<div class="d-flex align-items-center w-100">
+				<div class="nav-item">
+					<a class="logo" href="/">
+						{{> _logo}}
+					</a>
+				</div>
+				<div class="input-group input-group-lg mx-auto col-md-6 d-none d-sm-flex">
+					<input type="text" class="form-control" placeholder="Search anything">
+					<div class="input-group-append">
+						<span class="va va-magnifier input-group-text"></span>
+					</div>
+				</div>
+				<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
+					<div class="widget-header">
+						<a class="p-0 d-flex flex-column" href="{{root}}profile/profile.html">
+							<span class="va va-user btn btn-icon-nav p-0"></span>
+							<small class="text lr-only"> My profile </small>
+						</a>
+					</div>
+					<div class="widget-header">
+						<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
+							<span class="va va-notifications btn btn-icon-nav p-0"></span>
+							<small class="text lr-only"> Notifications</small>
+						</a>
+					</div>
+					<div class="widget-header">
+						<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
+							<span class="va va-cart btn btn-icon-nav p-0"></span>
+							<small class="text lr-only"> Cart </small>
+							<!-- <span class="c-badge badge-cart">3</span> -->
+						</span>
+					</div>
+				</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</nav>
+	{{#unlesspage 'store'}}
+	<div class="bg-white py-1">
+		<nav class="nav d-flex justify-content-between container pr-0">
+			<li class="dropdown nav-item category-menu" data-menu="dropdown">
+				<a class="nav-link" href="#" data-toggle="modal" data-target="#categories">
+					<span class="va va-list pr-1"></span>Genre</a>
+			</li>
+			</ul>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="{{root}}shop/shop.html">
+					<span class="va va-store px-1"></span>
+					<span>Shop</span>
+				</a>
+			</li>
+			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
+				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
+					<span class="va va-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
+				<ul class="dropdown-menu">
+					<li class="">
+						<a class="nav-link" href="{{root}}others/about-us.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>About
+							us</a>
+					</li>
+					<li class="">
+						<a class="nav-link" href="{{root}}others/faq.html" data-i18n="Email"><i
+								class="feather icon-mail"></i>FAQ</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown dropdown-language nav-item">
+				<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
+						class="selected-language">English</span></a>
+				<div class="dropdown-menu dropdown-lg dropdown-menu-right p-3" aria-labelledby="dropdown-flag">
+					<form action="">
+						<h5 class="font-weight-bold mb-3">
+							Regional Settings
+						</h5>
+						<div class="form-group mb-2">
+							<label for="country">country</label>
+							<select name="country" id="country" class="select2 form-control select2">
+								{{#each countries}}
+								<option value="Uganda">{{this.name}}</option>
+								{{/each}}
+							</select>
+						</div>
+						<div class="form-group mb-2">
+							<label for="language">language</label>
+							<select name="language" id="language" class="select2 form-control select2">
+								{{#each countries}}
+								<option value="Uganda">{{this.languages.0.nativeName}}</option>
+								{{/each}}
+							</select>
+						</div>
+						<div class="form-group mb-2">
+							<label for="currency">currency</label>
+							<select name="currency" id="currency" class="form-control select2">
+								{{#each countries}}
+								<option value="Uganda">{{this.currencies.0.name}}</option>
+								{{/each}}
+							</select>
+						</div>
+					</form>
+
+				</div>
+			</li>
+			{{#ifpage 'index'}}
+			<li class="nav-item ml-3 lr-only d-flex align-items-center" data-toggle="tooltip"
+				data-original-title="display mode">
+				<div class="switch">
+					<input class="switch" id="switch" name="switch" type="checkbox">
+					<label class="mb-0" for="switch"></label>
+				</div>
+			</li>
+			{{/ifpage}}
+		</nav>
+	</div>
+	{{/unlesspage}}
+	{{/unlesspage}}
+
+	<!-- container .// -->
+	{{#ifpage 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
+	<nav class="navbar fixed-top">
+		<div class="container d-flex justify-content-xs-around">
+			<div class="nav-item category-menu">
+				<a class="nav-link logo" href="/">
 					{{> _logo}}
 				</a>
 			</div>
-			<div class="input-group input-group-lg mx-auto col-md-6 d-none d-sm-flex">
-				<input type="text" class="form-control" placeholder="Search anything">
-				<div class="input-group-append">
-					<span class="va va-magnifier input-group-text"></span>
-				</div>
-			</div>
-			<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
-				<div class="widget-header">
-					<a class="p-0 d-flex flex-column" href="{{root}}profile/profile.html">
-						<span class="va va-user btn btn-icon-nav p-0"></span>
-						<small class="text lr-only"> My profile </small>
-					</a>
-				</div>
-				<div class="widget-header">
-					<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
-						<span class="va va-notifications btn btn-icon-nav p-0"></span>
-						<small class="text lr-only"> Notifications</small>
-					</a>
-				</div>
-				<div class="widget-header">
-					<span id="cart-btn" class="widget-view d-flex flex-column">
-						<span class="va va-cart btn btn-icon-nav p-0"></span>
-						<small class="text lr-only"> Cart </small>
-						<!-- <span class="c-badge badge-cart">3</span> -->
-					</span>
-				</div>
-			</div>
-			<!-- </div> -->
 		</div>
-	</div>
-</nav>
-{{#unlesspage 'store'}}
-<div class="bg-white py-1">
-	<nav class="nav d-flex justify-content-between container pr-0">
-		<li class="dropdown nav-item category-menu" data-menu="dropdown">
-			<a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">
-				<span class="va va-list pr-1"></span>Genre</a>
-			<ul class="dropdown-menu container row p-3 ml-n4 category-dropdown mt-2">
-				<div class="row col-md-10">
-					<div class="col-md-3 mb-3">
-						<h6 class="font-weight-bold">Electronics & Computers</h6>
-						<nav class="nav flex-column">
-							<a class="nav-link" href="#">Cell Phones</a>
-							<a class="nav-link" href="#">TV, Audio & Visual</a>
-							<a class="nav-link" href="#">Computers & Laptops</a>
-							<a class="nav-link" href="#">Gaming & Consoles</a>
-							<a class="nav-link" href="#">Computer Hardware & Accessories</a>
-							<a class="nav-link" href="#">Cameras</a>
-							<a class="nav-link" href="#">iPads & Tablets</a>
-						</nav>
-					</div>
-					<div class="col-md-3 mb-3">
-						<h4>Fashion & Beauty</h4>
-						<nav class="nav flex-column">
-							<a class="nav-link" href="#">Clothing</a>
-							<a class="nav-link" href="#">Shoes</a>
-							<a class="nav-link" href="#">Jewellery & Accessories</a>
-							<a class="nav-link" href="#">Health, Beauty & Cosmetics</a>
-						</nav>
-					</div>
-					<div class="col-md-3 mb-3">
-						<h4>Vehicles</h4>
-						<nav class="nav flex-column">
-							<a class="nav-link" href="#">Cars & Bakkies</a>
-							<a class="nav-link" href="#">Car Parts & Accessories</a>
-							<a class="nav-link" href="#">Motorcycles & Scooters</a>
-							<a class="nav-link" href="#">Trucks & Commercial Vehicles</a>
-							<a class="nav-link" href="#">Caravans & Trailers</a>
-							<a class="nav-link" href="#">Motorcycles & Scooters</a>
-							<a class="nav-link" href="#">Boats & Aviation</a>
-						</nav>
-					</div>
-					<div class="col-md-3 mb-3">
-						<h4>Hobbies & Interests</h4>
-						<nav class="nav flex-column">
-							<a class="nav-link active" href="#">Toys, Games & Remote Control</a>
-							<a class="nav-link" href="#">Musical Instruments</a>
-							<a class="nav-link" href="#">Art, Collectibles & Rare Items</a>
-							<a class="nav-link" href="#">Community Announcements</a>
-							<a class="nav-link" href="#">Books, CDs & DVDs</a>
-						</nav>
-					</div>
-				</div>
-				<div class="row col-md-2"></div>
-			</ul>
-		</li>
-		</ul>
-		</li>
-		<li class="nav-item active">
-			<a class="nav-link" href="{{root}}shop/shop.html">
-				<span class="va va-store px-1"></span>
-				<span>Shop</span>
-			</a>
-		</li>
-		<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
-			<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
-				<span class="va va-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
-			<ul class="dropdown-menu">
-				<li class="">
-					<a class="nav-link" href="{{root}}others/about-us.html" data-i18n="Email"><i
-							class="feather icon-mail"></i>About
-						us</a>
-				</li>
-				<li class="">
-					<a class="nav-link" href="{{root}}others/faq.html" data-i18n="Email"><i
-							class="feather icon-mail"></i>FAQ</a>
-				</li>
-			</ul>
-		</li>
-		<li class="dropdown dropdown-language nav-item">
-			<a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span
-					class="selected-language">English</span></a>
-			<div class="dropdown-menu dropdown-lg dropdown-menu-right p-3" aria-labelledby="dropdown-flag">
-				<form action="">
-					<h5 class="font-weight-bold mb-3">
-						Regional Settings
-					</h5>
-					<div class="form-group mb-2">
-						<label for="country">country</label>
-						<select name="country" id="country" class="select2 form-control select2">
-							{{#each countries}}
-							<option value="Uganda">{{this.name}}</option>
-							{{/each}}
-						</select>
-					</div>
-					<div class="form-group mb-2">
-						<label for="language">language</label>
-						<select name="language" id="language" class="select2 form-control select2">
-							{{#each countries}}
-							<option value="Uganda">{{this.languages.0.nativeName}}</option>
-							{{/each}}
-						</select>
-					</div>
-					<div class="form-group mb-2">
-						<label for="currency">currency</label>
-						<select name="currency" id="currency" class="form-control select2">
-							{{#each countries}}
-							<option value="Uganda">{{this.currencies.0.name}}</option>
-							{{/each}}
-						</select>
-					</div>
-				</form>
-
-			</div>
-		</li>
-		{{#ifpage 'index'}}
-		<li class="nav-item ml-3 lr-only d-flex align-items-center" data-toggle="tooltip"
-			data-original-title="display mode">
-			<div class="switch">
-				<input class="switch" id="switch" name="switch" type="checkbox">
-				<label class="mb-0" for="switch"></label>
-			</div>
-		</li>
-		{{/ifpage}}
 	</nav>
-</div>
-{{/unlesspage}}
-{{/unlesspage}}
-
-<!-- container .// -->
-{{#ifpage 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
-<nav class="navbar fixed-top">
-	<div class="container d-flex justify-content-xs-around">
-		<div class="nav-item category-menu">
-			<a class="nav-link logo" href="/">
-				{{> _logo}}
-			</a>
-		</div>
-	</div>
-</nav>
-{{/ifpage}}
+	{{/ifpage}}
 </div>
 {{#unlesspage 'index' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password' 'shop' 'store'}}
 <div class="bread-overlay"></div>
 <div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb bg-transparent px-0 mb-0">
-				<li class="breadcrumb-item"><a href="#">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page">{{title}}</li>
-			</ol>
-		</nav>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb bg-transparent px-0 mb-0">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">{{title}}</li>
+		</ol>
+	</nav>
 	<div class="switch ml-auto">
 		<input class="switch" id="switch" name="switch" type="checkbox" />
 		<label class="mb-0" for="switch"></label>

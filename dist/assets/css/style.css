@@ -15684,18 +15684,6 @@ ul.row-sm {
   transition: width 0.5s;
 }
 
-.cart-overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
 .sidenav.cart-area .closebtn {
   position: absolute !important;
   top: 0;
@@ -16696,4 +16684,71 @@ svg .disc-cls-3 {
 
 .dropdown-menu {
   top: 2.5px !important;
+}
+
+@media all and (min-width: 991px) {
+  .dropdown:after {
+    content: '';
+    top: 6.5rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.363);
+    pointer-events: none;
+    position: absolute;
+  }
+  .dropdown.show .nav-link {
+    position: relative;
+    z-index: 10;
+  }
+  .dropdown.show:after {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+  }
+}
+
+.modal .modal-dialog-aside {
+  width: 350px;
+  max-width: 80%;
+  height: 100%;
+  margin: 0;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.modal .modal-dialog-aside .modal-content {
+  height: inherit;
+  border: 0;
+  border-radius: 0;
+}
+
+.modal .modal-dialog-aside .modal-content .modal-body {
+  overflow-y: auto;
+}
+
+.modal.fixed-right .modal-dialog-aside {
+  margin-left: auto;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.modal.fixed-left .modal-dialog-aside {
+  margin-right: auto;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.modal.show .modal-dialog-aside {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }

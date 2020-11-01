@@ -1,10 +1,4 @@
-$('.dropdown').click(() => {
-	$('.cart-overlay').removeClass('d-none');
-});
-$('.cart-overlay').click(() => {
-	$('.cart-overlay').addClass('d-none');
-	$('#shopping-cart').removeClass('cart-area');
-});
+
 $(window).scroll(function () {
 	// console.log($(window).scrollTop())
 	console.log($(window).scrollTop() + $(window).height() > $(document).height() - 412);
@@ -210,18 +204,6 @@ $('#carousel').owlCarousel({
 $(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 $('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 
-$('#cart-btn').click(() => {
-	$('#shopping-cart').toggleClass('cart-area');
-	$('.cart-overlay').removeClass('d-none');
-});
-$('#cart-close').click(() => {
-	$('#shopping-cart').toggleClass('cart-area');
-	$('.cart-overlay').addClass('d-none');
-});
-// $('.cart-overlay').click(() => {
-// 	$('#shopping-cart').toggleClass('cart-area');
-// 	$('.cart-overlay').toggleClass('d-none');
-// });
 $(document).ready(function () {
 	var pic_X = $('.menu').offset().left;
 	var pic_Y = $('.menu').offset().top;
