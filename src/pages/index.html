@@ -158,7 +158,7 @@
 
         <section id="ecommerce-products" class="grid-view grid-view-sm">
             {{#each recent_products}}
-            <div class="card ecommerce-card shadow-sm rounded align-self-start">
+            <div class="card product-card shadow-sm rounded align-self-start">
                 <div class="card-content">
                     <div class="btn-group-vertical position-absolute right-0 mt-2">
                         <span data-toggle="tooltip" data-title="add to cart">
@@ -176,7 +176,7 @@
                         </span>
                     </div>
                     <div class="item-img text-center">
-                        <a href="product-details.html">
+                        <a href="{{root}}shop/product-details.html">
                             <img class="img-fluid" src="{{root}}../{{ this.image }}" alt="img-placeholder"></a>
                     </div>
                     <div class="card-body">
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                         <div class="item-name text-truncate">
-                            <a class="title" href="product-details.html">{{ this.title }}</a>
+                            <a class="title" href="{{root}}shop/product-details.html">{{ this.title }}</a>
                         </div>
                         <div>
                             <p class="item-description text-truncate description">

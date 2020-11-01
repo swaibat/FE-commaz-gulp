@@ -5,7 +5,6 @@ Email :admin@doolbay.com or rumbiihas@gmail.com
 */
 
 // Load plugins
-const autoprefixer = require('gulp-autoprefixer');
 const browsersync = require('browser-sync').create();
 const cache = require('gulp-cache');
 const cleanCSS = require('gulp-clean-css');
@@ -87,12 +86,6 @@ function styles() {
       }),
     )
     .on('error', sass.logError)
-    .pipe(
-      autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false,
-      }),
-    )
     .pipe(gulp.dest('./dist/assets/css'))
     .pipe(
       rename({
@@ -114,7 +107,7 @@ function images() {
           imagemin.gifsicle({
             interlaced: true,
           }),
-          imagemin.jpegtran({
+          imagemin.mozjpeg({
             progressive: true,
           }),
           imagemin.optipng({
