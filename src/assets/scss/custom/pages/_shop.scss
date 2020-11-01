@@ -95,14 +95,6 @@
 	}
 }
 
-.category-dropdown {
-	// left: 1rem !important;
-	// @include media-breakpoint-down(sm) {
-	// position: fixed !important;
-	// top: 9.2rem !important;
-	// }
-}
-
 .products-list {
 	margin-left: 280px;
 	min-height: 95vh;
@@ -113,11 +105,6 @@
 
 #shopping-cart {
 	height: 100%;
-	.list {
-		min-height: calc(100vh - 275px);
-		height: calc(100vh - 275px);
-		overflow: scroll;
-	}
 	.btn span {
 		pointer-events: none;
 	}

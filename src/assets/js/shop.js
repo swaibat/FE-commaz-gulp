@@ -5,7 +5,8 @@ var shopOptions = {
 };
 
 let products = new List('products-list', shopOptions);
-// $(document).ready(() => $('.products-count').text(products.matchingItems.length));
+
+$(document).ready(() => $('.products-count').text(products.matchingItems.length));
 $('input').change(() => {
 	console.log(products.matchingItems.length);
 	if (!products.matchingItems.length) {
