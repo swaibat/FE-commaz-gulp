@@ -882,11 +882,9 @@
 	<div class="container p-0 mt-2">
 	    <div class="content-wrapper px-2">
 	        <div class="filter-sidenav rounded" id="filter-Sidenav">
-	            <div class="w-260">
-	                <span class="sidebar-close-icon d-block d-md-none">
-	                    <span class="va va-cross btn btn-primary"></span>
-	                </span>
-	                <div class="card mb-4 shadow-sm">
+	            <div class="W-100 filter-wrapper">
+	                <span class="va va-cross sidebar-close-icon d-block d-md-none btn shadow close mr-n3"></span>
+	                <div class="card mb-4">
 	                    <form class="card-body">
 	                        <!-- Categories Starts -->
 	                        <div id="product-categories">
@@ -1157,6 +1155,7 @@
 	            </div>
 	        </div>        <div class="products-list" id="products-list">
 	            <nav aria-label="breadcrumb" class="d-flex align-items-center justify-content-between">
+	                <span class="btn va va-menu btn-outline-primary rounded-sm" id="toggle-filter"></span>
 	                <ol class="breadcrumb bg-transparent p-2 mb-0">
 	                    <li class="breadcrumb-item"><a href="#">Home</a></li>
 	                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
@@ -1168,35 +1167,35 @@
 	            </nav>
 	            <div class="d-none d-sm-flex flex-wrap align-items-center p-3 theme-bg rounded mb-2">
 	                <div class="col-sm-9 col-12 row justify-content-start align-items-center ">
-	                    <div class="align-items-center">
-	                        <label class="flex-fill col-4 p-0 mb-0 text-truncate" for="exampleFormControlSelect1">SORT
-	                            BY</label>
-	                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+	                    <div class="d-flex align-items-center">
+	                        <label class="flex-fill col-4 p-0 mb-0 text-nowrap" for="">SORT
+	                            BY </label>
+	                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
 	                            <label class="btn btn-outline-secondary active">
-	                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+	                                <input type="radio" name="sort" id="newest" autocomplete="off" checked>
 	                                Newest
 	                            </label>
-	                            <label class="btn btn-outline-secondary">
-	                                <input type="radio" name="options" id="option2" autocomplete="off"> Popular
+	                            <label class="btn btn-outline-secondary text-nowrap sort" data-sort="discount">
+	                                <input type="radio" name="sort" id="discount" autocomplete="off"> Dicount
 	                            </label>
-	                            <label class="btn btn-outline-secondary text-nowrap">
-	                                <input type="radio" name="options" id="option3" autocomplete="off"> Most Reviews
-	                            </label>
-	                            <label class="btn btn-outline-secondary">
-	                                <input type="radio" name="options" id="option3" autocomplete="off"> Price
+	                            <label class="btn btn-outline-secondary sort" data-sort="price">
+	                                <input type="radio" name="sort" id="price" autocomplete="off"> Price
 	                            </label>
 	                        </div>
 	                    </div>
-	                    <div class="align-items-center">
-	                        <label class="flex-fill col-4 p-0 mb-0 text-nowrap mx-3"
+	                    <div class="d-flex align-items-center">
+	                        <label class="flex-fill col-4 p-0 mb-0 text-nowrap ml-4 mr-1"
 	                            for="exampleFormControlSelect1">SHIPPING
 	                            FROM</label>
 	                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
 	                            <label class="btn btn-outline-secondary">
-	                                <input type="radio" name="options" id="option3" autocomplete="off"> Abroad
+	                                <input type="radio" name="shipping" id="all" autocomplete="off" checked> All
 	                            </label>
 	                            <label class="btn btn-outline-secondary">
-	                                <input type="radio" name="options" id="option3" autocomplete="off"> Local
+	                                <input type="radio" name="shipping" id="abroad" autocomplete="off"> Abroad
+	                            </label>
+	                            <label class="btn btn-outline-secondary">
+	                                <input type="radio" name="shipping" id="local" autocomplete="off"> Local
 	                            </label>
 	                        </div>
 	                    </div>
@@ -1254,10 +1253,10 @@
 	            <div class="d-flex d-sm-none w-100">
 	                <form class="p-2 shadow-sm bg-white rounded my-2 w-100" action="#">
 	                    <div class="input-group">
-	                        <input class="form-control border-0 mr-2 " type="search"
+	                        <input class="form-control border-0 mr-2 fuzzy-search" type="search"
 	                            placeholder="Search tools and resources...">
 	                        <div class="input-group-append">
-	                            <button class="btn btn-primary rounded" type="submit"><i class="ti-search"></i>
+	                            <button class="btn btn-primary rounded">
 	                                Search</button>
 	                        </div>
 	                    </div>
@@ -9810,6 +9809,7 @@
 	                    </div>
 	                </div>
 	            </div>
+	            <h4 class="m-auto d-none" id="not-found-text">No Items Left</h4>
 	            <section class="my-3 w-100 p-3 bg-white rounded">
 	              <div class="row">
 	                <div class="col-sm-12 text-center">

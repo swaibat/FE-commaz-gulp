@@ -6,14 +6,19 @@ var shopOptions = {
 
 let products = new List('products-list', shopOptions);
 
-$(document).ready(() => $('.products-count').text(products.matchingItems.length));
-$('input').change(() => {
-	console.log(products.matchingItems.length);
-	if (!products.matchingItems.length) {
-		console.log('hello');
-		$(`<h4 class="m-auto">No Items in Cart</h4>`).appendTo('.grid-view');
-	}
+$('.products-list input').keyup(() => {
+	notFoundText()
 });
+
+const notFoundText = () => {
+	if (!$('.grid-view').children().length) {
+		$('.grid-view').addClass('d-none');
+		$('#not-found-text').removeClass('d-none');
+	} else {
+		$('.grid-view').removeClass('d-none');
+		$('#not-found-text').addClass('d-none');
+	}
+};
 
 (function () {
 	var parent = document.querySelector('#rangeSlider');
@@ -33,7 +38,6 @@ $('input').change(() => {
 
 			numberS[0].value = slide1;
 			numberS[1].value = slide2;
-
 			products.filter(function (item) {
 				const itemPrice = parseInt(item.values().price);
 				if (itemPrice > slide1 && itemPrice < slide2) {
@@ -42,6 +46,7 @@ $('input').change(() => {
 					return false;
 				}
 			});
+			notFoundText()
 		};
 	});
 
@@ -58,7 +63,6 @@ $('input').change(() => {
 
 			rangeS[0].value = number1;
 			rangeS[1].value = number2;
-
 			products.filter(function (item) {
 				const itemPrice = parseInt(item.values().price);
 				if (itemPrice > number1 && itemPrice < number2) {
@@ -67,6 +71,7 @@ $('input').change(() => {
 					return false;
 				}
 			});
+			notFoundText()
 		};
 	});
 })();
@@ -75,13 +80,13 @@ $('#product-categories input').change(({ target }) => {
 	products.add(
 		products.filter(function (item) {
 			if (item.values().category == target.id) {
-				// console.log(filters)
 				return true;
 			} else {
 				return false;
 			}
 		}),
 	);
+	notFoundText()
 });
 
 $('#discounts input').change(({ target }) => {
@@ -92,6 +97,7 @@ $('#discounts input').change(({ target }) => {
 			return false;
 		}
 	});
+	notFoundText()
 });
 
 $('#ratings input').change(({ target }) => {

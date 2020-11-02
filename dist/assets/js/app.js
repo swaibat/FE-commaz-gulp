@@ -1,13 +1,11 @@
-// notifications script
-
-$(()=> {
+// NOTIFICATIONS
+$(() => {
 	const notificationsOptions = {
 		valueNames: ['name', 'subject', 'body', 'read', 'status'],
 		page: 5,
 		pagination: true,
 	};
 
-	// Notifications List
 	const notifications = new List('notifications-list', notificationsOptions);
 	$('.notifications-sidenav .read-filter').click(({ target }) => {
 		console.log(target);
@@ -53,51 +51,7 @@ $(()=> {
 	});
 });
 
-// sidebar scroll
-$(window).scroll(function () {
-	// console.log($(window).scrollTop())
-	console.log($(window).scrollTop() + $(window).height() > $(document).height() - 412);
-	if ($(window).scrollTop() >= 147) {
-		$('.filter-sidenav').addClass('fixed-sidenav');
-	}
-	if ($(window).scrollTop() <= 147 && $(window).scrollTop() + $(window).height() < $(document).height() - 412) {
-		$('.filter-sidenav').removeClass('fixed-sidenav');
-	}
-	// 412
-	if ($(window).scrollTop() + $(window).height() > $(document).height() - 412) {
-		$('.filter-sidenav').removeClass('fixed-sidenav');
-	}
-});
-
-var filterOptions = {
-	valueNames: ['name', 'type'],
-	item: `<li class="chip shadow-sm p-2">
-            <span class="type font-weight-bold">category</span><span class="mr-1">:</span><span class="name"></span>
-            <span class="btn p-0 m-0 va va-cross ml-3" onclick="remove(this)"></span>
-        </li>`,
-};
-
-const filters = new List('filter-sidenav', filterOptions);
-
-function remove(data) {
-	const name = $(data).parent().find('.name').text();
-	$(`#filter-Sidenav #${name}`).prop('checked', false);
-	filters.remove('name', name);
-}
-
-$('#filter-Sidenav input').change(({ target }) => {
-	console.log(target)
-	if (!filters.get('type', target.name).length) {
-		filters.add({ name: target.id, type: target.name });
-	}
-});
-
-$('#clear-all').click(() => {
-	filters.clear();
-});
-
-// shopping cart
-
+// STAR RATING
 $('.read-only').starRating({
 	starShape: 'rounded',
 	readOnly: true,
@@ -105,90 +59,82 @@ $('.read-only').starRating({
 	activeColor: 'orange',
 	useGradient: false,
 });
-$('.current').click(() => {
-	$('.select-nav').addClass('show');
-});
 
-$('.select-nav .nav-item').click(() => {
-	$('.select-nav').toggleClass('show');
-});
+// SHOPPING CART
+$(() => {
+	const cartOptions = { valueNames: ['title', 'price'] };
+	const notFound = () => {
+		$('#tax, #shipping').text(0);
+		$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo('.cart-wrapper');
+	};
 
-// Cart script
-const cartOptions = { valueNames: ['title', 'price'] };
-const notFound = () => {
-	$('#tax, #shipping').text(0);
-	$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo('.cart-wrapper');
-};
+	const cart = new List('shopping-cart', cartOptions);
+	// update total
 
-const cart = new List('shopping-cart', cartOptions);
-// update total
+	$('.btn-up').click(({ target }) => {
+		const id = target.id.split('-')[2];
+		const input = $(`#form-control-${id}`);
+		input.val(JSON.parse(input.val()) + 1);
+		$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()));
+		// updateTotal(cart)
+	});
 
-$('.btn-up').click(({ target }) => {
-	const id = target.id.split('-')[2];
-	const input = $(`#form-control-${id}`);
-	input.val(JSON.parse(input.val()) + 1);
-	$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()));
-	// updateTotal(cart)
-});
+	$('.btn-down').click(({ target }) => {
+		const id = target.id.split('-')[2];
+		const input = $(`#form-control-${id}`);
+		if (input.val() > 1) {
+			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()));
+			input.val(JSON.parse(input.val()) - 1);
+		}
+		// updateTotal(cart)
+	});
 
-$('.btn-down').click(({ target }) => {
-	const id = target.id.split('-')[2];
-	const input = $(`#form-control-${id}`);
-	if (input.val() > 1) {
-		$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()));
-		input.val(JSON.parse(input.val()) - 1);
-	}
-	// updateTotal(cart)
-});
-
-$('#shopping-cart .btn').click(({ target }) => {
-	cart.remove('title', $(`#${target.id}`).parent().find('.title').text());
-});
-// clear cart
-$('#clear-cart').click(() => {
-	cart.clear();
-	$('.badge-cart, #g-total, #s-total, #shipping').text(0);
-	notFound();
-});
-// remove one item
-$('#shopping-cart .btn-cancel').click(() => {
-	// reduce the counter price
-	const prices = cart.visibleItems.map((e) => (count = +JSON.parse(e.values().price)));
-	const sum = prices.reduce(function (a, b) {
-		return a + b;
-	}, 0);
-	// add to sub total
-	$('#s-total').text(sum);
-	// add to total (sub-total + shipping + tax)
-	$('#g-total').text(sum + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
-	$('.badge-cart').text(cart.visibleItems.length);
-	if (!cart.visibleItems.length) {
+	$('#shopping-cart .btn').click(({ target }) => {
+		cart.remove('title', $(`#${target.id}`).parent().find('.title').text());
+	});
+	// clear cart
+	$('#clear-cart').click(() => {
+		cart.clear();
+		$('.badge-cart, #g-total, #s-total, #shipping').text(0);
 		notFound();
-	}
+	});
+
+	// remove one item
+	$('#shopping-cart .btn-cancel').click(() => {
+		// reduce the counter price
+		const prices = cart.visibleItems.map((e) => (count = +JSON.parse(e.values().price)));
+		const sum = prices.reduce(function (a, b) {
+			return a + b;
+		}, 0);
+		// add to sub total
+		$('#s-total').text(sum);
+		// add to total (sub-total + shipping + tax)
+		$('#g-total').text(sum + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
+		$('.badge-cart').text(cart.visibleItems.length);
+		if (!cart.visibleItems.length) {
+			notFound();
+		}
+	});
+
+	// add to cart
+	$('.product-card .cart').change(() => {
+		$('.badge-cart').text(JSON.parse($('.badge-cart').text()) + 1);
+	});
 });
 
-// add to cart
-$('.product-card .cart').change(() => {
-	$('.badge-cart').text(JSON.parse($('.badge-cart').text()) + 1);
-});
-
-// shop
-
-$(function () {
+// GLOBAL SCRIPT
+$(() => {
 	$('[data-toggle="tooltip"]').tooltip();
 });
-
-// select 2
-$(document).ready(function () {
+$(document).ready(() => {
 	$('.select2').select2();
 });
-
 $('#switch').change(() => {
 	$('body').toggleClass('dark-mode');
 	!localStorage.getItem('theme') ? localStorage.setItem('theme', 'dark-mode') : localStorage.removeItem('theme');
 });
-
 $('body').addClass(localStorage.getItem('theme'));
+
 $('#toggle-filter').click(() => {
 	$('#products-list').toggleClass('ml-0');
 	$('.grid-view').toggleClass('grid-view-sm');
@@ -196,12 +142,9 @@ $('#toggle-filter').click(() => {
 });
 $('.sidebar-close-icon').click(() => {
 	$('.grid-view').toggleClass('grid-view-sm');
-	$('#filter-Sidenav').toggleClass('w-260');
+	$('#filter-Sidenav').toggleClass('toggle-filter');
 });
-$('#category-nav .nav-item').mouseover(() => {
-	$('.drop-list').css('width', $('.carousel-inner').outerWidth()).css('margin-left', $('#category-nav').outerWidth());
-});
-
+// carousel
 $('#carousel').owlCarousel({
 	autoplay: false,
 	lazyLoad: true,
@@ -230,41 +173,9 @@ $('#carousel').owlCarousel({
 		},
 	},
 });
-$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
-$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
-
-// cart buttons
-// personal details
-$('#to-shopping').click((e) => {
-	e.preventDefault();
-	$('#shipping').addClass('show');
-	$('[data-target="#personalDetails"]').removeClass('d-none');
-});
-
-
-// Javascript to enable link to tab
-$(document).ready(() => {
-	var url = document.location.toString();
-
-	if (url.match('#')) {
-		// $(`#profile`).tab('dispose');
-		$(`#${url.split('#')[1]}`).tab('dispose');
-	}
-
-	// Change hash for page-reload
-	$('.nav-tabs a').on('shown.bs.tab', function (e) {
-		window.location.hash = e.target.hash;
-	});
-});
-
-$('#to-payments').click((e) => {
-	e.preventDefault();
-	$('#payments').addClass('show');
-	$('[data-target="#shipping"]').removeClass('d-none');
-});
 
 // FLASH SALE TIMER
-$(() =>{
+$(() => {
 	function getTimeRemaining(endtime) {
 		var t = Date.parse(endtime) - Date.parse(new Date());
 		var seconds = Math.floor((t / 1000) % 60);

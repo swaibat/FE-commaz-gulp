@@ -38,11 +38,6 @@ body {
 	box-shadow: none !important;
 }
 
-.fixed-sidenav {
-	position: fixed;
-	top: 5rem;
-}
-
 .slider-home-banner {
 	.carousel-item {
 		img {
@@ -987,7 +982,7 @@ $width: $height * 2;
 }
 
 #toggle-filter {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 .logo-sm {
@@ -1001,20 +996,6 @@ $width: $height * 2;
 	}
 }
 
-.blog-img {
-	padding-top: 0.5rem;
-	height: 19rem;
-	a {
-		width: auto;
-		height: 90%;
-	}
-}
-.profile-cover {
-	height: 20rem;
-	background-size: cover;
-	background-image: url(../images/banners/company.jpg);
-}
-
 .desc-text {
 	height: 2.5rem;
 	overflow: hidden;
@@ -1025,10 +1006,6 @@ $width: $height * 2;
 	width: 17rem;
 }
 
-.sticky-sidenav {
-	top: 4.5rem;
-	width: 15rem;
-}
 .list {
 	.active {
 		background: $gray-200;
@@ -1150,7 +1127,7 @@ $width: $height * 2;
 	.nav-link {
 		&.active {
 			background: transparent !important;
-			color: $primary;
+			color: $primary !important;
 			.btn {
 				color: $primary;
 				background: lighten($color: $primary, $amount: 40);
@@ -1297,10 +1274,6 @@ svg {
 		}
 	}
 }
-.fixed-sidenav {
-	position: fixed !important;
-	top: 1rem;
-}
 
 .data-bar {
 	display: block;
@@ -1355,30 +1328,28 @@ svg {
 	top: 2.5px !important;
 }
 
-@media all and (min-width: 991px) {
-	.dropdown:after {
-		content: '';
-		top: 6.5rem;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		transition: opacity 0.15s ease-in-out;
-		opacity: 0;
-		visibility: hidden;
-		background-color: rgba(0, 0, 0, 0.2);
-		pointer-events: none;
-		position: absolute;
-	}
-	.dropdown.show .nav-link {
-		position: relative;
-		z-index: 10;
-	}
-	.dropdown.show:after {
-		z-index: 10;
-		opacity: 1;
-		visibility: visible;
-		position: fixed;
-	}
+.dropdown:after {
+	content: '';
+	top: 6.5rem;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: opacity 0.15s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(0, 0, 0, 0.2);
+	pointer-events: none;
+	position: absolute;
+}
+.dropdown.show .nav-link {
+	position: relative;
+	z-index: 10;
+}
+.dropdown.show:after {
+	z-index: 10;
+	opacity: 1;
+	visibility: visible;
+	position: fixed;
 }
 
 .modal .modal-dialog-aside {
@@ -1418,6 +1389,6 @@ svg {
 .modal.show .modal-dialog-aside {
 	transform: translateX(0);
 }
-.shadow-sm-top{
+.shadow-sm-top {
 	box-shadow: 1px -7px 11px 0px rgba(0, 0, 0, 0.075);
 }
