@@ -126,13 +126,16 @@ $(() => {
 $(() => {
 	$('[data-toggle="tooltip"]').tooltip();
 });
+
 $(document).ready(() => {
 	$('.select2').select2();
 });
-$('#switch').change(() => {
+
+$('#d-mode').change(() => {
 	$('body').toggleClass('dark-mode');
 	!localStorage.getItem('theme') ? localStorage.setItem('theme', 'dark-mode') : localStorage.removeItem('theme');
 });
+
 $('body').addClass(localStorage.getItem('theme'));
 
 $('#toggle-filter').click(() => {
@@ -140,6 +143,7 @@ $('#toggle-filter').click(() => {
 	$('.grid-view').toggleClass('grid-view-sm');
 	$('#filter-Sidenav').toggleClass('toggle-filter');
 });
+
 $('.sidebar-close-icon').click(() => {
 	$('.grid-view').toggleClass('grid-view-sm');
 	$('#filter-Sidenav').toggleClass('toggle-filter');

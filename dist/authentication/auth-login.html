@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title></title>
 	<!-- Google Font -->
-	<link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../assets/images/ico/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
@@ -15,10 +15,12 @@
 	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="">
+<body class="loade">
 	<div class="fixed-top shadow-sm">
+		<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	
 		<!-- container .// -->
+		<!--  this will only render on the pages below inside the quotes.// -->
 		<nav class="navbar fixed-top">
 			<div class="container d-flex justify-content-xs-around">
 				<div class="nav-item category-menu">
@@ -39,9 +41,12 @@
 			</div>
 		</nav>
 	</div>
+	<!--  On this pages below this component wont be rendered
+		[index, auth-login, auth-register, auth-reset-password, auth-forgot-password, shop, store] 
+	.// -->
 	<div class="container d-flex align-items-center h-100 vh-max">
 	    <div class="row col-md-8 m-auto">
-	        <div class="col-md-6 bg-white shadow-sm">
+	        <div class="col-md-6 bg-white rounded-0 rounded-sm-left">
 	            <div class="card">
 	                <div class="card-body">
 	                    <h1>Login</h1>
@@ -83,7 +88,7 @@
 	                </div>
 	            </div>
 	        </div>
-	        <div class="col-md-6 p-5 bg-primary d-flex align-items-center">
+	        <div class="col-md-6 p-5 bg-primary d-none d-sm-flex align-items-center rounded-right">
 	            <div class="card-body">
 	                <div class="d-flex flex-column text-center">
 	                    <h1 class="mb-3">Register</h1>

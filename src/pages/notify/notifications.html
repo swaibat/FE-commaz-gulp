@@ -3,17 +3,17 @@ title: Notifications
 ---
 <div class="container p-0 mb-4">
     <div class="content-wrapper px-2">
-        <div class="p-3 bg-white rounded d-flex flex-wrap">
-            <div class="col-md-2">
-                <div class="bg-white notifications-sidenav">
+        <div class="p-2 p-sm-3 bg-white rounded d-flex flex-wrap">
+            <div class="notifications-sidenav">
+                <div class="bg-white">
                     <div class="d-flex">
-                        <span class="bg-light-200 d-flex flex-fill align-items-center rounded px-3">
+                        <span class="bg-light-200 d-none d-sm-flex flex-fill align-items-center rounded px-3">
                             General
                         </span>
                         <span class="va va-pencil btn btn-primary p-2 ml-2" data-toggle="modal"
                             data-target="#create"></span>
                     </div>
-                    <div class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <div class="nav flex-column nav-pills mt-2 mt-sm-0" role="tablist" aria-orientation="vertical">
                         <ul class="nav flex-column ">
                             <li class="nav-item status-filter" id="received">
                                 <span class="nav-link d-flex align-items-center active" data-toggle="pill" role="tab">
@@ -45,7 +45,7 @@ title: Notifications
                                     <span class="flex-fill py-2 px-2 cursor-pointer">unread</span>
                                 </span>
                             </li>
-                            <span class="my-3 p-2 bg-light-200 d-flex rounded">Types <span
+                            <span class="my-3 p-2 bg-light-200 d-none d-sm-flex rounded">Types <span
                                     class="ml-auto badge badge-primary d-flex align-items-center">
                                     Coming soon</span></span>
                             <li class="nav-item" id="sales">
@@ -70,9 +70,9 @@ title: Notifications
                     </div>
                 </div>
             </div>
-            <div class="col-md-10 p-0 notifications bg-light rounded border">
-                <div class="p-3" id="notifications-list">
-                    <div class="d-flex mb-3">
+            <div class="notifications bg-light rounded border flex-fill">
+                <div class="p-2" id="notifications-list">
+                    <div class="d-flex mb-2">
                         <input type="text" class="fuzzy-search form-control" placeholder="search . . . ">
                         <div class="input-group-append">
                             <li class="sort btn-group btn-group-sm align-items-center">

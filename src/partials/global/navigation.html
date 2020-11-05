@@ -1,4 +1,5 @@
 <div class="fixed-top shadow-sm">
+	<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	{{#unlesspage '_sliders' '_footers' '_banners' '_forms' '_icon-text' '_item-side' '_product-details' '_product-cards' '_features' '_filter' 'air'
 'auth-forgot-password' 'auth-reset-password' 'auth-register' 'auth-login' '_headers' 'documentation' }}
 
@@ -26,14 +27,13 @@
 					<div class="widget-header">
 						<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
 							<span class="va va-notifications btn btn-icon-nav p-0"></span>
-							<small class="text lr-only"> Notifications</small>
+							<small class="text lr-only">Notifications</small>
 						</a>
 					</div>
 					<div class="widget-header">
 						<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
 							<span class="va va-cart btn btn-icon-nav p-0"></span>
-							<small class="text lr-only"> Cart </small>
-							<!-- <span class="c-badge badge-cart">3</span> -->
+							<small class="text lr-only text-muted"> Cart </small>
 						</span>
 					</div>
 				</div>
@@ -42,32 +42,32 @@
 		</div>
 	</nav>
 	{{#unlesspage 'store'}}
-	<div class="bg-white py-1">
-		<nav class="nav d-flex justify-content-between container pr-0">
-			<li class="dropdown nav-item category-menu" data-menu="dropdown">
-				<a class="nav-link" href="#" data-toggle="modal" data-target="#categories-modal">
-					<span class="va va-list pr-1"></span>Genre</a>
+	<div class="bg-white">
+		<ul class="nav nav-pills container justify-content-between pr-0">
+			<li class="nav-item">
+				<a class="nav-link {{#ifpage 'index'}} active {{/ifpage}} rounded-0" href="#" data-toggle="modal"
+					data-target="#categories-modal">
+					<span class="va va-menu pr-1"></span>Genre</a>
+				</a>
 			</li>
-			</ul>
-			</li>
-			<li class="nav-item active">
-				<a class="nav-link" href="{{root}}shop/shop.html">
-					<span class="va va-store px-1"></span>
+			<li class="nav-item">
+				<a class="nav-link rounded-0 {{#ifpage 'shop'}} active {{/ifpage}}" href="{{root}}shop/shop.html">
+					<span class="va va-store pr-1"></span>
 					<span>Shop</span>
 				</a>
 			</li>
 			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
-					<span class="va va-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
+					<span class="va va-question-circle pr-2">
+
+					</span>Pages</a>
 				<ul class="dropdown-menu">
 					<li class="">
-						<a class="nav-link" href="{{root}}others/about-us.html" data-i18n="Email"><i
-								class="feather icon-mail"></i>About
-							us</a>
+						<a class="nav-link" href="{{root}}others/about-us.html">
+							About us</a>
 					</li>
 					<li class="">
-						<a class="nav-link" href="{{root}}others/faq.html" data-i18n="Email"><i
-								class="feather icon-mail"></i>FAQ</a>
+						<a class="nav-link" href="{{root}}others/faq.html">FAQ</a>
 					</li>
 				</ul>
 			</li>
@@ -84,7 +84,7 @@
 							<label for="country">country</label>
 							<select name="country" id="country" class="select2 form-control select2">
 								{{#each countries}}
-								<option value="Uganda">{{this.name}}</option>
+								<option>{{this.name}}</option>
 								{{/each}}
 							</select>
 						</div>
@@ -92,7 +92,7 @@
 							<label for="language">language</label>
 							<select name="language" id="language" class="select2 form-control select2">
 								{{#each countries}}
-								<option value="Uganda">{{this.languages.0.nativeName}}</option>
+								<option>{{this.languages.0.nativeName}}</option>
 								{{/each}}
 							</select>
 						</div>
@@ -100,7 +100,7 @@
 							<label for="currency">currency</label>
 							<select name="currency" id="currency" class="form-control select2">
 								{{#each countries}}
-								<option value="Uganda">{{this.currencies.0.name}}</option>
+								<option>{{this.currencies.0.name}}</option>
 								{{/each}}
 							</select>
 						</div>
@@ -108,21 +108,21 @@
 
 				</div>
 			</li>
+			<!--  this will only render on the index page ''.// -->
 			{{#ifpage 'index'}}
-			<li class="nav-item ml-3 lr-only d-flex align-items-center" data-toggle="tooltip"
+			<label for="d-mode" class="nav-item ml-3 lr-only d-flex align-items-center mb-0" data-toggle="tooltip"
 				data-original-title="display mode">
-				<div class="switch">
-					<input class="switch" id="switch" name="switch" type="checkbox">
-					<label class="mb-0" for="switch"></label>
-				</div>
-			</li>
+				<input class="d-none" id="d-mode" type="checkbox">
+				<span class="va va-moon btn btn-icon btn-light-200 p-2 mr-1"></span>
+			</label>
 			{{/ifpage}}
-		</nav>
+		</ul>
 	</div>
 	{{/unlesspage}}
 	{{/unlesspage}}
 
 	<!-- container .// -->
+	<!--  this will only render on the pages below inside the quotes.// -->
 	{{#ifpage 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password'}}
 	<nav class="navbar fixed-top">
 		<div class="container d-flex justify-content-xs-around">
@@ -135,6 +135,9 @@
 	</nav>
 	{{/ifpage}}
 </div>
+<!--  On this pages below this component wont be rendered
+	[index, auth-login, auth-register, auth-reset-password, auth-forgot-password, shop, store] 
+.// -->
 {{#unlesspage 'index' 'auth-login' 'auth-register' 'auth-reset-password' 'auth-forgot-password' 'shop' 'store'}}
 <div class="bread-overlay"></div>
 <div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
@@ -144,9 +147,10 @@
 			<li class="breadcrumb-item active" aria-current="page">{{title}}</li>
 		</ol>
 	</nav>
-	<div class="switch ml-auto">
-		<input class="switch" id="switch" name="switch" type="checkbox" />
-		<label class="mb-0" for="switch"></label>
-	</div>
+	<label for="d-mode" class="ml-auto d-flex align-items-center mb-0" data-toggle="tooltip"
+		data-original-title="display mode">
+		<input class="d-none" id="d-mode" type="checkbox">
+		<span class="va va-moon btn btn-primary p-2 mr-1"></span>
+	</label>
 </div>
 {{/unlesspage}}

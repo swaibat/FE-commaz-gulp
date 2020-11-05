@@ -5,16 +5,18 @@ title: Shop
     <div class="content-wrapper px-2">
         {{> _filter_sidenav}}
         <div class="products-list" id="products-list">
-            <nav aria-label="breadcrumb" class="d-flex align-items-center justify-content-between">
+            <nav aria-label="breadcrumb" class="d-flex align-items-center my-2 justify-content-between">
                 <span class="btn va va-menu btn-outline-primary rounded-sm" id="toggle-filter"></span>
                 <ol class="breadcrumb bg-transparent p-2 mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Shop</li>
                 </ol>
-                <div class="switch ml-auto p-2">
-                    <input class="switch" id="switch" name="switch" type="checkbox" />
-                    <label class="mb-0" for="switch"></label>
-                </div>
+
+                <label for="d-mode" class="ml-auto d-flex align-items-center mb-0" data-toggle="tooltip"
+                    data-original-title="display mode">
+                    <input class="d-none" id="d-mode" type="checkbox">
+                    <span class="va va-moon btn btn-primary p-2 mr-1"></span>
+                </label>
             </nav>
             <div class="d-none d-sm-flex flex-wrap align-items-center p-3 theme-bg rounded mb-2">
                 <div class="col-sm-9 col-12 row justify-content-start align-items-center ">

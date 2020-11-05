@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Shop</title>
 	<!-- Google Font -->
-	<link rel="icon" type="image/x-icon" href="../assets/ico/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../assets/images/ico/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
@@ -15,8 +15,9 @@
 	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="">
+<body class="loade">
 	<div class="fixed-top shadow-sm">
+		<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	
 		<nav class="navbar navbar-expand-md bg-white border-bottom">
 			<div class="container">
@@ -52,14 +53,13 @@
 						<div class="widget-header">
 							<a href="../notify/notifications.html" class="widget-view d-flex flex-column">
 								<span class="va va-notifications btn btn-icon-nav p-0"></span>
-								<small class="text lr-only"> Notifications</small>
+								<small class="text lr-only">Notifications</small>
 							</a>
 						</div>
 						<div class="widget-header">
 							<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
 								<span class="va va-cart btn btn-icon-nav p-0"></span>
-								<small class="text lr-only"> Cart </small>
-								<!-- <span class="c-badge badge-cart">3</span> -->
+								<small class="text lr-only text-muted"> Cart </small>
 							</span>
 						</div>
 					</div>
@@ -69,7 +69,11 @@
 		</nav>
 	
 		<!-- container .// -->
+		<!--  this will only render on the pages below inside the quotes.// -->
 	</div>
+	<!--  On this pages below this component wont be rendered
+		[index, auth-login, auth-register, auth-reset-password, auth-forgot-password, shop, store] 
+	.// -->
 	<div class="container pt-0 pb-2 mt-2 bg-white">
 	    <div class="card mb-4">
 	        <div class="p-2">

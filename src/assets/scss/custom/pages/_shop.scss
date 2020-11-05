@@ -40,7 +40,6 @@
 
 	.card-content {
 		.item-img {
-			padding-top: 0.5rem;
 			min-height: 10.85rem;
 			@include media-breakpoint-down(md) {
 				min-height: 4rem;
@@ -147,7 +146,7 @@
 }
 
 #not-found-text {
-	min-height: 75vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -156,8 +155,6 @@
 
 .filter-wrapper {
 	width: 100%;
-	padding: 0.5rem;
 	height: auto;
-	background: white;
 	overflow-y: scroll;
 }
