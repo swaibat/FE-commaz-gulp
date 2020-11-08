@@ -33,9 +33,12 @@
 .product-card {
 	overflow: hidden;
 	margin-bottom: 0.7rem;
+	box-shadow: $box-shadow-sm;
+	border-radius:$border-radius;
 	@include media-breakpoint-down(md) {
 		margin-bottom: 0;
 		border-radius: 0 !important;
+		box-shadow: none;
 	}
 
 	.card-content {

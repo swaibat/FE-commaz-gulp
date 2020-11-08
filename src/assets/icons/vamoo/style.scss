@@ -1,1125 +1,426 @@
-@import "variables";
+@import 'variables';
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rubum5');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rubum5#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?rubum5') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?rubum5') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?rubum5##{$icomoon-font-family}') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+	font-family: '#{$vamoo-font-family}';
+	src: url('#{$vamoo-font-path}/#{$vamoo-font-family}.eot?20d0o4');
+	src: url('#{$vamoo-font-path}/#{$vamoo-font-family}.eot?20d0o4#iefix') format('embedded-opentype'),
+		url('#{$vamoo-font-path}/#{$vamoo-font-family}.ttf?20d0o4') format('truetype'),
+		url('#{$vamoo-font-path}/#{$vamoo-font-family}.woff?20d0o4') format('woff'),
+		url('#{$vamoo-font-path}/#{$vamoo-font-family}.svg?20d0o4##{$vamoo-font-family}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
 }
 
 .va {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: '#{$vamoo-font-family}' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-.va-clipboard-checked {
-  &:before {
-    content: $va-clipboard-checked; 
-  }
-}
-.va-heart-solid {
-  &:before {
-    content: $va-heart-solid; 
-  }
-}
-.va-cart-solid {
-  &:before {
-    content: $va-cart-solid; 
-  }
-}
-.va-instagram {
-  &:before {
-    content: $va-instagram; 
-  }
-}
-.va-youtube {
-  &:before {
-    content: $va-youtube; 
-  }
-}
-.va-twitter {
-  &:before {
-    content: $va-twitter; 
-  }
-}
-.va-star-fill {
-  &:before {
-    content: $va-star-fill; 
-  }
-}
-.va-star-regular {
-  &:before {
-    content: $va-star-regular; 
-  }
-}
-.va-facebook {
-  &:before {
-    content: $va-facebook; 
-  }
-}
-.va-google {
-  &:before {
-    content: $va-google; 
-  }
-}
-.va-image {
-  &:before {
-    content: $va-image; 
-  }
-}
-.va-link_outline {
-  &:before {
-    content: $va-link_outline; 
-  }
-}
-.va-mail_open {
-  &:before {
-    content: $va-mail_open; 
-  }
-}
-.va-mail {
-  &:before {
-    content: $va-mail; 
-  }
-}
-.va-mail_unread {
-  &:before {
-    content: $va-mail_unread; 
-  }
-}
-.va-notifications {
-  &:before {
-    content: $va-notifications; 
-  }
-}
-.va-options {
-  &:before {
-    content: $va-options; 
-  }
-}
-.va-paper_plane {
-  &:before {
-    content: $va-paper_plane; 
-  }
-}
-.va-phone_landscape {
-  &:before {
-    content: $va-phone_landscape; 
-  }
-}
-.va-phone_portrait {
-  &:before {
-    content: $va-phone_portrait; 
-  }
-}
-.va-print {
-  &:before {
-    content: $va-print; 
-  }
-}
-.va-radio_button_on {
-  &:before {
-    content: $va-radio_button_on; 
-  }
-}
-.va-rocket_outline {
-  &:before {
-    content: $va-rocket_outline; 
-  }
-}
-.va-scan {
-  &:before {
-    content: $va-scan; 
-  }
-}
-.va-search {
-  &:before {
-    content: $va-search; 
-  }
-}
-.va-shirt_outline {
-  &:before {
-    content: $va-shirt_outline; 
-  }
-}
-.va-storefront {
-  &:before {
-    content: $va-storefront; 
-  }
-}
-.va-ticket {
-  &:before {
-    content: $va-ticket; 
-  }
-}
-.va-tv {
-  &:before {
-    content: $va-tv; 
-  }
-}
-.va-albums {
-  &:before {
-    content: $va-albums; 
-  }
-}
-.va-arrow_redo {
-  &:before {
-    content: $va-arrow_redo; 
-  }
-}
-.va-arrow_undo {
-  &:before {
-    content: $va-arrow_undo; 
-  }
-}
-.va-call {
-  &:before {
-    content: $va-call; 
-  }
-}
-.va-car_sport {
-  &:before {
-    content: $va-car_sport; 
-  }
-}
-.va-card {
-  &:before {
-    content: $va-card; 
-  }
-}
-.va-chatbox_ellipses_out {
-  &:before {
-    content: $va-chatbox_ellipses_out; 
-  }
-}
-.va-chatbox {
-  &:before {
-    content: $va-chatbox; 
-  }
-}
-.va-checkmark_done {
-  &:before {
-    content: $va-checkmark_done; 
-  }
-}
 .va-checkmark {
-  &:before {
-    content: $va-checkmark; 
-  }
-}
-.va-clipboard {
-  &:before {
-    content: $va-clipboard; 
-  }
-}
-.va-ellipse {
-  &:before {
-    content: $va-ellipse; 
-  }
-}
-.va-extension_puzzle {
-  &:before {
-    content: $va-extension_puzzle; 
-  }
-}
-.va-filter {
-  &:before {
-    content: $va-filter; 
-  }
-}
-.va-folder_open {
-  &:before {
-    content: $va-folder_open; 
-  }
-}
-.va-folder {
-  &:before {
-    content: $va-folder; 
-  }
-}
-.va-football {
-  &:before {
-    content: $va-football; 
-  }
-}
-.va-funnel_outline {
-  &:before {
-    content: $va-funnel_outline; 
-  }
-}
-.va-game_controller_outl_f1B1m {
-  &:before {
-    content: $va-game_controller_outl_f1B1m; 
-  }
-}
-.va-wallet_outline__1 {
-  &:before {
-    content: $va-wallet_outline__1; 
-  }
-}
-.va-alarm {
-  &:before {
-    content: $va-alarm; 
-  }
-}
-.va-apartment {
-  &:before {
-    content: $va-apartment; 
-  }
-}
-.va-arrow-down-circle {
-  &:before {
-    content: $va-arrow-down-circle; 
-  }
-}
-.va-arrow-down {
-  &:before {
-    content: $va-arrow-down; 
-  }
-}
-.va-arrow-left-circle {
-  &:before {
-    content: $va-arrow-left-circle; 
-  }
-}
-.va-arrow-left {
-  &:before {
-    content: $va-arrow-left; 
-  }
-}
-.va-arrow-right-circle {
-  &:before {
-    content: $va-arrow-right-circle; 
-  }
-}
-.va-arrow-right {
-  &:before {
-    content: $va-arrow-right; 
-  }
-}
-.va-arrow-up-circle {
-  &:before {
-    content: $va-arrow-up-circle; 
-  }
-}
-.va-arrow-up {
-  &:before {
-    content: $va-arrow-up; 
-  }
-}
-.va-bicycle {
-  &:before {
-    content: $va-bicycle; 
-  }
-}
-.va-bold {
-  &:before {
-    content: $va-bold; 
-  }
-}
-.va-book {
-  &:before {
-    content: $va-book; 
-  }
-}
-.va-bookmark {
-  &:before {
-    content: $va-bookmark; 
-  }
-}
-.va-briefcase {
-  &:before {
-    content: $va-briefcase; 
-  }
-}
-.va-bubble {
-  &:before {
-    content: $va-bubble; 
-  }
-}
-.va-bug {
-  &:before {
-    content: $va-bug; 
-  }
-}
-.va-bullhorn {
-  &:before {
-    content: $va-bullhorn; 
-  }
-}
-.va-bus {
-  &:before {
-    content: $va-bus; 
-  }
-}
-.va-calendar-full {
-  &:before {
-    content: $va-calendar-full; 
-  }
-}
-.va-camera-video {
-  &:before {
-    content: $va-camera-video; 
-  }
-}
-.va-camera {
-  &:before {
-    content: $va-camera; 
-  }
-}
-.va-car {
-  &:before {
-    content: $va-car; 
-  }
-}
-.va-cart {
-  &:before {
-    content: $va-cart; 
-  }
-}
-.va-chart-bars {
-  &:before {
-    content: $va-chart-bars; 
-  }
+	&:before {
+		content: $va-checkmark;
+	}
 }
 .va-checkmark-circle {
-  &:before {
-    content: $va-checkmark-circle; 
-  }
+	&:before {
+		content: $va-checkmark-circle;
+	}
 }
-.va-chevron-down-circle {
-  &:before {
-    content: $va-chevron-down-circle; 
-  }
-}
-.va-chevron-down {
-  &:before {
-    content: $va-chevron-down; 
-  }
-}
-.va-chevron-left-circle {
-  &:before {
-    content: $va-chevron-left-circle; 
-  }
-}
-.va-chevron-left {
-  &:before {
-    content: $va-chevron-left; 
-  }
-}
-.va-chevron-right-circle {
-  &:before {
-    content: $va-chevron-right-circle; 
-  }
-}
-.va-chevron-right {
-  &:before {
-    content: $va-chevron-right; 
-  }
-}
-.va-chevron-up-circle {
-  &:before {
-    content: $va-chevron-up-circle; 
-  }
-}
-.va-chevron-up {
-  &:before {
-    content: $va-chevron-up; 
-  }
-}
-.va-circle-minus {
-  &:before {
-    content: $va-circle-minus; 
-  }
-}
-.va-clock {
-  &:before {
-    content: $va-clock; 
-  }
-}
-.va-cloud-check {
-  &:before {
-    content: $va-cloud-check; 
-  }
-}
-.va-cloud-download {
-  &:before {
-    content: $va-cloud-download; 
-  }
-}
-.va-cloud-sync {
-  &:before {
-    content: $va-cloud-sync; 
-  }
-}
-.va-cloud-upload {
-  &:before {
-    content: $va-cloud-upload; 
-  }
-}
-.va-cloud {
-  &:before {
-    content: $va-cloud; 
-  }
-}
-.va-code {
-  &:before {
-    content: $va-code; 
-  }
-}
-.va-coffee-cup {
-  &:before {
-    content: $va-coffee-cup; 
-  }
-}
-.va-cog {
-  &:before {
-    content: $va-cog; 
-  }
-}
-.va-construction {
-  &:before {
-    content: $va-construction; 
-  }
-}
-.va-crop {
-  &:before {
-    content: $va-crop; 
-  }
-}
-.va-cross-circle {
-  &:before {
-    content: $va-cross-circle; 
-  }
+.va-apartments {
+	&:before {
+		content: $va-apartments;
+	}
 }
 .va-cross {
-  &:before {
-    content: $va-cross; 
+	&:before {
+		content: $va-cross;
+	}
+}
+.va-trash {
+	&:before {
+		content: $va-trash;
+	}
+}
+.va-menu {
+	&:before {
+		content: $va-menu;
+	}
+}
+.va-search {
+	&:before {
+		content: $va-search;
+	}
+}
+.va-sun {
+	&:before {
+		content: $va-sun;
+	}
+}
+.va-cog {
+	&:before {
+		content: $va-cog;
+	}
+}
+.va-tag {
+	&:before {
+		content: $va-tag;
+	}
+}
+.va-twitter {
+	&:before {
+		content: $va-twitter;
+	}
+}
+.va-google {
+	&:before {
+		content: $va-google;
+	}
+}
+.va-youtube {
+	&:before {
+		content: $va-youtube;
+	}
+}
+.va-facebook {
+	&:before {
+		content: $va-facebook;
+	}
+}
+.va-game-controller {
+	&:before {
+		content: $va-game-controller;
+	}
+}
+.va-solid-star {
+	&:before {
+		content: $va-solid-star;
+	}
+}
+.va-star {
+	&:before {
+		content: $va-star;
+  }
+  &:hover {
+    &:before {
+      content: $va-solid-star;
+    }
   }
 }
-.va-database {
-  &:before {
-    content: $va-database; 
-  }
+.va-solid-cart {
+	&:before {
+		content: $va-solid-cart;
+	}
 }
-.va-diamond {
-  &:before {
-    content: $va-diamond; 
+.va-cart {
+	&:before {
+		content: $va-cart;
   }
-}
-.va-dice {
-  &:before {
-    content: $va-dice; 
-  }
-}
-.va-dinner {
-  &:before {
-    content: $va-dinner; 
-  }
-}
-.va-direction-ltr {
-  &:before {
-    content: $va-direction-ltr; 
-  }
-}
-.va-direction-rtl {
-  &:before {
-    content: $va-direction-rtl; 
-  }
-}
-.va-download {
-  &:before {
-    content: $va-download; 
-  }
-}
-.va-drop {
-  &:before {
-    content: $va-drop; 
+  &:hover {
+    &:before {
+      content: $va-solid-cart;
+    }
   }
 }
 .va-earth {
-  &:before {
-    content: $va-earth; 
-  }
+	&:before {
+		content: $va-earth;
+	}
 }
-.va-enter-down {
-  &:before {
-    content: $va-enter-down; 
-  }
-}
-.va-enter {
-  &:before {
-    content: $va-enter; 
-  }
-}
-.va-envelope {
-  &:before {
-    content: $va-envelope; 
-  }
-}
-.va-exit-up {
-  &:before {
-    content: $va-exit-up; 
-  }
-}
-.va-exit {
-  &:before {
-    content: $va-exit; 
-  }
-}
-.va-eye {
-  &:before {
-    content: $va-eye; 
-  }
-}
-.va-file-add {
-  &:before {
-    content: $va-file-add; 
-  }
-}
-.va-file-empty {
-  &:before {
-    content: $va-file-empty; 
-  }
-}
-.va-film-play {
-  &:before {
-    content: $va-film-play; 
-  }
-}
-.va-flag {
-  &:before {
-    content: $va-flag; 
-  }
-}
-.va-frame-contract {
-  &:before {
-    content: $va-frame-contract; 
-  }
-}
-.va-frame-expand {
-  &:before {
-    content: $va-frame-expand; 
-  }
-}
-.va-funnel {
-  &:before {
-    content: $va-funnel; 
-  }
-}
-.va-gift {
-  &:before {
-    content: $va-gift; 
-  }
-}
-.va-graduation-hat {
-  &:before {
-    content: $va-graduation-hat; 
-  }
-}
-.va-hand {
-  &:before {
-    content: $va-hand; 
-  }
-}
-.va-heart-pulse {
-  &:before {
-    content: $va-heart-pulse; 
-  }
+.va-solid-heart {
+	&:before {
+		content: $va-solid-heart;
+	}
 }
 .va-heart {
-  &:before {
-    content: $va-heart; 
-  }
+	&:before {
+		content: $va-heart;
+	}
 }
-.va-highlight {
-  &:before {
-    content: $va-highlight; 
-  }
+.va-mail-open {
+	&:before {
+		content: $va-mail-open;
+	}
 }
-.va-history {
-  &:before {
-    content: $va-history; 
-  }
+.va-mail-unread {
+	&:before {
+		content: $va-mail-unread;
+	}
 }
-.va-home {
-  &:before {
-    content: $va-home; 
-  }
+.va-mail {
+	&:before {
+		content: $va-mail;
+	}
 }
-.va-hourglass {
-  &:before {
-    content: $va-hourglass; 
-  }
+.va-gift {
+	&:before {
+		content: $va-gift;
+	}
 }
-.va-inbox {
-  &:before {
-    content: $va-inbox; 
-  }
+.va-paw {
+	&:before {
+		content: $va-paw;
+	}
 }
-.va-indent-decrease {
-  &:before {
-    content: $va-indent-decrease; 
-  }
+.va-rocket {
+	&:before {
+		content: $va-rocket;
+	}
 }
-.va-indent-increase {
-  &:before {
-    content: $va-indent-increase; 
-  }
+.va-tv {
+	&:before {
+		content: $va-tv;
+	}
 }
-.va-italic {
-  &:before {
-    content: $va-italic; 
-  }
+.va-chev-right {
+	&:before {
+		content: $va-chev-right;
+	}
 }
-.va-keyboard {
-  &:before {
-    content: $va-keyboard; 
-  }
+.va-chev-top {
+	&:before {
+		content: $va-chev-top;
+	}
 }
-.va-laptop-phone {
-  &:before {
-    content: $va-laptop-phone; 
-  }
+.va-chev-left {
+	&:before {
+		content: $va-chev-left;
+	}
 }
-.va-laptop {
-  &:before {
-    content: $va-laptop; 
-  }
+.va-chev-down {
+	&:before {
+		content: $va-chev-down;
+	}
 }
-.va-layers {
-  &:before {
-    content: $va-layers; 
-  }
+.va-shirt {
+	&:before {
+		content: $va-shirt;
+	}
 }
-.va-leaf {
-  &:before {
-    content: $va-leaf; 
-  }
+.va-phone {
+	&:before {
+		content: $va-phone;
+	}
 }
-.va-license {
-  &:before {
-    content: $va-license; 
-  }
+.va-house {
+	&:before {
+		content: $va-house;
+	}
 }
-.va-lighter {
-  &:before {
-    content: $va-lighter; 
-  }
+.va-card {
+	&:before {
+		content: $va-card;
+	}
 }
-.va-line-spacing {
-  &:before {
-    content: $va-line-spacing; 
-  }
+.va-un-link-expo {
+	&:before {
+		content: $va-un-link-expo;
+	}
 }
-.va-linearicons {
-  &:before {
-    content: $va-linearicons; 
-  }
+.va-unlink {
+	&:before {
+		content: $va-unlink;
+	}
 }
 .va-link {
-  &:before {
-    content: $va-link; 
-  }
+	&:before {
+		content: $va-link;
+	}
 }
-.va-list {
-  &:before {
-    content: $va-list; 
-  }
+.va-solid-doted-lock {
+	&:before {
+		content: $va-solid-doted-lock;
+	}
 }
-.va-location {
-  &:before {
-    content: $va-location; 
-  }
+.va-solid-lock {
+	&:before {
+		content: $va-solid-lock;
+	}
 }
 .va-lock {
-  &:before {
-    content: $va-lock; 
+	&:before {
+		content: $va-lock;
+	}
+}
+.va-compose {
+	&:before {
+		content: $va-compose;
+	}
+}
+.va-printer {
+	&:before {
+		content: $va-printer;
+  }
+  &:hover {
+    &:before {
+      content: $va-solid-printer;
+    }
   }
 }
-.va-magic-wand {
-  &:before {
-    content: $va-magic-wand; 
-  }
+.va-color-printer .path1 {
+	&:before {
+		content: $va-color-printer-path1;
+		color: rgb(255, 0, 0);
+	}
 }
-.va-magnifier {
-  &:before {
-    content: $va-magnifier; 
-  }
+.va-color-printer .path2 {
+	&:before {
+		content: $va-color-printer-path2;
+		margin-left: -1em;
+		color: rgb(0, 0, 0);
+	}
 }
-.va-map-marker {
-  &:before {
-    content: $va-map-marker; 
-  }
+.va-color-printer .path3 {
+	&:before {
+		content: $va-color-printer-path3;
+		margin-left: -1em;
+		color: rgb(0, 0, 0);
+	}
 }
-.va-map {
-  &:before {
-    content: $va-map; 
-  }
+.va-color-printer .path4 {
+	&:before {
+		content: $va-color-printer-path4;
+		margin-left: -1em;
+		color: rgb(0, 0, 0);
+	}
 }
-.va-menu-circle {
-  &:before {
-    content: $va-menu-circle; 
-  }
+.va-solid-printer {
+	&:before {
+		content: $va-solid-printer;
+	}
 }
-.va-menu {
-  &:before {
-    content: $va-menu; 
-  }
+.va-solid-user {
+	&:before {
+		content: $va-solid-user;
+	}
 }
-.va-mic {
-  &:before {
-    content: $va-mic; 
+.va-user {
+	&:before {
+		content: $va-user;
+  }
+  &:hover {
+    &:before {
+      content: $va-solid-user;
+    }
   }
 }
 .va-moon {
-  &:before {
-    content: $va-moon; 
+	&:before {
+		content: $va-moon;
+  }
+  &:hover {
+    &:before {
+      content: $va-solid-moon;
+    }
   }
 }
-.va-move {
-  &:before {
-    content: $va-move; 
-  }
+.va-solid-moon {
+	&:before {
+		content: $va-solid-moon;
+	}
 }
-.va-music-note {
-  &:before {
-    content: $va-music-note; 
+.va-solid-store {
+	&:before {
+		content: $va-solid-store;
   }
-}
-.va-mustache {
-  &:before {
-    content: $va-mustache; 
-  }
-}
-.va-neutral {
-  &:before {
-    content: $va-neutral; 
-  }
-}
-.va-page-break {
-  &:before {
-    content: $va-page-break; 
-  }
-}
-.va-paperclip {
-  &:before {
-    content: $va-paperclip; 
-  }
-}
-.va-paw {
-  &:before {
-    content: $va-paw; 
-  }
-}
-.va-pencil {
-  &:before {
-    content: $va-pencil; 
-  }
-}
-.va-phone-handset {
-  &:before {
-    content: $va-phone-handset; 
-  }
-}
-.va-phone {
-  &:before {
-    content: $va-phone; 
-  }
-}
-.va-picture {
-  &:before {
-    content: $va-picture; 
-  }
-}
-.va-pie-chart {
-  &:before {
-    content: $va-pie-chart; 
-  }
-}
-.va-pilcrow {
-  &:before {
-    content: $va-pilcrow; 
-  }
-}
-.va-plus-circle {
-  &:before {
-    content: $va-plus-circle; 
-  }
-}
-.va-pointer-down {
-  &:before {
-    content: $va-pointer-down; 
-  }
-}
-.va-pointer-left {
-  &:before {
-    content: $va-pointer-left; 
-  }
-}
-.va-pointer-right {
-  &:before {
-    content: $va-pointer-right; 
-  }
-}
-.va-pointer-up {
-  &:before {
-    content: $va-pointer-up; 
-  }
-}
-.va-poop {
-  &:before {
-    content: $va-poop; 
-  }
-}
-.va-power-switch {
-  &:before {
-    content: $va-power-switch; 
-  }
-}
-.va-printer {
-  &:before {
-    content: $va-printer; 
-  }
-}
-.va-pushpin {
-  &:before {
-    content: $va-pushpin; 
-  }
-}
-.va-question-circle {
-  &:before {
-    content: $va-question-circle; 
-  }
-}
-.va-redo {
-  &:before {
-    content: $va-redo; 
-  }
-}
-.va-rocket {
-  &:before {
-    content: $va-rocket; 
-  }
-}
-.va-sad {
-  &:before {
-    content: $va-sad; 
-  }
-}
-.va-screen {
-  &:before {
-    content: $va-screen; 
-  }
-}
-.va-select {
-  &:before {
-    content: $va-select; 
-  }
-}
-.va-shirt {
-  &:before {
-    content: $va-shirt; 
-  }
-}
-.va-smartphone {
-  &:before {
-    content: $va-smartphone; 
-  }
-}
-.va-smile {
-  &:before {
-    content: $va-smile; 
-  }
-}
-.va-sort-alpha-asc {
-  &:before {
-    content: $va-sort-alpha-asc; 
-  }
-}
-.va-sort-amount-asc {
-  &:before {
-    content: $va-sort-amount-asc; 
-  }
-}
-.va-spell-check {
-  &:before {
-    content: $va-spell-check; 
-  }
-}
-.va-star-empty {
-  &:before {
-    content: $va-star-empty; 
-  }
-}
-.va-star-half {
-  &:before {
-    content: $va-star-half; 
-  }
-}
-.va-star {
-  &:before {
-    content: $va-star; 
+  &:hover {
+    &:before {
+      content: $va-solid-store;
+    }
   }
 }
 .va-store {
-  &:before {
-    content: $va-store; 
+	&:before {
+		content: $va-store;
+	}
+}
+.va-arrow-top {
+	&:before {
+		content: $va-arrow-top;
+	}
+}
+.va-arrow-left {
+	&:before {
+		content: $va-arrow-left;
+	}
+}
+.va-arrow-down {
+	&:before {
+		content: $va-arrow-down;
+	}
+}
+.va-arrow-right {
+	&:before {
+		content: $va-arrow-right;
+	}
+}
+.va-arrow-up-circle {
+	&:before {
+		content: $va-arrow-up-circle;
+	}
+}
+.va-arrow-right-circle {
+	&:before {
+		content: $va-arrow-right-circle;
+	}
+}
+.va-arrow-down-circle {
+	&:before {
+		content: $va-arrow-down-circle;
+	}
+}
+.va-arrow-left-circle {
+	&:before {
+		content: $va-arrow-left-circle;
+	}
+}
+.va-solid-arrow-up-circle {
+	&:before {
+		content: $va-solid-arrow-up-circle;
+	}
+}
+.va-solid-arrow-left-circle {
+	&:before {
+		content: $va-solid-arrow-left-circle;
+	}
+}
+.va-solid-arrow-down-circle {
+	&:before {
+		content: $va-solid-arrow-down-circle;
+	}
+}
+.va-solid-arrow-right-circle {
+	&:before {
+		content: $va-solid-arrow-right-circle;
+	}
+}
+.va-regular-arrow-right-circle {
+	&:before {
+		content: $va-regular-arrow-right-circle;
+	}
+}
+.va-solid-bell {
+	&:before {
+		content: $va-solid-bell;
+	}
+}
+.va-bell {
+	&:before {
+		content: $va-bell;
+  }
+  &:hover {
+    &:before {
+      content: $va-solid-bell;
+    }
   }
 }
-.va-strikethrough {
-  &:before {
-    content: $va-strikethrough; 
-  }
-}
-.va-sun {
-  &:before {
-    content: $va-sun; 
-  }
-}
-.va-sync {
-  &:before {
-    content: $va-sync; 
-  }
-}
-.va-tablet {
-  &:before {
-    content: $va-tablet; 
-  }
-}
-.va-tag {
-  &:before {
-    content: $va-tag; 
-  }
-}
-.va-text-align-center {
-  &:before {
-    content: $va-text-align-center; 
-  }
-}
-.va-text-align-justify {
-  &:before {
-    content: $va-text-align-justify; 
-  }
-}
-.va-text-align-left {
-  &:before {
-    content: $va-text-align-left; 
-  }
-}
-.va-text-align-right {
-  &:before {
-    content: $va-text-align-right; 
-  }
-}
-.va-text-format-remove {
-  &:before {
-    content: $va-text-format-remove; 
-  }
-}
-.va-text-format {
-  &:before {
-    content: $va-text-format; 
-  }
-}
-.va-text-size {
-  &:before {
-    content: $va-text-size; 
-  }
-}
-.va-thumbs-down {
-  &:before {
-    content: $va-thumbs-down; 
-  }
-}
-.va-thumbs-up {
-  &:before {
-    content: $va-thumbs-up; 
-  }
-}
-.va-train {
-  &:before {
-    content: $va-train; 
-  }
-}
-.va-trash {
-  &:before {
-    content: $va-trash; 
-  }
-}
-.va-underline {
-  &:before {
-    content: $va-underline; 
-  }
-}
-.va-undo {
-  &:before {
-    content: $va-undo; 
-  }
-}
-.va-unlink {
-  &:before {
-    content: $va-unlink; 
-  }
-}
-.va-upload {
-  &:before {
-    content: $va-upload; 
-  }
-}
-.va-user {
-  &:before {
-    content: $va-user; 
-  }
-}
-.va-users {
-  &:before {
-    content: $va-users; 
-  }
-}
-.va-volume-high {
-  &:before {
-    content: $va-volume-high; 
-  }
-}
-.va-volume-low {
-  &:before {
-    content: $va-volume-low; 
-  }
-}
-.va-volume-medium {
-  &:before {
-    content: $va-volume-medium; 
-  }
-}
-.va-volume {
-  &:before {
-    content: $va-volume; 
-  }
-}
-.va-warning {
-  &:before {
-    content: $va-warning; 
-  }
-}
-.va-wheelchair {
-  &:before {
-    content: $va-wheelchair; 
-  }
-}
-

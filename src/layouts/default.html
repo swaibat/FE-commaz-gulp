@@ -17,7 +17,7 @@
 	<script src="{{root}}assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="loade">
+<body class="loader">
 	{{>navigation}}
 	{{/unlesspage}}
 	{{> body}}
@@ -29,6 +29,7 @@
 <script src="{{root}}assets/vendors/star-rating-svg/jquery.star-rating-svg.min.js"></script>
 <script src="{{root}}assets/js/app.js"></script>
 <script src="{{root}}assets/js/shop.js"></script>
-
+{{#ifpage 'index'}}
+<script>flashSale()</script>{{/ifpage}}
 </html>
 {{/unlesspage}}

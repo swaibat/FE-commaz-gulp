@@ -67,6 +67,34 @@ $(() => {
 		$('#tax, #shipping').text(0);
 		$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo('.cart-wrapper');
 	};
+	$('.btn-up').click(({ target }) => {
+		const id = $(target).attr('id').split('-')[2];
+		const basePrice = parseInt($(`#form-control-${id}`).val()) + 1;
+		const currentInput = parseInt($(`#price-${id}`).text()) * basePrice;
+		const totalPrice = $('.cart-wrapper .price')
+			.not(`#price-${id}`)
+			.map((a, e) => parseInt($(e).text()))
+			.get();
+		const subTotal = [...totalPrice, currentInput].reduce((a, b) => a + b);
+		$('#s-total').text(subTotal);
+		$('#g-total').text(subTotal + parseInt($('#shipping').text()) + parseInt($('#tax').text()));
+		console.log(subTotal);
+	});
+
+	$('.btn-down').click(({ target }) => {
+		const id = $(target).attr('id').split('-')[2];
+
+		const basePrice = parseInt($(`#form-control-${id}`).val()) - 1;
+		const currentInput = parseInt($(`#price-${id}`).text()) * basePrice;
+		const totalPrice = $('.cart-wrapper .price')
+			.not(`#price-${id}`)
+			.map((a, e) => parseInt($(e).text()))
+			.get();
+		const subTotal = [...totalPrice, currentInput].reduce((a, b) => a + b);
+		$('#s-total').text(subTotal);
+		$('#g-total').text(subTotal + parseFloat($('#shipping').text()) + parseFloat($('#tax').text()));
+		console.log(subTotal);
+	});
 
 	const cart = new List('shopping-cart', cartOptions);
 	// update total
@@ -82,7 +110,7 @@ $(() => {
 	$('.btn-down').click(({ target }) => {
 		const id = target.id.split('-')[2];
 		const input = $(`#form-control-${id}`);
-		if (input.val() > 1) {
+		if (input.val() >= 1) {
 			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()));
 			input.val(JSON.parse(input.val()) - 1);
 		}
@@ -179,7 +207,7 @@ $('#carousel').owlCarousel({
 });
 
 // FLASH SALE TIMER
-$(() => {
+function flashSale(params) {
 	function getTimeRemaining(endtime) {
 		var t = Date.parse(endtime) - Date.parse(new Date());
 		var seconds = Math.floor((t / 1000) % 60);
@@ -208,4 +236,4 @@ $(() => {
 		}, 1000);
 	}
 	initializeClock(new Date().getFullYear() + 1 + '/1/1');
-});
+};

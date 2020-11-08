@@ -19,19 +19,19 @@
 				</div>
 				<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
 					<div class="widget-header">
-						<a class="p-0 d-flex flex-column" href="{{root}}profile/profile.html">
+						<a class="cursor-pointer p-0 d-flex flex-column {{#ifpage 'profile'}} active {{/ifpage}}" href="{{root}}profile/profile.html">
 							<span class="va va-user btn btn-icon-nav p-0"></span>
 							<small class="text lr-only"> My profile </small>
 						</a>
 					</div>
 					<div class="widget-header">
-						<a href="{{root}}notify/notifications.html" class="widget-view d-flex flex-column">
-							<span class="va va-notifications btn btn-icon-nav p-0"></span>
+						<a href="{{root}}notify/notifications.html" class="cursor-pointer d-flex flex-column {{#ifpage 'notifications'}} active {{/ifpage}}">
+							<span class="va va-bell btn btn-icon-nav p-0"></span>
 							<small class="text lr-only">Notifications</small>
 						</a>
 					</div>
 					<div class="widget-header">
-						<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
+						<span class="cursor-pointer d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
 							<span class="va va-cart btn btn-icon-nav p-0"></span>
 							<small class="text lr-only text-muted"> Cart </small>
 						</span>
@@ -58,8 +58,6 @@
 			</li>
 			<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
 				<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
-					<span class="va va-question-circle pr-2">
-
 					</span>Pages</a>
 				<ul class="dropdown-menu">
 					<li class="">

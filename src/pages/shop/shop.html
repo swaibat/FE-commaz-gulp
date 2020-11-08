@@ -6,7 +6,7 @@ title: Shop
         {{> _filter_sidenav}}
         <div class="products-list" id="products-list">
             <nav aria-label="breadcrumb" class="d-flex align-items-center my-2 justify-content-between">
-                <span class="btn va va-menu btn-outline-primary rounded-sm" id="toggle-filter"></span>
+                <span class="btn px-2 py-1 va va-menu btn-outline-primary rounded-sm" id="toggle-filter"></span>
                 <ol class="breadcrumb bg-transparent p-2 mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Shop</li>
@@ -59,7 +59,7 @@ title: Shop
                     <div class="input-group col-12 p-0 mt-sm-3 ">
                         <input type="search" class="form-control fuzzy-search" placeholder="Search for products . . .">
                         <div class="input-group-append">
-                            <span class="va va-magnifier input-group-text"></span>
+                            <span class="va va-search input-group-text"></span>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ title: Shop
             <!-- products -->
             <div class="grid-view overflow-hidden rounded list mt-3">
                 {{#each allproducts}}
-                <div class="card product-card shadow-sm rounded align-self-start">
+                <div class="card product-card align-self-start">
                     <div class="card-content">
                         <div class="btn-group-vertical position-absolute right-0 mt-2">
                             <span data-toggle="tooltip" data-title="add to cart">

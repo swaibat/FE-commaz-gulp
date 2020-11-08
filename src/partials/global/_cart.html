@@ -8,7 +8,7 @@
 			<div class="modal-body cart-wrapper list">
 				<!-- <div class="p-3 d-flex flex-column cart-wrapper w-100 list border"> -->
 					{{#each cart}}
-					<div class="media bg-light p-3 rounded mb-3 border">
+					<div class="cart-item media bg-light p-3 rounded mb-3 border">
 						<img class="mr-2 rounded shadow-sm border" height="45" src="{{root}}../{{this.image}}"
 							alt="{{this.title}}">
 						<div class="media-body">
@@ -42,13 +42,13 @@
 										<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 												:</span>XXL</p>
 									</div>
-									<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-{{this.id}}">1190</h5>
+									<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-{{this.id}}">{{this.price}}</h5>
 								</div>
 							</div>
 						</div>
 						<span id="cart-item-{{this.id}}"
 							class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-							<span class="va va-cross"></span>
+							<span class="va va-trash"></span>
 						</span>
 					</div>
 					{{/each}}

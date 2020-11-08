@@ -1,11 +1,11 @@
 <aside id="category-nav" class="categories-sidenav col-md-2 pr-0 lr-only">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         {{#each allcategories}}
-        <a class="nav-link d-flex align-items-center" id="v-pills-{{this.id}}-tab" data-toggle="pill" href="#v-pills-{{this.id}}" role="tab"
-            aria-controls="v-pills-{{this.id}}" aria-selected="true">
+        <a class="nav-link d-flex align-items-center" id="v-pills-{{this.id}}-tab" data-toggle="pill"
+            href="#v-pills-{{this.id}}" role="tab" aria-controls="v-pills-{{this.id}}" aria-selected="true">
             <span class="va va-{{this.icon}} btn btn-icon btn-light-200 p-2 mr-2"></span>
             <span class="flex-fill mr-2">{{this.name}}</span>
-            <span class="va va-chevron-down ml-auto"></span>
+            <span class="va va-chev-down ml-auto"></span>
         </a>
         {{/each}}
     </div>

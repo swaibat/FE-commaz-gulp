@@ -25,53 +25,6 @@ $swiper-bg: #f7f7f7;
 	cursor: pointer;
 }
 
-//navigation button custom feather icons
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-	background-image: none;
-	width: 35px;
-	font-size: $h1-font-size;
-
-	&:focus {
-		outline: none;
-	}
-
-	&:after {
-		font-family: 'feather';
-	}
-}
-
-.swiper-button-prev {
-	left: 0;
-
-	&:after {
-		content: '\e843';
-	}
-}
-
-.swiper-button-next {
-	right: 0;
-
-	&:after {
-		content: '\e844';
-	}
-}
-
-.swiper-container-rtl {
-	.swiper-button-prev {
-		&:after {
-			content: '\e844';
-		}
-	}
-
-	.swiper-button-next {
-		&:after {
-			content: '\e843';
-		}
-	}
-}
 
 // color options
 

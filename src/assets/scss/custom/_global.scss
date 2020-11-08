@@ -368,9 +368,9 @@ ul.row-sm {
 	display: none;
 }
 .badge-finish {
-	font-size: 3rem;
-	background: $green;
 	border-radius: 50%;
+	border: solid 2px $success;
+	color: $success !important;
 }
 .select-payment-btn {
 	&.active {
@@ -461,9 +461,6 @@ ul.row-sm {
 	border: solid 1px $primary;
 }
 
-.widget-view {
-	cursor: pointer;
-}
 .dropdown-user .dropdown-toggle::after {
 	display: none;
 }
@@ -1026,7 +1023,7 @@ svg {
 	}
 }
 .categories-sidenav {
-	.va-chevron-down {
+	.va-chev-down {
 		transition: all 0.3s;
 	}
 	.nav-link {
@@ -1037,7 +1034,7 @@ svg {
 				color: $primary !important;
 				background: lighten($color: $primary, $amount: 45);
 			}
-			.va-chevron-down {
+			.va-chev-down {
 				transform: rotate(-90deg);
 			}
 		}
@@ -1186,6 +1183,7 @@ svg {
 		background: white;
 		margin-left: -1.9rem !important;
 		opacity: 1;
+		font-size: .7rem;
 	}
 }
 .modal.fixed-left .modal-dialog-aside {
@@ -1195,6 +1193,7 @@ svg {
 		background: white;
 		margin-right: -1.9rem !important;
 		opacity: 1;
+		font-size: .7rem;
 	}
 }
 .modal.show .modal-dialog-aside {
@@ -1203,20 +1202,7 @@ svg {
 .shadow-sm-top {
 	box-shadow: 1px -7px 11px 0px rgba(0, 0, 0, 0.075);
 }
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu {
-		display: none !important;
-	}
-	.navbar .nav-item:hover .nav-link {
-		color: #fff !important;
-	}
-	.navbar .nav-item:hover .dropdown-menu {
-		display: block !important;
-	}
-	.navbar .nav-item .dropdown-menu {
-		margin-top: 0 !important;
-	}
-}
+
 .nav-pills .show .nav-link {
 	background: none;
 	color: $body-color;
@@ -1268,5 +1254,27 @@ svg {
 .rounded-sm-left {
 	@include media-breakpoint-up(sm) {
 		border-radius: $border-radius !important;
+	}
+}
+
+input:checked + .va-moon {
+	font-family: $vamoo-font-family;
+	content: $va-solid-moon;
+}
+
+.widget-header {
+	.active {
+		.va-user {
+			&:before {
+				content: $va-solid-user;
+			}
+		}
+	}
+	.active {
+		.va-bell {
+			&:before {
+				content: $va-solid-bell;
+			}
+		}
 	}
 }

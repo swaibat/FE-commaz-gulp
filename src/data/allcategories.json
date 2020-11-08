@@ -152,7 +152,7 @@
 		"name": "Phones & Tablets",
 		"slug": "phones-tablets",
 		"total": 746,
-		"icon": "phone_portrait",
+		"icon": "phone",
 		"sub": [
 			{
 				"name": "Clothing & Shoes",
@@ -173,7 +173,7 @@
 		"name": "Home & Office",
 		"slug": "phones-tablets",
 		"total": 746,
-		"icon": "home",
+		"icon": "house",
 		"sub": [
 			{
 				"name": "Clothing & Shoes",
@@ -194,7 +194,7 @@
 		"name": "Fashion & Beauty",
 		"slug": "fashion",
 		"total": 746,
-		"icon": "shirt_outline",
+		"icon": "shirt",
 		"sub": [
 			{
 				"name": "Clothing & Shoes",
@@ -215,7 +215,7 @@
 		"name": "Toys & Games",
 		"slug": "toys-games",
 		"total": 746,
-		"icon": "game_controller_outl_f1B1m",
+		"icon": "game-controller",
 		"sub": []
 	},
 	{
@@ -231,7 +231,7 @@
 		"name": "property",
 		"slug": "property",
 		"total": 746,
-		"icon": "apartment",
+		"icon": "apartments",
 		"sub": []
 	},
 	{

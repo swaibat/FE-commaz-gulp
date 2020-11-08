@@ -15,7 +15,7 @@
 	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="loade">
+<body class="loader">
 	<div class="fixed-top shadow-sm">
 		<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	
@@ -45,19 +45,19 @@
 					</div>
 					<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
 						<div class="widget-header">
-							<a class="p-0 d-flex flex-column" href="../profile/profile.html">
+							<a class="cursor-pointer p-0 d-flex flex-column " href="../profile/profile.html">
 								<span class="va va-user btn btn-icon-nav p-0"></span>
 								<small class="text lr-only"> My profile </small>
 							</a>
 						</div>
 						<div class="widget-header">
-							<a href="../notify/notifications.html" class="widget-view d-flex flex-column">
-								<span class="va va-notifications btn btn-icon-nav p-0"></span>
+							<a href="../notify/notifications.html" class="cursor-pointer d-flex flex-column ">
+								<span class="va va-bell btn btn-icon-nav p-0"></span>
 								<small class="text lr-only">Notifications</small>
 							</a>
 						</div>
 						<div class="widget-header">
-							<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
+							<span class="cursor-pointer d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
 								<span class="va va-cart btn btn-icon-nav p-0"></span>
 								<small class="text lr-only text-muted"> Cart </small>
 							</span>
@@ -83,8 +83,6 @@
 				</li>
 				<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
 					<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
-						<span class="va va-question-circle pr-2">
-	
 						</span>Pages</a>
 					<ul class="dropdown-menu">
 						<li class="">
@@ -908,7 +906,7 @@
 								<span class="va va-user p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Personal Details</h1>
 								<span class="step-1 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-1">
-									Edit personal details <span class="va va-pencil mr-2 mb-n2"></span>
+									Edit <span class="va va-compose mr-2 mb-n2"></span>
 								</span>
 							
 							</li>
@@ -956,10 +954,10 @@
 									</form>
 								</div>
 							</div>						<li class="list-group-item border-0 d-flex align-items-center py-4">
-								<span class="va va-home p-3 btn-lg btn-primary ml-n5 mr-3"></span>
+								<span class="va va-house p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Shipping</h1>
 								<span class="step-2 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-2">
-									Edit Shipping details <span class="va va-pencil mr-2 mb-n2"></span></span>
+									Edit <span class="va va-compose mr-2 mb-n2"></span></span>
 							</li>
 							<span>
 								<div class="bg-white">
@@ -1295,14 +1293,14 @@
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-card"></span>
 								<h1 class="card-title mb-0">Payment options</h1>
 								<span class="step-3 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-3">
-									Edit Payment Options <span class="va va-pencil mr-2 mb-n2"></span>
+									Edit<span class="va va-compose mr-2 mb-n2"></span>
 								</span>
 							</li>
 							<span class="step-3 collapse">
 								<img class="mx-3" height="30" src="../assets/images/payments/PayPal.svg" alt="" />
 							</span>
 							<div class="step-2 collapse" data-parent="#checkout-collapse">
-								<form  class="payment-form p-3 bg-white">
+								<form class="payment-form p-3 bg-white">
 									<div class="btn-group-toggle" data-toggle="buttons">
 										<label
 											class="btn btn-block select-payment-btn shadow-sm border active mb-3 d-flex align-items-center justify-content-between">
@@ -1345,16 +1343,17 @@
 											</span>
 										</label>
 									</div>
-									<button class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-3">continue to Payments</button>
+									<button class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-3">continue to
+										Payments</button>
 								</form>
 							</div>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-checkmark"></span>
 								<h1 class="card-title mb-0">Review Order</h1>
 							</li>
-							<div class="collapse step-3"  data-parent="#checkout-collapse">
+							<div class="collapse step-3" data-parent="#checkout-collapse">
 								<div class="p-4 bg-white text-center">
-									<span class="va va-checkmark badge-finish text-white"></span>
-									<form class="mt-3">
+									<span class="p-3 badge-finish btn-lg mb-3 va va-checkmark rounded-circle"></span>
+									<form class="mt-4">
 										<h3>All set</h3>
 										<h6>Please check if all the Data you have provided is correct</h6>
 										<div class="custom-control custom-checkbox mr-sm-2">
@@ -1598,7 +1597,7 @@
 				</div>
 				<div class="modal-body cart-wrapper list">
 					<!-- <div class="p-3 d-flex flex-column cart-wrapper w-100 list border"> -->
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
 								alt="Asus vivobook x405ua core i5">
 							<div class="media-body">
@@ -1632,16 +1631,16 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-1">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-1">405.3</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-1"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png"
 								alt="iPhone  Se 2020 Plus 11 Pro XR  ">
 							<div class="media-body">
@@ -1675,16 +1674,16 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-2">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-2">902</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-2"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png"
 								alt="Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon">
 							<div class="media-body">
@@ -1718,13 +1717,13 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-3">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-3">13.5</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-3"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
 					<!-- </div> -->

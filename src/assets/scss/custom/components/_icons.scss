@@ -4,7 +4,7 @@
 	}
 	&:hover {
 		&:before {
-			content: $va-heart-solid;
+			content: $va-solid-heart;
 		}
 	}
 }
@@ -15,13 +15,13 @@
 	}
 	&:hover {
 		&:before {
-			content: $va-cart-solid;
+			content: $va-solid-cart;
 		}
 	}
 }
 
 .cart:checked + label .cart-icon {
 	&:before {
-		content: $va-cart-solid;
+		content: $va-solid-cart;
 	}
 }

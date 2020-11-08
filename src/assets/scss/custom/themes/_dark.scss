@@ -214,6 +214,9 @@ body {
 				}
 			}
 		}
+		.cart-item{
+			border: solid $border-width $gray-600 !important;
+		}
 		
 		.pagination {
 			li {
