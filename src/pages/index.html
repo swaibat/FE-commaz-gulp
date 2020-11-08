@@ -56,11 +56,11 @@
                                 </div>
                                 <div class="item-meta">
                                     <div class="product-rating">
-                                        <i class="va va-star-fill text-warning"></i>
-                                        <i class="va va-star-fill text-warning"></i>
-                                        <i class="va va-star-fill text-warning"></i>
-                                        <i class="va va-star-fill text-warning"></i>
-                                        <i class="va va-star-fill text-secondary"></i>
+                                        <span class="va va-solid-star text-warning"></span>
+                                        <span class="va va-solid-star text-warning"></span>
+                                        <span class="va va-solid-star text-warning"></span>
+                                        <span class="va va-solid-star text-warning"></span>
+                                        <span class="va va-solid-star text-secondary"></span>
                                     </div>
                                     <p class="text-primary mb-0">{{ this.price }}</p>
                                 </div>
@@ -97,7 +97,9 @@
                             <a href="{{root}}shop/product-details.html" class="item">
                                 <div class="card-body p-4">
                                     <h6 class="title">{{ this.title }} </h6>
-                                    <img class="img-sm float-right" src="{{root}}{{ this.image }}">
+                                    <div class="img-sm float-right">
+                                        <img src="{{root}}{{ this.image }}">
+                                    </div>
                                     <h6 class="item-price">
                                         {{ this.price }}
                                     </h6>
@@ -135,7 +137,9 @@
                             <a href="{{root}}shop/product-details.html" class="item">
                                 <div class="card-body p-4">
                                     <h6 class="title">{{ this.title }} </h6>
-                                    <img class="img-sm float-right" src="{{root}}{{ this.image }}">
+                                    <div class="img-sm float-right">
+                                        <img src="{{root}}{{ this.image }}">
+                                    </div>
                                     <h6 class="item-price">
                                         {{ this.price }}
                                     </h6>

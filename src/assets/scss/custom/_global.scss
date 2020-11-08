@@ -24,15 +24,6 @@ body {
 	}
 }
 
-// scroll to Top Footer Button
-.scroll-top {
-	position: fixed;
-	bottom: 5%;
-	right: 30px;
-	display: none;
-	z-index: 99;
-}
-
 *:focus {
 	outline: none !important;
 	box-shadow: none !important;
@@ -78,73 +69,6 @@ body {
 		max-width: 100%;
 	}
 }
-// counter
-$continer-color: #0a6cf1;
-$continer-padding: 30px 20px 10px 20px;
-
-.counter-continer {
-	background-color: $continer-color;
-	padding: $continer-padding;
-	border-radius: 8px;
-	color: #fff;
-	width: 450px;
-	margin: auto;
-	box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
-	label {
-		display: block;
-	}
-	.project-title {
-		font-size: 9pt;
-		opacity: 0.5;
-	}
-	.project-name {
-		font-size: 16pt;
-		margin: 5px 0;
-	}
-	.counter {
-		padding: 25px;
-		margin: 25px 0 15px 0;
-		background-color: #000;
-		font-weight: 700;
-		border-radius: 8px;
-		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-		min-height: 80px;
-		div {
-			display: inline-block;
-		}
-		.days,
-		.hours,
-		.minutes,
-		.seconds {
-			width: 25%;
-			float: left;
-			text-align: center;
-			.value {
-				display: block;
-				font-size: 36pt;
-				width: 100%;
-				display: block;
-			}
-			span {
-				font-size: 8pt;
-				opacity: 0.8;
-				width: 100%;
-				display: block;
-			}
-		}
-		.hours::before,
-		.minutes::before,
-		.seconds::before {
-			content: ':';
-			float: left;
-			font-size: 20pt;
-			position: relative;
-			margin-top: 10px;
-			opacity: 0.7;
-			animation: pink 1s ease-in-out infinite;
-		}
-	}
-}
 
 .centerIt {
 	position: absolute;
@@ -168,6 +92,11 @@ $continer-padding: 30px 20px 10px 20px;
 .img-sm {
 	width: 10rem;
 	height: 10rem;
+	img{
+		object-fit: contain;
+		height: 100%;
+		width: 100%;
+	}
 }
 
 .home-category-banner .img-bg {
