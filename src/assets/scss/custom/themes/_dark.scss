@@ -214,10 +214,10 @@ body {
 				}
 			}
 		}
-		.cart-item{
+		.cart-item {
 			border: solid $border-width $gray-600 !important;
 		}
-		
+
 		.pagination {
 			li {
 				a {
@@ -234,6 +234,9 @@ body {
 					}
 				}
 			}
+		}
+		.notifications-sidenav .nav-link.active .btn {
+			color: $primary !important;
 		}
 	}
 }
