@@ -283,22 +283,6 @@ ul.row-sm {
 	right: 0.6rem;
 	left: auto;
 }
-.nav-pills {
-	.dropdown .dropdown-menu::before {
-		content: '';
-		position: absolute;
-		top: -1px;
-		left: 1.2rem;
-		width: 0.75rem;
-		height: 0.75rem;
-		display: block;
-		background: #fff;
-		transform: rotate(45deg) translate(-7px);
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-left: 1px solid rgba(0, 0, 0, 0.1);
-		box-sizing: border-box;
-	}
-}
 // shopping cart
 .sidenav {
 	height: 100%;
@@ -1166,6 +1150,23 @@ input:checked + .va-moon {
 			&:before {
 				content: $va-solid-bell;
 			}
+		}
+	}
+}
+
+.collapse-icon {
+	transition: all 0.3s;
+	margin-left: auto;
+	font-family: $vamoo-font-family;
+	&::before {
+		content: $va-chev-down;
+	}
+}
+.collapsed {
+	.collapse-icon {
+		&::before {
+			content: $va-chev-right;
+			transform: rotate(-90deg);
 		}
 	}
 }

@@ -238,5 +238,11 @@ body {
 		.notifications-sidenav .nav-link.active .btn {
 			color: $primary !important;
 		}
+		#d-mode + .va-moon {
+			&::before {
+				font-family: $vamoo-font-family;
+				content: $va-solid-moon;
+			}
+		}
 	}
 }
