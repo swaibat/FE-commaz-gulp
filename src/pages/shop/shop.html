@@ -23,17 +23,16 @@ title: Shop
                     <div class="d-flex align-items-center">
                         <label class="flex-fill col-4 p-0 mb-0 text-nowrap" for="">SORT
                             BY </label>
-                        <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
-                            <label class="btn btn-outline-secondary active">
-                                <input type="radio" name="sort" id="newest" autocomplete="off" checked>
+                        <div class="btn-group  ml-2" data-toggle="buttons">
+                            <buttom class="btn btn-outline-secondary sort" data-sort="id">
                                 Newest
-                            </label>
-                            <label class="btn btn-outline-secondary text-nowrap sort" data-sort="discount">
-                                <input type="radio" name="sort" id="discount" autocomplete="off"> Dicount
-                            </label>
-                            <label class="btn btn-outline-secondary sort" data-sort="price">
-                                <input type="radio" name="sort" id="price" autocomplete="off"> Price
-                            </label>
+                            </buttom>
+                            <button class="btn btn-outline-secondary text-nowrap sort" data-sort="discount">
+                                Dicount
+                            </button>
+                            <button class="btn btn-outline-secondary sort" data-sort="price">
+                                Price
+                            </button>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -42,19 +41,16 @@ title: Shop
                             FROM</label>
                         <div class="btn-group btn-group-toggle ml-2" data-toggle="buttons">
                             <label class="btn btn-outline-secondary">
-                                <input type="radio" name="shipping" id="all" autocomplete="off" checked> All
+                                <input type="radio" name="shipping-from" value="abroad" id="abroad"> Abroad
                             </label>
                             <label class="btn btn-outline-secondary">
-                                <input type="radio" name="shipping" id="abroad" autocomplete="off"> Abroad
-                            </label>
-                            <label class="btn btn-outline-secondary">
-                                <input type="radio" name="shipping" id="local" autocomplete="off"> Local
+                                <input type="radio" name="shipping-from" value="local" id="local"> Local
                             </label>
                         </div>
                     </div>
                     <div class="custom-control custom-radio ml-auto">
-                        <input type="checkbox" id="free-shipping" name="free-shipping" class="custom-control-input">
-                        <label class="custom-control-label text-nowrap" for="free-shipping">Free shipping</label>
+                        <input type="checkbox" id="shipping-fee" name="shipping-fee" value="free" class="custom-control-input">
+                        <label class="custom-control-label text-nowrap" for="shipping-fee">Free shipping</label>
                     </div>
                     <div class="input-group col-12 p-0 mt-sm-3 ">
                         <input type="search" class="form-control fuzzy-search" placeholder="Search for products . . .">
@@ -163,8 +159,11 @@ title: Shop
                                     {{ this.description }}
                                 </p>
                                 <div class="d-none">
-                                    <p class="category">{{this.category}}</p>
-                                    <p class="rating">{{this.rating}}</p>
+                                    <span class="shipping-from">{{this.shipping-from}}</span>
+                                    <span class="shipping-fee">{{this.shipping-fee}}</span>
+                                    <span class="id">{{this.id}}</span>
+                                    <span class="category">{{this.category}}</span>
+                                    <span class="rating">{{this.rating}}</span>
                                 </div>
                             </div>
                         </div>

@@ -4,7 +4,7 @@ title: Checkout
 <div class="container p-0">
 	<div class="row mx-0">
 		<div class="col-md-7 px-2">
-			<div class="pl-5 pr-2 bg-white mb-5 rounded shadow-sm">
+			<div class="pl-5 pr-2 py-4 bg-white mb-5 rounded shadow-sm">
 				<div class="accordion border-left" id="checkout-collapse">
 					<ul class="list-group">
 						{{> checkout_personal_details}}
@@ -19,65 +19,3 @@ title: Checkout
 		{{> checkout_summary}}
 	</div>
 </div>
-
-<script>
-	// steps
-	// personal
-	$('.btn-edit-checkout').click((e) => {
-		$(`#form-${e.target.id}`).addClass('show')
-		$(`#show-${e.target.id}`).addClass('d-none')
-	})
-
-	let errors = []
-
-	$('input').keydown(({ target }) => {
-		errors = []
-		$(".form-text").remove();
-		getFields({ name: target.name, value: target.value })
-		if (!errors.length) {
-			console.log('hello');
-			$(target).closest('form').find(':submit').removeAttr('disabled')
-		} else {
-			$(target).closest('form').find(':submit').attr('disabled')
-		}
-	})
-
-	$('input').focusout(({ target }) => {
-		errors = []
-		$(".form-text").remove();
-		getFields({ name: target.name, value: target.value })
-		if (!errors.length) {
-			$(target).closest('form').find(':submit').prop('disabled', false)
-		} else {
-			$(target).closest('form').find(':submit').prop('disabled', true)
-		}
-	})
-
-	$('form').submit((e) => {
-		e.preventDefault();
-		$(".form-text").remove();
-		$(e.target).serializeArray().map((el) => {
-			getFields({ name: el.name, value: el.value })
-		})
-	})
-
-
-	function showError(error) {
-		errors.push(error);
-		return `<small class="form-text text-danger">${error}</small>`;
-	};
-
-	function getFields(target) {
-		console.log(target);
-		const field = $(`#${target.name}`);
-		const minLen = field.attr('minlength') && parseInt(field.attr('minlength'));
-		const maxLen = field.attr('maxlength') && parseInt(field.attr('maxlength'));
-		// const min = field.attr('min') && parseInt(field.attr('min').trim());
-		const max = field.attr('max') && parseInt(field.attr('max'));
-		field.attr('required') && !target.value && $(`#${target.name}`).after(showError(`${target.name} is required`));
-		target.value && minLen > target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too short (${minLen} minimum)`));
-		target.value && maxLen < target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too long (${maxLen} maximum)`));
-		// value && min > value && $(`#${target.name}`).after(showError(`${target.name} is less (${min} minimum)`));
-		target.value && max < target.value && $(`#${target.name}`).after(showError(`${target.name} is much try (${max} maximum)`));
-	}
-</script>

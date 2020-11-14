@@ -1,10 +1,11 @@
 var shopOptions = {
-	valueNames: ['title', 'description', 'price', 'category', 'discount', 'rating'],
-	page: 16,
+	valueNames: ['id', 'title', 'description', 'price', 'category', 'discount', 'rating','shipping-fee','shipping-from'],
+	page: 20,
 	pagination: true,
 };
 
 let products = new List('products-list', shopOptions);
+console.log(products);
 
 $('.products-list input').keyup(() => {
 	notFoundText()
@@ -115,3 +116,67 @@ var categoryOptions = {
 };
 
 const categories = new List('product-categories', categoryOptions);
+
+// Checkout page
+$('.btn-edit-checkout').click((e)=>{
+	$(`.${e.target.id}`).next().toggleClass('show')
+})
+// steps
+// personal
+$('.btn-edit-checkout').click((e) => {
+	$(`#form-${e.target.id}`).addClass('show')
+	$(`#show-${e.target.id}`).addClass('d-none')
+})
+
+let errors = []
+
+$('input').keydown(({ target }) => {
+	errors = []
+	$(".form-text").remove();
+	getFields({ name: target.name, value: target.value })
+	if (!errors.length) {
+		console.log('hello');
+		$(target).closest('form').find(':submit').removeAttr('disabled')
+	} else {
+		$(target).closest('form').find(':submit').attr('disabled')
+	}
+})
+
+$('input').focusout(({ target }) => {
+	errors = []
+	$(".form-text").remove();
+	getFields({ name: target.name, value: target.value })
+	if (!errors.length) {
+		$(target).closest('form').find(':submit').prop('disabled', false)
+	} else {
+		$(target).closest('form').find(':submit').prop('disabled', true)
+	}
+})
+
+$('form').submit((e) => {
+	e.preventDefault();
+	$(".form-text").remove();
+	$(e.target).serializeArray().map((el) => {
+		getFields({ name: el.name, value: el.value })
+	})
+})
+
+
+function showError(error) {
+	errors.push(error);
+	return `<small class="form-text text-danger">${error}</small>`;
+};
+
+function getFields(target) {
+	console.log(target);
+	const field = $(`#${target.name}`);
+	const minLen = field.attr('minlength') && parseInt(field.attr('minlength'));
+	const maxLen = field.attr('maxlength') && parseInt(field.attr('maxlength'));
+	// const min = field.attr('min') && parseInt(field.attr('min').trim());
+	const max = field.attr('max') && parseInt(field.attr('max'));
+	field.attr('required') && !target.value && $(`#${target.name}`).after(showError(`${target.name} is required`));
+	target.value && minLen > target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too short (${minLen} minimum)`));
+	target.value && maxLen < target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too long (${maxLen} maximum)`));
+	// value && min > value && $(`#${target.name}`).after(showError(`${target.name} is less (${min} minimum)`));
+	target.value && max < target.value && $(`#${target.name}`).after(showError(`${target.name} is much try (${max} maximum)`));
+}

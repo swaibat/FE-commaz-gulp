@@ -15,7 +15,7 @@
 	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="loade">
+<body class="loader">
 	<div class="fixed-top shadow-sm">
 		<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	
@@ -899,7 +899,7 @@
 	<div class="container p-0">
 		<div class="row mx-0">
 			<div class="col-md-7 px-2">
-				<div class="pl-5 pr-2 bg-white mb-5 rounded shadow-sm">
+				<div class="pl-5 pr-2 py-4 bg-white mb-5 rounded shadow-sm">
 					<div class="accordion border-left" id="checkout-collapse">
 						<ul class="list-group">
 							<li class="list-group-item border-0 d-flex align-items-center pb-4">
@@ -949,14 +949,14 @@
 												Continue to Shipping
 											</button>
 											<span>Or</span>
-											<a href="/login" class="btn btn-primary mt-3">Have account Login</a>
+											<a href="../authentication/auth-login.html" class="btn btn-primary mt-3">Have account Login</a>
 										</div>
 									</form>
 								</div>
 							</div>						<li class="list-group-item border-0 d-flex align-items-center py-4">
 								<span class="va va-house p-3 btn-lg btn-primary ml-n5 mr-3"></span>
 								<h1 class="card-title mb-0">Shipping</h1>
-								<span class="step-2 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-2">
+								<span class="step-2 collapse btn ml-auto btn-edit-checkout" id="step-2" data-toggle="collapse" data-target=".step-2">
 									Edit <span class="va va-compose mr-2 mb-n2"></span></span>
 							</li>
 							<span>
@@ -1289,18 +1289,22 @@
 										<button id="to-payments" class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-2">continue to Payments</button>
 									</form>
 								</div>
-							</span>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
+							</span>
+							<script>
+								
+							</script>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-card"></span>
 								<h1 class="card-title mb-0">Payment options</h1>
-								<span class="step-3 collapse btn ml-auto btn-edit-checkout" data-toggle="collapse" data-target=".step-3">
-									Edit<span class="va va-compose mr-2 mb-n2"></span>
+								<span class="step-3 collapse btn ml-auto btn-edit-checkout" id="step-3" data-toggle="collapse"
+									data-target=".step-3">
+									Edit <span class="va va-compose ml-2 mb-n2"></span>
 								</span>
 							</li>
 							<span class="step-3 collapse">
 								<img class="mx-3" height="30" src="../assets/images/payments/PayPal.svg" alt="" />
 							</span>
-							<div class="step-2 collapse" data-parent="#checkout-collapse">
-								<form class="payment-form p-3 bg-white">
+							<form class="step-2 collapse" id="step-3" data-parent="#checkout-collapse">
+								<div class="payment-form p-3 bg-white">
 									<div class="btn-group-toggle" data-toggle="buttons">
 										<label
 											class="btn btn-block select-payment-btn shadow-sm border active mb-3 d-flex align-items-center justify-content-between">
@@ -1345,8 +1349,8 @@
 									</div>
 									<button class="btn btn-outline-primary" data-toggle="collapse" data-target=".step-3">continue to
 										Payments</button>
-								</form>
-							</div>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
+								</div>
+							</form>						<li class="list-group-item border-0 d-flex align-items-center pt-4">
 								<span class="p-3 btn-lg btn-primary ml-n5 mr-3 va va-checkmark"></span>
 								<h1 class="card-title mb-0">Review Order</h1>
 							</li>
@@ -1469,67 +1473,6 @@
 			</div>	</div>
 	</div>
 	
-	<script>
-		// steps
-		// personal
-		$('.btn-edit-checkout').click((e) => {
-			$(`#form-${e.target.id}`).addClass('show')
-			$(`#show-${e.target.id}`).addClass('d-none')
-		})
-	
-		let errors = []
-	
-		$('input').keydown(({ target }) => {
-			errors = []
-			$(".form-text").remove();
-			getFields({ name: target.name, value: target.value })
-			if (!errors.length) {
-				console.log('hello');
-				$(target).closest('form').find(':submit').removeAttr('disabled')
-			} else {
-				$(target).closest('form').find(':submit').attr('disabled')
-			}
-		})
-	
-		$('input').focusout(({ target }) => {
-			errors = []
-			$(".form-text").remove();
-			getFields({ name: target.name, value: target.value })
-			if (!errors.length) {
-				$(target).closest('form').find(':submit').prop('disabled', false)
-			} else {
-				$(target).closest('form').find(':submit').prop('disabled', true)
-			}
-		})
-	
-		$('form').submit((e) => {
-			e.preventDefault();
-			$(".form-text").remove();
-			$(e.target).serializeArray().map((el) => {
-				getFields({ name: el.name, value: el.value })
-			})
-		})
-	
-	
-		function showError(error) {
-			errors.push(error);
-			return `<small class="form-text text-danger">${error}</small>`;
-		};
-	
-		function getFields(target) {
-			console.log(target);
-			const field = $(`#${target.name}`);
-			const minLen = field.attr('minlength') && parseInt(field.attr('minlength'));
-			const maxLen = field.attr('maxlength') && parseInt(field.attr('maxlength'));
-			// const min = field.attr('min') && parseInt(field.attr('min').trim());
-			const max = field.attr('max') && parseInt(field.attr('max'));
-			field.attr('required') && !target.value && $(`#${target.name}`).after(showError(`${target.name} is required`));
-			target.value && minLen > target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too short (${minLen} minimum)`));
-			target.value && maxLen < target.value.length && $(`#${target.name}`).after(showError(`${target.name} is too long (${maxLen} maximum)`));
-			// value && min > value && $(`#${target.name}`).after(showError(`${target.name} is less (${min} minimum)`));
-			target.value && max < target.value && $(`#${target.name}`).after(showError(`${target.name} is much try (${max} maximum)`));
-		}
-	</script>
 	<div id="categories-modal" class="modal fixed-left fade" tabindex="-1" role="dialog">
 	    <div class="modal-dialog modal-dialog-aside" role="document">
 	        <div class="modal-content">

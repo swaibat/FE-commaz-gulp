@@ -237,3 +237,7 @@ function flashSale(params) {
 	}
 	initializeClock(new Date().getFullYear() + 1 + '/1/1');
 };
+
+$(document).ready(()=>{
+	$('body').removeClass('loader');
+})

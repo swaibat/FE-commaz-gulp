@@ -8,7 +8,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"abroad",
+		"shipping-fee":30
 	},
 	{
 		"id": 3,
@@ -19,7 +21,9 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"abroad",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 4,
@@ -30,7 +34,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"abroad",
+		"shipping-fee":20
 	},
 	{
 		"id": 5,
@@ -41,7 +47,9 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 6,
@@ -52,7 +60,9 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"abroad",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 7,
@@ -63,7 +73,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":10
 	},
 	{
 		"id": 8,
@@ -74,7 +86,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 9,
@@ -85,7 +99,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 10,
@@ -96,7 +112,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 11,
@@ -107,7 +125,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 12,
@@ -118,7 +138,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 13,
@@ -128,7 +150,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 14,
@@ -139,7 +163,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 15,
@@ -150,7 +176,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 16,
@@ -161,7 +189,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 17,
@@ -172,10 +202,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 27,
+		"id": 18,
 		"title": "43 inch UHD 4k tv smart television led tv",
 		"price": 340.3,
 		"discountPrice": 220.5,
@@ -183,10 +215,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 28,
+		"id": 19,
 		"title": "New Shoe Washing Machine Remote Control Small ",
 		"price": 695.0,
 		"discountPrice": 220.5,
@@ -194,20 +228,24 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 29,
+		"id": 20,
 		"title": "4.2 Stereo Earphone Headset Wireless Magnetic",
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 30,
+		"id": 21,
 		"title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
 		"price": 2919.9,
 		"discountPrice":1598.5,
@@ -215,10 +253,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 31,
+		"id": 22,
 		"title": "iPhone Se 2020 Plus 11 Pro",
 		"price": 1201.99,
 		"discountPrice": 896.5,
@@ -226,10 +266,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 18,
+		"id": 23,
 		"title": "Asus vivobook x405ua core i5",
 		"price": 980.2,
 		"discountPrice": 490.10,
@@ -237,10 +279,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 19,
+		"id": 24,
 		"title": "Fashion Men's Leather Military Casual Analog Quartz Wrist Watch Business Watches",
 		"price": 23.11,
 		"discountPrice": 4.66,
@@ -248,10 +292,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 20,
+		"id": 25,
 		"title": "iPhone  Se 2020 Plus 11 Pro XS ",
 		"price": 880.01,
 		"discountPrice": 396.00,
@@ -259,10 +305,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 21,
+		"id": 26,
 		"title": "Fashion Men's Casual Analog Quartz Wrist Watch",
 		"price": 59.99,
 		"discountPrice": 27.00,
@@ -270,10 +318,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 22,
+		"id": 27,
 		"title": "Mens Driving Moccasins Shoes Flats Slip on Loafers",
 		"price": 19.99,
 		"discountPrice":16.43,
@@ -281,10 +331,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 23,
+		"id": 28,
 		"title": "Drone X12 2.4G 6CH wifi FPV with 4K HD camera Foldable RC Quadcopter",
 		"price": 1200.0,
 		"discountPrice": 220.5,
@@ -292,10 +344,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 24,
+		"id": 29,
 		"title": "L100 White Ultra Compact All-In-One Laser Fax Copier Printer",
 		"price": 70.65,
 		"discountPrice": 220.5,
@@ -303,10 +357,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 25,
+		"id": 30,
 		"title": "A10 Wireless HD 1080P WiFi CCTV Security Indoor&Outdoor Mini IP Camera Home Cam",
 		"price": 45.99,
 		"discountPrice": 23.43,
@@ -314,10 +370,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 26,
+		"id": 31,
 		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
 		"price": 10.99,
 		"discountPrice": 23.43,
@@ -325,7 +383,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	
 	{
@@ -337,7 +397,9 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
 		"id": 33,
@@ -348,11 +410,13 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 
 	{
-		"id": 1,
+		"id": 34,
 		"title": "Asus vivobook x405ua core i5",
 		"price": 980.2,
 		"discountPrice": 490.10,
@@ -360,10 +424,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 3,
+		"id": 35,
 		"title": "Fashion Men's Leather Military Casual Analog Quartz Wrist Watch Business Watches",
 		"price": 23.11,
 		"discountPrice": 4.66,
@@ -371,10 +437,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 4,
+		"id": 36,
 		"title": "iPhone  Se 2020 Plus 11 Pro XS ",
 		"price": 880.01,
 		"discountPrice": 396.00,
@@ -382,10 +450,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 5,
+		"id": 37,
 		"title": "Fashion Men's Casual Analog Quartz Wrist Watch",
 		"price": 59.99,
 		"discountPrice": 27.00,
@@ -393,10 +463,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 6,
+		"id": 38,
 		"title": "Mens Driving Moccasins Shoes Flats Slip on Loafers",
 		"price": 19.99,
 		"discountPrice":16.43,
@@ -404,10 +476,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 7,
+		"id": 39,
 		"title": "Drone X12 2.4G 6CH wifi FPV with 4K HD camera Foldable RC Quadcopter",
 		"price": 1200.0,
 		"discountPrice": 220.5,
@@ -415,10 +489,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 8,
+		"id": 40,
 		"title": "L100 White Ultra Compact All-In-One Laser Fax Copier Printer",
 		"price": 70.65,
 		"discountPrice": 220.5,
@@ -426,10 +502,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 9,
+		"id": 41,
 		"title": "A10 Wireless HD 1080P WiFi CCTV Security Indoor&Outdoor Mini IP Camera Home Cam",
 		"price": 45.99,
 		"discountPrice": 23.43,
@@ -437,10 +515,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 10,
+		"id": 42,
 		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
 		"price": 10.99,
 		"discountPrice": 23.43,
@@ -448,10 +528,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 11,
+		"id": 43,
 		"title": "43 inch UHD 4k tv smart television led tv",
 		"price": 340.3,
 		"discountPrice": 220.5,
@@ -459,10 +541,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 12,
+		"id": 44,
 		"title": "New Shoe Washing Machine Remote Control Small ",
 		"price": 695.0,
 		"discountPrice": 220.5,
@@ -470,20 +554,24 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 13,
+		"id": 45,
 		"title": "4.2 Stereo Earphone Headset Wireless Magnetic",
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 14,
+		"id": 46,
 		"title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
 		"price": 2919.9,
 		"discountPrice":1598.5,
@@ -491,10 +579,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 15,
+		"id": 47,
 		"title": "iPhone Se 2020 Plus 11 Pro",
 		"price": 1201.99,
 		"discountPrice": 896.5,
@@ -502,10 +592,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 16,
+		"id": 48,
 		"title": "Digital Handheld Sports Stopwatch",
 		"price": 18.899,
 		"discountPrice": 1.95,
@@ -513,10 +605,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 17,
+		"id": 49,
 		"title": "Ecobee Smart Thermostat with Voice Control",
 		"price": 315.0,
 		"discountPrice": 220.5,
@@ -524,10 +618,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 27,
+		"id": 50,
 		"title": "43 inch UHD 4k tv smart television led tv",
 		"price": 340.3,
 		"discountPrice": 220.5,
@@ -535,10 +631,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 28,
+		"id": 51,
 		"title": "New Shoe Washing Machine Remote Control Small ",
 		"price": 695.0,
 		"discountPrice": 220.5,
@@ -546,20 +644,24 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 29,
+		"id": 52,
 		"title": "4.2 Stereo Earphone Headset Wireless Magnetic",
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 30,
+		"id": 53,
 		"title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
 		"price": 2919.9,
 		"discountPrice":1598.5,
@@ -567,10 +669,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 31,
+		"id": 54,
 		"title": "iPhone Se 2020 Plus 11 Pro",
 		"price": 1201.99,
 		"discountPrice": 896.5,
@@ -578,10 +682,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 18,
+		"id": 55,
 		"title": "Asus vivobook x405ua core i5",
 		"price": 980.2,
 		"discountPrice": 490.10,
@@ -589,10 +695,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 19,
+		"id": 56,
 		"title": "Fashion Men's Leather Military Casual Analog Quartz Wrist Watch Business Watches",
 		"price": 23.11,
 		"discountPrice": 4.66,
@@ -600,10 +708,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 20,
+		"id": 57,
 		"title": "iPhone  Se 2020 Plus 11 Pro XS ",
 		"price": 880.01,
 		"discountPrice": 396.00,
@@ -611,10 +721,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 21,
+		"id": 58,
 		"title": "Fashion Men's Casual Analog Quartz Wrist Watch",
 		"price": 59.99,
 		"discountPrice": 27.00,
@@ -622,10 +734,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 22,
+		"id": 59,
 		"title": "Mens Driving Moccasins Shoes Flats Slip on Loafers",
 		"price": 19.99,
 		"discountPrice":16.43,
@@ -633,10 +747,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 23,
+		"id": 60,
 		"title": "Drone X12 2.4G 6CH wifi FPV with 4K HD camera Foldable RC Quadcopter",
 		"price": 1200.0,
 		"discountPrice": 220.5,
@@ -644,10 +760,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 24,
+		"id": 61,
 		"title": "L100 White Ultra Compact All-In-One Laser Fax Copier Printer",
 		"price": 70.65,
 		"discountPrice": 220.5,
@@ -655,10 +773,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 25,
+		"id": 62,
 		"title": "A10 Wireless HD 1080P WiFi CCTV Security Indoor&Outdoor Mini IP Camera Home Cam",
 		"price": 45.99,
 		"discountPrice": 23.43,
@@ -666,10 +786,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 26,
+		"id": 63,
 		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
 		"price": 10.99,
 		"discountPrice": 23.43,
@@ -677,11 +799,13 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	
 	{
-		"id": 32,
+		"id": 64,
 		"title": "Ecobee Smart Thermostat with Voice Control",
 		"price": 315.0,
 		"discountPrice": 220.5,
@@ -689,10 +813,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 33,
+		"id": 65,
 		"title": "Digital Handheld Sports Stopwatch",
 		"price": 18.899,
 		"discountPrice": 1.95,
@@ -700,10 +826,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 1,
+		"id": 66,
 		"title": "Asus vivobook x405ua core i5",
 		"price": 980.2,
 		"discountPrice": 490.10,
@@ -711,10 +839,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 3,
+		"id": 67,
 		"title": "Fashion Men's Leather Military Casual Analog Quartz Wrist Watch Business Watches",
 		"price": 23.11,
 		"discountPrice": 4.66,
@@ -722,10 +852,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 4,
+		"id": 68,
 		"title": "iPhone  Se 2020 Plus 11 Pro XS ",
 		"price": 880.01,
 		"discountPrice": 396.00,
@@ -733,10 +865,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 5,
+		"id": 69,
 		"title": "Fashion Men's Casual Analog Quartz Wrist Watch",
 		"price": 59.99,
 		"discountPrice": 27.00,
@@ -744,10 +878,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 6,
+		"id": 70,
 		"title": "Mens Driving Moccasins Shoes Flats Slip on Loafers",
 		"price": 19.99,
 		"discountPrice":16.43,
@@ -755,10 +891,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 7,
+		"id": 71,
 		"title": "Drone X12 2.4G 6CH wifi FPV with 4K HD camera Foldable RC Quadcopter",
 		"price": 1200.0,
 		"discountPrice": 220.5,
@@ -766,10 +904,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 8,
+		"id": 72,
 		"title": "L100 White Ultra Compact All-In-One Laser Fax Copier Printer",
 		"price": 70.65,
 		"discountPrice": 220.5,
@@ -777,10 +917,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 9,
+		"id": 73,
 		"title": "A10 Wireless HD 1080P WiFi CCTV Security Indoor&Outdoor Mini IP Camera Home Cam",
 		"price": 45.99,
 		"discountPrice": 23.43,
@@ -788,10 +930,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 10,
+		"id": 74,
 		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
 		"price": 10.99,
 		"discountPrice": 23.43,
@@ -799,10 +943,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 11,
+		"id": 75,
 		"title": "43 inch UHD 4k tv smart television led tv",
 		"price": 340.3,
 		"discountPrice": 220.5,
@@ -810,10 +956,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 12,
+		"id": 76,
 		"title": "New Shoe Washing Machine Remote Control Small ",
 		"price": 695.0,
 		"discountPrice": 220.5,
@@ -821,20 +969,24 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 13,
+		"id": 77,
 		"title": "4.2 Stereo Earphone Headset Wireless Magnetic",
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 14,
+		"id": 78,
 		"title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
 		"price": 2919.9,
 		"discountPrice":1598.5,
@@ -842,10 +994,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 15,
+		"id": 79,
 		"title": "iPhone Se 2020 Plus 11 Pro",
 		"price": 1201.99,
 		"discountPrice": 896.5,
@@ -853,10 +1007,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 16,
+		"id": 80,
 		"title": "Digital Handheld Sports Stopwatch",
 		"price": 18.899,
 		"discountPrice": 1.95,
@@ -864,10 +1020,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 17,
+		"id": 81,
 		"title": "Ecobee Smart Thermostat with Voice Control",
 		"price": 315.0,
 		"discountPrice": 220.5,
@@ -875,10 +1033,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 27,
+		"id": 82,
 		"title": "43 inch UHD 4k tv smart television led tv",
 		"price": 340.3,
 		"discountPrice": 220.5,
@@ -886,10 +1046,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/smart-tv-43.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 28,
+		"id": 83,
 		"title": "New Shoe Washing Machine Remote Control Small ",
 		"price": 695.0,
 		"discountPrice": 220.5,
@@ -897,20 +1059,24 @@
 		"category": "electronics",
 		"image": "assets/images/products/washing_machine_PNG15614.png",
 		"discount":"77",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 29,
+		"id": 84,
 		"title": "4.2 Stereo Earphone Headset Wireless Magnetic",
 		"price": 6.8,
 		"description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
 		"category": "electronics",
 		"image": "assets/images/products/headphones_PNG7660.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 30,
+		"id": 85,
 		"title": "Apple MacBook Pro 13-inch 2.3ghz i7 Quad-Core",
 		"price": 2919.9,
 		"discountPrice":1598.5,
@@ -918,10 +1084,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/macbook-pro-13.png",
 		"discount":"43",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 31,
+		"id": 86,
 		"title": "iPhone Se 2020 Plus 11 Pro",
 		"price": 1201.99,
 		"discountPrice": 896.5,
@@ -929,10 +1097,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/iphone-11-gray.png",
 		"discount":"21",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 18,
+		"id": 87,
 		"title": "Asus vivobook x405ua core i5",
 		"price": 980.2,
 		"discountPrice": 490.10,
@@ -940,10 +1110,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/asus-laptop.png",
 		"discount":"50",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 19,
+		"id": 88,
 		"title": "Fashion Men's Leather Military Casual Analog Quartz Wrist Watch Business Watches",
 		"price": 23.11,
 		"discountPrice": 4.66,
@@ -951,10 +1123,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/polo-shirt.png",
 		"discount":"20",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 20,
+		"id": 89,
 		"title": "iPhone  Se 2020 Plus 11 Pro XS ",
 		"price": 880.01,
 		"discountPrice": 396.00,
@@ -962,10 +1136,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/gray-drone.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 21,
+		"id": 90,
 		"title": "Fashion Men's Casual Analog Quartz Wrist Watch",
 		"price": 59.99,
 		"discountPrice": 27.00,
@@ -973,10 +1149,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/watch-red.png",
 		"discount":"45",
-		"rating":5.0
+		"rating":5.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 22,
+		"id": 91,
 		"title": "Mens Driving Moccasins Shoes Flats Slip on Loafers",
 		"price": 19.99,
 		"discountPrice":16.43,
@@ -984,10 +1162,12 @@
 		"category": "fashion",
 		"image": "assets/images/products/men-casual-shoes.png",
 		"discount":"80",
-		"rating":3.5
+		"rating":3.5,
+		"shipping-from":"abroad",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 23,
+		"id": 92,
 		"title": "Drone X12 2.4G 6CH wifi FPV with 4K HD camera Foldable RC Quadcopter",
 		"price": 1200.0,
 		"discountPrice": 220.5,
@@ -995,10 +1175,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/white-drone.png",
 		"discount":"65",
-		"rating":3.0
+		"rating":3.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 24,
+		"id": 93,
 		"title": "L100 White Ultra Compact All-In-One Laser Fax Copier Printer",
 		"price": 70.65,
 		"discountPrice": 220.5,
@@ -1006,10 +1188,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/printer.png",
 		"discount":"40",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":5
 	},
 	{
-		"id": 25,
+		"id": 94,
 		"title": "A10 Wireless HD 1080P WiFi CCTV Security Indoor&Outdoor Mini IP Camera Home Cam",
 		"price": 45.99,
 		"discountPrice": 23.43,
@@ -1017,10 +1201,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/cctv-top.png",
 		"discount":"27",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"abroad",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 26,
+		"id": 95,
 		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
 		"price": 10.99,
 		"discountPrice": 23.43,
@@ -1028,11 +1214,13 @@
 		"category": "electronics",
 		"image": "assets/images/products/black-speaker.png",
 		"discount":"75",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":3.4
 	},
 	
 	{
-		"id": 32,
+		"id": 96,
 		"title": "Ecobee Smart Thermostat with Voice Control",
 		"price": 315.0,
 		"discountPrice": 220.5,
@@ -1040,10 +1228,12 @@
 		"category": "electronics",
 		"image": "assets/images/products/double-speaker.png",
 		"discount":"30",
-		"rating":4.0
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
 	},
 	{
-		"id": 33,
+		"id": 97,
 		"title": "Digital Handheld Sports Stopwatch",
 		"price": 18.899,
 		"discountPrice": 1.95,
@@ -1051,7 +1241,50 @@
 		"category": "electronics",
 		"image": "assets/images/products/stopwatch_PNG152.png",
 		"discount":"90",
-		"rating":4.5
+		"rating":4.5,
+		"shipping-from":"abroad",
+		"shipping-fee":3
+	}
+	,
+	{
+		"id": 98,
+		"title": "Portable Bluetooth Wireless Stereo Speaker Outdoor Waterproof Radio Tf Usb Bass",
+		"price": 10.99,
+		"discountPrice": 23.43,
+		"description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam a delectus rerum aperiam voluptate officia provident qui adipisci excepturi blanditiis aut, sunt nulla! Quo sunt sint aspernatur ullam dolorem.",
+		"category": "electronics",
+		"image": "assets/images/products/black-speaker.png",
+		"discount":"75",
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":3.4
+	},
+	
+	{
+		"id": 99,
+		"title": "Ecobee Smart Thermostat with Voice Control",
+		"price": 315.0,
+		"discountPrice": 220.5,
+		"description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+		"category": "electronics",
+		"image": "assets/images/products/double-speaker.png",
+		"discount":"30",
+		"rating":4.0,
+		"shipping-from":"local",
+		"shipping-fee":"free"
+	},
+	{
+		"id": 100,
+		"title": "Digital Handheld Sports Stopwatch",
+		"price": 18.899,
+		"discountPrice": 1.95,
+		"description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+		"category": "electronics",
+		"image": "assets/images/products/stopwatch_PNG152.png",
+		"discount":"90",
+		"rating":4.5,
+		"shipping-from":"abroad",
+		"shipping-fee":3
 	}
 
 ]
