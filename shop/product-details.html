@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Product Details</title>
 	<!-- Google Font -->
-	<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../assets/images/ico/favicon.ico" />
 	<link rel="stylesheet" href="../assets/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="../assets/vendors/select2/css/select2.min.css" />
 	<link rel="stylesheet" href="../assets/css/style.css" />
@@ -15,8 +15,9 @@
 	<script src="../assets/vendors/listjs-v1.5.0/list.min.js"></script>
 </head>
 
-<body class="">
+<body class="loader">
 	<div class="fixed-top shadow-sm">
+		<!--  On this pages below this component wont be rendered the pages anre denoted with ''.// -->
 	
 		<nav class="navbar navbar-expand-md bg-white border-bottom">
 			<div class="container">
@@ -44,22 +45,21 @@
 					</div>
 					<div class="d-flex align-items-center justify-content-between ml-4 left-icon-nav">
 						<div class="widget-header">
-							<a class="p-0 d-flex flex-column" href="../profile/profile.html">
+							<a class="cursor-pointer p-0 d-flex flex-column " href="../profile/profile.html">
 								<span class="va va-user btn btn-icon-nav p-0"></span>
 								<small class="text lr-only"> My profile </small>
 							</a>
 						</div>
 						<div class="widget-header">
-							<a href="../notify/notifications.html" class="widget-view d-flex flex-column">
-								<span class="va va-notifications btn btn-icon-nav p-0"></span>
-								<small class="text lr-only"> Notifications</small>
+							<a href="../notify/notifications.html" class="cursor-pointer d-flex flex-column ">
+								<span class="va va-bell btn btn-icon-nav p-0"></span>
+								<small class="text lr-only">Notifications</small>
 							</a>
 						</div>
 						<div class="widget-header">
-							<span class="widget-view d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
+							<span class="cursor-pointer d-flex flex-column" data-toggle="modal" data-target="#shopping-cart">
 								<span class="va va-cart btn btn-icon-nav p-0"></span>
-								<small class="text lr-only"> Cart </small>
-								<!-- <span class="c-badge badge-cart">3</span> -->
+								<small class="text lr-only text-muted"> Cart </small>
 							</span>
 						</div>
 					</div>
@@ -67,32 +67,30 @@
 				</div>
 			</div>
 		</nav>
-		<div class="bg-white py-1">
-			<nav class="nav d-flex justify-content-between container pr-0">
-				<li class="dropdown nav-item category-menu" data-menu="dropdown">
-					<a class="nav-link" href="#" data-toggle="modal" data-target="#categories">
-						<span class="va va-list pr-1"></span>Genre</a>
+		<div class="bg-white">
+			<ul class="nav nav-pills container justify-content-between pr-0">
+				<li class="nav-item genre">
+					<a class="nav-link  rounded-0" href="#" data-toggle="modal"
+						data-target="#categories-modal">
+						<span class="va va-menu pr-1"></span>Genre</a>
+					</a>
 				</li>
-				</ul>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="../shop/shop.html">
-						<span class="va va-store px-1"></span>
+				<li class="nav-item shop">
+					<a class="nav-link rounded-0 " href="../shop/shop.html">
+						<span class="va va-store pr-1"></span>
 						<span>Shop</span>
 					</a>
 				</li>
 				<li class="dropdown nav-item ml-md-auto" data-menu="dropdown">
 					<a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">
-						<span class="va va-question-circle pr-2"></span><span data-i18n="Apps">Pages</span></a>
+						</span>Pages</a>
 					<ul class="dropdown-menu">
 						<li class="">
-							<a class="nav-link" href="../others/about-us.html" data-i18n="Email"><i
-									class="feather icon-mail"></i>About
-								us</a>
+							<a class="nav-link" href="../others/about-us.html">
+								About us</a>
 						</li>
 						<li class="">
-							<a class="nav-link" href="../others/faq.html" data-i18n="Email"><i
-									class="feather icon-mail"></i>FAQ</a>
+							<a class="nav-link" href="../others/faq.html">FAQ</a>
 						</li>
 					</ul>
 				</li>
@@ -108,777 +106,782 @@
 							<div class="form-group mb-2">
 								<label for="country">country</label>
 								<select name="country" id="country" class="select2 form-control select2">
-									<option value="Uganda">Afghanistan</option>
-									<option value="Uganda">Åland Islands</option>
-									<option value="Uganda">Albania</option>
-									<option value="Uganda">Algeria</option>
-									<option value="Uganda">American Samoa</option>
-									<option value="Uganda">Andorra</option>
-									<option value="Uganda">Angola</option>
-									<option value="Uganda">Anguilla</option>
-									<option value="Uganda">Antarctica</option>
-									<option value="Uganda">Antigua and Barbuda</option>
-									<option value="Uganda">Argentina</option>
-									<option value="Uganda">Armenia</option>
-									<option value="Uganda">Aruba</option>
-									<option value="Uganda">Australia</option>
-									<option value="Uganda">Austria</option>
-									<option value="Uganda">Azerbaijan</option>
-									<option value="Uganda">Bahamas</option>
-									<option value="Uganda">Bahrain</option>
-									<option value="Uganda">Bangladesh</option>
-									<option value="Uganda">Barbados</option>
-									<option value="Uganda">Belarus</option>
-									<option value="Uganda">Belgium</option>
-									<option value="Uganda">Belize</option>
-									<option value="Uganda">Benin</option>
-									<option value="Uganda">Bermuda</option>
-									<option value="Uganda">Bhutan</option>
-									<option value="Uganda">Bolivia (Plurinational State of)</option>
-									<option value="Uganda">Bonaire, Sint Eustatius and Saba</option>
-									<option value="Uganda">Bosnia and Herzegovina</option>
-									<option value="Uganda">Botswana</option>
-									<option value="Uganda">Bouvet Island</option>
-									<option value="Uganda">Brazil</option>
-									<option value="Uganda">British Indian Ocean Territory</option>
-									<option value="Uganda">United States Minor Outlying Islands</option>
-									<option value="Uganda">Virgin Islands (British)</option>
-									<option value="Uganda">Virgin Islands (U.S.)</option>
-									<option value="Uganda">Brunei Darussalam</option>
-									<option value="Uganda">Bulgaria</option>
-									<option value="Uganda">Burkina Faso</option>
-									<option value="Uganda">Burundi</option>
-									<option value="Uganda">Cambodia</option>
-									<option value="Uganda">Cameroon</option>
-									<option value="Uganda">Canada</option>
-									<option value="Uganda">Cabo Verde</option>
-									<option value="Uganda">Cayman Islands</option>
-									<option value="Uganda">Central African Republic</option>
-									<option value="Uganda">Chad</option>
-									<option value="Uganda">Chile</option>
-									<option value="Uganda">China</option>
-									<option value="Uganda">Christmas Island</option>
-									<option value="Uganda">Cocos (Keeling) Islands</option>
-									<option value="Uganda">Colombia</option>
-									<option value="Uganda">Comoros</option>
-									<option value="Uganda">Congo</option>
-									<option value="Uganda">Congo (Democratic Republic of the)</option>
-									<option value="Uganda">Cook Islands</option>
-									<option value="Uganda">Costa Rica</option>
-									<option value="Uganda">Croatia</option>
-									<option value="Uganda">Cuba</option>
-									<option value="Uganda">Curaçao</option>
-									<option value="Uganda">Cyprus</option>
-									<option value="Uganda">Czech Republic</option>
-									<option value="Uganda">Denmark</option>
-									<option value="Uganda">Djibouti</option>
-									<option value="Uganda">Dominica</option>
-									<option value="Uganda">Dominican Republic</option>
-									<option value="Uganda">Ecuador</option>
-									<option value="Uganda">Egypt</option>
-									<option value="Uganda">El Salvador</option>
-									<option value="Uganda">Equatorial Guinea</option>
-									<option value="Uganda">Eritrea</option>
-									<option value="Uganda">Estonia</option>
-									<option value="Uganda">Ethiopia</option>
-									<option value="Uganda">Falkland Islands (Malvinas)</option>
-									<option value="Uganda">Faroe Islands</option>
-									<option value="Uganda">Fiji</option>
-									<option value="Uganda">Finland</option>
-									<option value="Uganda">France</option>
-									<option value="Uganda">French Guiana</option>
-									<option value="Uganda">French Polynesia</option>
-									<option value="Uganda">French Southern Territories</option>
-									<option value="Uganda">Gabon</option>
-									<option value="Uganda">Gambia</option>
-									<option value="Uganda">Georgia</option>
-									<option value="Uganda">Germany</option>
-									<option value="Uganda">Ghana</option>
-									<option value="Uganda">Gibraltar</option>
-									<option value="Uganda">Greece</option>
-									<option value="Uganda">Greenland</option>
-									<option value="Uganda">Grenada</option>
-									<option value="Uganda">Guadeloupe</option>
-									<option value="Uganda">Guam</option>
-									<option value="Uganda">Guatemala</option>
-									<option value="Uganda">Guernsey</option>
-									<option value="Uganda">Guinea</option>
-									<option value="Uganda">Guinea-Bissau</option>
-									<option value="Uganda">Guyana</option>
-									<option value="Uganda">Haiti</option>
-									<option value="Uganda">Heard Island and McDonald Islands</option>
-									<option value="Uganda">Holy See</option>
-									<option value="Uganda">Honduras</option>
-									<option value="Uganda">Hong Kong</option>
-									<option value="Uganda">Hungary</option>
-									<option value="Uganda">Iceland</option>
-									<option value="Uganda">India</option>
-									<option value="Uganda">Indonesia</option>
-									<option value="Uganda">Côte d&#x27;Ivoire</option>
-									<option value="Uganda">Iran (Islamic Republic of)</option>
-									<option value="Uganda">Iraq</option>
-									<option value="Uganda">Ireland</option>
-									<option value="Uganda">Isle of Man</option>
-									<option value="Uganda">Israel</option>
-									<option value="Uganda">Italy</option>
-									<option value="Uganda">Jamaica</option>
-									<option value="Uganda">Japan</option>
-									<option value="Uganda">Jersey</option>
-									<option value="Uganda">Jordan</option>
-									<option value="Uganda">Kazakhstan</option>
-									<option value="Uganda">Kenya</option>
-									<option value="Uganda">Kiribati</option>
-									<option value="Uganda">Kuwait</option>
-									<option value="Uganda">Kyrgyzstan</option>
-									<option value="Uganda">Lao People&#x27;s Democratic Republic</option>
-									<option value="Uganda">Latvia</option>
-									<option value="Uganda">Lebanon</option>
-									<option value="Uganda">Lesotho</option>
-									<option value="Uganda">Liberia</option>
-									<option value="Uganda">Libya</option>
-									<option value="Uganda">Liechtenstein</option>
-									<option value="Uganda">Lithuania</option>
-									<option value="Uganda">Luxembourg</option>
-									<option value="Uganda">Macao</option>
-									<option value="Uganda">Macedonia (the former Yugoslav Republic of)</option>
-									<option value="Uganda">Madagascar</option>
-									<option value="Uganda">Malawi</option>
-									<option value="Uganda">Malaysia</option>
-									<option value="Uganda">Maldives</option>
-									<option value="Uganda">Mali</option>
-									<option value="Uganda">Malta</option>
-									<option value="Uganda">Marshall Islands</option>
-									<option value="Uganda">Martinique</option>
-									<option value="Uganda">Mauritania</option>
-									<option value="Uganda">Mauritius</option>
-									<option value="Uganda">Mayotte</option>
-									<option value="Uganda">Mexico</option>
-									<option value="Uganda">Micronesia (Federated States of)</option>
-									<option value="Uganda">Moldova (Republic of)</option>
-									<option value="Uganda">Monaco</option>
-									<option value="Uganda">Mongolia</option>
-									<option value="Uganda">Montenegro</option>
-									<option value="Uganda">Montserrat</option>
-									<option value="Uganda">Morocco</option>
-									<option value="Uganda">Mozambique</option>
-									<option value="Uganda">Myanmar</option>
-									<option value="Uganda">Namibia</option>
-									<option value="Uganda">Nauru</option>
-									<option value="Uganda">Nepal</option>
-									<option value="Uganda">Netherlands</option>
-									<option value="Uganda">New Caledonia</option>
-									<option value="Uganda">New Zealand</option>
-									<option value="Uganda">Nicaragua</option>
-									<option value="Uganda">Niger</option>
-									<option value="Uganda">Nigeria</option>
-									<option value="Uganda">Niue</option>
-									<option value="Uganda">Norfolk Island</option>
-									<option value="Uganda">Korea (Democratic People&#x27;s Republic of)</option>
-									<option value="Uganda">Northern Mariana Islands</option>
-									<option value="Uganda">Norway</option>
-									<option value="Uganda">Oman</option>
-									<option value="Uganda">Pakistan</option>
-									<option value="Uganda">Palau</option>
-									<option value="Uganda">Palestine, State of</option>
-									<option value="Uganda">Panama</option>
-									<option value="Uganda">Papua New Guinea</option>
-									<option value="Uganda">Paraguay</option>
-									<option value="Uganda">Peru</option>
-									<option value="Uganda">Philippines</option>
-									<option value="Uganda">Pitcairn</option>
-									<option value="Uganda">Poland</option>
-									<option value="Uganda">Portugal</option>
-									<option value="Uganda">Puerto Rico</option>
-									<option value="Uganda">Qatar</option>
-									<option value="Uganda">Republic of Kosovo</option>
-									<option value="Uganda">Réunion</option>
-									<option value="Uganda">Romania</option>
-									<option value="Uganda">Russian Federation</option>
-									<option value="Uganda">Rwanda</option>
-									<option value="Uganda">Saint Barthélemy</option>
-									<option value="Uganda">Saint Helena, Ascension and Tristan da Cunha</option>
-									<option value="Uganda">Saint Kitts and Nevis</option>
-									<option value="Uganda">Saint Lucia</option>
-									<option value="Uganda">Saint Martin (French part)</option>
-									<option value="Uganda">Saint Pierre and Miquelon</option>
-									<option value="Uganda">Saint Vincent and the Grenadines</option>
-									<option value="Uganda">Samoa</option>
-									<option value="Uganda">San Marino</option>
-									<option value="Uganda">Sao Tome and Principe</option>
-									<option value="Uganda">Saudi Arabia</option>
-									<option value="Uganda">Senegal</option>
-									<option value="Uganda">Serbia</option>
-									<option value="Uganda">Seychelles</option>
-									<option value="Uganda">Sierra Leone</option>
-									<option value="Uganda">Singapore</option>
-									<option value="Uganda">Sint Maarten (Dutch part)</option>
-									<option value="Uganda">Slovakia</option>
-									<option value="Uganda">Slovenia</option>
-									<option value="Uganda">Solomon Islands</option>
-									<option value="Uganda">Somalia</option>
-									<option value="Uganda">South Africa</option>
-									<option value="Uganda">South Georgia and the South Sandwich Islands</option>
-									<option value="Uganda">Korea (Republic of)</option>
-									<option value="Uganda">South Sudan</option>
-									<option value="Uganda">Spain</option>
-									<option value="Uganda">Sri Lanka</option>
-									<option value="Uganda">Sudan</option>
-									<option value="Uganda">Suriname</option>
-									<option value="Uganda">Svalbard and Jan Mayen</option>
-									<option value="Uganda">Swaziland</option>
-									<option value="Uganda">Sweden</option>
-									<option value="Uganda">Switzerland</option>
-									<option value="Uganda">Syrian Arab Republic</option>
-									<option value="Uganda">Taiwan</option>
-									<option value="Uganda">Tajikistan</option>
-									<option value="Uganda">Tanzania, United Republic of</option>
-									<option value="Uganda">Thailand</option>
-									<option value="Uganda">Timor-Leste</option>
-									<option value="Uganda">Togo</option>
-									<option value="Uganda">Tokelau</option>
-									<option value="Uganda">Tonga</option>
-									<option value="Uganda">Trinidad and Tobago</option>
-									<option value="Uganda">Tunisia</option>
-									<option value="Uganda">Turkey</option>
-									<option value="Uganda">Turkmenistan</option>
-									<option value="Uganda">Turks and Caicos Islands</option>
-									<option value="Uganda">Tuvalu</option>
-									<option value="Uganda">Uganda</option>
-									<option value="Uganda">Ukraine</option>
-									<option value="Uganda">United Arab Emirates</option>
-									<option value="Uganda">United Kingdom of Great Britain and Northern Ireland</option>
-									<option value="Uganda">United States of America</option>
-									<option value="Uganda">Uruguay</option>
-									<option value="Uganda">Uzbekistan</option>
-									<option value="Uganda">Vanuatu</option>
-									<option value="Uganda">Venezuela (Bolivarian Republic of)</option>
-									<option value="Uganda">Viet Nam</option>
-									<option value="Uganda">Wallis and Futuna</option>
-									<option value="Uganda">Western Sahara</option>
-									<option value="Uganda">Yemen</option>
-									<option value="Uganda">Zambia</option>
-									<option value="Uganda">Zimbabwe</option>
+									<option>Afghanistan</option>
+									<option>Åland Islands</option>
+									<option>Albania</option>
+									<option>Algeria</option>
+									<option>American Samoa</option>
+									<option>Andorra</option>
+									<option>Angola</option>
+									<option>Anguilla</option>
+									<option>Antarctica</option>
+									<option>Antigua and Barbuda</option>
+									<option>Argentina</option>
+									<option>Armenia</option>
+									<option>Aruba</option>
+									<option>Australia</option>
+									<option>Austria</option>
+									<option>Azerbaijan</option>
+									<option>Bahamas</option>
+									<option>Bahrain</option>
+									<option>Bangladesh</option>
+									<option>Barbados</option>
+									<option>Belarus</option>
+									<option>Belgium</option>
+									<option>Belize</option>
+									<option>Benin</option>
+									<option>Bermuda</option>
+									<option>Bhutan</option>
+									<option>Bolivia (Plurinational State of)</option>
+									<option>Bonaire, Sint Eustatius and Saba</option>
+									<option>Bosnia and Herzegovina</option>
+									<option>Botswana</option>
+									<option>Bouvet Island</option>
+									<option>Brazil</option>
+									<option>British Indian Ocean Territory</option>
+									<option>United States Minor Outlying Islands</option>
+									<option>Virgin Islands (British)</option>
+									<option>Virgin Islands (U.S.)</option>
+									<option>Brunei Darussalam</option>
+									<option>Bulgaria</option>
+									<option>Burkina Faso</option>
+									<option>Burundi</option>
+									<option>Cambodia</option>
+									<option>Cameroon</option>
+									<option>Canada</option>
+									<option>Cabo Verde</option>
+									<option>Cayman Islands</option>
+									<option>Central African Republic</option>
+									<option>Chad</option>
+									<option>Chile</option>
+									<option>China</option>
+									<option>Christmas Island</option>
+									<option>Cocos (Keeling) Islands</option>
+									<option>Colombia</option>
+									<option>Comoros</option>
+									<option>Congo</option>
+									<option>Congo (Democratic Republic of the)</option>
+									<option>Cook Islands</option>
+									<option>Costa Rica</option>
+									<option>Croatia</option>
+									<option>Cuba</option>
+									<option>Curaçao</option>
+									<option>Cyprus</option>
+									<option>Czech Republic</option>
+									<option>Denmark</option>
+									<option>Djibouti</option>
+									<option>Dominica</option>
+									<option>Dominican Republic</option>
+									<option>Ecuador</option>
+									<option>Egypt</option>
+									<option>El Salvador</option>
+									<option>Equatorial Guinea</option>
+									<option>Eritrea</option>
+									<option>Estonia</option>
+									<option>Ethiopia</option>
+									<option>Falkland Islands (Malvinas)</option>
+									<option>Faroe Islands</option>
+									<option>Fiji</option>
+									<option>Finland</option>
+									<option>France</option>
+									<option>French Guiana</option>
+									<option>French Polynesia</option>
+									<option>French Southern Territories</option>
+									<option>Gabon</option>
+									<option>Gambia</option>
+									<option>Georgia</option>
+									<option>Germany</option>
+									<option>Ghana</option>
+									<option>Gibraltar</option>
+									<option>Greece</option>
+									<option>Greenland</option>
+									<option>Grenada</option>
+									<option>Guadeloupe</option>
+									<option>Guam</option>
+									<option>Guatemala</option>
+									<option>Guernsey</option>
+									<option>Guinea</option>
+									<option>Guinea-Bissau</option>
+									<option>Guyana</option>
+									<option>Haiti</option>
+									<option>Heard Island and McDonald Islands</option>
+									<option>Holy See</option>
+									<option>Honduras</option>
+									<option>Hong Kong</option>
+									<option>Hungary</option>
+									<option>Iceland</option>
+									<option>India</option>
+									<option>Indonesia</option>
+									<option>Côte d&#x27;Ivoire</option>
+									<option>Iran (Islamic Republic of)</option>
+									<option>Iraq</option>
+									<option>Ireland</option>
+									<option>Isle of Man</option>
+									<option>Israel</option>
+									<option>Italy</option>
+									<option>Jamaica</option>
+									<option>Japan</option>
+									<option>Jersey</option>
+									<option>Jordan</option>
+									<option>Kazakhstan</option>
+									<option>Kenya</option>
+									<option>Kiribati</option>
+									<option>Kuwait</option>
+									<option>Kyrgyzstan</option>
+									<option>Lao People&#x27;s Democratic Republic</option>
+									<option>Latvia</option>
+									<option>Lebanon</option>
+									<option>Lesotho</option>
+									<option>Liberia</option>
+									<option>Libya</option>
+									<option>Liechtenstein</option>
+									<option>Lithuania</option>
+									<option>Luxembourg</option>
+									<option>Macao</option>
+									<option>Macedonia (the former Yugoslav Republic of)</option>
+									<option>Madagascar</option>
+									<option>Malawi</option>
+									<option>Malaysia</option>
+									<option>Maldives</option>
+									<option>Mali</option>
+									<option>Malta</option>
+									<option>Marshall Islands</option>
+									<option>Martinique</option>
+									<option>Mauritania</option>
+									<option>Mauritius</option>
+									<option>Mayotte</option>
+									<option>Mexico</option>
+									<option>Micronesia (Federated States of)</option>
+									<option>Moldova (Republic of)</option>
+									<option>Monaco</option>
+									<option>Mongolia</option>
+									<option>Montenegro</option>
+									<option>Montserrat</option>
+									<option>Morocco</option>
+									<option>Mozambique</option>
+									<option>Myanmar</option>
+									<option>Namibia</option>
+									<option>Nauru</option>
+									<option>Nepal</option>
+									<option>Netherlands</option>
+									<option>New Caledonia</option>
+									<option>New Zealand</option>
+									<option>Nicaragua</option>
+									<option>Niger</option>
+									<option>Nigeria</option>
+									<option>Niue</option>
+									<option>Norfolk Island</option>
+									<option>Korea (Democratic People&#x27;s Republic of)</option>
+									<option>Northern Mariana Islands</option>
+									<option>Norway</option>
+									<option>Oman</option>
+									<option>Pakistan</option>
+									<option>Palau</option>
+									<option>Palestine, State of</option>
+									<option>Panama</option>
+									<option>Papua New Guinea</option>
+									<option>Paraguay</option>
+									<option>Peru</option>
+									<option>Philippines</option>
+									<option>Pitcairn</option>
+									<option>Poland</option>
+									<option>Portugal</option>
+									<option>Puerto Rico</option>
+									<option>Qatar</option>
+									<option>Republic of Kosovo</option>
+									<option>Réunion</option>
+									<option>Romania</option>
+									<option>Russian Federation</option>
+									<option>Rwanda</option>
+									<option>Saint Barthélemy</option>
+									<option>Saint Helena, Ascension and Tristan da Cunha</option>
+									<option>Saint Kitts and Nevis</option>
+									<option>Saint Lucia</option>
+									<option>Saint Martin (French part)</option>
+									<option>Saint Pierre and Miquelon</option>
+									<option>Saint Vincent and the Grenadines</option>
+									<option>Samoa</option>
+									<option>San Marino</option>
+									<option>Sao Tome and Principe</option>
+									<option>Saudi Arabia</option>
+									<option>Senegal</option>
+									<option>Serbia</option>
+									<option>Seychelles</option>
+									<option>Sierra Leone</option>
+									<option>Singapore</option>
+									<option>Sint Maarten (Dutch part)</option>
+									<option>Slovakia</option>
+									<option>Slovenia</option>
+									<option>Solomon Islands</option>
+									<option>Somalia</option>
+									<option>South Africa</option>
+									<option>South Georgia and the South Sandwich Islands</option>
+									<option>Korea (Republic of)</option>
+									<option>South Sudan</option>
+									<option>Spain</option>
+									<option>Sri Lanka</option>
+									<option>Sudan</option>
+									<option>Suriname</option>
+									<option>Svalbard and Jan Mayen</option>
+									<option>Swaziland</option>
+									<option>Sweden</option>
+									<option>Switzerland</option>
+									<option>Syrian Arab Republic</option>
+									<option>Taiwan</option>
+									<option>Tajikistan</option>
+									<option>Tanzania, United Republic of</option>
+									<option>Thailand</option>
+									<option>Timor-Leste</option>
+									<option>Togo</option>
+									<option>Tokelau</option>
+									<option>Tonga</option>
+									<option>Trinidad and Tobago</option>
+									<option>Tunisia</option>
+									<option>Turkey</option>
+									<option>Turkmenistan</option>
+									<option>Turks and Caicos Islands</option>
+									<option>Tuvalu</option>
+									<option>Uganda</option>
+									<option>Ukraine</option>
+									<option>United Arab Emirates</option>
+									<option>United Kingdom of Great Britain and Northern Ireland</option>
+									<option>United States of America</option>
+									<option>Uruguay</option>
+									<option>Uzbekistan</option>
+									<option>Vanuatu</option>
+									<option>Venezuela (Bolivarian Republic of)</option>
+									<option>Viet Nam</option>
+									<option>Wallis and Futuna</option>
+									<option>Western Sahara</option>
+									<option>Yemen</option>
+									<option>Zambia</option>
+									<option>Zimbabwe</option>
 								</select>
 							</div>
 							<div class="form-group mb-2">
 								<label for="language">language</label>
 								<select name="language" id="language" class="select2 form-control select2">
-									<option value="Uganda">پښتو</option>
-									<option value="Uganda">svenska</option>
-									<option value="Uganda">Shqip</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">català</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Հայերեն</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Deutsch</option>
-									<option value="Uganda">azərbaycan dili</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">বাংলা</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">беларуская мова</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">རྫོང་ཁ</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">bosanski jezik</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Norsk</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">bahasa Melayu</option>
-									<option value="Uganda">български език</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">ខ្មែរ</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">中文 (Zhōngwén)</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">hrvatski jezik</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">ελληνικά</option>
-									<option value="Uganda">čeština</option>
-									<option value="Uganda">dansk</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">ትግርኛ</option>
-									<option value="Uganda">eesti</option>
-									<option value="Uganda">አማርኛ</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">føroyskt</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">suomi</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">ქართული</option>
-									<option value="Uganda">Deutsch</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">ελληνικά</option>
-									<option value="Uganda">kalaallisut</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">latine</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">magyar</option>
-									<option value="Uganda">Íslenska</option>
-									<option value="Uganda">हिन्दी</option>
-									<option value="Uganda">Bahasa Indonesia</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">فارسی</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Gaeilge</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">עברית</option>
-									<option value="Uganda">Italiano</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">日本語 (にほんご)</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">қазақ тілі</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Кыргызча</option>
-									<option value="Uganda">ພາສາລາວ</option>
-									<option value="Uganda">latviešu valoda</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Deutsch</option>
-									<option value="Uganda">lietuvių kalba</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">中文 (Zhōngwén)</option>
-									<option value="Uganda">македонски јазик</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">بهاس مليسيا</option>
-									<option value="Uganda">ދިވެހި</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Malti</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Română</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Монгол хэл</option>
-									<option value="Uganda">српски језик</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">ဗမာစာ</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">नेपाली</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">한국어</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Norsk</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">język polski</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Shqip</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Română</option>
-									<option value="Uganda">Русский</option>
-									<option value="Uganda">Ikinyarwanda</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">gagana fa&#x27;a Samoa</option>
-									<option value="Uganda">Italiano</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">српски језик</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">slovenčina</option>
-									<option value="Uganda">slovenski jezik</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Soomaaliga</option>
-									<option value="Uganda">Afrikaans</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">한국어</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">සිංහල</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Nederlands</option>
-									<option value="Uganda">Norsk</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">svenska</option>
-									<option value="Uganda">Deutsch</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">中文 (Zhōngwén)</option>
-									<option value="Uganda">тоҷикӣ</option>
-									<option value="Uganda">Kiswahili</option>
-									<option value="Uganda">ไทย</option>
-									<option value="Uganda">Português</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">Türkçe</option>
-									<option value="Uganda">Türkmen</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Українська</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Oʻzbek</option>
-									<option value="Uganda">Bislama</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">Tiếng Việt</option>
-									<option value="Uganda">français</option>
-									<option value="Uganda">Español</option>
-									<option value="Uganda">العربية</option>
-									<option value="Uganda">English</option>
-									<option value="Uganda">English</option>
+									<option>پښتو</option>
+									<option>svenska</option>
+									<option>Shqip</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>català</option>
+									<option>Português</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>Հայերեն</option>
+									<option>Nederlands</option>
+									<option>English</option>
+									<option>Deutsch</option>
+									<option>azərbaycan dili</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>বাংলা</option>
+									<option>English</option>
+									<option>беларуская мова</option>
+									<option>Nederlands</option>
+									<option>English</option>
+									<option>français</option>
+									<option>English</option>
+									<option>རྫོང་ཁ</option>
+									<option>Español</option>
+									<option>Nederlands</option>
+									<option>bosanski jezik</option>
+									<option>English</option>
+									<option>Norsk</option>
+									<option>Português</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>bahasa Melayu</option>
+									<option>български език</option>
+									<option>français</option>
+									<option>français</option>
+									<option>ខ្មែរ</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Português</option>
+									<option>English</option>
+									<option>français</option>
+									<option>français</option>
+									<option>Español</option>
+									<option>中文 (Zhōngwén)</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>العربية</option>
+									<option>français</option>
+									<option>français</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>hrvatski jezik</option>
+									<option>Español</option>
+									<option>Nederlands</option>
+									<option>ελληνικά</option>
+									<option>čeština</option>
+									<option>dansk</option>
+									<option>français</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>Español</option>
+									<option>العربية</option>
+									<option>Español</option>
+									<option>Español</option>
+									<option>ትግርኛ</option>
+									<option>eesti</option>
+									<option>አማርኛ</option>
+									<option>English</option>
+									<option>føroyskt</option>
+									<option>English</option>
+									<option>suomi</option>
+									<option>français</option>
+									<option>français</option>
+									<option>français</option>
+									<option>français</option>
+									<option>français</option>
+									<option>English</option>
+									<option>ქართული</option>
+									<option>Deutsch</option>
+									<option>English</option>
+									<option>English</option>
+									<option>ελληνικά</option>
+									<option>kalaallisut</option>
+									<option>English</option>
+									<option>français</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>English</option>
+									<option>français</option>
+									<option>Português</option>
+									<option>English</option>
+									<option>français</option>
+									<option>English</option>
+									<option>latine</option>
+									<option>Español</option>
+									<option>English</option>
+									<option>magyar</option>
+									<option>Íslenska</option>
+									<option>हिन्दी</option>
+									<option>Bahasa Indonesia</option>
+									<option>français</option>
+									<option>فارسی</option>
+									<option>العربية</option>
+									<option>Gaeilge</option>
+									<option>English</option>
+									<option>עברית</option>
+									<option>Italiano</option>
+									<option>English</option>
+									<option>日本語 (にほんご)</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>қазақ тілі</option>
+									<option>English</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>Кыргызча</option>
+									<option>ພາສາລາວ</option>
+									<option>latviešu valoda</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>Deutsch</option>
+									<option>lietuvių kalba</option>
+									<option>français</option>
+									<option>中文 (Zhōngwén)</option>
+									<option>македонски јазик</option>
+									<option>français</option>
+									<option>English</option>
+									<option>بهاس مليسيا</option>
+									<option>ދިވެހި</option>
+									<option>français</option>
+									<option>Malti</option>
+									<option>English</option>
+									<option>français</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>français</option>
+									<option>Español</option>
+									<option>English</option>
+									<option>Română</option>
+									<option>français</option>
+									<option>Монгол хэл</option>
+									<option>српски језик</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>Português</option>
+									<option>ဗမာစာ</option>
+									<option>English</option>
+									<option>English</option>
+									<option>नेपाली</option>
+									<option>Nederlands</option>
+									<option>français</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>français</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>한국어</option>
+									<option>English</option>
+									<option>Norsk</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>Español</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>Español</option>
+									<option>English</option>
+									<option>English</option>
+									<option>język polski</option>
+									<option>Português</option>
+									<option>Español</option>
+									<option>العربية</option>
+									<option>Shqip</option>
+									<option>français</option>
+									<option>Română</option>
+									<option>Русский</option>
+									<option>Ikinyarwanda</option>
+									<option>français</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>français</option>
+									<option>English</option>
+									<option>gagana fa&#x27;a Samoa</option>
+									<option>Italiano</option>
+									<option>Português</option>
+									<option>العربية</option>
+									<option>français</option>
+									<option>српски језик</option>
+									<option>français</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Nederlands</option>
+									<option>slovenčina</option>
+									<option>slovenski jezik</option>
+									<option>English</option>
+									<option>Soomaaliga</option>
+									<option>Afrikaans</option>
+									<option>English</option>
+									<option>한국어</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>සිංහල</option>
+									<option>العربية</option>
+									<option>Nederlands</option>
+									<option>Norsk</option>
+									<option>English</option>
+									<option>svenska</option>
+									<option>Deutsch</option>
+									<option>العربية</option>
+									<option>中文 (Zhōngwén)</option>
+									<option>тоҷикӣ</option>
+									<option>Kiswahili</option>
+									<option>ไทย</option>
+									<option>Português</option>
+									<option>français</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>العربية</option>
+									<option>Türkçe</option>
+									<option>Türkmen</option>
+									<option>English</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Українська</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>English</option>
+									<option>Español</option>
+									<option>Oʻzbek</option>
+									<option>Bislama</option>
+									<option>Español</option>
+									<option>Tiếng Việt</option>
+									<option>français</option>
+									<option>Español</option>
+									<option>العربية</option>
+									<option>English</option>
+									<option>English</option>
 								</select>
 							</div>
 							<div class="form-group mb-2">
 								<label for="currency">currency</label>
 								<select name="currency" id="currency" class="form-control select2">
-									<option value="Uganda">Afghan afghani</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Albanian lek</option>
-									<option value="Uganda">Algerian dinar</option>
-									<option value="Uganda">United State Dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Angolan kwanza</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Argentine peso</option>
-									<option value="Uganda">Armenian dram</option>
-									<option value="Uganda">Aruban florin</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Azerbaijani manat</option>
-									<option value="Uganda">Bahamian dollar</option>
-									<option value="Uganda">Bahraini dinar</option>
-									<option value="Uganda">Bangladeshi taka</option>
-									<option value="Uganda">Barbadian dollar</option>
-									<option value="Uganda">New Belarusian ruble</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Belize dollar</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Bermudian dollar</option>
-									<option value="Uganda">Bhutanese ngultrum</option>
-									<option value="Uganda">Bolivian boliviano</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Bosnia and Herzegovina convertible mark</option>
-									<option value="Uganda">Botswana pula</option>
-									<option value="Uganda">Norwegian krone</option>
-									<option value="Uganda">Brazilian real</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">United States Dollar</option>
-									<option value="Uganda">[D]</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Brunei dollar</option>
-									<option value="Uganda">Bulgarian lev</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Burundian franc</option>
-									<option value="Uganda">Cambodian riel</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Canadian dollar</option>
-									<option value="Uganda">Cape Verdean escudo</option>
-									<option value="Uganda">Cayman Islands dollar</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Chilean peso</option>
-									<option value="Uganda">Chinese yuan</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Colombian peso</option>
-									<option value="Uganda">Comorian franc</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Congolese franc</option>
-									<option value="Uganda">New Zealand dollar</option>
-									<option value="Uganda">Costa Rican colón</option>
-									<option value="Uganda">Croatian kuna</option>
-									<option value="Uganda">Cuban convertible peso</option>
-									<option value="Uganda">Netherlands Antillean guilder</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Czech koruna</option>
-									<option value="Uganda">Danish krone</option>
-									<option value="Uganda">Djiboutian franc</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Dominican peso</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Egyptian pound</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Eritrean nakfa</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Ethiopian birr</option>
-									<option value="Uganda">Falkland Islands pound</option>
-									<option value="Uganda">Danish krone</option>
-									<option value="Uganda">Fijian dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">CFP franc</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Central African CFA franc</option>
-									<option value="Uganda">Gambian dalasi</option>
-									<option value="Uganda">Georgian Lari</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Ghanaian cedi</option>
-									<option value="Uganda">Gibraltar pound</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Danish krone</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Guatemalan quetzal</option>
-									<option value="Uganda">British pound</option>
-									<option value="Uganda">Guinean franc</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Guyanese dollar</option>
-									<option value="Uganda">Haitian gourde</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Honduran lempira</option>
-									<option value="Uganda">Hong Kong dollar</option>
-									<option value="Uganda">Hungarian forint</option>
-									<option value="Uganda">Icelandic króna</option>
-									<option value="Uganda">Indian rupee</option>
-									<option value="Uganda">Indonesian rupiah</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Iranian rial</option>
-									<option value="Uganda">Iraqi dinar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">British pound</option>
-									<option value="Uganda">Israeli new shekel</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Jamaican dollar</option>
-									<option value="Uganda">Japanese yen</option>
-									<option value="Uganda">British pound</option>
-									<option value="Uganda">Jordanian dinar</option>
-									<option value="Uganda">Kazakhstani tenge</option>
-									<option value="Uganda">Kenyan shilling</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Kuwaiti dinar</option>
-									<option value="Uganda">Kyrgyzstani som</option>
-									<option value="Uganda">Lao kip</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Lebanese pound</option>
-									<option value="Uganda">Lesotho loti</option>
-									<option value="Uganda">Liberian dollar</option>
-									<option value="Uganda">Libyan dinar</option>
-									<option value="Uganda">Swiss franc</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Macanese pataca</option>
-									<option value="Uganda">Macedonian denar</option>
-									<option value="Uganda">Malagasy ariary</option>
-									<option value="Uganda">Malawian kwacha</option>
-									<option value="Uganda">Malaysian ringgit</option>
-									<option value="Uganda">Maldivian rufiyaa</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Mauritanian ouguiya</option>
-									<option value="Uganda">Mauritian rupee</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Mexican peso</option>
-									<option value="Uganda">[D]</option>
-									<option value="Uganda">Moldovan leu</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Mongolian tögrög</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Moroccan dirham</option>
-									<option value="Uganda">Mozambican metical</option>
-									<option value="Uganda">Burmese kyat</option>
-									<option value="Uganda">Namibian dollar</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Nepalese rupee</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">CFP franc</option>
-									<option value="Uganda">New Zealand dollar</option>
-									<option value="Uganda">Nicaraguan córdoba</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Nigerian naira</option>
-									<option value="Uganda">New Zealand dollar</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">North Korean won</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Norwegian krone</option>
-									<option value="Uganda">Omani rial</option>
-									<option value="Uganda">Pakistani rupee</option>
-									<option value="Uganda">[E]</option>
-									<option value="Uganda">Israeli new sheqel</option>
-									<option value="Uganda">Panamanian balboa</option>
-									<option value="Uganda">Papua New Guinean kina</option>
-									<option value="Uganda">Paraguayan guaraní</option>
-									<option value="Uganda">Peruvian sol</option>
-									<option value="Uganda">Philippine peso</option>
-									<option value="Uganda">New Zealand dollar</option>
-									<option value="Uganda">Polish złoty</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Qatari riyal</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Romanian leu</option>
-									<option value="Uganda">Russian ruble</option>
-									<option value="Uganda">Rwandan franc</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Saint Helena pound</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">East Caribbean dollar</option>
-									<option value="Uganda">Samoan tālā</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">São Tomé and Príncipe dobra</option>
-									<option value="Uganda">Saudi riyal</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">Serbian dinar</option>
-									<option value="Uganda">Seychellois rupee</option>
-									<option value="Uganda">Sierra Leonean leone</option>
-									<option value="Uganda">Brunei dollar</option>
-									<option value="Uganda">Netherlands Antillean guilder</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Solomon Islands dollar</option>
-									<option value="Uganda">Somali shilling</option>
-									<option value="Uganda">South African rand</option>
-									<option value="Uganda">British pound</option>
-									<option value="Uganda">South Korean won</option>
-									<option value="Uganda">South Sudanese pound</option>
-									<option value="Uganda">Euro</option>
-									<option value="Uganda">Sri Lankan rupee</option>
-									<option value="Uganda">Sudanese pound</option>
-									<option value="Uganda">Surinamese dollar</option>
-									<option value="Uganda">Norwegian krone</option>
-									<option value="Uganda">Swazi lilangeni</option>
-									<option value="Uganda">Swedish krona</option>
-									<option value="Uganda">Swiss franc</option>
-									<option value="Uganda">Syrian pound</option>
-									<option value="Uganda">New Taiwan dollar</option>
-									<option value="Uganda">Tajikistani somoni</option>
-									<option value="Uganda">Tanzanian shilling</option>
-									<option value="Uganda">Thai baht</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">West African CFA franc</option>
-									<option value="Uganda">New Zealand dollar</option>
-									<option value="Uganda">Tongan paʻanga</option>
-									<option value="Uganda">Trinidad and Tobago dollar</option>
-									<option value="Uganda">Tunisian dinar</option>
-									<option value="Uganda">Turkish lira</option>
-									<option value="Uganda">Turkmenistan manat</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Australian dollar</option>
-									<option value="Uganda">Ugandan shilling</option>
-									<option value="Uganda">Ukrainian hryvnia</option>
-									<option value="Uganda">United Arab Emirates dirham</option>
-									<option value="Uganda">British pound</option>
-									<option value="Uganda">United States dollar</option>
-									<option value="Uganda">Uruguayan peso</option>
-									<option value="Uganda">Uzbekistani so&#x27;m</option>
-									<option value="Uganda">Vanuatu vatu</option>
-									<option value="Uganda">Venezuelan bolívar</option>
-									<option value="Uganda">Vietnamese đồng</option>
-									<option value="Uganda">CFP franc</option>
-									<option value="Uganda">Moroccan dirham</option>
-									<option value="Uganda">Yemeni rial</option>
-									<option value="Uganda">Zambian kwacha</option>
-									<option value="Uganda">Botswana pula</option>
+									<option>Afghan afghani</option>
+									<option>Euro</option>
+									<option>Albanian lek</option>
+									<option>Algerian dinar</option>
+									<option>United State Dollar</option>
+									<option>Euro</option>
+									<option>Angolan kwanza</option>
+									<option>East Caribbean dollar</option>
+									<option>Australian dollar</option>
+									<option>East Caribbean dollar</option>
+									<option>Argentine peso</option>
+									<option>Armenian dram</option>
+									<option>Aruban florin</option>
+									<option>Australian dollar</option>
+									<option>Euro</option>
+									<option>Azerbaijani manat</option>
+									<option>Bahamian dollar</option>
+									<option>Bahraini dinar</option>
+									<option>Bangladeshi taka</option>
+									<option>Barbadian dollar</option>
+									<option>New Belarusian ruble</option>
+									<option>Euro</option>
+									<option>Belize dollar</option>
+									<option>West African CFA franc</option>
+									<option>Bermudian dollar</option>
+									<option>Bhutanese ngultrum</option>
+									<option>Bolivian boliviano</option>
+									<option>United States dollar</option>
+									<option>Bosnia and Herzegovina convertible mark</option>
+									<option>Botswana pula</option>
+									<option>Norwegian krone</option>
+									<option>Brazilian real</option>
+									<option>United States dollar</option>
+									<option>United States Dollar</option>
+									<option>[D]</option>
+									<option>United States dollar</option>
+									<option>Brunei dollar</option>
+									<option>Bulgarian lev</option>
+									<option>West African CFA franc</option>
+									<option>Burundian franc</option>
+									<option>Cambodian riel</option>
+									<option>Central African CFA franc</option>
+									<option>Canadian dollar</option>
+									<option>Cape Verdean escudo</option>
+									<option>Cayman Islands dollar</option>
+									<option>Central African CFA franc</option>
+									<option>Central African CFA franc</option>
+									<option>Chilean peso</option>
+									<option>Chinese yuan</option>
+									<option>Australian dollar</option>
+									<option>Australian dollar</option>
+									<option>Colombian peso</option>
+									<option>Comorian franc</option>
+									<option>Central African CFA franc</option>
+									<option>Congolese franc</option>
+									<option>New Zealand dollar</option>
+									<option>Costa Rican colón</option>
+									<option>Croatian kuna</option>
+									<option>Cuban convertible peso</option>
+									<option>Netherlands Antillean guilder</option>
+									<option>Euro</option>
+									<option>Czech koruna</option>
+									<option>Danish krone</option>
+									<option>Djiboutian franc</option>
+									<option>East Caribbean dollar</option>
+									<option>Dominican peso</option>
+									<option>United States dollar</option>
+									<option>Egyptian pound</option>
+									<option>United States dollar</option>
+									<option>Central African CFA franc</option>
+									<option>Eritrean nakfa</option>
+									<option>Euro</option>
+									<option>Ethiopian birr</option>
+									<option>Falkland Islands pound</option>
+									<option>Danish krone</option>
+									<option>Fijian dollar</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>CFP franc</option>
+									<option>Euro</option>
+									<option>Central African CFA franc</option>
+									<option>Gambian dalasi</option>
+									<option>Georgian Lari</option>
+									<option>Euro</option>
+									<option>Ghanaian cedi</option>
+									<option>Gibraltar pound</option>
+									<option>Euro</option>
+									<option>Danish krone</option>
+									<option>East Caribbean dollar</option>
+									<option>Euro</option>
+									<option>United States dollar</option>
+									<option>Guatemalan quetzal</option>
+									<option>British pound</option>
+									<option>Guinean franc</option>
+									<option>West African CFA franc</option>
+									<option>Guyanese dollar</option>
+									<option>Haitian gourde</option>
+									<option>Australian dollar</option>
+									<option>Euro</option>
+									<option>Honduran lempira</option>
+									<option>Hong Kong dollar</option>
+									<option>Hungarian forint</option>
+									<option>Icelandic króna</option>
+									<option>Indian rupee</option>
+									<option>Indonesian rupiah</option>
+									<option>West African CFA franc</option>
+									<option>Iranian rial</option>
+									<option>Iraqi dinar</option>
+									<option>Euro</option>
+									<option>British pound</option>
+									<option>Israeli new shekel</option>
+									<option>Euro</option>
+									<option>Jamaican dollar</option>
+									<option>Japanese yen</option>
+									<option>British pound</option>
+									<option>Jordanian dinar</option>
+									<option>Kazakhstani tenge</option>
+									<option>Kenyan shilling</option>
+									<option>Australian dollar</option>
+									<option>Kuwaiti dinar</option>
+									<option>Kyrgyzstani som</option>
+									<option>Lao kip</option>
+									<option>Euro</option>
+									<option>Lebanese pound</option>
+									<option>Lesotho loti</option>
+									<option>Liberian dollar</option>
+									<option>Libyan dinar</option>
+									<option>Swiss franc</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>Macanese pataca</option>
+									<option>Macedonian denar</option>
+									<option>Malagasy ariary</option>
+									<option>Malawian kwacha</option>
+									<option>Malaysian ringgit</option>
+									<option>Maldivian rufiyaa</option>
+									<option>West African CFA franc</option>
+									<option>Euro</option>
+									<option>United States dollar</option>
+									<option>Euro</option>
+									<option>Mauritanian ouguiya</option>
+									<option>Mauritian rupee</option>
+									<option>Euro</option>
+									<option>Mexican peso</option>
+									<option>[D]</option>
+									<option>Moldovan leu</option>
+									<option>Euro</option>
+									<option>Mongolian tögrög</option>
+									<option>Euro</option>
+									<option>East Caribbean dollar</option>
+									<option>Moroccan dirham</option>
+									<option>Mozambican metical</option>
+									<option>Burmese kyat</option>
+									<option>Namibian dollar</option>
+									<option>Australian dollar</option>
+									<option>Nepalese rupee</option>
+									<option>Euro</option>
+									<option>CFP franc</option>
+									<option>New Zealand dollar</option>
+									<option>Nicaraguan córdoba</option>
+									<option>West African CFA franc</option>
+									<option>Nigerian naira</option>
+									<option>New Zealand dollar</option>
+									<option>Australian dollar</option>
+									<option>North Korean won</option>
+									<option>United States dollar</option>
+									<option>Norwegian krone</option>
+									<option>Omani rial</option>
+									<option>Pakistani rupee</option>
+									<option>[E]</option>
+									<option>Israeli new sheqel</option>
+									<option>Panamanian balboa</option>
+									<option>Papua New Guinean kina</option>
+									<option>Paraguayan guaraní</option>
+									<option>Peruvian sol</option>
+									<option>Philippine peso</option>
+									<option>New Zealand dollar</option>
+									<option>Polish złoty</option>
+									<option>Euro</option>
+									<option>United States dollar</option>
+									<option>Qatari riyal</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>Romanian leu</option>
+									<option>Russian ruble</option>
+									<option>Rwandan franc</option>
+									<option>Euro</option>
+									<option>Saint Helena pound</option>
+									<option>East Caribbean dollar</option>
+									<option>East Caribbean dollar</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>East Caribbean dollar</option>
+									<option>Samoan tālā</option>
+									<option>Euro</option>
+									<option>São Tomé and Príncipe dobra</option>
+									<option>Saudi riyal</option>
+									<option>West African CFA franc</option>
+									<option>Serbian dinar</option>
+									<option>Seychellois rupee</option>
+									<option>Sierra Leonean leone</option>
+									<option>Brunei dollar</option>
+									<option>Netherlands Antillean guilder</option>
+									<option>Euro</option>
+									<option>Euro</option>
+									<option>Solomon Islands dollar</option>
+									<option>Somali shilling</option>
+									<option>South African rand</option>
+									<option>British pound</option>
+									<option>South Korean won</option>
+									<option>South Sudanese pound</option>
+									<option>Euro</option>
+									<option>Sri Lankan rupee</option>
+									<option>Sudanese pound</option>
+									<option>Surinamese dollar</option>
+									<option>Norwegian krone</option>
+									<option>Swazi lilangeni</option>
+									<option>Swedish krona</option>
+									<option>Swiss franc</option>
+									<option>Syrian pound</option>
+									<option>New Taiwan dollar</option>
+									<option>Tajikistani somoni</option>
+									<option>Tanzanian shilling</option>
+									<option>Thai baht</option>
+									<option>United States dollar</option>
+									<option>West African CFA franc</option>
+									<option>New Zealand dollar</option>
+									<option>Tongan paʻanga</option>
+									<option>Trinidad and Tobago dollar</option>
+									<option>Tunisian dinar</option>
+									<option>Turkish lira</option>
+									<option>Turkmenistan manat</option>
+									<option>United States dollar</option>
+									<option>Australian dollar</option>
+									<option>Ugandan shilling</option>
+									<option>Ukrainian hryvnia</option>
+									<option>United Arab Emirates dirham</option>
+									<option>British pound</option>
+									<option>United States dollar</option>
+									<option>Uruguayan peso</option>
+									<option>Uzbekistani so&#x27;m</option>
+									<option>Vanuatu vatu</option>
+									<option>Venezuelan bolívar</option>
+									<option>Vietnamese đồng</option>
+									<option>CFP franc</option>
+									<option>Moroccan dirham</option>
+									<option>Yemeni rial</option>
+									<option>Zambian kwacha</option>
+									<option>Botswana pula</option>
 								</select>
 							</div>
 						</form>
 	
 					</div>
 				</li>
-			</nav>
+				<!--  this will only render on the index page ''.// -->
+			</ul>
 		</div>
 	
 		<!-- container .// -->
+		<!--  this will only render on the pages below inside the quotes.// -->
 	</div>
+	<!--  On this pages below this component wont be rendered
+		[index, auth-login, auth-register, auth-reset-password, auth-forgot-password, shop, store] 
+	.// -->
 	<div class="bread-overlay"></div>
 	<div class="py-2 px-2 container px-0 d-flex align-items-center my-2 my-sm-2">
 		<nav aria-label="breadcrumb">
@@ -887,10 +890,11 @@
 				<li class="breadcrumb-item active" aria-current="page">Product Details</li>
 			</ol>
 		</nav>
-		<div class="switch ml-auto">
-			<input class="switch" id="switch" name="switch" type="checkbox" />
-			<label class="mb-0" for="switch"></label>
-		</div>
+		<label for="d-mode" class="ml-auto d-flex align-items-center mb-0" data-toggle="tooltip"
+			data-original-title="display mode">
+			<input class="d-none" id="d-mode" type="checkbox">
+			<span class="va va-moon btn btn-primary p-2 mr-1"></span>
+		</label>
 	</div>
 	<div class="p-0 container mb-4">
 		<div class="content-wrapper px-2">
@@ -921,13 +925,13 @@
 											<a class="carousel-control-prev ml-n3" href="#carouselExampleIndicators"
 												role="button" data-slide="prev">
 												<span
-													class="va va-chevron-left px-2 py-3 btn btn-sm btn-primary ml-5 rounded-right"></span>
+													class="va va-chev-left px-2 py-3 btn btn-sm btn-primary ml-5 rounded-right"></span>
 												<span class="sr-only">Previous</span>
 											</a>
 											<a class="carousel-control-next mr-n3" href="#carouselExampleIndicators"
 												role="button" data-slide="next">
 												<span
-													class="va va-chevron-right px-2 py-3 btn btn-primary mr-5 rounded-left"></span>
+													class="va va-chev-right px-2 py-3 btn btn-primary mr-5 rounded-left"></span>
 												<span class="sr-only">Next</span>
 											</a>
 										</div>
@@ -974,8 +978,7 @@
 									</div>
 									<hr />
 									<p class="font-weight-bold text-success">Free Shipping</p>
-									<p class="font-weight-bold"><i
-											class="feather icon-dollar-sign mr-50 font-medium-2"></i>EMI options available
+									<p class="font-weight-bold">EMI options available
 									</p>
 									<hr />
 									<div class="d-flex flex-wrap">
@@ -987,7 +990,7 @@
 														data-toggle="tooltip" data-title="Rose gold">
 														<input class="d-none" type="radio" name="categories" id="rose-gold"
 															checked>
-														<span class="va va-checkmark"></span>
+														<span class="va va-checkmark-circle"></span>
 													</label>
 												</li>
 												<li class="d-inline-block ml-2">
@@ -995,21 +998,21 @@
 														data-toggle="tooltip" data-title="Space gray">
 														<input class="d-none" type="radio" name="categories"
 															id="space-gray">
-														<span class="va va-checkmark"></span>
+														<span class="va va-checkmark-circle"></span>
 													</label>
 												</li>
 												<li class="d-inline-block ml-2">
 													<label class="d-flex mb-0 gold" for="gold" class="mb-0"
 														data-toggle="tooltip" data-title="Gold">
 														<input class="d-none" type="radio" name="categories" id="gold">
-														<span class="va va-checkmark"></span>
+														<span class="va va-checkmark-circle"></span>
 													</label>
 												</li>
 												<li class="d-inline-block ml-2">
 													<label class="d-flex mb-0 gray" for="gray" class="mb-0"
 														data-toggle="tooltip" data-title="gray">
 														<input class="d-none" type="radio" name="categories" id="gray">
-														<span class="va va-checkmark"></span>
+														<span class="va va-checkmark-circle"></span>
 													</label>
 												</li>
 											</ul>
@@ -1061,7 +1064,7 @@
 	
 									<div class="d-flex">
 										<a href="../shop/checkout.html" class="btn btn-light-200 flex-fill">
-											<i class="feather icon-shopping-cart mr-25"></i>BUY NOW
+											BUY NOW
 										</a>
 										<span data-toggle="tooltip" data-title="add to cart" class="btn btn-light-200 ml-2">
 											<input type="checkbox" class="d-none cart" id="cart-product">
@@ -1128,19 +1131,19 @@
 									<div class="p-2 p-3 bg-white shadow-sm rounded">
 										<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 											<li class="nav-item">
-												<a class="nav-link active" id="pills-home-tab" data-toggle="pill"
-													href="#pills-home" role="tab" aria-controls="pills-home"
+												<a class="nav-link active" id="product-details-tab" data-toggle="pill"
+													href="#product-details" role="tab" aria-controls="product-details"
 													aria-selected="true">Product detail</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" id="pills-profile-tab" data-toggle="pill"
-													href="#pills-profile" role="tab" aria-controls="pills-profile"
+												<a class="nav-link" id="customer-review-tab" data-toggle="pill"
+													href="#customer-review" role="tab" aria-controls="customer-review"
 													aria-selected="false">Customers Reviews</a>
 											</li>
 										</ul>
 										<div class="tab-content" id="pills-tabContent">
-											<div class="tab-pane fade" id="pills-home" role="tabpanel"
-												aria-labelledby="pills-home-tab">
+											<div class="tab-pane fade show active" id="product-details" role="tabpanel"
+												aria-labelledby="product-details-tab">
 												<h5 class="title-description">Description</h5>
 												<p>
 													Lava stone grill, suitable for natural gas, with cast-iron cooking grid,
@@ -1157,17 +1160,17 @@
 												</p>
 												<ul class="list-group mb-3">
 													<li class="list-group-item border-0"><span
-															class="va va-chevron-right mr-2"></span>
+															class="va va-chev-right mr-2"></span>
 														Material: Stainless steel</li>
 													<li class="list-group-item border-0"><span
-															class="va va-chevron-right mr-2"></span>Weight: 82kg</li>
+															class="va va-chev-right mr-2"></span>Weight: 82kg</li>
 													<li class="list-group-item border-0"><span
-															class="va va-chevron-right mr-2"></span>built-in drip tray</li>
+															class="va va-chev-right mr-2"></span>built-in drip tray</li>
 													<li class="list-group-item border-0"><span
-															class="va va-chevron-right mr-2"></span>Open
+															class="va va-chev-right mr-2"></span>Open
 														base for pots and pans</li>
 													<li class="list-group-item border-0"><span
-															class="va va-chevron-right mr-2"></span>On
+															class="va va-chev-right mr-2"></span>On
 														request available in propane execution</li>
 												</ul>
 	
@@ -1233,58 +1236,78 @@
 													</tbody>
 												</table>
 											</div>
-											<div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
-												aria-labelledby="pills-profile-tab">
+											<div class="tab-pane fade" id="customer-review" role="tabpanel"
+												aria-labelledby="customer-review-tab">
 												<ul class="list-group">
 													<li class="d-flex justify-content-around list-group-item">
 														<div class="media w-100">
-															<img height="45" width="45" src="../assets/images/portrait/small/avatar-s-12.jpg" class="rounded img-border mr-2" alt="avatar" />
+															<img height="45" width="45"
+																src="../assets/images/avatar/avatar-1.jpg"
+																class="rounded img-border mr-2" alt="avatar" />
 															<div class="media-body w-100">
-															  <h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25 jan 2021</small></h5>
-															  <div class="read-only mr-2" data-rating="5"></div>
-															 delivered in time thank you
+																<h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25
+																		jan 2021</small></h5>
+																<div class="read-only mr-2" data-rating="5"></div>
+																delivered in time thank you
 															</div>
-														  </div>
+														</div>
 													</li>
 													<li class="d-flex justify-content-around list-group-item">
 														<div class="media w-100">
-															<img height="45" width="45" src="../assets/images/portrait/small/avatar-s-12.jpg" class="rounded img-border mr-2" alt="avatar" />
+															<img height="45" width="45"
+																src="../assets/images/avatar/avatar-2.jpg"
+																class="rounded img-border mr-2" alt="avatar" />
 															<div class="media-body">
-															  <h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25 jan 2021</small></h5>
-															  <div class="read-only mr-2" data-rating="2.5"></div>
-															  Cras sit amet nibh libero, in gravida nulla.
+																<h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25
+																		jan 2021</small></h5>
+																<div class="read-only mr-2" data-rating="2.5"></div>
+																Cras sit amet nibh libero, in gravida nulla.
 															</div>
-														  </div>
+														</div>
 													</li>
 													<li class="d-flex justify-content-around list-group-item">
 														<div class="media w-100">
-															<img height="45" width="45" src="../assets/images/portrait/small/avatar-s-12.jpg" class="rounded img-border mr-2" alt="avatar" />
+															<img height="45" width="45"
+																src="../assets/images/avatar/avatar-3.jpg"
+																class="rounded img-border mr-2" alt="avatar" />
 															<div class="media-body">
-															  <h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25 jan 2021</small></h5>
-															  <div class="read-only mr-2" data-rating="4"></div>
-															  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+																<h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25
+																		jan 2021</small></h5>
+																<div class="read-only mr-2" data-rating="4"></div>
+																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+																scelerisque ante sollicitudin. Cras purus odio, vestibulum
+																in vulputate at, tempus viverra turpis. Fusce condimentum
+																nunc ac nisi vulputate fringilla. Donec lacinia congue felis
+																in faucibus.
 															</div>
-														  </div>
+														</div>
 													</li>
 													<li class="d-flex justify-content-around list-group-item">
 														<div class="media w-100">
-															<img height="45" width="45" src="../assets/images/portrait/small/avatar-s-12.jpg" class="rounded img-border mr-2" alt="avatar" />
+															<img height="45" width="45"
+																src="../assets/images/avatar/avatar-4.jpg"
+																class="rounded img-border mr-2" alt="avatar" />
 															<div class="media-body">
-															  <h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25 jan 2021</small></h5>
-															  <div class="read-only mr-2" data-rating="1"></div>
-															  Cras sit amet nibh libero, in gravida nulla.
+																<h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25
+																		jan 2021</small></h5>
+																<div class="read-only mr-2" data-rating="1"></div>
+																Cras sit amet nibh libero, in gravida nulla.
 															</div>
-														  </div>
+														</div>
 													</li>
 													<li class="d-flex justify-content-around list-group-item">
 														<div class="media w-100">
-															<img height="45" width="45" src="../assets/images/portrait/small/avatar-s-12.jpg" class="rounded img-border mr-2" alt="avatar" />
+															<img height="45" width="45"
+																src="../assets/images/avatar/avatar-5.jpg"
+																class="rounded img-border mr-2" alt="avatar" />
 															<div class="media-body">
-															  <h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25 jan 2021</small></h5>
-															  <div class="read-only mr-2" data-rating="3.5"></div>
-															  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+																<h5 class="mt-0 d-flex">Jane Doe <small class="ml-auto">25
+																		jan 2021</small></h5>
+																<div class="read-only mr-2" data-rating="3.5"></div>
+																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+																scelerisque ante sollicitudin.
 															</div>
-														  </div>
+														</div>
 													</li>
 												</ul>
 											</div>
@@ -1360,7 +1383,7 @@
 								<h4 class="title-section text-uppercase">Related Products</h4>
 							</header>
 							<section id="ecommerce-products" class="grid-view grid-view-sm">
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1416,7 +1439,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/asus-laptop.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/asus-laptop.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1449,7 +1473,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1505,7 +1529,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/polo-shirt.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/polo-shirt.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1538,7 +1563,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1594,7 +1619,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/cctv-black.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/cctv-black.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1627,7 +1653,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1683,7 +1709,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/men-casual-shoes.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/men-casual-shoes.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1716,7 +1743,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1772,7 +1799,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/white-drone.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/white-drone.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1805,7 +1833,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1861,7 +1889,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/printer.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/printer.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1894,7 +1923,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -1950,7 +1979,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/cctv-top.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/cctv-top.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -1983,7 +2013,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2039,7 +2069,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/black-speaker.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/black-speaker.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2072,7 +2103,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2128,7 +2159,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/smart-tv-43.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/smart-tv-43.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2161,7 +2193,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2217,7 +2249,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/washing_machine_PNG15614.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/washing_machine_PNG15614.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2250,7 +2283,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2306,7 +2339,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/headphones_PNG7660.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/headphones_PNG7660.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2339,7 +2373,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2395,7 +2429,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/macbook-pro-13.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/macbook-pro-13.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2428,7 +2463,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2484,7 +2519,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/iphone-11-gray.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/iphone-11-gray.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2517,7 +2553,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2573,7 +2609,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/stopwatch_PNG152.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/stopwatch_PNG152.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2606,7 +2643,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2662,7 +2699,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/double-speaker.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/double-speaker.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2695,7 +2733,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2751,7 +2789,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/stopwatch_PNG152.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/stopwatch_PNG152.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2784,7 +2823,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2840,7 +2879,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/double-speaker.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/double-speaker.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2873,7 +2913,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="card ecommerce-card shadow-sm rounded align-self-start">
+								<div class="card product-card align-self-start">
 									<div class="card-content">
 										<div class="btn-group-vertical position-absolute right-0 mt-2">
 											<span data-toggle="tooltip" data-title="add to cart">
@@ -2929,7 +2969,8 @@
 										</div>
 										<div class="item-img text-center">
 											<a href="product-details.html">
-												<img class="img-fluid" src="../assets/images/products/double-speaker.png" alt="img-placeholder"></a>
+												<img class="img-fluid" src="../assets/images/products/double-speaker.png"
+													alt="img-placeholder"></a>
 										</div>
 										<div class="card-body">
 											<div class="d-flex justify-content-between">
@@ -2980,19 +3021,18 @@
 			input.val(parseInt(input.val()) - 1);
 		})
 	</script>
-	<div id="categories" class="modal fixed-left fade" tabindex="-1" role="dialog">
+	<div id="categories-modal" class="modal fixed-left fade" tabindex="-1" role="dialog">
 	    <div class="modal-dialog modal-dialog-aside" role="document">
 	        <div class="modal-content">
-	            <div class="modal-header">
+	            <div class="modal-header modal-header d-flex align-items-center shadow-sm">
 	                <h5 class="modal-title">Categories</h5>
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	                    <span aria-hidden="true">&times;</span>
-	                </button>
+	                <span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal"
+	                    aria-label="Close"></span>
 	            </div>
 	            <div class="modal-body">
 	                <div class="row">
 	                    <div class="col-12 mb-3">
-	                        <h6>Electronics & Computers</h6>
+	                        <h4>Electronics & Computers</h4>
 	                        <nav class="nav flex-column">
 	                            <a class="nav-link" href="../shop/shop.html">Cell Phones</a>
 	                            <a class="nav-link" href="../shop/shop.html">TV, Audio & Visual</a>
@@ -3004,7 +3044,7 @@
 	                        </nav>
 	                    </div>
 	                    <div class="col-12 mb-3">
-	                        <h6>Fashion & Beauty</h6>
+	                        <h4>Fashion & Beauty</h4>
 	                        <nav class="nav flex-column">
 	                            <a class="nav-link" href="../shop/shop.html">Clothing</a>
 	                            <a class="nav-link" href="../shop/shop.html">Shoes</a>
@@ -3013,7 +3053,7 @@
 	                        </nav>
 	                    </div>
 	                    <div class="col-12 mb-3">
-	                        <h6>Vehicles</h6>
+	                        <h4>Vehicles</h4>
 	                        <nav class="nav flex-column">
 	                            <a class="nav-link" href="../shop/shop.html">Cars & Bakkies</a>
 	                            <a class="nav-link" href="../shop/shop.html">Car Parts & Accessories</a>
@@ -3025,7 +3065,7 @@
 	                        </nav>
 	                    </div>
 	                    <div class="col-12 mb-3">
-	                        <h6>Hobbies & Interests</h6>
+	                        <h4>Hobbies & Interests</h4>
 	                        <nav class="nav flex-column">
 	                            <a class="nav-link active" href="../shop/shop.html">Toys, Games & Remote Control</a>
 	                            <a class="nav-link" href="../shop/shop.html">Musical Instruments</a>
@@ -3043,15 +3083,13 @@
 	</div><div id="shopping-cart" class="modal fixed-right fade" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-aside" role="document">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Shopping Cart</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+				<div class="modal-header shadow-sm d-flex align-items-center border-bottom">
+					<span class="va va-cross btn btn-white p-2 ml-n4 shadow-sm close" data-dismiss="modal" aria-label="Close"></span>
+					<h5 class="modal-title mx-auto">Shopping Cart</h5>
 				</div>
-				<div class="modal-body cart-wrapper">
+				<div class="modal-body cart-wrapper list">
 					<!-- <div class="p-3 d-flex flex-column cart-wrapper w-100 list border"> -->
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/asus-laptop.png"
 								alt="Asus vivobook x405ua core i5">
 							<div class="media-body">
@@ -3085,16 +3123,16 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-1">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-1">405.3</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-1"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/polo-shirt.png"
 								alt="iPhone  Se 2020 Plus 11 Pro XR  ">
 							<div class="media-body">
@@ -3128,16 +3166,16 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-2">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-2">902</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-2"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
-						<div class="media bg-light p-3 rounded mb-3 border">
+						<div class="cart-item media bg-light p-3 rounded mb-3 border">
 							<img class="mr-2 rounded shadow-sm border" height="45" src="../assets/images/products/watch-red.png"
 								alt="Rally 18213 Men&#x27;s Black Round Analog Date Automatic Watch Dragon">
 							<div class="media-body">
@@ -3171,18 +3209,18 @@
 											<p class="text-muted d-flex mb-0"><span class="font-weight-bold">Size
 													:</span>XXL</p>
 										</div>
-										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-3">1190</h5>
+										<h5 class="ml-auto mt-auto mb-0 price text-primary" id="price-3">13.5</h5>
 									</div>
 								</div>
 							</div>
 							<span id="cart-item-3"
 								class="btn btn-cancel btn-remove btn-primary bootstrap-touchspin-down d-flex align-items-center justify-content-center">
-								<span class="va va-cross"></span>
+								<span class="va va-trash"></span>
 							</span>
 						</div>
 					<!-- </div> -->
 				</div>
-				<div class="modal-footer cart-footer align-items-stretch flex-column">
+				<div class="modal-footer cart-footer align-items-stretch flex-column shadow-sm-top border-top">
 						<div class="text-left cart-summary">
 							<h4>Shopping summary</h4>
 						</div>
@@ -3280,7 +3318,7 @@
 					<aside class="col-6 col-md-2 text-center text-sm-left">
 						<h6 class="title">About</h6>
 						<ul class="list-unstyled">
-							<li><a href="/page-about.html">About us</a></li>
+							<li><a href="../others/page-about.html">About us</a></li>
 							<li><a href="#">Services</a></li>
 							<li><a href="#">Rules and terms</a></li>
 							<li><a href="#">Blogs</a></li>

@@ -1,47 +1,57 @@
+// NOTIFICATIONS
+$(() => {
+	const notificationsOptions = {
+		valueNames: ['name', 'subject', 'body', 'read', 'status'],
+		page: 5,
+		pagination: true,
+	};
 
-$(window).scroll(function () {
-	// console.log($(window).scrollTop())
-	console.log($(window).scrollTop() + $(window).height() > $(document).height() - 412);
-	if ($(window).scrollTop() >= 147) {
-		$('.filter-sidenav').addClass('fixed-sidenav');
-	}
-	if ($(window).scrollTop() <= 147 && $(window).scrollTop() + $(window).height() < $(document).height() - 412) {
-		$('.filter-sidenav').removeClass('fixed-sidenav');
-	}
-	// 412
-	if ($(window).scrollTop() + $(window).height() > $(document).height() - 412) {
-		$('.filter-sidenav').removeClass('fixed-sidenav');
-	}
+	const notifications = new List('notifications-list', notificationsOptions);
+	$('.notifications-sidenav .read-filter').click(({ target }) => {
+		console.log(target);
+		const queryId = $(target).closest('li').attr('id');
+		notifications.filter((item) => {
+			console.log(item.values().read, queryId);
+			if (item.values().read == queryId) {
+				return true;
+			} else {
+				return false;
+			}
+		});
+	});
+
+	$('.notifications-sidenav .status-filter').click(({ target }) => {
+		const queryId = $(target).closest('li').attr('id');
+		notifications.filter((item) => {
+			if (item.values().status == queryId) {
+				return true;
+			} else {
+				return false;
+			}
+		});
+	});
+
+	$('.jTablePageNext').on('click', function () {
+		var list = $('.pagination').find('li');
+		$.each(list, function (position, element) {
+			if ($(element).is('.active')) {
+				$(list[position + 1]).trigger('click');
+			}
+		});
+	});
+
+	$('.jTablePagePrev').on('click', function () {
+		console.log('hello');
+		var list = $('.pagination').find('li');
+		$.each(list, function (position, element) {
+			if ($(element).is('.active')) {
+				$(list[position - 1]).trigger('click');
+			}
+		});
+	});
 });
-var filterOptions = {
-	valueNames: ['name', 'type'],
-	item: `<li class="chip shadow-sm p-2">
-            <span class="type font-weight-bold">category</span><span class="mr-1">:</span><span class="name"></span>
-            <span class="btn p-0 m-0 va va-cross ml-3" onclick="remove(this)"></span>
-        </li>`,
-};
 
-const filters = new List('filter-panel', filterOptions);
-
-function remove(data) {
-	const name = $(data).parent().find('.name').text();
-	$(`#filter-Sidenav #${name}`).prop('checked', false);
-	filters.remove('name', name);
-}
-
-$('#filter-Sidenav input').change(({ target }) => {
-	if (!filters.get('type', target.name).length) {
-		filters.add({ name: target.id, type: target.name });
-	}
-});
-
-// clear the filter List
-$('#clear-all').click(() => {
-	filters.clear();
-});
-
-// shopping cart
-
+// STAR RATING
 $('.read-only').starRating({
 	starShape: 'rounded',
 	readOnly: true,
@@ -49,130 +59,124 @@ $('.read-only').starRating({
 	activeColor: 'orange',
 	useGradient: false,
 });
-$('.current').click(() => {
-	$('.select-nav').addClass('show');
-});
-$('.select-nav .nav-item').click(() => {
-	$('.select-nav').toggleClass('show');
-});
 
-// Cart script
-const cartOptions = { valueNames: ['title', 'price'] };
-const notFound = () => {
-	$('#tax, #shipping').text(0);
-	$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo('.cart-wrapper');
-};
+// SHOPPING CART
+$(() => {
+	const cartOptions = { valueNames: ['title', 'price'] };
+	const notFound = () => {
+		$('#tax, #shipping').text(0);
+		$(`<h4 id="notfound" class="m-auto">No Items in Cart</h4>`).appendTo('.cart-wrapper');
+	};
+	$('.btn-up').click(({ target }) => {
+		const id = $(target).attr('id').split('-')[2];
+		const basePrice = parseInt($(`#form-control-${id}`).val()) + 1;
+		const currentInput = parseInt($(`#price-${id}`).text()) * basePrice;
+		const totalPrice = $('.cart-wrapper .price')
+			.not(`#price-${id}`)
+			.map((a, e) => parseInt($(e).text()))
+			.get();
+		const subTotal = [...totalPrice, currentInput].reduce((a, b) => a + b);
+		$('#s-total').text(subTotal);
+		$('#g-total').text(subTotal + parseInt($('#shipping').text()) + parseInt($('#tax').text()));
+		console.log(subTotal);
+	});
 
-const cart = new List('shopping-cart', cartOptions);
-// update total
+	$('.btn-down').click(({ target }) => {
+		const id = $(target).attr('id').split('-')[2];
 
-$('.btn-up').click(({ target }) => {
-	const id = target.id.split('-')[2];
-	const input = $(`#form-control-${id}`);
-	input.val(JSON.parse(input.val()) + 1);
-	$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()));
-	// updateTotal(cart)
-});
+		const basePrice = parseInt($(`#form-control-${id}`).val()) - 1;
+		const currentInput = parseInt($(`#price-${id}`).text()) * basePrice;
+		const totalPrice = $('.cart-wrapper .price')
+			.not(`#price-${id}`)
+			.map((a, e) => parseInt($(e).text()))
+			.get();
+		const subTotal = [...totalPrice, currentInput].reduce((a, b) => a + b);
+		$('#s-total').text(subTotal);
+		$('#g-total').text(subTotal + parseFloat($('#shipping').text()) + parseFloat($('#tax').text()));
+		console.log(subTotal);
+	});
 
-$('.btn-down').click(({ target }) => {
-	const id = target.id.split('-')[2];
-	const input = $(`#form-control-${id}`);
-	if (input.val() > 1) {
-		$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()));
-		input.val(JSON.parse(input.val()) - 1);
-	}
-	// updateTotal(cart)
-});
+	const cart = new List('shopping-cart', cartOptions);
+	// update total
 
-$('#shopping-cart .btn').click(({ target }) => {
-	cart.remove('title', $(`#${target.id}`).parent().find('.title').text());
-});
-// clear cart
-$('#clear-cart').click(() => {
-	cart.clear();
-	$('.badge-cart, #g-total, #s-total, #shipping').text(0);
-	notFound();
-});
-// remove one item
-$('#shopping-cart .btn-cancel').click(() => {
-	// reduce the counter price
-	const prices = cart.visibleItems.map((e) => (count = +JSON.parse(e.values().price)));
-	const sum = prices.reduce(function (a, b) {
-		return a + b;
-	}, 0);
-	// add to sub total
-	$('#s-total').text(sum);
-	// add to total (sub-total + shipping + tax)
-	$('#g-total').text(sum + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
-	$('.badge-cart').text(cart.visibleItems.length);
-	if (!cart.visibleItems.length) {
+	$('.btn-up').click(({ target }) => {
+		const id = target.id.split('-')[2];
+		const input = $(`#form-control-${id}`);
+		input.val(JSON.parse(input.val()) + 1);
+		$(`#price-${id}`).text(JSON.parse(input.val()) * JSON.parse($(`#price-${id}`).text()));
+		// updateTotal(cart)
+	});
+
+	$('.btn-down').click(({ target }) => {
+		const id = target.id.split('-')[2];
+		const input = $(`#form-control-${id}`);
+		if (input.val() >= 1) {
+			$(`#price-${id}`).text(JSON.parse($(`#price-${id}`).text()) / JSON.parse(input.val()));
+			input.val(JSON.parse(input.val()) - 1);
+		}
+		// updateTotal(cart)
+	});
+
+	$('#shopping-cart .btn').click(({ target }) => {
+		cart.remove('title', $(`#${target.id}`).parent().find('.title').text());
+	});
+	// clear cart
+	$('#clear-cart').click(() => {
+		cart.clear();
+		$('.badge-cart, #g-total, #s-total, #shipping').text(0);
 		notFound();
-	}
+	});
+
+	// remove one item
+	$('#shopping-cart .btn-cancel').click(() => {
+		// reduce the counter price
+		const prices = cart.visibleItems.map((e) => (count = +JSON.parse(e.values().price)));
+		const sum = prices.reduce(function (a, b) {
+			return a + b;
+		}, 0);
+		// add to sub total
+		$('#s-total').text(sum);
+		// add to total (sub-total + shipping + tax)
+		$('#g-total').text(sum + JSON.parse($('#shipping').text()) + JSON.parse($('#tax').text()));
+		$('.badge-cart').text(cart.visibleItems.length);
+		if (!cart.visibleItems.length) {
+			notFound();
+		}
+	});
+
+	// add to cart
+	$('.product-card .cart').change(() => {
+		$('.badge-cart').text(JSON.parse($('.badge-cart').text()) + 1);
+	});
 });
 
-// add to cart
-$('.ecommerce-card .cart').change(() => {
-	$('.badge-cart').text(JSON.parse($('.badge-cart').text()) + 1);
-});
-
-// shop
-
-$(function () {
+// GLOBAL SCRIPT
+$(() => {
 	$('[data-toggle="tooltip"]').tooltip();
 });
-var options = {
-	valueNames: ['name', 'subject', 'body', 'read', 'status'],
-	page: 5,
-	pagination: true,
-};
 
-var hackerList = new List('hacker-list', options);
-$('.notifications-sidenav .read-filter').click(({ target }) => {
-	const queryId = $(target).closest('li').attr('id');
-	hackerList.filter(function (item) {
-		console.log(item.values().read, queryId);
-		if (item.values().read == queryId) {
-			return true;
-		} else {
-			return false;
-		}
-	});
-});
-
-$('.notifications-sidenav .status-filter').click(({ target }) => {
-	const queryId = $(target).closest('li').attr('id');
-	hackerList.filter(function (item) {
-		if (item.values().status == queryId) {
-			return true;
-		} else {
-			return false;
-		}
-	});
-});
-
-// select 2
-$(document).ready(function () {
+$(document).ready(() => {
 	$('.select2').select2();
 });
 
-$('#switch').change(() => {
+$('#d-mode').change(() => {
 	$('body').toggleClass('dark-mode');
 	!localStorage.getItem('theme') ? localStorage.setItem('theme', 'dark-mode') : localStorage.removeItem('theme');
 });
+
 $('body').addClass(localStorage.getItem('theme'));
+
 $('#toggle-filter').click(() => {
 	$('#products-list').toggleClass('ml-0');
 	$('.grid-view').toggleClass('grid-view-sm');
 	$('#filter-Sidenav').toggleClass('toggle-filter');
 });
+
 $('.sidebar-close-icon').click(() => {
 	$('.grid-view').toggleClass('grid-view-sm');
-	$('#filter-Sidenav').toggleClass('w-260');
+	$('#filter-Sidenav').toggleClass('toggle-filter');
 });
-$('#category-nav .nav-item').mouseover(() => {
-	$('.drop-list').css('width', $('.carousel-inner').outerWidth()).css('margin-left', $('#category-nav').outerWidth());
-});
-
+// carousel
 $('#carousel').owlCarousel({
 	autoplay: false,
 	lazyLoad: true,
@@ -201,86 +205,9 @@ $('#carousel').owlCarousel({
 		},
 	},
 });
-$(window).resize(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
-$('.category-menu').click(() => $('.category-menu .dropdown-menu').css('width', $('.container').outerWidth()));
 
-$(document).ready(function () {
-	var pic_X = $('.menu').offset().left;
-	var pic_Y = $('.menu').offset().top;
-	var pic_W = $('.menu').width() / 2;
-	var pic_H = $('.menu').height() / 2;
-	var center_X = pic_X + pic_W;
-	var center_Y = pic_Y + pic_H;
-	var movestop = pic_W / 10;
-	$('.menu').mousemove(function (event) {
-		var mouse_X = event.pageX;
-		var mouse_Y = event.pageY;
-		if (mouse_X - center_X <= 0) {
-			moveImg(mouse_X, mouse_Y, 'left');
-		} else {
-			moveImg(mouse_X, mouse_Y);
-		}
-	});
-	function moveImg(m_X, m_Y, dir) {
-		var index = Math.ceil(Math.abs(m_X - center_X) / movestop);
-		if (dir) {
-			$('.menu img').eq(index).show().siblings().hide();
-		} else {
-			$('.menu img')
-				.eq(18 - index)
-				.show()
-				.siblings()
-				.hide();
-		}
-	}
-});
-$(window).resize(function () {
-	$('.drop-list').css('width', $('#slider').outerWidth()).css('height', $('#slider').outerHeight()).css('margin-left', $('#category-nav').outerWidth);
-});
-// cart buttons
-// personal details
-$('#to-shopping').click((e) => {
-	e.preventDefault();
-	$('#shipping').addClass('show');
-	$('[data-target="#personalDetails"]').removeClass('d-none');
-});
-
-$('input').keyup(() => {
-	if ($('#firstname').val() && $('#lastname').val() && $('#email').val()) {
-		$('#to-shopping').removeAttr('disabled');
-	}
-});
-
-// Javascript to enable link to tab
-$(document).ready(() => {
-	var url = document.location.toString();
-
-	if (url.match('#')) {
-		// $(`#profile`).tab('dispose');
-		$(`#${url.split('#')[1]}`).tab('dispose');
-	}
-
-	// Change hash for page-reload
-	$('.nav-tabs a').on('shown.bs.tab', function (e) {
-		window.location.hash = e.target.hash;
-	});
-});
-
-$('input').keyup(() => {
-	const emptyValue = $('#shipping-form')
-		.serializeArray()
-		.find((e) => e.value == '');
-	if (!emptyValue) {
-		$('#to-payments').removeAttr('disabled');
-	}
-});
-$('#to-payments').click((e) => {
-	e.preventDefault();
-	$('#payments').addClass('show');
-	$('[data-target="#shipping"]').removeClass('d-none');
-});
-
-(function init() {
+// FLASH SALE TIMER
+function flashSale(params) {
 	function getTimeRemaining(endtime) {
 		var t = Date.parse(endtime) - Date.parse(new Date());
 		var seconds = Math.floor((t / 1000) % 60);
@@ -309,4 +236,8 @@ $('#to-payments').click((e) => {
 		}, 1000);
 	}
 	initializeClock(new Date().getFullYear() + 1 + '/1/1');
-})();
+};
+
+$(document).ready(()=>{
+	$('body').removeClass('loader');
+})
